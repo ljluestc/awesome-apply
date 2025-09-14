@@ -1,0 +1,46 @@
+2025-09-13 22:52:35,588 - INFO - ====== WebDriver manager ======
+2025-09-13 22:52:35,689 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-13 22:52:35,745 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-13 22:52:35,792 - INFO - Driver [/home/calelin/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
+2025-09-13 22:52:36,271 - INFO - Chrome WebDriver initialized successfully
+2025-09-13 22:52:36,271 - INFO - Navigating to: https://jobright.ai/jobs/recommend?pos=16
+2025-09-13 22:52:47,347 - WARNING - Error during page scrolling: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5562110da08a <unknown>
+#1 0x556210b79a70 <unknown>
+#2 0x556210b607fe <unknown>
+#3 0x556210b885c9 <unknown>
+#4 0x556210bf987f <unknown>
+#5 0x556210c16afc <unknown>
+#6 0x556210bf11b3 <unknown>
+#7 0x556210bbd59b <unknown>
+#8 0x556210bbe971 <unknown>
+#9 0x55621109f25b <unknown>
+#10 0x5562110a2fa9 <unknown>
+#11 0x556211086339 <unknown>
+#12 0x5562110a3b58 <unknown>
+#13 0x55621106ac1f <unknown>
+#14 0x5562110c7118 <unknown>
+#15 0x5562110c72f6 <unknown>
+#16 0x5562110d9066 <unknown>
+#17 0x7f73669cab7b <unknown>
+
+2025-09-13 22:52:47,353 - ERROR - Failed to navigate to JobRight: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5562110da08a <unknown>
+#1 0x556210b798c3 <unknown>
+#2 0x556210bbcecf <unknown>
+#3 0x556210bf12e6 <unknown>
+#4 0x556210bebde7 <unknown>
+#5 0x556210beaf25 <unknown>
+#6 0x556210b41bd8 <unknown>
+#7 0x55621109f25b <unknown>
+#8 0x5562110a2fa9 <unknown>
+#9 0x556211086339 <unknown>
+#10 0x5562110a3b58 <unknown>
+#11 0x55621106ac1f <unknown>
+#12 0x556210b3fa24 <unknown>
+#13 0x7f7366961ca8 <unknown>
+
