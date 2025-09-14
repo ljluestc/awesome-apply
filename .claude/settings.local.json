@@ -6,7 +6,9 @@
       "Bash(source:*)",
       "Bash(venv/bin/pip install:*)",
       "Bash(rm:*)",
-      "Bash(venv/bin/python:*)"
+      "Bash(venv/bin/python:*)",
+      "Bash(chmod:*)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python test_button_finder.py)"
     ],
     "deny": [],
     "ask": []

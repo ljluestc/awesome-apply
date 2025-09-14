@@ -1,0 +1,16 @@
+2025-09-13 21:24:25,131 - INFO - ====== WebDriver manager ======
+2025-09-13 21:24:25,405 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-13 21:24:25,597 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-13 21:24:25,808 - INFO - There is no [linux64] chromedriver "139.0.7258.154" for browser google-chrome "139.0.7258" in cache
+2025-09-13 21:24:25,808 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-13 21:24:26,120 - INFO - WebDriver version 139.0.7258.154 selected
+2025-09-13 21:24:26,142 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/linux64/chromedriver-linux64.zip
+2025-09-13 21:24:26,144 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/linux64/chromedriver-linux64.zip
+2025-09-13 21:24:26,222 - INFO - Driver downloading response is 200
+2025-09-13 21:24:27,711 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-13 21:24:28,081 - INFO - Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154]
+2025-09-13 21:24:29,588 - INFO - Chrome WebDriver initialized successfully
+2025-09-13 21:24:29,589 - INFO - Navigating to: https://jobright.ai/jobs/recommend?pos=1
+2025-09-13 21:25:26,816 - INFO - Page scrolling completed
+2025-09-13 21:25:26,852 - INFO - Successfully loaded page: https://jobright.ai/onboarding-v3/signup
+2025-09-13 21:25:26,853 - INFO - Searching for apply buttons by text content...
