@@ -1,0 +1,31 @@
+[
+  {
+    "index": 140,
+    "tag": "a",
+    "text": "Job Autofill",
+    "classes": [],
+    "id": "",
+    "href": "https://jobright.ai/job-autofill",
+    "onclick": "",
+    "data_attributes": {},
+    "target_url": "https://jobright.ai/job-autofill",
+    "is_displayed": true,
+    "is_enabled": true,
+    "location": "",
+    "size": {
+      "height": 16,
+      "width": 64
+    },
+    "parent_info": {
+      "tag": "div",
+      "class": "ant-flex css-u7vrgj ant-flex-align-start ant-flex-vertical",
+      "id": "",
+      "text": "Resume AI\nAI Job Match\nInsider Connections\nAI Copilot Orion\nJob Autofill\nH1B Jobs"
+    },
+    "job_title": "",
+    "company": "",
+    "job_id": "",
+    "url_status": 200,
+    "url_accessible": true
+  }
+]
