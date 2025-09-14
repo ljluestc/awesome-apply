@@ -28,7 +28,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('/tmp/jobright_automation.log'),
+        logging.FileHandler('jobright_automation.log'),
         logging.StreamHandler()
     ]
 )

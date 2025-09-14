@@ -1,0 +1,28 @@
+2025-09-13 23:50:25,007 - INFO - ====== WebDriver manager ======
+2025-09-13 23:50:25,114 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-13 23:50:25,188 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-13 23:50:25,246 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
+2025-09-13 23:50:26,421 - INFO - Advanced Chrome WebDriver setup completed
+2025-09-13 23:50:26,421 - INFO - No valid session found
+2025-09-13 23:50:34,356 - INFO - Smart SSO initiation...
+2025-09-13 23:51:49,895 - INFO - Trying direct SSO URL: https://jobright.ai/auth/google
+2025-09-13 23:51:53,340 - INFO - Trying direct SSO URL: https://jobright.ai/oauth/google
+2025-09-13 23:51:56,479 - INFO - Trying direct SSO URL: https://jobright.ai/login/google
+2025-09-13 23:51:59,693 - INFO - Trying direct SSO URL: https://jobright.ai/signin/google
+2025-09-13 23:52:02,846 - INFO - Trying direct SSO URL: https://jobright.ai/api/auth/google
+2025-09-13 23:52:06,038 - ERROR - All SSO initiation strategies failed
+2025-09-14 00:00:02,047 - INFO - ====== WebDriver manager ======
+2025-09-14 00:00:02,477 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-14 00:00:02,627 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-14 00:00:02,707 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-14 00:00:02,977 - INFO - WebDriver version 139.0.7258.154 selected
+2025-09-14 00:00:02,998 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/linux64/chromedriver-linux64.zip
+2025-09-14 00:00:03,000 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/linux64/chromedriver-linux64.zip
+2025-09-14 00:00:03,097 - INFO - Driver downloading response is 200
+2025-09-14 00:00:04,192 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-14 00:00:04,503 - INFO - Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154]
+2025-09-14 00:00:06,297 - INFO - Advanced Chrome WebDriver setup completed
+2025-09-14 00:00:06,298 - INFO - No valid session found
+2025-09-14 00:00:10,496 - INFO - Smart SSO initiation...
+2025-09-14 00:01:26,289 - INFO - Checking login page: https://jobright.ai/login
+2025-09-14 00:02:40,926 - INFO - Checking login page: https://jobright.ai/signin

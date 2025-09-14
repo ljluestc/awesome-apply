@@ -1,0 +1,10 @@
+2025-09-13 23:56:57,439 - INFO - ====== WebDriver manager ======
+2025-09-13 23:56:57,556 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-13 23:56:57,618 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-13 23:56:57,671 - INFO - Driver [/home/calelin/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
+2025-09-13 23:56:58,123 - INFO - Chrome WebDriver initialized successfully
+2025-09-13 23:56:58,123 - INFO - Navigating to: https://jobright.ai/jobs/recommend?pos=16
+2025-09-13 23:57:37,252 - INFO - Page scrolling completed
+2025-09-13 23:57:37,258 - INFO - Successfully loaded page: https://jobright.ai/
+2025-09-13 23:57:37,259 - INFO - Checking for SSO authentication...
+2025-09-13 23:58:37,472 - INFO - No Google SSO button found - checking if already authenticated

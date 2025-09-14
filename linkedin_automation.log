@@ -1,0 +1,6 @@
+2025-09-14 00:13:38,637 - INFO - ====== WebDriver manager ======
+2025-09-14 00:13:38,835 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-14 00:13:38,906 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-14 00:13:38,977 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
+2025-09-14 00:13:39,848 - INFO - Chrome WebDriver initialized successfully
+2025-09-14 00:13:39,849 - INFO - Built search URL: https://www.linkedin.com/jobs/search?keywords=software&location=San+Jose%2C+California%2C+United+States&geoId=106233382&distance=25&f_TPR=r86400&sortBy=DD&f_JT=F

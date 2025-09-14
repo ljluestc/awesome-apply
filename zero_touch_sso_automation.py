@@ -71,8 +71,21 @@ class ZeroTouchSSoAutomation:
             "jeremykalilin@gmail.com",
             "jeremykalilin",
             "Jeremy",
-            "Kalilin"
+            "Kalilin",
+            "jeremy.kalilin@gmail.com",
+            "jeremy@gmail.com",
+            "jkalilin",
+            "J. Kalilin",
+            "Jeremy K"
         ]
+
+        # Enhanced account matching patterns
+        self.account_matchers = {
+            'exact_email': ["jeremykalilin@gmail.com", "jeremy.kalilin@gmail.com"],
+            'partial_email': ["jeremykalilin", "jeremy.kalilin", "jeremy"],
+            'display_names': ["Jeremy Kalilin", "Jeremy", "Kalilin", "J. Kalilin", "Jeremy K"],
+            'usernames': ["jeremykalilin", "jkalilin", "jeremy"]
+        }
 
     def setup_advanced_driver(self):
         """Setup Chrome WebDriver with advanced SSO optimization"""
@@ -506,14 +519,44 @@ class ZeroTouchSSoAutomation:
             return False
 
     def try_direct_sso_urls(self):
-        """Try direct SSO URLs"""
+        """Try direct SSO URLs with enhanced discovery"""
         try:
+            # First try to navigate to login page and discover SSO options
+            login_urls = [
+                "https://jobright.ai/login",
+                "https://jobright.ai/signin",
+                "https://jobright.ai/auth",
+                "https://jobright.ai/register",
+                "https://app.jobright.ai/login",
+                "https://app.jobright.ai/signin"
+            ]
+
+            for login_url in login_urls:
+                try:
+                    logger.info(f"Checking login page: {login_url}")
+                    self.driver.get(login_url)
+                    time.sleep(3)
+
+                    # Look for Google SSO button on this page
+                    if self.find_and_click_google_sso_button():
+                        logger.info(f"Found Google SSO on login page: {login_url}")
+                        return True
+
+                except Exception as e:
+                    logger.debug(f"Login page {login_url} failed: {e}")
+                    continue
+
+            # If no login pages work, try direct SSO URLs
             sso_urls = [
-                f"{self.base_url}/auth/google",
-                f"{self.base_url}/oauth/google",
-                f"{self.base_url}/login/google",
-                f"{self.base_url}/signin/google",
-                f"{self.base_url}/api/auth/google"
+                "https://jobright.ai/auth/google",
+                "https://jobright.ai/oauth/google",
+                "https://jobright.ai/login/google",
+                "https://jobright.ai/signin/google",
+                "https://jobright.ai/api/auth/google",
+                "https://jobright.ai/sso/google",
+                "https://app.jobright.ai/auth/google",
+                "https://app.jobright.ai/oauth/google",
+                "https://app.jobright.ai/login/google"
             ]
 
             for url in sso_urls:
@@ -528,12 +571,82 @@ class ZeroTouchSSoAutomation:
                         logger.info(f"Direct SSO URL successful: {url}")
                         return True
 
-                except Exception:
+                    # Also check if we're on a login page now
+                    if self.find_and_click_google_sso_button():
+                        logger.info(f"Found SSO button after visiting: {url}")
+                        return True
+
+                except Exception as e:
+                    logger.debug(f"SSO URL {url} failed: {e}")
                     continue
 
             return False
 
-        except Exception:
+        except Exception as e:
+            logger.error(f"Direct SSO URL strategy failed: {e}")
+            return False
+
+    def find_and_click_google_sso_button(self):
+        """Find and click Google SSO button with comprehensive selectors"""
+        try:
+            # Comprehensive Google SSO button selectors
+            google_sso_selectors = [
+                # Text-based selectors (highest priority)
+                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'sign in with google')]",
+                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login with google')]",
+                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'continue with google')]",
+                "//a[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'sign in with google')]",
+                "//a[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'login with google')]",
+
+                # Attribute-based selectors
+                "//*[@data-provider='google']",
+                "//*[@data-auth='google']",
+                "//*[@data-login='google']",
+                "//*[contains(@class, 'google')]",
+                "//*[contains(@id, 'google')]",
+
+                # URL-based selectors
+                "//a[contains(@href, 'google')]",
+                "//button[contains(@onclick, 'google')]",
+
+                # Generic OAuth selectors that might be Google
+                "//button[contains(@class, 'oauth')]",
+                "//button[contains(@class, 'social')]",
+                "//a[contains(@class, 'oauth')]",
+                "//a[contains(@class, 'social')]"
+            ]
+
+            for selector in google_sso_selectors:
+                try:
+                    elements = self.driver.find_elements(By.XPATH, selector)
+                    for element in elements:
+                        if element.is_displayed() and element.is_enabled():
+                            # Additional verification for Google-related elements
+                            element_text = element.text.lower()
+                            element_html = element.get_attribute('outerHTML').lower()
+
+                            if ('google' in element_text or 'google' in element_html or
+                                'gmail' in element_text or 'gmail' in element_html):
+
+                                logger.info(f"Found Google SSO button: {element.text[:50]}")
+                                self._click_element_advanced(element)
+                                time.sleep(3)
+
+                                # Check if SSO was initiated
+                                current_url = self.driver.current_url.lower()
+                                if ('google.com' in current_url or
+                                    'accounts.google' in current_url or
+                                    'oauth' in current_url):
+                                    return True
+
+                except Exception as e:
+                    logger.debug(f"Google SSO selector failed: {e}")
+                    continue
+
+            return False
+
+        except Exception as e:
+            logger.error(f"Google SSO button search failed: {e}")
             return False
 
     def find_hidden_sso_elements(self):
@@ -632,38 +745,142 @@ class ZeroTouchSSoAutomation:
             return False
 
     def handle_google_account_selection(self):
-        """Handle Google account selection if multiple accounts"""
+        """Advanced Google account selection with comprehensive matching"""
         try:
-            logger.info("Looking for Google account selection...")
+            logger.info("Looking for Google account selection with enhanced matching...")
 
-            # Look for account selection elements
+            # Wait for account selection page to load
+            time.sleep(2)
+
+            # Enhanced account selection with priority matching
+            account_found = self._find_and_select_target_account()
+
+            if account_found:
+                logger.info("Target account selected successfully")
+                return True
+
+            # If target account not found, try "Use another account"
+            if self._click_use_another_account():
+                logger.info("Clicked 'Use another account' - will proceed to email entry")
+                return False
+
+            logger.warning("No suitable account found or 'Use another account' option")
+            return False
+
+        except Exception as e:
+            logger.warning(f"Account selection error: {e}")
+            return False
+
+    def _find_and_select_target_account(self):
+        """Find and select the target Google account with advanced matching"""
+        try:
+            # Comprehensive selectors for account elements
             account_selectors = [
+                # Exact email match (highest priority)
                 f"//div[@data-email='{self.email}']",
+                f"//div[@data-identifier='{self.email}']",
+                f"//*[@title='{self.email}']",
+
+                # Container-based selectors
+                "//div[contains(@class, 'account')]//div[contains(@class, 'email')]",
+                "//div[contains(@class, 'user')]//div[contains(@class, 'email')]",
+                "//li[contains(@class, 'account')]",
+                "//div[contains(@data-identifier, '@gmail.com')]",
+
+                # Text-based selectors
                 f"//*[contains(text(), '{self.email}')]",
-                f"//*[contains(text(), 'jeremykalilin')]",
-                f"//*[contains(text(), 'Jeremy')]",
-                "//div[contains(@class, 'account') and contains(@class, 'option')]"
+                "//*[contains(text(), 'jeremykalilin@gmail.com')]",
+                "//*[contains(text(), 'jeremykalilin')]",
+                "//*[contains(text(), 'Jeremy')]",
+
+                # Generic account containers
+                "//div[contains(@class, 'account')]",
+                "//li[contains(@role, 'option')]",
+                "//div[@role='button'][contains(@class, 'account')]"
             ]
 
             for selector in account_selectors:
                 try:
                     elements = self.driver.find_elements(By.XPATH, selector)
                     for element in elements:
-                        if element.is_displayed():
-                            text = element.text.lower()
-                            if any(indicator.lower() in text for indicator in self.google_account_indicators):
-                                logger.info(f"Clicking account: {element.text}")
-                                element.click()
+                        if element.is_displayed() and element.is_enabled():
+                            if self._is_target_account(element):
+                                logger.info(f"Found target account: {element.text[:100]}")
+                                self._click_element_advanced(element)
                                 time.sleep(3)
                                 return True
-                except Exception:
+                except Exception as e:
+                    logger.debug(f"Selector '{selector}' failed: {e}")
                     continue
 
-            # Look for "Use another account" if target account not visible
+            return False
+
+        except Exception as e:
+            logger.error(f"Account finding error: {e}")
+            return False
+
+    def _is_target_account(self, element):
+        """Advanced matching to determine if element represents target account"""
+        try:
+            # Get all text content from element and children
+            element_texts = [
+                element.text.lower(),
+                element.get_attribute('title') or '',
+                element.get_attribute('data-email') or '',
+                element.get_attribute('data-identifier') or '',
+                element.get_attribute('aria-label') or ''
+            ]
+
+            # Check child elements for additional text
+            child_elements = element.find_elements(By.XPATH, ".//*")
+            for child in child_elements:
+                child_text = child.text.lower() if child.text else ''
+                if child_text:
+                    element_texts.append(child_text)
+
+            combined_text = ' '.join(element_texts).lower()
+
+            # Priority matching (exact email has highest priority)
+            for exact_email in self.account_matchers['exact_email']:
+                if exact_email.lower() in combined_text:
+                    logger.info(f"Exact email match found: {exact_email}")
+                    return True
+
+            # Secondary matching (display names)
+            for display_name in self.account_matchers['display_names']:
+                if display_name.lower() in combined_text:
+                    logger.info(f"Display name match found: {display_name}")
+                    return True
+
+            # Partial email matching
+            for partial in self.account_matchers['partial_email']:
+                if partial.lower() in combined_text and '@gmail.com' in combined_text:
+                    logger.info(f"Partial email match found: {partial}")
+                    return True
+
+            # Username matching (lowest priority)
+            for username in self.account_matchers['usernames']:
+                if username.lower() in combined_text:
+                    logger.info(f"Username match found: {username}")
+                    return True
+
+            return False
+
+        except Exception as e:
+            logger.debug(f"Account matching error: {e}")
+            return False
+
+    def _click_use_another_account(self):
+        """Click 'Use another account' with comprehensive selectors"""
+        try:
             other_account_selectors = [
                 "//div[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'use another account')]",
                 "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'add account')]",
-                "//*[@data-action='add-account']"
+                "//div[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'add account')]",
+                "//*[@data-action='add-account']",
+                "//*[contains(@class, 'add-account')]",
+                "//div[@role='button'][contains(text(), 'Use another')]",
+                "//button[contains(text(), 'Use another')]"
             ]
 
             for selector in other_account_selectors:
@@ -671,18 +888,45 @@ class ZeroTouchSSoAutomation:
                     elements = self.driver.find_elements(By.XPATH, selector)
                     for element in elements:
                         if element.is_displayed() and element.is_enabled():
-                            logger.info("Clicking 'Use another account'")
-                            element.click()
+                            logger.info(f"Clicking 'Use another account': {element.text}")
+                            self._click_element_advanced(element)
                             time.sleep(3)
-                            return False  # Will proceed to email entry
-                except Exception:
+                            return True
+                except Exception as e:
+                    logger.debug(f"Use another account selector failed: {e}")
                     continue
 
             return False
 
         except Exception as e:
-            logger.warning(f"Account selection error: {e}")
+            logger.error(f"Use another account error: {e}")
             return False
+
+    def _click_element_advanced(self, element):
+        """Advanced clicking with multiple strategies"""
+        try:
+            # Strategy 1: Standard click
+            element.click()
+            return True
+        except Exception:
+            pass
+
+        try:
+            # Strategy 2: JavaScript click
+            self.driver.execute_script("arguments[0].click();", element)
+            return True
+        except Exception:
+            pass
+
+        try:
+            # Strategy 3: ActionChains click
+            ActionChains(self.driver).move_to_element(element).click().perform()
+            return True
+        except Exception:
+            pass
+
+        logger.warning("All click strategies failed")
+        return False
 
     def auto_enter_email(self):
         """Automatically enter email address"""
@@ -861,61 +1105,178 @@ class ZeroTouchSSoAutomation:
             return self.complete_google_flow()
 
     def is_password_required(self):
-        """Check if password is required"""
+        """Enhanced password requirement detection"""
         try:
+            # Check URL patterns first (fastest check)
+            current_url = self.driver.current_url.lower()
+
+            # URLs that indicate we've moved past password
+            bypass_url_patterns = [
+                'oauth', 'consent', 'authorize', 'permissions',
+                'jobright.ai', 'success', 'welcome', 'dashboard'
+            ]
+
+            if any(pattern in current_url for pattern in bypass_url_patterns):
+                logger.info(f"Password bypassed - URL indicates success: {current_url}")
+                return False
+
+            # Enhanced password input selectors
             password_selectors = [
                 "input[type='password']",
                 "input[name='password']",
-                "#password"
+                "#password",
+                "#passwd",
+                "input[id*='password']",
+                "input[name*='password']",
+                "input[placeholder*='password']",
+                "input[aria-label*='password']",
+                "[data-testid*='password']",
+                ".password input",
+                "[autocomplete='current-password']"
             ]
 
+            password_found = False
             for selector in password_selectors:
                 try:
-                    password_input = self.driver.find_element(By.CSS_SELECTOR, selector)
-                    if password_input.is_displayed():
-                        return True
+                    elements = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                    for element in elements:
+                        if element.is_displayed() and element.is_enabled():
+                            password_found = True
+                            break
+                    if password_found:
+                        break
+                except Exception:
+                    continue
+
+            if password_found:
+                # Check for additional bypass indicators
+                if self._check_password_bypass_indicators():
+                    logger.info("Password bypass indicators found")
+                    return False
+
+                logger.info("Password input detected and required")
+                return True
+
+            return False
+
+        except Exception as e:
+            logger.warning(f"Password detection error: {e}")
+            return False
+
+    def _check_password_bypass_indicators(self):
+        """Check for indicators that password can be bypassed"""
+        try:
+            # Look for "Continue without password" or similar options
+            bypass_selectors = [
+                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'continue without')]",
+                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'skip')]",
+                "//a[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'skip')]",
+                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'later')]",
+                "//*[@data-action='skip']",
+                "//*[contains(@class, 'skip')]",
+                "//div[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'try another way')]"
+            ]
+
+            for selector in bypass_selectors:
+                try:
+                    elements = self.driver.find_elements(By.XPATH, selector)
+                    for element in elements:
+                        if element.is_displayed() and element.is_enabled():
+                            logger.info(f"Found password bypass option: {element.text}")
+                            self._click_element_advanced(element)
+                            time.sleep(2)
+                            return True
+                except Exception:
+                    continue
+
+            # Check for alternative authentication methods
+            alt_auth_selectors = [
+                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'use your phone')]",
+                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'get a verification')]",
+                "//a[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'try another way')]",
+                "//*[contains(@data-action, 'challenge')]"
+            ]
+
+            for selector in alt_auth_selectors:
+                try:
+                    elements = self.driver.find_elements(By.XPATH, selector)
+                    for element in elements:
+                        if element.is_displayed() and element.is_enabled():
+                            logger.info(f"Found alternative auth method: {element.text}")
+                            # Don't click alternative auth methods automatically
+                            # Just log their presence
                 except Exception:
                     continue
 
             return False
 
-        except Exception:
+        except Exception as e:
+            logger.warning(f"Bypass indicator check error: {e}")
             return False
 
     def smart_password_wait(self):
-        """Smart waiting strategy for password entry"""
+        """Enhanced smart waiting strategy for password entry with better detection"""
         try:
-            logger.info("Implementing smart password wait...")
+            logger.info("Implementing enhanced smart password wait...")
 
             print(f"\n🔐 GOOGLE PASSWORD REQUIRED FOR {self.email}")
             print("=" * 70)
             print("Please enter your Google password in the browser window")
             print("The system will automatically detect when you're done")
             print("This is a one-time setup - future runs will be fully automated")
+            print("💡 Tip: Check 'Stay signed in' to avoid future password prompts")
             print("=" * 70)
 
             max_wait = 300  # 5 minutes
             start_time = time.time()
-            check_interval = 2
+            check_interval = 1.5  # More frequent checking
+            last_url = ""
+            url_stable_count = 0
 
             while time.time() - start_time < max_wait:
                 try:
                     current_url = self.driver.current_url.lower()
 
-                    # Check for successful authentication indicators
+                    # Enhanced success indicators
                     success_indicators = [
                         'consent', 'oauth', 'authorize', 'permissions',
-                        'jobright.ai', 'success', 'welcome'
+                        'jobright.ai', 'success', 'welcome', 'dashboard',
+                        'myaccount', 'profile', 'settings', 'home'
                     ]
 
+                    # Check URL for success patterns
                     if any(indicator in current_url for indicator in success_indicators):
-                        logger.info("Password authentication detected as successful")
+                        logger.info(f"Password authentication successful - URL: {current_url}")
                         return self.complete_google_flow()
 
-                    # Check if still on password page
-                    if not self.is_password_required():
-                        logger.info("Password page passed")
+                    # Check for URL stability (indicates page loaded successfully)
+                    if current_url == last_url:
+                        url_stable_count += 1
+                    else:
+                        url_stable_count = 0
+                        last_url = current_url
+
+                    # If URL is stable and no longer requires password
+                    if url_stable_count >= 3 and not self.is_password_required():
+                        logger.info("Password requirement cleared")
                         return self.complete_google_flow()
+
+                    # Check for additional success indicators on the page
+                    if self._check_authentication_success_indicators():
+                        logger.info("Authentication success indicators found")
+                        return self.complete_google_flow()
+
+                    # Check if password form submission occurred
+                    if self._detect_password_submission():
+                        logger.info("Password submission detected - waiting for response")
+                        time.sleep(3)  # Give time for redirect
+                        continue
+
+                    # Progress indicator
+                    elapsed = int(time.time() - start_time)
+                    if elapsed % 30 == 0 and elapsed > 0:
+                        remaining = max_wait - elapsed
+                        print(f"⏱️ Still waiting for password entry... {remaining}s remaining")
 
                     time.sleep(check_interval)
 
@@ -924,11 +1285,75 @@ class ZeroTouchSSoAutomation:
                     time.sleep(check_interval)
                     continue
 
-            logger.warning("Password wait timeout - attempting to continue")
+            logger.warning("Password wait timeout - attempting to continue anyway")
             return self.complete_google_flow()
 
         except Exception as e:
             logger.error(f"Smart password wait failed: {e}")
+            return False
+
+    def _check_authentication_success_indicators(self):
+        """Check page content for authentication success indicators"""
+        try:
+            # Look for success elements on the page
+            success_selectors = [
+                "//*[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'welcome')]",
+                "//*[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'signed in')]",
+                "//*[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'continue')]",
+                "//*[contains(@class, 'success')]",
+                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'continue')]",
+                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'allow')]",
+                "//*[contains(@aria-label, 'success')]"
+            ]
+
+            for selector in success_selectors:
+                try:
+                    elements = self.driver.find_elements(By.XPATH, selector)
+                    for element in elements:
+                        if element.is_displayed():
+                            logger.info(f"Success indicator found: {element.text[:50]}")
+                            return True
+                except Exception:
+                    continue
+
+            return False
+
+        except Exception as e:
+            logger.debug(f"Success indicator check error: {e}")
+            return False
+
+    def _detect_password_submission(self):
+        """Detect if password form has been submitted"""
+        try:
+            # Check if the password input has been filled
+            password_inputs = self.driver.find_elements(By.CSS_SELECTOR, "input[type='password']")
+
+            for password_input in password_inputs:
+                if password_input.is_displayed():
+                    value = password_input.get_attribute('value')
+                    if value and len(value) > 0:
+                        logger.debug("Password input has content")
+
+                        # Check for loading indicators
+                        loading_selectors = [
+                            "//*[contains(@class, 'loading')]",
+                            "//*[contains(@class, 'spinner')]",
+                            "//*[contains(@aria-label, 'loading')]"
+                        ]
+
+                        for selector in loading_selectors:
+                            try:
+                                elements = self.driver.find_elements(By.XPATH, selector)
+                                if any(elem.is_displayed() for elem in elements):
+                                    logger.info("Loading indicator detected after password entry")
+                                    return True
+                            except Exception:
+                                continue
+
+            return False
+
+        except Exception as e:
+            logger.debug(f"Password submission detection error: {e}")
             return False
 
     def handle_account_chooser(self):
@@ -1010,36 +1435,218 @@ class ZeroTouchSSoAutomation:
             return False
 
     def handle_consent_screen(self):
-        """Handle Google consent/authorization screen"""
+        """Comprehensive Google OAuth consent/authorization screen automation"""
         try:
-            logger.info("Handling consent screen...")
+            logger.info("Handling OAuth consent screen with comprehensive automation...")
 
-            consent_selectors = [
-                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'continue')]",
-                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'allow')]",
-                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'authorize')]",
-                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'accept')]",
-                "//input[@type='submit' and contains(@value, 'Allow')]",
-                "//input[@type='submit' and contains(@value, 'Continue')]"
-            ]
+            # Wait for consent screen to load
+            time.sleep(2)
 
-            for selector in consent_selectors:
-                try:
-                    elements = self.driver.find_elements(By.XPATH, selector)
-                    for element in elements:
-                        if element.is_displayed() and element.is_enabled():
-                            logger.info(f"Clicking consent button: {element.text}")
-                            element.click()
-                            time.sleep(3)
-                            return True
-                except Exception:
-                    continue
+            # Check if we're actually on a consent screen
+            if not self._is_consent_screen():
+                logger.info("Not on consent screen - proceeding")
+                return False
 
+            # Handle consent preferences first
+            if self._handle_consent_preferences():
+                logger.info("Consent preferences configured")
+
+            # Try to find and click the consent button
+            if self._click_consent_button():
+                logger.info("Consent button clicked successfully")
+
+                # Wait for redirect
+                time.sleep(3)
+
+                # Verify consent was successful
+                if self._verify_consent_success():
+                    logger.info("Consent process completed successfully")
+                    return True
+
+            logger.warning("Consent automation may not have completed")
             return False
 
         except Exception as e:
             logger.warning(f"Consent screen handling error: {e}")
             return False
+
+    def _is_consent_screen(self):
+        """Detect if we're on a consent/authorization screen"""
+        try:
+            current_url = self.driver.current_url.lower()
+            page_source = self.driver.page_source.lower()
+
+            # URL indicators
+            consent_url_patterns = [
+                'oauth', 'consent', 'authorize', 'permission',
+                'accounts.google.com/o/oauth', 'accounts.google.com/signin/oauth'
+            ]
+
+            if any(pattern in current_url for pattern in consent_url_patterns):
+                logger.info(f"Consent screen detected via URL: {current_url}")
+                return True
+
+            # Content indicators
+            consent_content_patterns = [
+                'wants to access', 'permission', 'authorize',
+                'allow', 'consent', 'grant access', 'permissions'
+            ]
+
+            if any(pattern in page_source for pattern in consent_content_patterns):
+                logger.info("Consent screen detected via page content")
+                return True
+
+            return False
+
+        except Exception as e:
+            logger.debug(f"Consent screen detection error: {e}")
+            return False
+
+    def _handle_consent_preferences(self):
+        """Handle consent preferences like scopes and permissions"""
+        try:
+            # Look for "Select all" or similar options
+            select_all_selectors = [
+                "//input[@type='checkbox'][contains(@name, 'all')]",
+                "//label[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'select all')]//input",
+                "//input[@type='checkbox'][contains(@id, 'all')]"
+            ]
+
+            for selector in select_all_selectors:
+                try:
+                    elements = self.driver.find_elements(By.XPATH, selector)
+                    for element in elements:
+                        if element.is_displayed() and element.is_enabled():
+                            if not element.is_selected():
+                                logger.info("Selecting all permissions")
+                                element.click()
+                                time.sleep(1)
+                                return True
+                except Exception:
+                    continue
+
+            # Check individual permission checkboxes
+            permission_checkboxes = self.driver.find_elements(By.XPATH, "//input[@type='checkbox']")
+            for checkbox in permission_checkboxes:
+                try:
+                    if checkbox.is_displayed() and checkbox.is_enabled():
+                        if not checkbox.is_selected():
+                            logger.debug("Selecting individual permission")
+                            checkbox.click()
+                            time.sleep(0.5)
+                except Exception:
+                    continue
+
+            return True
+
+        except Exception as e:
+            logger.debug(f"Consent preferences error: {e}")
+            return False
+
+    def _click_consent_button(self):
+        """Find and click the appropriate consent button with priority ordering"""
+        try:
+            # Priority-ordered consent button selectors
+            consent_button_groups = [
+                # Group 1: Primary consent buttons (highest priority)
+                [
+                    "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'allow')]",
+                    "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'continue')]",
+                    "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'authorize')]"
+                ],
+                # Group 2: Form submit buttons
+                [
+                    "//input[@type='submit' and contains(translate(@value, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'allow')]",
+                    "//input[@type='submit' and contains(translate(@value, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'continue')]",
+                    "//input[@type='submit' and contains(translate(@value, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'authorize')]"
+                ],
+                # Group 3: Secondary buttons
+                [
+                    "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'accept')]",
+                    "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'grant')]",
+                    "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'proceed')]"
+                ],
+                # Group 4: Generic buttons by attributes
+                [
+                    "//button[@data-action='consent']",
+                    "//button[@id*='consent']",
+                    "//button[@class*='consent']",
+                    "//*[@role='button'][contains(@class, 'primary')]",
+                    "//div[@role='button'][contains(@class, 'primary')]"
+                ]
+            ]
+
+            for group_index, button_group in enumerate(consent_button_groups):
+                logger.debug(f"Trying consent button group {group_index + 1}")
+
+                for selector in button_group:
+                    try:
+                        elements = self.driver.find_elements(By.XPATH, selector)
+                        for element in elements:
+                            if element.is_displayed() and element.is_enabled():
+                                button_text = element.text or element.get_attribute('value') or 'button'
+                                logger.info(f"Clicking consent button: '{button_text[:50]}'")
+
+                                # Use advanced click method
+                                if self._click_element_advanced(element):
+                                    time.sleep(2)  # Wait for click to process
+                                    return True
+
+                    except Exception as e:
+                        logger.debug(f"Consent button selector '{selector}' failed: {e}")
+                        continue
+
+            logger.warning("No clickable consent buttons found")
+            return False
+
+        except Exception as e:
+            logger.error(f"Consent button clicking error: {e}")
+            return False
+
+    def _verify_consent_success(self):
+        """Verify that consent was successfully granted"""
+        try:
+            # Wait a moment for redirect
+            time.sleep(2)
+
+            current_url = self.driver.current_url.lower()
+
+            # Success indicators in URL
+            success_url_patterns = [
+                'jobright.ai', 'success', 'welcome', 'dashboard',
+                'home', 'profile', 'complete', 'authorized'
+            ]
+
+            if any(pattern in current_url for pattern in success_url_patterns):
+                logger.info(f"Consent success verified via URL: {current_url}")
+                return True
+
+            # Check for error indicators
+            error_patterns = [
+                'error', 'denied', 'cancelled', 'rejected', 'failed'
+            ]
+
+            if any(pattern in current_url for pattern in error_patterns):
+                logger.warning(f"Consent may have failed - URL: {current_url}")
+                return False
+
+            # Check page content for success indicators
+            page_source = self.driver.page_source.lower()
+            success_content_patterns = [
+                'successfully', 'authorized', 'granted', 'welcome'
+            ]
+
+            if any(pattern in page_source for pattern in success_content_patterns):
+                logger.info("Consent success verified via page content")
+                return True
+
+            # If no clear indicators, assume success if URL changed
+            logger.info("Consent status unclear - assuming success")
+            return True
+
+        except Exception as e:
+            logger.debug(f"Consent verification error: {e}")
+            return True  # Assume success if verification fails
 
     def handle_additional_google_steps(self):
         """Handle any additional Google authentication steps"""

@@ -8,7 +8,20 @@
       "Bash(rm:*)",
       "Bash(venv/bin/python:*)",
       "Bash(chmod:*)",
-      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python test_button_finder.py)"
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python test_button_finder.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python test_zero_touch.py)",
+      "Bash(curl:*)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python quick_sso_test.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python comprehensive_discovery.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python direct_job_automation.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python enhanced_job_finder.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python ultimate_job_applier.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python final_working_solution.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python linkedin_jobright_automation.py)",
+      "Bash(pkill:*)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python persistent_visual_automation.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python direct_visual_automation.py)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []
