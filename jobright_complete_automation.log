@@ -1,0 +1,49 @@
+2025-09-13 22:19:31,777 - INFO - ====== WebDriver manager ======
+2025-09-13 22:19:31,908 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-13 22:19:31,963 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-13 22:19:32,020 - INFO - Driver [/home/calelin/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
+2025-09-13 22:19:32,992 - INFO - Chrome WebDriver initialized successfully
+2025-09-13 22:19:32,993 - INFO - Navigating to: https://jobright.ai/jobs/recommend?pos=0
+2025-09-13 22:19:40,007 - INFO - Checking if login is required...
+2025-09-13 22:19:40,034 - INFO - Already logged in!
+2025-09-13 22:19:52,124 - WARNING - Error during page scrolling: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5621c2fbf08a <unknown>
+#1 0x5621c2a5ea70 <unknown>
+#2 0x5621c2a457fe <unknown>
+#3 0x5621c2a6d5c9 <unknown>
+#4 0x5621c2ade87f <unknown>
+#5 0x5621c2afbafc <unknown>
+#6 0x5621c2ad61b3 <unknown>
+#7 0x5621c2aa259b <unknown>
+#8 0x5621c2aa3971 <unknown>
+#9 0x5621c2f8425b <unknown>
+#10 0x5621c2f87fa9 <unknown>
+#11 0x5621c2f6b339 <unknown>
+#12 0x5621c2f88b58 <unknown>
+#13 0x5621c2f4fc1f <unknown>
+#14 0x5621c2fac118 <unknown>
+#15 0x5621c2fac2f6 <unknown>
+#16 0x5621c2fbe066 <unknown>
+#17 0x7f9646425b7b <unknown>
+
+2025-09-13 22:19:52,132 - ERROR - Failed to navigate to JobRight: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5621c2fbf08a <unknown>
+#1 0x5621c2a5e8c3 <unknown>
+#2 0x5621c2aa1ecf <unknown>
+#3 0x5621c2ad62e6 <unknown>
+#4 0x5621c2ad0de7 <unknown>
+#5 0x5621c2acff25 <unknown>
+#6 0x5621c2a26bd8 <unknown>
+#7 0x5621c2f8425b <unknown>
+#8 0x5621c2f87fa9 <unknown>
+#9 0x5621c2f6b339 <unknown>
+#10 0x5621c2f88b58 <unknown>
+#11 0x5621c2f4fc1f <unknown>
+#12 0x5621c2a24a24 <unknown>
+#13 0x7f96463bcca8 <unknown>
+
+2025-09-13 22:19:52,132 - INFO - Session results saved to: jobright_complete_session_20250913_221952.json

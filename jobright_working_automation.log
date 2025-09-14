@@ -1,0 +1,30 @@
+2025-09-13 22:23:31,907 - INFO - ====== WebDriver manager ======
+2025-09-13 22:23:32,098 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-13 22:23:32,158 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-13 22:23:32,279 - INFO - Driver [/home/calelin/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
+2025-09-13 22:23:33,018 - INFO - Chrome WebDriver initialized successfully
+2025-09-13 22:23:33,018 - INFO - Navigating to: https://jobright.ai/jobs/recommend?pos=0
+2025-09-13 22:23:46,003 - ERROR - Navigation failed: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5596a2b9c08a <unknown>
+#1 0x5596a263ba70 <unknown>
+#2 0x5596a26227fe <unknown>
+#3 0x5596a264a5c9 <unknown>
+#4 0x5596a26bb87f <unknown>
+#5 0x5596a26d8afc <unknown>
+#6 0x5596a26b31b3 <unknown>
+#7 0x5596a267f59b <unknown>
+#8 0x5596a2680971 <unknown>
+#9 0x5596a2b6125b <unknown>
+#10 0x5596a2b64fa9 <unknown>
+#11 0x5596a2b48339 <unknown>
+#12 0x5596a2b65b58 <unknown>
+#13 0x5596a2b2cc1f <unknown>
+#14 0x5596a2b89118 <unknown>
+#15 0x5596a2b892f6 <unknown>
+#16 0x5596a2b9b066 <unknown>
+#17 0x7f771c980b7b <unknown>
+
+2025-09-13 22:23:46,012 - INFO - Results saved to: jobright_working_results_20250913_222346.json
