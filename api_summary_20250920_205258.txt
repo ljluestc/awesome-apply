@@ -1,0 +1,20 @@
+JobRight.ai API Exploration Summary
+==================================================
+Timestamp: 2025-09-20T20:52:27.851734
+
+KNOWN ENDPOINT ANALYSIS (/jobs/api):
+------------------------------
+GET: 200 - text/html; charset=utf-8
+  Content Length: 716559
+POST: 200 - text/html; charset=utf-8
+  Content Length: 716559
+OPTIONS: 200 - text/html; charset=utf-8
+  Content Length: 716559
+
+Parameter Testing Results: 12 combinations tested
+
+WORKING ENDPOINTS:
+--------------------
+GET https://jobright.ai/jobs/api: 200
+POST https://jobright.ai/jobs/api: 200
+OPTIONS https://jobright.ai/jobs/api: 200

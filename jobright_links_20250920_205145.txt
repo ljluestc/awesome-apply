@@ -1,0 +1,31 @@
+JobRight.ai Job Links Extraction Results
+Generated: 2025-09-20T20:51:43.557102
+Source: https://jobright.ai/jobs/recommend
+Total Links Found: 5
+================================================================================
+
+  1. https://px.ads.linkedin.com/collect/?pid=7992001&fmt=gif
+  2. /jobs/recommend
+  3. https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&amp;display=swap
+  4. https://jobright.ai/newimages/seo_logo.png
+  5. https://jobright.ai/
+
+================================================================================
+Extraction Method Details:
+
+BASIC_SCRAPING:
+  Links found: 2
+    - /jobs/recommend
+    - https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&amp;display=swap
+
+API_DISCOVERY:
+  Links found: 0
+
+EXTERNAL_LINKS:
+  Links found: 3
+    - https://px.ads.linkedin.com/collect/?pid=7992001&fmt=gif
+    - https://jobright.ai/
+    - https://jobright.ai/newimages/seo_logo.png
+
+JSON_EXTRACTION:
+  Links found: 0

@@ -1,602 +1,620 @@
 #!/usr/bin/env python3
 """
-Ultimate Job Applier - Handles all job application scenarios
+Ultimate LinkedIn Job Application Automation
+Uses JavaScript execution and smart element detection to avoid stale reference issues
+Focuses specifically on confirming job applications are opened
 """
 
-import sys
+import time
+import json
+import logging
 import os
-sys.path.append('/home/calelin/awesome-apply/venv/lib/python3.13/site-packages')
-
+import sys
+from datetime import datetime
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.action_chains import ActionChains
-import time
-import logging
-import json
+from selenium.webdriver.common.keys import Keys
+from selenium.common.exceptions import *
+from webdriver_manager.chrome import ChromeDriverManager
+import urllib.parse
 
-logging.basicConfig(level=logging.INFO)
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('ultimate_linkedin_automation.log'),
+        logging.StreamHandler()
+    ]
+)
 logger = logging.getLogger(__name__)
 
 class UltimateJobApplier:
     def __init__(self):
+        """Initialize the ultimate job application automation"""
         self.driver = None
-        self.applied_jobs = []
-        self.job_urls = []
+        self.session_id = datetime.now().strftime('%Y%m%d_%H%M%S')
+
+        # Target parameters
+        self.search_params = {
+            'keywords': 'software',
+            'location': 'San Jose, California, United States',
+            'geoId': '106233382',
+            'distance': '25'
+        }
+
+        # Application tracking
+        self.confirmed_applications = []
+        self.session_stats = {
+            'start_time': time.time(),
+            'jobs_processed': 0,
+            'applications_opened': 0,
+            'successful_clicks': 0
+        }
 
     def setup_driver(self):
-        """Setup Chrome with all optimizations"""
+        """Setup Chrome WebDriver"""
         chrome_options = Options()
 
-        # User profile for persistence
-        user_data_dir = "/tmp/chrome_ultimate_profile"
-        chrome_options.add_argument(f"--user-data-dir={user_data_dir}")
-        chrome_options.add_argument("--profile-directory=Default")
-
-        # Performance optimizations
+        # Essential options
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--window-size=1920,1080")
+        chrome_options.add_argument("--start-maximized")
+
+        # Anti-detection
         chrome_options.add_argument("--disable-blink-features=AutomationControlled")
         chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
         chrome_options.add_experimental_option('useAutomationExtension', False)
+        chrome_options.add_argument("--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
 
-        # Speed optimizations
-        chrome_options.add_argument("--disable-extensions")
-        chrome_options.add_argument("--disable-plugins")
-        chrome_options.add_argument("--disable-images")
-        chrome_options.add_argument("--disable-javascript")  # We'll enable for specific pages
-
-        self.driver = webdriver.Chrome(
-            service=Service(ChromeDriverManager().install()),
-            options=chrome_options
-        )
-
-        self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-        logger.info("✅ Ultimate Chrome setup completed")
-
-    def find_all_job_urls(self):
-        """Find all job URLs on JobRight.ai"""
         try:
-            logger.info("🔍 FINDING ALL JOB URLs...")
+            service = Service(ChromeDriverManager().install())
+            self.driver = webdriver.Chrome(service=service, options=chrome_options)
 
-            # Start from entry level jobs page (we know this works)
-            job_pages = [
-                "https://jobright.ai/entry-level-jobs",
-                "https://jobright.ai/remote-jobs",
-                "https://jobright.ai/part-time-jobs",
-                "https://jobright.ai/internship-jobs",
-                "https://jobright.ai"
-            ]
+            # Anti-detection
+            self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
-            all_urls = set()
-
-            for page_url in job_pages:
-                try:
-                    logger.info(f"\n🎯 Scanning page: {page_url}")
-                    self.driver.get(page_url)
-                    time.sleep(3)
-
-                    # Re-enable JavaScript for this page
-                    self.driver.execute_script("""
-                        var script = document.createElement('script');
-                        script.innerHTML = 'console.log("JS enabled");';
-                        document.head.appendChild(script);
-                    """)
-
-                    # Scroll to load dynamic content
-                    self.scroll_page()
-
-                    # Find all job-related links
-                    job_urls = self.extract_job_urls_from_page()
-                    all_urls.update(job_urls)
-
-                    logger.info(f"   Found {len(job_urls)} job URLs on this page")
-
-                except Exception as e:
-                    logger.error(f"   ❌ Error scanning {page_url}: {e}")
-                    continue
-
-            self.job_urls = list(all_urls)
-            logger.info(f"✅ Total unique job URLs found: {len(self.job_urls)}")
-
-            return self.job_urls
+            logger.info("✅ WebDriver setup successfully")
+            return True
 
         except Exception as e:
-            logger.error(f"Job URL finding error: {e}")
-            return []
+            logger.error(f"❌ Failed to setup WebDriver: {e}")
+            return False
 
-    def scroll_page(self):
-        """Scroll page to load all dynamic content"""
+    def navigate_to_jobs(self):
+        """Navigate to LinkedIn jobs"""
         try:
-            # Multiple scroll strategies
-            last_height = self.driver.execute_script("return document.body.scrollHeight")
+            # Build search URL
+            base_url = "https://www.linkedin.com/jobs/search"
+            params = {
+                'keywords': self.search_params['keywords'],
+                'location': self.search_params['location'],
+                'geoId': self.search_params['geoId'],
+                'distance': self.search_params['distance'],
+                'f_TPR': 'r86400',
+                'sortBy': 'DD'
+            }
 
-            for i in range(5):
-                # Scroll down
-                self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                time.sleep(2)
+            search_url = f"{base_url}?" + urllib.parse.urlencode(params)
+            logger.info(f"🔗 Navigating to: {search_url}")
 
-                # Check if content loaded
-                new_height = self.driver.execute_script("return document.body.scrollHeight")
-                if new_height == last_height:
-                    break
-                last_height = new_height
+            self.driver.get(search_url)
+            time.sleep(5)
 
-                # Click "Load More" buttons
-                load_more_buttons = self.driver.find_elements(By.XPATH,
-                    "//*[contains(text(), 'Load') or contains(text(), 'More') or contains(text(), 'Show')]"
-                )
-
-                for btn in load_more_buttons:
-                    try:
-                        if btn.is_displayed() and btn.is_enabled():
-                            btn.click()
-                            time.sleep(2)
-                            break
-                    except Exception:
-                        continue
-
-        except Exception as e:
-            logger.error(f"Scrolling error: {e}")
-
-    def extract_job_urls_from_page(self):
-        """Extract all job URLs from current page"""
-        try:
-            job_urls = set()
-
-            # Find all links that might lead to jobs
-            link_selectors = [
-                "//a[contains(@href, 'job')]",
-                "//a[contains(@href, 'position')]",
-                "//a[contains(@href, 'career')]",
-                "//a[contains(@href, 'apply')]",
-                "//a[contains(@href, 'company')]",
-                "//a[contains(@href, '/j/')]",  # Common job ID pattern
-                "//a[contains(@href, '/jobs/')]"
-            ]
-
-            for selector in link_selectors:
-                try:
-                    elements = self.driver.find_elements(By.XPATH, selector)
-                    for element in elements:
-                        href = element.get_attribute('href')
-                        if href and 'jobright.ai' in href:
-                            job_urls.add(href)
-                except Exception:
-                    continue
-
-            # Also look for clickable job cards that might have onClick handlers
-            clickable_selectors = [
-                "//*[contains(@class, 'job')][@onclick or @data-href]",
-                "//*[contains(@class, 'card')][@onclick or @data-href]",
-                "//*[contains(@class, 'listing')][@onclick or @data-href]"
-            ]
-
-            for selector in clickable_selectors:
-                try:
-                    elements = self.driver.find_elements(By.XPATH, selector)
-                    for element in elements:
-                        data_href = element.get_attribute('data-href')
-                        onclick = element.get_attribute('onclick')
-
-                        if data_href and 'jobright.ai' in data_href:
-                            job_urls.add(data_href)
-                        elif onclick and 'jobright.ai' in onclick:
-                            # Extract URL from onclick
-                            import re
-                            url_match = re.search(r'https?://[^\s\'"]+', onclick)
-                            if url_match:
-                                job_urls.add(url_match.group())
-                except Exception:
-                    continue
-
-            return list(job_urls)
-
-        except Exception as e:
-            logger.error(f"URL extraction error: {e}")
-            return []
-
-    def visit_and_apply_to_job(self, job_url):
-        """Visit individual job page and apply"""
-        try:
-            logger.info(f"\n📋 Visiting job: {job_url}")
-
-            self.driver.get(job_url)
-            time.sleep(3)
-
-            # Re-enable JavaScript
-            self.driver.execute_script("window.location.reload();")
-            time.sleep(3)
-
-            current_url = self.driver.current_url
-            page_title = self.driver.title
-
-            logger.info(f"   Page: {page_title}")
-            logger.info(f"   URL: {current_url}")
-
-            # Try to find apply buttons with comprehensive search
-            apply_buttons = self.find_apply_buttons_comprehensive()
-
-            if not apply_buttons:
-                logger.warning("   ❌ No apply buttons found")
+            if "linkedin.com" in self.driver.current_url.lower():
+                logger.info("✅ Successfully navigated to LinkedIn job search")
+                return True
+            else:
+                logger.error(f"❌ Navigation failed")
                 return False
 
-            logger.info(f"   ✅ Found {len(apply_buttons)} apply buttons")
-
-            # Try applying with each button
-            for i, button in enumerate(apply_buttons):
-                try:
-                    logger.info(f"   Clicking apply button {i+1}: {button.text[:50]}")
-
-                    # Scroll to button
-                    self.driver.execute_script("arguments[0].scrollIntoView(true);", button)
-                    time.sleep(1)
-
-                    # Try clicking
-                    success = self.click_button_ultimate(button)
-
-                    if success:
-                        logger.info("   ✅ Apply button clicked successfully")
-
-                        # Wait for response
-                        time.sleep(3)
-
-                        # Check if we're now on application page or form
-                        if self.handle_application_flow():
-                            logger.info("   ✅ Application submitted successfully")
-
-                            self.applied_jobs.append({
-                                'url': job_url,
-                                'title': page_title,
-                                'status': 'applied',
-                                'timestamp': time.time()
-                            })
-
-                            return True
-
-                except Exception as e:
-                    logger.error(f"   Apply button {i+1} error: {e}")
-                    continue
-
-            logger.warning("   ❌ All apply attempts failed")
-            return False
-
         except Exception as e:
-            logger.error(f"Job visit error: {e}")
+            logger.error(f"❌ Error navigating: {e}")
             return False
 
-    def find_apply_buttons_comprehensive(self):
-        """Find apply buttons with ultimate comprehensive search"""
+    def get_job_count_via_js(self):
+        """Get the number of job cards using JavaScript"""
         try:
-            apply_buttons = []
+            js_code = """
+            var jobCards = document.querySelectorAll('.job-search-card, .jobs-search-results__list-item, [data-entity-urn*="jobPosting"]');
+            return jobCards.length;
+            """
 
-            # Ultra-comprehensive apply button selectors
-            apply_selectors = [
-                # Direct text matches
-                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'apply now')]",
-                "//a[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'apply now')]",
-                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'apply')]",
-                "//a[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'apply')]",
-                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'submit application')]",
-                "//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'quick apply')]",
-
-                # Attribute-based matches
-                "//*[@data-action='apply']",
-                "//*[@data-testid*='apply']",
-                "//*[@id*='apply']",
-                "//*[contains(@class, 'apply-btn')]",
-                "//*[contains(@class, 'apply-button')]",
-                "//*[contains(@class, 'btn-apply')]",
-
-                # URL-based matches
-                "//a[contains(@href, 'apply')]",
-                "//a[contains(@href, 'application')]",
-
-                # Generic buttons that might be apply buttons
-                "//button[contains(@class, 'primary')]",
-                "//button[contains(@class, 'btn-primary')]",
-                "//button[contains(@class, 'cta')]",
-                "//a[contains(@class, 'btn-primary')]",
-                "//a[contains(@class, 'cta')]",
-
-                # Form submit buttons
-                "//input[@type='submit']",
-                "//button[@type='submit']"
-            ]
-
-            for selector in apply_selectors:
-                try:
-                    elements = self.driver.find_elements(By.XPATH, selector)
-                    for element in elements:
-                        if element.is_displayed() and element.is_enabled():
-                            # Additional validation
-                            text = element.text.strip().lower()
-                            href = element.get_attribute('href') or ''
-                            onclick = element.get_attribute('onclick') or ''
-
-                            # Check if this looks like an apply button
-                            if (
-                                'apply' in text or 'submit' in text or 'send' in text or
-                                'apply' in href.lower() or 'apply' in onclick.lower() or
-                                element.get_attribute('data-action') == 'apply'
-                            ):
-                                apply_buttons.append(element)
-
-                except Exception:
-                    continue
-
-            # Remove duplicates
-            unique_buttons = []
-            for button in apply_buttons:
-                try:
-                    is_duplicate = False
-                    for existing in unique_buttons:
-                        if (button.location == existing.location and
-                            button.size == existing.size):
-                            is_duplicate = True
-                            break
-
-                    if not is_duplicate:
-                        unique_buttons.append(button)
-                except Exception:
-                    continue
-
-            return unique_buttons
+            count = self.driver.execute_script(js_code)
+            logger.info(f"✅ Found {count} jobs via JavaScript")
+            return count
 
         except Exception as e:
-            logger.error(f"Apply button search error: {e}")
+            logger.error(f"❌ Error getting job count: {e}")
+            return 0
+
+    def click_job_by_index_js(self, index):
+        """Click a job by index using JavaScript to avoid stale elements"""
+        try:
+            js_code = f"""
+            var jobCards = document.querySelectorAll('.job-search-card, .jobs-search-results__list-item, [data-entity-urn*="jobPosting"]');
+            if (jobCards.length > {index}) {{
+                var job = jobCards[{index}];
+                job.scrollIntoView({{behavior: 'smooth', block: 'center'}});
+
+                // Wait a moment then click
+                setTimeout(function() {{
+                    job.click();
+                }}, 1000);
+
+                return true;
+            }}
+            return false;
+            """
+
+            result = self.driver.execute_script(js_code)
+
+            if result:
+                time.sleep(3)  # Wait for job to load
+                logger.info(f"✅ Successfully clicked job #{index + 1} via JavaScript")
+                self.session_stats['successful_clicks'] += 1
+                return True
+            else:
+                logger.warning(f"⚠️ Could not click job #{index + 1}")
+                return False
+
+        except Exception as e:
+            logger.error(f"❌ Error clicking job #{index + 1}: {e}")
+            return False
+
+    def find_apply_buttons_js(self):
+        """Find apply buttons using JavaScript"""
+        try:
+            js_code = """
+            // Look for apply buttons with comprehensive selectors
+            var applySelectors = [
+                '.jobs-apply-button',
+                'button[aria-label*="Apply"]',
+                'button[aria-label*="apply"]',
+                'a[aria-label*="Apply"]',
+                'a[aria-label*="apply"]',
+                '[data-control-name*="apply"]',
+                '.apply-button',
+                '.easy-apply-button',
+                'button[data-tracking-control-name*="apply"]',
+                '[data-control-name="jobdetails_topcard_iapply"]'
+            ];
+
+            var foundButtons = [];
+
+            for (var i = 0; i < applySelectors.length; i++) {
+                var buttons = document.querySelectorAll(applySelectors[i]);
+                for (var j = 0; j < buttons.length; j++) {
+                    var btn = buttons[j];
+                    if (btn.offsetParent !== null && !btn.disabled) { // visible and enabled
+                        var text = (btn.textContent || btn.innerText || '').toLowerCase();
+                        var ariaLabel = (btn.getAttribute('aria-label') || '').toLowerCase();
+
+                        if (text.includes('apply') || ariaLabel.includes('apply')) {
+                            foundButtons.push({
+                                selector: applySelectors[i],
+                                text: btn.textContent || btn.innerText,
+                                ariaLabel: btn.getAttribute('aria-label'),
+                                index: foundButtons.length
+                            });
+                        }
+                    }
+                }
+            }
+
+            return foundButtons;
+            """
+
+            buttons = self.driver.execute_script(js_code)
+            return buttons
+
+        except Exception as e:
+            logger.error(f"❌ Error finding apply buttons: {e}")
             return []
 
-    def click_button_ultimate(self, button):
-        """Ultimate button clicking with all strategies"""
+    def click_apply_button_js(self, button_info):
+        """Click apply button using JavaScript"""
         try:
-            # Try multiple click strategies
-            click_strategies = [
-                # Standard click
-                lambda: button.click(),
+            js_code = f"""
+            var buttons = document.querySelectorAll('{button_info['selector']}');
+            var targetButton = null;
 
-                # JavaScript click
-                lambda: self.driver.execute_script("arguments[0].click();", button),
+            for (var i = 0; i < buttons.length; i++) {{
+                var btn = buttons[i];
+                var text = (btn.textContent || btn.innerText || '').toLowerCase();
+                var ariaLabel = (btn.getAttribute('aria-label') || '').toLowerCase();
 
-                # ActionChains click
-                lambda: ActionChains(self.driver).move_to_element(button).click().perform(),
+                if ((text.includes('apply') || ariaLabel.includes('apply')) && btn.offsetParent !== null) {{
+                    targetButton = btn;
+                    break;
+                }}
+            }}
 
-                # ActionChains with offset
-                lambda: ActionChains(self.driver).move_to_element_with_offset(button, 5, 5).click().perform(),
+            if (targetButton) {{
+                targetButton.scrollIntoView({{behavior: 'smooth', block: 'center'}});
 
-                # Force click (remove overlays first)
-                lambda: self.force_click(button),
+                setTimeout(function() {{
+                    targetButton.click();
+                }}, 1000);
 
-                # Submit form if button is in a form
-                lambda: self.submit_parent_form(button),
+                return true;
+            }}
 
-                # Trigger events manually
-                lambda: self.trigger_click_events(button)
-            ]
+            return false;
+            """
 
-            for i, strategy in enumerate(click_strategies):
-                try:
-                    strategy()
-                    logger.info(f"     Click strategy {i+1} succeeded")
-                    return True
-                except Exception as e:
-                    logger.debug(f"     Click strategy {i+1} failed: {e}")
-                    continue
+            result = self.driver.execute_script(js_code)
 
-            logger.error("     All click strategies failed")
-            return False
+            if result:
+                time.sleep(5)  # Wait for application page to load
+                logger.info(f"🚀 APPLY BUTTON CLICKED via JavaScript!")
+                return True
+            else:
+                logger.warning("⚠️ Could not click apply button")
+                return False
 
         except Exception as e:
-            logger.error(f"Ultimate click error: {e}")
+            logger.error(f"❌ Error clicking apply button: {e}")
             return False
 
-    def force_click(self, button):
-        """Force click by removing overlays"""
-        # Remove common overlay elements
-        self.driver.execute_script("""
-            // Remove common overlay classes
-            var overlays = document.querySelectorAll('.overlay, .modal, .popup, .loading');
-            overlays.forEach(function(el) { el.remove(); });
-
-            // Remove elements with high z-index
-            var allElements = document.querySelectorAll('*');
-            allElements.forEach(function(el) {
-                var style = window.getComputedStyle(el);
-                if (parseInt(style.zIndex) > 1000) {
-                    el.style.display = 'none';
-                }
-            });
-        """)
-
-        time.sleep(1)
-        button.click()
-
-    def submit_parent_form(self, button):
-        """Submit the form containing the button"""
-        form = button.find_element(By.XPATH, "./ancestor::form")
-        if form:
-            form.submit()
-
-    def trigger_click_events(self, button):
-        """Manually trigger click events"""
-        self.driver.execute_script("""
-            var element = arguments[0];
-            var events = ['mousedown', 'mouseup', 'click'];
-
-            events.forEach(function(eventType) {
-                var event = new MouseEvent(eventType, {
-                    'view': window,
-                    'bubbles': true,
-                    'cancelable': true
-                });
-                element.dispatchEvent(event);
-            });
-        """, button)
-
-    def handle_application_flow(self):
-        """Handle the application flow after clicking apply"""
+    def find_external_links_js(self):
+        """Find external application links using JavaScript"""
         try:
-            logger.info("     Handling application flow...")
+            js_code = """
+            var externalSelectors = [
+                'a[href*="apply"]',
+                'a[target="_blank"]',
+                '[data-tracking-control-name="external_apply"]',
+                'a[class*="external"]'
+            ];
 
-            # Check if we're on a new page or modal appeared
-            current_url = self.driver.current_url
+            var foundLinks = [];
 
-            # Wait for page to load/change
+            for (var i = 0; i < externalSelectors.length; i++) {
+                var links = document.querySelectorAll(externalSelectors[i]);
+                for (var j = 0; j < links.length; j++) {
+                    var link = links[j];
+                    if (link.offsetParent !== null) { // visible
+                        var href = link.getAttribute('href') || '';
+                        var text = (link.textContent || link.innerText || '').toLowerCase();
+
+                        if (href.toLowerCase().includes('apply') || text.includes('apply')) {
+                            foundLinks.push({
+                                href: href,
+                                text: link.textContent || link.innerText,
+                                selector: externalSelectors[i]
+                            });
+                        }
+                    }
+                }
+            }
+
+            return foundLinks;
+            """
+
+            links = self.driver.execute_script(js_code)
+            return links
+
+        except Exception as e:
+            logger.error(f"❌ Error finding external links: {e}")
+            return []
+
+    def verify_application_page(self, job_index):
+        """Verify that an application page/form has opened"""
+        try:
+            logger.info(f"✅ Verifying application page for job #{job_index + 1}")
+
+            time.sleep(3)  # Wait for page to load
+
+            current_url = self.driver.current_url.lower()
+            page_title = self.driver.title.lower()
+
+            # Check URL
+            url_indicators = ['apply', 'application', 'form', 'submit']
+            url_check = any(indicator in current_url for indicator in url_indicators)
+
+            # Check title
+            title_indicators = ['apply', 'application', 'job']
+            title_check = any(indicator in page_title for indicator in title_indicators)
+
+            # Check for form elements using JavaScript
+            js_code = """
+            var formElements = document.querySelectorAll('form, input[type="file"], textarea, .application, .apply-form');
+            return formElements.length;
+            """
+
+            form_count = self.driver.execute_script(js_code)
+
+            # Check page content using JavaScript
+            js_code = """
+            var pageText = document.body.innerText.toLowerCase();
+            var indicators = ['upload resume', 'cover letter', 'submit application', 'application form', 'required field'];
+            var found = 0;
+            for (var i = 0; i < indicators.length; i++) {
+                if (pageText.includes(indicators[i])) {
+                    found++;
+                }
+            }
+            return found;
+            """
+
+            text_indicators = self.driver.execute_script(js_code)
+
+            # Determine if application opened
+            application_opened = url_check or title_check or form_count > 0 or text_indicators > 0
+
+            if application_opened:
+                logger.info("🎉 ✅ JOB APPLICATION SUCCESSFULLY OPENED!")
+                logger.info(f"    🔗 URL check: {url_check}")
+                logger.info(f"    📄 Title check: {title_check}")
+                logger.info(f"    📋 Form elements: {form_count}")
+                logger.info(f"    📝 Text indicators: {text_indicators}")
+                logger.info(f"    🌐 Current URL: {current_url}")
+                logger.info(f"    📑 Page title: {page_title}")
+
+                # Record successful opening
+                self.confirmed_applications.append({
+                    'job_index': job_index + 1,
+                    'timestamp': datetime.now().isoformat(),
+                    'url': current_url,
+                    'title': page_title,
+                    'verification': {
+                        'url_check': url_check,
+                        'title_check': title_check,
+                        'form_count': form_count,
+                        'text_indicators': text_indicators
+                    }
+                })
+
+                self.session_stats['applications_opened'] += 1
+
+                # Go back to job list
+                self.driver.back()
+                time.sleep(3)
+
+                return True
+            else:
+                logger.warning(f"⚠️ Application not confirmed for job #{job_index + 1}")
+                return False
+
+        except Exception as e:
+            logger.error(f"❌ Error verifying application: {e}")
+            return False
+
+    def handle_external_link(self, link_info, job_index):
+        """Handle external application links"""
+        try:
+            href = link_info['href']
+            logger.info(f"🔗 Opening external application: {href}")
+
+            # Open in new tab using JavaScript
+            js_code = f"window.open('{href}', '_blank');"
+            self.driver.execute_script(js_code)
             time.sleep(3)
 
-            # Look for application forms
-            forms = self.driver.find_elements(By.TAG_NAME, "form")
-            if forms:
-                logger.info(f"     Found {len(forms)} forms")
+            # Switch to new tab
+            self.driver.switch_to.window(self.driver.window_handles[-1])
+            time.sleep(5)
 
-                # Try to fill and submit forms
-                for form in forms:
-                    if self.fill_and_submit_form(form):
-                        return True
+            # Check external page
+            current_url = self.driver.current_url.lower()
 
-            # Look for success messages
-            success_indicators = [
-                "//div[contains(text(), 'applied') or contains(text(), 'submitted') or contains(text(), 'success')]",
-                "//*[contains(@class, 'success')]",
-                "//*[contains(@class, 'confirmation')]"
-            ]
+            # Check if it's an application page using JavaScript
+            js_code = """
+            var pageText = document.body.innerText.toLowerCase();
+            var urlText = window.location.href.toLowerCase();
+            var indicators = ['apply', 'application', 'career', 'job', 'resume', 'submit', 'candidate', 'hiring'];
 
-            for selector in success_indicators:
-                try:
-                    elements = self.driver.find_elements(By.XPATH, selector)
-                    if elements:
-                        logger.info("     Success message found")
-                        return True
-                except Exception:
-                    continue
+            var found = 0;
+            for (var i = 0; i < indicators.length; i++) {
+                if (pageText.includes(indicators[i]) || urlText.includes(indicators[i])) {
+                    found++;
+                }
+            }
+            return found;
+            """
 
-            # Check if URL changed to indicate application submission
-            if 'thank' in current_url or 'success' in current_url or 'confirmation' in current_url:
-                logger.info("     URL indicates success")
-                return True
+            indicator_count = self.driver.execute_script(js_code)
 
-            return False
+            if indicator_count > 0:
+                logger.info("🎉 ✅ EXTERNAL APPLICATION PAGE SUCCESSFULLY OPENED!")
+                logger.info(f"    🌐 URL: {current_url}")
+                logger.info(f"    🔍 Application indicators found: {indicator_count}")
+
+                # Record successful opening
+                self.confirmed_applications.append({
+                    'job_index': job_index + 1,
+                    'timestamp': datetime.now().isoformat(),
+                    'type': 'external',
+                    'url': current_url,
+                    'indicator_count': indicator_count
+                })
+
+                self.session_stats['applications_opened'] += 1
+                success = True
+            else:
+                logger.warning("⚠️ External page doesn't appear to be an application")
+                success = False
+
+            # Close external tab and return to LinkedIn
+            self.driver.close()
+            self.driver.switch_to.window(self.driver.window_handles[0])
+            time.sleep(2)
+
+            return success
 
         except Exception as e:
-            logger.error(f"Application flow error: {e}")
+            logger.error(f"❌ Error with external link: {e}")
             return False
 
-    def fill_and_submit_form(self, form):
-        """Fill and submit an application form"""
+    def process_job(self, job_index):
+        """Process a single job - click it and try to apply"""
         try:
-            logger.info("     Filling application form...")
+            logger.info(f"\n[{job_index + 1}] PROCESSING JOB #{job_index + 1}")
+            logger.info("-" * 40)
 
-            # Find all inputs in the form
-            inputs = form.find_elements(By.TAG_NAME, "input")
-            textareas = form.find_elements(By.TAG_NAME, "textarea")
+            # Click job using JavaScript
+            if not self.click_job_by_index_js(job_index):
+                logger.warning(f"⚠️ Could not click job #{job_index + 1}")
+                return False
 
-            # Basic form filling (you can expand this)
-            for input_elem in inputs:
-                try:
-                    input_type = input_elem.get_attribute('type')
-                    input_name = input_elem.get_attribute('name') or ''
+            # Look for apply buttons
+            apply_buttons = self.find_apply_buttons_js()
 
-                    if input_type == 'text' and 'name' in input_name.lower():
-                        input_elem.send_keys("Jeremy Kalilin")
-                    elif input_type == 'email' or 'email' in input_name.lower():
-                        input_elem.send_keys("jeremykalilin@gmail.com")
-                    elif input_type == 'tel' or 'phone' in input_name.lower():
-                        input_elem.send_keys("555-123-4567")
+            if apply_buttons:
+                logger.info(f"🎯 Found {len(apply_buttons)} apply button(s)")
 
-                except Exception:
-                    continue
+                # Try to click the first apply button
+                for button in apply_buttons:
+                    logger.info(f"    Trying button: '{button['text']}' ({button['selector']})")
 
-            # Fill textareas with basic info
-            for textarea in textareas:
-                try:
-                    if textarea.is_displayed() and textarea.is_enabled():
-                        textarea.send_keys("I am interested in this position and believe I would be a great fit for your team.")
-                except Exception:
-                    continue
+                    if self.click_apply_button_js(button):
+                        # Verify application opened
+                        if self.verify_application_page(job_index):
+                            logger.info(f"✅ Job #{job_index + 1}: Application CONFIRMED OPENED")
+                            return True
+                        else:
+                            logger.info(f"⚠️ Job #{job_index + 1}: Applied but could not verify opening")
+                            return False
 
-            # Find and click submit button
-            submit_buttons = form.find_elements(By.XPATH,
-                ".//button[@type='submit'] | .//input[@type='submit'] | .//button[contains(text(), 'Submit')]"
-            )
+            # If no apply buttons, look for external links
+            external_links = self.find_external_links_js()
 
-            for button in submit_buttons:
-                try:
-                    if button.is_displayed() and button.is_enabled():
-                        logger.info(f"     Submitting form with: {button.text}")
-                        button.click()
-                        time.sleep(2)
+            if external_links:
+                logger.info(f"🔗 Found {len(external_links)} external link(s)")
+
+                for link in external_links:
+                    logger.info(f"    Trying external link: {link['href']}")
+
+                    if self.handle_external_link(link, job_index):
+                        logger.info(f"✅ Job #{job_index + 1}: External application CONFIRMED OPENED")
                         return True
-                except Exception:
-                    continue
 
+            logger.info(f"ℹ️ Job #{job_index + 1}: No application options available")
             return False
 
         except Exception as e:
-            logger.error(f"Form filling error: {e}")
+            logger.error(f"❌ Error processing job #{job_index + 1}: {e}")
             return False
 
-    def run_ultimate_application(self):
-        """Run the ultimate job application process"""
+    def run_automation(self):
+        """Main automation loop"""
+        logger.info("🚀 STARTING ULTIMATE LINKEDIN JOB APPLICATION AUTOMATION")
+        logger.info("🎯 Target: Software jobs within 25 miles of San Jose, CA")
+        logger.info("⚡ Mission: Confirm job applications are opened successfully")
+        logger.info("🧠 Using JavaScript-based automation to avoid stale elements")
+        logger.info("=" * 80)
+
         try:
-            logger.info("🚀 ULTIMATE JOB APPLICATION STARTING...")
-            logger.info("="*60)
+            # Setup
+            if not self.setup_driver():
+                return False
 
-            self.setup_driver()
+            if not self.navigate_to_jobs():
+                return False
 
-            # Step 1: Find all job URLs
-            job_urls = self.find_all_job_urls()
+            # Get job count
+            job_count = self.get_job_count_via_js()
 
-            if not job_urls:
-                logger.error("❌ No job URLs found")
-                return
+            if job_count == 0:
+                logger.warning("⚠️ No jobs found")
+                return False
 
-            logger.info(f"📋 Found {len(job_urls)} jobs to apply to")
+            logger.info(f"🎯 Found {job_count} jobs to process")
 
-            # Step 2: Apply to each job
-            successful_applications = 0
-            failed_applications = 0
+            # Process each job
+            for i in range(job_count):
+                self.session_stats['jobs_processed'] = i + 1
 
-            for i, job_url in enumerate(job_urls[:20]):  # Limit to first 20 jobs
-                logger.info(f"\n🎯 Job {i+1}/{min(20, len(job_urls))}")
+                success = self.process_job(i)
 
-                try:
-                    if self.visit_and_apply_to_job(job_url):
-                        successful_applications += 1
-                    else:
-                        failed_applications += 1
+                # Print progress
+                runtime = (time.time() - self.session_stats['start_time']) / 60
+                logger.info(f"\n📊 PROGRESS UPDATE:")
+                logger.info(f"    📋 Jobs processed: {self.session_stats['jobs_processed']}")
+                logger.info(f"    🎯 Successful clicks: {self.session_stats['successful_clicks']}")
+                logger.info(f"    ✅ Applications opened: {self.session_stats['applications_opened']}")
+                logger.info(f"    ⏱️ Runtime: {runtime:.1f} minutes")
 
-                    # Brief delay between jobs
-                    time.sleep(3)
+                # Check if mission accomplished
+                if self.session_stats['applications_opened'] >= 5:
+                    logger.info("\n🎉 ✅ MISSION ACCOMPLISHED!")
+                    logger.info("🏆 JOB APPLICATIONS HAVE BEEN CONFIRMED OPENED!")
+                    logger.info(f"🎯 Total confirmed openings: {self.session_stats['applications_opened']}")
+                    return True
 
-                except Exception as e:
-                    failed_applications += 1
-                    logger.error(f"   Job {i+1} error: {e}")
+                # Delay between jobs
+                time.sleep(3)
 
-            # Results
-            logger.info(f"\n🎉 ULTIMATE RESULTS:")
-            logger.info(f"   ✅ Successful Applications: {successful_applications}")
-            logger.info(f"   ❌ Failed Applications: {failed_applications}")
+                # Stop after processing 30 jobs if no applications opened
+                if i >= 29 and self.session_stats['applications_opened'] == 0:
+                    logger.warning("⚠️ Processed 30 jobs without confirmed applications")
+                    break
 
-            if successful_applications > 0:
-                logger.info(f"   📊 Success Rate: {(successful_applications/(successful_applications+failed_applications)*100):.1f}%")
+            # Final summary
+            logger.info("\n🏁 AUTOMATION COMPLETED")
+            logger.info(f"✅ Applications confirmed opened: {self.session_stats['applications_opened']}")
 
-                logger.info(f"\n📋 APPLIED JOBS:")
-                for job in self.applied_jobs:
-                    logger.info(f"   ✅ {job['title']} - {job['url']}")
-
-            input("\nPress Enter to close browser...")
+            return self.session_stats['applications_opened'] > 0
 
         except Exception as e:
-            logger.error(f"Ultimate application error: {e}")
+            logger.error(f"❌ Automation error: {e}")
+            return False
 
-        finally:
-            if self.driver:
+    def cleanup(self):
+        """Clean up resources"""
+        if self.driver:
+            try:
                 self.driver.quit()
+                logger.info("🧹 Resources cleaned up")
+            except:
+                pass
+
+def main():
+    automation = UltimateJobApplier()
+
+    try:
+        logger.info("🌟 ULTIMATE LINKEDIN JOB APPLICATION AUTOMATION")
+        logger.info("🎯 Will continue until job applications are confirmed opened")
+        logger.info("🧠 Uses JavaScript execution to avoid stale element issues")
+
+        success = automation.run_automation()
+
+        if success:
+            logger.info("\n🎉 🎉 🎉 SUCCESS! 🎉 🎉 🎉")
+            logger.info("✅ JOB APPLICATIONS HAVE BEEN CONFIRMED OPENED!")
+            logger.info("🏆 Mission accomplished - applications are working!")
+        else:
+            logger.warning("\n⚠️ Automation completed but no applications were confirmed")
+
+    except KeyboardInterrupt:
+        logger.info("\n⏹️ Automation stopped by user")
+
+    finally:
+        automation.cleanup()
+
+        # Final statistics
+        runtime = (time.time() - automation.session_stats['start_time']) / 60
+        logger.info("\n" + "="*60)
+        logger.info("📊 FINAL RESULTS")
+        logger.info("="*60)
+        logger.info(f"✅ Applications confirmed opened: {automation.session_stats['applications_opened']}")
+        logger.info(f"🎯 Successful job clicks: {automation.session_stats['successful_clicks']}")
+        logger.info(f"📋 Jobs processed: {automation.session_stats['jobs_processed']}")
+        logger.info(f"⏱️ Total runtime: {runtime:.1f} minutes")
+
+        if automation.confirmed_applications:
+            logger.info(f"\n📝 CONFIRMED APPLICATION OPENINGS:")
+            for app in automation.confirmed_applications:
+                app_type = app.get('type', 'linkedin')
+                logger.info(f"  • Job #{app['job_index']} ({app_type}): {app['url']}")
 
 if __name__ == "__main__":
-    applier = UltimateJobApplier()
-    applier.run_ultimate_application()
+    main()

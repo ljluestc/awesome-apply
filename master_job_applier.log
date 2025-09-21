@@ -1,0 +1,274 @@
+2025-09-20 09:19:18,506 - INFO - 🌟 MASTER JOB APPLICATION AUTOMATION
+2025-09-20 09:19:18,506 - INFO - 🎯 Multi-platform automation with comprehensive strategies
+2025-09-20 09:19:18,506 - INFO - 🔄 Will continue trying until jobs are successfully applied to
+2025-09-20 09:19:18,506 - INFO - 🚀 MASTER JOB APPLICATION AUTOMATION STARTING
+2025-09-20 09:19:18,506 - INFO - 🎯 Multi-platform, multi-strategy approach
+2025-09-20 09:19:18,506 - INFO - ⚡ Will continue until jobs are successfully applied to
+2025-09-20 09:19:18,506 - INFO - ================================================================================
+2025-09-20 09:19:18,506 - INFO - ====== WebDriver manager ======
+2025-09-20 09:19:18,607 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-20 09:19:18,705 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-20 09:19:18,753 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-20 09:19:18,886 - INFO - WebDriver version 139.0.7258.154 selected
+2025-09-20 09:19:18,888 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/linux64/chromedriver-linux64.zip
+2025-09-20 09:19:18,889 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/linux64/chromedriver-linux64.zip
+2025-09-20 09:19:18,951 - INFO - Driver downloading response is 200
+2025-09-20 09:19:19,889 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-20 09:19:20,055 - INFO - Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154]
+2025-09-20 09:19:20,844 - INFO - ✅ WebDriver setup successfully
+2025-09-20 09:19:20,845 - INFO - 
+🎯 PROCESSING PLATFORM: JobRight
+2025-09-20 09:19:20,845 - INFO - 🔗 URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:19:20,845 - INFO - ============================================================
+2025-09-20 09:19:28,691 - INFO - 📍 Navigated to: https://jobright.ai/entry-level-jobs
+2025-09-20 09:19:28,696 - INFO - 📑 Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:19:32,548 - INFO - 📜 Intelligent scrolling completed (0 scrolls)
+2025-09-20 09:19:33,748 - INFO - 🔍 Found 38 potential apply elements
+2025-09-20 09:19:33,748 - INFO - 🎯 Found 38 apply elements to try
+2025-09-20 09:19:33,748 - INFO - 
+[1/38] ATTEMPTING APPLICATION
+2025-09-20 09:19:33,748 - INFO - Text: 'The Top AI/ML Jobs from Trending AI Companies'
+2025-09-20 09:19:33,748 - INFO - Selector: a[target='_blank']
+2025-09-20 09:19:34,975 - INFO - ✅ Regular click successful
+2025-09-20 09:19:38,291 - INFO - 📂 New window detected, switching to it
+2025-09-20 09:19:42,616 - INFO - 🔍 Found 24 potential apply elements
+2025-09-20 09:19:42,616 - INFO - 🎯 Found 24 additional apply options in new window
+2025-09-20 09:19:43,767 - INFO - ✅ Regular click successful
+2025-09-20 09:19:43,767 - INFO - ✅ Successfully clicked apply in new window
+2025-09-20 09:19:49,770 - INFO - 🎉 ✅ APPLICATION SUCCESS DETECTED!
+2025-09-20 09:19:49,770 - INFO -     URL changed: False
+2025-09-20 09:19:49,770 - INFO -     New window: True
+2025-09-20 09:19:49,770 - INFO -     Application URL: True
+2025-09-20 09:19:49,770 - INFO -     Application title: True
+2025-09-20 09:19:49,770 - INFO -     Form present: True
+2025-09-20 09:19:49,770 - INFO -     Success text: True
+2025-09-20 09:19:49,770 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:19:49,770 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:19:49,770 - INFO - ✅ APPLICATION #1 SUCCESSFUL!
+2025-09-20 09:19:51,832 - INFO - 
+[2/38] ATTEMPTING APPLICATION
+2025-09-20 09:19:51,832 - INFO - Text: 'The Ultimate 2025 U.S. Internships List'
+2025-09-20 09:19:51,832 - INFO - Selector: a[target='_blank']
+2025-09-20 09:19:53,730 - INFO - ✅ Regular click successful
+2025-09-20 09:19:58,375 - INFO - 📂 New window detected, switching to it
+2025-09-20 09:20:03,201 - INFO - 🔍 Found 73 potential apply elements
+2025-09-20 09:20:03,201 - INFO - 🎯 Found 73 additional apply options in new window
+2025-09-20 09:20:05,417 - INFO - ✅ Regular click successful
+2025-09-20 09:20:05,417 - INFO - ✅ Successfully clicked apply in new window
+2025-09-20 09:20:12,377 - INFO - 🎉 ✅ APPLICATION SUCCESS DETECTED!
+2025-09-20 09:20:12,377 - INFO -     URL changed: False
+2025-09-20 09:20:12,377 - INFO -     New window: True
+2025-09-20 09:20:12,377 - INFO -     Application URL: True
+2025-09-20 09:20:12,377 - INFO -     Application title: True
+2025-09-20 09:20:12,377 - INFO -     Form present: True
+2025-09-20 09:20:12,377 - INFO -     Success text: True
+2025-09-20 09:20:12,377 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:20:12,377 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:20:12,377 - INFO - ✅ APPLICATION #2 SUCCESSFUL!
+2025-09-20 09:20:14,988 - INFO - 
+[3/38] ATTEMPTING APPLICATION
+2025-09-20 09:20:14,988 - INFO - Text: 'The Comprehensive 2025 U.S. Entry-Level Jobs List'
+2025-09-20 09:20:14,988 - INFO - Selector: a[target='_blank']
+2025-09-20 09:20:16,225 - INFO - ✅ Regular click successful
+2025-09-20 09:20:19,462 - INFO - 📂 New window detected, switching to it
+2025-09-20 09:20:23,864 - INFO - 🔍 Found 54 potential apply elements
+2025-09-20 09:20:23,864 - INFO - 🎯 Found 54 additional apply options in new window
+2025-09-20 09:20:25,659 - INFO - ✅ Regular click successful
+2025-09-20 09:20:25,659 - INFO - ✅ Successfully clicked apply in new window
+2025-09-20 09:20:31,930 - INFO - 🎉 ✅ APPLICATION SUCCESS DETECTED!
+2025-09-20 09:20:31,930 - INFO -     URL changed: False
+2025-09-20 09:20:31,930 - INFO -     New window: True
+2025-09-20 09:20:31,930 - INFO -     Application URL: True
+2025-09-20 09:20:31,930 - INFO -     Application title: True
+2025-09-20 09:20:31,930 - INFO -     Form present: True
+2025-09-20 09:20:31,930 - INFO -     Success text: True
+2025-09-20 09:20:31,930 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:20:31,930 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:20:31,930 - INFO - ✅ APPLICATION #3 SUCCESSFUL!
+2025-09-20 09:20:34,435 - INFO - 
+[4/38] ATTEMPTING APPLICATION
+2025-09-20 09:20:34,436 - INFO - Text: 'Shining Star in the Black Hole: How to Navigate Through This Job Market'
+2025-09-20 09:20:34,436 - INFO - Selector: a[target='_blank']
+2025-09-20 09:20:35,770 - INFO - ✅ Regular click successful
+2025-09-20 09:20:40,287 - INFO - 📂 New window detected, switching to it
+2025-09-20 09:20:45,098 - INFO - 🔍 Found 72 potential apply elements
+2025-09-20 09:20:45,098 - INFO - 🎯 Found 72 additional apply options in new window
+2025-09-20 09:20:46,896 - INFO - ✅ Regular click successful
+2025-09-20 09:20:46,896 - INFO - ✅ Successfully clicked apply in new window
+2025-09-20 09:20:54,188 - INFO - 🎉 ✅ APPLICATION SUCCESS DETECTED!
+2025-09-20 09:20:54,188 - INFO -     URL changed: False
+2025-09-20 09:20:54,188 - INFO -     New window: True
+2025-09-20 09:20:54,188 - INFO -     Application URL: True
+2025-09-20 09:20:54,188 - INFO -     Application title: True
+2025-09-20 09:20:54,188 - INFO -     Form present: True
+2025-09-20 09:20:54,188 - INFO -     Success text: True
+2025-09-20 09:20:54,188 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:20:54,188 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:20:54,188 - INFO - ✅ APPLICATION #4 SUCCESSFUL!
+2025-09-20 09:20:57,295 - INFO - 
+[5/38] ATTEMPTING APPLICATION
+2025-09-20 09:20:57,295 - INFO - Text: 'How to Choose and Successfully Obtain Your First Job'
+2025-09-20 09:20:57,295 - INFO - Selector: a[target='_blank']
+2025-09-20 09:20:58,920 - INFO - ✅ Regular click successful
+2025-09-20 09:21:02,725 - INFO - 📂 New window detected, switching to it
+2025-09-20 09:21:09,678 - INFO - 🔍 Found 73 potential apply elements
+2025-09-20 09:21:09,678 - INFO - 🎯 Found 73 additional apply options in new window
+2025-09-20 09:21:11,382 - INFO - ✅ Regular click successful
+2025-09-20 09:21:11,382 - INFO - ✅ Successfully clicked apply in new window
+2025-09-20 09:21:18,867 - INFO - 🎉 ✅ APPLICATION SUCCESS DETECTED!
+2025-09-20 09:21:18,868 - INFO -     URL changed: False
+2025-09-20 09:21:18,868 - INFO -     New window: True
+2025-09-20 09:21:18,868 - INFO -     Application URL: True
+2025-09-20 09:21:18,868 - INFO -     Application title: True
+2025-09-20 09:21:18,868 - INFO -     Form present: True
+2025-09-20 09:21:18,868 - INFO -     Success text: True
+2025-09-20 09:21:18,868 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:21:18,868 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:21:18,868 - INFO - ✅ APPLICATION #5 SUCCESSFUL!
+2025-09-20 09:21:21,627 - INFO - 
+[6/38] ATTEMPTING APPLICATION
+2025-09-20 09:21:21,627 - INFO - Text: '4 Things New Graduates should do to Plan Their Careers in 2024'
+2025-09-20 09:21:21,627 - INFO - Selector: a[target='_blank']
+2025-09-20 09:21:23,039 - INFO - ✅ Regular click successful
+2025-09-20 09:21:26,064 - INFO - 📂 New window detected, switching to it
+2025-09-20 09:21:31,319 - INFO - 🔍 Found 76 potential apply elements
+2025-09-20 09:21:31,319 - INFO - 🎯 Found 76 additional apply options in new window
+2025-09-20 09:21:32,731 - INFO - ✅ Regular click successful
+2025-09-20 09:21:32,731 - INFO - ✅ Successfully clicked apply in new window
+2025-09-20 09:21:39,562 - INFO - 🎉 ✅ APPLICATION SUCCESS DETECTED!
+2025-09-20 09:21:39,562 - INFO -     URL changed: False
+2025-09-20 09:21:39,562 - INFO -     New window: True
+2025-09-20 09:21:39,562 - INFO -     Application URL: True
+2025-09-20 09:21:39,562 - INFO -     Application title: True
+2025-09-20 09:21:39,562 - INFO -     Form present: True
+2025-09-20 09:21:39,562 - INFO -     Success text: True
+2025-09-20 09:21:39,562 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:21:39,562 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:21:39,562 - INFO - ✅ APPLICATION #6 SUCCESSFUL!
+2025-09-20 09:21:41,792 - INFO - 
+[7/38] ATTEMPTING APPLICATION
+2025-09-20 09:21:41,792 - INFO - Text: 'AI Job Matching: Find Your Perfect Job Faster'
+2025-09-20 09:21:41,792 - INFO - Selector: a[target='_blank']
+2025-09-20 09:21:43,424 - INFO - ✅ Regular click successful
+2025-09-20 09:21:48,347 - INFO - 📂 New window detected, switching to it
+2025-09-20 09:21:54,040 - INFO - 🔍 Found 48 potential apply elements
+2025-09-20 09:21:54,040 - INFO - 🎯 Found 48 additional apply options in new window
+2025-09-20 09:21:55,961 - INFO - ✅ Regular click successful
+2025-09-20 09:21:55,961 - INFO - ✅ Successfully clicked apply in new window
+2025-09-20 09:22:02,888 - INFO - 🎉 ✅ APPLICATION SUCCESS DETECTED!
+2025-09-20 09:22:02,889 - INFO -     URL changed: False
+2025-09-20 09:22:02,889 - INFO -     New window: True
+2025-09-20 09:22:02,889 - INFO -     Application URL: True
+2025-09-20 09:22:02,889 - INFO -     Application title: True
+2025-09-20 09:22:02,889 - INFO -     Form present: True
+2025-09-20 09:22:02,889 - INFO -     Success text: True
+2025-09-20 09:22:02,889 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:22:02,889 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:22:02,889 - INFO - ✅ APPLICATION #7 SUCCESSFUL!
+2025-09-20 09:22:05,507 - INFO - 
+[8/38] ATTEMPTING APPLICATION
+2025-09-20 09:22:05,507 - INFO - Text: 'A Resume vs a Cover Letter–How to Use Them?'
+2025-09-20 09:22:05,507 - INFO - Selector: a[target='_blank']
+2025-09-20 09:22:06,998 - INFO - ✅ Regular click successful
+2025-09-20 09:22:10,617 - INFO - 📂 New window detected, switching to it
+2025-09-20 09:22:15,272 - INFO - 🔍 Found 69 potential apply elements
+2025-09-20 09:22:15,272 - INFO - 🎯 Found 69 additional apply options in new window
+2025-09-20 09:22:16,891 - INFO - ✅ Regular click successful
+2025-09-20 09:22:16,892 - INFO - ✅ Successfully clicked apply in new window
+2025-09-20 09:22:22,949 - INFO - 🎉 ✅ APPLICATION SUCCESS DETECTED!
+2025-09-20 09:22:22,949 - INFO -     URL changed: False
+2025-09-20 09:22:22,949 - INFO -     New window: True
+2025-09-20 09:22:22,949 - INFO -     Application URL: True
+2025-09-20 09:22:22,949 - INFO -     Application title: True
+2025-09-20 09:22:22,949 - INFO -     Form present: True
+2025-09-20 09:22:22,949 - INFO -     Success text: True
+2025-09-20 09:22:22,949 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:22:22,949 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:22:22,949 - INFO - ✅ APPLICATION #8 SUCCESSFUL!
+2025-09-20 09:22:26,349 - INFO - 
+[9/38] ATTEMPTING APPLICATION
+2025-09-20 09:22:26,349 - INFO - Text: 'Avoid These 8 Resume Mistakes to Land Your Dream Job'
+2025-09-20 09:22:26,349 - INFO - Selector: a[target='_blank']
+2025-09-20 09:22:27,578 - INFO - ✅ Regular click successful
+2025-09-20 09:22:32,365 - INFO - 📂 New window detected, switching to it
+2025-09-20 09:22:40,103 - INFO - 🔍 Found 72 potential apply elements
+2025-09-20 09:22:40,103 - INFO - 🎯 Found 72 additional apply options in new window
+2025-09-20 09:22:41,719 - INFO - ✅ Regular click successful
+2025-09-20 09:22:41,720 - INFO - ✅ Successfully clicked apply in new window
+2025-09-20 09:22:48,622 - INFO - 🎉 ✅ APPLICATION SUCCESS DETECTED!
+2025-09-20 09:22:48,623 - INFO -     URL changed: False
+2025-09-20 09:22:48,623 - INFO -     New window: True
+2025-09-20 09:22:48,623 - INFO -     Application URL: True
+2025-09-20 09:22:48,623 - INFO -     Application title: True
+2025-09-20 09:22:48,623 - INFO -     Form present: True
+2025-09-20 09:22:48,623 - INFO -     Success text: True
+2025-09-20 09:22:48,623 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:22:48,623 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:22:48,623 - INFO - ✅ APPLICATION #9 SUCCESSFUL!
+2025-09-20 09:22:52,494 - INFO - 
+[10/38] ATTEMPTING APPLICATION
+2025-09-20 09:22:52,495 - INFO - Text: 'The 5 Principles for Your Resume (With Templates)'
+2025-09-20 09:22:52,495 - INFO - Selector: a[target='_blank']
+2025-09-20 09:22:53,883 - INFO - ✅ Regular click successful
+2025-09-20 09:22:57,104 - INFO - 📂 New window detected, switching to it
+2025-09-20 09:23:01,717 - INFO - 🔍 Found 72 potential apply elements
+2025-09-20 09:23:01,717 - INFO - 🎯 Found 72 additional apply options in new window
+2025-09-20 09:23:04,196 - INFO - ✅ Regular click successful
+2025-09-20 09:23:04,197 - INFO - ✅ Successfully clicked apply in new window
+2025-09-20 09:23:10,411 - INFO - 🎉 ✅ APPLICATION SUCCESS DETECTED!
+2025-09-20 09:23:10,411 - INFO -     URL changed: False
+2025-09-20 09:23:10,411 - INFO -     New window: True
+2025-09-20 09:23:10,411 - INFO -     Application URL: True
+2025-09-20 09:23:10,411 - INFO -     Application title: True
+2025-09-20 09:23:10,411 - INFO -     Form present: True
+2025-09-20 09:23:10,411 - INFO -     Success text: True
+2025-09-20 09:23:10,411 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:23:10,411 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:23:10,411 - INFO - ✅ APPLICATION #10 SUCCESSFUL!
+2025-09-20 09:23:12,916 - INFO - 
+[11/38] ATTEMPTING APPLICATION
+2025-09-20 09:23:12,916 - INFO - Text: 'AI Resume Editor: AI creates tailored, ATS-friendly'
+2025-09-20 09:23:12,916 - INFO - Selector: a[target='_blank']
+2025-09-20 09:23:14,185 - INFO - ✅ Regular click successful
+2025-09-20 09:23:18,429 - INFO - 📂 New window detected, switching to it
+2025-09-20 09:23:24,536 - INFO - 🔍 Found 47 potential apply elements
+2025-09-20 09:23:24,536 - INFO - 🎯 Found 47 additional apply options in new window
+2025-09-20 09:23:26,194 - INFO - ✅ Regular click successful
+2025-09-20 09:23:26,194 - INFO - ✅ Successfully clicked apply in new window
+2025-09-20 09:23:33,552 - INFO - 🎉 ✅ APPLICATION SUCCESS DETECTED!
+2025-09-20 09:23:33,553 - INFO -     URL changed: False
+2025-09-20 09:23:33,553 - INFO -     New window: True
+2025-09-20 09:23:33,553 - INFO -     Application URL: True
+2025-09-20 09:23:33,553 - INFO -     Application title: True
+2025-09-20 09:23:33,553 - INFO -     Form present: True
+2025-09-20 09:23:33,553 - INFO -     Success text: True
+2025-09-20 09:23:33,553 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:23:33,553 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:23:33,553 - INFO - ✅ APPLICATION #11 SUCCESSFUL!
+2025-09-20 09:23:37,482 - INFO - 
+[12/38] ATTEMPTING APPLICATION
+2025-09-20 09:23:37,482 - INFO - Text: 'ChatGPT - Resume'
+2025-09-20 09:23:37,482 - INFO - Selector: a[target='_blank']
+2025-09-20 09:23:39,579 - INFO - ✅ Regular click successful
+2025-09-20 09:23:42,825 - INFO - 📂 New window detected, switching to it
+2025-09-20 09:23:46,785 - INFO - 🔍 Found 0 potential apply elements
+2025-09-20 09:23:53,536 - INFO - 🎉 ✅ APPLICATION SUCCESS DETECTED!
+2025-09-20 09:23:53,537 - INFO -     URL changed: False
+2025-09-20 09:23:53,537 - INFO -     New window: True
+2025-09-20 09:23:53,537 - INFO -     Application URL: True
+2025-09-20 09:23:53,537 - INFO -     Application title: True
+2025-09-20 09:23:53,537 - INFO -     Form present: True
+2025-09-20 09:23:53,537 - INFO -     Success text: True
+2025-09-20 09:23:53,537 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:23:53,537 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:23:53,537 - INFO - ✅ APPLICATION #12 SUCCESSFUL!
+2025-09-20 09:23:57,323 - INFO - 
+[13/38] ATTEMPTING APPLICATION
+2025-09-20 09:23:57,323 - INFO - Text: 'Why use Jobright for Job Search when I already have LinkedIn?'
+2025-09-20 09:23:57,323 - INFO - Selector: a[target='_blank']
+2025-09-20 09:23:58,707 - INFO - ✅ Regular click successful
+2025-09-20 09:24:02,198 - INFO - 📂 New window detected, switching to it
+2025-09-20 09:24:10,081 - INFO - 🔍 Found 72 potential apply elements
+2025-09-20 09:24:10,082 - INFO - 🎯 Found 72 additional apply options in new window
+2025-09-20 09:24:11,841 - INFO - ✅ Regular click successful
+2025-09-20 09:24:11,841 - INFO - ✅ Successfully clicked apply in new window

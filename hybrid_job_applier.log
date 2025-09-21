@@ -1,0 +1,570 @@
+2025-09-20 09:47:15,232 - INFO - 🌟 HYBRID JOB APPLICATION AUTOMATION
+2025-09-20 09:47:15,232 - INFO - 🎯 Comprehensive search with intelligent scoring
+2025-09-20 09:47:15,232 - INFO - 🚀 HYBRID JOB APPLICATION AUTOMATION
+2025-09-20 09:47:15,232 - INFO - 🎯 Comprehensive search with intelligent filtering
+2025-09-20 09:47:15,232 - INFO - ⚡ Balanced approach for maximum success
+2025-09-20 09:47:15,232 - INFO - ================================================================================
+2025-09-20 09:47:15,232 - INFO - ====== WebDriver manager ======
+2025-09-20 09:47:15,294 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-20 09:47:15,367 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-20 09:47:15,459 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
+2025-09-20 09:47:15,874 - INFO - ✅ WebDriver setup successfully
+2025-09-20 09:47:15,874 - INFO - 
+🎯 PROCESSING PLATFORM: JobRight_EntryLevel
+2025-09-20 09:47:15,874 - INFO - 🔗 URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:47:15,874 - INFO - 📋 Strategy: comprehensive_with_filtering
+2025-09-20 09:47:15,874 - INFO - ============================================================
+2025-09-20 09:47:28,653 - INFO - 📍 Arrived at: https://jobright.ai/entry-level-jobs
+2025-09-20 09:47:28,655 - INFO - 📑 Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:47:44,519 - INFO - 📜 Intelligent scrolling completed
+2025-09-20 09:47:45,157 - INFO - 🔍 Found 23 potentially useful interactive elements
+2025-09-20 09:47:45,157 - INFO - 
+[ELEMENT 1/23] Score: 10
+2025-09-20 09:47:45,157 - INFO - Text: 'The Top AI/ML Jobs from Trending AI Companies'
+2025-09-20 09:47:45,157 - INFO - Href: https://www.careerin.ai/
+2025-09-20 09:47:46,455 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:47:50,170 - INFO - 🎉 ✅ ACTION SUCCESS DETECTED!
+2025-09-20 09:47:50,170 - INFO -     URL changed: False
+2025-09-20 09:47:50,171 - INFO -     New window: True
+2025-09-20 09:47:50,171 - INFO -     Content relevant: True
+2025-09-20 09:47:50,171 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:47:50,171 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:47:54,837 - INFO -     New window URL: https://www.careerin.ai/
+2025-09-20 09:47:54,837 - INFO -     New window title: Top AI/ML Jobs | Industry Insights | Real-Time Listings
+2025-09-20 09:48:00,587 - INFO - 🔍 Found 235 potentially useful interactive elements
+2025-09-20 09:48:00,587 - INFO -     Found 235 additional elements in new window
+2025-09-20 09:48:01,893 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:48:01,893 - INFO -     ✅ Successfully clicked additional element
+2025-09-20 09:48:04,862 - INFO - ✅ SUCCESSFUL ACTION #1
+2025-09-20 09:48:08,170 - INFO - 
+[ELEMENT 2/23] Score: 10
+2025-09-20 09:48:08,170 - INFO - Text: '4 Things New Graduates should do to Plan Their Careers in 2024'
+2025-09-20 09:48:08,170 - INFO - Href: https://jobright.ai/blog/4-things-new-graduates-should-do-to
+2025-09-20 09:48:10,148 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:48:14,879 - INFO - 🎉 ✅ ACTION SUCCESS DETECTED!
+2025-09-20 09:48:14,879 - INFO -     URL changed: False
+2025-09-20 09:48:14,879 - INFO -     New window: True
+2025-09-20 09:48:14,879 - INFO -     Content relevant: True
+2025-09-20 09:48:14,879 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:48:14,879 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:48:18,680 - INFO -     New window URL: https://jobright.ai/blog/4-things-new-graduates-should-do-to-plan-their-careers-in-2024/
+2025-09-20 09:48:18,680 - INFO -     New window title: 4 Things New Graduates should do to Plan Their Careers in 2024 - Jobright Blog
+2025-09-20 09:48:20,177 - INFO - 🔍 Found 70 potentially useful interactive elements
+2025-09-20 09:48:20,178 - INFO -     Found 70 additional elements in new window
+2025-09-20 09:48:23,445 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:48:23,445 - INFO -     ✅ Successfully clicked additional element
+2025-09-20 09:48:25,927 - INFO - ✅ SUCCESSFUL ACTION #2
+2025-09-20 09:48:28,753 - INFO - 
+[ELEMENT 3/23] Score: 10
+2025-09-20 09:48:28,754 - INFO - Text: 'How to Build Your Network and Connections'
+2025-09-20 09:48:28,754 - INFO - Href: https://jobright.ai/blog/how-to-build-your-network-and-conne
+2025-09-20 09:48:29,906 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:48:33,946 - INFO - 🎉 ✅ ACTION SUCCESS DETECTED!
+2025-09-20 09:48:33,946 - INFO -     URL changed: False
+2025-09-20 09:48:33,946 - INFO -     New window: True
+2025-09-20 09:48:33,946 - INFO -     Content relevant: True
+2025-09-20 09:48:33,946 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:48:33,946 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:48:36,993 - INFO -     New window URL: https://jobright.ai/blog/how-to-build-your-network-and-connections/
+2025-09-20 09:48:36,994 - INFO -     New window title: How to Build Your Network and Connections - Jobright Blog
+2025-09-20 09:48:38,473 - INFO - 🔍 Found 69 potentially useful interactive elements
+2025-09-20 09:48:38,473 - INFO -     Found 69 additional elements in new window
+2025-09-20 09:48:40,521 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:48:40,521 - INFO -     ✅ Successfully clicked additional element
+2025-09-20 09:48:43,526 - INFO - ✅ SUCCESSFUL ACTION #3
+2025-09-20 09:48:46,725 - INFO - 
+[ELEMENT 4/23] Score: 10
+2025-09-20 09:48:46,725 - INFO - Text: 'Insider Connection: Network smarter and land more interviews'
+2025-09-20 09:48:46,725 - INFO - Href: https://jobright.ai/job-referral
+2025-09-20 09:48:47,992 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:48:52,603 - INFO - 🎉 ✅ ACTION SUCCESS DETECTED!
+2025-09-20 09:48:52,603 - INFO -     URL changed: False
+2025-09-20 09:48:52,603 - INFO -     New window: True
+2025-09-20 09:48:52,603 - INFO -     Content relevant: True
+2025-09-20 09:48:52,603 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:48:52,604 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:48:55,677 - INFO -     New window URL: https://jobright.ai/job-referral
+2025-09-20 09:48:55,677 - INFO -     New window title: Unlock Personalized Job Referral Opportunities
+2025-09-20 09:48:57,020 - INFO - 🔍 Found 37 potentially useful interactive elements
+2025-09-20 09:48:57,020 - INFO -     Found 37 additional elements in new window
+2025-09-20 09:48:58,357 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:48:58,357 - INFO -     ✅ Successfully clicked additional element
+2025-09-20 09:49:00,989 - INFO - ✅ SUCCESSFUL ACTION #4
+2025-09-20 09:49:04,109 - INFO - 
+[ELEMENT 5/23] Score: 10
+2025-09-20 09:49:04,110 - INFO - Text: 'Orion – Your 24/7 Career Assistant'
+2025-09-20 09:49:04,110 - INFO - Href: https://jobright.ai/orion-copilot
+2025-09-20 09:49:05,769 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:49:10,274 - INFO - 🎉 ✅ ACTION SUCCESS DETECTED!
+2025-09-20 09:49:10,274 - INFO -     URL changed: False
+2025-09-20 09:49:10,274 - INFO -     New window: True
+2025-09-20 09:49:10,274 - INFO -     Content relevant: True
+2025-09-20 09:49:10,274 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:49:10,274 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:49:15,119 - INFO -     New window URL: https://jobright.ai/orion-copilot
+2025-09-20 09:49:15,120 - INFO -     New window title: 24/7 Career Support from Orion AI Copilot
+2025-09-20 09:49:15,858 - INFO - 🔍 Found 36 potentially useful interactive elements
+2025-09-20 09:49:15,858 - INFO -     Found 36 additional elements in new window
+2025-09-20 09:49:17,528 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:49:17,528 - INFO -     ✅ Successfully clicked additional element
+2025-09-20 09:49:20,532 - INFO - ✅ SUCCESSFUL ACTION #5
+2025-09-20 09:49:23,193 - INFO - 
+[ELEMENT 6/23] Score: 8
+2025-09-20 09:49:23,193 - INFO - Text: 'Job Title Of Interest'
+2025-09-20 09:49:23,193 - INFO - Href: 
+2025-09-20 09:49:24,459 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:49:28,882 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:49:28,882 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:49:32,114 - INFO - 
+[ELEMENT 7/23] Score: 5
+2025-09-20 09:49:32,114 - INFO - Text: 'Click to check out the guide now!👈'
+2025-09-20 09:49:32,114 - INFO - Href: 
+2025-09-20 09:49:34,029 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:49:38,010 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:49:38,010 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:49:40,580 - INFO - 
+[ELEMENT 8/23] Score: 5
+2025-09-20 09:49:40,581 - INFO - Text: 'Subscribe'
+2025-09-20 09:49:40,581 - INFO - Href: 
+2025-09-20 09:49:42,181 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:49:46,341 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:49:46,341 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:49:49,806 - INFO - 
+[ELEMENT 9/23] Score: 5
+2025-09-20 09:49:49,807 - INFO - Text: 'The Comprehensive 2025 U.S. Entry-Level Jobs List'
+2025-09-20 09:49:49,807 - INFO - Href: https://www.entrylevel-jobs.com/
+2025-09-20 09:49:51,749 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:49:55,459 - INFO - 🎉 ✅ ACTION SUCCESS DETECTED!
+2025-09-20 09:49:55,460 - INFO -     URL changed: False
+2025-09-20 09:49:55,460 - INFO -     New window: True
+2025-09-20 09:49:55,460 - INFO -     Content relevant: True
+2025-09-20 09:49:55,460 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:49:55,460 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:49:59,133 - INFO -     New window URL: https://www.entrylevel-jobs.com/
+2025-09-20 09:49:59,133 - INFO -     New window title: The Best Entry-Level Job List in the U.S. | Updated Hourly
+2025-09-20 09:49:59,935 - INFO - 🔍 Found 32 potentially useful interactive elements
+2025-09-20 09:49:59,935 - INFO -     Found 32 additional elements in new window
+2025-09-20 09:50:01,200 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:50:01,200 - INFO -     ✅ Successfully clicked additional element
+2025-09-20 09:50:04,042 - INFO - ✅ SUCCESSFUL ACTION #6
+2025-09-20 09:50:06,068 - INFO - 
+[ELEMENT 10/23] Score: 5
+2025-09-20 09:50:06,068 - INFO - Text: 'Shining Star in the Black Hole: How to Navigate Through This Job Market'
+2025-09-20 09:50:06,068 - INFO - Href: https://jobright.ai/blog/shining-star-in-the-black-hole-how-
+2025-09-20 09:50:07,659 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:50:11,447 - INFO - 🎉 ✅ ACTION SUCCESS DETECTED!
+2025-09-20 09:50:11,447 - INFO -     URL changed: False
+2025-09-20 09:50:11,447 - INFO -     New window: True
+2025-09-20 09:50:11,448 - INFO -     Content relevant: True
+2025-09-20 09:50:11,448 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:50:11,448 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:50:14,894 - INFO -     New window URL: https://jobright.ai/blog/shining-star-in-the-black-hole-how-to-navigate-through-this-job-market/
+2025-09-20 09:50:14,894 - INFO -     New window title: Navigating the Job Market Amidst The Great Resignation
+2025-09-20 09:50:16,325 - INFO - 🔍 Found 73 potentially useful interactive elements
+2025-09-20 09:50:16,326 - INFO -     Found 73 additional elements in new window
+2025-09-20 09:50:18,065 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:50:18,065 - INFO -     ✅ Successfully clicked additional element
+2025-09-20 09:50:20,366 - INFO - ✅ SUCCESSFUL ACTION #7
+2025-09-20 09:50:24,054 - INFO - 
+[ELEMENT 11/23] Score: 5
+2025-09-20 09:50:24,055 - INFO - Text: 'How to Choose and Successfully Obtain Your First Job'
+2025-09-20 09:50:24,055 - INFO - Href: https://jobright.ai/blog/how-to-choose-and-successfully-obta
+2025-09-20 09:50:25,484 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:50:28,596 - INFO - 🎉 ✅ ACTION SUCCESS DETECTED!
+2025-09-20 09:50:28,596 - INFO -     URL changed: False
+2025-09-20 09:50:28,596 - INFO -     New window: True
+2025-09-20 09:50:28,596 - INFO -     Content relevant: True
+2025-09-20 09:50:28,596 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:50:28,597 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:50:31,996 - INFO -     New window URL: https://jobright.ai/blog/how-to-choose-and-successfully-obtain-your-first-job/
+2025-09-20 09:50:31,996 - INFO -     New window title: How to Choose and Successfully Obtain Your First Job
+2025-09-20 09:50:33,273 - INFO - 🔍 Found 71 potentially useful interactive elements
+2025-09-20 09:50:33,273 - INFO -     Found 71 additional elements in new window
+2025-09-20 09:50:34,875 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:50:34,875 - INFO -     ✅ Successfully clicked additional element
+2025-09-20 09:50:37,408 - INFO - ✅ SUCCESSFUL ACTION #8
+2025-09-20 09:50:40,221 - INFO - 
+[ELEMENT 12/23] Score: 5
+2025-09-20 09:50:40,221 - INFO - Text: 'AI Job Matching: Find Your Perfect Job Faster'
+2025-09-20 09:50:40,221 - INFO - Href: https://jobright.ai/ai-job-match
+2025-09-20 09:50:42,168 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:50:46,597 - INFO - 🎉 ✅ ACTION SUCCESS DETECTED!
+2025-09-20 09:50:46,597 - INFO -     URL changed: False
+2025-09-20 09:50:46,597 - INFO -     New window: True
+2025-09-20 09:50:46,597 - INFO -     Content relevant: True
+2025-09-20 09:50:46,597 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:50:46,597 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:50:50,290 - INFO -     New window URL: https://jobright.ai/ai-job-match
+2025-09-20 09:50:50,290 - INFO -     New window title: AI Job Search: Find Your Perfect Match
+2025-09-20 09:50:51,808 - INFO - 🔍 Found 52 potentially useful interactive elements
+2025-09-20 09:50:51,808 - INFO -     Found 52 additional elements in new window
+2025-09-20 09:50:53,421 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:50:53,421 - INFO -     ✅ Successfully clicked additional element
+2025-09-20 09:50:56,162 - INFO - ✅ SUCCESSFUL ACTION #9
+2025-09-20 09:50:58,674 - INFO - 
+[ELEMENT 13/23] Score: 5
+2025-09-20 09:50:58,674 - INFO - Text: 'A Resume vs a Cover Letter–How to Use Them?'
+2025-09-20 09:50:58,674 - INFO - Href: https://jobright.ai/blog/a-resume-vs-a-cover-letter-how-to-u
+2025-09-20 09:51:00,022 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:51:04,708 - INFO - 🎉 ✅ ACTION SUCCESS DETECTED!
+2025-09-20 09:51:04,708 - INFO -     URL changed: False
+2025-09-20 09:51:04,708 - INFO -     New window: True
+2025-09-20 09:51:04,708 - INFO -     Content relevant: True
+2025-09-20 09:51:04,708 - INFO -     Current URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:51:04,708 - INFO -     Page title: Top 2026 U.S. Entry Level Jobs for New Grad | Hourly Update
+2025-09-20 09:51:08,659 - INFO -     New window URL: https://jobright.ai/blog/a-resume-vs-a-cover-letter-how-to-use-them/
+2025-09-20 09:51:08,659 - INFO -     New window title: Jobright Blog
+2025-09-20 09:51:09,870 - INFO - 🔍 Found 70 potentially useful interactive elements
+2025-09-20 09:51:09,870 - INFO -     Found 70 additional elements in new window
+2025-09-20 09:51:12,061 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:51:12,061 - INFO -     ✅ Successfully clicked additional element
+2025-09-20 09:51:14,774 - INFO - ✅ SUCCESSFUL ACTION #10
+2025-09-20 09:51:14,774 - INFO - 
+🎉 REACHED ACTION GOAL FOR THIS PLATFORM!
+2025-09-20 09:51:14,774 - INFO - 
+📊 PLATFORM RESULTS: JobRight_EntryLevel
+2025-09-20 09:51:14,774 - INFO -     ✅ Successful actions: 10
+2025-09-20 09:51:14,774 - INFO -     📋 Elements processed: 23
+2025-09-20 09:51:14,774 - INFO -     📈 Success rate: 43.5%
+2025-09-20 09:51:14,774 - INFO - 
+📊 OVERALL PROGRESS:
+2025-09-20 09:51:14,774 - INFO -     🏢 Platforms tried: 1
+2025-09-20 09:51:14,774 - INFO -     🔍 Elements found: 23
+2025-09-20 09:51:14,774 - INFO -     ✅ Successful actions: 10
+2025-09-20 09:51:14,774 - INFO -     🔗 External links opened: 10
+2025-09-20 09:51:14,774 - INFO -     ❌ Failed attempts: 3
+2025-09-20 09:51:14,774 - INFO -     ⏱️ Runtime: 4.0 minutes
+2025-09-20 09:51:14,774 - INFO - 
+🎯 PROCESSING PLATFORM: JobRight_SoftwareSearch
+2025-09-20 09:51:14,774 - INFO - 🔗 URL: https://jobright.ai/s?keyword=software%20engineer&location=San%20Jose%2C%20CA
+2025-09-20 09:51:14,774 - INFO - 📋 Strategy: comprehensive_with_filtering
+2025-09-20 09:51:14,774 - INFO - ============================================================
+2025-09-20 09:51:20,032 - INFO - 📍 Arrived at: https://jobright.ai/s?keyword=software%20engineer&location=San%20Jose%2C%20CA
+2025-09-20 09:51:20,034 - INFO - 📑 Page title: 
+2025-09-20 09:51:35,149 - INFO - 📜 Intelligent scrolling completed
+2025-09-20 09:51:35,189 - INFO - 🔍 Found 0 potentially useful interactive elements
+2025-09-20 09:51:35,189 - WARNING - ⚠️ No interactive elements found on JobRight_SoftwareSearch
+2025-09-20 09:51:35,189 - INFO - 
+📊 OVERALL PROGRESS:
+2025-09-20 09:51:35,189 - INFO -     🏢 Platforms tried: 2
+2025-09-20 09:51:35,189 - INFO -     🔍 Elements found: 23
+2025-09-20 09:51:35,189 - INFO -     ✅ Successful actions: 10
+2025-09-20 09:51:35,189 - INFO -     🔗 External links opened: 10
+2025-09-20 09:51:35,189 - INFO -     ❌ Failed attempts: 3
+2025-09-20 09:51:35,189 - INFO -     ⏱️ Runtime: 4.3 minutes
+2025-09-20 09:51:35,189 - INFO - 
+🎯 PROCESSING PLATFORM: LinkedIn_Jobs
+2025-09-20 09:51:35,189 - INFO - 🔗 URL: https://www.linkedin.com/jobs/search?keywords=software&location=San%20Jose%2C%20CA&distance=25&f_TPR=r86400
+2025-09-20 09:51:35,189 - INFO - 📋 Strategy: linkedin_specific
+2025-09-20 09:51:35,189 - INFO - ============================================================
+2025-09-20 09:51:42,342 - INFO - 📍 Arrived at: https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFjd15k_dB70wAAAZloCcXYsBnZbHhNtNZ3NEzssdzqLfVLuJza01POQwxOqgpDIBwjdXkxNUMmjHTsnEusCEdHzz1cNnf8kGUE48PyZ4IuWukk129KTiOxuSHhFK69WxD2Ghg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fsearch%3Fkeywords%3Dsoftware%26location%3DSan%2520Jose%252C%2520CA%26distance%3D25%26f_TPR%3Dr86400
+2025-09-20 09:51:42,344 - INFO - 📑 Page title: Sign Up | LinkedIn
+2025-09-20 09:51:58,352 - INFO - 📜 Intelligent scrolling completed
+2025-09-20 09:51:59,360 - INFO - 🔍 Found 6 potentially useful interactive elements
+2025-09-20 09:51:59,360 - INFO - 
+[ELEMENT 1/6] Score: 2
+2025-09-20 09:51:59,360 - INFO - Text: 'Agree & Join'
+2025-09-20 09:51:59,360 - INFO - Href: 
+2025-09-20 09:52:00,586 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:52:04,652 - INFO - 🎉 ✅ ACTION SUCCESS DETECTED!
+2025-09-20 09:52:04,652 - INFO -     URL changed: False
+2025-09-20 09:52:04,652 - INFO -     New window: True
+2025-09-20 09:52:04,652 - INFO -     Content relevant: True
+2025-09-20 09:52:04,652 - INFO -     Current URL: https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFjd15k_dB70wAAAZloCcXYsBnZbHhNtNZ3NEzssdzqLfVLuJza01POQwxOqgpDIBwjdXkxNUMmjHTsnEusCEdHzz1cNnf8kGUE48PyZ4IuWukk129KTiOxuSHhFK69WxD2Ghg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fsearch%3Fkeywords%3Dsoftware%26location%3DSan%2520Jose%252C%2520CA%26distance%3D25%26f_TPR%3Dr86400
+2025-09-20 09:52:04,652 - INFO -     Page title: Sign Up | LinkedIn
+2025-09-20 09:52:08,057 - INFO -     New window URL: https://www.northwestern.edu/careers/jobs-internships/networking/
+2025-09-20 09:52:08,057 - INFO -     New window title: Networking: Connecting with Others: Northwestern Career Advancement - Northwestern University
+2025-09-20 09:52:09,836 - INFO - 🔍 Found 60 potentially useful interactive elements
+2025-09-20 09:52:09,836 - INFO -     Found 60 additional elements in new window
+2025-09-20 09:52:11,859 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:52:11,859 - INFO -     ✅ Successfully clicked additional element
+2025-09-20 09:52:14,445 - INFO - ✅ SUCCESSFUL ACTION #1
+2025-09-20 09:52:17,951 - INFO - 
+[ELEMENT 2/6] Score: 2
+2025-09-20 09:52:17,951 - INFO - Text: 'Language'
+2025-09-20 09:52:17,951 - INFO - Href: 
+2025-09-20 09:52:19,141 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:52:22,702 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:52:22,702 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:52:25,372 - INFO - 
+[ELEMENT 3/6] Score: 0
+2025-09-20 09:52:25,373 - INFO - Text: ''
+2025-09-20 09:52:25,373 - INFO - Href: 
+2025-09-20 09:52:25,373 - INFO - ⏩ Skipping low-score element
+2025-09-20 09:52:25,373 - INFO - 
+[ELEMENT 4/6] Score: 0
+2025-09-20 09:52:25,373 - INFO - Text: 'User Agreement'
+2025-09-20 09:52:25,373 - INFO - Href: https://www.linkedin.com/legal/user-agreement?trk=seo-authwa
+2025-09-20 09:52:25,373 - INFO - ⏩ Skipping low-score element
+2025-09-20 09:52:25,373 - INFO - 
+[ELEMENT 5/6] Score: 0
+2025-09-20 09:52:25,373 - INFO - Text: ''
+2025-09-20 09:52:25,373 - INFO - Href: 
+2025-09-20 09:52:25,373 - INFO - ⏩ Skipping low-score element
+2025-09-20 09:52:25,373 - INFO - 
+[ELEMENT 6/6] Score: 0
+2025-09-20 09:52:25,373 - INFO - Text: ''
+2025-09-20 09:52:25,373 - INFO - Href: 
+2025-09-20 09:52:25,373 - INFO - ⏩ Skipping low-score element
+2025-09-20 09:52:25,373 - INFO - 
+📊 PLATFORM RESULTS: LinkedIn_Jobs
+2025-09-20 09:52:25,373 - INFO -     ✅ Successful actions: 1
+2025-09-20 09:52:25,373 - INFO -     📋 Elements processed: 6
+2025-09-20 09:52:25,373 - INFO -     📈 Success rate: 16.7%
+2025-09-20 09:52:25,373 - INFO - 
+📊 OVERALL PROGRESS:
+2025-09-20 09:52:25,373 - INFO -     🏢 Platforms tried: 3
+2025-09-20 09:52:25,373 - INFO -     🔍 Elements found: 29
+2025-09-20 09:52:25,373 - INFO -     ✅ Successful actions: 11
+2025-09-20 09:52:25,373 - INFO -     🔗 External links opened: 11
+2025-09-20 09:52:25,373 - INFO -     ❌ Failed attempts: 4
+2025-09-20 09:52:25,373 - INFO -     ⏱️ Runtime: 5.2 minutes
+2025-09-20 09:52:25,373 - INFO - 
+🎯 PROCESSING PLATFORM: Indeed_Jobs
+2025-09-20 09:52:25,373 - INFO - 🔗 URL: https://indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&fromage=1
+2025-09-20 09:52:25,373 - INFO - 📋 Strategy: indeed_specific
+2025-09-20 09:52:25,373 - INFO - ============================================================
+2025-09-20 09:52:33,716 - INFO - 📍 Arrived at: https://www.indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&fromage=1&vjk=4f605c36ccfa3553
+2025-09-20 09:52:33,718 - INFO - 📑 Page title: Software Engineer Jobs, Employment in San Jose, CA | Indeed
+2025-09-20 09:52:48,878 - INFO - 📜 Intelligent scrolling completed
+2025-09-20 09:52:58,304 - INFO - 🔍 Found 403 potentially useful interactive elements
+2025-09-20 09:52:58,304 - INFO - 
+[ELEMENT 1/403] Score: 57
+2025-09-20 09:52:58,304 - INFO - Text: 'Keyword : all jobs
+Edit location input box label
+Search
+Last 24 hours
+Remote
+Dev'
+2025-09-20 09:52:58,304 - INFO - Href: 
+2025-09-20 09:52:59,499 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:53:04,298 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:53:04,298 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:53:08,247 - INFO - 
+[ELEMENT 2/403] Score: 57
+2025-09-20 09:53:08,247 - INFO - Text: 'Keyword : all jobs
+Edit location input box label
+Search
+Last 24 hours
+Remote
+Dev'
+2025-09-20 09:53:08,247 - INFO - Href: 
+2025-09-20 09:53:09,390 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:53:13,633 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:53:13,633 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:53:16,676 - INFO - 
+[ELEMENT 3/403] Score: 54
+2025-09-20 09:53:16,676 - INFO - Text: 'Software Development Engineer
+- job post
+Amazon.com Services LLC
+3.5
+3.5 out of '
+2025-09-20 09:53:16,676 - INFO - Href: 
+2025-09-20 09:53:18,573 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:53:23,239 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:53:23,239 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:53:25,948 - INFO - 
+[ELEMENT 4/403] Score: 54
+2025-09-20 09:53:25,948 - INFO - Text: 'Software Development Engineer
+- job post
+Amazon.com Services LLC
+3.5
+3.5 out of '
+2025-09-20 09:53:25,948 - INFO - Href: 
+2025-09-20 09:53:27,027 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:53:31,444 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:53:31,444 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:53:33,675 - INFO - 
+[ELEMENT 5/403] Score: 54
+2025-09-20 09:53:33,675 - INFO - Text: 'Software Development Engineer
+- job post
+Amazon.com Services LLC
+3.5
+3.5 out of '
+2025-09-20 09:53:33,675 - INFO - Href: 
+2025-09-20 09:53:35,212 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:53:39,242 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:53:39,242 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:53:42,165 - INFO - 
+[ELEMENT 6/403] Score: 54
+2025-09-20 09:53:42,165 - INFO - Text: 'Profile insights
+Find out how your skills align with the job description
+Skills
+'
+2025-09-20 09:53:42,165 - INFO - Href: 
+2025-09-20 09:53:44,002 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:53:48,175 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:53:48,175 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:53:51,563 - INFO - 
+[ELEMENT 7/403] Score: 54
+2025-09-20 09:53:51,563 - INFO - Text: 'Profile insights
+Find out how your skills align with the job description
+Skills
+'
+2025-09-20 09:53:51,563 - INFO - Href: 
+2025-09-20 09:53:53,583 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:53:58,241 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:53:58,241 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:54:01,822 - INFO - 
+[ELEMENT 8/403] Score: 54
+2025-09-20 09:54:01,822 - INFO - Text: 'Profile insights
+Find out how your skills align with the job description
+Skills
+'
+2025-09-20 09:54:01,822 - INFO - Href: 
+2025-09-20 09:54:03,329 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:54:07,173 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:54:07,173 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:54:10,557 - INFO - 
+[ELEMENT 9/403] Score: 54
+2025-09-20 09:54:10,557 - INFO - Text: 'DESCRIPTION
+We have a rapidly growing customer base and an exciting charter in f'
+2025-09-20 09:54:10,557 - INFO - Href: 
+2025-09-20 09:54:11,970 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:54:15,712 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:54:15,712 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:54:19,635 - INFO - 
+[ELEMENT 10/403] Score: 54
+2025-09-20 09:54:19,635 - INFO - Text: 'Software Development Engineer
+- job post
+Amazon.com Services LLC
+3.5
+3.5 out of '
+2025-09-20 09:54:19,635 - INFO - Href: 
+2025-09-20 09:54:20,889 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:54:25,810 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:54:25,810 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:54:29,723 - INFO - 
+[ELEMENT 11/403] Score: 52
+2025-09-20 09:54:29,724 - INFO - Text: 'Skip to main content
+Home
+Company reviews
+Find salaries
+Sign in
+Employers / Post'
+2025-09-20 09:54:29,724 - INFO - Href: 
+2025-09-20 09:54:31,570 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:54:36,451 - INFO - ℹ️ Action completed but no clear success indicators
+2025-09-20 09:54:36,451 - INFO - ℹ️ Click successful but no clear result
+2025-09-20 09:54:39,009 - INFO - 
+[ELEMENT 12/403] Score: 32
+2025-09-20 09:54:39,009 - INFO - Text: 'Upload your resume
+- Let employers find you
+software engineer jobs in San Jose, '
+2025-09-20 09:54:39,009 - INFO - Href: 
+2025-09-20 09:54:40,727 - INFO - ✅ Click strategy 1 successful
+2025-09-20 09:54:45,240 - INFO - 🎉 ✅ ACTION SUCCESS DETECTED!
+2025-09-20 09:54:45,240 - INFO -     URL changed: True
+2025-09-20 09:54:45,240 - INFO -     New window: False
+2025-09-20 09:54:45,240 - INFO -     Content relevant: True
+2025-09-20 09:54:45,240 - INFO -     Current URL: https://www.indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&fromage=1&vjk=d049bb3106022bd8
+2025-09-20 09:54:45,240 - INFO -     Page title: Software Engineer Jobs, Employment in San Jose, CA | Indeed
+2025-09-20 09:54:45,240 - INFO - ✅ SUCCESSFUL ACTION #1
+2025-09-20 09:54:54,127 - INFO - 
+📊 PLATFORM RESULTS: Indeed_Jobs
+2025-09-20 09:54:54,127 - INFO -     ✅ Successful actions: 1
+2025-09-20 09:54:54,127 - INFO -     📋 Elements processed: 403
+2025-09-20 09:54:54,127 - INFO -     📈 Success rate: 0.2%
+2025-09-20 09:54:54,128 - INFO - 
+📊 OVERALL PROGRESS:
+2025-09-20 09:54:54,128 - INFO -     🏢 Platforms tried: 4
+2025-09-20 09:54:54,128 - INFO -     🔍 Elements found: 432
+2025-09-20 09:54:54,128 - INFO -     ✅ Successful actions: 12
+2025-09-20 09:54:54,128 - INFO -     🔗 External links opened: 11
+2025-09-20 09:54:54,128 - INFO -     ❌ Failed attempts: 15
+2025-09-20 09:54:54,128 - INFO -     ⏱️ Runtime: 7.6 minutes
+2025-09-20 09:54:54,128 - INFO - 
+🏁 HYBRID AUTOMATION COMPLETED
+2025-09-20 09:54:54,128 - INFO - ✅ Total successful actions: 12
+2025-09-20 09:54:54,128 - INFO - 
+📋 SUCCESSFUL ACTIONS:
+2025-09-20 09:54:54,128 - INFO -    1. Element: The Top AI/ML Jobs from Trending AI Companies
+2025-09-20 09:54:54,128 - INFO -       Result URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:54:54,128 - INFO -       Type: new_window
+2025-09-20 09:54:54,128 - INFO -       Score: 10
+2025-09-20 09:54:54,128 - INFO -       Time: 2025-09-20T09:48:04.861766
+2025-09-20 09:54:54,128 - INFO - 
+2025-09-20 09:54:54,128 - INFO -    2. Element: 4 Things New Graduates should do to Plan Their Careers in 2024
+2025-09-20 09:54:54,128 - INFO -       Result URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:54:54,128 - INFO -       Type: new_window
+2025-09-20 09:54:54,128 - INFO -       Score: 10
+2025-09-20 09:54:54,128 - INFO -       Time: 2025-09-20T09:48:25.926093
+2025-09-20 09:54:54,128 - INFO - 
+2025-09-20 09:54:54,128 - INFO -    3. Element: How to Build Your Network and Connections
+2025-09-20 09:54:54,128 - INFO -       Result URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:54:54,128 - INFO -       Type: new_window
+2025-09-20 09:54:54,128 - INFO -       Score: 10
+2025-09-20 09:54:54,128 - INFO -       Time: 2025-09-20T09:48:43.525197
+2025-09-20 09:54:54,128 - INFO - 
+2025-09-20 09:54:54,128 - INFO -    4. Element: Insider Connection: Network smarter and land more interviews
+2025-09-20 09:54:54,128 - INFO -       Result URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:54:54,128 - INFO -       Type: new_window
+2025-09-20 09:54:54,128 - INFO -       Score: 10
+2025-09-20 09:54:54,128 - INFO -       Time: 2025-09-20T09:49:00.987814
+2025-09-20 09:54:54,128 - INFO - 
+2025-09-20 09:54:54,128 - INFO -    5. Element: Orion – Your 24/7 Career Assistant
+2025-09-20 09:54:54,128 - INFO -       Result URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:54:54,128 - INFO -       Type: new_window
+2025-09-20 09:54:54,128 - INFO -       Score: 10
+2025-09-20 09:54:54,128 - INFO -       Time: 2025-09-20T09:49:20.532287
+2025-09-20 09:54:54,128 - INFO - 
+2025-09-20 09:54:54,128 - INFO -    6. Element: The Comprehensive 2025 U.S. Entry-Level Jobs List
+2025-09-20 09:54:54,128 - INFO -       Result URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:54:54,128 - INFO -       Type: new_window
+2025-09-20 09:54:54,128 - INFO -       Score: 5
+2025-09-20 09:54:54,128 - INFO -       Time: 2025-09-20T09:50:04.041691
+2025-09-20 09:54:54,128 - INFO - 
+2025-09-20 09:54:54,128 - INFO -    7. Element: Shining Star in the Black Hole: How to Navigate Through This Job Market
+2025-09-20 09:54:54,128 - INFO -       Result URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:54:54,128 - INFO -       Type: new_window
+2025-09-20 09:54:54,128 - INFO -       Score: 5
+2025-09-20 09:54:54,128 - INFO -       Time: 2025-09-20T09:50:20.365961
+2025-09-20 09:54:54,128 - INFO - 
+2025-09-20 09:54:54,128 - INFO -    8. Element: How to Choose and Successfully Obtain Your First Job
+2025-09-20 09:54:54,128 - INFO -       Result URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:54:54,128 - INFO -       Type: new_window
+2025-09-20 09:54:54,128 - INFO -       Score: 5
+2025-09-20 09:54:54,128 - INFO -       Time: 2025-09-20T09:50:37.407825
+2025-09-20 09:54:54,128 - INFO - 
+2025-09-20 09:54:54,128 - INFO -    9. Element: AI Job Matching: Find Your Perfect Job Faster
+2025-09-20 09:54:54,128 - INFO -       Result URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:54:54,128 - INFO -       Type: new_window
+2025-09-20 09:54:54,128 - INFO -       Score: 5
+2025-09-20 09:54:54,128 - INFO -       Time: 2025-09-20T09:50:56.162555
+2025-09-20 09:54:54,128 - INFO - 
+2025-09-20 09:54:54,128 - INFO -   10. Element: A Resume vs a Cover Letter–How to Use Them?
+2025-09-20 09:54:54,128 - INFO -       Result URL: https://jobright.ai/entry-level-jobs
+2025-09-20 09:54:54,128 - INFO -       Type: new_window
+2025-09-20 09:54:54,128 - INFO -       Score: 5
+2025-09-20 09:54:54,128 - INFO -       Time: 2025-09-20T09:51:14.773606
+2025-09-20 09:54:54,128 - INFO - 
+2025-09-20 09:54:54,128 - INFO -   11. Element: Agree & Join
+2025-09-20 09:54:54,128 - INFO -       Result URL: https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFjd15k_dB70wAAAZloCcXYsBnZbHhNtNZ3NEzssdzqLfVLuJza01POQwxOqgpDIBwjdXkxNUMmjHTsnEusCEdHzz1cNnf8kGUE48PyZ4IuWukk129KTiOxuSHhFK69WxD2Ghg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fsearch%3Fkeywords%3Dsoftware%26location%3DSan%2520Jose%252C%2520CA%26distance%3D25%26f_TPR%3Dr86400
+2025-09-20 09:54:54,129 - INFO -       Type: new_window
+2025-09-20 09:54:54,129 - INFO -       Score: 2
+2025-09-20 09:54:54,129 - INFO -       Time: 2025-09-20T09:52:14.445538
+2025-09-20 09:54:54,129 - INFO - 
+2025-09-20 09:54:54,129 - INFO -   12. Element: Upload your resume
+- Let employers find you
+software engineer jobs in San Jose, CA
+Sort by:
+relevanc
+2025-09-20 09:54:54,129 - INFO -       Result URL: https://www.indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&fromage=1&vjk=d049bb3106022bd8
+2025-09-20 09:54:54,129 - INFO -       Type: navigation
+2025-09-20 09:54:54,129 - INFO -       Score: 32
+2025-09-20 09:54:54,129 - INFO -       Time: 2025-09-20T09:54:45.240499
+2025-09-20 09:54:54,129 - INFO - 
+2025-09-20 09:54:54,129 - INFO - 
+🎉 🎉 🎉 SUCCESS! 🎉 🎉 🎉
+2025-09-20 09:54:54,129 - INFO - ✅ Successfully completed job application actions!
+2025-09-20 09:54:54,216 - INFO - 🧹 Resources cleaned up
+2025-09-20 09:54:54,216 - INFO - 
+============================================================
+2025-09-20 09:54:54,216 - INFO - 📊 FINAL STATISTICS
+2025-09-20 09:54:54,217 - INFO - ============================================================
+2025-09-20 09:54:54,217 - INFO - ✅ Successful actions: 12
+2025-09-20 09:54:54,217 - INFO - 🔍 Elements found: 432
+2025-09-20 09:54:54,217 - INFO - 🔗 External links opened: 11
+2025-09-20 09:54:54,217 - INFO - 🏢 Platforms tried: 4
+2025-09-20 09:54:54,217 - INFO - ❌ Failed attempts: 15
+2025-09-20 09:54:54,217 - INFO - ⏱️ Total runtime: 7.6 minutes

@@ -1,0 +1,2354 @@
+2025-09-14 20:43:00,264 - INFO - 🚀 STARTING DIRECT LINKEDIN JOB APPLICATION AUTOMATION
+2025-09-14 20:43:00,264 - INFO - 🎯 Target: Software jobs within 25 miles of San Jose, CA
+2025-09-14 20:43:00,265 - INFO - ⚡ Goal: Confirm job applications are being opened
+2025-09-14 20:43:00,265 - INFO - ================================================================================
+2025-09-14 20:43:00,265 - INFO - ====== WebDriver manager ======
+2025-09-14 20:43:00,381 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-14 20:43:00,636 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-14 20:43:00,716 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
+2025-09-14 20:43:01,485 - INFO - ✅ WebDriver created successfully
+2025-09-14 20:43:01,486 - INFO - 🔗 Navigating to: https://www.linkedin.com/jobs/search?keywords=software&location=San+Jose%2C+California%2C+United+States&geoId=106233382&distance=25&f_TPR=r86400&sortBy=DD
+2025-09-14 20:43:08,139 - INFO - ✅ Successfully reached LinkedIn job search
+2025-09-14 20:43:08,140 - INFO - 
+📄 PROCESSING PAGE 1
+2025-09-14 20:43:08,140 - INFO - ==================================================
+2025-09-14 20:43:11,154 - INFO - ✅ Found 60 jobs using selector: .job-search-card
+2025-09-14 20:43:11,154 - INFO - 
+[1/60] PROCESSING JOB #1
+2025-09-14 20:43:11,154 - INFO - ----------------------------------------
+2025-09-14 20:43:11,154 - INFO - 🎯 Clicking job #1
+2025-09-14 20:43:16,769 - INFO - ✅ Successfully clicked job #1
+2025-09-14 20:43:16,769 - INFO - 🔍 Looking for apply button on job #1
+2025-09-14 20:43:17,687 - WARNING - ⚠️ No apply button found for job #1
+2025-09-14 20:43:17,687 - INFO - ℹ️ Job #1: No application available
+2025-09-14 20:43:17,687 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:17,687 - INFO -     📋 Jobs processed: 1
+2025-09-14 20:43:17,688 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:17,688 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:17,688 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:17,688 - INFO -     ⏱️ Runtime: 0.3 minutes
+2025-09-14 20:43:20,688 - INFO - 
+[2/60] PROCESSING JOB #2
+2025-09-14 20:43:20,688 - INFO - ----------------------------------------
+2025-09-14 20:43:20,688 - INFO - 🎯 Clicking job #2
+2025-09-14 20:43:20,700 - ERROR - ❌ Error clicking job #2: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:43:20,700 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:20,700 - INFO -     📋 Jobs processed: 2
+2025-09-14 20:43:20,700 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:20,700 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:20,700 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:20,700 - INFO -     ⏱️ Runtime: 0.3 minutes
+2025-09-14 20:43:23,700 - INFO - 
+[3/60] PROCESSING JOB #3
+2025-09-14 20:43:23,700 - INFO - ----------------------------------------
+2025-09-14 20:43:23,700 - INFO - 🎯 Clicking job #3
+2025-09-14 20:43:23,706 - ERROR - ❌ Error clicking job #3: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:43:23,706 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:23,706 - INFO -     📋 Jobs processed: 3
+2025-09-14 20:43:23,706 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:23,706 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:23,706 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:23,706 - INFO -     ⏱️ Runtime: 0.4 minutes
+2025-09-14 20:43:26,707 - INFO - 
+[4/60] PROCESSING JOB #4
+2025-09-14 20:43:26,707 - INFO - ----------------------------------------
+2025-09-14 20:43:26,707 - INFO - 🎯 Clicking job #4
+2025-09-14 20:43:26,713 - ERROR - ❌ Error clicking job #4: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:43:26,713 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:26,713 - INFO -     📋 Jobs processed: 4
+2025-09-14 20:43:26,713 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:26,713 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:26,713 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:26,713 - INFO -     ⏱️ Runtime: 0.4 minutes
+2025-09-14 20:43:29,714 - INFO - 
+[5/60] PROCESSING JOB #5
+2025-09-14 20:43:29,714 - INFO - ----------------------------------------
+2025-09-14 20:43:29,714 - INFO - 🎯 Clicking job #5
+2025-09-14 20:43:29,732 - ERROR - ❌ Error clicking job #5: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:43:29,732 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:29,732 - INFO -     📋 Jobs processed: 5
+2025-09-14 20:43:29,732 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:29,732 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:29,732 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:29,732 - INFO -     ⏱️ Runtime: 0.5 minutes
+2025-09-14 20:43:32,733 - INFO - 
+[6/60] PROCESSING JOB #6
+2025-09-14 20:43:32,733 - INFO - ----------------------------------------
+2025-09-14 20:43:32,733 - INFO - 🎯 Clicking job #6
+2025-09-14 20:43:32,739 - ERROR - ❌ Error clicking job #6: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:43:32,739 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:32,739 - INFO -     📋 Jobs processed: 6
+2025-09-14 20:43:32,739 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:32,739 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:32,739 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:32,739 - INFO -     ⏱️ Runtime: 0.5 minutes
+2025-09-14 20:43:35,739 - INFO - 
+[7/60] PROCESSING JOB #7
+2025-09-14 20:43:35,740 - INFO - ----------------------------------------
+2025-09-14 20:43:35,740 - INFO - 🎯 Clicking job #7
+2025-09-14 20:43:35,749 - ERROR - ❌ Error clicking job #7: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:43:35,750 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:35,750 - INFO -     📋 Jobs processed: 7
+2025-09-14 20:43:35,750 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:35,750 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:35,750 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:35,750 - INFO -     ⏱️ Runtime: 0.6 minutes
+2025-09-14 20:43:38,750 - INFO - 
+[8/60] PROCESSING JOB #8
+2025-09-14 20:43:38,750 - INFO - ----------------------------------------
+2025-09-14 20:43:38,750 - INFO - 🎯 Clicking job #8
+2025-09-14 20:43:38,755 - ERROR - ❌ Error clicking job #8: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:43:38,755 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:38,755 - INFO -     📋 Jobs processed: 8
+2025-09-14 20:43:38,755 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:38,755 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:38,755 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:38,755 - INFO -     ⏱️ Runtime: 0.6 minutes
+2025-09-14 20:43:41,755 - INFO - 
+[9/60] PROCESSING JOB #9
+2025-09-14 20:43:41,756 - INFO - ----------------------------------------
+2025-09-14 20:43:41,756 - INFO - 🎯 Clicking job #9
+2025-09-14 20:43:41,762 - ERROR - ❌ Error clicking job #9: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:43:41,763 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:41,763 - INFO -     📋 Jobs processed: 9
+2025-09-14 20:43:41,763 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:41,763 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:41,763 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:41,763 - INFO -     ⏱️ Runtime: 0.7 minutes
+2025-09-14 20:43:44,764 - INFO - 
+[10/60] PROCESSING JOB #10
+2025-09-14 20:43:44,764 - INFO - ----------------------------------------
+2025-09-14 20:43:44,764 - INFO - 🎯 Clicking job #10
+2025-09-14 20:43:44,769 - ERROR - ❌ Error clicking job #10: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:43:44,769 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:44,769 - INFO -     📋 Jobs processed: 10
+2025-09-14 20:43:44,769 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:44,770 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:44,770 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:44,770 - INFO -     ⏱️ Runtime: 0.7 minutes
+2025-09-14 20:43:47,770 - INFO - 
+[11/60] PROCESSING JOB #11
+2025-09-14 20:43:47,770 - INFO - ----------------------------------------
+2025-09-14 20:43:47,770 - INFO - 🎯 Clicking job #11
+2025-09-14 20:43:47,783 - ERROR - ❌ Error clicking job #11: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:43:47,783 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:47,783 - INFO -     📋 Jobs processed: 11
+2025-09-14 20:43:47,783 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:47,783 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:47,783 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:47,783 - INFO -     ⏱️ Runtime: 0.8 minutes
+2025-09-14 20:43:50,783 - INFO - 
+[12/60] PROCESSING JOB #12
+2025-09-14 20:43:50,784 - INFO - ----------------------------------------
+2025-09-14 20:43:50,784 - INFO - 🎯 Clicking job #12
+2025-09-14 20:43:50,790 - ERROR - ❌ Error clicking job #12: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:43:50,790 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:50,790 - INFO -     📋 Jobs processed: 12
+2025-09-14 20:43:50,790 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:50,790 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:50,790 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:50,790 - INFO -     ⏱️ Runtime: 0.8 minutes
+2025-09-14 20:43:53,792 - INFO - 
+[13/60] PROCESSING JOB #13
+2025-09-14 20:43:53,793 - INFO - ----------------------------------------
+2025-09-14 20:43:53,793 - INFO - 🎯 Clicking job #13
+2025-09-14 20:43:53,815 - ERROR - ❌ Error clicking job #13: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:43:53,815 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:53,815 - INFO -     📋 Jobs processed: 13
+2025-09-14 20:43:53,815 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:53,815 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:53,815 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:53,815 - INFO -     ⏱️ Runtime: 0.9 minutes
+2025-09-14 20:43:56,816 - INFO - 
+[14/60] PROCESSING JOB #14
+2025-09-14 20:43:56,816 - INFO - ----------------------------------------
+2025-09-14 20:43:56,816 - INFO - 🎯 Clicking job #14
+2025-09-14 20:43:56,825 - ERROR - ❌ Error clicking job #14: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:43:56,825 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:56,825 - INFO -     📋 Jobs processed: 14
+2025-09-14 20:43:56,825 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:56,825 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:56,825 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:56,825 - INFO -     ⏱️ Runtime: 0.9 minutes
+2025-09-14 20:43:59,826 - INFO - 
+[15/60] PROCESSING JOB #15
+2025-09-14 20:43:59,826 - INFO - ----------------------------------------
+2025-09-14 20:43:59,826 - INFO - 🎯 Clicking job #15
+2025-09-14 20:43:59,839 - ERROR - ❌ Error clicking job #15: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:43:59,840 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:43:59,840 - INFO -     📋 Jobs processed: 15
+2025-09-14 20:43:59,840 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:43:59,840 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:43:59,840 - INFO -     🔗 External applications: 0
+2025-09-14 20:43:59,840 - INFO -     ⏱️ Runtime: 1.0 minutes
+2025-09-14 20:44:02,840 - INFO - 
+[16/60] PROCESSING JOB #16
+2025-09-14 20:44:02,840 - INFO - ----------------------------------------
+2025-09-14 20:44:02,840 - INFO - 🎯 Clicking job #16
+2025-09-14 20:44:02,846 - ERROR - ❌ Error clicking job #16: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:02,846 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:02,846 - INFO -     📋 Jobs processed: 16
+2025-09-14 20:44:02,846 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:02,846 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:02,846 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:02,846 - INFO -     ⏱️ Runtime: 1.0 minutes
+2025-09-14 20:44:05,847 - INFO - 
+[17/60] PROCESSING JOB #17
+2025-09-14 20:44:05,847 - INFO - ----------------------------------------
+2025-09-14 20:44:05,847 - INFO - 🎯 Clicking job #17
+2025-09-14 20:44:05,855 - ERROR - ❌ Error clicking job #17: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:05,855 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:05,855 - INFO -     📋 Jobs processed: 17
+2025-09-14 20:44:05,855 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:05,855 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:05,855 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:05,855 - INFO -     ⏱️ Runtime: 1.1 minutes
+2025-09-14 20:44:08,855 - INFO - 
+[18/60] PROCESSING JOB #18
+2025-09-14 20:44:08,856 - INFO - ----------------------------------------
+2025-09-14 20:44:08,856 - INFO - 🎯 Clicking job #18
+2025-09-14 20:44:08,863 - ERROR - ❌ Error clicking job #18: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:08,863 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:08,863 - INFO -     📋 Jobs processed: 18
+2025-09-14 20:44:08,863 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:08,863 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:08,863 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:08,863 - INFO -     ⏱️ Runtime: 1.1 minutes
+2025-09-14 20:44:11,867 - INFO - 
+[19/60] PROCESSING JOB #19
+2025-09-14 20:44:11,868 - INFO - ----------------------------------------
+2025-09-14 20:44:11,868 - INFO - 🎯 Clicking job #19
+2025-09-14 20:44:11,888 - ERROR - ❌ Error clicking job #19: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:11,889 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:11,889 - INFO -     📋 Jobs processed: 19
+2025-09-14 20:44:11,889 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:11,889 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:11,889 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:11,889 - INFO -     ⏱️ Runtime: 1.2 minutes
+2025-09-14 20:44:14,889 - INFO - 
+[20/60] PROCESSING JOB #20
+2025-09-14 20:44:14,889 - INFO - ----------------------------------------
+2025-09-14 20:44:14,890 - INFO - 🎯 Clicking job #20
+2025-09-14 20:44:14,900 - ERROR - ❌ Error clicking job #20: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:14,900 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:14,900 - INFO -     📋 Jobs processed: 20
+2025-09-14 20:44:14,900 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:14,900 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:14,900 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:14,900 - INFO -     ⏱️ Runtime: 1.2 minutes
+2025-09-14 20:44:17,900 - INFO - 
+[21/60] PROCESSING JOB #21
+2025-09-14 20:44:17,901 - INFO - ----------------------------------------
+2025-09-14 20:44:17,901 - INFO - 🎯 Clicking job #21
+2025-09-14 20:44:17,908 - ERROR - ❌ Error clicking job #21: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:17,909 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:17,909 - INFO -     📋 Jobs processed: 21
+2025-09-14 20:44:17,909 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:17,909 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:17,909 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:17,909 - INFO -     ⏱️ Runtime: 1.3 minutes
+2025-09-14 20:44:20,909 - INFO - 
+[22/60] PROCESSING JOB #22
+2025-09-14 20:44:20,909 - INFO - ----------------------------------------
+2025-09-14 20:44:20,909 - INFO - 🎯 Clicking job #22
+2025-09-14 20:44:20,920 - ERROR - ❌ Error clicking job #22: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:20,920 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:20,920 - INFO -     📋 Jobs processed: 22
+2025-09-14 20:44:20,920 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:20,920 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:20,920 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:20,920 - INFO -     ⏱️ Runtime: 1.3 minutes
+2025-09-14 20:44:23,920 - INFO - 
+[23/60] PROCESSING JOB #23
+2025-09-14 20:44:23,921 - INFO - ----------------------------------------
+2025-09-14 20:44:23,921 - INFO - 🎯 Clicking job #23
+2025-09-14 20:44:23,924 - ERROR - ❌ Error clicking job #23: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:23,924 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:23,924 - INFO -     📋 Jobs processed: 23
+2025-09-14 20:44:23,924 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:23,924 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:23,924 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:23,924 - INFO -     ⏱️ Runtime: 1.4 minutes
+2025-09-14 20:44:26,924 - INFO - 
+[24/60] PROCESSING JOB #24
+2025-09-14 20:44:26,924 - INFO - ----------------------------------------
+2025-09-14 20:44:26,924 - INFO - 🎯 Clicking job #24
+2025-09-14 20:44:26,930 - ERROR - ❌ Error clicking job #24: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:26,931 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:26,931 - INFO -     📋 Jobs processed: 24
+2025-09-14 20:44:26,931 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:26,931 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:26,931 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:26,931 - INFO -     ⏱️ Runtime: 1.4 minutes
+2025-09-14 20:44:29,931 - INFO - 
+[25/60] PROCESSING JOB #25
+2025-09-14 20:44:29,932 - INFO - ----------------------------------------
+2025-09-14 20:44:29,932 - INFO - 🎯 Clicking job #25
+2025-09-14 20:44:29,944 - ERROR - ❌ Error clicking job #25: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:29,944 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:29,944 - INFO -     📋 Jobs processed: 25
+2025-09-14 20:44:29,944 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:29,944 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:29,944 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:29,944 - INFO -     ⏱️ Runtime: 1.5 minutes
+2025-09-14 20:44:32,944 - INFO - 
+[26/60] PROCESSING JOB #26
+2025-09-14 20:44:32,945 - INFO - ----------------------------------------
+2025-09-14 20:44:32,945 - INFO - 🎯 Clicking job #26
+2025-09-14 20:44:32,954 - ERROR - ❌ Error clicking job #26: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:32,954 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:32,954 - INFO -     📋 Jobs processed: 26
+2025-09-14 20:44:32,954 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:32,954 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:32,954 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:32,954 - INFO -     ⏱️ Runtime: 1.5 minutes
+2025-09-14 20:44:35,954 - INFO - 
+[27/60] PROCESSING JOB #27
+2025-09-14 20:44:35,955 - INFO - ----------------------------------------
+2025-09-14 20:44:35,955 - INFO - 🎯 Clicking job #27
+2025-09-14 20:44:35,959 - ERROR - ❌ Error clicking job #27: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:35,959 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:35,959 - INFO -     📋 Jobs processed: 27
+2025-09-14 20:44:35,959 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:35,959 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:35,959 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:35,959 - INFO -     ⏱️ Runtime: 1.6 minutes
+2025-09-14 20:44:38,959 - INFO - 
+[28/60] PROCESSING JOB #28
+2025-09-14 20:44:38,960 - INFO - ----------------------------------------
+2025-09-14 20:44:38,960 - INFO - 🎯 Clicking job #28
+2025-09-14 20:44:38,969 - ERROR - ❌ Error clicking job #28: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:38,969 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:38,969 - INFO -     📋 Jobs processed: 28
+2025-09-14 20:44:38,969 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:38,969 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:38,969 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:38,969 - INFO -     ⏱️ Runtime: 1.6 minutes
+2025-09-14 20:44:41,969 - INFO - 
+[29/60] PROCESSING JOB #29
+2025-09-14 20:44:41,969 - INFO - ----------------------------------------
+2025-09-14 20:44:41,969 - INFO - 🎯 Clicking job #29
+2025-09-14 20:44:41,979 - ERROR - ❌ Error clicking job #29: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:41,979 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:41,979 - INFO -     📋 Jobs processed: 29
+2025-09-14 20:44:41,979 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:41,979 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:41,979 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:41,979 - INFO -     ⏱️ Runtime: 1.7 minutes
+2025-09-14 20:44:44,979 - INFO - 
+[30/60] PROCESSING JOB #30
+2025-09-14 20:44:44,980 - INFO - ----------------------------------------
+2025-09-14 20:44:44,980 - INFO - 🎯 Clicking job #30
+2025-09-14 20:44:44,997 - ERROR - ❌ Error clicking job #30: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:44,998 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:44,998 - INFO -     📋 Jobs processed: 30
+2025-09-14 20:44:44,998 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:44,998 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:44,998 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:44,998 - INFO -     ⏱️ Runtime: 1.7 minutes
+2025-09-14 20:44:47,998 - INFO - 
+[31/60] PROCESSING JOB #31
+2025-09-14 20:44:47,998 - INFO - ----------------------------------------
+2025-09-14 20:44:47,998 - INFO - 🎯 Clicking job #31
+2025-09-14 20:44:48,004 - ERROR - ❌ Error clicking job #31: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:48,005 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:48,005 - INFO -     📋 Jobs processed: 31
+2025-09-14 20:44:48,005 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:48,005 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:48,005 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:48,005 - INFO -     ⏱️ Runtime: 1.8 minutes
+2025-09-14 20:44:51,005 - INFO - 
+[32/60] PROCESSING JOB #32
+2025-09-14 20:44:51,005 - INFO - ----------------------------------------
+2025-09-14 20:44:51,005 - INFO - 🎯 Clicking job #32
+2025-09-14 20:44:51,019 - ERROR - ❌ Error clicking job #32: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:51,019 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:51,019 - INFO -     📋 Jobs processed: 32
+2025-09-14 20:44:51,019 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:51,019 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:51,019 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:51,019 - INFO -     ⏱️ Runtime: 1.8 minutes
+2025-09-14 20:44:54,020 - INFO - 
+[33/60] PROCESSING JOB #33
+2025-09-14 20:44:54,020 - INFO - ----------------------------------------
+2025-09-14 20:44:54,020 - INFO - 🎯 Clicking job #33
+2025-09-14 20:44:54,025 - ERROR - ❌ Error clicking job #33: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x55d1d45ed08a <unknown>
+#1 0x55d1d408ca70 <unknown>
+#2 0x55d1d40a00bb <unknown>
+#3 0x55d1d409ee82 <unknown>
+#4 0x55d1d4093fd9 <unknown>
+#5 0x55d1d4094105 <unknown>
+#6 0x55d1d409220f <unknown>
+#7 0x55d1d409620a <unknown>
+#8 0x55d1d412b18e <unknown>
+#9 0x55d1d41043e2 <unknown>
+#10 0x55d1d412a14f <unknown>
+#11 0x55d1d41041b3 <unknown>
+#12 0x55d1d40d059b <unknown>
+#13 0x55d1d40d1971 <unknown>
+#14 0x55d1d45b225b <unknown>
+#15 0x55d1d45b5fa9 <unknown>
+#16 0x55d1d4599339 <unknown>
+#17 0x55d1d45b6b58 <unknown>
+#18 0x55d1d457dc1f <unknown>
+#19 0x55d1d45da118 <unknown>
+#20 0x55d1d45da2f6 <unknown>
+#21 0x55d1d45ec066 <unknown>
+#22 0x7f7f50976b7b <unknown>
+
+2025-09-14 20:44:54,025 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-14 20:44:54,025 - INFO -     📋 Jobs processed: 33
+2025-09-14 20:44:54,025 - INFO -     🎯 Jobs clicked: 1
+2025-09-14 20:44:54,025 - INFO -     ✅ Applications opened: 0
+2025-09-14 20:44:54,025 - INFO -     🔗 External applications: 0
+2025-09-14 20:44:54,025 - INFO -     ⏱️ Runtime: 1.9 minutes
+2025-09-15 19:49:36,509 - INFO - 🚀 STARTING DIRECT LINKEDIN JOB APPLICATION AUTOMATION
+2025-09-15 19:49:36,510 - INFO - 🎯 Target: Software jobs within 25 miles of San Jose, CA
+2025-09-15 19:49:36,510 - INFO - ⚡ Goal: Confirm job applications are being opened
+2025-09-15 19:49:36,510 - INFO - ================================================================================
+2025-09-15 19:49:36,510 - INFO - ====== WebDriver manager ======
+2025-09-15 19:49:36,565 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-15 19:49:41,697 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-15 19:49:41,755 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-15 19:49:41,991 - INFO - WebDriver version 139.0.7258.154 selected
+2025-09-15 19:49:41,995 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/linux64/chromedriver-linux64.zip
+2025-09-15 19:49:41,996 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.154/linux64/chromedriver-linux64.zip
+2025-09-15 19:49:42,119 - INFO - Driver downloading response is 200
+2025-09-15 19:49:46,863 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-15 19:49:47,164 - INFO - Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154]
+2025-09-15 19:49:47,480 - INFO - ✅ WebDriver created successfully
+2025-09-15 19:49:47,480 - INFO - 🔗 Navigating to: https://www.linkedin.com/jobs/search?keywords=software&location=San+Jose%2C+California%2C+United+States&geoId=106233382&distance=25&f_TPR=r86400&sortBy=DD
+2025-09-15 19:49:54,756 - INFO - ✅ Successfully reached LinkedIn job search
+2025-09-15 19:49:54,757 - INFO - 
+📄 PROCESSING PAGE 1
+2025-09-15 19:49:54,757 - INFO - ==================================================
+2025-09-15 19:49:57,768 - INFO - ✅ Found 60 jobs using selector: .job-search-card
+2025-09-15 19:49:57,768 - INFO - 
+[1/60] PROCESSING JOB #1
+2025-09-15 19:49:57,768 - INFO - ----------------------------------------
+2025-09-15 19:49:57,768 - INFO - 🎯 Clicking job #1
+2025-09-15 19:50:02,053 - INFO - ✅ Successfully clicked job #1
+2025-09-15 19:50:02,053 - INFO - 🔍 Looking for apply button on job #1
+2025-09-15 19:50:02,177 - WARNING - ⚠️ No apply button found for job #1
+2025-09-15 19:50:02,177 - INFO - ℹ️ Job #1: No application available
+2025-09-15 19:50:02,177 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:02,177 - INFO -     📋 Jobs processed: 1
+2025-09-15 19:50:02,177 - INFO -     🎯 Jobs clicked: 1
+2025-09-15 19:50:02,177 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:02,178 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:02,178 - INFO -     ⏱️ Runtime: 0.4 minutes
+2025-09-15 19:50:05,178 - INFO - 
+[2/60] PROCESSING JOB #2
+2025-09-15 19:50:05,178 - INFO - ----------------------------------------
+2025-09-15 19:50:05,178 - INFO - 🎯 Clicking job #2
+2025-09-15 19:50:10,375 - INFO - ✅ Successfully clicked job #2
+2025-09-15 19:50:10,375 - INFO - 🔍 Looking for apply button on job #2
+2025-09-15 19:50:10,539 - INFO - 🎯 Found apply button using: button[data-tracking-control-name*='apply']
+2025-09-15 19:50:10,543 - INFO -     Button text: 'Apply'
+2025-09-15 19:50:12,603 - ERROR - ❌ Error clicking apply button: Message: element click intercepted: Element <button class="sign-up-modal__outlet top-card-layout__cta mt-2 ml-1.5 h-auto babybear:flex-auto top-card-layout__cta--primary btn-md btn-primary" data-modal="sign-up-modal-outlet" data-tracking-control-name="public_jobs_apply-link-offsite_sign-up-modal">...</button> is not clickable at point (489, 16). Other element would receive the click: <nav class="nav pt-1.5 pb-2 flex items-center justify-between relative flex-nowrap babymamabear:py-1.5
+         nav--minified-mobile 
+        
+        " aria-label="Primary">...</nav>
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226fa778c <unknown>
+#3 0x561226fa55eb <unknown>
+#4 0x561226fa2c92 <unknown>
+#5 0x561226fa23a7 <unknown>
+#6 0x561226f94b1b <unknown>
+#7 0x561226fc63e2 <unknown>
+#8 0x561226f9449a <unknown>
+#9 0x561226fc65ae <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:12,603 - INFO - ℹ️ Job #2: No application available
+2025-09-15 19:50:12,604 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:12,604 - INFO -     📋 Jobs processed: 2
+2025-09-15 19:50:12,604 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:12,604 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:12,604 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:12,604 - INFO -     ⏱️ Runtime: 0.6 minutes
+2025-09-15 19:50:15,604 - INFO - 
+[3/60] PROCESSING JOB #3
+2025-09-15 19:50:15,605 - INFO - ----------------------------------------
+2025-09-15 19:50:15,605 - INFO - 🎯 Clicking job #3
+2025-09-15 19:50:15,618 - ERROR - ❌ Error clicking job #3: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:15,619 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:15,619 - INFO -     📋 Jobs processed: 3
+2025-09-15 19:50:15,619 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:15,619 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:15,619 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:15,619 - INFO -     ⏱️ Runtime: 0.7 minutes
+2025-09-15 19:50:18,620 - INFO - 
+[4/60] PROCESSING JOB #4
+2025-09-15 19:50:18,620 - INFO - ----------------------------------------
+2025-09-15 19:50:18,620 - INFO - 🎯 Clicking job #4
+2025-09-15 19:50:18,633 - ERROR - ❌ Error clicking job #4: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:18,634 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:18,634 - INFO -     📋 Jobs processed: 4
+2025-09-15 19:50:18,634 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:18,634 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:18,634 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:18,634 - INFO -     ⏱️ Runtime: 0.7 minutes
+2025-09-15 19:50:21,634 - INFO - 
+[5/60] PROCESSING JOB #5
+2025-09-15 19:50:21,635 - INFO - ----------------------------------------
+2025-09-15 19:50:21,635 - INFO - 🎯 Clicking job #5
+2025-09-15 19:50:21,648 - ERROR - ❌ Error clicking job #5: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:21,648 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:21,648 - INFO -     📋 Jobs processed: 5
+2025-09-15 19:50:21,648 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:21,648 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:21,648 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:21,648 - INFO -     ⏱️ Runtime: 0.8 minutes
+2025-09-15 19:50:24,649 - INFO - 
+[6/60] PROCESSING JOB #6
+2025-09-15 19:50:24,649 - INFO - ----------------------------------------
+2025-09-15 19:50:24,649 - INFO - 🎯 Clicking job #6
+2025-09-15 19:50:24,662 - ERROR - ❌ Error clicking job #6: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:24,662 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:24,662 - INFO -     📋 Jobs processed: 6
+2025-09-15 19:50:24,662 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:24,662 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:24,662 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:24,662 - INFO -     ⏱️ Runtime: 0.8 minutes
+2025-09-15 19:50:27,663 - INFO - 
+[7/60] PROCESSING JOB #7
+2025-09-15 19:50:27,663 - INFO - ----------------------------------------
+2025-09-15 19:50:27,663 - INFO - 🎯 Clicking job #7
+2025-09-15 19:50:27,667 - ERROR - ❌ Error clicking job #7: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:27,668 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:27,668 - INFO -     📋 Jobs processed: 7
+2025-09-15 19:50:27,668 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:27,668 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:27,668 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:27,668 - INFO -     ⏱️ Runtime: 0.9 minutes
+2025-09-15 19:50:30,668 - INFO - 
+[8/60] PROCESSING JOB #8
+2025-09-15 19:50:30,668 - INFO - ----------------------------------------
+2025-09-15 19:50:30,668 - INFO - 🎯 Clicking job #8
+2025-09-15 19:50:30,674 - ERROR - ❌ Error clicking job #8: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:30,674 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:30,674 - INFO -     📋 Jobs processed: 8
+2025-09-15 19:50:30,674 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:30,674 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:30,674 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:30,674 - INFO -     ⏱️ Runtime: 0.9 minutes
+2025-09-15 19:50:33,674 - INFO - 
+[9/60] PROCESSING JOB #9
+2025-09-15 19:50:33,674 - INFO - ----------------------------------------
+2025-09-15 19:50:33,675 - INFO - 🎯 Clicking job #9
+2025-09-15 19:50:33,688 - ERROR - ❌ Error clicking job #9: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:33,688 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:33,688 - INFO -     📋 Jobs processed: 9
+2025-09-15 19:50:33,688 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:33,688 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:33,688 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:33,688 - INFO -     ⏱️ Runtime: 1.0 minutes
+2025-09-15 19:50:36,688 - INFO - 
+[10/60] PROCESSING JOB #10
+2025-09-15 19:50:36,689 - INFO - ----------------------------------------
+2025-09-15 19:50:36,689 - INFO - 🎯 Clicking job #10
+2025-09-15 19:50:36,699 - ERROR - ❌ Error clicking job #10: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:36,699 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:36,699 - INFO -     📋 Jobs processed: 10
+2025-09-15 19:50:36,699 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:36,699 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:36,699 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:36,699 - INFO -     ⏱️ Runtime: 1.0 minutes
+2025-09-15 19:50:39,699 - INFO - 
+[11/60] PROCESSING JOB #11
+2025-09-15 19:50:39,699 - INFO - ----------------------------------------
+2025-09-15 19:50:39,699 - INFO - 🎯 Clicking job #11
+2025-09-15 19:50:39,703 - ERROR - ❌ Error clicking job #11: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:39,703 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:39,703 - INFO -     📋 Jobs processed: 11
+2025-09-15 19:50:39,703 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:39,703 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:39,703 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:39,703 - INFO -     ⏱️ Runtime: 1.1 minutes
+2025-09-15 19:50:42,703 - INFO - 
+[12/60] PROCESSING JOB #12
+2025-09-15 19:50:42,704 - INFO - ----------------------------------------
+2025-09-15 19:50:42,704 - INFO - 🎯 Clicking job #12
+2025-09-15 19:50:42,707 - ERROR - ❌ Error clicking job #12: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:42,707 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:42,707 - INFO -     📋 Jobs processed: 12
+2025-09-15 19:50:42,707 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:42,707 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:42,707 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:42,707 - INFO -     ⏱️ Runtime: 1.1 minutes
+2025-09-15 19:50:45,707 - INFO - 
+[13/60] PROCESSING JOB #13
+2025-09-15 19:50:45,707 - INFO - ----------------------------------------
+2025-09-15 19:50:45,707 - INFO - 🎯 Clicking job #13
+2025-09-15 19:50:45,710 - ERROR - ❌ Error clicking job #13: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:45,710 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:45,711 - INFO -     📋 Jobs processed: 13
+2025-09-15 19:50:45,711 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:45,711 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:45,711 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:45,711 - INFO -     ⏱️ Runtime: 1.2 minutes
+2025-09-15 19:50:48,711 - INFO - 
+[14/60] PROCESSING JOB #14
+2025-09-15 19:50:48,711 - INFO - ----------------------------------------
+2025-09-15 19:50:48,711 - INFO - 🎯 Clicking job #14
+2025-09-15 19:50:48,724 - ERROR - ❌ Error clicking job #14: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:48,724 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:48,724 - INFO -     📋 Jobs processed: 14
+2025-09-15 19:50:48,724 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:48,724 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:48,724 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:48,725 - INFO -     ⏱️ Runtime: 1.2 minutes
+2025-09-15 19:50:51,725 - INFO - 
+[15/60] PROCESSING JOB #15
+2025-09-15 19:50:51,725 - INFO - ----------------------------------------
+2025-09-15 19:50:51,725 - INFO - 🎯 Clicking job #15
+2025-09-15 19:50:51,735 - ERROR - ❌ Error clicking job #15: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:51,735 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:51,735 - INFO -     📋 Jobs processed: 15
+2025-09-15 19:50:51,735 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:51,735 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:51,735 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:51,735 - INFO -     ⏱️ Runtime: 1.3 minutes
+2025-09-15 19:50:54,736 - INFO - 
+[16/60] PROCESSING JOB #16
+2025-09-15 19:50:54,736 - INFO - ----------------------------------------
+2025-09-15 19:50:54,736 - INFO - 🎯 Clicking job #16
+2025-09-15 19:50:54,742 - ERROR - ❌ Error clicking job #16: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:54,742 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:54,742 - INFO -     📋 Jobs processed: 16
+2025-09-15 19:50:54,742 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:54,742 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:54,742 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:54,742 - INFO -     ⏱️ Runtime: 1.3 minutes
+2025-09-15 19:50:57,742 - INFO - 
+[17/60] PROCESSING JOB #17
+2025-09-15 19:50:57,742 - INFO - ----------------------------------------
+2025-09-15 19:50:57,742 - INFO - 🎯 Clicking job #17
+2025-09-15 19:50:57,754 - ERROR - ❌ Error clicking job #17: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:50:57,754 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:50:57,754 - INFO -     📋 Jobs processed: 17
+2025-09-15 19:50:57,754 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:50:57,754 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:50:57,754 - INFO -     🔗 External applications: 0
+2025-09-15 19:50:57,754 - INFO -     ⏱️ Runtime: 1.4 minutes
+2025-09-15 19:51:00,754 - INFO - 
+[18/60] PROCESSING JOB #18
+2025-09-15 19:51:00,754 - INFO - ----------------------------------------
+2025-09-15 19:51:00,754 - INFO - 🎯 Clicking job #18
+2025-09-15 19:51:00,759 - ERROR - ❌ Error clicking job #18: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:51:00,759 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:51:00,759 - INFO -     📋 Jobs processed: 18
+2025-09-15 19:51:00,759 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:51:00,759 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:51:00,759 - INFO -     🔗 External applications: 0
+2025-09-15 19:51:00,759 - INFO -     ⏱️ Runtime: 1.4 minutes
+2025-09-15 19:51:03,760 - INFO - 
+[19/60] PROCESSING JOB #19
+2025-09-15 19:51:03,760 - INFO - ----------------------------------------
+2025-09-15 19:51:03,760 - INFO - 🎯 Clicking job #19
+2025-09-15 19:51:03,771 - ERROR - ❌ Error clicking job #19: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:51:03,772 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:51:03,772 - INFO -     📋 Jobs processed: 19
+2025-09-15 19:51:03,772 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:51:03,772 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:51:03,772 - INFO -     🔗 External applications: 0
+2025-09-15 19:51:03,772 - INFO -     ⏱️ Runtime: 1.5 minutes
+2025-09-15 19:51:06,772 - INFO - 
+[20/60] PROCESSING JOB #20
+2025-09-15 19:51:06,772 - INFO - ----------------------------------------
+2025-09-15 19:51:06,772 - INFO - 🎯 Clicking job #20
+2025-09-15 19:51:06,782 - ERROR - ❌ Error clicking job #20: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:51:06,782 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:51:06,782 - INFO -     📋 Jobs processed: 20
+2025-09-15 19:51:06,782 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:51:06,782 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:51:06,782 - INFO -     🔗 External applications: 0
+2025-09-15 19:51:06,782 - INFO -     ⏱️ Runtime: 1.5 minutes
+2025-09-15 19:51:09,782 - INFO - 
+[21/60] PROCESSING JOB #21
+2025-09-15 19:51:09,782 - INFO - ----------------------------------------
+2025-09-15 19:51:09,782 - INFO - 🎯 Clicking job #21
+2025-09-15 19:51:09,786 - ERROR - ❌ Error clicking job #21: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:51:09,786 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:51:09,786 - INFO -     📋 Jobs processed: 21
+2025-09-15 19:51:09,786 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:51:09,786 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:51:09,786 - INFO -     🔗 External applications: 0
+2025-09-15 19:51:09,786 - INFO -     ⏱️ Runtime: 1.6 minutes
+2025-09-15 19:51:12,787 - INFO - 
+[22/60] PROCESSING JOB #22
+2025-09-15 19:51:12,787 - INFO - ----------------------------------------
+2025-09-15 19:51:12,787 - INFO - 🎯 Clicking job #22
+2025-09-15 19:51:12,797 - ERROR - ❌ Error clicking job #22: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:51:12,797 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:51:12,797 - INFO -     📋 Jobs processed: 22
+2025-09-15 19:51:12,797 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:51:12,798 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:51:12,798 - INFO -     🔗 External applications: 0
+2025-09-15 19:51:12,798 - INFO -     ⏱️ Runtime: 1.6 minutes
+2025-09-15 19:51:15,798 - INFO - 
+[23/60] PROCESSING JOB #23
+2025-09-15 19:51:15,798 - INFO - ----------------------------------------
+2025-09-15 19:51:15,798 - INFO - 🎯 Clicking job #23
+2025-09-15 19:51:15,801 - ERROR - ❌ Error clicking job #23: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:51:15,801 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:51:15,802 - INFO -     📋 Jobs processed: 23
+2025-09-15 19:51:15,802 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:51:15,802 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:51:15,802 - INFO -     🔗 External applications: 0
+2025-09-15 19:51:15,802 - INFO -     ⏱️ Runtime: 1.7 minutes
+2025-09-15 19:51:18,802 - INFO - 
+[24/60] PROCESSING JOB #24
+2025-09-15 19:51:18,802 - INFO - ----------------------------------------
+2025-09-15 19:51:18,802 - INFO - 🎯 Clicking job #24
+2025-09-15 19:51:18,806 - ERROR - ❌ Error clicking job #24: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:51:18,806 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:51:18,806 - INFO -     📋 Jobs processed: 24
+2025-09-15 19:51:18,806 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:51:18,806 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:51:18,806 - INFO -     🔗 External applications: 0
+2025-09-15 19:51:18,806 - INFO -     ⏱️ Runtime: 1.7 minutes
+2025-09-15 19:51:21,806 - INFO - 
+[25/60] PROCESSING JOB #25
+2025-09-15 19:51:21,806 - INFO - ----------------------------------------
+2025-09-15 19:51:21,806 - INFO - 🎯 Clicking job #25
+2025-09-15 19:51:21,820 - ERROR - ❌ Error clicking job #25: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:51:21,820 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:51:21,820 - INFO -     📋 Jobs processed: 25
+2025-09-15 19:51:21,820 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:51:21,820 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:51:21,821 - INFO -     🔗 External applications: 0
+2025-09-15 19:51:21,821 - INFO -     ⏱️ Runtime: 1.8 minutes
+2025-09-15 19:51:24,821 - INFO - 
+[26/60] PROCESSING JOB #26
+2025-09-15 19:51:24,821 - INFO - ----------------------------------------
+2025-09-15 19:51:24,821 - INFO - 🎯 Clicking job #26
+2025-09-15 19:51:24,835 - ERROR - ❌ Error clicking job #26: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:51:24,835 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:51:24,835 - INFO -     📋 Jobs processed: 26
+2025-09-15 19:51:24,835 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:51:24,835 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:51:24,835 - INFO -     🔗 External applications: 0
+2025-09-15 19:51:24,835 - INFO -     ⏱️ Runtime: 1.8 minutes
+2025-09-15 19:51:27,836 - INFO - 
+[27/60] PROCESSING JOB #27
+2025-09-15 19:51:27,836 - INFO - ----------------------------------------
+2025-09-15 19:51:27,836 - INFO - 🎯 Clicking job #27
+2025-09-15 19:51:27,848 - ERROR - ❌ Error clicking job #27: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:51:27,848 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:51:27,848 - INFO -     📋 Jobs processed: 27
+2025-09-15 19:51:27,848 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:51:27,848 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:51:27,848 - INFO -     🔗 External applications: 0
+2025-09-15 19:51:27,848 - INFO -     ⏱️ Runtime: 1.9 minutes
+2025-09-15 19:51:30,849 - INFO - 
+[28/60] PROCESSING JOB #28
+2025-09-15 19:51:30,849 - INFO - ----------------------------------------
+2025-09-15 19:51:30,849 - INFO - 🎯 Clicking job #28
+2025-09-15 19:51:30,859 - ERROR - ❌ Error clicking job #28: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:51:30,859 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:51:30,859 - INFO -     📋 Jobs processed: 28
+2025-09-15 19:51:30,859 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:51:30,859 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:51:30,859 - INFO -     🔗 External applications: 0
+2025-09-15 19:51:30,859 - INFO -     ⏱️ Runtime: 1.9 minutes
+2025-09-15 19:51:33,859 - INFO - 
+[29/60] PROCESSING JOB #29
+2025-09-15 19:51:33,859 - INFO - ----------------------------------------
+2025-09-15 19:51:33,860 - INFO - 🎯 Clicking job #29
+2025-09-15 19:51:33,870 - ERROR - ❌ Error clicking job #29: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5612274af08a <unknown>
+#1 0x561226f4ea70 <unknown>
+#2 0x561226f620bb <unknown>
+#3 0x561226f60e82 <unknown>
+#4 0x561226f55fd9 <unknown>
+#5 0x561226f56105 <unknown>
+#6 0x561226f5420f <unknown>
+#7 0x561226f5820a <unknown>
+#8 0x561226fed18e <unknown>
+#9 0x561226fc63e2 <unknown>
+#10 0x561226fec14f <unknown>
+#11 0x561226fc61b3 <unknown>
+#12 0x561226f9259b <unknown>
+#13 0x561226f93971 <unknown>
+#14 0x56122747425b <unknown>
+#15 0x561227477fa9 <unknown>
+#16 0x56122745b339 <unknown>
+#17 0x561227478b58 <unknown>
+#18 0x56122743fc1f <unknown>
+#19 0x56122749c118 <unknown>
+#20 0x56122749c2f6 <unknown>
+#21 0x5612274ae066 <unknown>
+#22 0x7f25e01ccb7b <unknown>
+
+2025-09-15 19:51:33,871 - INFO - 
+📊 CURRENT PROGRESS:
+2025-09-15 19:51:33,871 - INFO -     📋 Jobs processed: 29
+2025-09-15 19:51:33,871 - INFO -     🎯 Jobs clicked: 2
+2025-09-15 19:51:33,871 - INFO -     ✅ Applications opened: 0
+2025-09-15 19:51:33,871 - INFO -     🔗 External applications: 0
+2025-09-15 19:51:33,871 - INFO -     ⏱️ Runtime: 2.0 minutes

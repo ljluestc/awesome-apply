@@ -1,0 +1,925 @@
+{
+  "session_info": {
+    "session_id": "20250914_143203",
+    "timestamp": "20250914_143203",
+    "search_params": {
+      "keywords": "software",
+      "location": "San Jose, California, United States",
+      "geoId": "106233382",
+      "distance": "25"
+    },
+    "duration_seconds": 9164.626972198486
+  },
+  "statistics": {
+    "start_time": 1757885523.9172683,
+    "jobs_found": 50,
+    "jobs_processed": 0,
+    "applications_attempted": 50,
+    "applications_successful": 0,
+    "applications_failed": 50,
+    "pages_processed": 0
+  },
+  "successful_applications": [],
+  "failed_applications": [
+    {
+      "job_info": {
+        "index": 0,
+        "job_id": "urn:li:jobPosting:4265604833",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/nuro-inc.?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.154\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "No apply button found after extensive search"
+      },
+      "timestamp": 1757894280.8358982,
+      "applied_at": "2025-09-14T16:58:00.835903"
+    },
+    {
+      "job_info": {
+        "index": 1,
+        "job_id": "urn:li:jobPosting:4300587046",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/lensa?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.158\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894296.0097296,
+      "applied_at": "2025-09-14T16:58:16.009733"
+    },
+    {
+      "job_info": {
+        "index": 2,
+        "job_id": "urn:li:jobPosting:4236335624",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/meta?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.162\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894304.0246768,
+      "applied_at": "2025-09-14T16:58:24.024679"
+    },
+    {
+      "job_info": {
+        "index": 3,
+        "job_id": "urn:li:jobPosting:4300573553",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/lensa?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.166\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894312.0287757,
+      "applied_at": "2025-09-14T16:58:32.028776"
+    },
+    {
+      "job_info": {
+        "index": 4,
+        "job_id": "urn:li:jobPosting:4188145018",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/lumalabsai?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.208\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894320.0433655,
+      "applied_at": "2025-09-14T16:58:40.043366"
+    },
+    {
+      "job_info": {
+        "index": 5,
+        "job_id": "urn:li:jobPosting:4262571856",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/xai?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.209\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894328.0541039,
+      "applied_at": "2025-09-14T16:58:48.054105"
+    },
+    {
+      "job_info": {
+        "index": 6,
+        "job_id": "urn:li:jobPosting:4214833117",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/linkedin?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.210\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894336.0676527,
+      "applied_at": "2025-09-14T16:58:56.067655"
+    },
+    {
+      "job_info": {
+        "index": 7,
+        "job_id": "urn:li:jobPosting:4274652981",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/amd?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.211\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894344.0780013,
+      "applied_at": "2025-09-14T16:59:04.078005"
+    },
+    {
+      "job_info": {
+        "index": 8,
+        "job_id": "urn:li:jobPosting:4300574357",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/box?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.212\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894352.0908775,
+      "applied_at": "2025-09-14T16:59:12.090880"
+    },
+    {
+      "job_info": {
+        "index": 9,
+        "job_id": "urn:li:jobPosting:4240611138",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/nvidia?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.213\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894360.120748,
+      "applied_at": "2025-09-14T16:59:20.120752"
+    },
+    {
+      "job_info": {
+        "index": 10,
+        "job_id": "urn:li:jobPosting:4278793450",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://fi.linkedin.com/company/nokia?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.214\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894368.127429,
+      "applied_at": "2025-09-14T16:59:28.127432"
+    },
+    {
+      "job_info": {
+        "index": 11,
+        "job_id": "urn:li:jobPosting:4278790619",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://fi.linkedin.com/company/nokia?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.215\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894376.1435657,
+      "applied_at": "2025-09-14T16:59:36.143572"
+    },
+    {
+      "job_info": {
+        "index": 12,
+        "job_id": "urn:li:jobPosting:4143729246",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/meta?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.216\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894384.1536653,
+      "applied_at": "2025-09-14T16:59:44.153668"
+    },
+    {
+      "job_info": {
+        "index": 13,
+        "job_id": "urn:li:jobPosting:4289054225",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/linkedin?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.217\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894392.1625922,
+      "applied_at": "2025-09-14T16:59:52.162596"
+    },
+    {
+      "job_info": {
+        "index": 14,
+        "job_id": "urn:li:jobPosting:4237273261",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/meta?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.218\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894400.1688352,
+      "applied_at": "2025-09-14T17:00:00.168836"
+    },
+    {
+      "job_info": {
+        "index": 15,
+        "job_id": "urn:li:jobPosting:4298508584",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/asteroid-energy?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.219\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894408.1731853,
+      "applied_at": "2025-09-14T17:00:08.173186"
+    },
+    {
+      "job_info": {
+        "index": 16,
+        "job_id": "urn:li:jobPosting:4188144132",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/lumalabsai?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.220\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894416.1945546,
+      "applied_at": "2025-09-14T17:00:16.194561"
+    },
+    {
+      "job_info": {
+        "index": 17,
+        "job_id": "urn:li:jobPosting:4076037034",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/doordash?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.221\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894424.2005332,
+      "applied_at": "2025-09-14T17:00:24.200534"
+    },
+    {
+      "job_info": {
+        "index": 18,
+        "job_id": "urn:li:jobPosting:4278789628",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://fi.linkedin.com/company/nokia?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.222\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894432.205527,
+      "applied_at": "2025-09-14T17:00:32.205529"
+    },
+    {
+      "job_info": {
+        "index": 19,
+        "job_id": "urn:li:jobPosting:4300507443",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/tubi-tv?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.223\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894440.2111747,
+      "applied_at": "2025-09-14T17:00:40.211177"
+    },
+    {
+      "job_info": {
+        "index": 20,
+        "job_id": "urn:li:jobPosting:4300410692",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/cityofsantaclara?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.224\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894448.2192008,
+      "applied_at": "2025-09-14T17:00:48.219201"
+    },
+    {
+      "job_info": {
+        "index": 21,
+        "job_id": "urn:li:jobPosting:4290413616",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://cn.linkedin.com/company/bytedance?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.225\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894456.2293553,
+      "applied_at": "2025-09-14T17:00:56.229357"
+    },
+    {
+      "job_info": {
+        "index": 22,
+        "job_id": "urn:li:jobPosting:4253292123",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/walmart?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.226\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894464.2354767,
+      "applied_at": "2025-09-14T17:01:04.235478"
+    },
+    {
+      "job_info": {
+        "index": 23,
+        "job_id": "urn:li:jobPosting:4209385442",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/rivian-and-vw-group-technologies?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.227\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894472.251588,
+      "applied_at": "2025-09-14T17:01:12.251590"
+    },
+    {
+      "job_info": {
+        "index": 24,
+        "job_id": "urn:li:jobPosting:4298095992",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/oracle?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.228\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894480.2641125,
+      "applied_at": "2025-09-14T17:01:20.264113"
+    },
+    {
+      "job_info": {
+        "index": 25,
+        "job_id": "urn:li:jobPosting:4300195672",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://no.linkedin.com/company/oneco?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.229\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894488.2702348,
+      "applied_at": "2025-09-14T17:01:28.270236"
+    },
+    {
+      "job_info": {
+        "index": 26,
+        "job_id": "urn:li:jobPosting:4298530467",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/meta?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.230\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894496.2833986,
+      "applied_at": "2025-09-14T17:01:36.283400"
+    },
+    {
+      "job_info": {
+        "index": 27,
+        "job_id": "urn:li:jobPosting:4298538163",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/cabanarecruits?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.231\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894504.2962778,
+      "applied_at": "2025-09-14T17:01:44.296279"
+    },
+    {
+      "job_info": {
+        "index": 28,
+        "job_id": "urn:li:jobPosting:4263504194",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/walmart?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.232\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894512.3056824,
+      "applied_at": "2025-09-14T17:01:52.305683"
+    },
+    {
+      "job_info": {
+        "index": 29,
+        "job_id": "urn:li:jobPosting:4236386301",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://uk.linkedin.com/company/wayve-technologies?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.233\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894520.3202724,
+      "applied_at": "2025-09-14T17:02:00.320274"
+    },
+    {
+      "job_info": {
+        "index": 30,
+        "job_id": "urn:li:jobPosting:4300510272",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/sogal-ventures?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.234\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894528.330803,
+      "applied_at": "2025-09-14T17:02:08.330803"
+    },
+    {
+      "job_info": {
+        "index": 31,
+        "job_id": "urn:li:jobPosting:4253289676",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/walmart?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.235\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894536.335201,
+      "applied_at": "2025-09-14T17:02:16.335201"
+    },
+    {
+      "job_info": {
+        "index": 32,
+        "job_id": "urn:li:jobPosting:4287671145",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/meta?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.236\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894544.351522,
+      "applied_at": "2025-09-14T17:02:24.351524"
+    },
+    {
+      "job_info": {
+        "index": 33,
+        "job_id": "urn:li:jobPosting:4223203745",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/rivian-and-vw-group-technologies?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.237\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894552.361248,
+      "applied_at": "2025-09-14T17:02:32.361249"
+    },
+    {
+      "job_info": {
+        "index": 34,
+        "job_id": "urn:li:jobPosting:4300252082",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/aviatrix-systems?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.238\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894560.3776839,
+      "applied_at": "2025-09-14T17:02:40.377686"
+    },
+    {
+      "job_info": {
+        "index": 35,
+        "job_id": "urn:li:jobPosting:4203482085",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/otter-ai?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.239\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894568.3898332,
+      "applied_at": "2025-09-14T17:02:48.389835"
+    },
+    {
+      "job_info": {
+        "index": 36,
+        "job_id": "urn:li:jobPosting:4252194701",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/microsoft?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.240\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894576.3984723,
+      "applied_at": "2025-09-14T17:02:56.398473"
+    },
+    {
+      "job_info": {
+        "index": 37,
+        "job_id": "urn:li:jobPosting:4253288439",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/walmart?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.241\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894584.4121666,
+      "applied_at": "2025-09-14T17:03:04.412169"
+    },
+    {
+      "job_info": {
+        "index": 38,
+        "job_id": "urn:li:jobPosting:4239747295",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/toyota-research-institute?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.242\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894592.421668,
+      "applied_at": "2025-09-14T17:03:12.421669"
+    },
+    {
+      "job_info": {
+        "index": 39,
+        "job_id": "urn:li:jobPosting:4238087667",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/rivian-and-vw-group-technologies?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.243\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894600.4372525,
+      "applied_at": "2025-09-14T17:03:20.437255"
+    },
+    {
+      "job_info": {
+        "index": 40,
+        "job_id": "urn:li:jobPosting:4300217494",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/oridun-capital-management?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.244\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894608.445895,
+      "applied_at": "2025-09-14T17:03:28.445895"
+    },
+    {
+      "job_info": {
+        "index": 41,
+        "job_id": "urn:li:jobPosting:4300521412",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/sprinterhealth?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.245\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894616.4584706,
+      "applied_at": "2025-09-14T17:03:36.458472"
+    },
+    {
+      "job_info": {
+        "index": 42,
+        "job_id": "urn:li:jobPosting:4300579428",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/lensa?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.246\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894624.4677868,
+      "applied_at": "2025-09-14T17:03:44.467787"
+    },
+    {
+      "job_info": {
+        "index": 43,
+        "job_id": "urn:li:jobPosting:4262538570",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/gilead-sciences?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.247\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894632.4785874,
+      "applied_at": "2025-09-14T17:03:52.478588"
+    },
+    {
+      "job_info": {
+        "index": 44,
+        "job_id": "urn:li:jobPosting:4262516239",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/azul-systems?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.248\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894640.4909728,
+      "applied_at": "2025-09-14T17:04:00.490974"
+    },
+    {
+      "job_info": {
+        "index": 45,
+        "job_id": "urn:li:jobPosting:4288274815",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/geico?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.249\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894648.5042005,
+      "applied_at": "2025-09-14T17:04:08.504201"
+    },
+    {
+      "job_info": {
+        "index": 46,
+        "job_id": "urn:li:jobPosting:4098455471",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/grammarly?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.250\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894656.5154302,
+      "applied_at": "2025-09-14T17:04:16.515432"
+    },
+    {
+      "job_info": {
+        "index": 47,
+        "job_id": "urn:li:jobPosting:4253288378",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/walmart?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.251\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894664.5249884,
+      "applied_at": "2025-09-14T17:04:24.524989"
+    },
+    {
+      "job_info": {
+        "index": 48,
+        "job_id": "urn:li:jobPosting:4300518429",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/shyld?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.252\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894672.5395055,
+      "applied_at": "2025-09-14T17:04:32.539508"
+    },
+    {
+      "job_info": {
+        "index": 49,
+        "job_id": "urn:li:jobPosting:4265625918",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/google?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"edd29d58570d17e6181a434bf216f7ed\", element=\"f.F98C8EABC9ABB53EB6288A7673B36A1E.d.418143E074346621DF478B1B4CDBEA4A.e.253\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception\nStacktrace:\n#0 0x55b2f624308a <unknown>\n#1 0x55b2f5ce28c3 <unknown>\n#2 0x55b2f5d25ecf <unknown>\n#3 0x55b2f5d5a2e6 <unknown>\n#4 0x55b2f5d54de7 <unknown>\n#5 0x55b2f5d53f25 <unknown>\n#6 0x55b2f5caabd8 <unknown>\n#7 0x55b2f620825b <unknown>\n#8 0x55b2f620bfa9 <unknown>\n#9 0x55b2f61ef339 <unknown>\n#10 0x55b2f620cb58 <unknown>\n#11 0x55b2f61d3c1f <unknown>\n#12 0x55b2f5ca8a24 <unknown>\n#13 0x7f771b7f6ca8 <unknown>\n"
+      },
+      "timestamp": 1757894680.5437555,
+      "applied_at": "2025-09-14T17:04:40.543756"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+2025-09-20 14:24:27,382 - INFO - 🌟 DIRECT JOB APPLICATION AUTOMATION
+2025-09-20 14:24:27,382 - INFO - 🎯 Complete actual job applications with form filling
+2025-09-20 14:24:27,382 - INFO - 🚀 DIRECT JOB APPLICATION AUTOMATION
+2025-09-20 14:24:27,382 - INFO - 🎯 Focus on completing actual job applications
+2025-09-20 14:24:27,382 - INFO - 📝 Fill forms and submit applications
+2025-09-20 14:24:27,382 - INFO - ======================================================================
+2025-09-20 14:24:27,382 - INFO - ====== WebDriver manager ======
+2025-09-20 14:24:27,451 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-20 14:24:27,497 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-20 14:24:27,544 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
+2025-09-20 14:24:28,088 - INFO - ✅ WebDriver setup successfully
+2025-09-20 14:24:28,088 - INFO - 🎯 APPLYING TO INDEED JOBS
+2025-09-20 14:24:28,089 - INFO - ============================================================
+2025-09-20 14:24:34,209 - INFO - 📍 Arrived at: https://www.indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&fromage=1&vjk=4f605c36ccfa3553
+2025-09-20 14:24:40,404 - INFO - 📋 Found 16 job cards
+2025-09-20 14:24:40,404 - INFO - 
+[JOB 1] ATTEMPTING APPLICATION
+2025-09-20 14:24:40,404 - INFO - ----------------------------------------
+2025-09-20 14:24:42,526 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:24:46,125 - INFO - 🎯 Found apply button: Apply on company site
+2025-09-20 14:24:48,384 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:24:51,575 - INFO - 📝 ATTEMPTING TO COMPLETE APPLICATION FORM
+2025-09-20 14:24:55,357 - INFO - ✅ Application page detected
+2025-09-20 14:24:55,357 - INFO -     URL: https://www.indeed.com/jobs?q=software+engineer&l=san+jose%2c+ca&fromage=1&vjk=4f605c36ccfa3553
+2025-09-20 14:24:55,357 - INFO -     Title: software engineer jobs, employment in san jose, ca | indeed
+2025-09-20 14:24:55,495 - INFO - 📋 Found 2 form elements:
+2025-09-20 14:24:55,495 - INFO -     • Input: Job title, keywords, or company
+2025-09-20 14:24:55,496 - INFO -     • Input: City, state, zip code, or "remote"
+2025-09-20 14:24:56,026 - INFO - ✅ Filled field 'l' with 'San Jose'
+2025-09-20 14:24:56,817 - WARNING - ⚠️ No submit button found
+2025-09-20 14:24:56,817 - INFO - ⚠️ Could not submit application form
+2025-09-20 14:24:56,817 - INFO - 
+[JOB 2] ATTEMPTING APPLICATION
+2025-09-20 14:24:56,817 - INFO - ----------------------------------------
+2025-09-20 14:24:58,722 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:25:02,395 - INFO - 🎯 Found apply button: Apply on company site
+2025-09-20 14:25:03,668 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:25:07,162 - INFO - 📝 ATTEMPTING TO COMPLETE APPLICATION FORM
+2025-09-20 14:25:11,179 - INFO - ✅ Application page detected
+2025-09-20 14:25:11,179 - INFO -     URL: https://www.indeed.com/jobs?q=software+engineer&l=san+jose%2c+ca&fromage=1&vjk=19de21a4635ef6f7
+2025-09-20 14:25:11,179 - INFO -     Title: software engineer jobs, employment in san jose, ca | indeed
+2025-09-20 14:25:11,211 - INFO - 📋 Found 2 form elements:
+2025-09-20 14:25:11,212 - INFO -     • Input: Job title, keywords, or company
+2025-09-20 14:25:11,212 - INFO -     • Input: City, state, zip code, or "remote"
+2025-09-20 14:25:11,360 - INFO - ✅ Filled field 'l' with 'San Jose'
+2025-09-20 14:25:12,097 - WARNING - ⚠️ No submit button found
+2025-09-20 14:25:12,098 - INFO - ⚠️ Could not submit application form
+2025-09-20 14:25:12,098 - INFO - 
+[JOB 3] ATTEMPTING APPLICATION
+2025-09-20 14:25:12,098 - INFO - ----------------------------------------
+2025-09-20 14:25:13,385 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:25:16,904 - INFO - 🎯 Found apply button: Apply on company site
+2025-09-20 14:25:18,555 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:25:24,429 - INFO - 📝 ATTEMPTING TO COMPLETE APPLICATION FORM
+2025-09-20 14:25:28,321 - INFO - ✅ Application page detected
+2025-09-20 14:25:28,321 - INFO -     URL: https://www.indeed.com/jobs?q=software+engineer&l=san+jose%2c+ca&fromage=1&vjk=16c5d7cc4f4358dd
+2025-09-20 14:25:28,321 - INFO -     Title: software engineer jobs, employment in san jose, ca | indeed
+2025-09-20 14:25:28,363 - INFO - 📋 Found 2 form elements:
+2025-09-20 14:25:28,363 - INFO -     • Input: Job title, keywords, or company
+2025-09-20 14:25:28,363 - INFO -     • Input: City, state, zip code, or "remote"
+2025-09-20 14:25:28,474 - INFO - ✅ Filled field 'l' with 'San Jose'
+2025-09-20 14:25:29,169 - WARNING - ⚠️ No submit button found
+2025-09-20 14:25:29,169 - INFO - ⚠️ Could not submit application form
+2025-09-20 14:25:29,169 - INFO - 
+[JOB 4] ATTEMPTING APPLICATION
+2025-09-20 14:25:29,169 - INFO - ----------------------------------------
+2025-09-20 14:25:31,219 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:25:36,228 - INFO - 🎯 Found apply button: Apply on company site
+2025-09-20 14:25:37,481 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:25:41,465 - INFO - 📝 ATTEMPTING TO COMPLETE APPLICATION FORM
+2025-09-20 14:25:45,910 - INFO - ✅ Application page detected
+2025-09-20 14:25:45,910 - INFO -     URL: https://www.indeed.com/jobs?q=software+engineer&l=san+jose%2c+ca&fromage=1&vjk=ed5c9bbc7775e9b1
+2025-09-20 14:25:45,910 - INFO -     Title: software engineer jobs, employment in san jose, ca | indeed
+2025-09-20 14:25:45,955 - INFO - 📋 Found 2 form elements:
+2025-09-20 14:25:45,955 - INFO -     • Input: Job title, keywords, or company
+2025-09-20 14:25:45,955 - INFO -     • Input: City, state, zip code, or "remote"
+2025-09-20 14:25:46,204 - INFO - ✅ Filled field 'l' with 'San Jose'
+2025-09-20 14:25:47,003 - WARNING - ⚠️ No submit button found
+2025-09-20 14:25:47,004 - INFO - ⚠️ Could not submit application form
+2025-09-20 14:25:47,004 - INFO - 
+[JOB 5] ATTEMPTING APPLICATION
+2025-09-20 14:25:47,004 - INFO - ----------------------------------------
+2025-09-20 14:25:49,067 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:25:54,126 - INFO - 🎯 Found apply button: Apply on company site
+2025-09-20 14:25:55,658 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:25:58,835 - INFO - 📝 ATTEMPTING TO COMPLETE APPLICATION FORM
+2025-09-20 14:26:03,019 - INFO - ✅ Application page detected
+2025-09-20 14:26:03,019 - INFO -     URL: https://www.indeed.com/jobs?q=software+engineer&l=san+jose%2c+ca&fromage=1&vjk=9b83a659c74a696f
+2025-09-20 14:26:03,020 - INFO -     Title: software engineer jobs, employment in san jose, ca | indeed
+2025-09-20 14:26:03,062 - INFO - 📋 Found 2 form elements:
+2025-09-20 14:26:03,062 - INFO -     • Input: Job title, keywords, or company
+2025-09-20 14:26:03,062 - INFO -     • Input: City, state, zip code, or "remote"
+2025-09-20 14:26:03,201 - INFO - ✅ Filled field 'l' with 'San Jose'
+2025-09-20 14:26:03,960 - WARNING - ⚠️ No submit button found
+2025-09-20 14:26:03,960 - INFO - ⚠️ Could not submit application form
+2025-09-20 14:26:03,960 - INFO - 
+[JOB 6] ATTEMPTING APPLICATION
+2025-09-20 14:26:03,960 - INFO - ----------------------------------------
+2025-09-20 14:26:05,306 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:26:09,625 - INFO - 🎯 Found apply button: Apply on company site
+2025-09-20 14:26:11,241 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:26:14,469 - INFO - 📝 ATTEMPTING TO COMPLETE APPLICATION FORM
+2025-09-20 14:26:19,515 - INFO - ✅ Application page detected
+2025-09-20 14:26:19,515 - INFO -     URL: https://www.indeed.com/jobs?q=software+engineer&l=san+jose%2c+ca&fromage=1&vjk=6334ac6a8a322dd3
+2025-09-20 14:26:19,515 - INFO -     Title: software engineer jobs, employment in san jose, ca | indeed
+2025-09-20 14:26:19,585 - INFO - 📋 Found 2 form elements:
+2025-09-20 14:26:19,585 - INFO -     • Input: Job title, keywords, or company
+2025-09-20 14:26:19,585 - INFO -     • Input: City, state, zip code, or "remote"
+2025-09-20 14:26:19,818 - INFO - ✅ Filled field 'l' with 'San Jose'
+2025-09-20 14:26:20,436 - WARNING - ⚠️ No submit button found
+2025-09-20 14:26:20,436 - INFO - ⚠️ Could not submit application form
+2025-09-20 14:26:20,436 - INFO - 
+[JOB 7] ATTEMPTING APPLICATION
+2025-09-20 14:26:20,436 - INFO - ----------------------------------------
+2025-09-20 14:26:21,721 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:26:25,661 - INFO - 🎯 Found apply button: Apply now
+2025-09-20 14:26:27,601 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:26:33,230 - INFO - 📝 ATTEMPTING TO COMPLETE APPLICATION FORM
+2025-09-20 14:26:37,719 - INFO - ✅ Application page detected
+2025-09-20 14:26:37,719 - INFO -     URL: https://www.indeed.com/jobs?q=software+engineer&l=san+jose%2c+ca&fromage=1&vjk=027cc0951cb70914
+2025-09-20 14:26:37,719 - INFO -     Title: software engineer jobs, employment in san jose, ca | indeed
+2025-09-20 14:26:37,758 - INFO - 📋 Found 2 form elements:
+2025-09-20 14:26:37,758 - INFO -     • Input: Job title, keywords, or company
+2025-09-20 14:26:37,758 - INFO -     • Input: City, state, zip code, or "remote"
+2025-09-20 14:26:38,035 - INFO - ✅ Filled field 'l' with 'San Jose'
+2025-09-20 14:26:38,710 - WARNING - ⚠️ No submit button found
+2025-09-20 14:26:38,710 - INFO - ⚠️ Could not submit application form
+2025-09-20 14:26:38,710 - INFO - 
+[JOB 8] ATTEMPTING APPLICATION
+2025-09-20 14:26:38,710 - INFO - ----------------------------------------
+2025-09-20 14:26:40,197 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:26:44,620 - INFO - 🎯 Found apply button: Apply on company site
+2025-09-20 14:26:46,304 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:26:52,067 - INFO - 📝 ATTEMPTING TO COMPLETE APPLICATION FORM
+2025-09-20 14:26:56,399 - INFO - ✅ Application page detected
+2025-09-20 14:26:56,399 - INFO -     URL: https://www.indeed.com/jobs?q=software+engineer&l=san+jose%2c+ca&fromage=1&vjk=68196c09851ff358
+2025-09-20 14:26:56,399 - INFO -     Title: software engineer jobs, employment in san jose, ca | indeed
+2025-09-20 14:26:56,479 - INFO - 📋 Found 2 form elements:
+2025-09-20 14:26:56,479 - INFO -     • Input: Job title, keywords, or company
+2025-09-20 14:26:56,479 - INFO -     • Input: City, state, zip code, or "remote"
+2025-09-20 14:26:56,834 - INFO - ✅ Filled field 'l' with 'San Jose'
+2025-09-20 14:26:57,480 - WARNING - ⚠️ No submit button found
+2025-09-20 14:26:57,481 - INFO - ⚠️ Could not submit application form
+2025-09-20 14:26:57,481 - INFO - 
+[JOB 9] ATTEMPTING APPLICATION
+2025-09-20 14:26:57,481 - INFO - ----------------------------------------
+2025-09-20 14:26:59,165 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:27:03,175 - INFO - 🎯 Found apply button: Apply on company site
+2025-09-20 14:27:04,824 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:27:10,139 - INFO - 📝 ATTEMPTING TO COMPLETE APPLICATION FORM
+2025-09-20 14:27:13,889 - INFO - ✅ Application page detected
+2025-09-20 14:27:13,890 - INFO -     URL: https://www.indeed.com/jobs?q=software+engineer&l=san+jose%2c+ca&fromage=1&vjk=bcf089b1910644dc
+2025-09-20 14:27:13,890 - INFO -     Title: software engineer jobs, employment in san jose, ca | indeed
+2025-09-20 14:27:13,918 - INFO - 📋 Found 2 form elements:
+2025-09-20 14:27:13,919 - INFO -     • Input: Job title, keywords, or company
+2025-09-20 14:27:13,919 - INFO -     • Input: City, state, zip code, or "remote"
+2025-09-20 14:27:14,021 - INFO - ✅ Filled field 'l' with 'San Jose'
+2025-09-20 14:27:14,688 - WARNING - ⚠️ No submit button found
+2025-09-20 14:27:14,688 - INFO - ⚠️ Could not submit application form
+2025-09-20 14:27:14,688 - INFO - 
+[JOB 10] ATTEMPTING APPLICATION
+2025-09-20 14:27:14,688 - INFO - ----------------------------------------
+2025-09-20 14:27:16,380 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:27:20,223 - INFO - 🎯 Found apply button: Apply on company site
+2025-09-20 14:27:22,276 - INFO - ✅ Standard Click successful on attempt 1
+2025-09-20 14:27:28,128 - INFO - 📝 ATTEMPTING TO COMPLETE APPLICATION FORM
+2025-09-20 14:27:32,231 - INFO - ✅ Application page detected
+2025-09-20 14:27:32,231 - INFO -     URL: https://www.indeed.com/jobs?q=software+engineer&l=san+jose%2c+ca&fromage=1&vjk=5c1b2f56be9c8ec7
+2025-09-20 14:27:32,231 - INFO -     Title: software engineer jobs, employment in san jose, ca | indeed
+2025-09-20 14:27:32,266 - INFO - 📋 Found 2 form elements:
+2025-09-20 14:27:32,266 - INFO -     • Input: Job title, keywords, or company
+2025-09-20 14:27:32,266 - INFO -     • Input: City, state, zip code, or "remote"
+2025-09-20 14:27:32,397 - INFO - ✅ Filled field 'l' with 'San Jose'
+2025-09-20 14:27:32,992 - WARNING - ⚠️ No submit button found
+2025-09-20 14:27:32,992 - INFO - ⚠️ Could not submit application form
+2025-09-20 14:27:32,992 - INFO - 
+📊 FINAL RESULTS:
+2025-09-20 14:27:32,992 - INFO -     🎯 Jobs attempted: 10
+2025-09-20 14:27:32,992 - INFO -     ✅ Applications completed: 0
+2025-09-20 14:27:32,992 - INFO -     📝 Forms filled: 10
+2025-09-20 14:27:32,992 - INFO -     🚀 Actual submissions: 0
+2025-09-20 14:27:32,992 - INFO -     ⏱️ Runtime: 3.1 minutes
+2025-09-20 14:27:32,992 - WARNING - 
+⚠️ No applications completed
+2025-09-20 14:27:33,097 - INFO - 🧹 Resources cleaned up

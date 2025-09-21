@@ -1,0 +1,15 @@
+LinkedIn Job Application Results
+Session ID: 20250914_143203
+Date: 2025-09-14 17:04:48
+Search: software jobs in San Jose, California, United States
+============================================================
+
+STATISTICS:
+Jobs Found: 50
+Applications Attempted: 50
+Successful Applications: 0
+Failed Applications: 50
+Success Rate: 0.0%
+
+SUCCESSFUL APPLICATIONS:
+========================================

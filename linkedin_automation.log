@@ -4,3 +4,3234 @@
 2025-09-14 00:13:38,977 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
 2025-09-14 00:13:39,848 - INFO - Chrome WebDriver initialized successfully
 2025-09-14 00:13:39,849 - INFO - Built search URL: https://www.linkedin.com/jobs/search?keywords=software&location=San+Jose%2C+California%2C+United+States&geoId=106233382&distance=25&f_TPR=r86400&sortBy=DD&f_JT=F
+2025-09-14 14:32:03,917 - INFO - ====== WebDriver manager ======
+2025-09-14 14:32:04,040 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-14 14:32:04,111 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-14 14:32:04,165 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
+2025-09-14 14:32:04,683 - INFO - Chrome WebDriver initialized successfully
+2025-09-14 14:32:04,684 - INFO - Starting LinkedIn authentication...
+2025-09-14 14:32:10,453 - INFO - Already authenticated with LinkedIn
+2025-09-14 14:32:10,454 - INFO - Built search URL: https://www.linkedin.com/jobs/search?keywords=software&location=San+Jose%2C+California%2C+United+States&geoId=106233382&distance=25&f_TPR=r86400&sortBy=DD&f_JT=F
+2025-09-14 14:32:10,454 - INFO - Navigating to LinkedIn job search: https://www.linkedin.com/jobs/search?keywords=software&location=San+Jose%2C+California%2C+United+States&geoId=106233382&distance=25&f_TPR=r86400&sortBy=DD&f_JT=F
+2025-09-14 14:32:21,795 - INFO - Current URL after search: https://www.linkedin.com/jobs/search?keywords=software&location=San+Jose%2C+California%2C+United+States&geoId=106233382&distance=25&f_TPR=r86400&sortBy=DD&f_JT=F
+2025-09-14 14:32:21,795 - INFO - Job search results page detected
+2025-09-14 14:32:21,796 - INFO - Loading all available jobs...
+2025-09-14 14:32:21,796 - INFO - Scroll attempt 1/10
+2025-09-14 14:32:46,962 - INFO - No more 'See more' buttons found
+2025-09-14 14:32:46,962 - INFO - Finished loading jobs after 1 attempts
+2025-09-14 14:32:46,962 - INFO - Extracting job listings...
+2025-09-14 14:33:27,107 - INFO - Found 70 jobs using selector: .job-search-card
+2025-09-14 14:36:17,845 - INFO - Extracted job 1: Software Position at Unknown
+2025-09-14 14:39:08,591 - INFO - Extracted job 2: Software Position at Unknown
+2025-09-14 14:41:59,223 - INFO - Extracted job 3: Software Position at Unknown
+2025-09-14 14:44:49,872 - INFO - Extracted job 4: Software Position at Unknown
+2025-09-14 14:47:40,500 - INFO - Extracted job 5: Software Position at Unknown
+2025-09-14 14:50:31,227 - INFO - Extracted job 6: Software Position at Unknown
+2025-09-14 14:53:21,981 - INFO - Extracted job 7: Software Position at Unknown
+2025-09-14 14:56:12,611 - INFO - Extracted job 8: Software Position at Unknown
+2025-09-14 14:59:03,459 - INFO - Extracted job 9: Software Position at Unknown
+2025-09-14 15:01:54,062 - INFO - Extracted job 10: Software Position at Unknown
+2025-09-14 15:04:44,704 - INFO - Extracted job 11: Software Position at Unknown
+2025-09-14 15:07:35,433 - INFO - Extracted job 12: Software Position at Unknown
+2025-09-14 15:10:26,164 - INFO - Extracted job 13: Software Position at Unknown
+2025-09-14 15:13:16,900 - INFO - Extracted job 14: Software Position at Unknown
+2025-09-14 15:16:07,573 - INFO - Extracted job 15: Software Position at Unknown
+2025-09-14 15:18:58,197 - INFO - Extracted job 16: Software Position at Unknown
+2025-09-14 15:21:48,838 - INFO - Extracted job 17: Software Position at Unknown
+2025-09-14 15:24:39,528 - INFO - Extracted job 18: Software Position at Unknown
+2025-09-14 15:27:30,230 - INFO - Extracted job 19: Software Position at Unknown
+2025-09-14 15:30:20,802 - INFO - Extracted job 20: Software Position at Unknown
+2025-09-14 15:33:11,452 - INFO - Extracted job 21: Software Position at Unknown
+2025-09-14 15:36:02,190 - INFO - Extracted job 22: Software Position at Unknown
+2025-09-14 15:38:52,992 - INFO - Extracted job 23: Software Position at Unknown
+2025-09-14 15:41:43,833 - INFO - Extracted job 24: Software Position at Unknown
+2025-09-14 15:44:34,541 - INFO - Extracted job 25: Software Position at Unknown
+2025-09-14 15:47:25,309 - INFO - Extracted job 26: Software Position at Unknown
+2025-09-14 15:50:16,268 - INFO - Extracted job 27: Software Position at Unknown
+2025-09-14 15:53:07,614 - INFO - Extracted job 28: Software Position at Unknown
+2025-09-14 15:55:42,643 - INFO - ====== WebDriver manager ======
+2025-09-14 15:55:42,940 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-14 15:55:43,067 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-14 15:55:43,259 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
+2025-09-14 15:55:44,622 - INFO - Chrome WebDriver initialized successfully
+2025-09-14 15:55:44,623 - INFO - Starting LinkedIn authentication...
+2025-09-14 15:55:51,263 - INFO - Already authenticated with LinkedIn
+2025-09-14 15:55:51,264 - INFO - Built search URL: https://www.linkedin.com/jobs/search?keywords=software&location=San+Jose%2C+California%2C+United+States&geoId=106233382&distance=25&f_TPR=r86400&sortBy=DD&f_JT=F
+2025-09-14 15:55:51,264 - INFO - Navigating to LinkedIn job search: https://www.linkedin.com/jobs/search?keywords=software&location=San+Jose%2C+California%2C+United+States&geoId=106233382&distance=25&f_TPR=r86400&sortBy=DD&f_JT=F
+2025-09-14 15:55:58,768 - INFO - Extracted job 29: Software Position at Unknown
+2025-09-14 15:56:04,603 - INFO - Current URL after search: https://www.linkedin.com/jobs/search?keywords=software&location=San+Jose%2C+California%2C+United+States&geoId=106233382&distance=25&f_TPR=r86400&sortBy=DD&f_JT=F
+2025-09-14 15:56:04,604 - INFO - Job search results page detected
+2025-09-14 15:56:04,604 - INFO - Loading all available jobs...
+2025-09-14 15:56:04,604 - INFO - Scroll attempt 1/10
+2025-09-14 15:56:30,062 - INFO - No more 'See more' buttons found
+2025-09-14 15:56:30,062 - INFO - Finished loading jobs after 1 attempts
+2025-09-14 15:56:30,062 - INFO - Extracting job listings...
+2025-09-14 15:57:10,282 - INFO - Found 70 jobs using selector: .job-search-card
+2025-09-14 15:58:49,771 - INFO - Extracted job 30: Software Position at Unknown
+2025-09-14 16:00:01,416 - INFO - Extracted job 1: Software Position at Unknown
+2025-09-14 16:01:40,907 - INFO - Extracted job 31: Software Position at Unknown
+2025-09-14 16:02:42,408 - INFO - Extracted job 2: Lensa at Lensa
+2025-09-14 16:04:31,755 - INFO - Extracted job 32: Software Position at Unknown
+2025-09-14 16:05:23,139 - INFO - Extracted job 3: Meta at Meta
+2025-09-14 16:07:22,472 - INFO - Extracted job 33: Software Position at Unknown
+2025-09-14 16:08:03,849 - INFO - Extracted job 4: Lensa at Lensa
+2025-09-14 16:10:13,264 - INFO - Extracted job 34: Software Position at Unknown
+2025-09-14 16:10:44,511 - INFO - Extracted job 5: Luma AI at Luma AI
+2025-09-14 16:13:04,001 - INFO - Extracted job 35: Software Position at Unknown
+2025-09-14 16:13:25,149 - INFO - Extracted job 6: xAI at xAI
+2025-09-14 16:15:54,524 - INFO - Extracted job 36: Software Position at Unknown
+2025-09-14 16:16:05,812 - INFO - Extracted job 7: Intelligenic at Intelligenic
+2025-09-14 16:18:45,262 - INFO - Extracted job 37: Software Position at Unknown
+2025-09-14 16:18:46,386 - INFO - Extracted job 8: LinkedIn at LinkedIn
+2025-09-14 16:21:27,064 - INFO - Extracted job 9: AMD at AMD
+2025-09-14 16:21:35,967 - INFO - Extracted job 38: Software Position at Unknown
+2025-09-14 16:22:24,343 - INFO - Extracted job 10: Box at Unknown
+2025-09-14 16:22:24,549 - INFO - Extracted job 11: Unknown at Unknown
+2025-09-14 16:22:24,796 - INFO - Extracted job 12: Unknown at Unknown
+2025-09-14 16:22:25,101 - INFO - Extracted job 13: Unknown at Unknown
+2025-09-14 16:22:25,428 - INFO - Extracted job 14: Unknown at Unknown
+2025-09-14 16:22:25,672 - INFO - Extracted job 15: Unknown at Unknown
+2025-09-14 16:22:25,946 - INFO - Extracted job 16: Unknown at Unknown
+2025-09-14 16:22:26,190 - INFO - Extracted job 17: Unknown at Unknown
+2025-09-14 16:22:26,613 - INFO - Extracted job 18: Unknown at Unknown
+2025-09-14 16:22:26,960 - INFO - Extracted job 19: Unknown at Unknown
+2025-09-14 16:22:27,395 - INFO - Extracted job 20: Unknown at Unknown
+2025-09-14 16:22:27,763 - INFO - Extracted job 21: Unknown at Unknown
+2025-09-14 16:22:28,249 - INFO - Extracted job 22: Unknown at Unknown
+2025-09-14 16:22:28,629 - INFO - Extracted job 23: Unknown at Unknown
+2025-09-14 16:22:28,939 - INFO - Extracted job 24: Unknown at Unknown
+2025-09-14 16:22:29,185 - INFO - Extracted job 25: Unknown at Unknown
+2025-09-14 16:22:29,602 - INFO - Extracted job 26: Unknown at Unknown
+2025-09-14 16:22:29,959 - INFO - Extracted job 27: Unknown at Unknown
+2025-09-14 16:22:30,355 - INFO - Extracted job 28: Unknown at Unknown
+2025-09-14 16:22:30,722 - INFO - Extracted job 29: Unknown at Unknown
+2025-09-14 16:22:31,150 - INFO - Extracted job 30: Unknown at Unknown
+2025-09-14 16:22:31,534 - INFO - Extracted job 31: Unknown at Unknown
+2025-09-14 16:22:31,918 - INFO - Extracted job 32: Unknown at Unknown
+2025-09-14 16:22:32,263 - INFO - Extracted job 33: Unknown at Unknown
+2025-09-14 16:22:32,553 - INFO - Extracted job 34: Unknown at Unknown
+2025-09-14 16:22:32,724 - INFO - Extracted job 35: Unknown at Unknown
+2025-09-14 16:22:32,960 - INFO - Extracted job 36: Unknown at Unknown
+2025-09-14 16:22:33,223 - INFO - Extracted job 37: Unknown at Unknown
+2025-09-14 16:22:33,458 - INFO - Extracted job 38: Unknown at Unknown
+2025-09-14 16:22:33,705 - INFO - Extracted job 39: Unknown at Unknown
+2025-09-14 16:22:33,890 - INFO - Extracted job 40: Unknown at Unknown
+2025-09-14 16:22:34,084 - INFO - Extracted job 41: Unknown at Unknown
+2025-09-14 16:22:34,278 - INFO - Extracted job 42: Unknown at Unknown
+2025-09-14 16:22:34,546 - INFO - Extracted job 43: Unknown at Unknown
+2025-09-14 16:22:34,752 - INFO - Extracted job 44: Unknown at Unknown
+2025-09-14 16:22:35,054 - INFO - Extracted job 45: Unknown at Unknown
+2025-09-14 16:22:35,315 - INFO - Extracted job 46: Unknown at Unknown
+2025-09-14 16:22:35,435 - INFO - Extracted job 47: Unknown at Unknown
+2025-09-14 16:22:35,677 - INFO - Extracted job 48: Unknown at Unknown
+2025-09-14 16:22:36,070 - INFO - Extracted job 49: Unknown at Unknown
+2025-09-14 16:22:36,446 - INFO - Extracted job 50: Unknown at Unknown
+2025-09-14 16:22:36,446 - INFO - Successfully extracted 50 unique job listings
+2025-09-14 16:22:36,446 - INFO - Starting to apply to 50 jobs
+2025-09-14 16:22:36,446 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:22:36,465 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:22:41,953 - INFO - Navigated via apply link
+2025-09-14 16:24:02,179 - WARNING - No apply button found, trying alternative methods
+2025-09-14 16:24:26,553 - INFO - Extracted job 39: Software Position at Unknown
+2025-09-14 16:25:53,504 - INFO - Attempting to apply to: Lensa at Lensa
+2025-09-14 16:25:53,514 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:25:58,861 - INFO - Navigated via apply link
+2025-09-14 16:27:17,299 - INFO - Extracted job 40: Software Position at Unknown
+2025-09-14 16:27:19,083 - WARNING - No apply button found, trying alternative methods
+2025-09-14 16:29:10,415 - INFO - Attempting to apply to: Meta at Meta
+2025-09-14 16:29:10,421 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:29:17,123 - INFO - Navigated via apply link
+2025-09-14 16:30:07,915 - INFO - Extracted job 41: Software Position at Unknown
+2025-09-14 16:30:37,372 - WARNING - No apply button found, trying alternative methods
+2025-09-14 16:32:28,645 - INFO - Attempting to apply to: Lensa at Lensa
+2025-09-14 16:32:28,653 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:32:34,495 - INFO - Navigated via apply link
+2025-09-14 16:32:58,559 - INFO - Extracted job 42: Software Position at Unknown
+2025-09-14 16:33:54,732 - WARNING - No apply button found, trying alternative methods
+2025-09-14 16:35:45,993 - INFO - Attempting to apply to: Luma AI at Luma AI
+2025-09-14 16:35:46,000 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:35:49,381 - INFO - Extracted job 43: Software Position at Unknown
+2025-09-14 16:35:51,333 - INFO - Navigated via apply link
+2025-09-14 16:37:11,553 - WARNING - No apply button found, trying alternative methods
+2025-09-14 16:38:40,035 - INFO - Extracted job 44: Software Position at Unknown
+2025-09-14 16:39:02,822 - INFO - Attempting to apply to: xAI at xAI
+2025-09-14 16:39:02,829 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:39:08,124 - INFO - Navigated via apply link
+2025-09-14 16:40:28,340 - WARNING - No apply button found, trying alternative methods
+2025-09-14 16:41:30,618 - INFO - Extracted job 45: Software Position at Unknown
+2025-09-14 16:42:19,602 - INFO - Attempting to apply to: Intelligenic at Intelligenic
+2025-09-14 16:42:19,616 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:42:25,448 - INFO - Navigated via apply link
+2025-09-14 16:43:45,697 - WARNING - No apply button found, trying alternative methods
+2025-09-14 16:44:21,381 - INFO - Extracted job 46: Software Position at Unknown
+2025-09-14 16:45:37,054 - INFO - Attempting to apply to: LinkedIn at LinkedIn
+2025-09-14 16:45:37,068 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:45:42,324 - INFO - Navigated via apply link
+2025-09-14 16:47:02,536 - WARNING - No apply button found, trying alternative methods
+2025-09-14 16:47:12,069 - INFO - Extracted job 47: Software Position at Unknown
+2025-09-14 16:48:53,921 - INFO - Attempting to apply to: AMD at AMD
+2025-09-14 16:48:53,927 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:48:59,274 - INFO - Navigated via apply link
+2025-09-14 16:50:02,749 - INFO - Extracted job 48: Software Position at Unknown
+2025-09-14 16:50:19,498 - WARNING - No apply button found, trying alternative methods
+2025-09-14 16:52:10,883 - INFO - Attempting to apply to: Box at Unknown
+2025-09-14 16:52:10,896 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:52:16,319 - INFO - Navigated via apply link
+2025-09-14 16:52:53,363 - INFO - Extracted job 49: Software Position at Unknown
+2025-09-14 16:53:36,578 - WARNING - No apply button found, trying alternative methods
+2025-09-14 16:55:27,811 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:55:27,825 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:55:35,826 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:55:35,841 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:55:43,842 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:55:43,852 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:55:44,129 - INFO - Extracted job 50: Software Position at Unknown
+2025-09-14 16:55:44,129 - INFO - Successfully extracted 50 unique job listings
+2025-09-14 16:55:44,129 - INFO - Starting to apply to 50 jobs
+2025-09-14 16:55:44,130 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:55:48,234 - WARNING - Failed to click job listing: Message: element click intercepted: Element <div class="base-card relative w-full hover:no-underline focus:no-underline
+        base-card--link
+         base-search-card base-search-card--link job-search-card" data-entity-urn="urn:li:jobPosting:4265604833" data-reference-id="qe3M/QZlvYeVFQLvYvLKdQ==" data-tracking-id="bIp5k/BJt4gRn4oILLO9YQ==" data-column="1" data-row="1">...</div> is not clickable at point (643, 66). Other element would receive the click: <div class="modal__overlay flex items-center bg-color-background-scrim justify-center fixed bottom-0 left-0 right-0 top-0 opacity-0 invisible pointer-events-none z-[1000] transition-[opacity] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] duration-[0.17s] py-4 modal__overlay--visible" aria-hidden="false">...</div>
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce2a70 <unknown>
+#2 0x55b2f5d3b78c <unknown>
+#3 0x55b2f5d395eb <unknown>
+#4 0x55b2f5d36c92 <unknown>
+#5 0x55b2f5d363a7 <unknown>
+#6 0x55b2f5d28b1b <unknown>
+#7 0x55b2f5d5a3e2 <unknown>
+#8 0x55b2f5d2849a <unknown>
+#9 0x55b2f5d5a5ae <unknown>
+#10 0x55b2f5d8014f <unknown>
+#11 0x55b2f5d5a1b3 <unknown>
+#12 0x55b2f5d2659b <unknown>
+#13 0x55b2f5d27971 <unknown>
+#14 0x55b2f620825b <unknown>
+#15 0x55b2f620bfa9 <unknown>
+#16 0x55b2f61ef339 <unknown>
+#17 0x55b2f620cb58 <unknown>
+#18 0x55b2f61d3c1f <unknown>
+#19 0x55b2f6230118 <unknown>
+#20 0x55b2f62302f6 <unknown>
+#21 0x55b2f6242066 <unknown>
+#22 0x7f771b85fb7b <unknown>
+
+2025-09-14 16:55:51,853 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:55:51,859 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:55:54,343 - INFO - Navigated via apply link
+2025-09-14 16:55:59,862 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:55:59,887 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:56:07,889 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:56:07,901 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:56:15,902 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:56:15,909 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:56:23,910 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:56:23,915 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:56:31,916 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:56:31,923 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:56:39,924 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:56:39,930 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:56:47,931 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:56:47,938 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:56:55,939 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:56:55,946 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:57:03,946 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:57:03,951 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:57:11,952 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:57:11,957 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:57:14,570 - WARNING - No apply button found, trying alternative methods
+2025-09-14 16:57:19,958 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:57:19,964 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:57:27,965 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:57:27,971 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:57:35,971 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:57:35,978 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:57:43,978 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:57:43,982 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:57:51,982 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:57:51,987 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:57:59,987 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:57:59,992 - WARNING - Failed to click job listing: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x56137618e0bb <unknown>
+#3 0x56137618ce82 <unknown>
+#4 0x561376181fd9 <unknown>
+#5 0x561376182105 <unknown>
+#6 0x56137618020f <unknown>
+#7 0x56137618420a <unknown>
+#8 0x56137621918e <unknown>
+#9 0x5613761f23e2 <unknown>
+#10 0x56137621814f <unknown>
+#11 0x5613761f21b3 <unknown>
+#12 0x5613761be59b <unknown>
+#13 0x5613761bf971 <unknown>
+#14 0x5613766a025b <unknown>
+#15 0x5613766a3fa9 <unknown>
+#16 0x561376687339 <unknown>
+#17 0x5613766a4b58 <unknown>
+#18 0x56137666bc1f <unknown>
+#19 0x5613766c8118 <unknown>
+#20 0x5613766c82f6 <unknown>
+#21 0x5613766da066 <unknown>
+#22 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:58:00,819 - WARNING - Error with selector .jobs-apply-button: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce2a70 <unknown>
+#2 0x55b2f5ccad7c <unknown>
+#3 0x55b2f5ccaa85 <unknown>
+#4 0x55b2f5cc88ee <unknown>
+#5 0x55b2f5cc923f <unknown>
+#6 0x55b2f5ce905e <unknown>
+#7 0x55b2f5cebf58 <unknown>
+#8 0x55b2f5cebfe3 <unknown>
+#9 0x55b2f5d34335 <unknown>
+#10 0x55b2f5d34b01 <unknown>
+#11 0x55b2f5d82d91 <unknown>
+#12 0x55b2f5d5a40d <unknown>
+#13 0x55b2f5d8014f <unknown>
+#14 0x55b2f5d5a1b3 <unknown>
+#15 0x55b2f5d2659b <unknown>
+#16 0x55b2f5d27971 <unknown>
+#17 0x55b2f620825b <unknown>
+#18 0x55b2f620bfa9 <unknown>
+#19 0x55b2f61ef339 <unknown>
+#20 0x55b2f620cb58 <unknown>
+#21 0x55b2f61d3c1f <unknown>
+#22 0x55b2f6230118 <unknown>
+#23 0x55b2f62302f6 <unknown>
+#24 0x55b2f6242066 <unknown>
+#25 0x7f771b85fb7b <unknown>
+
+2025-09-14 16:58:00,827 - WARNING - Error with selector button[aria-label*='Apply']: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:00,829 - WARNING - Error with selector .apply-button: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:00,831 - WARNING - Error with selector a[aria-label*='Apply']: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:00,834 - WARNING - Error with selector [data-control-name='jobdetails_topcard_iapply']: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:00,835 - WARNING - Error with selector button[data-control-name*='apply']: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:15,146 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:58:15,201 - WARNING - Failed to click job listing: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617aa70 <unknown>
+#2 0x5613761617fe <unknown>
+#3 0x5613761895c9 <unknown>
+#4 0x5613761fa87f <unknown>
+#5 0x561376217afc <unknown>
+#6 0x5613761f21b3 <unknown>
+#7 0x5613761be59b <unknown>
+#8 0x5613761bf971 <unknown>
+#9 0x5613766a025b <unknown>
+#10 0x5613766a3fa9 <unknown>
+#11 0x561376687339 <unknown>
+#12 0x5613766a4b58 <unknown>
+#13 0x56137666bc1f <unknown>
+#14 0x5613766c8118 <unknown>
+#15 0x5613766c82f6 <unknown>
+#16 0x5613766da066 <unknown>
+#17 0x7fc6109aab7b <unknown>
+
+2025-09-14 16:58:15,991 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:58:16,005 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:16,009 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:23,202 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:58:23,205 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 16:58:24,010 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:58:24,017 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:24,024 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:31,205 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:58:31,208 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 16:58:32,025 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:58:32,027 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:32,028 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:39,209 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:58:39,211 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 16:58:40,029 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:58:40,037 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:40,043 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:47,211 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:58:47,214 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 16:58:48,044 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:58:48,050 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:48,054 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:55,215 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:58:55,220 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 16:58:56,055 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:58:56,063 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:58:56,067 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:03,221 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:59:03,225 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 16:59:04,068 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:59:04,073 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:04,077 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:11,226 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:59:11,232 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 16:59:12,078 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:59:12,085 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:12,090 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:19,233 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:59:19,241 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 16:59:20,095 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:59:20,108 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:20,120 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:27,242 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:59:27,246 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 16:59:28,121 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:59:28,124 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:28,127 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:35,246 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:59:35,249 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 16:59:36,127 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:59:36,133 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:36,143 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:43,249 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:59:43,255 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 16:59:44,144 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:59:44,149 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:44,153 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:51,256 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:59:51,260 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 16:59:52,154 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 16:59:52,158 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:52,162 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 16:59:59,260 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 16:59:59,264 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 17:00:00,163 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:00:00,166 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:00,168 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:07,265 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 17:00:07,268 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 17:00:08,169 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:00:08,171 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:08,173 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:15,269 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 17:00:15,274 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 17:00:16,175 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:00:16,188 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:16,194 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:23,274 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 17:00:23,278 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 17:00:24,195 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:00:24,198 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:24,200 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:31,279 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 17:00:31,284 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 17:00:32,200 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:00:32,203 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:32,205 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:39,286 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 17:00:39,289 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 17:00:40,205 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:00:40,208 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:40,211 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:47,290 - INFO - Attempting to apply to: Unknown at Unknown
+2025-09-14 17:00:47,292 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x5613766db08a <unknown>
+#1 0x56137617a8c3 <unknown>
+#2 0x5613761bdecf <unknown>
+#3 0x5613761f22e6 <unknown>
+#4 0x5613761ecde7 <unknown>
+#5 0x5613761ebf25 <unknown>
+#6 0x561376142bd8 <unknown>
+#7 0x5613766a025b <unknown>
+#8 0x5613766a3fa9 <unknown>
+#9 0x561376687339 <unknown>
+#10 0x5613766a4b58 <unknown>
+#11 0x56137666bc1f <unknown>
+#12 0x561376140a24 <unknown>
+#13 0x7fc610941ca8 <unknown>
+
+2025-09-14 17:00:48,211 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:00:48,216 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:48,219 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:55,292 - INFO - Completed applying to all jobs. Success: 0, Failed: 50
+2025-09-14 17:00:55,293 - INFO - Results saved to linkedin_automation_results_20250914_155542.json and linkedin_applied_jobs_20250914_155542.txt
+2025-09-14 17:00:56,219 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:00:56,225 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:00:56,229 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:01:04,229 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:01:04,232 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:01:04,235 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:01:12,235 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:01:12,244 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:01:12,251 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:01:20,252 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:01:20,259 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:01:20,264 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:01:28,264 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:01:28,268 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:01:28,270 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:01:36,270 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:01:36,277 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:01:36,283 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:01:44,283 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:01:44,291 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:01:44,296 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:01:52,296 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:01:52,303 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:01:52,305 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:00,306 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:02:00,313 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:00,320 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:08,320 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:02:08,328 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:08,330 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:16,331 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:02:16,333 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:16,335 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:24,335 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:02:24,344 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:24,351 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:32,352 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:02:32,359 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:32,361 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:40,361 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:02:40,369 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:40,377 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:48,378 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:02:48,385 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:48,389 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:56,390 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:02:56,396 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:02:56,398 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:03:04,398 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:03:04,405 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:03:04,412 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:03:12,412 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:03:12,419 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:03:12,421 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:03:20,422 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:03:20,430 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:03:20,437 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:03:28,437 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:03:28,444 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:03:28,445 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:03:36,446 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:03:36,454 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:03:36,458 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:03:44,458 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:03:44,466 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:03:44,467 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:03:52,468 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:03:52,475 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:03:52,478 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:04:00,478 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:04:00,486 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:04:00,490 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:04:08,491 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:04:08,499 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:04:08,504 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:04:16,504 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:04:16,511 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:04:16,515 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:04:24,515 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:04:24,523 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:04:24,524 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:04:32,525 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:04:32,532 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:04:32,539 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:04:40,539 - INFO - Attempting to apply to: Software Position at Unknown
+2025-09-14 17:04:40,541 - WARNING - Failed to click job listing: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:04:40,543 - ERROR - Error applying to job Software Position: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+#0 0x55b2f624308a <unknown>
+#1 0x55b2f5ce28c3 <unknown>
+#2 0x55b2f5d25ecf <unknown>
+#3 0x55b2f5d5a2e6 <unknown>
+#4 0x55b2f5d54de7 <unknown>
+#5 0x55b2f5d53f25 <unknown>
+#6 0x55b2f5caabd8 <unknown>
+#7 0x55b2f620825b <unknown>
+#8 0x55b2f620bfa9 <unknown>
+#9 0x55b2f61ef339 <unknown>
+#10 0x55b2f620cb58 <unknown>
+#11 0x55b2f61d3c1f <unknown>
+#12 0x55b2f5ca8a24 <unknown>
+#13 0x7f771b7f6ca8 <unknown>
+
+2025-09-14 17:04:48,544 - INFO - Completed applying to all jobs. Success: 0, Failed: 50
+2025-09-14 17:04:48,547 - INFO - Results saved to linkedin_automation_results_20250914_143203.json and linkedin_applied_jobs_20250914_143203.txt

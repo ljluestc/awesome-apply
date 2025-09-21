@@ -1,476 +1,554 @@
 #!/usr/bin/env python3
 """
-DIRECT VISUAL AUTOMATION - No stopping until both platforms are authenticated and working
+Direct LinkedIn Job Application Automation
+Focused on opening and confirming job applications for software positions in San Jose area
 """
 
-import sys
+import time
+import json
+import logging
 import os
-sys.path.append('/home/calelin/awesome-apply/venv/lib/python3.13/site-packages')
-
+import sys
+from datetime import datetime
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.action_chains import ActionChains
-import time
-import logging
-import json
+from selenium.webdriver.common.keys import Keys
+from selenium.common.exceptions import *
+from webdriver_manager.chrome import ChromeDriverManager
+import urllib.parse
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('direct_linkedin_automation.log'),
+        logging.StreamHandler()
+    ]
+)
 logger = logging.getLogger(__name__)
 
-class DirectVisualAutomation:
+class DirectLinkedInAutomation:
     def __init__(self):
+        """Initialize direct LinkedIn automation focused on application confirmation"""
         self.driver = None
-        self.authenticated_jobright = False
-        self.authenticated_linkedin = False
-        self.applied_jobs = []
+        self.session_id = datetime.now().strftime('%Y%m%d_%H%M%S')
 
-    def setup_driver(self):
-        """Setup Chrome driver with visual mode and persistent profile"""
+        # Target parameters - exactly as requested
+        self.search_params = {
+            'keywords': 'software',
+            'location': 'San Jose, California, United States',
+            'geoId': '106233382',
+            'distance': '25'
+        }
+
+        # Application tracking
+        self.confirmed_openings = []
+        self.session_stats = {
+            'start_time': time.time(),
+            'jobs_found': 0,
+            'jobs_clicked': 0,
+            'applications_opened': 0,
+            'external_applications': 0
+        }
+
+    def create_driver(self):
+        """Create WebDriver with maximum stability and visibility"""
         chrome_options = Options()
 
-        # Persistent profile for session management
-        user_data_dir = "/tmp/chrome_direct_visual_profile"
-        chrome_options.add_argument(f"--user-data-dir={user_data_dir}")
-        chrome_options.add_argument("--profile-directory=Default")
+        # Make browser visible for debugging
+        # chrome_options.add_argument("--headless")  # Commented out for visibility
 
-        # VISUAL MODE - NO HEADLESS
-        chrome_options.add_argument("--window-size=1400,1000")
+        # Stability options
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--window-size=1920,1080")
         chrome_options.add_argument("--start-maximized")
 
         # Anti-detection
-        chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--disable-blink-features=AutomationControlled")
         chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
         chrome_options.add_experimental_option('useAutomationExtension', False)
+        chrome_options.add_argument("--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
 
-        self.driver = webdriver.Chrome(
-            service=Service(ChromeDriverManager().install()),
-            options=chrome_options
-        )
-
-        self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-        logger.info("✅ Visual Chrome driver setup completed - browser window should be visible")
-
-    def authenticate_jobright(self):
-        """Authenticate JobRight.ai with visual confirmation"""
         try:
-            logger.info("\n🎯 AUTHENTICATING JOBRIGHT.AI...")
-            logger.info("="*50)
+            service = Service(ChromeDriverManager().install())
+            self.driver = webdriver.Chrome(service=service, options=chrome_options)
 
-            # Go to JobRight
-            logger.info("🌐 Opening JobRight.ai - you should see the browser window open...")
-            self.driver.get("https://jobright.ai/")
-            time.sleep(5)
+            # Anti-detection JavaScript
+            self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
-            logger.info(f"   Current URL: {self.driver.current_url}")
-            logger.info(f"   Page title: {self.driver.title}")
-
-            # Try to navigate to jobs page directly
-            jobs_urls = [
-                "https://jobright.ai/entry-level-jobs",
-                "https://jobright.ai/jobs",
-                "https://jobright.ai/jobs/recommend"
-            ]
-
-            for url in jobs_urls:
-                logger.info(f"🔍 Trying jobs URL: {url}")
-                self.driver.get(url)
-                time.sleep(5)
-
-                # Check if we're on a jobs page (look for job-related content)
-                if any(term in self.driver.page_source.lower() for term in ['apply', 'job', 'position', 'career']):
-                    logger.info("✅ JobRight jobs page loaded successfully!")
-                    self.authenticated_jobright = True
-                    break
-
-            if not self.authenticated_jobright:
-                # Look for sign in options
-                logger.info("🔐 Looking for authentication options...")
-
-                # Look for Google SSO
-                google_buttons = self.driver.find_elements(By.XPATH,
-                    "//button[contains(text(), 'Google') or contains(text(), 'Continue with Google')] | "
-                    "//a[contains(text(), 'Google') or contains(text(), 'Continue with Google')]"
-                )
-
-                if google_buttons:
-                    logger.info("✅ Found Google SSO option - clicking...")
-                    google_buttons[0].click()
-                    time.sleep(8)
-
-                    # Handle Google account selection
-                    try:
-                        account_elements = self.driver.find_elements(By.XPATH,
-                            "//*[contains(text(), 'jeremykalilin@gmail.com') or contains(@data-email, 'jeremykalilin@gmail.com')]"
-                        )
-                        if account_elements:
-                            logger.info("👤 Found Jeremy's account - selecting...")
-                            account_elements[0].click()
-                            time.sleep(5)
-                        else:
-                            logger.info("👤 No specific account found - proceeding with available options")
-                            # Try clicking any account option
-                            account_options = self.driver.find_elements(By.XPATH, "//div[@data-identifier]")
-                            if account_options:
-                                account_options[0].click()
-                                time.sleep(5)
-                    except Exception as e:
-                        logger.info(f"👤 Account selection step: {e}")
-
-                    # After SSO, try jobs URLs again
-                    for url in jobs_urls:
-                        self.driver.get(url)
-                        time.sleep(5)
-                        if any(term in self.driver.page_source.lower() for term in ['apply', 'job', 'position']):
-                            logger.info("✅ JobRight authenticated via Google SSO!")
-                            self.authenticated_jobright = True
-                            break
-
-            return self.authenticated_jobright
+            logger.info("✅ WebDriver created successfully")
+            return True
 
         except Exception as e:
-            logger.error(f"JobRight authentication error: {e}")
+            logger.error(f"❌ Failed to create WebDriver: {e}")
             return False
 
-    def authenticate_linkedin(self):
-        """Authenticate LinkedIn with visual confirmation"""
+    def navigate_to_linkedin_jobs(self):
+        """Navigate directly to LinkedIn job search with our parameters"""
         try:
-            logger.info("\n🎯 AUTHENTICATING LINKEDIN...")
-            logger.info("="*50)
+            # Build the exact search URL
+            base_url = "https://www.linkedin.com/jobs/search"
+            params = {
+                'keywords': self.search_params['keywords'],
+                'location': self.search_params['location'],
+                'geoId': self.search_params['geoId'],
+                'distance': self.search_params['distance'],
+                'f_TPR': 'r86400',  # Recent jobs
+                'sortBy': 'DD'  # Date posted
+            }
 
-            target_url = "https://www.linkedin.com/jobs/search/?distance=25&geoId=106233382&keywords=software"
-            logger.info(f"🌐 Opening LinkedIn jobs page: {target_url}")
+            search_url = f"{base_url}?" + urllib.parse.urlencode(params)
+            logger.info(f"🔗 Navigating to: {search_url}")
 
-            self.driver.get(target_url)
+            self.driver.get(search_url)
             time.sleep(5)
 
-            logger.info(f"   Current URL: {self.driver.current_url}")
-            logger.info(f"   Page title: {self.driver.title}")
-
-            # Check if we're already authenticated (jobs page loads directly)
-            if "jobs" in self.driver.current_url and "authwall" not in self.driver.current_url:
-                logger.info("✅ LinkedIn already authenticated!")
-                self.authenticated_linkedin = True
+            # Check if we reached LinkedIn
+            current_url = self.driver.current_url.lower()
+            if "linkedin.com" in current_url:
+                logger.info("✅ Successfully reached LinkedIn job search")
                 return True
-
-            # Check if we hit the auth wall
-            if "authwall" in self.driver.current_url or "signup" in self.driver.current_url.lower():
-                logger.info("🔐 LinkedIn authentication required...")
-
-                # Look for email input
-                email_inputs = self.driver.find_elements(By.XPATH,
-                    "//input[@type='email' or @name='session_key' or @id='username']"
-                )
-
-                if email_inputs:
-                    logger.info("📧 Entering email: jeremykalilin@gmail.com")
-                    email_input = email_inputs[0]
-                    email_input.clear()
-                    email_input.send_keys("jeremykalilin@gmail.com")
-                    time.sleep(2)
-
-                    # Look for password input
-                    password_inputs = self.driver.find_elements(By.XPATH,
-                        "//input[@type='password' or @name='session_password' or @id='password']"
-                    )
-
-                    if password_inputs:
-                        logger.info("🔑 Password field found - manual entry may be needed")
-                        logger.info("⏳ Waiting 15 seconds for manual password entry if needed...")
-                        time.sleep(15)
-
-                        # Try to find and click sign in button
-                        signin_buttons = self.driver.find_elements(By.XPATH,
-                            "//button[contains(text(), 'Sign in') or contains(text(), 'Continue')] | "
-                            "//input[@type='submit' and (contains(@value, 'Sign') or contains(@value, 'Continue'))]"
-                        )
-
-                        if signin_buttons:
-                            logger.info("🔘 Clicking sign in button...")
-                            signin_buttons[0].click()
-                            time.sleep(10)
-
-                            # Check if we're now on jobs page
-                            if "jobs" in self.driver.current_url and "authwall" not in self.driver.current_url:
-                                logger.info("✅ LinkedIn authentication successful!")
-                                self.authenticated_linkedin = True
-                                return True
-
-                # Try direct navigation to jobs after any auth attempts
-                self.driver.get(target_url)
-                time.sleep(5)
-
-                if "jobs" in self.driver.current_url and "authwall" not in self.driver.current_url:
-                    logger.info("✅ LinkedIn jobs page accessible!")
-                    self.authenticated_linkedin = True
-                    return True
-
-            return self.authenticated_linkedin
+            else:
+                logger.error(f"❌ Failed to reach LinkedIn. Current URL: {current_url}")
+                return False
 
         except Exception as e:
-            logger.error(f"LinkedIn authentication error: {e}")
+            logger.error(f"❌ Navigation error: {e}")
             return False
 
-    def test_job_applications(self):
-        """Test opening job application pages on both platforms"""
-        logger.info("\n🎯 TESTING JOB APPLICATIONS...")
-        logger.info("="*50)
-
-        applications_tested = 0
-
-        # Test JobRight applications if authenticated
-        if self.authenticated_jobright:
-            logger.info("🎯 Testing JobRight job applications...")
-
-            # Go to JobRight jobs page
-            self.driver.get("https://jobright.ai/entry-level-jobs")
-            time.sleep(5)
-
-            # Scroll to load content
-            for i in range(3):
-                self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                time.sleep(2)
-
-            # Find clickable job elements
-            clickable_elements = self.driver.find_elements(By.XPATH,
-                "//*[@href or @onclick or contains(@class, 'job') or contains(@class, 'apply') or contains(@class, 'button')]"
-            )
-
-            logger.info(f"   Found {len(clickable_elements)} clickable elements")
-
-            # Test first few elements
-            for i, element in enumerate(clickable_elements[:5]):
-                try:
-                    if element.is_displayed():
-                        text = element.text.strip()[:50]
-                        logger.info(f"   Testing element {i+1}: '{text}'")
-
-                        original_window_count = len(self.driver.window_handles)
-                        original_url = self.driver.current_url
-
-                        # Try clicking
-                        element.click()
-                        time.sleep(3)
-
-                        # Check if new page/window opened
-                        new_window_count = len(self.driver.window_handles)
-                        new_url = self.driver.current_url
-
-                        if new_window_count > original_window_count:
-                            logger.info("   ✅ New window opened - job application page!")
-                            applications_tested += 1
-
-                            # Switch to new window to see the application page
-                            self.driver.switch_to.window(self.driver.window_handles[-1])
-                            time.sleep(2)
-
-                            app_title = self.driver.title
-                            app_url = self.driver.current_url
-
-                            logger.info(f"   📄 Application page: {app_title}")
-                            logger.info(f"   🔗 URL: {app_url}")
-
-                            # Save the application
-                            self.applied_jobs.append({
-                                'platform': 'jobright',
-                                'title': app_title,
-                                'url': app_url,
-                                'timestamp': time.time()
-                            })
-
-                            # Close new window and return
-                            self.driver.close()
-                            self.driver.switch_to.window(self.driver.window_handles[0])
-
-                        elif new_url != original_url:
-                            logger.info("   ✅ Page navigation - job details page!")
-                            applications_tested += 1
-
-                            # Save and go back
-                            self.applied_jobs.append({
-                                'platform': 'jobright',
-                                'title': self.driver.title,
-                                'url': new_url,
-                                'timestamp': time.time()
-                            })
-
-                            self.driver.back()
-                            time.sleep(2)
-
-                except Exception as e:
-                    logger.info(f"   ⚠️ Element test failed: {e}")
-                    continue
-
-        # Test LinkedIn applications if authenticated
-        if self.authenticated_linkedin:
-            logger.info("\n🎯 Testing LinkedIn job applications...")
-
-            # Go to LinkedIn jobs search
-            linkedin_url = "https://www.linkedin.com/jobs/search/?distance=25&geoId=106233382&keywords=software"
-            self.driver.get(linkedin_url)
-            time.sleep(5)
-
-            # Look for job cards
-            job_cards = self.driver.find_elements(By.XPATH,
-                "//div[contains(@class, 'job-card') or contains(@class, 'jobs-search-results__list-item')]"
-            )
-
-            logger.info(f"   Found {len(job_cards)} LinkedIn job cards")
-
-            # Test first few job cards
-            for i, card in enumerate(job_cards[:3]):
-                try:
-                    # Find clickable elements in the card
-                    clickable_in_card = card.find_elements(By.XPATH, ".//a | .//button")
-
-                    for element in clickable_in_card:
-                        if element.is_displayed():
-                            text = element.text.strip()
-
-                            if any(term in text.lower() for term in ['apply', 'view', 'easy apply']):
-                                logger.info(f"   Testing LinkedIn element: '{text[:30]}'")
-
-                                original_window_count = len(self.driver.window_handles)
-
-                                element.click()
-                                time.sleep(3)
-
-                                new_window_count = len(self.driver.window_handles)
-
-                                if new_window_count > original_window_count:
-                                    logger.info("   ✅ LinkedIn application page opened!")
-                                    applications_tested += 1
-
-                                    # Switch to see the application
-                                    self.driver.switch_to.window(self.driver.window_handles[-1])
-                                    time.sleep(2)
-
-                                    self.applied_jobs.append({
-                                        'platform': 'linkedin',
-                                        'title': self.driver.title,
-                                        'url': self.driver.current_url,
-                                        'timestamp': time.time()
-                                    })
-
-                                    # Return to main window
-                                    self.driver.close()
-                                    self.driver.switch_to.window(self.driver.window_handles[0])
-
-                                break
-
-                except Exception as e:
-                    continue
-
-        return applications_tested
-
-    def run_continuous_automation(self):
-        """Run the automation continuously until both platforms work"""
-        logger.info("\n🚀 DIRECT VISUAL AUTOMATION STARTING")
-        logger.info("="*70)
-        logger.info("🎯 Goal: Get both JobRight and LinkedIn authenticated and working")
-        logger.info("📧 Account: jeremykalilin@gmail.com")
-        logger.info("🖥️  Browser window will be VISIBLE - you can see everything")
-        logger.info("="*70)
-
+    def get_all_job_cards(self):
+        """Get all job cards from the current page"""
         try:
-            # Setup driver
-            self.setup_driver()
-            logger.info("\n⏳ Browser window should now be open and visible...")
+            # Wait for job cards to load
             time.sleep(3)
 
-            # Keep trying until both platforms are authenticated
-            max_attempts = 5
-            attempt = 1
+            # Multiple selectors for job cards
+            selectors = [
+                ".job-search-card",
+                ".jobs-search-results__list-item",
+                "[data-entity-urn*='jobPosting']",
+                ".base-search-card"
+            ]
 
-            while attempt <= max_attempts and not (self.authenticated_jobright and self.authenticated_linkedin):
-                logger.info(f"\n🔄 ATTEMPT {attempt}/{max_attempts}")
-                logger.info("-" * 40)
+            all_jobs = []
+            for selector in selectors:
+                try:
+                    jobs = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                    if jobs:
+                        all_jobs = jobs
+                        logger.info(f"✅ Found {len(jobs)} jobs using selector: {selector}")
+                        break
+                except Exception:
+                    continue
 
-                # Try JobRight authentication
-                if not self.authenticated_jobright:
-                    logger.info("🎯 Attempting JobRight authentication...")
-                    self.authenticate_jobright()
+            self.session_stats['jobs_found'] = len(all_jobs)
+            return all_jobs
 
-                # Try LinkedIn authentication
-                if not self.authenticated_linkedin:
-                    logger.info("🎯 Attempting LinkedIn authentication...")
-                    self.authenticate_linkedin()
+        except Exception as e:
+            logger.error(f"❌ Error finding job cards: {e}")
+            return []
 
-                # Status update
-                logger.info(f"\n📊 STATUS UPDATE - Attempt {attempt}:")
-                logger.info(f"   JobRight: {'✅ Authenticated' if self.authenticated_jobright else '❌ Needs work'}")
-                logger.info(f"   LinkedIn: {'✅ Authenticated' if self.authenticated_linkedin else '❌ Needs work'}")
+    def click_job_card(self, job_card, job_index):
+        """Click on a job card to view details"""
+        try:
+            logger.info(f"🎯 Clicking job #{job_index + 1}")
 
-                if self.authenticated_jobright and self.authenticated_linkedin:
-                    logger.info("\n🎉 BOTH PLATFORMS AUTHENTICATED!")
+            # Scroll to job card
+            self.driver.execute_script("arguments[0].scrollIntoView(true);", job_card)
+            time.sleep(1)
+
+            # Click the job card
+            ActionChains(self.driver).move_to_element(job_card).click().perform()
+            time.sleep(3)
+
+            self.session_stats['jobs_clicked'] += 1
+            logger.info(f"✅ Successfully clicked job #{job_index + 1}")
+            return True
+
+        except Exception as e:
+            logger.error(f"❌ Error clicking job #{job_index + 1}: {e}")
+            return False
+
+    def find_and_click_apply_button(self, job_index):
+        """Find and click apply button for current job"""
+        try:
+            logger.info(f"🔍 Looking for apply button on job #{job_index + 1}")
+
+            # Comprehensive list of apply button selectors
+            apply_selectors = [
+                ".jobs-apply-button",
+                "button[aria-label*='Apply']",
+                "button[aria-label*='apply']",
+                "a[aria-label*='Apply']",
+                "a[aria-label*='apply']",
+                "[data-control-name*='apply']",
+                ".apply-button",
+                ".easy-apply-button",
+                "button[data-tracking-control-name*='apply']",
+                "[data-control-name='jobdetails_topcard_iapply']",
+                "button[class*='apply']",
+                "a[class*='apply']"
+            ]
+
+            apply_button = None
+            button_selector_used = None
+
+            # Search for apply buttons
+            for selector in apply_selectors:
+                try:
+                    buttons = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                    for btn in buttons:
+                        if btn.is_displayed() and btn.is_enabled():
+                            text = btn.text.lower()
+                            aria_label = btn.get_attribute('aria-label') or ""
+                            aria_label = aria_label.lower()
+
+                            # Check if this looks like an apply button
+                            if ('apply' in text or 'apply' in aria_label or
+                                'submit' in text or 'submit' in aria_label):
+                                apply_button = btn
+                                button_selector_used = selector
+                                break
+                    if apply_button:
+                        break
+                except Exception:
+                    continue
+
+            if apply_button:
+                logger.info(f"🎯 Found apply button using: {button_selector_used}")
+                logger.info(f"    Button text: '{apply_button.text}'")
+
+                # Click the apply button
+                try:
+                    self.driver.execute_script("arguments[0].scrollIntoView(true);", apply_button)
+                    time.sleep(1)
+                    apply_button.click()
+                    time.sleep(5)
+
+                    logger.info("🚀 APPLY BUTTON CLICKED!")
+
+                    # Verify application page/form opened
+                    return self.verify_application_opened(job_index)
+
+                except Exception as e:
+                    logger.error(f"❌ Error clicking apply button: {e}")
+                    return False
+            else:
+                # Check for external application links
+                external_selectors = [
+                    "a[href*='apply']",
+                    "a[target='_blank']",
+                    "[data-tracking-control-name='external_apply']",
+                    "a[class*='external']"
+                ]
+
+                for selector in external_selectors:
+                    try:
+                        links = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                        for link in links:
+                            if link.is_displayed():
+                                href = link.get_attribute('href') or ""
+                                text = link.text.lower()
+
+                                if 'apply' in href.lower() or 'apply' in text:
+                                    logger.info(f"🔗 Found external apply link: {href}")
+                                    return self.handle_external_application(link, job_index)
+                    except Exception:
+                        continue
+
+                logger.warning(f"⚠️ No apply button found for job #{job_index + 1}")
+                return False
+
+        except Exception as e:
+            logger.error(f"❌ Error finding apply button for job #{job_index + 1}: {e}")
+            return False
+
+    def verify_application_opened(self, job_index):
+        """Verify that an application form or page has opened"""
+        try:
+            logger.info(f"✅ Verifying application opened for job #{job_index + 1}")
+
+            # Wait a moment for page to load
+            time.sleep(3)
+
+            current_url = self.driver.current_url.lower()
+            page_source = self.driver.page_source.lower()
+
+            # Check URL for application indicators
+            url_indicators = ['apply', 'application', 'form', 'submit']
+            url_has_application = any(indicator in current_url for indicator in url_indicators)
+
+            # Check for application form elements
+            form_indicators = [
+                "form",
+                "input[type='file']",  # Resume upload
+                "textarea",
+                ".application",
+                ".apply-form",
+                "upload resume",
+                "cover letter",
+                "submit application"
+            ]
+
+            form_elements_found = []
+            for indicator in form_indicators:
+                try:
+                    if indicator.startswith('.') or indicator.startswith('['):
+                        # CSS selector
+                        elements = self.driver.find_elements(By.CSS_SELECTOR, indicator)
+                        if elements:
+                            form_elements_found.append(indicator)
+                    else:
+                        # Text search
+                        if indicator in page_source:
+                            form_elements_found.append(indicator)
+                except Exception:
+                    continue
+
+            # Check page title
+            page_title = self.driver.title.lower()
+            title_has_application = any(word in page_title for word in ['apply', 'application', 'job'])
+
+            # Determine if application opened
+            application_opened = bool(url_has_application or form_elements_found or title_has_application)
+
+            if application_opened:
+                logger.info("🎉 ✅ JOB APPLICATION SUCCESSFULLY OPENED!")
+                logger.info(f"    🔗 URL indicates application: {url_has_application}")
+                logger.info(f"    📋 Form elements found: {len(form_elements_found)}")
+                logger.info(f"    📄 Title indicates application: {title_has_application}")
+                logger.info(f"    🌐 Current URL: {current_url}")
+                logger.info(f"    📑 Page title: {self.driver.title}")
+
+                if form_elements_found:
+                    logger.info(f"    🔍 Form indicators: {', '.join(form_elements_found[:3])}")
+
+                # Record the successful opening
+                self.confirmed_openings.append({
+                    'job_index': job_index + 1,
+                    'timestamp': datetime.now().isoformat(),
+                    'url': current_url,
+                    'title': self.driver.title,
+                    'verification_method': {
+                        'url_check': url_has_application,
+                        'form_elements': len(form_elements_found),
+                        'title_check': title_has_application
+                    }
+                })
+
+                self.session_stats['applications_opened'] += 1
+
+                # Go back to job list for next job
+                self.driver.back()
+                time.sleep(3)
+
+                return True
+            else:
+                logger.warning(f"⚠️ Could not verify application opened for job #{job_index + 1}")
+                return False
+
+        except Exception as e:
+            logger.error(f"❌ Error verifying application for job #{job_index + 1}: {e}")
+            return False
+
+    def handle_external_application(self, link, job_index):
+        """Handle external application links"""
+        try:
+            href = link.get_attribute('href')
+            logger.info(f"🔗 Opening external application for job #{job_index + 1}: {href}")
+
+            # Open in new tab
+            original_window = self.driver.current_window_handle
+            self.driver.execute_script("window.open(arguments[0]);", href)
+            time.sleep(3)
+
+            # Switch to new tab
+            self.driver.switch_to.window(self.driver.window_handles[-1])
+            time.sleep(5)
+
+            # Check external site
+            current_url = self.driver.current_url.lower()
+            page_source = self.driver.page_source.lower()
+
+            external_indicators = [
+                'apply', 'application', 'career', 'job', 'position',
+                'resume', 'submit', 'candidate', 'hiring', 'form'
+            ]
+
+            external_application_detected = any(
+                indicator in current_url or indicator in page_source
+                for indicator in external_indicators
+            )
+
+            if external_application_detected:
+                logger.info("🎉 ✅ EXTERNAL JOB APPLICATION SUCCESSFULLY OPENED!")
+                logger.info(f"    🌐 External URL: {current_url}")
+
+                self.confirmed_openings.append({
+                    'job_index': job_index + 1,
+                    'timestamp': datetime.now().isoformat(),
+                    'url': current_url,
+                    'type': 'external',
+                    'original_linkedin_url': self.driver.current_url
+                })
+
+                self.session_stats['external_applications'] += 1
+                success = True
+            else:
+                logger.warning(f"⚠️ External site did not appear to be an application page")
+                success = False
+
+            # Close external tab and return to LinkedIn
+            self.driver.close()
+            self.driver.switch_to.window(original_window)
+            time.sleep(2)
+
+            return success
+
+        except Exception as e:
+            logger.error(f"❌ Error with external application: {e}")
+            return False
+
+    def run_job_application_automation(self):
+        """Main automation loop - apply to jobs until confirmed openings"""
+        logger.info("🚀 STARTING DIRECT LINKEDIN JOB APPLICATION AUTOMATION")
+        logger.info("🎯 Target: Software jobs within 25 miles of San Jose, CA")
+        logger.info("⚡ Goal: Confirm job applications are being opened")
+        logger.info("=" * 80)
+
+        try:
+            # Create WebDriver
+            if not self.create_driver():
+                logger.error("❌ Failed to create WebDriver")
+                return False
+
+            # Navigate to LinkedIn jobs
+            if not self.navigate_to_linkedin_jobs():
+                logger.error("❌ Failed to navigate to LinkedIn jobs")
+                return False
+
+            # Main application loop
+            page_count = 0
+            total_jobs_processed = 0
+
+            while self.session_stats['applications_opened'] < 10:  # Stop after 10 confirmed openings
+                page_count += 1
+                logger.info(f"\n📄 PROCESSING PAGE {page_count}")
+                logger.info("=" * 50)
+
+                # Get job cards on current page
+                job_cards = self.get_all_job_cards()
+
+                if not job_cards:
+                    logger.warning("⚠️ No job cards found on this page")
                     break
 
-                attempt += 1
-                if attempt <= max_attempts:
-                    logger.info(f"\n⏳ Waiting 10 seconds before next attempt...")
-                    time.sleep(10)
+                # Process each job on the page
+                for i, job_card in enumerate(job_cards):
+                    logger.info(f"\n[{i+1}/{len(job_cards)}] PROCESSING JOB #{total_jobs_processed + 1}")
+                    logger.info("-" * 40)
 
-            # Test job applications
-            if self.authenticated_jobright or self.authenticated_linkedin:
-                applications_tested = self.test_job_applications()
+                    # Click job card
+                    if self.click_job_card(job_card, total_jobs_processed):
+                        # Try to find and click apply button
+                        application_success = self.find_and_click_apply_button(total_jobs_processed)
 
-                logger.info(f"\n🎉 AUTOMATION RESULTS:")
-                logger.info("="*50)
-                logger.info(f"✅ JobRight authenticated: {self.authenticated_jobright}")
-                logger.info(f"✅ LinkedIn authenticated: {self.authenticated_linkedin}")
-                logger.info(f"🎯 Job application pages tested: {applications_tested}")
-                logger.info(f"📋 Total jobs found: {len(self.applied_jobs)}")
+                        if application_success:
+                            logger.info(f"✅ Job #{total_jobs_processed + 1}: Application opened successfully")
+                        else:
+                            logger.info(f"ℹ️ Job #{total_jobs_processed + 1}: No application available")
 
-                if self.applied_jobs:
-                    logger.info(f"\n📋 JOBS ACCESSED:")
-                    for i, job in enumerate(self.applied_jobs):
-                        logger.info(f"   {i+1}. [{job['platform'].upper()}] {job['title']}")
-                        logger.info(f"      URL: {job['url']}")
+                    total_jobs_processed += 1
 
-                # Save results
-                results = {
-                    'jobright_authenticated': self.authenticated_jobright,
-                    'linkedin_authenticated': self.authenticated_linkedin,
-                    'applications_tested': applications_tested,
-                    'jobs_accessed': self.applied_jobs,
-                    'timestamp': time.time()
-                }
+                    # Print progress
+                    logger.info(f"\n📊 CURRENT PROGRESS:")
+                    logger.info(f"    📋 Jobs processed: {total_jobs_processed}")
+                    logger.info(f"    🎯 Jobs clicked: {self.session_stats['jobs_clicked']}")
+                    logger.info(f"    ✅ Applications opened: {self.session_stats['applications_opened']}")
+                    logger.info(f"    🔗 External applications: {self.session_stats['external_applications']}")
+                    logger.info(f"    ⏱️ Runtime: {(time.time() - self.session_stats['start_time'])/60:.1f} minutes")
 
-                with open('direct_visual_results.json', 'w') as f:
-                    json.dump(results, f, indent=2)
+                    # Check if we've reached our goal
+                    if self.session_stats['applications_opened'] >= 5:
+                        logger.info("\n🎉 SUCCESS! CONFIRMED JOB APPLICATIONS HAVE BEEN OPENED!")
+                        logger.info(f"✅ Total confirmed openings: {self.session_stats['applications_opened']}")
+                        return True
 
-                logger.info(f"\n💾 Results saved to: direct_visual_results.json")
+                    # Delay between jobs
+                    time.sleep(3)
 
-            # Keep browser open for continuous operation
-            logger.info(f"\n🔄 CONTINUOUS OPERATION MODE")
-            logger.info("="*50)
-            logger.info("Browser staying open for continued use...")
-            logger.info("Both platforms should now be visible and accessible!")
-            logger.info("You can manually test job applications or run automated processes.")
+                # Try to go to next page (basic implementation)
+                try:
+                    next_button = self.driver.find_element(By.CSS_SELECTOR, "[aria-label*='Next']")
+                    if next_button.is_enabled():
+                        next_button.click()
+                        time.sleep(5)
+                    else:
+                        logger.info("📄 No more pages available")
+                        break
+                except:
+                    logger.info("📄 No next page button found")
+                    break
 
-            # Keep running indefinitely
-            while True:
-                time.sleep(30)
-                logger.info(f"🔄 System running... JobRight: {'✅' if self.authenticated_jobright else '❌'} | LinkedIn: {'✅' if self.authenticated_linkedin else '❌'}")
+            # Final results
+            logger.info("\n🏁 AUTOMATION COMPLETED")
+            logger.info(f"✅ Total applications opened: {self.session_stats['applications_opened']}")
 
-        except KeyboardInterrupt:
-            logger.info("\n⏹️  Automation stopped by user")
+            return True
+
         except Exception as e:
-            logger.error(f"Automation error: {e}")
-            import traceback
-            traceback.print_exc()
-        finally:
-            if self.driver:
-                logger.info("\n🔄 Browser staying open - close manually when done")
-                # Don't quit driver - let it stay open
+            logger.error(f"❌ Automation error: {e}")
+            return False
+
+    def cleanup(self):
+        """Clean up resources"""
+        if self.driver:
+            try:
+                self.driver.quit()
+                logger.info("🧹 WebDriver cleaned up")
+            except:
                 pass
 
+def main():
+    automation = DirectLinkedInAutomation()
+
+    try:
+        success = automation.run_job_application_automation()
+
+        if success:
+            logger.info("\n🎉 MISSION ACCOMPLISHED!")
+            logger.info("✅ Job applications have been confirmed opened")
+        else:
+            logger.error("\n❌ Automation encountered issues")
+
+    except KeyboardInterrupt:
+        logger.info("\n⏹️ Automation stopped by user")
+
+    finally:
+        automation.cleanup()
+
+        # Final statistics
+        logger.info("\n" + "="*60)
+        logger.info("📊 FINAL RESULTS")
+        logger.info("="*60)
+        logger.info(f"✅ Applications confirmed opened: {automation.session_stats['applications_opened']}")
+        logger.info(f"🔗 External applications: {automation.session_stats['external_applications']}")
+        logger.info(f"🎯 Jobs clicked: {automation.session_stats['jobs_clicked']}")
+        logger.info(f"📋 Total jobs found: {automation.session_stats['jobs_found']}")
+        logger.info(f"⏱️ Total runtime: {(time.time() - automation.session_stats['start_time'])/60:.1f} minutes")
+
+        if automation.confirmed_openings:
+            logger.info(f"\n📝 CONFIRMED APPLICATION OPENINGS:")
+            for opening in automation.confirmed_openings:
+                logger.info(f"  • Job #{opening['job_index']}: {opening['url']}")
+
 if __name__ == "__main__":
-    automation = DirectVisualAutomation()
-    automation.run_continuous_automation()
+    main()

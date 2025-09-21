@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-09-20T20:51:43.557102",
+  "source_url": "https://jobright.ai/jobs/recommend",
+  "extraction_methods": {
+    "basic_scraping": {
+      "links_found": 2,
+      "links": [
+        "/jobs/recommend",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&amp;display=swap"
+      ]
+    },
+    "api_discovery": {
+      "endpoints_found": 1,
+      "endpoints": [
+        [
+          "https://jobright.ai/jobs/api",
+          "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant oppor"
+        ]
+      ]
+    },
+    "external_links": {
+      "links_found": 3,
+      "links": [
+        "https://px.ads.linkedin.com/collect/?pid=7992001&fmt=gif",
+        "https://jobright.ai/",
+        "https://jobright.ai/newimages/seo_logo.png"
+      ]
+    },
+    "json_extraction": {
+      "data_objects_found": 0,
+      "data": []
+    }
+  },
+  "all_links": [
+    "https://px.ads.linkedin.com/collect/?pid=7992001&fmt=gif",
+    "/jobs/recommend",
+    "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&amp;display=swap",
+    "https://jobright.ai/newimages/seo_logo.png",
+    "https://jobright.ai/"
+  ],
+  "job_data": [],
+  "total_links_found": 5
+}

@@ -1,0 +1,932 @@
+{
+  "timestamp": "2025-09-20T20:52:27.851734",
+  "known_endpoint_analysis": {
+    "basic_exploration": {
+      "endpoint": "https://jobright.ai/jobs/api",
+      "methods_tested": {
+        "GET": {
+          "status_code": 200,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:28 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Cache-Control": "public, s-maxage=7200, stale-while-revalidate=86400",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"11an03y4gbufcsh\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 716559,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "POST": {
+          "status_code": 200,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:29 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Cache-Control": "public, s-maxage=7200, stale-while-revalidate=86400",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"qyno7r9845fcsh\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 716559,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "OPTIONS": {
+          "status_code": 200,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:31 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Cache-Control": "public, s-maxage=7200, stale-while-revalidate=86400",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"kl5ms7g1vffcsh\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 716559,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        }
+      },
+      "timestamp": "2025-09-20T20:52:27.851892"
+    },
+    "parameter_testing": [
+      {
+        "parameters": {},
+        "status_code": 200,
+        "url": "https://jobright.ai/jobs/api",
+        "content_length": 716559,
+        "content_type": "text/html; charset=utf-8",
+        "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant oppor"
+      },
+      {
+        "parameters": {
+          "page": 1
+        },
+        "status_code": 200,
+        "url": "https://jobright.ai/jobs/api?page=1",
+        "content_length": 716799,
+        "content_type": "text/html; charset=utf-8",
+        "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant oppor"
+      },
+      {
+        "parameters": {
+          "limit": 20
+        },
+        "status_code": 200,
+        "url": "https://jobright.ai/jobs/api?limit=20",
+        "content_length": 716843,
+        "content_type": "text/html; charset=utf-8",
+        "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant oppor"
+      },
+      {
+        "parameters": {
+          "page": 1,
+          "limit": 20
+        },
+        "status_code": 200,
+        "url": "https://jobright.ai/jobs/api?page=1&limit=20",
+        "content_length": 717083,
+        "content_type": "text/html; charset=utf-8",
+        "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant oppor"
+      },
+      {
+        "parameters": {
+          "q": "software engineer"
+        },
+        "status_code": 200,
+        "url": "https://jobright.ai/jobs/api?q=software+engineer",
+        "content_length": 717087,
+        "content_type": "text/html; charset=utf-8",
+        "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant oppor"
+      },
+      {
+        "parameters": {
+          "location": "San Francisco"
+        },
+        "status_code": 200,
+        "url": "https://jobright.ai/jobs/api?location=San+Francisco",
+        "content_length": 717153,
+        "content_type": "text/html; charset=utf-8",
+        "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant oppor"
+      },
+      {
+        "parameters": {
+          "query": "developer"
+        },
+        "status_code": 200,
+        "url": "https://jobright.ai/jobs/api?query=developer",
+        "content_length": 716999,
+        "content_type": "text/html; charset=utf-8",
+        "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant oppor"
+      },
+      {
+        "parameters": {
+          "search": "python"
+        },
+        "status_code": 200,
+        "url": "https://jobright.ai/jobs/api?search=python",
+        "content_length": 716955,
+        "content_type": "text/html; charset=utf-8",
+        "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant oppor"
+      },
+      {
+        "parameters": {
+          "category": "technology"
+        },
+        "status_code": 200,
+        "url": "https://jobright.ai/jobs/api?category=technology",
+        "content_length": 717087,
+        "content_type": "text/html; charset=utf-8",
+        "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant oppor"
+      },
+      {
+        "parameters": {
+          "type": "recommendation"
+        },
+        "status_code": 200,
+        "url": "https://jobright.ai/jobs/api?type=recommendation",
+        "content_length": 717067,
+        "content_type": "text/html; charset=utf-8",
+        "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant oppor"
+      },
+      {
+        "parameters": {
+          "userId": "test"
+        },
+        "status_code": 200,
+        "url": "https://jobright.ai/jobs/api?userId=test",
+        "content_length": 716911,
+        "content_type": "text/html; charset=utf-8",
+        "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant oppor"
+      },
+      {
+        "parameters": {
+          "recommendations": "true"
+        },
+        "status_code": 200,
+        "url": "https://jobright.ai/jobs/api?recommendations=true",
+        "content_length": 717087,
+        "content_type": "text/html; charset=utf-8",
+        "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant oppor"
+      }
+    ]
+  },
+  "endpoint_variations": [
+    {
+      "endpoint": "https://jobright.ai/api/jobs",
+      "methods_tested": {
+        "GET": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:47 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "POST": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:47 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "OPTIONS": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:47 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        }
+      },
+      "timestamp": "2025-09-20T20:52:47.515413"
+    },
+    {
+      "endpoint": "https://jobright.ai/api/jobs/recommend",
+      "methods_tested": {
+        "GET": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:48 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "POST": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:48 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "OPTIONS": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:48 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        }
+      },
+      "timestamp": "2025-09-20T20:52:48.131931"
+    },
+    {
+      "endpoint": "https://jobright.ai/api/jobs/recommendations",
+      "methods_tested": {
+        "GET": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:48 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "POST": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:48 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "OPTIONS": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:48 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        }
+      },
+      "timestamp": "2025-09-20T20:52:48.784443"
+    },
+    {
+      "endpoint": "https://jobright.ai/api/v1/jobs",
+      "methods_tested": {
+        "GET": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:49 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "POST": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:49 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "OPTIONS": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:49 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        }
+      },
+      "timestamp": "2025-09-20T20:52:49.442766"
+    },
+    {
+      "endpoint": "https://jobright.ai/api/v1/jobs/recommend",
+      "methods_tested": {
+        "GET": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:50 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "POST": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:50 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "OPTIONS": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:50 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        }
+      },
+      "timestamp": "2025-09-20T20:52:50.131299"
+    },
+    {
+      "endpoint": "https://jobright.ai/api/v1/recommendations",
+      "methods_tested": {
+        "GET": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:50 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "POST": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:50 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "OPTIONS": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:50 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        }
+      },
+      "timestamp": "2025-09-20T20:52:50.775993"
+    },
+    {
+      "endpoint": "https://jobright.ai/jobs/api",
+      "methods_tested": {
+        "GET": {
+          "status_code": 200,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:52 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Cache-Control": "public, s-maxage=7200, stale-while-revalidate=86400",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"rmt9bd3aosfcsh\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 716559,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "POST": {
+          "status_code": 200,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:53 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Cache-Control": "public, s-maxage=7200, stale-while-revalidate=86400",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"11tp2vrl5elfcsh\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 716559,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "OPTIONS": {
+          "status_code": 200,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:54 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "Cache-Control": "public, s-maxage=7200, stale-while-revalidate=86400",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"fbkoaeph78fcsh\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 716559,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        }
+      },
+      "timestamp": "2025-09-20T20:52:51.429385"
+    },
+    {
+      "endpoint": "https://jobright.ai/jobs/api/recommend",
+      "methods_tested": {
+        "GET": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:55 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "POST": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:55 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "OPTIONS": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:55 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        }
+      },
+      "timestamp": "2025-09-20T20:52:55.087478"
+    },
+    {
+      "endpoint": "https://jobright.ai/recommend/api",
+      "methods_tested": {
+        "GET": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:55 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "POST": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:55 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "OPTIONS": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:55 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        }
+      },
+      "timestamp": "2025-09-20T20:52:55.723105"
+    },
+    {
+      "endpoint": "https://jobright.ai/api/search",
+      "methods_tested": {
+        "GET": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:56 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "POST": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:56 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "OPTIONS": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:56 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        }
+      },
+      "timestamp": "2025-09-20T20:52:56.360526"
+    },
+    {
+      "endpoint": "https://jobright.ai/api/search/jobs",
+      "methods_tested": {
+        "GET": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:57 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "POST": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:57 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "OPTIONS": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:57 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        }
+      },
+      "timestamp": "2025-09-20T20:52:57.007200"
+    },
+    {
+      "endpoint": "https://jobright.ai/graphql",
+      "methods_tested": {
+        "GET": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:57 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "POST": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:57 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "OPTIONS": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:57 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        }
+      },
+      "timestamp": "2025-09-20T20:52:57.648495"
+    },
+    {
+      "endpoint": "https://jobright.ai/api/graphql",
+      "methods_tested": {
+        "GET": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:58 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "POST": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:58 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        },
+        "OPTIONS": {
+          "status_code": 404,
+          "headers": {
+            "Date": "Sun, 21 Sep 2025 03:52:58 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "Vary": "Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "ETag": "W/\"o4pboz3kqr2kfx\"",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+            "Content-Encoding": "gzip"
+          },
+          "content_type": "text/html; charset=utf-8",
+          "content_length": 119809,
+          "content_preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\"/><meta name=\"type\" property=\"og:type\" content=\"website\"/><meta name=\"url\" property=\"og:url\" content=\"https://jobright.ai/\"/><meta name=\"title\" property=\"og:title\" content=\"Jobright: Your AI Job Search Copilot\"/><meta property=\"og:description\" content=\"Discover your dream job with Jobright, your AI job search copilot. Find relevant opportunities tailored to your goals. Gain filtered matches, deep insights, and stay ahead with real-time company trends. Let Jobright find your perfect fit.\"/><meta name=\"image\" property=\"og:image\" content=\"https://jobright.ai/newimages/seo_logo.png\"/><meta name=\"og:site_name\" property=\"og:site_name\" content=\"Jobright AI\"/><meta name=\"og:locale\" property=\"og:locale\" content=\"en\"/><meta name=\"twitter:card\" property=\"twitter:card\" content=\"summary_large_image\"/><meta name=\"twitter:domain\" property=\"tw"
+        }
+      },
+      "timestamp": "2025-09-20T20:52:58.297479"
+    }
+  ]
+}

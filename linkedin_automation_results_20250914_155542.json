@@ -1,0 +1,925 @@
+{
+  "session_info": {
+    "session_id": "20250914_155542",
+    "timestamp": "20250914_155542",
+    "search_params": {
+      "keywords": "software",
+      "location": "San Jose, California, United States",
+      "geoId": "106233382",
+      "distance": "25"
+    },
+    "duration_seconds": 3912.6499259471893
+  },
+  "statistics": {
+    "start_time": 1757890542.6431878,
+    "jobs_found": 50,
+    "jobs_processed": 0,
+    "applications_attempted": 50,
+    "applications_successful": 0,
+    "applications_failed": 50,
+    "pages_processed": 0
+  },
+  "successful_applications": [],
+  "failed_applications": [
+    {
+      "job_info": {
+        "index": 0,
+        "job_id": "urn:li:jobPosting:4265604833",
+        "title": "Software Position",
+        "company": "Unknown",
+        "location": "Mountain View, CA",
+        "apply_link": "https://www.linkedin.com/company/nuro-inc.?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.335\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "No apply button found after extensive search"
+      },
+      "timestamp": 1757892345.5043523,
+      "applied_at": "2025-09-14T16:25:45.504356"
+    },
+    {
+      "job_info": {
+        "index": 1,
+        "job_id": "urn:li:jobPosting:4300587046",
+        "title": "Lensa",
+        "company": "Lensa",
+        "location": "San Jose, CA",
+        "apply_link": "https://www.linkedin.com/company/lensa?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.339\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "No apply button found after extensive search"
+      },
+      "timestamp": 1757892542.4154503,
+      "applied_at": "2025-09-14T16:29:02.415452"
+    },
+    {
+      "job_info": {
+        "index": 2,
+        "job_id": "urn:li:jobPosting:4236335624",
+        "title": "Meta",
+        "company": "Meta",
+        "location": "Menlo Park, CA",
+        "apply_link": "https://www.linkedin.com/company/meta?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.343\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "No apply button found after extensive search"
+      },
+      "timestamp": 1757892740.6455564,
+      "applied_at": "2025-09-14T16:32:20.645558"
+    },
+    {
+      "job_info": {
+        "index": 3,
+        "job_id": "urn:li:jobPosting:4300573553",
+        "title": "Lensa",
+        "company": "Lensa",
+        "location": "Stanford, CA",
+        "apply_link": "https://www.linkedin.com/company/lensa?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.347\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "No apply button found after extensive search"
+      },
+      "timestamp": 1757892937.992999,
+      "applied_at": "2025-09-14T16:35:37.993000"
+    },
+    {
+      "job_info": {
+        "index": 4,
+        "job_id": "urn:li:jobPosting:4188145018",
+        "title": "Luma AI",
+        "company": "Luma AI",
+        "location": "Palo Alto, CA",
+        "apply_link": "https://www.linkedin.com/company/lumalabsai?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.387\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "No apply button found after extensive search"
+      },
+      "timestamp": 1757893134.8221543,
+      "applied_at": "2025-09-14T16:38:54.822158"
+    },
+    {
+      "job_info": {
+        "index": 5,
+        "job_id": "urn:li:jobPosting:4262571856",
+        "title": "xAI",
+        "company": "xAI",
+        "location": "Palo Alto, CA",
+        "apply_link": "https://www.linkedin.com/company/xai?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.388\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "No apply button found after extensive search"
+      },
+      "timestamp": 1757893331.6021633,
+      "applied_at": "2025-09-14T16:42:11.602167"
+    },
+    {
+      "job_info": {
+        "index": 6,
+        "job_id": "urn:li:jobPosting:4300414725",
+        "title": "Intelligenic",
+        "company": "Intelligenic",
+        "location": "San Jose, CA",
+        "apply_link": "https://www.linkedin.com/company/intelligenic?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.389\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "No apply button found after extensive search"
+      },
+      "timestamp": 1757893529.0542092,
+      "applied_at": "2025-09-14T16:45:29.054212"
+    },
+    {
+      "job_info": {
+        "index": 7,
+        "job_id": "urn:li:jobPosting:4214833117",
+        "title": "LinkedIn",
+        "company": "LinkedIn",
+        "location": "Mountain View, CA",
+        "apply_link": "https://www.linkedin.com/company/linkedin?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.390\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "No apply button found after extensive search"
+      },
+      "timestamp": 1757893725.9211946,
+      "applied_at": "2025-09-14T16:48:45.921196"
+    },
+    {
+      "job_info": {
+        "index": 8,
+        "job_id": "urn:li:jobPosting:4274652981",
+        "title": "AMD",
+        "company": "AMD",
+        "location": "San Jose, CA",
+        "apply_link": "https://www.linkedin.com/company/amd?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.391\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "No apply button found after extensive search"
+      },
+      "timestamp": 1757893922.8825717,
+      "applied_at": "2025-09-14T16:52:02.882574"
+    },
+    {
+      "job_info": {
+        "index": 9,
+        "job_id": "urn:li:jobPosting:4300574357",
+        "title": "Box",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": "https://www.linkedin.com/company/box?trk=public_jobs_jserp-result_job-search-card-subtitle",
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.392\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "No apply button found after extensive search"
+      },
+      "timestamp": 1757894119.81117,
+      "applied_at": "2025-09-14T16:55:19.811173"
+    },
+    {
+      "job_info": {
+        "index": 10,
+        "job_id": "job_10_1757892144",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.393\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894127.825593,
+      "applied_at": "2025-09-14T16:55:27.825596"
+    },
+    {
+      "job_info": {
+        "index": 11,
+        "job_id": "job_11_1757892144",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.394\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894135.8418677,
+      "applied_at": "2025-09-14T16:55:35.841873"
+    },
+    {
+      "job_info": {
+        "index": 12,
+        "job_id": "job_12_1757892144",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.395\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894143.8528812,
+      "applied_at": "2025-09-14T16:55:43.852883"
+    },
+    {
+      "job_info": {
+        "index": 13,
+        "job_id": "job_13_1757892145",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.396\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894151.859596,
+      "applied_at": "2025-09-14T16:55:51.859598"
+    },
+    {
+      "job_info": {
+        "index": 14,
+        "job_id": "job_14_1757892145",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.397\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894159.8878336,
+      "applied_at": "2025-09-14T16:55:59.887841"
+    },
+    {
+      "job_info": {
+        "index": 15,
+        "job_id": "job_15_1757892145",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.398\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894167.9020467,
+      "applied_at": "2025-09-14T16:56:07.902053"
+    },
+    {
+      "job_info": {
+        "index": 16,
+        "job_id": "job_16_1757892145",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.399\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894175.9099479,
+      "applied_at": "2025-09-14T16:56:15.909949"
+    },
+    {
+      "job_info": {
+        "index": 17,
+        "job_id": "job_17_1757892146",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.400\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894183.915633,
+      "applied_at": "2025-09-14T16:56:23.915634"
+    },
+    {
+      "job_info": {
+        "index": 18,
+        "job_id": "job_18_1757892146",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.401\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894191.9238448,
+      "applied_at": "2025-09-14T16:56:31.923847"
+    },
+    {
+      "job_info": {
+        "index": 19,
+        "job_id": "job_19_1757892146",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.402\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894199.9309094,
+      "applied_at": "2025-09-14T16:56:39.930911"
+    },
+    {
+      "job_info": {
+        "index": 20,
+        "job_id": "job_20_1757892147",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.403\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894207.9383829,
+      "applied_at": "2025-09-14T16:56:47.938388"
+    },
+    {
+      "job_info": {
+        "index": 21,
+        "job_id": "job_21_1757892147",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.404\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894215.9461722,
+      "applied_at": "2025-09-14T16:56:55.946173"
+    },
+    {
+      "job_info": {
+        "index": 22,
+        "job_id": "job_22_1757892148",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.405\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894223.9517767,
+      "applied_at": "2025-09-14T16:57:03.951779"
+    },
+    {
+      "job_info": {
+        "index": 23,
+        "job_id": "job_23_1757892148",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.406\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894231.9581082,
+      "applied_at": "2025-09-14T16:57:11.958111"
+    },
+    {
+      "job_info": {
+        "index": 24,
+        "job_id": "job_24_1757892148",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.407\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894239.964961,
+      "applied_at": "2025-09-14T16:57:19.964962"
+    },
+    {
+      "job_info": {
+        "index": 25,
+        "job_id": "job_25_1757892149",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.408\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894247.971358,
+      "applied_at": "2025-09-14T16:57:27.971361"
+    },
+    {
+      "job_info": {
+        "index": 26,
+        "job_id": "job_26_1757892149",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.409\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894255.9785542,
+      "applied_at": "2025-09-14T16:57:35.978557"
+    },
+    {
+      "job_info": {
+        "index": 27,
+        "job_id": "job_27_1757892149",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.410\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894263.9821045,
+      "applied_at": "2025-09-14T16:57:43.982105"
+    },
+    {
+      "job_info": {
+        "index": 28,
+        "job_id": "job_28_1757892150",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.411\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894271.9872727,
+      "applied_at": "2025-09-14T16:57:51.987274"
+    },
+    {
+      "job_info": {
+        "index": 29,
+        "job_id": "job_29_1757892150",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.412\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894279.9930859,
+      "applied_at": "2025-09-14T16:57:59.993087"
+    },
+    {
+      "job_info": {
+        "index": 30,
+        "job_id": "job_30_1757892151",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.413\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894295.2017365,
+      "applied_at": "2025-09-14T16:58:15.201739"
+    },
+    {
+      "job_info": {
+        "index": 31,
+        "job_id": "job_31_1757892151",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.414\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894303.2053432,
+      "applied_at": "2025-09-14T16:58:23.205344"
+    },
+    {
+      "job_info": {
+        "index": 32,
+        "job_id": "job_32_1757892151",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.415\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894311.208701,
+      "applied_at": "2025-09-14T16:58:31.208703"
+    },
+    {
+      "job_info": {
+        "index": 33,
+        "job_id": "job_33_1757892152",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.416\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894319.2112424,
+      "applied_at": "2025-09-14T16:58:39.211244"
+    },
+    {
+      "job_info": {
+        "index": 34,
+        "job_id": "job_34_1757892152",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.417\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894327.2148473,
+      "applied_at": "2025-09-14T16:58:47.214848"
+    },
+    {
+      "job_info": {
+        "index": 35,
+        "job_id": "job_35_1757892152",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.418\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894335.2203827,
+      "applied_at": "2025-09-14T16:58:55.220386"
+    },
+    {
+      "job_info": {
+        "index": 36,
+        "job_id": "job_36_1757892152",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.419\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894343.2255902,
+      "applied_at": "2025-09-14T16:59:03.225595"
+    },
+    {
+      "job_info": {
+        "index": 37,
+        "job_id": "job_37_1757892153",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.420\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894351.2330759,
+      "applied_at": "2025-09-14T16:59:11.233082"
+    },
+    {
+      "job_info": {
+        "index": 38,
+        "job_id": "job_38_1757892153",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.421\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894359.2420747,
+      "applied_at": "2025-09-14T16:59:19.242078"
+    },
+    {
+      "job_info": {
+        "index": 39,
+        "job_id": "job_39_1757892153",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.422\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894367.24624,
+      "applied_at": "2025-09-14T16:59:27.246243"
+    },
+    {
+      "job_info": {
+        "index": 40,
+        "job_id": "job_40_1757892153",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.423\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894375.2491949,
+      "applied_at": "2025-09-14T16:59:35.249196"
+    },
+    {
+      "job_info": {
+        "index": 41,
+        "job_id": "job_41_1757892154",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.424\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894383.255595,
+      "applied_at": "2025-09-14T16:59:43.255616"
+    },
+    {
+      "job_info": {
+        "index": 42,
+        "job_id": "job_42_1757892154",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.425\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894391.2604864,
+      "applied_at": "2025-09-14T16:59:51.260490"
+    },
+    {
+      "job_info": {
+        "index": 43,
+        "job_id": "job_43_1757892154",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.426\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894399.2647202,
+      "applied_at": "2025-09-14T16:59:59.264721"
+    },
+    {
+      "job_info": {
+        "index": 44,
+        "job_id": "job_44_1757892154",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.427\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894407.2688484,
+      "applied_at": "2025-09-14T17:00:07.268850"
+    },
+    {
+      "job_info": {
+        "index": 45,
+        "job_id": "job_45_1757892155",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.428\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894415.2743192,
+      "applied_at": "2025-09-14T17:00:15.274322"
+    },
+    {
+      "job_info": {
+        "index": 46,
+        "job_id": "job_46_1757892155",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.429\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894423.279246,
+      "applied_at": "2025-09-14T17:00:23.279249"
+    },
+    {
+      "job_info": {
+        "index": 47,
+        "job_id": "job_47_1757892155",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.430\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894431.2850258,
+      "applied_at": "2025-09-14T17:00:31.285031"
+    },
+    {
+      "job_info": {
+        "index": 48,
+        "job_id": "job_48_1757892155",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.431\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894439.28987,
+      "applied_at": "2025-09-14T17:00:39.289871"
+    },
+    {
+      "job_info": {
+        "index": 49,
+        "job_id": "job_49_1757892156",
+        "title": "Unknown",
+        "company": "Unknown",
+        "location": "Unknown",
+        "apply_link": null,
+        "easy_apply": false,
+        "element": "<selenium.webdriver.remote.webelement.WebElement (session=\"ea73df80b1eb0b15dc3dfb3821aeefa6\", element=\"f.D729F6D1B518F4A5C8DFB49292E1ED51.d.6773A99CB325CA37333CD7EF1D8C701B.e.432\")>"
+      },
+      "result": {
+        "success": false,
+        "error": "Could not access job listing"
+      },
+      "timestamp": 1757894447.2926385,
+      "applied_at": "2025-09-14T17:00:47.292640"
+    }
+  ]
+}

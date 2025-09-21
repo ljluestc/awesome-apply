@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Persistent Visual Automation - Keep running until both platforms are authenticated and working
-Shows actual browser windows, authentication process, and job application pages
+Persistent LinkedIn Job Automation with Visual Verification
+Continuously applies to software jobs in San Jose area until confirmed applications are opened
+Uses visual detection and robust error recovery
 """
 
 import sys
