@@ -1,0 +1,125 @@
+{
+  "timestamp": "2025-09-20T21:38:50.974569",
+  "sitemap_url": "https://jobright.ai/sitemap.xml",
+  "extraction_method": "sitemap_analysis",
+  "total_urls_found": 21,
+  "job_urls_found": 0,
+  "jobs_extracted": 0,
+  "all_urls": [
+    {
+      "url": "https://jobright.ai/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/ai-resume-builder",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/job-autofill",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/h1b-jobs",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/about",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/the-companies-hiring-the-most-in-2025-a-role-by-role-breakdown/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/insights-from-the-latest-hiring-trend-data-whats-the-best-time-to-job-hunt/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/the-intern-new-grad-job-market-unpacked-data-driven-insights-for-job-seekers/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/top-email-finder-extensions-for-linkedin/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/inside-the-2025-tech-salary-landscape-the-data-behind-the-dollars/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/inside-the-ai-hiring-boom-what-top-ai-companies-are-looking-for-in-2025/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/8-best-job-search-sites-job-boards-for-full-time-employment/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/small-teams-big-impact-24-companies-proving-that-size-doesnt-matter/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/ais-most-efficient-innovators-a-deep-dive-into-revenue-per-employee/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/the-geography-of-tech-jobs-in-2025-the-top-10-states-and-sectors/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/what-ai-really-does-at-work-insights-from-millions-of-conversations-with-claude/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/job-search-trends-by-education-level-in-2025-what-the-data-tells-us/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/how-to-become-a-prompt-engineer-your-2025-north-american-career-guide/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/top-remote-startups-with-enormous-potential-in-2025/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/will-ai-replace-artists/",
+      "lastmod": null,
+      "priority": null
+    },
+    {
+      "url": "https://jobright.ai/blog/will-ai-replace-graphic-designers/",
+      "lastmod": null,
+      "priority": null
+    }
+  ],
+  "job_urls": [],
+  "job_details": [],
+  "external_application_links": [],
+  "summary": {
+    "successful_extractions": 0,
+    "failed_extractions": 0,
+    "total_apply_links": 0,
+    "jobs_with_apply_links": 0,
+    "average_apply_links_per_job": 0.0
+  }
+}

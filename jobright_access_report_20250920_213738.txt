@@ -1,0 +1,33 @@
+JobRight.ai Access Investigation Report
+==================================================
+Investigation Date: 2025-09-20T21:37:33.585755
+
+SUMMARY:
+  Authentication Required: Yes
+  Accessible Endpoints: 4/15
+  Endpoints with Job Content: 4
+  Working APIs: 0
+  Alternative Access: Available
+
+ACCESSIBLE ENDPOINTS:
+------------------------------
+  / -> 200 (Job Score: 4)
+  /jobs -> 200 (Job Score: 2)
+  /sitemap.xml -> 200 (Job Score: 4)
+  /robots.txt -> 200 (Job Score: 2)
+
+WORKING APIs:
+------------------------------
+
+AUTHENTICATION:
+------------------------------
+  Auth Endpoints: 0
+  OAuth Providers: None
+  Signup Available: No
+  Guest Access: No
+
+RECOMMENDATIONS:
+------------------------------
+• The site appears to require authentication to access job recommendations
+• Some job content was found in public endpoints
+• Alternative access methods (RSS/Sitemap) are available

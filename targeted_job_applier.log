@@ -75,3 +75,80 @@
 2025-09-20 09:45:21,713 - INFO - 🏢 Platforms tried: 3
 2025-09-20 09:45:21,713 - INFO - ❌ Failed attempts: 0
 2025-09-20 09:45:21,713 - INFO - ⏱️ Total runtime: 0.9 minutes
+2025-09-20 23:38:00,453 - INFO - 🌟 TARGETED JOB APPLICATION AUTOMATION
+2025-09-20 23:38:00,454 - INFO - 🎯 Focusing specifically on actual job postings
+2025-09-20 23:38:00,454 - INFO - 🚀 TARGETED JOB APPLICATION AUTOMATION
+2025-09-20 23:38:00,454 - INFO - 🎯 Specifically targeting actual job postings
+2025-09-20 23:38:00,454 - INFO - ⚡ Filtering out non-job content
+2025-09-20 23:38:00,454 - INFO - ================================================================================
+2025-09-20 23:38:00,454 - INFO - ====== WebDriver manager ======
+2025-09-20 23:38:00,560 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-20 23:38:00,690 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-20 23:38:00,794 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
+2025-09-20 23:38:01,976 - INFO - ✅ WebDriver setup successfully
+2025-09-20 23:38:01,978 - INFO - 
+🎯 PROCESSING PLATFORM: JobRight_SoftwareJobs
+2025-09-20 23:38:01,978 - INFO - 🔗 URL: https://jobright.ai/s?keyword=software%20engineer&location=San%20Jose%2C%20CA
+2025-09-20 23:38:01,978 - INFO - ============================================================
+2025-09-20 23:38:08,567 - INFO - 📍 Arrived at: https://jobright.ai/s?keyword=software%20engineer&location=San%20Jose%2C%20CA
+2025-09-20 23:38:08,573 - INFO - 📑 Page title: 
+2025-09-20 23:38:11,145 - INFO - 📜 Scrolling completed (1 scrolls)
+2025-09-20 23:38:11,197 - INFO - 🔍 Found 0 potential job containers
+2025-09-20 23:38:11,197 - INFO - ✅ Found 0 actual job postings with apply options
+2025-09-20 23:38:11,197 - WARNING - ⚠️ No job postings found on JobRight_SoftwareJobs
+2025-09-20 23:38:11,197 - INFO - 
+📊 OVERALL PROGRESS:
+2025-09-20 23:38:11,197 - INFO -     🏢 Platforms tried: 1
+2025-09-20 23:38:11,197 - INFO -     📋 Jobs found: 0
+2025-09-20 23:38:11,197 - INFO -     ✅ Successful applications: 0
+2025-09-20 23:38:11,197 - INFO -     ❌ Failed attempts: 0
+2025-09-20 23:38:11,197 - INFO -     ⏱️ Runtime: 0.2 minutes
+2025-09-20 23:38:11,197 - INFO - 
+🎯 PROCESSING PLATFORM: LinkedIn_SoftwareJobs
+2025-09-20 23:38:11,197 - INFO - 🔗 URL: https://www.linkedin.com/jobs/search?keywords=software%20engineer&location=San%20Jose%2C%20CA&distance=25&f_TPR=r86400
+2025-09-20 23:38:11,197 - INFO - ============================================================
+2025-09-20 23:38:20,156 - INFO - 📍 Arrived at: https://www.linkedin.com/jobs/search?keywords=software%20engineer&location=San%20Jose%2C%20CA&distance=25&f_TPR=r86400
+2025-09-20 23:38:20,165 - INFO - 📑 Page title: 458 Software Engineer jobs in San Jose
+2025-09-20 23:38:25,097 - INFO - 📜 Scrolling completed (2 scrolls)
+2025-09-20 23:38:25,129 - INFO - 🔍 Found 140 potential job containers
+2025-09-20 23:38:27,162 - INFO - ✅ Found 0 actual job postings with apply options
+2025-09-20 23:38:27,162 - WARNING - ⚠️ No job postings found on LinkedIn_SoftwareJobs
+2025-09-20 23:38:27,162 - INFO - 
+📊 OVERALL PROGRESS:
+2025-09-20 23:38:27,162 - INFO -     🏢 Platforms tried: 2
+2025-09-20 23:38:27,162 - INFO -     📋 Jobs found: 0
+2025-09-20 23:38:27,162 - INFO -     ✅ Successful applications: 0
+2025-09-20 23:38:27,162 - INFO -     ❌ Failed attempts: 0
+2025-09-20 23:38:27,162 - INFO -     ⏱️ Runtime: 0.4 minutes
+2025-09-20 23:38:27,162 - INFO - 
+🎯 PROCESSING PLATFORM: Indeed_SoftwareJobs
+2025-09-20 23:38:27,162 - INFO - 🔗 URL: https://indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&fromage=1
+2025-09-20 23:38:27,162 - INFO - ============================================================
+2025-09-20 23:38:34,001 - INFO - 📍 Arrived at: https://www.indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&fromage=1&vjk=e6f284d999325644
+2025-09-20 23:38:34,010 - INFO - 📑 Page title: Software Engineer Jobs, Employment in San Jose, CA | Indeed
+2025-09-20 23:38:36,245 - INFO - 📜 Scrolling completed (1 scrolls)
+2025-09-20 23:38:36,281 - INFO - 🔍 Found 32 potential job containers
+2025-09-20 23:38:40,504 - INFO - ✅ Found 0 actual job postings with apply options
+2025-09-20 23:38:40,504 - WARNING - ⚠️ No job postings found on Indeed_SoftwareJobs
+2025-09-20 23:38:40,504 - INFO - 
+📊 OVERALL PROGRESS:
+2025-09-20 23:38:40,504 - INFO -     🏢 Platforms tried: 3
+2025-09-20 23:38:40,504 - INFO -     📋 Jobs found: 0
+2025-09-20 23:38:40,504 - INFO -     ✅ Successful applications: 0
+2025-09-20 23:38:40,504 - INFO -     ❌ Failed attempts: 0
+2025-09-20 23:38:40,504 - INFO -     ⏱️ Runtime: 0.7 minutes
+2025-09-20 23:38:40,504 - INFO - 
+🏁 TARGETED AUTOMATION COMPLETED
+2025-09-20 23:38:40,504 - INFO - ✅ Total job applications: 0
+2025-09-20 23:38:40,504 - WARNING - 
+⚠️ No successful applications
+2025-09-20 23:38:40,650 - INFO - 🧹 Resources cleaned up
+2025-09-20 23:38:40,650 - INFO - 
+============================================================
+2025-09-20 23:38:40,650 - INFO - 📊 FINAL STATISTICS
+2025-09-20 23:38:40,650 - INFO - ============================================================
+2025-09-20 23:38:40,650 - INFO - ✅ Job applications: 0
+2025-09-20 23:38:40,650 - INFO - 📋 Jobs found: 0
+2025-09-20 23:38:40,650 - INFO - 🏢 Platforms tried: 3
+2025-09-20 23:38:40,650 - INFO - ❌ Failed attempts: 0
+2025-09-20 23:38:40,650 - INFO - ⏱️ Total runtime: 0.7 minutes

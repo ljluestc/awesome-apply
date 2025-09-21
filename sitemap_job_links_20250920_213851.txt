@@ -1,0 +1,15 @@
+JobRight.ai Sitemap Job Extraction Results
+============================================================
+Extraction Date: 2025-09-20T21:38:50.974569
+Source: https://jobright.ai/sitemap.xml
+Total URLs in Sitemap: 21
+Job URLs Found: 0
+Jobs Successfully Extracted: 0
+Total Apply Links: 0
+
+CLICKABLE JOB APPLICATION LINKS:
+----------------------------------------
+
+
+JOB DETAILS:
+----------------------------------------

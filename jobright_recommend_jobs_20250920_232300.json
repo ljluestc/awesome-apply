@@ -1,0 +1,116 @@
+{
+  "source_url": "https://jobright.ai/",
+  "page_title": "Jobright: Your AI Job Search Copilot",
+  "timestamp": "2025-09-20T23:23:00.863479",
+  "total_jobs": 18,
+  "jobs": [
+    {
+      "title": "AI Agent",
+      "url": "https://jobright.ai/ai-agent",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "Resume AI",
+      "url": "https://jobright.ai/ai-resume-builder",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "For Employers",
+      "url": "https://jobright.ai/employers",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "About Us",
+      "url": "https://jobright.ai/about",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "Try Jobright for Free",
+      "url": "https://jobright.ai/onboarding-v3/signup",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "Is Jobright Legit?",
+      "url": "https://jobright.ai/blog/is-jobright-legit",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "Success Stories from Jobright Users",
+      "url": "https://jobright.ai/blog/success-stories-that-started-with-jobright-real-people-real-results",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "What Top AI Companies Are Looking For",
+      "url": "https://jobright.ai/blog/inside-the-ai-hiring-boom-what-top-ai-companies-are-looking-for-in-2025",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "Jobright AI Agent Launch",
+      "url": "https://jobright.ai/blog/jobright-launches-first-ai-agent-to-put-job-search-on-autopilot",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "Top Entry Level Jobs",
+      "url": "https://jobright.ai/entry-level-jobs",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "Related Tools",
+      "url": "https://jobright.ai/tools",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "AI Job Assistant",
+      "url": "https://jobright.ai/tools/ai-job-assistant",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "AI Cover Letter Generator",
+      "url": "https://jobright.ai/tools/cover-letter-generator",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "AI Resume Helper",
+      "url": "https://jobright.ai/tools/resume-helper",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "AI Job Tracker",
+      "url": "https://jobright.ai/tools/job-tracker",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "Privacy Policy",
+      "url": "https://jobright.ai/legal/privacy",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "Terms of Service",
+      "url": "https://jobright.ai/legal/service",
+      "onclick": "",
+      "element_type": "a"
+    },
+    {
+      "title": "Partners",
+      "url": "https://jobright.ai/partners",
+      "onclick": "",
+      "element_type": "a"
+    }
+  ]
+}

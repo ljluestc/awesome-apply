@@ -36,7 +36,15 @@
       "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python jobright_interactive_extractor.py)",
       "WebFetch(domain:jobright.ai)",
       "Bash(apt:*)",
-      "Bash(apt install:*)"
+      "Bash(apt install:*)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python jobright_recommend_extractor.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python direct_jobright_recommend_extractor.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python enhanced_linkedin_scraper.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python robust_job_scraper.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python working_job_scraper.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python test_complete_system.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python terminal_job_demo.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python comprehensive_test_system.py)"
     ],
     "deny": [],
     "ask": []

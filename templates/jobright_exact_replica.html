@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobRight: Your AI Job Search Copilot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Exact JobRight Header */
+        .header {
+            background: #ffffff;
+            border-bottom: 1px solid #f0f0f0;
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 600;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: #666666;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #00f0a0;
+        }
+
+        .get-started-btn {
+            background: #00f0a0;
+            color: #000000;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .get-started-btn:hover {
+            background: #00d690;
+            transform: translateY(-1px);
+        }
+
+        /* Main Content */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        /* Search and Filters */
+        .search-section {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #f0f0f0;
+        }
+
+        .search-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr auto;
+            gap: 16px;
+            align-items: end;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-label {
+            font-weight: 500;
+            color: #333333;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .form-input {
+            padding: 12px 16px;
+            border: 1px solid #d9d9d9;
+            border-radius: 6px;
+            font-size: 14px;
+            background: #ffffff;
+            transition: all 0.3s;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #00f0a0;
+            box-shadow: 0 0 0 2px rgba(0, 240, 160, 0.1);
+        }
+
+        .search-btn {
+            background: #00f0a0;
+            color: #000000;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            height: fit-content;
+        }
+
+        .search-btn:hover {
+            background: #00d690;
+            transform: translateY(-1px);
+        }
+
+        /* Filter Tags */
+        .filter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .filter-tag {
+            background: #f5f5f5;
+            color: #666666;
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .filter-tag:hover,
+        .filter-tag.active {
+            background: #00f0a0;
+            color: #000000;
+        }
+
+        /* Job Results Header */
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .results-count {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .view-toggle {
+            display: flex;
+            gap: 8px;
+        }
+
+        .view-btn {
+            padding: 8px 12px;
+            border: 1px solid #d9d9d9;
+            background: #ffffff;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .view-btn.active {
+            background: #00f0a0;
+            border-color: #00f0a0;
+            color: #000000;
+        }
+
+        /* Job Cards Grid */
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .job-card {
+            background: #ffffff;
+            border: 1px solid #f0f0f0;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .job-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-color: #00f0a0;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .job-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+
+        .job-company {
+            font-size: 14px;
+            color: #666666;
+            font-weight: 500;
+        }
+
+        .job-bookmark {
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: #d9d9d9;
+            transition: color 0.3s;
+        }
+
+        .job-bookmark:hover,
+        .job-bookmark.active {
+            color: #00f0a0;
+        }
+
+        .job-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 12px 0;
+        }
+
+        .job-meta-item {
+            font-size: 12px;
+            color: #666666;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .job-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin: 12px 0;
+        }
+
+        .job-tag {
+            background: #f5f5f5;
+            color: #666666;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .job-description {
+            font-size: 13px;
+            color: #666666;
+            line-height: 1.5;
+            margin: 12px 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .job-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .job-salary {
+            font-size: 14px;
+            font-weight: 600;
+            color: #00f0a0;
+        }
+
+        .apply-btn {
+            background: #00f0a0;
+            color: #000000;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .apply-btn:hover {
+            background: #00d690;
+            transform: translateY(-1px);
+        }
+
+        /* Loading States */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #f0f0f0;
+            border-top: 3px solid #00f0a0;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Status Messages */
+        .status-message {
+            text-align: center;
+            padding: 40px;
+            color: #666666;
+        }
+
+        .status-message.success {
+            color: #00f0a0;
+        }
+
+        .status-message.error {
+            color: #ff4d4f;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .search-form {
+                grid-template-columns: 1fr;
+            }
+
+            .jobs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .main-container {
+                padding: 16px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Exact JobRight Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo">Jobright</a>
+            <nav class="nav-links">
+                <a href="#" class="nav-link">AI Agent</a>
+                <a href="#" class="nav-link">Resume AI</a>
+                <a href="#" class="nav-link">For Employers</a>
+                <a href="#" class="nav-link">About Us</a>
+                <a href="#" class="get-started-btn">Try Jobright for Free</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Search Section -->
+        <section class="search-section">
+            <form class="search-form" id="jobSearchForm">
+                <div class="form-group">
+                    <label class="form-label">Job Title or Keywords</label>
+                    <input type="text" class="form-input" id="keywords" placeholder="e.g. Software Engineer" value="software engineer">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Location</label>
+                    <input type="text" class="form-input" id="location" placeholder="e.g. San Francisco, CA" value="San Jose, CA">
+                </div>
+                <button type="submit" class="search-btn" id="searchBtn">
+                    🔍 Search Jobs
+                </button>
+            </form>
+
+            <div class="filter-tags">
+                <div class="filter-tag active">All Jobs</div>
+                <div class="filter-tag">Remote</div>
+                <div class="filter-tag">Full-time</div>
+                <div class="filter-tag">Part-time</div>
+                <div class="filter-tag">Contract</div>
+                <div class="filter-tag">Entry Level</div>
+                <div class="filter-tag">Senior Level</div>
+            </div>
+        </section>
+
+        <!-- Results Header -->
+        <div class="results-header">
+            <div class="results-count" id="resultsCount">Loading jobs...</div>
+            <div class="view-toggle">
+                <button class="view-btn active">🗂️ Cards</button>
+                <button class="view-btn">📋 List</button>
+            </div>
+        </div>
+
+        <!-- Jobs Grid -->
+        <div class="jobs-grid" id="jobsGrid">
+            <div class="loading">
+                <div class="spinner"></div>
+            </div>
+        </div>
+
+        <!-- Status Messages -->
+        <div class="status-message" id="statusMessage" style="display: none;"></div>
+    </main>
+
+    <script>
+        // Global variables
+        let allJobs = [];
+        let isLoading = false;
+
+        // DOM elements
+        const jobsGrid = document.getElementById('jobsGrid');
+        const resultsCount = document.getElementById('resultsCount');
+        const statusMessage = document.getElementById('statusMessage');
+        const searchForm = document.getElementById('jobSearchForm');
+        const searchBtn = document.getElementById('searchBtn');
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadJobs();
+            setupEventListeners();
+
+            // Auto-refresh jobs every 30 seconds
+            setInterval(loadJobs, 30000);
+        });
+
+        function setupEventListeners() {
+            // Search form
+            searchForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                triggerJobSearch();
+            });
+
+            // Filter tags
+            document.querySelectorAll('.filter-tag').forEach(tag => {
+                tag.addEventListener('click', function() {
+                    // Update active state
+                    document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Filter jobs based on selection
+                    filterJobs(this.textContent.trim());
+                });
+            });
+
+            // View toggle
+            document.querySelectorAll('.view-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        }
+
+        async function loadJobs() {
+            try {
+                const response = await fetch('/api/jobs');
+                const data = await response.json();
+                allJobs = data.jobs || [];
+                displayJobs(allJobs);
+                updateResultsCount(allJobs.length);
+                hideStatus();
+            } catch (error) {
+                console.error('Error loading jobs:', error);
+                showStatus('Failed to load jobs. Please try again.', 'error');
+            }
+        }
+
+        async function triggerJobSearch() {
+            if (isLoading) return;
+
+            isLoading = true;
+            searchBtn.textContent = '🔄 Searching...';
+            searchBtn.disabled = true;
+
+            showLoading();
+
+            try {
+                const keywords = document.getElementById('keywords').value;
+                const location = document.getElementById('location').value;
+
+                const response = await fetch('/api/scrape', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        keywords: keywords,
+                        location: location,
+                        remote: false,
+                        experience: 'all'
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    showStatus(`✅ Found ${result.jobs_found} new jobs!`, 'success');
+                    setTimeout(() => {
+                        loadJobs(); // Reload jobs after scraping
+                    }, 1000);
+                } else {
+                    showStatus(`❌ Search failed: ${result.message}`, 'error');
+                }
+
+            } catch (error) {
+                console.error('Search error:', error);
+                showStatus('❌ Search failed. Please try again.', 'error');
+            } finally {
+                isLoading = false;
+                searchBtn.textContent = '🔍 Search Jobs';
+                searchBtn.disabled = false;
+            }
+        }
+
+        function displayJobs(jobs) {
+            hideLoading();
+
+            if (!jobs || jobs.length === 0) {
+                jobsGrid.innerHTML = `
+                    <div class="status-message">
+                        <h3>No jobs found</h3>
+                        <p>Try adjusting your search criteria or search for new jobs.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            jobsGrid.innerHTML = jobs.map(job => createJobCard(job)).join('');
+
+            // Add event listeners to apply buttons
+            document.querySelectorAll('.apply-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const jobId = this.getAttribute('data-job-id');
+                    applyToJob(jobId);
+                });
+            });
+
+            // Add event listeners to job cards
+            document.querySelectorAll('.job-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const jobUrl = this.getAttribute('data-job-url');
+                    if (jobUrl) {
+                        window.open(jobUrl, '_blank');
+                    }
+                });
+            });
+        }
+
+        function createJobCard(job) {
+            const salary = job.salary || '$80k - $120k';
+            const description = job.description || 'Great opportunity to work with cutting-edge technology and make an impact.';
+            const tags = ['Engineering', 'Full-time', 'Remote OK'];
+
+            return `
+                <div class="job-card" data-job-id="${job.id}" data-job-url="${job.url}">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">${job.title}</div>
+                            <div class="job-company">${job.company}</div>
+                        </div>
+                        <button class="job-bookmark">♡</button>
+                    </div>
+
+                    <div class="job-meta">
+                        <div class="job-meta-item">📍 ${job.location}</div>
+                        <div class="job-meta-item">💼 ${job.job_type || 'Full-time'}</div>
+                        <div class="job-meta-item">🏠 ${job.remote_option || 'On-site'}</div>
+                    </div>
+
+                    <div class="job-tags">
+                        ${tags.map(tag => `<span class="job-tag">${tag}</span>`).join('')}
+                    </div>
+
+                    <div class="job-description">${description}</div>
+
+                    <div class="job-footer">
+                        <div class="job-salary">${salary}</div>
+                        <button class="apply-btn" data-job-id="${job.id}">
+                            🚀 Quick Apply
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        async function applyToJob(jobId) {
+            try {
+                const response = await fetch('/api/apply', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ job_id: jobId })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    showStatus('✅ Application submitted successfully!', 'success');
+                } else {
+                    showStatus(`❌ Application failed: ${result.message}`, 'error');
+                }
+
+            } catch (error) {
+                console.error('Apply error:', error);
+                showStatus('❌ Application failed. Please try again.', 'error');
+            }
+        }
+
+        function filterJobs(filterType) {
+            let filteredJobs = allJobs;
+
+            switch(filterType) {
+                case 'Remote':
+                    filteredJobs = allJobs.filter(job =>
+                        job.remote_option && job.remote_option.toLowerCase().includes('remote')
+                    );
+                    break;
+                case 'Full-time':
+                    filteredJobs = allJobs.filter(job =>
+                        job.job_type && job.job_type.toLowerCase().includes('full')
+                    );
+                    break;
+                case 'Part-time':
+                    filteredJobs = allJobs.filter(job =>
+                        job.job_type && job.job_type.toLowerCase().includes('part')
+                    );
+                    break;
+                case 'Contract':
+                    filteredJobs = allJobs.filter(job =>
+                        job.job_type && job.job_type.toLowerCase().includes('contract')
+                    );
+                    break;
+                case 'Entry Level':
+                    filteredJobs = allJobs.filter(job =>
+                        job.experience_level && job.experience_level.toLowerCase().includes('entry')
+                    );
+                    break;
+                case 'Senior Level':
+                    filteredJobs = allJobs.filter(job =>
+                        job.experience_level && job.experience_level.toLowerCase().includes('senior')
+                    );
+                    break;
+                default:
+                    filteredJobs = allJobs;
+            }
+
+            displayJobs(filteredJobs);
+            updateResultsCount(filteredJobs.length);
+        }
+
+        function updateResultsCount(count) {
+            resultsCount.textContent = `${count} jobs found`;
+        }
+
+        function showLoading() {
+            jobsGrid.innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                </div>
+            `;
+        }
+
+        function hideLoading() {
+            // Loading will be hidden when jobs are displayed
+        }
+
+        function showStatus(message, type = 'info') {
+            statusMessage.textContent = message;
+            statusMessage.className = `status-message ${type}`;
+            statusMessage.style.display = 'block';
+
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                hideStatus();
+            }, 5000);
+        }
+
+        function hideStatus() {
+            statusMessage.style.display = 'none';
+        }
+
+        // Auto-trigger initial search if no jobs
+        setTimeout(() => {
+            if (allJobs.length === 0) {
+                triggerJobSearch();
+            }
+        }, 2000);
+    </script>
+</body>
+</html>

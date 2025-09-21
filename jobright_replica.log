@@ -1,0 +1,391 @@
+2025-09-20 23:35:02,641 - INFO - ✅ Database initialized successfully
+2025-09-20 23:35:02,641 - INFO - ✅ Database initialized successfully
+2025-09-20 23:35:02,643 - INFO - 🚀 JOBRIGHT AI REPLICA STARTING
+2025-09-20 23:35:02,643 - INFO - 🎯 LinkedIn Job Scraping + Intelligent Auto-Apply
+2025-09-20 23:35:02,643 - INFO - 🤖 Pattern Learning + Analytics Dashboard
+2025-09-20 23:35:02,643 - INFO - ============================================================
+2025-09-20 23:35:02,643 - INFO - ✅ JobRight replica template created successfully
+2025-09-20 23:35:02,643 - INFO - 🌐 Starting JobRight replica server on http://localhost:5000
+2025-09-20 23:35:02,643 - INFO - 💡 Open your browser and navigate to: http://localhost:5000
+2025-09-20 23:35:02,643 - INFO - 🎯 Features available:
+2025-09-20 23:35:02,643 - INFO -    • LinkedIn job scraping with smart criteria
+2025-09-20 23:35:02,643 - INFO -    • Intelligent auto-apply with pattern learning
+2025-09-20 23:35:02,643 - INFO -    • Real-time analytics and success tracking
+2025-09-20 23:35:02,643 - INFO -    • JobRight.ai UI replica with modern design
+2025-09-20 23:35:02,643 - INFO - ============================================================
+2025-09-20 23:35:02,646 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.22:5000
+2025-09-20 23:35:02,646 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-20 23:35:40,675 - INFO - 127.0.0.1 - - [20/Sep/2025 23:35:40] "GET / HTTP/1.1" 200 -
+2025-09-20 23:35:41,381 - INFO - 127.0.0.1 - - [20/Sep/2025 23:35:41] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-20 23:35:41,382 - INFO - 127.0.0.1 - - [20/Sep/2025 23:35:41] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-20 23:35:42,004 - INFO - 127.0.0.1 - - [20/Sep/2025 23:35:42] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-20 23:35:42,534 - INFO - 127.0.0.1 - - [20/Sep/2025 23:35:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-20 23:35:45,373 - INFO - ====== WebDriver manager ======
+2025-09-20 23:35:45,521 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-20 23:35:45,645 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-20 23:35:45,715 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
+2025-09-20 23:35:46,592 - INFO - ✅ LinkedIn scraper driver setup complete
+2025-09-20 23:35:46,596 - INFO - 🔍 Scraping LinkedIn: https://www.linkedin.com/jobs/search/?keywords=software%20engineer&location=San%20Jose%2C%20CA&f_AL=true&sortBy=DD
+2025-09-20 23:35:57,184 - INFO - 📁 Scrolling completed (1 scrolls)
+2025-09-20 23:35:57,190 - INFO - 📋 Found 0 job cards
+2025-09-20 23:35:57,190 - INFO - ✅ Successfully scraped 0 LinkedIn jobs
+2025-09-20 23:35:57,190 - INFO - 127.0.0.1 - - [20/Sep/2025 23:35:57] "POST /api/scrape HTTP/1.1" 200 -
+2025-09-20 23:35:57,194 - INFO - 127.0.0.1 - - [20/Sep/2025 23:35:57] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-20 23:35:57,199 - INFO - 127.0.0.1 - - [20/Sep/2025 23:35:57] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-20 23:36:32,535 - INFO - 127.0.0.1 - - [20/Sep/2025 23:36:32] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-20 23:36:32,547 - INFO - 127.0.0.1 - - [20/Sep/2025 23:36:32] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-20 23:40:41,702 - INFO - 127.0.0.1 - - [20/Sep/2025 23:40:41] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-20 23:45:41,704 - INFO - 127.0.0.1 - - [20/Sep/2025 23:45:41] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-20 23:46:59,490 - INFO - ✅ Database initialized successfully
+2025-09-20 23:46:59,491 - INFO - ✅ Database initialized successfully
+2025-09-20 23:46:59,492 - INFO - 🚀 JOBRIGHT AI REPLICA STARTING
+2025-09-20 23:46:59,492 - INFO - 🎯 LinkedIn Job Scraping + Intelligent Auto-Apply
+2025-09-20 23:46:59,492 - INFO - 🤖 Pattern Learning + Analytics Dashboard
+2025-09-20 23:46:59,492 - INFO - ============================================================
+2025-09-20 23:46:59,492 - INFO - ✅ JobRight replica template created successfully
+2025-09-20 23:46:59,492 - INFO - 🌐 Starting JobRight replica server on http://localhost:5000
+2025-09-20 23:46:59,492 - INFO - 💡 Open your browser and navigate to: http://localhost:5000
+2025-09-20 23:46:59,492 - INFO - 🎯 Features available:
+2025-09-20 23:46:59,492 - INFO -    • LinkedIn job scraping with smart criteria
+2025-09-20 23:46:59,492 - INFO -    • Intelligent auto-apply with pattern learning
+2025-09-20 23:46:59,492 - INFO -    • Real-time analytics and success tracking
+2025-09-20 23:46:59,492 - INFO -    • JobRight.ai UI replica with modern design
+2025-09-20 23:46:59,492 - INFO - ============================================================
+2025-09-20 23:46:59,495 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.22:5000
+2025-09-20 23:46:59,495 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-20 23:50:41,698 - INFO - 127.0.0.1 - - [20/Sep/2025 23:50:41] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-20 23:55:41,707 - INFO - 127.0.0.1 - - [20/Sep/2025 23:55:41] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-20 23:59:17,444 - INFO - 127.0.0.1 - - [20/Sep/2025 23:59:17] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-20 23:59:17,457 - INFO - 127.0.0.1 - - [20/Sep/2025 23:59:17] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-20 23:59:19,917 - INFO - 127.0.0.1 - - [20/Sep/2025 23:59:19] "GET / HTTP/1.1" 200 -
+2025-09-20 23:59:20,119 - INFO - 127.0.0.1 - - [20/Sep/2025 23:59:20] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-20 23:59:20,122 - INFO - 127.0.0.1 - - [20/Sep/2025 23:59:20] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-20 23:59:20,505 - INFO - 127.0.0.1 - - [20/Sep/2025 23:59:20] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-20 23:59:21,327 - INFO - ====== WebDriver manager ======
+2025-09-20 23:59:21,435 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-20 23:59:21,608 - INFO - Get LATEST chromedriver version for google-chrome
+2025-09-20 23:59:21,699 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/139.0.7258.154/chromedriver-linux64/chromedriver] found in cache
+2025-09-20 23:59:22,494 - INFO - ✅ Working job scraper driver setup complete
+2025-09-20 23:59:22,494 - INFO - 🔍 Scraping jobs with criteria: software engineer in San Jose, CA
+2025-09-20 23:59:22,494 - INFO - 🎯 Scraping INDEED: https://www.indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&radius=25&sort=date
+2025-09-20 23:59:35,260 - INFO - ✅ Found 16 jobs with selector: h2.jobTitle a
+2025-09-20 23:59:35,314 - INFO - ✅ Job 1: Full Stack Software Engineer - Information Securit... at 
+2025-09-20 23:59:35,359 - INFO - ✅ Job 2: SW Dev Engineer -ASE -Backend... at 
+2025-09-20 23:59:35,437 - INFO - ✅ Job 3: Camera Software - Sr. Machine Learning Research En... at 
+2025-09-20 23:59:35,484 - INFO - ✅ Job 4: Senior Software Engineering Manager, Incubation te... at 
+2025-09-20 23:59:35,530 - INFO - ✅ Job 5: Staff Software Engineer - Backend... at 
+2025-09-20 23:59:35,563 - INFO - ✅ Job 6: Software Development Engineer... at 
+2025-09-20 23:59:35,602 - INFO - ✅ Job 7: Software Development Engineer, AWS Compute Service... at 
+2025-09-20 23:59:35,663 - INFO - ✅ Job 8: Software Dev Engineer II (SDE2), Amazon Connect... at 
+2025-09-20 23:59:35,709 - INFO - ✅ Job 9: Software Development Engineer, Veteran Opportunity... at 
+2025-09-20 23:59:35,744 - INFO - ✅ Job 10: Software Engineer- AI/ML, AWS Neuron Distributed T... at 
+2025-09-20 23:59:35,876 - INFO - ✅ Job 12: Software Dev Engineer - Alexa Mobile, Alexa Mobile... at 
+2025-09-20 23:59:35,932 - INFO - ✅ Job 13: Sr. Software Engineer- EC2 Windows OS Technologies... at 
+2025-09-20 23:59:35,975 - INFO - ✅ Job 14: Software Dev Engineer -III... at 
+2025-09-20 23:59:36,041 - INFO - ✅ Job 15: Embedded C++ Software Engineer, Machine Learning A... at 
+2025-09-20 23:59:36,088 - INFO - ✅ Job 16: Software Dev Engineer II, Echo Platform... at 
+2025-09-20 23:59:36,089 - INFO - 🎉 INDEED: Found 15 valid jobs
+2025-09-20 23:59:36,089 - INFO - ✅ Found 15 jobs from Indeed - sufficient for automation
+2025-09-20 23:59:36,089 - INFO - 127.0.0.1 - - [20/Sep/2025 23:59:36] "POST /api/scrape HTTP/1.1" 200 -
+2025-09-20 23:59:36,095 - INFO - 127.0.0.1 - - [20/Sep/2025 23:59:36] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-20 23:59:36,103 - INFO - 127.0.0.1 - - [20/Sep/2025 23:59:36] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-20 23:59:39,801 - INFO - 127.0.0.1 - - [20/Sep/2025 23:59:39] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-20 23:59:39,819 - INFO - 127.0.0.1 - - [20/Sep/2025 23:59:39] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-20 23:59:47,224 - INFO - 🔍 Scraping jobs with criteria: software engineer in San Jose, CA
+2025-09-20 23:59:47,225 - INFO - 🎯 Scraping INDEED: https://www.indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&radius=25&sort=date
+2025-09-20 23:59:59,550 - INFO - ✅ Found 16 jobs with selector: h2.jobTitle a
+2025-09-20 23:59:59,584 - INFO - ✅ Job 1: Full Stack Software Engineer - Information Securit... at 
+2025-09-20 23:59:59,612 - INFO - ✅ Job 2: SW Dev Engineer -ASE -Backend... at 
+2025-09-20 23:59:59,640 - INFO - ✅ Job 3: Camera Software - Sr. Machine Learning Research En... at 
+2025-09-20 23:59:59,678 - INFO - ✅ Job 4: Senior Software Engineering Manager, Incubation te... at 
+2025-09-20 23:59:59,713 - INFO - ✅ Job 5: Staff Software Engineer - Backend... at 
+2025-09-20 23:59:59,754 - INFO - ✅ Job 6: Software Development Engineer... at 
+2025-09-20 23:59:59,795 - INFO - ✅ Job 7: Software Development Engineer, AWS Compute Service... at 
+2025-09-20 23:59:59,840 - INFO - ✅ Job 8: Software Dev Engineer II (SDE2), Amazon Connect... at 
+2025-09-20 23:59:59,872 - INFO - ✅ Job 9: Software Development Engineer, Veteran Opportunity... at 
+2025-09-20 23:59:59,903 - INFO - ✅ Job 10: Software Engineer- AI/ML, AWS Neuron Distributed T... at 
+2025-09-20 23:59:59,960 - INFO - ✅ Job 12: Software Dev Engineer - Alexa Mobile, Alexa Mobile... at 
+2025-09-20 23:59:59,985 - INFO - ✅ Job 13: Sr. Software Engineer- EC2 Windows OS Technologies... at 
+2025-09-21 00:00:00,023 - INFO - ✅ Job 14: Software Dev Engineer -III... at 
+2025-09-21 00:00:00,055 - INFO - ✅ Job 15: Embedded C++ Software Engineer, Machine Learning A... at 
+2025-09-21 00:00:00,081 - INFO - ✅ Job 16: Software Dev Engineer II, Echo Platform... at 
+2025-09-21 00:00:00,081 - INFO - 🎉 INDEED: Found 15 valid jobs
+2025-09-21 00:00:00,081 - INFO - ✅ Found 15 jobs from Indeed - sufficient for automation
+2025-09-21 00:00:00,082 - INFO - 127.0.0.1 - - [21/Sep/2025 00:00:00] "POST /api/scrape HTTP/1.1" 200 -
+2025-09-21 00:00:00,086 - INFO - 127.0.0.1 - - [21/Sep/2025 00:00:00] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-21 00:00:00,092 - INFO - 127.0.0.1 - - [21/Sep/2025 00:00:00] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:00:04,262 - INFO - 127.0.0.1 - - [21/Sep/2025 00:00:04] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-21 00:00:04,277 - INFO - 127.0.0.1 - - [21/Sep/2025 00:00:04] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:04:20,086 - INFO - 127.0.0.1 - - [21/Sep/2025 00:04:20] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:09:20,780 - INFO - 127.0.0.1 - - [21/Sep/2025 00:09:20] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:14:20,083 - INFO - 127.0.0.1 - - [21/Sep/2025 00:14:20] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:14:25,666 - INFO - 127.0.0.1 - - [21/Sep/2025 00:14:25] "[33mPOST /api/search HTTP/1.1[0m" 404 -
+2025-09-21 00:15:04,824 - INFO - 🔍 Scraping jobs with criteria: software engineer in San Jose, CA
+2025-09-21 00:15:04,824 - INFO - 🎯 Scraping INDEED: https://www.indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&radius=25&sort=date
+2025-09-21 00:15:19,079 - INFO - ✅ Found 16 jobs with selector: h2.jobTitle a
+2025-09-21 00:15:19,147 - INFO - ✅ Job 1: Full Stack Software Engineer - Information Securit... at 
+2025-09-21 00:15:19,195 - INFO - ✅ Job 2: SW Dev Engineer -ASE -Backend... at 
+2025-09-21 00:15:19,229 - INFO - ✅ Job 3: Camera Software - Sr. Machine Learning Research En... at 
+2025-09-21 00:15:19,271 - INFO - ✅ Job 4: Senior Software Engineering Manager, Incubation te... at 
+2025-09-21 00:15:19,300 - INFO - ✅ Job 5: Staff Software Engineer - Backend... at 
+2025-09-21 00:15:19,333 - INFO - ✅ Job 6: Software Development Engineer... at 
+2025-09-21 00:15:19,382 - INFO - ✅ Job 7: Software Development Engineer, AWS Compute Service... at 
+2025-09-21 00:15:19,422 - INFO - ✅ Job 8: Software Dev Engineer II (SDE2), Amazon Connect... at 
+2025-09-21 00:15:19,463 - INFO - ✅ Job 9: Software Engineer- AI/ML, AWS Neuron Distributed T... at 
+2025-09-21 00:15:19,533 - INFO - ✅ Job 10: Software Development Engineer, Veteran Opportunity... at 
+2025-09-21 00:15:19,574 - INFO - ✅ Job 11: Sr. Software Engineer- EC2 Windows OS Technologies... at 
+2025-09-21 00:15:19,609 - INFO - ✅ Job 12: Embedded C++ Software Engineer, Machine Learning A... at 
+2025-09-21 00:15:19,645 - INFO - ✅ Job 13: Software Dev Engineer - Alexa Mobile, Alexa Mobile... at 
+2025-09-21 00:15:19,727 - INFO - ✅ Job 15: Software Dev Engineer -III... at 
+2025-09-21 00:15:19,788 - INFO - ✅ Job 16: Software Dev Engineer II, Echo Platform... at 
+2025-09-21 00:15:19,789 - INFO - 🎉 INDEED: Found 15 valid jobs
+2025-09-21 00:15:19,789 - INFO - ✅ Found 15 jobs from Indeed - sufficient for automation
+2025-09-21 00:15:19,789 - INFO - 127.0.0.1 - - [21/Sep/2025 00:15:19] "POST /api/scrape HTTP/1.1" 200 -
+2025-09-21 00:15:19,884 - INFO - 127.0.0.1 - - [21/Sep/2025 00:15:19] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-21 00:15:19,899 - INFO - 127.0.0.1 - - [21/Sep/2025 00:15:19] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:15:49,467 - INFO - 127.0.0.1 - - [21/Sep/2025 00:15:49] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-21 00:15:49,482 - INFO - 127.0.0.1 - - [21/Sep/2025 00:15:49] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:15:54,301 - INFO - 🔍 Scraping jobs with criteria: software engineer in San Jose, CA
+2025-09-21 00:15:54,301 - INFO - 🎯 Scraping INDEED: https://www.indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&radius=25&sort=date
+2025-09-21 00:16:06,518 - INFO - ✅ Found 16 jobs with selector: h2.jobTitle a
+2025-09-21 00:16:06,569 - INFO - ✅ Job 1: Full Stack Software Engineer - Information Securit... at 
+2025-09-21 00:16:06,635 - INFO - ✅ Job 2: SW Dev Engineer -ASE -Backend... at 
+2025-09-21 00:16:06,720 - INFO - ✅ Job 3: Camera Software - Sr. Machine Learning Research En... at 
+2025-09-21 00:16:06,897 - INFO - ✅ Job 5: Senior Software Engineering Manager, Incubation te... at 
+2025-09-21 00:16:07,002 - INFO - ✅ Job 6: Staff Software Engineer - Backend... at 
+2025-09-21 00:16:07,107 - INFO - ✅ Job 7: Software Development Engineer... at 
+2025-09-21 00:16:07,176 - INFO - ✅ Job 8: Software Development Engineer, AWS Compute Service... at 
+2025-09-21 00:16:07,227 - INFO - ✅ Job 9: Software Dev Engineer II (SDE2), Amazon Connect... at 
+2025-09-21 00:16:07,303 - INFO - ✅ Job 10: Software Engineer- AI/ML, AWS Neuron Distributed T... at 
+2025-09-21 00:16:07,363 - INFO - ✅ Job 11: Software Development Engineer, Veteran Opportunity... at 
+2025-09-21 00:16:07,450 - INFO - ✅ Job 12: Sr. Software Engineer- EC2 Windows OS Technologies... at 
+2025-09-21 00:16:07,500 - INFO - ✅ Job 13: Embedded C++ Software Engineer, Machine Learning A... at 
+2025-09-21 00:16:07,574 - INFO - ✅ Job 14: Software Dev Engineer - Alexa Mobile, Alexa Mobile... at 
+2025-09-21 00:16:07,640 - INFO - ✅ Job 15: Software Dev Engineer -III... at 
+2025-09-21 00:16:07,716 - INFO - ✅ Job 16: Sr. Software Development Engineer - Kuiper Network... at 
+2025-09-21 00:16:07,717 - INFO - 🎉 INDEED: Found 15 valid jobs
+2025-09-21 00:16:07,717 - INFO - ✅ Found 15 jobs from Indeed - sufficient for automation
+2025-09-21 00:16:07,717 - INFO - 127.0.0.1 - - [21/Sep/2025 00:16:07] "POST /api/scrape HTTP/1.1" 200 -
+2025-09-21 00:16:07,736 - INFO - 127.0.0.1 - - [21/Sep/2025 00:16:07] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-21 00:16:07,749 - INFO - 127.0.0.1 - - [21/Sep/2025 00:16:07] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:18:23,809 - INFO - 🔍 Scraping jobs with criteria: software engineer in San Jose, CA
+2025-09-21 00:18:23,810 - INFO - 🎯 Scraping INDEED: https://www.indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&radius=25&sort=date
+2025-09-21 00:18:33,399 - INFO - 127.0.0.1 - - [21/Sep/2025 00:18:33] "GET / HTTP/1.1" 200 -
+2025-09-21 00:18:33,734 - INFO - 127.0.0.1 - - [21/Sep/2025 00:18:33] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-21 00:18:33,746 - INFO - 127.0.0.1 - - [21/Sep/2025 00:18:33] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:18:34,175 - INFO - 127.0.0.1 - - [21/Sep/2025 00:18:34] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:18:36,739 - INFO - ✅ Found 16 jobs with selector: h2.jobTitle a
+2025-09-21 00:18:36,785 - INFO - ✅ Job 1: Full Stack Software Engineer - Information Securit... at 
+2025-09-21 00:18:36,843 - INFO - ✅ Job 2: SW Dev Engineer -ASE -Backend... at 
+2025-09-21 00:18:36,887 - INFO - ✅ Job 3: Camera Software - Sr. Machine Learning Research En... at 
+2025-09-21 00:18:36,926 - INFO - ✅ Job 4: Senior Software Engineering Manager, Incubation te... at 
+2025-09-21 00:18:36,962 - INFO - ✅ Job 5: Staff Software Engineer - Backend... at 
+2025-09-21 00:18:37,044 - INFO - ✅ Job 7: Software Development Engineer... at 
+2025-09-21 00:18:37,091 - INFO - ✅ Job 8: Software Development Engineer, AWS Compute Service... at 
+2025-09-21 00:18:37,139 - INFO - ✅ Job 9: Software Dev Engineer II (SDE2), Amazon Connect... at 
+2025-09-21 00:18:37,205 - INFO - ✅ Job 10: Software Engineer- AI/ML, AWS Neuron Distributed T... at 
+2025-09-21 00:18:37,265 - INFO - ✅ Job 11: Software Development Engineer, Veteran Opportunity... at 
+2025-09-21 00:18:37,315 - INFO - ✅ Job 12: Sr. Software Engineer- EC2 Windows OS Technologies... at 
+2025-09-21 00:18:37,410 - INFO - ✅ Job 13: Sr. Software Engineer (ML), AGI Foundations... at 
+2025-09-21 00:18:37,490 - INFO - ✅ Job 14: Software Dev Engineer - Alexa Mobile, Alexa Mobile... at 
+2025-09-21 00:18:37,559 - INFO - ✅ Job 15: Embedded C++ Software Engineer, Machine Learning A... at 
+2025-09-21 00:18:37,664 - INFO - ✅ Job 16: Sr. Software Engineer, Graphics and Display... at 
+2025-09-21 00:18:37,666 - INFO - 🎉 INDEED: Found 15 valid jobs
+2025-09-21 00:18:37,666 - INFO - ✅ Found 15 jobs from Indeed - sufficient for automation
+2025-09-21 00:18:37,667 - INFO - 127.0.0.1 - - [21/Sep/2025 00:18:37] "POST /api/scrape HTTP/1.1" 200 -
+2025-09-21 00:18:37,713 - INFO - 🔍 Scraping jobs with criteria: software engineer in San Jose, CA
+2025-09-21 00:18:37,713 - INFO - 🎯 Scraping INDEED: https://www.indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&radius=25&sort=date
+2025-09-21 00:18:49,762 - INFO - ✅ Found 16 jobs with selector: h2.jobTitle a
+2025-09-21 00:18:49,808 - INFO - ✅ Job 1: Full Stack Software Engineer - Information Securit... at 
+2025-09-21 00:18:49,859 - INFO - ✅ Job 2: SW Dev Engineer -ASE -Backend... at 
+2025-09-21 00:18:49,895 - INFO - ✅ Job 3: Camera Software - Sr. Machine Learning Research En... at 
+2025-09-21 00:18:49,924 - INFO - ✅ Job 4: Senior Software Engineering Manager, Incubation te... at 
+2025-09-21 00:18:49,968 - INFO - ✅ Job 5: Staff Software Engineer - Backend... at 
+2025-09-21 00:18:50,061 - INFO - ✅ Job 7: Software Development Engineer... at 
+2025-09-21 00:18:50,116 - INFO - ✅ Job 8: Software Development Engineer, AWS Compute Service... at 
+2025-09-21 00:18:50,163 - INFO - ✅ Job 9: Software Dev Engineer II (SDE2), Amazon Connect... at 
+2025-09-21 00:18:50,209 - INFO - ✅ Job 10: Software Engineer- AI/ML, AWS Neuron Distributed T... at 
+2025-09-21 00:18:50,255 - INFO - ✅ Job 11: Software Development Engineer, Veteran Opportunity... at 
+2025-09-21 00:18:50,301 - INFO - ✅ Job 12: Sr. Software Engineer- EC2 Windows OS Technologies... at 
+2025-09-21 00:18:50,337 - INFO - ✅ Job 13: Sr. Software Engineer (ML), AGI Foundations... at 
+2025-09-21 00:18:50,378 - INFO - ✅ Job 14: Software Dev Engineer - Alexa Mobile, Alexa Mobile... at 
+2025-09-21 00:18:50,418 - INFO - ✅ Job 15: Embedded C++ Software Engineer, Machine Learning A... at 
+2025-09-21 00:18:50,453 - INFO - ✅ Job 16: Sr. Software Engineer, Graphics and Display... at 
+2025-09-21 00:18:50,454 - INFO - 🎉 INDEED: Found 15 valid jobs
+2025-09-21 00:18:50,454 - INFO - ✅ Found 15 jobs from Indeed - sufficient for automation
+2025-09-21 00:18:50,454 - INFO - 127.0.0.1 - - [21/Sep/2025 00:18:50] "POST /api/scrape HTTP/1.1" 200 -
+2025-09-21 00:18:50,463 - INFO - 127.0.0.1 - - [21/Sep/2025 00:18:50] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-21 00:18:50,477 - INFO - 127.0.0.1 - - [21/Sep/2025 00:18:50] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:23:33,703 - INFO - 127.0.0.1 - - [21/Sep/2025 00:23:33] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:25:25,825 - INFO - 127.0.0.1 - - [21/Sep/2025 00:25:25] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-21 00:25:25,829 - INFO - 🔍 Scraping jobs with criteria: software engineer in San Jose, CA
+2025-09-21 00:25:25,829 - INFO - 🎯 Scraping INDEED: https://www.indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&radius=25&sort=date
+2025-09-21 00:25:38,402 - INFO - ✅ Found 16 jobs with selector: h2.jobTitle a
+2025-09-21 00:25:38,473 - INFO - ✅ Job 1: Full Stack Software Engineer - Information Securit... at 
+2025-09-21 00:25:38,521 - INFO - ✅ Job 2: SW Dev Engineer -ASE -Backend... at 
+2025-09-21 00:25:38,571 - INFO - ✅ Job 3: Camera Software - Sr. Machine Learning Research En... at 
+2025-09-21 00:25:38,621 - INFO - ✅ Job 4: Senior Software Engineering Manager, Incubation te... at 
+2025-09-21 00:25:38,677 - INFO - ✅ Job 5: Staff Software Engineer - Backend... at 
+2025-09-21 00:25:38,789 - INFO - ✅ Job 7: Software Development Engineer... at 
+2025-09-21 00:25:38,839 - INFO - ✅ Job 8: Software Development Engineer, AWS Compute Service... at 
+2025-09-21 00:25:38,888 - INFO - ✅ Job 9: Software Dev Engineer II (SDE2), Amazon Connect... at 
+2025-09-21 00:25:38,946 - INFO - ✅ Job 10: Software Engineer- AI/ML, AWS Neuron Distributed T... at 
+2025-09-21 00:25:39,003 - INFO - ✅ Job 11: Software Development Engineer, Veteran Opportunity... at 
+2025-09-21 00:25:39,046 - INFO - ✅ Job 12: Sr. Software Engineer- EC2 Windows OS Technologies... at 
+2025-09-21 00:25:39,085 - INFO - ✅ Job 13: Sr. Software Engineer (ML), AGI Foundations... at 
+2025-09-21 00:25:39,130 - INFO - ✅ Job 14: Software Dev Engineer - Alexa Mobile, Alexa Mobile... at 
+2025-09-21 00:25:39,179 - INFO - ✅ Job 15: Embedded C++ Software Engineer, Machine Learning A... at 
+2025-09-21 00:25:39,227 - INFO - ✅ Job 16: Sr. Software Engineer, Graphics and Display... at 
+2025-09-21 00:25:39,227 - INFO - 🎉 INDEED: Found 15 valid jobs
+2025-09-21 00:25:39,227 - INFO - ✅ Found 15 jobs from Indeed - sufficient for automation
+2025-09-21 00:25:39,227 - INFO - 127.0.0.1 - - [21/Sep/2025 00:25:39] "POST /api/scrape HTTP/1.1" 200 -
+2025-09-21 00:25:39,230 - INFO - 127.0.0.1 - - [21/Sep/2025 00:25:39] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-21 00:25:39,233 - INFO - 127.0.0.1 - - [21/Sep/2025 00:25:39] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:28:33,697 - INFO - 127.0.0.1 - - [21/Sep/2025 00:28:33] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:29:40,175 - INFO - 127.0.0.1 - - [21/Sep/2025 00:29:40] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-21 00:29:40,178 - INFO - 🔍 Scraping jobs with criteria: software engineer in San Jose, CA
+2025-09-21 00:29:40,179 - INFO - 🎯 Scraping INDEED: https://www.indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&radius=25&sort=date
+2025-09-21 00:29:52,806 - INFO - ✅ Found 16 jobs with selector: h2.jobTitle a
+2025-09-21 00:29:52,891 - INFO - ✅ Job 1: Full Stack Software Engineer - Information Securit... at 
+2025-09-21 00:29:52,958 - INFO - ✅ Job 2: SW Dev Engineer -ASE -Backend... at 
+2025-09-21 00:29:53,024 - INFO - ✅ Job 3: Camera Software - Sr. Machine Learning Research En... at 
+2025-09-21 00:29:53,094 - INFO - ✅ Job 4: Senior Software Engineering Manager, Incubation te... at 
+2025-09-21 00:29:53,155 - INFO - ✅ Job 5: Staff Software Engineer - Backend... at 
+2025-09-21 00:29:53,194 - INFO - ✅ Job 6: Software Development Engineer... at 
+2025-09-21 00:29:53,243 - INFO - ✅ Job 7: Software Development Engineer, AWS Compute Service... at 
+2025-09-21 00:29:53,293 - INFO - ✅ Job 8: Software Dev Engineer II (SDE2), Amazon Connect... at 
+2025-09-21 00:29:53,339 - INFO - ✅ Job 9: Software Engineer- AI/ML, AWS Neuron Distributed T... at 
+2025-09-21 00:29:53,382 - INFO - ✅ Job 10: Software Development Engineer, Veteran Opportunity... at 
+2025-09-21 00:29:53,420 - INFO - ✅ Job 11: Sr. Software Engineer (ML), AGI Foundations... at 
+2025-09-21 00:29:53,470 - INFO - ✅ Job 12: Sr. Software Engineer- EC2 Windows OS Technologies... at 
+2025-09-21 00:29:53,518 - INFO - ✅ Job 13: Software Dev Engineer - Alexa Mobile, Alexa Mobile... at 
+2025-09-21 00:29:53,561 - INFO - ✅ Job 14: Embedded C++ Software Engineer, Machine Learning A... at 
+2025-09-21 00:29:53,653 - INFO - ✅ Job 16: Sr. Software Engineer, Graphics and Display... at 
+2025-09-21 00:29:53,653 - INFO - 🎉 INDEED: Found 15 valid jobs
+2025-09-21 00:29:53,653 - INFO - ✅ Found 15 jobs from Indeed - sufficient for automation
+2025-09-21 00:29:53,654 - INFO - 127.0.0.1 - - [21/Sep/2025 00:29:53] "POST /api/scrape HTTP/1.1" 200 -
+2025-09-21 00:29:53,657 - INFO - 127.0.0.1 - - [21/Sep/2025 00:29:53] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-21 00:29:53,660 - INFO - 127.0.0.1 - - [21/Sep/2025 00:29:53] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:31:50,591 - INFO - 127.0.0.1 - - [21/Sep/2025 00:31:50] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-21 00:31:50,607 - INFO - 🔍 Scraping jobs with criteria: software engineer in San Jose, CA
+2025-09-21 00:31:50,608 - INFO - 🎯 Scraping INDEED: https://www.indeed.com/jobs?q=software+engineer&l=San+Jose%2C+CA&radius=25&sort=date
+2025-09-21 00:32:03,138 - INFO - ✅ Found 16 jobs with selector: h2.jobTitle a
+2025-09-21 00:32:03,217 - INFO - ✅ Job 1: Full Stack Software Engineer - Information Securit... at 
+2025-09-21 00:32:03,307 - INFO - ✅ Job 2: SW Dev Engineer -ASE -Backend... at 
+2025-09-21 00:32:03,350 - INFO - ✅ Job 3: Camera Software - Sr. Machine Learning Research En... at 
+2025-09-21 00:32:03,396 - INFO - ✅ Job 4: Senior Software Engineering Manager, Incubation te... at 
+2025-09-21 00:32:03,482 - INFO - ✅ Job 5: Staff Software Engineer - Backend... at 
+2025-09-21 00:32:03,626 - INFO - ✅ Job 6: Software Development Engineer... at 
+2025-09-21 00:32:03,703 - INFO - ✅ Job 7: Software Development Engineer, AWS Compute Service... at 
+2025-09-21 00:32:03,786 - INFO - ✅ Job 8: Software Dev Engineer II (SDE2), Amazon Connect... at 
+2025-09-21 00:32:03,875 - INFO - ✅ Job 9: Software Engineer- AI/ML, AWS Neuron Distributed T... at 
+2025-09-21 00:32:03,960 - INFO - ✅ Job 10: Software Development Engineer, Veteran Opportunity... at 
+2025-09-21 00:32:04,040 - INFO - ✅ Job 11: Sr. Software Engineer (ML), AGI Foundations... at 
+2025-09-21 00:32:04,100 - INFO - ✅ Job 12: Sr. Software Engineer- EC2 Windows OS Technologies... at 
+2025-09-21 00:32:04,151 - INFO - ✅ Job 13: Software Dev Engineer - Alexa Mobile, Alexa Mobile... at 
+2025-09-21 00:32:04,230 - INFO - ✅ Job 14: Embedded C++ Software Engineer, Machine Learning A... at 
+2025-09-21 00:32:04,369 - INFO - ✅ Job 16: Sr. Software Engineer, Graphics and Display... at 
+2025-09-21 00:32:04,369 - INFO - 🎉 INDEED: Found 15 valid jobs
+2025-09-21 00:32:04,369 - INFO - ✅ Found 15 jobs from Indeed - sufficient for automation
+2025-09-21 00:32:04,369 - INFO - 127.0.0.1 - - [21/Sep/2025 00:32:04] "POST /api/scrape HTTP/1.1" 200 -
+2025-09-21 00:32:04,376 - INFO - 127.0.0.1 - - [21/Sep/2025 00:32:04] "GET /api/jobs HTTP/1.1" 200 -
+2025-09-21 00:32:04,379 - INFO - 127.0.0.1 - - [21/Sep/2025 00:32:04] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:33:11,404 - INFO - 127.0.0.1 - - [21/Sep/2025 00:33:11] "[33mPOST /api/search HTTP/1.1[0m" 404 -
+2025-09-21 00:33:33,700 - INFO - 127.0.0.1 - - [21/Sep/2025 00:33:33] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:38:33,706 - INFO - 127.0.0.1 - - [21/Sep/2025 00:38:33] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:43:33,708 - INFO - 127.0.0.1 - - [21/Sep/2025 00:43:33] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:48:33,701 - INFO - 127.0.0.1 - - [21/Sep/2025 00:48:33] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:54:02,700 - INFO - 127.0.0.1 - - [21/Sep/2025 00:54:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 00:59:02,715 - INFO - 127.0.0.1 - - [21/Sep/2025 00:59:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 01:04:02,702 - INFO - 127.0.0.1 - - [21/Sep/2025 01:04:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 01:09:02,708 - INFO - 127.0.0.1 - - [21/Sep/2025 01:09:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 01:15:20,951 - INFO - 127.0.0.1 - - [21/Sep/2025 01:15:20] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 01:19:02,698 - INFO - 127.0.0.1 - - [21/Sep/2025 01:19:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 01:24:02,708 - INFO - 127.0.0.1 - - [21/Sep/2025 01:24:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 01:29:02,702 - INFO - 127.0.0.1 - - [21/Sep/2025 01:29:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 01:34:02,701 - INFO - 127.0.0.1 - - [21/Sep/2025 01:34:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 01:39:02,702 - INFO - 127.0.0.1 - - [21/Sep/2025 01:39:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 01:44:02,716 - INFO - 127.0.0.1 - - [21/Sep/2025 01:44:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 01:49:02,703 - INFO - 127.0.0.1 - - [21/Sep/2025 01:49:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 01:54:02,708 - INFO - 127.0.0.1 - - [21/Sep/2025 01:54:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 01:59:02,705 - INFO - 127.0.0.1 - - [21/Sep/2025 01:59:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 02:04:02,700 - INFO - 127.0.0.1 - - [21/Sep/2025 02:04:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 02:09:02,699 - INFO - 127.0.0.1 - - [21/Sep/2025 02:09:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 02:14:02,707 - INFO - 127.0.0.1 - - [21/Sep/2025 02:14:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 02:19:02,701 - INFO - 127.0.0.1 - - [21/Sep/2025 02:19:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 02:24:02,703 - INFO - 127.0.0.1 - - [21/Sep/2025 02:24:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 02:29:02,700 - INFO - 127.0.0.1 - - [21/Sep/2025 02:29:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 02:34:02,698 - INFO - 127.0.0.1 - - [21/Sep/2025 02:34:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 02:39:02,711 - INFO - 127.0.0.1 - - [21/Sep/2025 02:39:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 02:44:02,703 - INFO - 127.0.0.1 - - [21/Sep/2025 02:44:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 02:49:02,704 - INFO - 127.0.0.1 - - [21/Sep/2025 02:49:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 02:54:02,701 - INFO - 127.0.0.1 - - [21/Sep/2025 02:54:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 02:59:02,704 - INFO - 127.0.0.1 - - [21/Sep/2025 02:59:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 03:04:02,703 - INFO - 127.0.0.1 - - [21/Sep/2025 03:04:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 03:09:02,705 - INFO - 127.0.0.1 - - [21/Sep/2025 03:09:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 03:14:02,704 - INFO - 127.0.0.1 - - [21/Sep/2025 03:14:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 03:19:02,712 - INFO - 127.0.0.1 - - [21/Sep/2025 03:19:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 03:24:02,708 - INFO - 127.0.0.1 - - [21/Sep/2025 03:24:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 03:29:02,706 - INFO - 127.0.0.1 - - [21/Sep/2025 03:29:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 03:34:02,698 - INFO - 127.0.0.1 - - [21/Sep/2025 03:34:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 03:39:02,704 - INFO - 127.0.0.1 - - [21/Sep/2025 03:39:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 03:44:02,699 - INFO - 127.0.0.1 - - [21/Sep/2025 03:44:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 03:49:02,704 - INFO - 127.0.0.1 - - [21/Sep/2025 03:49:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 03:54:02,702 - INFO - 127.0.0.1 - - [21/Sep/2025 03:54:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 03:59:02,700 - INFO - 127.0.0.1 - - [21/Sep/2025 03:59:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 04:04:02,705 - INFO - 127.0.0.1 - - [21/Sep/2025 04:04:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 04:09:02,702 - INFO - 127.0.0.1 - - [21/Sep/2025 04:09:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 04:14:02,704 - INFO - 127.0.0.1 - - [21/Sep/2025 04:14:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 04:19:02,710 - INFO - 127.0.0.1 - - [21/Sep/2025 04:19:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 04:24:02,704 - INFO - 127.0.0.1 - - [21/Sep/2025 04:24:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 04:29:02,704 - INFO - 127.0.0.1 - - [21/Sep/2025 04:29:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 04:34:02,704 - INFO - 127.0.0.1 - - [21/Sep/2025 04:34:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 04:39:02,709 - INFO - 127.0.0.1 - - [21/Sep/2025 04:39:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 04:44:02,704 - INFO - 127.0.0.1 - - [21/Sep/2025 04:44:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 04:49:02,706 - INFO - 127.0.0.1 - - [21/Sep/2025 04:49:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 04:54:02,711 - INFO - 127.0.0.1 - - [21/Sep/2025 04:54:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 04:59:02,707 - INFO - 127.0.0.1 - - [21/Sep/2025 04:59:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 05:04:02,707 - INFO - 127.0.0.1 - - [21/Sep/2025 05:04:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 05:09:02,699 - INFO - 127.0.0.1 - - [21/Sep/2025 05:09:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 05:14:02,701 - INFO - 127.0.0.1 - - [21/Sep/2025 05:14:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 05:19:02,705 - INFO - 127.0.0.1 - - [21/Sep/2025 05:19:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 05:24:02,700 - INFO - 127.0.0.1 - - [21/Sep/2025 05:24:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 05:29:02,704 - INFO - 127.0.0.1 - - [21/Sep/2025 05:29:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 05:34:02,716 - INFO - 127.0.0.1 - - [21/Sep/2025 05:34:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 05:39:02,708 - INFO - 127.0.0.1 - - [21/Sep/2025 05:39:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 05:44:02,702 - INFO - 127.0.0.1 - - [21/Sep/2025 05:44:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 05:49:02,708 - INFO - 127.0.0.1 - - [21/Sep/2025 05:49:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 05:54:02,713 - INFO - 127.0.0.1 - - [21/Sep/2025 05:54:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 05:59:02,700 - INFO - 127.0.0.1 - - [21/Sep/2025 05:59:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 06:04:02,712 - INFO - 127.0.0.1 - - [21/Sep/2025 06:04:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 06:09:02,708 - INFO - 127.0.0.1 - - [21/Sep/2025 06:09:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 06:14:02,700 - INFO - 127.0.0.1 - - [21/Sep/2025 06:14:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 06:19:02,702 - INFO - 127.0.0.1 - - [21/Sep/2025 06:19:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 06:24:02,702 - INFO - 127.0.0.1 - - [21/Sep/2025 06:24:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 06:29:02,718 - INFO - 127.0.0.1 - - [21/Sep/2025 06:29:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 06:34:02,705 - INFO - 127.0.0.1 - - [21/Sep/2025 06:34:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 06:39:02,716 - INFO - 127.0.0.1 - - [21/Sep/2025 06:39:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 06:44:02,704 - INFO - 127.0.0.1 - - [21/Sep/2025 06:44:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 06:49:02,703 - INFO - 127.0.0.1 - - [21/Sep/2025 06:49:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 06:54:02,705 - INFO - 127.0.0.1 - - [21/Sep/2025 06:54:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 06:59:02,699 - INFO - 127.0.0.1 - - [21/Sep/2025 06:59:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 07:04:02,703 - INFO - 127.0.0.1 - - [21/Sep/2025 07:04:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 07:09:02,710 - INFO - 127.0.0.1 - - [21/Sep/2025 07:09:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 07:14:02,704 - INFO - 127.0.0.1 - - [21/Sep/2025 07:14:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 07:19:02,710 - INFO - 127.0.0.1 - - [21/Sep/2025 07:19:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 07:24:02,715 - INFO - 127.0.0.1 - - [21/Sep/2025 07:24:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 07:29:02,704 - INFO - 127.0.0.1 - - [21/Sep/2025 07:29:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 07:34:02,703 - INFO - 127.0.0.1 - - [21/Sep/2025 07:34:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 07:39:02,705 - INFO - 127.0.0.1 - - [21/Sep/2025 07:39:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 07:44:02,711 - INFO - 127.0.0.1 - - [21/Sep/2025 07:44:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 07:49:02,698 - INFO - 127.0.0.1 - - [21/Sep/2025 07:49:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 07:54:02,709 - INFO - 127.0.0.1 - - [21/Sep/2025 07:54:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 07:59:02,721 - INFO - 127.0.0.1 - - [21/Sep/2025 07:59:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 08:04:02,714 - INFO - 127.0.0.1 - - [21/Sep/2025 08:04:02] "GET /api/analytics HTTP/1.1" 200 -
+2025-09-21 08:09:02,717 - INFO - 127.0.0.1 - - [21/Sep/2025 08:09:02] "GET /api/analytics HTTP/1.1" 200 -

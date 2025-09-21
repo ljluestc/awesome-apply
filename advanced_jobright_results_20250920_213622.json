@@ -1,0 +1,99 @@
+{
+  "timestamp": "2025-09-20T21:36:22.140997",
+  "source_url": "https://jobright.ai/jobs/recommend",
+  "extraction_methods": {
+    "javascript": {
+      "json_objects": [],
+      "api_endpoints": [],
+      "job_urls": [],
+      "external_job_urls": [
+        "https://px.ads.linkedin.com/collect/?pid=7992001&fmt=gif"
+      ]
+    },
+    "html_analysis": {
+      "job_related_classes": [
+        "class=\"ant-layout ant-layout-has-sider index_jobs-page__1WgXR css-120qcz2\"",
+        "class=\"index_jobs-page-side-content__7zEys index_job-page-left__jmHI8\"",
+        "class=\"index_jobs-jr-logo__KXMvK\"",
+        "class=\"index_jobs-page-side-content-menu-item__fcg3J\"",
+        "class=\"index_jobs-page-side-content-menu-item-text__nLbfu\"",
+        "class=\"index_jobs-page-side-content-menu-item__fcg3J\"",
+        "class=\"index_jobs-page-side-content-menu-item-resume__Ad_ll\"",
+        "class=\"index_jobs-page-side-content-menu-item-text__nLbfu\"",
+        "class=\"index_jobs-page-side-content-menu-item-resume-icon__MjLAX\"",
+        "class=\"index_jobs-page-side-content-menu-item-resume-icon-img__yVtNK\"",
+        "class=\"index_jobs-page-side-content-menu-item__fcg3J\"",
+        "class=\"index_jobs-page-side-content-menu-item-text__nLbfu\"",
+        "class=\"index_jobs-page-side-content-menu-item__fcg3J\"",
+        "class=\"index_jobs-page-side-content-menu-item-text__nLbfu\"",
+        "class=\"index_jobs-page-side-content-menu-item-actions__Tqk6w ant-flex css-120qcz2 ant-flex-align-stretch ant-flex-vertical\"",
+        "class=\"ant-layout-content index_jobs-page-center__Jl6Ns css-120qcz2\"",
+        "class=\"index_jobHeader__LuqLz\"",
+        "class=\"index_job-count__lSjC4\"",
+        "class=\"index_job-count__lSjC4\"",
+        "class=\"index_job-count__lSjC4\"",
+        "class=\"index_jobs-page-main-content__rnNd6\"",
+        "class=\"index_jobdetail-leave__PO3Bj\"",
+        "class=\"index_jobs-list__1gNYm index_jobs-list-enter__A2UOU\"",
+        "class=\"index_jobsActions__jhBxd\"",
+        "class=\"ant-select ant-select-borderless index_jobs-recommend-sorter__AhkIK index_jobs-recommend-sorter-root__aTEk3 css-120qcz2 ant-select-single ant-select-show-arrow\"",
+        "class=\"index_jobs-list-scrollable__hBvJS\"",
+        "class=\"infinite-scroll-component index_jobs-list-infinity__cIGCr\"",
+        "class=\"ant-list ant-list-split index_jobs-list-container__DVqkj css-120qcz2\"",
+        "class=\"index_job-page-right__9RHdl\"",
+        "class=\"index_job-copilot__bS_Wu\"",
+        "class=\"index_job-copilot-header__doQNc\"",
+        "class=\"ant-btn css-120qcz2 ant-btn-default index_job-copilot-guide-button___zp2z\"",
+        "class=\"index_job-copilot-container__kHCyf\"",
+        "class=\"index_job-copilot-list__JKgRE\"",
+        "class=\"index_job-copilot-list-placeholder__Nc9HN\"",
+        "class=\"index_job-copilot-wrapper__zRqoj\"",
+        "class=\"index_job-copilot-list-action__q5Esh\"",
+        "class=\"index_job-copilot-input-container__9syeM\"",
+        "class=\"ant-input css-120qcz2 ant-input-borderless index_job-copilot-input__eSZmy index_job-copilot-textarea__Ee9aE\"",
+        "class=\"index_job-copilot-bottom__BAiSv\"",
+        "class=\"ant-btn css-120qcz2 ant-btn-text index_job-copilot-bottom-button__YJ_Tm index_job-copilot-bottom-button-disable__j_Zap\"",
+        "id=\"jobs-page-main-content\"",
+        "id=\"index_job-copilot-guide-button-id__E8CLt\""
+      ],
+      "potential_containers": [],
+      "meta_tags": [
+        "Jobright: Your AI Job Search Copilot",
+        "Jobright: Your AI Job Search Copilot",
+        "No more solo job hunt, do it with AI. Jobright helps you save 80% time and increase your chances of interviews by providing optimized job matches, tailoring your resume to each role, and offering in-depth support.",
+        "Browse personalized job recommendations on Jobright.",
+        "Job Recommendations | Jobright AI",
+        "Browse personalized job recommendations on Jobright."
+      ],
+      "structured_data": []
+    }
+  },
+  "job_listings": [],
+  "external_application_links": [],
+  "api_endpoints": [],
+  "total_jobs_found": 4,
+  "page_size": 357739,
+  "job_applications": [
+    {
+      "type": "application_link",
+      "url": "/_next/static/chunks/pages/jobs/recommend-d9d7dec6e8bc6a2f.js",
+      "source": "keyword_matching"
+    },
+    {
+      "type": "application_link",
+      "url": "/newimages/nav/jobs.svg",
+      "source": "keyword_matching"
+    },
+    {
+      "type": "application_link",
+      "url": "/jobs/recommend",
+      "source": "keyword_matching"
+    }
+  ],
+  "all_job_links": [
+    "/_next/static/chunks/pages/jobs/recommend-d9d7dec6e8bc6a2f.js",
+    "https://px.ads.linkedin.com/collect/?pid=7992001&fmt=gif",
+    "/newimages/nav/jobs.svg",
+    "/jobs/recommend"
+  ]
+}

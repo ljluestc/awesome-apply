@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobRight.ai Clone - AI Job Search & Auto Apply</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <span>JobRight.ai Clone</span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-link">Dashboard</a>
+                <a href="#" class="nav-link">Analytics</a>
+                <a href="#" class="nav-link">Settings</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn btn-outline" onclick="showSettings()">
+                    <i class="fas fa-cog"></i> Settings
+                </button>
+                <button class="btn btn-primary" onclick="startSearch()">
+                    <i class="fas fa-search"></i> New Search
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="container">
+                <div class="search-header">
+                    <h1>Find Your Perfect Job with AI-Powered Auto-Apply</h1>
+                    <p>Search LinkedIn jobs and automatically apply with intelligent form detection</p>
+                </div>
+
+                <div class="search-form-card">
+                    <form id="job-search-form" class="search-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="keywords">Job Title / Keywords</label>
+                                <input type="text" id="keywords" name="keywords"
+                                       placeholder="e.g., Software Engineer, Data Scientist" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" id="location" name="location"
+                                       placeholder="e.g., San Francisco, CA" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="experience">Experience Level</label>
+                                <select id="experience" name="experience_level">
+                                    <option value="">Any</option>
+                                    <option value="entry">Entry Level</option>
+                                    <option value="associate">Associate</option>
+                                    <option value="mid">Mid Level</option>
+                                    <option value="senior">Senior Level</option>
+                                    <option value="director">Director</option>
+                                    <option value="executive">Executive</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-type">Job Type</label>
+                                <select id="job-type" name="job_type">
+                                    <option value="">Any</option>
+                                    <option value="full-time">Full-time</option>
+                                    <option value="part-time">Part-time</option>
+                                    <option value="contract">Contract</option>
+                                    <option value="temporary">Temporary</option>
+                                    <option value="internship">Internship</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date-posted">Date Posted</label>
+                                <select id="date-posted" name="date_posted">
+                                    <option value="any">Any time</option>
+                                    <option value="day">Past 24 hours</option>
+                                    <option value="week">Past week</option>
+                                    <option value="month">Past month</option>
+                                </select>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="remote" name="remote_ok">
+                                    <span class="checkmark"></span>
+                                    Remote positions only
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-search"></i>
+                                Search Jobs
+                            </button>
+                            <button type="button" class="btn btn-secondary" onclick="loadSavedJobs()">
+                                <i class="fas fa-bookmark"></i>
+                                Load Saved Jobs
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section" id="results-section" style="display: none;">
+            <div class="container">
+                <div class="results-header">
+                    <div class="results-info">
+                        <h2>Job Results</h2>
+                        <span class="results-count" id="results-count">0 jobs found</span>
+                    </div>
+                    <div class="results-actions">
+                        <button class="btn btn-outline" onclick="exportResults()">
+                            <i class="fas fa-download"></i> Export
+                        </button>
+                        <button class="btn btn-success" onclick="bulkApply()" id="bulk-apply-btn" disabled>
+                            <i class="fas fa-magic"></i> Auto-Apply All
+                        </button>
+                    </div>
+                </div>
+
+                <div class="filters-bar">
+                    <div class="filter-group">
+                        <select id="sort-by" onchange="sortJobs()">
+                            <option value="date">Sort by Date</option>
+                            <option value="relevance">Sort by Relevance</option>
+                            <option value="company">Sort by Company</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <input type="text" id="company-filter" placeholder="Filter by company" onkeyup="filterJobs()">
+                    </div>
+                    <div class="filter-stats">
+                        <span class="stat-item">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span id="applied-count">0</span> Applied
+                        </span>
+                        <span class="stat-item">
+                            <i class="fas fa-clock text-warning"></i>
+                            <span id="pending-count">0</span> Pending
+                        </span>
+                    </div>
+                </div>
+
+                <div class="jobs-grid" id="jobs-grid">
+                    <!-- Job cards will be populated here -->
+                </div>
+
+                <div class="load-more">
+                    <button class="btn btn-outline" onclick="loadMoreJobs()" id="load-more-btn">
+                        <i class="fas fa-plus"></i> Load More Jobs
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Analytics Section -->
+        <section class="analytics-section" id="analytics-section" style="display: none;">
+            <div class="container">
+                <h2>Application Analytics</h2>
+                <div class="analytics-grid">
+                    <div class="analytics-card">
+                        <div class="analytics-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <div class="analytics-content">
+                            <h3 id="total-applications">0</h3>
+                            <p>Total Applications</p>
+                        </div>
+                    </div>
+                    <div class="analytics-card">
+                        <div class="analytics-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="analytics-content">
+                            <h3 id="success-rate">0%</h3>
+                            <p>Success Rate</p>
+                        </div>
+                    </div>
+                    <div class="analytics-card">
+                        <div class="analytics-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="analytics-content">
+                            <h3 id="avg-time">0s</h3>
+                            <p>Avg Apply Time</p>
+                        </div>
+                    </div>
+                    <div class="analytics-card">
+                        <div class="analytics-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="analytics-content">
+                            <h3 id="form-patterns">0</h3>
+                            <p>Form Patterns</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p id="loading-text">Searching for jobs...</p>
+        </div>
+    </div>
+
+    <!-- Notification System -->
+    <div class="notification-container" id="notification-container"></div>
+
+    <!-- Job Detail Modal -->
+    <div class="modal" id="job-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-job-title">Job Title</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="job-detail-content">
+                    <div class="job-detail-header">
+                        <div class="company-info">
+                            <h4 id="modal-company">Company Name</h4>
+                            <p id="modal-location">Location</p>
+                            <span class="salary-badge" id="modal-salary">Salary</span>
+                        </div>
+                        <div class="job-actions">
+                            <button class="btn btn-outline" onclick="viewOriginal()">
+                                <i class="fas fa-external-link-alt"></i> View Original
+                            </button>
+                            <button class="btn btn-primary" onclick="applyToJob()" id="apply-btn">
+                                <i class="fas fa-paper-plane"></i> Auto Apply
+                            </button>
+                        </div>
+                    </div>
+                    <div class="job-description" id="modal-description">
+                        Job description will be loaded here...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

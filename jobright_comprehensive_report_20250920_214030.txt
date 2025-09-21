@@ -1,0 +1,117 @@
+JOBRIGHT.AI COMPREHENSIVE EXTRACTION REPORT
+============================================================
+Report Generated: 2025-09-20T21:40:28.625194
+Analysis Target: https://jobright.ai/jobs/recommend
+
+EXECUTIVE SUMMARY:
+------------------------------
+Authentication Required: Yes
+Public Job Data Available: No
+Methods Attempted: 8
+Recommendation: Site requires user authentication for job recommendations
+
+KEY FINDINGS:
+------------------------------
+External Job Links Found: 2
+Companies Mentioned: 10
+Job Titles Identified: 21
+Working Endpoints: 2
+
+EXTERNAL JOB BOARD LINKS:
+------------------------------
+ 1. https://www.linkedin.com/company/jobright-ai/
+ 2. https://px.ads.linkedin.com/collect/?pid=7992001&fmt=gif
+
+COMPANIES MENTIONED:
+------------------------------
+• Apple
+• Google
+• Linkedin
+• apple
+• facebook
+• google
+• linkedin
+• meta
+• twitter
+• zoom
+
+JOB TITLES FOUND:
+------------------------------
+• Analyst analyst
+• Analyst scientist
+• Data Scientist designer
+• Data Scientist engineer
+• Data Scientist scientist
+• Designer designer
+• Designer manager
+• Developer developer
+• Intern analyst
+• Intern engineer
+• Manager engineer
+• Manager manager
+• Senior Consultant
+• Senior Engineer
+• Software Engineer engineer
+• analyst Analyst
+• analyst Scientist
+• intern Analyst
+• intern Engineer
+• intern Scientist
+• senior engineer
+
+EXTRACTION METHODS ATTEMPTED:
+------------------------------
+ 1. Basic HTML scraping
+ 2. JavaScript content extraction
+ 3. API endpoint discovery
+ 4. Selenium automation (attempted)
+ 5. Authentication flow analysis
+ 6. Sitemap analysis
+ 7. Alternative page exploration
+ 8. Hidden API search
+
+ALTERNATIVE PAGES TESTED:
+------------------------------
+/h1b-jobs: 200 (30 job links, 2 external links)
+/jobs: 200 (1 job links, 1 external links)
+/job-autofill: 200 (21 job links, 2 external links)
+/browse: 404 (0 job links, 0 external links)
+/search: 404 (0 job links, 0 external links)
+/explore: 404 (0 job links, 0 external links)
+/companies: 404 (0 job links, 0 external links)
+/positions: 404 (0 job links, 0 external links)
+
+RECOMMENDATIONS FOR ACCESSING JOBRIGHT.AI JOBS:
+------------------------------
+1. Create a free account at https://jobright.ai
+2. Use OAuth login (Google, LinkedIn, etc.) if available
+3. Navigate to /jobs/recommend after authentication
+4. Use browser developer tools to monitor network requests
+5. Look for API calls that return job data
+6. Consider using browser automation tools like Selenium with login
+
+EXAMPLE JOB DATA FORMAT:
+------------------------------
+The following shows the expected format for job data:
+
+Job 1:
+  Title: Senior Software Engineer
+  Company: TechCorp Inc.
+  Location: San Francisco, CA
+  Apply URL: https://example-company.com/careers/senior-software-engineer
+  Salary: $150,000 - $200,000
+
+Job 2:
+  Title: Data Scientist
+  Company: DataAnalytics Pro
+  Location: New York, NY
+  Apply URL: https://example-data-company.com/jobs/data-scientist
+  Salary: $120,000 - $180,000
+
+Job 3:
+  Title: Product Manager
+  Company: InnovateNow
+  Location: Austin, TX
+  Apply URL: https://example-innovate.com/careers/product-manager
+  Salary: $130,000 - $170,000
+

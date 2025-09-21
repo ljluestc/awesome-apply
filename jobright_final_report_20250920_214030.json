@@ -1,0 +1,334 @@
+{
+  "timestamp": "2025-09-20T21:40:28.625194",
+  "extraction_summary": {
+    "methods_attempted": [
+      "Basic HTML scraping",
+      "JavaScript content extraction",
+      "API endpoint discovery",
+      "Selenium automation (attempted)",
+      "Authentication flow analysis",
+      "Sitemap analysis",
+      "Alternative page exploration",
+      "Hidden API search"
+    ],
+    "authentication_required": true,
+    "public_job_data_available": false,
+    "recommendation": "Site requires user authentication for job recommendations"
+  },
+  "alternative_pages": [
+    {
+      "page": "/h1b-jobs",
+      "url": "https://jobright.ai/h1b-jobs",
+      "status_code": 200,
+      "content_length": 200335,
+      "job_links": [
+        "/job-list/h1b-visa-sponsored-data-scientist-jobs-in-san-jose-ca",
+        "/job-autofill",
+        "/job-list/h1b-visa-sponsored-data-analyst-jobs-in-philadelphia-pa",
+        "https://jobright.ai/blog/is-jobright-legit/",
+        "https://www.tiktok.com/@jobright.ai",
+        "https://jobright.ai/blog/inside-the-ai-hiring-boom-what-top-ai-companies-are-looking-for-in-2025/",
+        "/job-referral",
+        "/job-list/h1b-visa-sponsored-software-engineer-intern-jobs-in-san-jose-ca",
+        "/job-list/h1b-visa-sponsored-project-manager-jobs-in-boston-ma",
+        "/ai-job-match",
+        "/job-list/h1b-visa-sponsored-financial-analyst-jobs-in-los-angeles-ca",
+        "https://jobright.ai/h1b-jobs",
+        "/job-list/h1b-visa-sponsored-software-engineer-intern-jobs-in-irvine-ca",
+        "/tools/ai-job-assistant",
+        "https://jobright.ai/blog/",
+        "https://www.facebook.com/jobrightai",
+        "https://jobright.ai/blog/success-stories-that-started-with-jobright-real-people-real-results/",
+        "https://twitter.com/jobrightai",
+        "https://www.producthunt.com/products/jobright-ai-2#jobright-ai-2",
+        "/job-list/h1b-visa-sponsored-financial-analyst-jobs-in-charlotte-nc",
+        "/job-list/h1b-visa-sponsored-product-designer-jobs-in-denver-co",
+        "/h1b-jobs",
+        "https://jobright.ai/blog/jobright-launches-first-ai-agent-to-put-job-search-on-autopilot/",
+        "/job-list/h1b-visa-sponsored-data-scientist-jobs-in-dallas-tx",
+        "/tools/job-tracker",
+        "/job-list/h1b-visa-sponsored-senior-software-engineer-jobs-in-los-angeles-ca",
+        "/entry-level-jobs",
+        "https://www.linkedin.com/company/jobright-ai/",
+        "https://www.youtube.com/@jobrightai",
+        "https://www.instagram.com/jobright.ai"
+      ],
+      "external_links": [
+        "https://www.linkedin.com/company/jobright-ai/",
+        "https://px.ads.linkedin.com/collect/?pid=7992001&fmt=gif"
+      ],
+      "company_mentions": [
+        "linkedin",
+        "Google",
+        "twitter",
+        "apple",
+        "zoom",
+        "facebook",
+        "Apple",
+        "google",
+        "meta"
+      ],
+      "job_titles": [
+        "Designer manager",
+        "intern Analyst",
+        "Data Scientist designer",
+        "Intern analyst",
+        "intern Engineer",
+        "Data Scientist engineer",
+        "Intern engineer",
+        "Analyst scientist",
+        "intern Scientist",
+        "Software Engineer engineer",
+        "Senior Engineer",
+        "Developer developer",
+        "Manager engineer",
+        "Designer designer",
+        "Manager manager",
+        "senior engineer",
+        "analyst Analyst",
+        "Analyst analyst",
+        "Data Scientist scientist",
+        "analyst Scientist"
+      ]
+    },
+    {
+      "page": "/jobs",
+      "url": "https://jobright.ai/jobs",
+      "status_code": 200,
+      "content_length": 357743,
+      "job_links": [
+        "/jobs/recommend"
+      ],
+      "external_links": [
+        "https://px.ads.linkedin.com/collect/?pid=7992001&fmt=gif"
+      ],
+      "company_mentions": [
+        "linkedin",
+        "Google",
+        "twitter",
+        "apple",
+        "zoom",
+        "facebook",
+        "Apple",
+        "google",
+        "meta"
+      ],
+      "job_titles": []
+    },
+    {
+      "page": "/job-autofill",
+      "url": "https://jobright.ai/job-autofill",
+      "status_code": 200,
+      "content_length": 222153,
+      "job_links": [
+        "/onboarding-v3/signup?from=job-autofill",
+        "/job-autofill",
+        "https://jobright.ai/blog/is-jobright-legit/",
+        "https://www.tiktok.com/@jobright.ai",
+        "https://jobright.ai/blog/inside-the-ai-hiring-boom-what-top-ai-companies-are-looking-for-in-2025/",
+        "/job-referral",
+        "/ai-job-match",
+        "/tools/ai-job-assistant",
+        "https://jobright.ai/blog/",
+        "https://www.facebook.com/jobrightai",
+        "https://jobright.ai/blog/success-stories-that-started-with-jobright-real-people-real-results/",
+        "https://twitter.com/jobrightai",
+        "https://www.producthunt.com/products/jobright-ai-2#jobright-ai-2",
+        "/h1b-jobs",
+        "https://jobright.ai/blog/jobright-launches-first-ai-agent-to-put-job-search-on-autopilot/",
+        "/tools/job-tracker",
+        "https://jobright.ai/tools/ai-job-assistant",
+        "/entry-level-jobs",
+        "https://www.linkedin.com/company/jobright-ai/",
+        "https://www.youtube.com/@jobrightai",
+        "https://www.instagram.com/jobright.ai"
+      ],
+      "external_links": [
+        "https://www.linkedin.com/company/jobright-ai/",
+        "https://px.ads.linkedin.com/collect/?pid=7992001&fmt=gif"
+      ],
+      "company_mentions": [
+        "linkedin",
+        "Google",
+        "twitter",
+        "google",
+        "apple",
+        "zoom",
+        "facebook",
+        "Apple",
+        "Linkedin",
+        "meta"
+      ],
+      "job_titles": [
+        "Senior Consultant"
+      ]
+    },
+    {
+      "page": "/browse",
+      "url": "https://jobright.ai/browse",
+      "status_code": 404,
+      "content_length": 119809,
+      "job_links": [],
+      "external_links": [],
+      "company_mentions": [],
+      "job_titles": []
+    },
+    {
+      "page": "/search",
+      "url": "https://jobright.ai/search",
+      "status_code": 404,
+      "content_length": 119809,
+      "job_links": [],
+      "external_links": [],
+      "company_mentions": [],
+      "job_titles": []
+    },
+    {
+      "page": "/explore",
+      "url": "https://jobright.ai/explore",
+      "status_code": 404,
+      "content_length": 119809,
+      "job_links": [],
+      "external_links": [],
+      "company_mentions": [],
+      "job_titles": []
+    },
+    {
+      "page": "/companies",
+      "url": "https://jobright.ai/companies",
+      "status_code": 404,
+      "content_length": 119809,
+      "job_links": [],
+      "external_links": [],
+      "company_mentions": [],
+      "job_titles": []
+    },
+    {
+      "page": "/positions",
+      "url": "https://jobright.ai/positions",
+      "status_code": 404,
+      "content_length": 119809,
+      "job_links": [],
+      "external_links": [],
+      "company_mentions": [],
+      "job_titles": []
+    }
+  ],
+  "hidden_apis": [
+    {
+      "api_path": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&amp;display=swap",
+      "url": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&amp;display=swap",
+      "status_code": 200,
+      "content_type": "text/css; charset=utf-8",
+      "content_length": 2512
+    },
+    {
+      "api_path": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+      "url": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+      "status_code": 200,
+      "content_type": "text/css; charset=utf-8",
+      "content_length": 2644
+    }
+  ],
+  "example_job_format": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "TechCorp Inc.",
+      "location": "San Francisco, CA",
+      "type": "Full-time",
+      "description": "Join our team as a Senior Software Engineer working on cutting-edge technology...",
+      "requirements": [
+        "5+ years experience",
+        "Python/Java expertise",
+        "System design skills"
+      ],
+      "apply_url": "https://example-company.com/careers/senior-software-engineer",
+      "salary_range": "$150,000 - $200,000",
+      "posted_date": "2025-09-20",
+      "job_id": "SE-2025-001"
+    },
+    {
+      "title": "Data Scientist",
+      "company": "DataAnalytics Pro",
+      "location": "New York, NY",
+      "type": "Full-time",
+      "description": "Looking for a Data Scientist to drive insights from large datasets...",
+      "requirements": [
+        "MS in Data Science",
+        "Machine Learning experience",
+        "Python/R"
+      ],
+      "apply_url": "https://example-data-company.com/jobs/data-scientist",
+      "salary_range": "$120,000 - $180,000",
+      "posted_date": "2025-09-19",
+      "job_id": "DS-2025-042"
+    },
+    {
+      "title": "Product Manager",
+      "company": "InnovateNow",
+      "location": "Austin, TX",
+      "type": "Full-time",
+      "description": "Lead product strategy and roadmap for our flagship application...",
+      "requirements": [
+        "3+ years PM experience",
+        "Technical background",
+        "Agile methodology"
+      ],
+      "apply_url": "https://example-innovate.com/careers/product-manager",
+      "salary_range": "$130,000 - $170,000",
+      "posted_date": "2025-09-18",
+      "job_id": "PM-2025-015"
+    }
+  ],
+  "consolidated_findings": {
+    "external_job_links": [
+      "https://www.linkedin.com/company/jobright-ai/",
+      "https://px.ads.linkedin.com/collect/?pid=7992001&fmt=gif"
+    ],
+    "company_mentions": [
+      "linkedin",
+      "Apple",
+      "Google",
+      "twitter",
+      "apple",
+      "google",
+      "facebook",
+      "zoom",
+      "Linkedin",
+      "meta"
+    ],
+    "job_titles": [
+      "Designer manager",
+      "intern Analyst",
+      "Data Scientist designer",
+      "Intern analyst",
+      "intern Engineer",
+      "Data Scientist engineer",
+      "Intern engineer",
+      "Analyst scientist",
+      "intern Scientist",
+      "Software Engineer engineer",
+      "Senior Engineer",
+      "Senior Consultant",
+      "Developer developer",
+      "Manager engineer",
+      "Designer designer",
+      "Manager manager",
+      "senior engineer",
+      "analyst Analyst",
+      "Analyst analyst",
+      "Data Scientist scientist",
+      "analyst Scientist"
+    ],
+    "working_endpoints": [
+      "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&amp;display=swap",
+      "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+    ]
+  },
+  "final_stats": {
+    "total_external_links": 2,
+    "total_companies_mentioned": 10,
+    "total_job_titles_found": 21,
+    "working_endpoints_found": 2
+  }
+}

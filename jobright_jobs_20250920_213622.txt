@@ -1,0 +1,35 @@
+JobRight.ai Comprehensive Job Extraction Results
+============================================================
+Extraction Date: 2025-09-20T21:36:22.140997
+Source URL: https://jobright.ai/jobs/recommend
+Total Job Links Found: 4
+Page Size: 357739 characters
+
+CLICKABLE JOB LINKS:
+----------------------------------------
+  1. /_next/static/chunks/pages/jobs/recommend-d9d7dec6e8bc6a2f.js
+  2. https://px.ads.linkedin.com/collect/?pid=7992001&fmt=gif
+  3. /newimages/nav/jobs.svg
+  4. /jobs/recommend
+
+
+JOB APPLICATIONS BY TYPE:
+----------------------------------------
+
+External Job Boards (0):
+
+Application Links (3):
+   1. /_next/static/chunks/pages/jobs/recommend-d9d7dec6e8bc6a2f.js
+   2. /newimages/nav/jobs.svg
+   3. /jobs/recommend
+
+
+EXTRACTION METHOD SUMMARY:
+----------------------------------------
+
+JAVASCRIPT:
+  JSON Objects: 0
+  External URLs: 1
+  API Endpoints: 0
+
+HTML_ANALYSIS:

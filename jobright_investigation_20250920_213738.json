@@ -1,0 +1,334 @@
+{
+  "timestamp": "2025-09-20T21:37:33.585755",
+  "main_site": {
+    "url": "https://jobright.ai",
+    "status_code": 200,
+    "content_length": 369121,
+    "likely_requires_auth": true,
+    "job_links_found": 20,
+    "job_links": [
+      "https://www.instagram.com/jobright.ai",
+      "https://www.tiktok.com/@jobright.ai",
+      "https://jobright.ai/blog/is-jobright-legit/",
+      "https://jobright.ai",
+      "/ai-job-match",
+      "/job-autofill",
+      "https://jobright.ai/blog/inside-the-ai-hiring-boom-what-top-ai-companies-are-looking-for-in-2025/",
+      "/job-referral",
+      "/entry-level-jobs",
+      "https://www.linkedin.com/company/jobright-ai/",
+      "https://www.producthunt.com/products/jobright-ai-2#jobright-ai-2",
+      "https://jobright.ai/blog/",
+      "/h1b-jobs",
+      "/tools/ai-job-assistant",
+      "https://jobright.ai/blog/success-stories-that-started-with-jobright-real-people-real-results/",
+      "https://jobright.ai/blog/jobright-launches-first-ai-agent-to-put-job-search-on-autopilot/",
+      "https://www.facebook.com/jobrightai",
+      "/tools/job-tracker",
+      "https://twitter.com/jobrightai",
+      "https://www.youtube.com/@jobrightai"
+    ],
+    "title": "Jobright: Your AI Job Search Copilot"
+  },
+  "public_endpoints": [
+    {
+      "endpoint": "/",
+      "url": "https://jobright.ai/",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 369144,
+      "accessible": true,
+      "job_content_score": 4,
+      "job_titles_found": 0,
+      "sample_job_titles": []
+    },
+    {
+      "endpoint": "/jobs",
+      "url": "https://jobright.ai/jobs",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 357743,
+      "accessible": true,
+      "job_content_score": 2,
+      "job_titles_found": 0,
+      "sample_job_titles": []
+    },
+    {
+      "endpoint": "/careers",
+      "url": "https://jobright.ai/careers",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809,
+      "accessible": false
+    },
+    {
+      "endpoint": "/positions",
+      "url": "https://jobright.ai/positions",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809,
+      "accessible": false
+    },
+    {
+      "endpoint": "/search",
+      "url": "https://jobright.ai/search",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809,
+      "accessible": false
+    },
+    {
+      "endpoint": "/public/jobs",
+      "url": "https://jobright.ai/public/jobs",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809,
+      "accessible": false
+    },
+    {
+      "endpoint": "/api/public",
+      "url": "https://jobright.ai/api/public",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809,
+      "accessible": false
+    },
+    {
+      "endpoint": "/feed",
+      "url": "https://jobright.ai/feed",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809,
+      "accessible": false
+    },
+    {
+      "endpoint": "/rss",
+      "url": "https://jobright.ai/rss",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809,
+      "accessible": false
+    },
+    {
+      "endpoint": "/sitemap.xml",
+      "url": "https://jobright.ai/sitemap.xml",
+      "status_code": 200,
+      "content_type": "application/xml",
+      "content_length": 4144,
+      "accessible": true,
+      "job_content_score": 4,
+      "job_titles_found": 1,
+      "sample_job_titles": [
+        "designer"
+      ]
+    },
+    {
+      "endpoint": "/robots.txt",
+      "url": "https://jobright.ai/robots.txt",
+      "status_code": 200,
+      "content_type": "text/plain; charset=UTF-8",
+      "content_length": 1140,
+      "accessible": true,
+      "job_content_score": 2,
+      "job_titles_found": 0,
+      "sample_job_titles": []
+    },
+    {
+      "endpoint": "/api/health",
+      "url": "https://jobright.ai/api/health",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809,
+      "accessible": false
+    },
+    {
+      "endpoint": "/browse",
+      "url": "https://jobright.ai/browse",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809,
+      "accessible": false
+    },
+    {
+      "endpoint": "/explore",
+      "url": "https://jobright.ai/explore",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809,
+      "accessible": false
+    },
+    {
+      "endpoint": "/listings",
+      "url": "https://jobright.ai/listings",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809,
+      "accessible": false
+    }
+  ],
+  "authentication": {
+    "auth_endpoints": [],
+    "oauth_providers": [],
+    "signup_available": false,
+    "guest_access": false
+  },
+  "api_search": [
+    {
+      "api_path": "/api/jobs",
+      "method": "GET",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/api/jobs",
+      "method": "POST",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/api/search",
+      "method": "GET",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/api/search",
+      "method": "POST",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/api/recommendations",
+      "method": "GET",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/api/recommendations",
+      "method": "POST",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/feed/jobs",
+      "method": "GET",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/feed/jobs",
+      "method": "POST",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/export/jobs",
+      "method": "GET",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/export/jobs",
+      "method": "POST",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/data/jobs.json",
+      "method": "GET",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/data/jobs.json",
+      "method": "POST",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/jobs.json",
+      "method": "GET",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/jobs.json",
+      "method": "POST",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/api/public/jobs",
+      "method": "GET",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/api/public/jobs",
+      "method": "POST",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/api/v1/search",
+      "method": "GET",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/api/v1/search",
+      "method": "POST",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/graphql",
+      "method": "GET",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    },
+    {
+      "api_path": "/graphql",
+      "method": "POST",
+      "status_code": 404,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 119809
+    }
+  ],
+  "alternatives": {
+    "rss_feeds": [],
+    "sitemaps": [
+      "https://jobright.ai/sitemap.xml",
+      "https://jobright.ai/jobs/sitemap.xml"
+    ],
+    "public_exports": [],
+    "partner_apis": []
+  },
+  "summary": {
+    "total_endpoints_checked": 15,
+    "accessible_endpoints": 4,
+    "endpoints_with_job_content": 4,
+    "working_apis": 0,
+    "authentication_required": true,
+    "alternative_access_available": true
+  }
+}

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobRight Recommended Jobs - 2025-09-20</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f7fa;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        .header p {
+            margin: 10px 0 0;
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        .stats {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .stat {
+            padding: 10px;
+        }
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        .search-box {
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .search-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .search-input:focus {
+            border-color: #667eea;
+        }
+        .jobs-container {
+            padding: 20px;
+        }
+        .job-item {
+            border: 1px solid #e9ecef;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        .job-item:hover {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .job-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .job-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .job-title a:hover {
+            color: #667eea;
+            text-decoration: underline;
+        }
+        .job-url {
+            color: #667eea;
+            margin: 10px 0;
+            word-break: break-all;
+            font-size: 0.9em;
+        }
+        .job-meta {
+            font-size: 0.85em;
+            color: #6c757d;
+            margin-top: 10px;
+        }
+        .apply-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 10px;
+            transition: transform 0.3s;
+        }
+        .apply-btn:hover {
+            transform: scale(1.05);
+            text-decoration: none;
+            color: white;
+        }
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #6c757d;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .stats {
+                flex-direction: column;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 JobRight Recommended Jobs</h1>
+            <p>All jobs extracted from https://jobright.ai/</p>
+            <p>Generated on September 20, 2025 at 11:23 PM</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">18</div>
+                <div class="stat-label">Total Jobs Found</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">18</div>
+                <div class="stat-label">Direct Links</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">09/20</div>
+                <div class="stat-label">Extracted Today</div>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="🔍 Search jobs by title, company, or keywords..."
+                   onkeyup="filterJobs(this.value)">
+        </div>
+
+        <div class="jobs-container" id="jobsContainer">
+            <div class="job-item" data-search="ai agent">
+                <div class="job-title">
+                    1. <a href="https://jobright.ai/ai-agent" target="_blank">AI Agent</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/ai-agent" target="_blank">https://jobright.ai/ai-agent</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/ai-agent" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="resume ai">
+                <div class="job-title">
+                    2. <a href="https://jobright.ai/ai-resume-builder" target="_blank">Resume AI</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/ai-resume-builder" target="_blank">https://jobright.ai/ai-resume-builder</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/ai-resume-builder" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="for employers">
+                <div class="job-title">
+                    3. <a href="https://jobright.ai/employers" target="_blank">For Employers</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/employers" target="_blank">https://jobright.ai/employers</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/employers" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="about us">
+                <div class="job-title">
+                    4. <a href="https://jobright.ai/about" target="_blank">About Us</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/about" target="_blank">https://jobright.ai/about</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/about" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="try jobright for free">
+                <div class="job-title">
+                    5. <a href="https://jobright.ai/onboarding-v3/signup" target="_blank">Try Jobright for Free</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/onboarding-v3/signup" target="_blank">https://jobright.ai/onboarding-v3/signup</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/onboarding-v3/signup" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="is jobright legit?">
+                <div class="job-title">
+                    6. <a href="https://jobright.ai/blog/is-jobright-legit" target="_blank">Is Jobright Legit?</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/blog/is-jobright-legit" target="_blank">https://jobright.ai/blog/is-jobright-legit</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/blog/is-jobright-legit" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="success stories from jobright users">
+                <div class="job-title">
+                    7. <a href="https://jobright.ai/blog/success-stories-that-started-with-jobright-real-people-real-results" target="_blank">Success Stories from Jobright Users</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/blog/success-stories-that-started-with-jobright-real-people-real-results" target="_blank">https://jobright.ai/blog/success-stories-that-started-with-jobright-real-people-real-results</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/blog/success-stories-that-started-with-jobright-real-people-real-results" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="what top ai companies are looking for">
+                <div class="job-title">
+                    8. <a href="https://jobright.ai/blog/inside-the-ai-hiring-boom-what-top-ai-companies-are-looking-for-in-2025" target="_blank">What Top AI Companies Are Looking For</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/blog/inside-the-ai-hiring-boom-what-top-ai-companies-are-looking-for-in-2025" target="_blank">https://jobright.ai/blog/inside-the-ai-hiring-boom-what-top-ai-companies-are-looking-for-in-2025</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/blog/inside-the-ai-hiring-boom-what-top-ai-companies-are-looking-for-in-2025" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="jobright ai agent launch">
+                <div class="job-title">
+                    9. <a href="https://jobright.ai/blog/jobright-launches-first-ai-agent-to-put-job-search-on-autopilot" target="_blank">Jobright AI Agent Launch</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/blog/jobright-launches-first-ai-agent-to-put-job-search-on-autopilot" target="_blank">https://jobright.ai/blog/jobright-launches-first-ai-agent-to-put-job-search-on-autopilot</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/blog/jobright-launches-first-ai-agent-to-put-job-search-on-autopilot" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="top entry level jobs">
+                <div class="job-title">
+                    10. <a href="https://jobright.ai/entry-level-jobs" target="_blank">Top Entry Level Jobs</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/entry-level-jobs" target="_blank">https://jobright.ai/entry-level-jobs</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/entry-level-jobs" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="related tools">
+                <div class="job-title">
+                    11. <a href="https://jobright.ai/tools" target="_blank">Related Tools</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/tools" target="_blank">https://jobright.ai/tools</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/tools" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="ai job assistant">
+                <div class="job-title">
+                    12. <a href="https://jobright.ai/tools/ai-job-assistant" target="_blank">AI Job Assistant</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/tools/ai-job-assistant" target="_blank">https://jobright.ai/tools/ai-job-assistant</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/tools/ai-job-assistant" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="ai cover letter generator">
+                <div class="job-title">
+                    13. <a href="https://jobright.ai/tools/cover-letter-generator" target="_blank">AI Cover Letter Generator</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/tools/cover-letter-generator" target="_blank">https://jobright.ai/tools/cover-letter-generator</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/tools/cover-letter-generator" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="ai resume helper">
+                <div class="job-title">
+                    14. <a href="https://jobright.ai/tools/resume-helper" target="_blank">AI Resume Helper</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/tools/resume-helper" target="_blank">https://jobright.ai/tools/resume-helper</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/tools/resume-helper" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="ai job tracker">
+                <div class="job-title">
+                    15. <a href="https://jobright.ai/tools/job-tracker" target="_blank">AI Job Tracker</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/tools/job-tracker" target="_blank">https://jobright.ai/tools/job-tracker</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/tools/job-tracker" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="privacy policy">
+                <div class="job-title">
+                    16. <a href="https://jobright.ai/legal/privacy" target="_blank">Privacy Policy</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/legal/privacy" target="_blank">https://jobright.ai/legal/privacy</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/legal/privacy" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="terms of service">
+                <div class="job-title">
+                    17. <a href="https://jobright.ai/legal/service" target="_blank">Terms of Service</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/legal/service" target="_blank">https://jobright.ai/legal/service</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/legal/service" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+            <div class="job-item" data-search="partners">
+                <div class="job-title">
+                    18. <a href="https://jobright.ai/partners" target="_blank">Partners</a></div>
+
+                <div class="job-url">
+                    🔗 <a href="https://jobright.ai/partners" target="_blank">https://jobright.ai/partners</a></div>
+
+                <div class="job-meta">
+                    Element Type: A
+                </div>
+
+                <a href="https://jobright.ai/partners" target="_blank" class="apply-btn">🚀 View Job</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            Generated by JobRight Job Extractor | Source: <a href="https://jobright.ai/" target="_blank">https://jobright.ai/</a>
+        </div>
+    </div>
+
+    <script>
+        function filterJobs(searchTerm) {
+            const jobs = document.querySelectorAll('.job-item');
+            const searchLower = searchTerm.toLowerCase();
+
+            jobs.forEach(job => {
+                const searchData = job.getAttribute('data-search');
+                if (searchData.includes(searchLower)) {
+                    job.style.display = 'block';
+                } else {
+                    job.style.display = 'none';
+                }
+            });
+
+            // Show "no results" message if no jobs visible
+            const visibleJobs = document.querySelectorAll('.job-item[style="block"], .job-item:not([style*="none"])');
+            const container = document.getElementById('jobsContainer');
+
+            if (searchTerm && visibleJobs.length === 0) {
+                const noResults = document.querySelector('.no-results');
+                if (!noResults) {
+                    container.innerHTML += '<div class="no-results temp"><h3>No jobs match your search</h3><p>Try different keywords</p></div>';
+                }
+            } else {
+                const tempNoResults = document.querySelector('.no-results.temp');
+                if (tempNoResults) {
+                    tempNoResults.remove();
+                }
+            }
+        }
+
+        // Add some interactive features
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('JobRight Jobs Page Loaded');
+            console.log('Total jobs:', 18);
+
+            // Add click tracking
+            document.querySelectorAll('.apply-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    console.log('Job application clicked:', this.href);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
