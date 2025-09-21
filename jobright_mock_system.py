@@ -30,6 +30,7 @@ import logging
 from dataclasses import dataclass, asdict
 import math
 import re
+from real_job_aggregator import RealJobAggregator, RealJob
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -118,9 +119,10 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 class JobRecommendationEngine:
-    """AI-powered job recommendation engine"""
+    """AI-powered job recommendation engine with real job data"""
 
     def __init__(self):
+        self.real_job_aggregator = RealJobAggregator()
         self.skill_keywords = {
             'software_engineer': ['python', 'javascript', 'react', 'node.js', 'sql', 'git', 'aws', 'docker'],
             'data_scientist': ['python', 'r', 'machine learning', 'tensorflow', 'pandas', 'sql', 'statistics'],
@@ -143,8 +145,40 @@ class JobRecommendationEngine:
             'tesla': {'size': 'large', 'industry': 'automotive', 'rating': 3.9}
         }
 
+    def get_real_jobs(self, count: int = 100) -> List[JobData]:
+        """Get real job postings and convert to our JobData format"""
+        real_jobs = self.real_job_aggregator.get_real_jobs(limit=count)
+
+        # Convert RealJob objects to JobData objects
+        converted_jobs = []
+        for real_job in real_jobs:
+            job_data = JobData(
+                id=real_job.id,
+                title=real_job.title,
+                company=real_job.company,
+                location=real_job.location,
+                salary_min=real_job.salary_min or 80000,
+                salary_max=real_job.salary_max or 120000,
+                job_type=real_job.job_type,
+                experience_level=real_job.experience_level,
+                skills=real_job.skills,
+                description=real_job.description,
+                posted_date=real_job.posted_date,
+                expires_date=real_job.expires_date,
+                application_url=real_job.application_url,  # REAL APPLICATION URL
+                source=real_job.source,
+                match_score=real_job.match_score,
+                remote_friendly=real_job.remote_friendly,
+                benefits=real_job.benefits,
+                company_size=real_job.company_size,
+                industry=real_job.industry
+            )
+            converted_jobs.append(job_data)
+
+        return converted_jobs
+
     def generate_mock_jobs(self, count: int = 100) -> List[JobData]:
-        """Generate realistic mock job data"""
+        """Generate realistic mock job data (fallback)"""
         jobs = []
 
         job_titles = [
@@ -433,9 +467,14 @@ def logout():
 
 @app.route('/jobs/recommend')
 def jobs_recommend():
-    """Main job recommendations page - exact replica of JobRight.ai functionality"""
-    # Get all jobs
-    all_jobs = recommendation_engine.generate_mock_jobs(150)
+    """Main job recommendations page with REAL job postings"""
+    # Get REAL jobs first, fallback to mock if needed
+    try:
+        all_jobs = recommendation_engine.get_real_jobs(150)
+        logger.info(f"✅ Loaded {len(all_jobs)} real jobs")
+    except Exception as e:
+        logger.warning(f"⚠️ Failed to load real jobs, using mock data: {e}")
+        all_jobs = recommendation_engine.generate_mock_jobs(150)
 
     # Apply filters if any
     filters = {
@@ -492,7 +531,7 @@ def jobs_recommend():
 
 @app.route('/api/jobs/search')
 def api_jobs_search():
-    """API endpoint for job search with live filtering"""
+    """API endpoint for job search with live filtering - REAL JOBS"""
     # Get filters from query parameters
     filters = {
         'location': request.args.get('location', ''),
@@ -505,8 +544,12 @@ def api_jobs_search():
         'keywords': request.args.get('keywords', '')
     }
 
-    # Get all jobs and filter
-    all_jobs = recommendation_engine.generate_mock_jobs(150)
+    # Get REAL jobs and filter
+    try:
+        all_jobs = recommendation_engine.get_real_jobs(150)
+    except Exception as e:
+        logger.warning(f"⚠️ API: Failed to load real jobs: {e}")
+        all_jobs = recommendation_engine.generate_mock_jobs(150)
     filtered_jobs = recommendation_engine.filter_jobs(all_jobs, filters)
 
     # Recalculate match scores for current user
@@ -620,12 +663,17 @@ def update_profile():
 @app.route('/saved-jobs')
 @login_required
 def saved_jobs():
-    """View saved jobs"""
+    """View saved jobs - REAL JOBS"""
     saved_job_records = SavedJob.query.filter_by(user_id=current_user.id).all()
     saved_job_ids = [job.job_id for job in saved_job_records]
 
-    # Get job details (in real system, this would query a database)
-    all_jobs = recommendation_engine.generate_mock_jobs(150)
+    # Get REAL job details
+    try:
+        all_jobs = recommendation_engine.get_real_jobs(150)
+    except Exception as e:
+        logger.warning(f"⚠️ Saved jobs: Failed to load real jobs: {e}")
+        all_jobs = recommendation_engine.generate_mock_jobs(150)
+
     saved_jobs_data = [job for job in all_jobs if job.id in saved_job_ids]
 
     return render_template('saved_jobs.html', jobs=saved_jobs_data)
@@ -633,11 +681,16 @@ def saved_jobs():
 @app.route('/applications')
 @login_required
 def applications():
-    """View job applications"""
+    """View job applications - REAL JOBS"""
     application_records = JobApplication.query.filter_by(user_id=current_user.id).all()
 
-    # Get job details with application status
-    all_jobs = recommendation_engine.generate_mock_jobs(150)
+    # Get REAL job details with application status
+    try:
+        all_jobs = recommendation_engine.get_real_jobs(150)
+    except Exception as e:
+        logger.warning(f"⚠️ Applications: Failed to load real jobs: {e}")
+        all_jobs = recommendation_engine.generate_mock_jobs(150)
+
     applications_data = []
 
     for app in application_records:

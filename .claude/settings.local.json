@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python complete_jobright_mock.py)"
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python complete_jobright_mock.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python real_job_aggregator.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python jobright_mock_system.py)"
     ],
     "deny": [],
     "ask": []
