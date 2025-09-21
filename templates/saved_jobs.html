@@ -1,0 +1,256 @@
+{% extends "base.html" %}
+
+{% block title %}Saved Jobs - JobRight.ai Mock{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <!-- Header -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h2>
+                        <i class="fas fa-heart text-danger"></i> Saved Jobs
+                    </h2>
+                    <p class="text-muted">Jobs you've saved for later review</p>
+                </div>
+                <div>
+                    <a href="{{ url_for('jobs_recommend') }}" class="btn btn-primary-custom">
+                        <i class="fas fa-search"></i> Find More Jobs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="stats-card">
+                <div class="stats-number">{{ jobs|length }}</div>
+                <div class="stats-label">Saved Jobs</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stats-card">
+                <div class="stats-number">{{ jobs|selectattr('remote_friendly')|list|length }}</div>
+                <div class="stats-label">Remote Friendly</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stats-card">
+                <div class="stats-number">{{ (jobs|map(attribute='match_score')|sum / jobs|length)|round if jobs else 0 }}%</div>
+                <div class="stats-label">Average Match</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Saved Jobs List -->
+    <div class="row">
+        <div class="col-12">
+            {% if jobs %}
+                {% for job in jobs %}
+                <div class="job-card" data-job-id="{{ job.id }}">
+                    <div class="row">
+                        <div class="col-md-2 text-center mb-3 mb-md-0">
+                            <div class="company-logo mx-auto">
+                                {{ job.company[0] }}
+                            </div>
+                            <div class="match-score mt-2">
+                                {{ "%.0f"|format(job.match_score) }}% Match
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <h5 class="job-title mb-2">
+                                <a href="{{ job.application_url }}" target="_blank" class="text-decoration-none">
+                                    {{ job.title }}
+                                </a>
+                            </h5>
+
+                            <div class="company-info mb-2">
+                                <strong>{{ job.company }}</strong>
+                                <span class="text-muted mx-2">•</span>
+                                <i class="fas fa-map-marker-alt text-muted"></i> {{ job.location }}
+                                {% if job.remote_friendly %}
+                                <span class="badge bg-success ms-2">Remote Friendly</span>
+                                {% endif %}
+                            </div>
+
+                            <div class="salary-range mb-2">
+                                <i class="fas fa-dollar-sign"></i>
+                                ${{ "{:,}".format(job.salary_min) }} - ${{ "{:,}".format(job.salary_max) }}
+                                <span class="text-muted">• {{ job.job_type.title() }}</span>
+                            </div>
+
+                            <div class="job-meta mb-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock"></i>
+                                    Posted {{ job.posted_date.strftime('%B %d, %Y') }}
+                                    <span class="mx-2">•</span>
+                                    <i class="fas fa-layer-group"></i>
+                                    {{ job.experience_level.title() }} Level
+                                    <span class="mx-2">•</span>
+                                    <i class="fas fa-building"></i>
+                                    {{ job.company_size.title() }} Company
+                                </small>
+                            </div>
+
+                            <div class="skills mb-3">
+                                {% for skill in job.skills[:5] %}
+                                <span class="skill-tag">{{ skill }}</span>
+                                {% endfor %}
+                                {% if job.skills|length > 5 %}
+                                <span class="skill-tag">+{{ job.skills|length - 5 }} more</span>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 text-md-end">
+                            <div class="job-actions mb-3">
+                                <button class="btn btn-primary-custom btn-sm w-100 mb-2"
+                                        onclick="applyToJob('{{ job.id }}', this)">
+                                    <i class="fas fa-paper-plane"></i> Apply Now
+                                </button>
+
+                                <button class="btn btn-outline-danger btn-sm w-100"
+                                        onclick="unsaveJob('{{ job.id }}', this)">
+                                    <i class="fas fa-heart"></i> Remove from Saved
+                                </button>
+                            </div>
+
+                            <div class="job-source">
+                                <small class="text-muted">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    via {{ job.source.title() }}
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Expandable Job Description -->
+                    <div class="job-description mt-3" style="display: none;">
+                        <hr>
+                        <h6>Job Description</h6>
+                        <div style="white-space: pre-line;">{{ job.description }}</div>
+
+                        <h6 class="mt-3">Benefits</h6>
+                        <ul>
+                            {% for benefit in job.benefits %}
+                            <li>{{ benefit }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="text-center mt-2">
+                        <button class="btn btn-link btn-sm text-muted" onclick="toggleDescription(this)">
+                            <i class="fas fa-chevron-down"></i> Show Details
+                        </button>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <!-- Empty State -->
+                <div class="text-center py-5">
+                    <i class="fas fa-heart fa-3x text-muted mb-4"></i>
+                    <h4>No Saved Jobs Yet</h4>
+                    <p class="text-muted mb-4">
+                        Start saving jobs from our recommendations to build your list of opportunities.
+                    </p>
+                    <a href="{{ url_for('jobs_recommend') }}" class="btn btn-primary-custom">
+                        <i class="fas fa-search"></i> Browse Job Recommendations
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function toggleDescription(button) {
+        const jobCard = button.closest('.job-card');
+        const description = jobCard.querySelector('.job-description');
+        const icon = button.querySelector('i');
+
+        if (description.style.display === 'none') {
+            description.style.display = 'block';
+            icon.className = 'fas fa-chevron-up';
+            button.innerHTML = '<i class="fas fa-chevron-up"></i> Hide Details';
+        } else {
+            description.style.display = 'none';
+            icon.className = 'fas fa-chevron-down';
+            button.innerHTML = '<i class="fas fa-chevron-down"></i> Show Details';
+        }
+    }
+
+    function unsaveJob(jobId, button) {
+        setLoading(button);
+
+        fetch(`/api/jobs/${jobId}/unsave`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Remove the job card from the page
+                const jobCard = button.closest('.job-card');
+                jobCard.style.transition = 'opacity 0.3s ease';
+                jobCard.style.opacity = '0';
+
+                setTimeout(() => {
+                    jobCard.remove();
+
+                    // Check if no more jobs
+                    if (document.querySelectorAll('.job-card').length === 0) {
+                        location.reload(); // Reload to show empty state
+                    }
+                }, 300);
+
+                showToast('Job removed from saved jobs', 'success');
+            } else {
+                showToast(data.message, 'error');
+                setLoading(button, false);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showToast('Failed to remove job. Please try again.', 'error');
+            setLoading(button, false);
+        });
+    }
+
+    function applyToJob(jobId, button) {
+        setLoading(button);
+
+        fetch(`/api/jobs/${jobId}/apply`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                button.className = 'btn btn-success btn-sm w-100 mb-2';
+                button.innerHTML = '<i class="fas fa-check"></i> Applied';
+                button.disabled = true;
+                button.onclick = null;
+                showToast('Application tracked successfully!', 'success');
+            } else {
+                showToast(data.message, 'error');
+                setLoading(button, false);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showToast('Failed to track application. Please try again.', 'error');
+            setLoading(button, false);
+        });
+    }
+</script>
+{% endblock %}

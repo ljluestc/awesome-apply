@@ -1,0 +1,386 @@
+{% extends "base.html" %}
+
+{% block title %}Job Search - JobRight.ai{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+    <div class="row">
+        <!-- Filters Sidebar -->
+        <div class="col-md-3 col-lg-2">
+            <div class="sidebar-filters sticky-top" style="top: 20px;">
+                <h6 class="filter-title">
+                    <i class="fas fa-filter"></i> Filters
+                    <button class="btn btn-sm btn-link float-end p-0" onclick="clearFilters()">Clear</button>
+                </h6>
+
+                <form id="filterForm">
+                    <!-- Location Filter -->
+                    <div class="filter-section">
+                        <label class="filter-title">Location</label>
+                        <input type="text" class="form-control search-box" name="location"
+                               placeholder="City, State or Remote" value="{{ filters.location }}">
+                    </div>
+
+                    <!-- Job Title Filter -->
+                    <div class="filter-section">
+                        <label class="filter-title">Job Title</label>
+                        <input type="text" class="form-control search-box" name="title"
+                               placeholder="e.g. Software Engineer" value="{{ filters.title }}">
+                    </div>
+
+                    <!-- Company Filter -->
+                    <div class="filter-section">
+                        <label class="filter-title">Company</label>
+                        <input type="text" class="form-control search-box" name="company"
+                               placeholder="Company name" value="{{ filters.company }}">
+                    </div>
+
+                    <!-- Job Type Filter -->
+                    <div class="filter-section">
+                        <label class="filter-title">Job Type</label>
+                        <select class="form-select" name="job_type">
+                            <option value="">All Types</option>
+                            <option value="full-time" {{ 'selected' if filters.job_type == 'full-time' }}>Full-time</option>
+                            <option value="part-time" {{ 'selected' if filters.job_type == 'part-time' }}>Part-time</option>
+                            <option value="contract" {{ 'selected' if filters.job_type == 'contract' }}>Contract</option>
+                        </select>
+                    </div>
+
+                    <!-- Experience Level -->
+                    <div class="filter-section">
+                        <label class="filter-title">Experience Level</label>
+                        <select class="form-select" name="experience_level">
+                            <option value="">All Levels</option>
+                            <option value="entry" {{ 'selected' if filters.experience_level == 'entry' }}>Entry Level</option>
+                            <option value="mid" {{ 'selected' if filters.experience_level == 'mid' }}>Mid Level</option>
+                            <option value="senior" {{ 'selected' if filters.experience_level == 'senior' }}>Senior Level</option>
+                        </select>
+                    </div>
+
+                    <!-- Salary Range -->
+                    <div class="filter-section">
+                        <label class="filter-title">Salary Range</label>
+                        <div class="row g-1">
+                            <div class="col">
+                                <input type="number" class="form-control" name="salary_min"
+                                       placeholder="Min" value="{{ filters.salary_min }}">
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" name="salary_max"
+                                       placeholder="Max" value="{{ filters.salary_max }}">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Filters -->
+                    <div class="filter-section">
+                        <label class="filter-title">Quick Filters</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="remote_only"
+                                   id="remoteOnly" {{ 'checked' if filters.remote_only }}>
+                            <label class="form-check-label" for="remoteOnly">
+                                Remote Only
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="h1b_sponsorship"
+                                   id="h1bSponsorship" {{ 'checked' if filters.h1b_sponsorship }}>
+                            <label class="form-check-label" for="h1bSponsorship">
+                                H1B Sponsorship
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary-custom w-100">
+                        <i class="fas fa-search"></i> Apply Filters
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Job Results -->
+        <div class="col-md-9 col-lg-10">
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h3>
+                        <i class="fas fa-briefcase text-primary"></i>
+                        Job Recommendations
+                    </h3>
+                    <p class="text-muted">{{ total_jobs }} jobs found</p>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <!-- AI Matching Info -->
+                    {% if current_user.is_authenticated %}
+                        <div class="me-3">
+                            <span class="badge bg-success">
+                                <i class="fas fa-robot"></i> AI Matching Enabled
+                            </span>
+                        </div>
+                    {% endif %}
+
+                    <!-- Sort Options -->
+                    <select class="form-select" style="width: auto;" onchange="sortJobs(this.value)">
+                        <option value="match">Best Match</option>
+                        <option value="date">Most Recent</option>
+                        <option value="salary">Highest Salary</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Job Listings -->
+            <div id="jobResults">
+                {% if jobs %}
+                    {% for job in jobs %}
+                        <div class="job-card" data-job-id="{{ job.id }}">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="company-logo">
+                                        {{ job.company[0] }}
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <h5 class="mb-1">
+                                            <a href="/jobs/{{ job.id }}" class="text-decoration-none">
+                                                {{ job.title }}
+                                            </a>
+                                        </h5>
+
+                                        {% if current_user.is_authenticated %}
+                                            <div class="match-score">
+                                                {{ "%.0f" | format(job.match_score) }}% Match
+                                            </div>
+                                        {% endif %}
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-2">
+                                        <strong class="me-3">{{ job.company }}</strong>
+                                        <span class="text-muted me-3">
+                                            <i class="fas fa-map-marker-alt"></i> {{ job.location }}
+                                        </span>
+                                        <span class="text-muted">
+                                            <i class="fas fa-clock"></i> {{ job.posted_date.strftime('%b %d') }}
+                                        </span>
+                                    </div>
+
+                                    <div class="salary-range mb-2">
+                                        ${{ "{:,}".format(job.salary_min) }} - ${{ "{:,}".format(job.salary_max) }}
+                                        {% if job.remote_friendly %}
+                                            <span class="badge bg-info ms-2">Remote Friendly</span>
+                                        {% endif %}
+                                        {% if job.h1b_sponsorship %}
+                                            <span class="badge bg-warning ms-1">H1B</span>
+                                        {% endif %}
+                                    </div>
+
+                                    <!-- Skills -->
+                                    <div class="mb-3">
+                                        {% for skill in job.skills | from_json %}
+                                            <span class="skill-tag">{{ skill }}</span>
+                                        {% endfor %}
+                                    </div>
+
+                                    <!-- Match Reasons (for logged in users) -->
+                                    {% if current_user.is_authenticated and job.match_reasons %}
+                                        <div class="small text-success">
+                                            <i class="fas fa-check-circle"></i>
+                                            {{ job.match_reasons[0] if job.match_reasons }}
+                                        </div>
+                                    {% endif %}
+                                </div>
+
+                                <div class="col-md-2 text-end">
+                                    {% if current_user.is_authenticated %}
+                                        <div class="btn-group-vertical w-100">
+                                            <button class="btn btn-primary-custom btn-sm mb-1"
+                                                    onclick="applyToJob('{{ job.id }}', this)">
+                                                <i class="fas fa-paper-plane"></i> Apply
+                                            </button>
+                                            <button class="btn btn-outline-secondary btn-sm"
+                                                    onclick="saveJob('{{ job.id }}', this)">
+                                                <i class="fas fa-heart"></i> Save
+                                            </button>
+                                        </div>
+                                    {% else %}
+                                        <div class="text-center">
+                                            <a href="/signup" class="btn btn-primary-custom btn-sm">
+                                                Sign Up to Apply
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                    <!-- Pagination -->
+                    {% if total_pages > 1 %}
+                        <nav aria-label="Job search pagination" class="mt-4">
+                            <ul class="pagination justify-content-center">
+                                {% if page > 1 %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ page - 1 }}&{{ request.query_string.decode() | replace('page=' + page|string, '') }}">
+                                            Previous
+                                        </a>
+                                    </li>
+                                {% endif %}
+
+                                {% for p in range(1, total_pages + 1) %}
+                                    {% if p == page %}
+                                        <li class="page-item active">
+                                            <span class="page-link">{{ p }}</span>
+                                        </li>
+                                    {% elif p <= 3 or p >= total_pages - 2 or (p >= page - 1 and p <= page + 1) %}
+                                        <li class="page-item">
+                                            <a class="page-link" href="?page={{ p }}&{{ request.query_string.decode() | replace('page=' + page|string, '') }}">
+                                                {{ p }}
+                                            </a>
+                                        </li>
+                                    {% elif p == 4 or p == total_pages - 3 %}
+                                        <li class="page-item disabled">
+                                            <span class="page-link">...</span>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+
+                                {% if page < total_pages %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ page + 1 }}&{{ request.query_string.decode() | replace('page=' + page|string, '') }}">
+                                            Next
+                                        </a>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        </nav>
+                    {% endif %}
+                {% else %}
+                    <!-- No Results -->
+                    <div class="text-center py-5">
+                        <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                        <h4>No jobs found</h4>
+                        <p class="text-muted">Try adjusting your filters or search criteria</p>
+                        <button class="btn btn-primary-custom" onclick="clearFilters()">
+                            Clear All Filters
+                        </button>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Filter form handling
+document.getElementById('filterForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+    const params = new URLSearchParams();
+
+    for (let [key, value] of formData.entries()) {
+        if (value) {
+            params.append(key, value);
+        }
+    }
+
+    window.location.href = '/jobs?' + params.toString();
+});
+
+// Clear filters
+function clearFilters() {
+    document.getElementById('filterForm').reset();
+    window.location.href = '/jobs';
+}
+
+// Sort jobs
+function sortJobs(sortBy) {
+    const url = new URL(window.location);
+    url.searchParams.set('sort', sortBy);
+    window.location.href = url.toString();
+}
+
+// Save job
+function saveJob(jobId, button) {
+    {% if current_user.is_authenticated %}
+        setLoading(button, true);
+
+        fetch(`/api/jobs/${jobId}/save`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                button.innerHTML = '<i class="fas fa-check"></i> Saved';
+                button.classList.remove('btn-outline-secondary');
+                button.classList.add('btn-success');
+                button.disabled = true;
+                showToast(data.message, 'success');
+            } else {
+                showToast(data.message, 'error');
+            }
+        })
+        .catch(error => {
+            showToast('Error saving job', 'error');
+        })
+        .finally(() => {
+            setLoading(button, false);
+        });
+    {% else %}
+        window.location.href = '/login';
+    {% endif %}
+}
+
+// Apply to job
+function applyToJob(jobId, button) {
+    {% if current_user.is_authenticated %}
+        setLoading(button, true);
+
+        fetch(`/api/jobs/${jobId}/apply`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                button.innerHTML = '<i class="fas fa-check"></i> Applied';
+                button.classList.remove('btn-primary-custom');
+                button.classList.add('btn-success');
+                button.disabled = true;
+                showToast(data.message, 'success');
+            } else {
+                showToast(data.message, 'error');
+            }
+        })
+        .catch(error => {
+            showToast('Error applying to job', 'error');
+        })
+        .finally(() => {
+            setLoading(button, false);
+        });
+    {% else %}
+        window.location.href = '/login';
+    {% endif %}
+}
+
+// Auto-apply filters on input change (debounced)
+let filterTimeout;
+document.querySelectorAll('#filterForm input, #filterForm select').forEach(input => {
+    input.addEventListener('input', function() {
+        clearTimeout(filterTimeout);
+        filterTimeout = setTimeout(() => {
+            if (this.type !== 'submit') {
+                document.getElementById('filterForm').dispatchEvent(new Event('submit'));
+            }
+        }, 1000);
+    });
+});
+</script>
+{% endblock %}

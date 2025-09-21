@@ -1,0 +1,478 @@
+{% extends "base.html" %}
+
+{% block title %}Profile & Preferences - JobRight.ai Mock{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row">
+        <div class="col-md-3">
+            <!-- Profile Navigation -->
+            <div class="sidebar-filters">
+                <div class="text-center mb-4">
+                    <div class="company-logo mx-auto mb-3" style="width: 80px; height: 80px; font-size: 2rem;">
+                        {{ (current_user.first_name[0] if current_user.first_name else 'U') + (current_user.last_name[0] if current_user.last_name else '') }}
+                    </div>
+                    <h5>{{ current_user.first_name }} {{ current_user.last_name }}</h5>
+                    <p class="text-muted">{{ current_user.email }}</p>
+                </div>
+
+                <div class="list-group list-group-flush">
+                    <a href="#profile-info" class="list-group-item list-group-item-action active" data-tab="profile-info">
+                        <i class="fas fa-user"></i> Profile Information
+                    </a>
+                    <a href="#job-preferences" class="list-group-item list-group-item-action" data-tab="job-preferences">
+                        <i class="fas fa-briefcase"></i> Job Preferences
+                    </a>
+                    <a href="#skills" class="list-group-item list-group-item-action" data-tab="skills">
+                        <i class="fas fa-cog"></i> Skills & Experience
+                    </a>
+                    <a href="#notifications" class="list-group-item list-group-item-action" data-tab="notifications">
+                        <i class="fas fa-bell"></i> Notifications
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <!-- Profile Information Tab -->
+            <div class="tab-content" id="profile-info">
+                <div class="card-custom p-4">
+                    <h4 class="mb-4">
+                        <i class="fas fa-user"></i> Profile Information
+                    </h4>
+
+                    <form id="profile-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="first_name" class="form-label">First Name</label>
+                                <input type="text"
+                                       class="form-control search-box"
+                                       id="first_name"
+                                       name="first_name"
+                                       value="{{ current_user.first_name or '' }}">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="last_name" class="form-label">Last Name</label>
+                                <input type="text"
+                                       class="form-control search-box"
+                                       id="last_name"
+                                       name="last_name"
+                                       value="{{ current_user.last_name or '' }}">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email"
+                                   class="form-control search-box"
+                                   id="email"
+                                   value="{{ current_user.email }}"
+                                   disabled>
+                            <small class="text-muted">Email cannot be changed</small>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Member Since</label>
+                                <input type="text"
+                                       class="form-control search-box"
+                                       value="{{ current_user.created_at.strftime('%B %d, %Y') }}"
+                                       disabled>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Last Login</label>
+                                <input type="text"
+                                       class="form-control search-box"
+                                       value="{{ current_user.last_login.strftime('%B %d, %Y at %I:%M %p') if current_user.last_login else 'Never' }}"
+                                       disabled>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary-custom">
+                            <i class="fas fa-save"></i> Save Changes
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Job Preferences Tab -->
+            <div class="tab-content" id="job-preferences" style="display: none;">
+                <div class="card-custom p-4">
+                    <h4 class="mb-4">
+                        <i class="fas fa-briefcase"></i> Job Preferences
+                    </h4>
+
+                    <form id="preferences-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="preferred_title" class="form-label">Preferred Job Title</label>
+                                <input type="text"
+                                       class="form-control search-box"
+                                       id="preferred_title"
+                                       name="preferred_title"
+                                       placeholder="e.g., Software Engineer"
+                                       value="{{ current_user.preferred_title or '' }}">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="preferred_location" class="form-label">Preferred Location</label>
+                                <input type="text"
+                                       class="form-control search-box"
+                                       id="preferred_location"
+                                       name="preferred_location"
+                                       placeholder="e.g., San Francisco, CA"
+                                       value="{{ current_user.preferred_location or '' }}">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="salary_min" class="form-label">Minimum Salary Expectation</label>
+                                <input type="number"
+                                       class="form-control search-box"
+                                       id="salary_min"
+                                       name="salary_expectation_min"
+                                       placeholder="e.g., 120000"
+                                       value="{{ current_user.salary_expectation_min or '' }}">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="salary_max" class="form-label">Maximum Salary Expectation</label>
+                                <input type="number"
+                                       class="form-control search-box"
+                                       id="salary_max"
+                                       name="salary_expectation_max"
+                                       placeholder="e.g., 180000"
+                                       value="{{ current_user.salary_expectation_max or '' }}">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="experience_level" class="form-label">Experience Level</label>
+                                <select class="form-select search-box" id="experience_level" name="preferred_experience_level">
+                                    <option value="">Select experience level</option>
+                                    <option value="entry" {{ 'selected' if current_user.preferred_experience_level == 'entry' }}>Entry Level</option>
+                                    <option value="mid" {{ 'selected' if current_user.preferred_experience_level == 'mid' }}>Mid Level</option>
+                                    <option value="senior" {{ 'selected' if current_user.preferred_experience_level == 'senior' }}>Senior Level</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="remote_preference" class="form-label">Remote Work Preference</label>
+                                <select class="form-select search-box" id="remote_preference" name="remote_preference">
+                                    <option value="">No preference</option>
+                                    <option value="remote" {{ 'selected' if current_user.remote_preference == 'remote' }}>Remote Only</option>
+                                    <option value="hybrid" {{ 'selected' if current_user.remote_preference == 'hybrid' }}>Hybrid</option>
+                                    <option value="onsite" {{ 'selected' if current_user.remote_preference == 'onsite' }}>On-site Only</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Preferred Job Types</label>
+                            <div class="row">
+                                {% set job_types = current_user.preferred_job_types|safe if current_user.preferred_job_types else '[]' %}
+                                {% set selected_types = [] %}
+
+                                <div class="col-md-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="fulltime" value="full-time"
+                                               {{ 'checked' if 'full-time' in selected_types }}>
+                                        <label class="form-check-label" for="fulltime">Full-time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="parttime" value="part-time"
+                                               {{ 'checked' if 'part-time' in selected_types }}>
+                                        <label class="form-check-label" for="parttime">Part-time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="contract" value="contract"
+                                               {{ 'checked' if 'contract' in selected_types }}>
+                                        <label class="form-check-label" for="contract">Contract</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="internship" value="internship"
+                                               {{ 'checked' if 'internship' in selected_types }}>
+                                        <label class="form-check-label" for="internship">Internship</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary-custom">
+                            <i class="fas fa-save"></i> Save Preferences
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Skills Tab -->
+            <div class="tab-content" id="skills" style="display: none;">
+                <div class="card-custom p-4">
+                    <h4 class="mb-4">
+                        <i class="fas fa-cog"></i> Skills & Experience
+                    </h4>
+
+                    <form id="skills-form">
+                        <div class="mb-3">
+                            <label for="skills-input" class="form-label">Technical Skills</label>
+                            <input type="text"
+                                   class="form-control search-box"
+                                   id="skills-input"
+                                   placeholder="Type a skill and press Enter (e.g., Python, JavaScript, React)">
+                            <small class="text-muted">Add skills that best describe your expertise</small>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Your Skills</label>
+                            <div id="skills-container">
+                                <!-- Skills will be dynamically added here -->
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Suggested Skills</label>
+                            <div id="suggested-skills">
+                                <span class="skill-tag suggested-skill" data-skill="Python">Python</span>
+                                <span class="skill-tag suggested-skill" data-skill="JavaScript">JavaScript</span>
+                                <span class="skill-tag suggested-skill" data-skill="React">React</span>
+                                <span class="skill-tag suggested-skill" data-skill="Node.js">Node.js</span>
+                                <span class="skill-tag suggested-skill" data-skill="SQL">SQL</span>
+                                <span class="skill-tag suggested-skill" data-skill="AWS">AWS</span>
+                                <span class="skill-tag suggested-skill" data-skill="Docker">Docker</span>
+                                <span class="skill-tag suggested-skill" data-skill="Git">Git</span>
+                                <span class="skill-tag suggested-skill" data-skill="Machine Learning">Machine Learning</span>
+                                <span class="skill-tag suggested-skill" data-skill="Data Analysis">Data Analysis</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary-custom">
+                            <i class="fas fa-save"></i> Save Skills
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Notifications Tab -->
+            <div class="tab-content" id="notifications" style="display: none;">
+                <div class="card-custom p-4">
+                    <h4 class="mb-4">
+                        <i class="fas fa-bell"></i> Notification Preferences
+                    </h4>
+
+                    <form id="notifications-form">
+                        <div class="mb-4">
+                            <h6>Email Notifications</h6>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="email-new-jobs" checked>
+                                <label class="form-check-label" for="email-new-jobs">
+                                    New job recommendations
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="email-saved-jobs" checked>
+                                <label class="form-check-label" for="email-saved-jobs">
+                                    Updates on saved jobs
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="email-applications">
+                                <label class="form-check-label" for="email-applications">
+                                    Application status updates
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <h6>Frequency</h6>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="frequency" id="daily" value="daily" checked>
+                                <label class="form-check-label" for="daily">
+                                    Daily digest
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="frequency" id="weekly" value="weekly">
+                                <label class="form-check-label" for="weekly">
+                                    Weekly summary
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="frequency" id="instant" value="instant">
+                                <label class="form-check-label" for="instant">
+                                    Instant notifications
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary-custom">
+                            <i class="fas fa-save"></i> Save Notification Settings
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    let userSkills = [];
+
+    // Initialize skills
+    document.addEventListener('DOMContentLoaded', function() {
+        // Load existing skills
+        {% if current_user.skills %}
+        try {
+            userSkills = {{ current_user.skills|safe }};
+        } catch(e) {
+            userSkills = [];
+        }
+        {% endif %}
+
+        displaySkills();
+    });
+
+    // Tab navigation
+    document.querySelectorAll('[data-tab]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            // Remove active class from all tabs
+            document.querySelectorAll('[data-tab]').forEach(l => l.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(t => t.style.display = 'none');
+
+            // Add active class to clicked tab
+            this.classList.add('active');
+            document.getElementById(this.dataset.tab).style.display = 'block';
+        });
+    });
+
+    // Skills management
+    $('#skills-input').on('keypress', function(e) {
+        if (e.which === 13) { // Enter key
+            e.preventDefault();
+            const skill = $(this).val().trim();
+            if (skill && !userSkills.includes(skill)) {
+                userSkills.push(skill);
+                displaySkills();
+                $(this).val('');
+            }
+        }
+    });
+
+    $('.suggested-skill').on('click', function() {
+        const skill = $(this).data('skill');
+        if (!userSkills.includes(skill)) {
+            userSkills.push(skill);
+            displaySkills();
+        }
+    });
+
+    function displaySkills() {
+        const container = $('#skills-container');
+        container.empty();
+
+        userSkills.forEach(skill => {
+            container.append(`
+                <span class="skill-tag me-2 mb-2">
+                    ${skill}
+                    <button type="button" class="btn-close btn-close-sm ms-2" onclick="removeSkill('${skill}')"></button>
+                </span>
+            `);
+        });
+    }
+
+    function removeSkill(skill) {
+        userSkills = userSkills.filter(s => s !== skill);
+        displaySkills();
+    }
+
+    // Form submissions
+    $('#profile-form').on('submit', function(e) {
+        e.preventDefault();
+        updateProfile('profile');
+    });
+
+    $('#preferences-form').on('submit', function(e) {
+        e.preventDefault();
+        updateProfile('preferences');
+    });
+
+    $('#skills-form').on('submit', function(e) {
+        e.preventDefault();
+        updateProfile('skills');
+    });
+
+    $('#notifications-form').on('submit', function(e) {
+        e.preventDefault();
+        updateProfile('notifications');
+    });
+
+    function updateProfile(type) {
+        let data = {};
+
+        if (type === 'profile') {
+            data = {
+                first_name: $('#first_name').val(),
+                last_name: $('#last_name').val()
+            };
+        } else if (type === 'preferences') {
+            // Get selected job types
+            const jobTypes = [];
+            $('input[type="checkbox"]:checked').each(function() {
+                jobTypes.push($(this).val());
+            });
+
+            data = {
+                preferred_title: $('#preferred_title').val(),
+                preferred_location: $('#preferred_location').val(),
+                salary_expectation_min: parseInt($('#salary_min').val()) || null,
+                salary_expectation_max: parseInt($('#salary_max').val()) || null,
+                preferred_experience_level: $('#experience_level').val(),
+                remote_preference: $('#remote_preference').val(),
+                preferred_job_types: jobTypes
+            };
+        } else if (type === 'skills') {
+            data = {
+                skills: userSkills
+            };
+        } else if (type === 'notifications') {
+            data = {
+                // Would store notification preferences
+                notification_preferences: {
+                    email_new_jobs: $('#email-new-jobs').is(':checked'),
+                    email_saved_jobs: $('#email-saved-jobs').is(':checked'),
+                    email_applications: $('#email-applications').is(':checked'),
+                    frequency: $('input[name="frequency"]:checked').val()
+                }
+            };
+        }
+
+        fetch('/api/profile/update', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                showToast('Profile updated successfully!', 'success');
+            } else {
+                showToast(data.message, 'error');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showToast('Failed to update profile. Please try again.', 'error');
+        });
+    }
+</script>
+{% endblock %}

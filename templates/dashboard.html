@@ -1,0 +1,253 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - JobRight.ai{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <!-- Welcome Header -->
+    <div class="row mb-4">
+        <div class="col">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h2>Welcome back, {{ user.first_name }}! 👋</h2>
+                    <p class="text-muted">Your AI job search is working for you 24/7</p>
+                </div>
+                <div class="text-end">
+                    <span class="badge bg-{{ 'success' if user.plan == 'pro' else 'warning' if user.plan == 'basic' else 'secondary' }} fs-6">
+                        {{ user.plan.title() }} Plan
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="stats-card">
+                <div class="stats-number">{{ stats.total_applications }}</div>
+                <div class="stats-label">Applications Sent</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stats-card">
+                <div class="stats-number">{{ stats.saved_jobs }}</div>
+                <div class="stats-label">Saved Jobs</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stats-card">
+                <div class="stats-number">{{ "%.1f" | format(stats.interview_rate) }}%</div>
+                <div class="stats-label">Interview Rate</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stats-card">
+                <div class="stats-number">{{ "%.1f" | format(stats.response_rate) }}%</div>
+                <div class="stats-label">Response Rate</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="row mb-4">
+        <div class="col">
+            <div class="card-custom">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-rocket text-primary"></i>
+                        Quick Actions
+                    </h5>
+                    <div class="row g-2">
+                        <div class="col-md-3">
+                            <a href="/jobs" class="btn btn-primary-custom w-100">
+                                <i class="fas fa-search"></i> Find Jobs
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="/ai-agent" class="btn btn-outline-primary w-100">
+                                <i class="fas fa-robot"></i> AI Agent
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="/orion" class="btn btn-outline-primary w-100">
+                                <i class="fas fa-comments"></i> Chat with Orion
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="/resume-optimizer" class="btn btn-outline-primary w-100">
+                                <i class="fas fa-file-alt"></i> Optimize Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Recent Applications -->
+        <div class="col-md-8">
+            <div class="card-custom">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-file-alt text-primary"></i>
+                            Recent Applications
+                        </h5>
+                        <a href="/applications" class="btn btn-sm btn-outline-primary">View All</a>
+                    </div>
+
+                    {% if recent_apps %}
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Job</th>
+                                        <th>Company</th>
+                                        <th>Applied</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for app in recent_apps %}
+                                    <tr>
+                                        <td>
+                                            <strong>{{ app.job_title or 'Job Title' }}</strong>
+                                            {% if app.auto_applied %}
+                                                <span class="badge bg-info ms-1">AI Agent</span>
+                                            {% endif %}
+                                        </td>
+                                        <td>{{ app.company or 'Company Name' }}</td>
+                                        <td>{{ app.applied_at.strftime('%b %d') }}</td>
+                                        <td>
+                                            <span class="badge bg-{{ 'success' if app.status == 'interview' else 'warning' if app.status == 'viewed' else 'secondary' }}">
+                                                {{ app.status.title() }}
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <div class="text-center py-4">
+                            <i class="fas fa-file-alt fa-3x text-muted mb-3"></i>
+                            <p class="text-muted">No applications yet</p>
+                            <a href="/jobs" class="btn btn-primary-custom">Start Applying</a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Agent & Plan Info -->
+        <div class="col-md-4">
+            <!-- AI Agent Status -->
+            <div class="card-custom mb-3">
+                <div class="card-body">
+                    <h6 class="card-title">
+                        <i class="fas fa-robot text-primary"></i>
+                        AI Agent Status
+                    </h6>
+
+                    {% if stats.plan_features.ai_agent %}
+                        {% if recent_tasks %}
+                            {% set latest_task = recent_tasks[0] %}
+                            <div class="mb-2">
+                                <small class="text-muted">Latest Task:</small>
+                                <div class="d-flex justify-content-between">
+                                    <span>{{ latest_task.task_type.replace('_', ' ').title() }}</span>
+                                    <span class="badge bg-{{ 'success' if latest_task.status == 'completed' else 'warning' if latest_task.status == 'running' else 'secondary' }}">
+                                        {{ latest_task.status.title() }}
+                                    </span>
+                                </div>
+                            </div>
+                            {% if latest_task.status == 'completed' and latest_task.results %}
+                                {% set results = latest_task.results | tojsonobject %}
+                                <div class="small text-success">
+                                    <i class="fas fa-check"></i>
+                                    Found {{ results.jobs_matched }} matches, applied to {{ results.applications_submitted }}
+                                </div>
+                            {% endif %}
+                        {% else %}
+                            <p class="text-muted small">No recent activity</p>
+                        {% endif %}
+                        <a href="/ai-agent" class="btn btn-sm btn-primary-custom mt-2">
+                            <i class="fas fa-cog"></i> Configure AI Agent
+                        </a>
+                    {% else %}
+                        <p class="text-muted small">Available on Pro plan</p>
+                        <a href="/pricing" class="btn btn-sm btn-outline-primary">Upgrade Now</a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- Plan Features -->
+            <div class="card-custom">
+                <div class="card-body">
+                    <h6 class="card-title">
+                        <i class="fas fa-star text-warning"></i>
+                        Your Plan Features
+                    </h6>
+
+                    <ul class="list-unstyled small">
+                        <li class="mb-1">
+                            <i class="fas fa-check text-success"></i>
+                            {{ stats.plan_features.job_matches }} job matches
+                            {% if stats.plan_features.job_matches != 'unlimited' %}
+                                / month
+                            {% endif %}
+                        </li>
+                        <li class="mb-1">
+                            <i class="fas fa-check text-success"></i>
+                            {{ stats.plan_features.applications_per_month }} applications
+                            {% if stats.plan_features.applications_per_month != 'unlimited' %}
+                                / month
+                            {% endif %}
+                        </li>
+                        <li class="mb-1">
+                            <i class="fas fa-{{ 'check text-success' if stats.plan_features.ai_agent else 'times text-muted' }}"></i>
+                            AI Agent automation
+                        </li>
+                        <li class="mb-1">
+                            <i class="fas fa-{{ 'check text-success' if stats.plan_features.insider_connections else 'times text-muted' }}"></i>
+                            Insider connections
+                        </li>
+                        <li class="mb-1">
+                            <i class="fas fa-check text-success"></i>
+                            Orion AI chat ({{ stats.plan_features.orion_chat }})
+                        </li>
+                    </ul>
+
+                    {% if user.plan == 'free' %}
+                        <a href="/pricing" class="btn btn-sm btn-primary-custom w-100 mt-2">
+                            <i class="fas fa-arrow-up"></i> Upgrade Plan
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Add any dashboard-specific JavaScript here
+document.addEventListener('DOMContentLoaded', function() {
+    // Auto-refresh AI Agent status every 30 seconds
+    setInterval(function() {
+        // Refresh AI Agent status if needed
+        fetch('/api/ai-agent/status')
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'running') {
+                    // Update UI to show running status
+                }
+            })
+            .catch(() => {
+                // Handle errors silently
+            });
+    }, 30000);
+});
+</script>
+{% endblock %}

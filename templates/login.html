@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{% block title %}Login - JobRight.ai Mock{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-md-6 col-lg-5">
+            <div class="card-custom p-4">
+                <div class="text-center mb-4">
+                    <div class="gradient-bg text-white d-inline-block px-4 py-2 rounded-3 mb-3">
+                        <i class="fas fa-rocket fa-2x"></i>
+                    </div>
+                    <h2 class="fw-bold">Welcome Back</h2>
+                    <p class="text-muted">Sign in to access your personalized job recommendations</p>
+                </div>
+
+                <form id="login-form">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email"
+                               class="form-control search-box"
+                               id="email"
+                               name="email"
+                               required
+                               placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password"
+                               class="form-control search-box"
+                               id="password"
+                               name="password"
+                               required
+                               placeholder="Enter your password">
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <label class="form-check-label" for="remember">
+                            Remember me
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary-custom w-100 mb-3" id="login-btn">
+                        <i class="fas fa-sign-in-alt"></i> Sign In
+                    </button>
+                </form>
+
+                <div class="text-center">
+                    <p class="text-muted">
+                        Don't have an account?
+                        <a href="{{ url_for('signup') }}" class="text-decoration-none">Sign up here</a>
+                    </p>
+                </div>
+
+                <!-- Demo Credentials -->
+                <div class="alert alert-info mt-4">
+                    <h6><i class="fas fa-info-circle"></i> Demo Credentials</h6>
+                    <p class="mb-1"><strong>Email:</strong> demo@jobright.mock</p>
+                    <p class="mb-0"><strong>Password:</strong> demo123</p>
+                    <button class="btn btn-sm btn-outline-primary mt-2" onclick="fillDemoCredentials()">
+                        <i class="fas fa-magic"></i> Use Demo Credentials
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $('#login-form').on('submit', function(e) {
+        e.preventDefault();
+
+        const email = $('#email').val();
+        const password = $('#password').val();
+        const loginBtn = $('#login-btn');
+
+        setLoading(loginBtn);
+
+        fetch('/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email: email,
+                password: password
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                showToast('Login successful! Redirecting...', 'success');
+                setTimeout(() => {
+                    window.location.href = '/jobs/recommend';
+                }, 1500);
+            } else {
+                showToast(data.message, 'error');
+                setLoading(loginBtn, false);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showToast('Login failed. Please try again.', 'error');
+            setLoading(loginBtn, false);
+        });
+    });
+
+    function fillDemoCredentials() {
+        $('#email').val('demo@jobright.mock');
+        $('#password').val('demo123');
+        showToast('Demo credentials filled in!', 'info');
+    }
+
+    // Auto-focus email field
+    $('#email').focus();
+</script>
+{% endblock %}

@@ -1,0 +1,525 @@
+{% extends "base.html" %}
+
+{% block title %}AI Job Recommendations - JobRight.ai Mock{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-4">
+    <!-- Header Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="gradient-bg text-white p-4 rounded-3">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h1 class="display-5 fw-bold mb-2">
+                            <i class="fas fa-magic"></i> AI-Powered Job Recommendations
+                        </h1>
+                        <p class="lead mb-0">
+                            Discover perfect opportunities matched to your skills and preferences
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-md-end">
+                        <div class="stats-card bg-white text-dark d-inline-block">
+                            <div class="stats-number">{{ total_jobs }}</div>
+                            <div class="stats-label">Jobs Found</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Filters Sidebar -->
+        <div class="col-lg-3 col-md-4 mb-4">
+            <div class="sidebar-filters sticky-top" style="top: 20px;">
+                <h5 class="mb-3">
+                    <i class="fas fa-filter"></i> Filters
+                </h5>
+
+                <form id="filter-form">
+                    <!-- Keywords Search -->
+                    <div class="filter-section">
+                        <label class="filter-title">Keywords</label>
+                        <input type="text"
+                               class="form-control search-box"
+                               id="keywords"
+                               name="keywords"
+                               placeholder="Job title, skills, company..."
+                               value="{{ filters.keywords }}">
+                    </div>
+
+                    <!-- Location -->
+                    <div class="filter-section">
+                        <label class="filter-title">Location</label>
+                        <select class="form-select" id="location" name="location">
+                            <option value="">All Locations</option>
+                            <option value="Remote" {{ 'selected' if filters.location == 'Remote' }}>Remote</option>
+                            <option value="San Francisco, CA" {{ 'selected' if filters.location == 'San Francisco, CA' }}>San Francisco, CA</option>
+                            <option value="New York, NY" {{ 'selected' if filters.location == 'New York, NY' }}>New York, NY</option>
+                            <option value="Seattle, WA" {{ 'selected' if filters.location == 'Seattle, WA' }}>Seattle, WA</option>
+                            <option value="Austin, TX" {{ 'selected' if filters.location == 'Austin, TX' }}>Austin, TX</option>
+                            <option value="Boston, MA" {{ 'selected' if filters.location == 'Boston, MA' }}>Boston, MA</option>
+                            <option value="Los Angeles, CA" {{ 'selected' if filters.location == 'Los Angeles, CA' }}>Los Angeles, CA</option>
+                        </select>
+                    </div>
+
+                    <!-- Job Type -->
+                    <div class="filter-section">
+                        <label class="filter-title">Job Type</label>
+                        <select class="form-select" id="job_type" name="job_type">
+                            <option value="">All Types</option>
+                            <option value="full-time" {{ 'selected' if filters.job_type == 'full-time' }}>Full-time</option>
+                            <option value="part-time" {{ 'selected' if filters.job_type == 'part-time' }}>Part-time</option>
+                            <option value="contract" {{ 'selected' if filters.job_type == 'contract' }}>Contract</option>
+                        </select>
+                    </div>
+
+                    <!-- Experience Level -->
+                    <div class="filter-section">
+                        <label class="filter-title">Experience Level</label>
+                        <select class="form-select" id="experience_level" name="experience_level">
+                            <option value="">All Levels</option>
+                            <option value="entry" {{ 'selected' if filters.experience_level == 'entry' }}>Entry Level</option>
+                            <option value="mid" {{ 'selected' if filters.experience_level == 'mid' }}>Mid Level</option>
+                            <option value="senior" {{ 'selected' if filters.experience_level == 'senior' }}>Senior Level</option>
+                        </select>
+                    </div>
+
+                    <!-- Salary Range -->
+                    <div class="filter-section">
+                        <label class="filter-title">Salary Range</label>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="number"
+                                       class="form-control"
+                                       id="salary_min"
+                                       name="salary_min"
+                                       placeholder="Min"
+                                       value="{{ filters.salary_min }}">
+                            </div>
+                            <div class="col-6">
+                                <input type="number"
+                                       class="form-control"
+                                       id="salary_max"
+                                       name="salary_max"
+                                       placeholder="Max"
+                                       value="{{ filters.salary_max }}">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Company Size -->
+                    <div class="filter-section">
+                        <label class="filter-title">Company Size</label>
+                        <select class="form-select" id="company_size" name="company_size">
+                            <option value="">All Sizes</option>
+                            <option value="startup" {{ 'selected' if filters.company_size == 'startup' }}>Startup (1-10)</option>
+                            <option value="small" {{ 'selected' if filters.company_size == 'small' }}>Small (11-50)</option>
+                            <option value="medium" {{ 'selected' if filters.company_size == 'medium' }}>Medium (51-200)</option>
+                            <option value="large" {{ 'selected' if filters.company_size == 'large' }}>Large (201-1000)</option>
+                            <option value="enterprise" {{ 'selected' if filters.company_size == 'enterprise' }}>Enterprise (1000+)</option>
+                        </select>
+                    </div>
+
+                    <!-- Remote Work -->
+                    <div class="filter-section">
+                        <div class="form-check">
+                            <input class="form-check-input"
+                                   type="checkbox"
+                                   id="remote_only"
+                                   name="remote_only"
+                                   value="true"
+                                   {{ 'checked' if filters.remote_only == 'true' }}>
+                            <label class="form-check-label" for="remote_only">
+                                Remote Work Only
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary-custom w-100">
+                        <i class="fas fa-search"></i> Apply Filters
+                    </button>
+                </form>
+
+                <button type="button" class="btn btn-outline-secondary w-100 mt-2" onclick="clearFilters()">
+                    <i class="fas fa-times"></i> Clear All
+                </button>
+            </div>
+        </div>
+
+        <!-- Job Results -->
+        <div class="col-lg-9 col-md-8">
+            <!-- Results Header -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>
+                    <i class="fas fa-briefcase"></i>
+                    Job Recommendations
+                    <span class="badge bg-primary">{{ total_jobs }}</span>
+                </h4>
+                <div class="d-flex align-items-center">
+                    <label class="me-2">Show:</label>
+                    <select class="form-select form-select-sm" id="per-page" style="width: auto;">
+                        <option value="10" {{ 'selected' if per_page == 10 }}>10 per page</option>
+                        <option value="20" {{ 'selected' if per_page == 20 }}>20 per page</option>
+                        <option value="50" {{ 'selected' if per_page == 50 }}>50 per page</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Job Cards -->
+            <div id="job-results">
+                {% for job in jobs %}
+                <div class="job-card" data-job-id="{{ job.id }}">
+                    <div class="row">
+                        <div class="col-md-2 text-center mb-3 mb-md-0">
+                            <div class="company-logo mx-auto">
+                                {{ job.company[0] }}
+                            </div>
+                            <div class="match-score mt-2">
+                                {{ "%.0f"|format(job.match_score) }}% Match
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <h5 class="job-title mb-2">
+                                <a href="{{ job.application_url }}" target="_blank" class="text-decoration-none">
+                                    {{ job.title }}
+                                </a>
+                            </h5>
+
+                            <div class="company-info mb-2">
+                                <strong>{{ job.company }}</strong>
+                                <span class="text-muted mx-2">•</span>
+                                <i class="fas fa-map-marker-alt text-muted"></i> {{ job.location }}
+                                {% if job.remote_friendly %}
+                                <span class="badge bg-success ms-2">Remote Friendly</span>
+                                {% endif %}
+                            </div>
+
+                            <div class="salary-range mb-2">
+                                <i class="fas fa-dollar-sign"></i>
+                                ${{ "{:,}".format(job.salary_min) }} - ${{ "{:,}".format(job.salary_max) }}
+                                <span class="text-muted">• {{ job.job_type.title() }}</span>
+                            </div>
+
+                            <div class="job-meta mb-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock"></i>
+                                    Posted {{ job.posted_date.strftime('%B %d, %Y') }}
+                                    <span class="mx-2">•</span>
+                                    <i class="fas fa-layer-group"></i>
+                                    {{ job.experience_level.title() }} Level
+                                    <span class="mx-2">•</span>
+                                    <i class="fas fa-building"></i>
+                                    {{ job.company_size.title() }} Company
+                                </small>
+                            </div>
+
+                            <div class="skills mb-3">
+                                {% for skill in job.skills[:5] %}
+                                <span class="skill-tag">{{ skill }}</span>
+                                {% endfor %}
+                                {% if job.skills|length > 5 %}
+                                <span class="skill-tag">+{{ job.skills|length - 5 }} more</span>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 text-md-end">
+                            <div class="job-actions mb-3">
+                                {% if current_user.is_authenticated %}
+                                    {% if job.id in applied_job_ids %}
+                                    <button class="btn btn-success btn-sm w-100 mb-2" disabled>
+                                        <i class="fas fa-check"></i> Applied
+                                    </button>
+                                    {% else %}
+                                    <button class="btn btn-primary-custom btn-sm w-100 mb-2"
+                                            onclick="applyToJob('{{ job.id }}', this)">
+                                        <i class="fas fa-paper-plane"></i> Quick Apply
+                                    </button>
+                                    {% endif %}
+
+                                    {% if job.id in saved_job_ids %}
+                                    <button class="btn btn-outline-danger btn-sm w-100"
+                                            onclick="unsaveJob('{{ job.id }}', this)">
+                                        <i class="fas fa-heart"></i> Saved
+                                    </button>
+                                    {% else %}
+                                    <button class="btn btn-outline-primary btn-sm w-100"
+                                            onclick="saveJob('{{ job.id }}', this)">
+                                        <i class="far fa-heart"></i> Save Job
+                                    </button>
+                                    {% endif %}
+                                {% else %}
+                                <a href="{{ url_for('login') }}" class="btn btn-primary-custom btn-sm w-100 mb-2">
+                                    <i class="fas fa-sign-in-alt"></i> Login to Apply
+                                </a>
+                                {% endif %}
+                            </div>
+
+                            <div class="job-source">
+                                <small class="text-muted">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    via {{ job.source.title() }}
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Expandable Job Description -->
+                    <div class="job-description mt-3" style="display: none;">
+                        <hr>
+                        <h6>Job Description</h6>
+                        <div style="white-space: pre-line;">{{ job.description }}</div>
+
+                        <h6 class="mt-3">Benefits</h6>
+                        <ul>
+                            {% for benefit in job.benefits %}
+                            <li>{{ benefit }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="text-center mt-2">
+                        <button class="btn btn-link btn-sm text-muted" onclick="toggleDescription(this)">
+                            <i class="fas fa-chevron-down"></i> Show Details
+                        </button>
+                    </div>
+                </div>
+                {% endfor %}
+
+                {% if not jobs %}
+                <div class="text-center py-5">
+                    <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                    <h5>No jobs found</h5>
+                    <p class="text-muted">Try adjusting your filters to see more results</p>
+                    <button class="btn btn-primary-custom" onclick="clearFilters()">
+                        <i class="fas fa-refresh"></i> Clear Filters
+                    </button>
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Pagination -->
+            {% if total_pages > 1 %}
+            <nav aria-label="Job results pagination" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    {% if page > 1 %}
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage({{ page - 1 }})">
+                            <i class="fas fa-chevron-left"></i> Previous
+                        </a>
+                    </li>
+                    {% endif %}
+
+                    {% for p in range(1, total_pages + 1) %}
+                        {% if p == page %}
+                        <li class="page-item active">
+                            <span class="page-link">{{ p }}</span>
+                        </li>
+                        {% elif p <= 3 or p > total_pages - 3 or (p >= page - 2 and p <= page + 2) %}
+                        <li class="page-item">
+                            <a class="page-link" href="#" onclick="changePage({{ p }})">{{ p }}</a>
+                        </li>
+                        {% elif p == 4 or p == total_pages - 3 %}
+                        <li class="page-item disabled">
+                            <span class="page-link">...</span>
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if page < total_pages %}
+                    <li class="page-item">
+                        <a class="page-link" href="#" onclick="changePage({{ page + 1 }})">
+                            Next <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </nav>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Filter form submission
+    $('#filter-form').on('submit', function(e) {
+        e.preventDefault();
+        applyFilters();
+    });
+
+    // Real-time search with debouncing
+    let searchTimeout;
+    $('#keywords').on('input', function() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(applyFilters, 500);
+    });
+
+    // Per page change
+    $('#per-page').on('change', function() {
+        applyFilters();
+    });
+
+    function applyFilters() {
+        const formData = $('#filter-form').serialize();
+        const perPage = $('#per-page').val();
+
+        // Show loading state
+        $('#job-results').html('<div class="text-center py-5"><div class="loading-spinner"></div><p class="mt-2">Loading jobs...</p></div>');
+
+        // Make AJAX request
+        const queryString = formData + '&per_page=' + perPage + '&page=1';
+
+        fetch('/api/jobs/search?' + queryString)
+            .then(response => response.json())
+            .then(data => {
+                updateJobResults(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showToast('Failed to load jobs. Please try again.', 'error');
+            });
+    }
+
+    function updateJobResults(data) {
+        // This would need to rebuild the HTML from the JSON response
+        // For now, just refresh the page
+        const currentUrl = new URL(window.location);
+        const form = new FormData(document.getElementById('filter-form'));
+
+        // Update URL parameters
+        for (let [key, value] of form.entries()) {
+            if (value) {
+                currentUrl.searchParams.set(key, value);
+            } else {
+                currentUrl.searchParams.delete(key);
+            }
+        }
+
+        currentUrl.searchParams.set('per_page', $('#per-page').val());
+        currentUrl.searchParams.set('page', '1');
+
+        window.location.href = currentUrl.toString();
+    }
+
+    function changePage(pageNum) {
+        const currentUrl = new URL(window.location);
+        currentUrl.searchParams.set('page', pageNum);
+        window.location.href = currentUrl.toString();
+    }
+
+    function clearFilters() {
+        $('#filter-form')[0].reset();
+        window.location.href = '/jobs/recommend';
+    }
+
+    function toggleDescription(button) {
+        const jobCard = button.closest('.job-card');
+        const description = jobCard.querySelector('.job-description');
+        const icon = button.querySelector('i');
+
+        if (description.style.display === 'none') {
+            description.style.display = 'block';
+            icon.className = 'fas fa-chevron-up';
+            button.innerHTML = '<i class="fas fa-chevron-up"></i> Hide Details';
+        } else {
+            description.style.display = 'none';
+            icon.className = 'fas fa-chevron-down';
+            button.innerHTML = '<i class="fas fa-chevron-down"></i> Show Details';
+        }
+    }
+
+    function saveJob(jobId, button) {
+        setLoading(button);
+
+        fetch(`/api/jobs/${jobId}/save`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                button.className = 'btn btn-outline-danger btn-sm w-100';
+                button.innerHTML = '<i class="fas fa-heart"></i> Saved';
+                button.onclick = function() { unsaveJob(jobId, this); };
+                showToast('Job saved successfully!', 'success');
+            } else {
+                showToast(data.message, 'error');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showToast('Failed to save job. Please try again.', 'error');
+        })
+        .finally(() => {
+            setLoading(button, false);
+        });
+    }
+
+    function unsaveJob(jobId, button) {
+        setLoading(button);
+
+        fetch(`/api/jobs/${jobId}/unsave`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                button.className = 'btn btn-outline-primary btn-sm w-100';
+                button.innerHTML = '<i class="far fa-heart"></i> Save Job';
+                button.onclick = function() { saveJob(jobId, this); };
+                showToast('Job removed from saved jobs', 'success');
+            } else {
+                showToast(data.message, 'error');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showToast('Failed to remove job. Please try again.', 'error');
+        })
+        .finally(() => {
+            setLoading(button, false);
+        });
+    }
+
+    function applyToJob(jobId, button) {
+        setLoading(button);
+
+        fetch(`/api/jobs/${jobId}/apply`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                button.className = 'btn btn-success btn-sm w-100 mb-2';
+                button.innerHTML = '<i class="fas fa-check"></i> Applied';
+                button.disabled = true;
+                button.onclick = null;
+                showToast('Application tracked successfully!', 'success');
+            } else {
+                showToast(data.message, 'error');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showToast('Failed to track application. Please try again.', 'error');
+        })
+        .finally(() => {
+            if (!button.disabled) {
+                setLoading(button, false);
+            }
+        });
+    }
+</script>
+{% endblock %}
