@@ -76,7 +76,18 @@
       "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages timeout 30s /home/calelin/awesome-apply/venv/bin/python jobright_scraper_clickhouse.py)",
       "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply /home/calelin/awesome-apply/venv/bin/python live_job_application_demo.py)",
       "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply /home/calelin/awesome-apply/venv/bin/python live_job_application_system.py)",
-      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply /home/calelin/awesome-apply/venv/bin/python enhanced_live_application_system.py)"
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply /home/calelin/awesome-apply/venv/bin/python enhanced_live_application_system.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply timeout 30s /home/calelin/awesome-apply/venv/bin/python ultimate_jobright_complete.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages /home/calelin/awesome-apply/venv/bin/python jobright_ultimate_replication.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply timeout 60s /home/calelin/awesome-apply/venv/bin/python ultimate_job_automation_system.py)",
+      "Bash(/home/calelin/awesome-apply/venv/bin/pip install psutil)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply timeout 120s /home/calelin/awesome-apply/venv/bin/python simple_continuous_applicator.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply /home/calelin/awesome-apply/venv/bin/python test_job_automation.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply /home/calelin/awesome-apply/venv/bin/python test_jobright_replication.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply timeout 180s /home/calelin/awesome-apply/venv/bin/python automated_job_application_system.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply /home/calelin/awesome-apply/venv/bin/python jobright_demo_complete.py)",
+      "Bash(find:*)",
+      "Bash(sqlite3:*)"
     ],
     "deny": [],
     "ask": []

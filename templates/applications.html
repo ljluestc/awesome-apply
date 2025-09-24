@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head><title>My Applications - JobRight</title>
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"></head>
+<head>
+    <title>My Applications - JobRight</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
 <body class="bg-gray-50">
     <div class="max-w-6xl mx-auto p-8">
-        <h1 class="text-3xl font-bold mb-8">My Job Applications</h1>
-        {% for app in applications %}
-        <div class="bg-white p-6 rounded-lg shadow mb-4">
-            <h3 class="text-xl font-semibold">{{ app.job_title }}</h3>
-            <p class="text-gray-600">{{ app.company }}</p>
-            <p class="text-sm text-gray-500">Applied: {{ app.applied_at.strftime('%B %d, %Y') }}</p>
-            {% if app.auto_applied %}<span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Auto Applied</span>{% endif %}
-        </div>
-        {% endfor %}
+        <h1 class="text-3xl font-bold mb-8">
+            <i class="fas fa-briefcase mr-3 text-blue-600"></i>My Job Applications
+        </h1>
+
+        {% if applications %}
+            {% for app in applications %}
+            <div class="bg-white p-6 rounded-lg shadow mb-4">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-xl font-semibold">{{ app.job.title }}</h3>
+                        <p class="text-gray-600 text-lg">{{ app.job.company }}</p>
+                        <p class="text-sm text-gray-500 mt-2">
+                            Applied: {{ app.applied_at.strftime('%B %d, %Y at %I:%M %p') }}
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        {% if app.auto_applied %}
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fas fa-robot mr-1"></i>Auto Applied
+                            </span>
+                        {% else %}
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                                <i class="fas fa-user mr-1"></i>Manual
+                            </span>
+                        {% endif %}
+                        <div class="mt-2">
+                            <span class="text-sm px-3 py-1 rounded-full {{
+                                'bg-yellow-100 text-yellow-800' if app.status == 'applied' else
+                                'bg-green-100 text-green-800' if app.status == 'interview' else
+                                'bg-red-100 text-red-800' if app.status == 'rejected' else
+                                'bg-gray-100 text-gray-800'
+                            }}">
+                                {{ app.status.title() }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a href="{{ app.job.application_url }}" target="_blank"
+                       class="text-blue-600 hover:text-blue-800 transition-colors">
+                        <i class="fas fa-external-link-alt mr-1"></i>View Original Job Posting
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="text-center py-12">
+                <div class="text-6xl text-gray-300 mb-4">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">No applications yet</h3>
+                <p class="text-gray-500 mb-6">Start applying to jobs to see them here</p>
+                <a href="/jobs" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-search mr-2"></i>Browse Jobs
+                </a>
+            </div>
+        {% endif %}
     </div>
 </body>
 </html>

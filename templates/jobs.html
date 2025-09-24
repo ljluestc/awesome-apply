@@ -1,402 +1,425 @@
-{% extends "base.html" %}
-
-{% block title %}Job Search - JobRight.ai{% endblock %}
-
-{% block content %}
-<div class="container-fluid mt-4">
-    <div class="row">
-        <!-- Filters Sidebar -->
-        <div class="col-md-3 col-lg-2">
-            <div class="sidebar-filters sticky-top" style="top: 20px;">
-                <h6 class="filter-title">
-                    <i class="fas fa-filter"></i> Filters
-                    <button class="btn btn-sm btn-link float-end p-0" onclick="clearFilters()">Clear</button>
-                </h6>
-
-                <form id="filterForm">
-                    <!-- Location Filter -->
-                    <div class="filter-section">
-                        <label class="filter-title">Location</label>
-                        <input type="text" class="form-control search-box" name="location"
-                               placeholder="City, State or Remote" value="{{ filters.location }}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobRight - AI Job Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .jobright-gradient {
+            background: linear-gradient(135deg, #00f0a0 0%, #00d4ff 100%);
+        }
+        .match-score {
+            background: linear-gradient(45deg, #22c55e, #15803d);
+        }
+        .job-card {
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+        .job-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-color: #00f0a0;
+        }
+        .skill-tag {
+            background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
+            transition: all 0.2s ease;
+        }
+        .skill-tag:hover {
+            background: linear-gradient(45deg, #00f0a0, #00d4ff);
+            color: white;
+        }
+        .apply-btn {
+            background: linear-gradient(45deg, #00f0a0, #00d4ff);
+            transition: all 0.3s ease;
+        }
+        .apply-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 240, 160, 0.3);
+        }
+        .search-container {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 jobright-gradient rounded-lg flex items-center justify-center">
+                        <i class="fas fa-rocket text-white text-xl"></i>
                     </div>
-
-                    <!-- Job Title Filter -->
-                    <div class="filter-section">
-                        <label class="filter-title">Job Title</label>
-                        <input type="text" class="form-control search-box" name="title"
-                               placeholder="e.g. Software Engineer" value="{{ filters.title }}">
-                    </div>
-
-                    <!-- Company Filter -->
-                    <div class="filter-section">
-                        <label class="filter-title">Company</label>
-                        <input type="text" class="form-control search-box" name="company"
-                               placeholder="Company name" value="{{ filters.company }}">
-                    </div>
-
-                    <!-- Job Type Filter -->
-                    <div class="filter-section">
-                        <label class="filter-title">Job Type</label>
-                        <select class="form-select" name="job_type">
-                            <option value="">All Types</option>
-                            <option value="full-time" {{ 'selected' if filters.job_type == 'full-time' }}>Full-time</option>
-                            <option value="part-time" {{ 'selected' if filters.job_type == 'part-time' }}>Part-time</option>
-                            <option value="contract" {{ 'selected' if filters.job_type == 'contract' }}>Contract</option>
-                        </select>
-                    </div>
-
-                    <!-- Experience Level -->
-                    <div class="filter-section">
-                        <label class="filter-title">Experience Level</label>
-                        <select class="form-select" name="experience_level">
-                            <option value="">All Levels</option>
-                            <option value="entry" {{ 'selected' if filters.experience_level == 'entry' }}>Entry Level</option>
-                            <option value="mid" {{ 'selected' if filters.experience_level == 'mid' }}>Mid Level</option>
-                            <option value="senior" {{ 'selected' if filters.experience_level == 'senior' }}>Senior Level</option>
-                        </select>
-                    </div>
-
-                    <!-- Salary Range -->
-                    <div class="filter-section">
-                        <label class="filter-title">Salary Range</label>
-                        <div class="row g-1">
-                            <div class="col">
-                                <input type="number" class="form-control" name="salary_min"
-                                       placeholder="Min" value="{{ filters.salary_min }}">
-                            </div>
-                            <div class="col">
-                                <input type="number" class="form-control" name="salary_max"
-                                       placeholder="Max" value="{{ filters.salary_max }}">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quick Filters -->
-                    <div class="filter-section">
-                        <label class="filter-title">Quick Filters</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="remote_only"
-                                   id="remoteOnly" {{ 'checked' if filters.remote_only }}>
-                            <label class="form-check-label" for="remoteOnly">
-                                Remote Only
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="h1b_sponsorship"
-                                   id="h1bSponsorship" {{ 'checked' if filters.h1b_sponsorship }}>
-                            <label class="form-check-label" for="h1bSponsorship">
-                                H1B Sponsorship
-                            </label>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary-custom w-100">
-                        <i class="fas fa-search"></i> Apply Filters
-                    </button>
-                </form>
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+                        JobRight
+                    </h1>
+                </div>
+                <div class="flex items-center space-x-6">
+                    {% if current_user.is_authenticated %}
+                        <span class="text-gray-700 font-medium">
+                            <i class="fas fa-user-circle text-lg mr-2"></i>
+                            {{ current_user.first_name or current_user.email.split('@')[0] }}
+                        </span>
+                        <a href="/applications" class="text-gray-600 hover:text-green-600 transition-colors">
+                            <i class="fas fa-briefcase mr-1"></i>Applications
+                        </a>
+                        <a href="/logout" class="text-gray-600 hover:text-red-600 transition-colors">
+                            <i class="fas fa-sign-out-alt mr-1"></i>Logout
+                        </a>
+                    {% else %}
+                        <a href="/login" class="text-gray-600 hover:text-gray-900 transition-colors">Sign In</a>
+                        <a href="/signup" class="jobright-gradient text-white px-6 py-2 rounded-full hover:opacity-90 transition-opacity">
+                            Get Started
+                        </a>
+                    {% endif %}
+                </div>
             </div>
         </div>
+    </header>
 
-        <!-- Job Results -->
-        <div class="col-md-9 col-lg-10">
-            <!-- Header -->
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <div>
-                    <h3>
-                        <i class="fas fa-briefcase text-primary"></i>
-                        Job Recommendations
+    <!-- Hero Section -->
+    <div class="relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="text-center mb-12">
+                <h1 class="text-5xl font-bold text-gray-900 mb-4">
+                    Find Your <span class="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Dream Job</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    AI-powered job recommendations that match your skills, salary expectations, and career goals
+                </p>
+
+                {% if current_user.is_authenticated %}
+                <!-- Bulk Apply Section -->
+                <div class="jobright-gradient text-white p-8 rounded-2xl mb-12 shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-4">
+                        <i class="fas fa-magic mr-2"></i>
+                        Automate Your Job Search
                     </h3>
-                    <p class="text-muted">{{ total_jobs }} jobs found</p>
+                    <p class="text-lg mb-6 opacity-90">Apply to multiple jobs with one click using our AI automation</p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <button onclick="selectTopMatches()"
+                                class="bg-white/20 hover:bg-white/30 text-white px-8 py-3 rounded-full font-semibold transition-all transform hover:scale-105">
+                            <i class="fas fa-star mr-2"></i>Select Top 10 Matches
+                        </button>
+                        <button onclick="applyToSelected()"
+                                class="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition-all transform hover:scale-105">
+                            <i class="fas fa-paper-plane mr-2"></i>Apply to Selected
+                        </button>
+                    </div>
+                    <div id="selectedCount" class="mt-4 text-white/80 font-medium"></div>
                 </div>
+                {% endif %}
+            </div>
 
-                <div class="d-flex align-items-center">
-                    <!-- AI Matching Info -->
-                    {% if current_user.is_authenticated %}
-                        <div class="me-3">
-                            <span class="badge bg-success">
-                                <i class="fas fa-robot"></i> AI Matching Enabled
-                            </span>
-                        </div>
-                    {% endif %}
-
-                    <!-- Sort Options -->
-                    <select class="form-select" style="width: auto;" onchange="sortJobs(this.value)">
-                        <option value="match">Best Match</option>
-                        <option value="date">Most Recent</option>
-                        <option value="salary">Highest Salary</option>
-                    </select>
+            <!-- Search Filters -->
+            <div class="search-container rounded-2xl shadow-xl p-8 mb-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <div class="relative">
+                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" id="titleFilter" placeholder="Job title or keywords"
+                               class="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-green-100 focus:border-green-400 transition-all">
+                    </div>
+                    <div class="relative">
+                        <i class="fas fa-map-marker-alt absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" id="locationFilter" placeholder="Location"
+                               class="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-green-100 focus:border-green-400 transition-all">
+                    </div>
+                    <div class="relative">
+                        <i class="fas fa-building absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" id="companyFilter" placeholder="Company"
+                               class="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-green-100 focus:border-green-400 transition-all">
+                    </div>
+                    <div class="relative">
+                        <i class="fas fa-home absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <label class="flex items-center justify-center py-3 px-4 border-2 border-gray-200 rounded-xl hover:border-green-400 transition-all cursor-pointer">
+                            <input type="checkbox" id="remoteOnly" class="mr-3 text-green-600">
+                            <span class="font-medium text-gray-700">Remote Only</span>
+                        </label>
+                    </div>
+                    <button onclick="filterJobs()"
+                            class="apply-btn text-white px-8 py-3 rounded-xl font-semibold transition-all transform hover:scale-105">
+                        <i class="fas fa-filter mr-2"></i>Search Jobs
+                    </button>
                 </div>
             </div>
 
-            <!-- Job Listings -->
-            <div id="jobResults">
-                {% if jobs %}
-                    {% for job in jobs %}
-                        <div class="job-card" data-job-id="{{ job.id }}">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <div class="company-logo">
-                                        {{ job.company[0] }}
-                                    </div>
-                                </div>
-
-                                <div class="col-md-8">
-                                    <div class="d-flex justify-content-between align-items-start mb-2">
-                                        <h5 class="mb-1">
-                                            <a href="/jobs/{{ job.id }}" class="text-decoration-none">
-                                                {{ job.title }}
-                                            </a>
-                                        </h5>
-
-                                        {% if current_user.is_authenticated %}
-                                            <div class="match-score">
-                                                {{ "%.0f" | format(job.match_score) }}% Match
-                                            </div>
-                                        {% endif %}
-                                    </div>
-
-                                    <div class="d-flex align-items-center mb-2">
-                                        <strong class="me-3">{{ job.company }}</strong>
-                                        <span class="text-muted me-3">
-                                            <i class="fas fa-map-marker-alt"></i> {{ job.location }}
-                                        </span>
-                                        <span class="text-muted">
-                                            <i class="fas fa-clock"></i> {{ job.posted_date.strftime('%b %d') }}
-                                        </span>
-                                    </div>
-
-                                    <div class="salary-range mb-2">
-                                        {% if job.salary_min and job.salary_max %}
-                                            ${{ "{:,}".format(job.salary_min) }} - ${{ "{:,}".format(job.salary_max) }}
-                                        {% elif job.salary_min %}
-                                            ${{ "{:,}".format(job.salary_min) }}+
-                                        {% elif job.salary_max %}
-                                            Up to ${{ "{:,}".format(job.salary_max) }}
-                                        {% else %}
-                                            Competitive salary
-                                        {% endif %}
-                                        {% if job.remote_friendly %}
-                                            <span class="badge bg-info ms-2">Remote Friendly</span>
-                                        {% endif %}
-                                        {% if job.h1b_sponsorship %}
-                                            <span class="badge bg-warning ms-1">H1B</span>
-                                        {% endif %}
-                                    </div>
-
-                                    <!-- Skills -->
-                                    <div class="mb-3">
-                                        {% if job.skills %}
-                                            {% if job.skills is string %}
-                                                {% for skill in job.skills | from_json %}
-                                                    <span class="skill-tag">{{ skill }}</span>
-                                                {% endfor %}
-                                            {% else %}
-                                                {% for skill in job.skills %}
-                                                    <span class="skill-tag">{{ skill }}</span>
-                                                {% endfor %}
-                                            {% endif %}
-                                        {% endif %}
-                                    </div>
-
-                                    <!-- Match Reasons (for logged in users) -->
-                                    {% if current_user.is_authenticated and job.match_reasons %}
-                                        <div class="small text-success">
-                                            <i class="fas fa-check-circle"></i>
-                                            {{ job.match_reasons[0] if job.match_reasons }}
-                                        </div>
-                                    {% endif %}
-                                </div>
-
-                                <div class="col-md-2 text-end">
-                                    {% if current_user.is_authenticated %}
-                                        <div class="btn-group-vertical w-100">
-                                            <button class="btn btn-primary-custom btn-sm mb-1"
-                                                    onclick="applyToJob('{{ job.id }}', this)">
-                                                <i class="fas fa-paper-plane"></i> Apply
-                                            </button>
-                                            <button class="btn btn-outline-secondary btn-sm"
-                                                    onclick="saveJob('{{ job.id }}', this)">
-                                                <i class="fas fa-heart"></i> Save
-                                            </button>
-                                        </div>
-                                    {% else %}
-                                        <div class="text-center">
-                                            <a href="/signup" class="btn btn-primary-custom btn-sm">
-                                                Sign Up to Apply
-                                            </a>
-                                        </div>
-                                    {% endif %}
-                                </div>
-                            </div>
-                        </div>
-                    {% endfor %}
-
-                    <!-- Pagination -->
-                    {% if total_pages > 1 %}
-                        <nav aria-label="Job search pagination" class="mt-4">
-                            <ul class="pagination justify-content-center">
-                                {% if page > 1 %}
-                                    <li class="page-item">
-                                        <a class="page-link" href="?page={{ page - 1 }}&{{ request.query_string.decode() | replace('page=' + page|string, '') }}">
-                                            Previous
-                                        </a>
-                                    </li>
-                                {% endif %}
-
-                                {% for p in range(1, total_pages + 1) %}
-                                    {% if p == page %}
-                                        <li class="page-item active">
-                                            <span class="page-link">{{ p }}</span>
-                                        </li>
-                                    {% elif p <= 3 or p >= total_pages - 2 or (p >= page - 1 and p <= page + 1) %}
-                                        <li class="page-item">
-                                            <a class="page-link" href="?page={{ p }}&{{ request.query_string.decode() | replace('page=' + page|string, '') }}">
-                                                {{ p }}
-                                            </a>
-                                        </li>
-                                    {% elif p == 4 or p == total_pages - 3 %}
-                                        <li class="page-item disabled">
-                                            <span class="page-link">...</span>
-                                        </li>
-                                    {% endif %}
-                                {% endfor %}
-
-                                {% if page < total_pages %}
-                                    <li class="page-item">
-                                        <a class="page-link" href="?page={{ page + 1 }}&{{ request.query_string.decode() | replace('page=' + page|string, '') }}">
-                                            Next
-                                        </a>
-                                    </li>
-                                {% endif %}
-                            </ul>
-                        </nav>
-                    {% endif %}
-                {% else %}
-                    <!-- No Results -->
-                    <div class="text-center py-5">
-                        <i class="fas fa-search fa-3x text-muted mb-3"></i>
-                        <h4>No jobs found</h4>
-                        <p class="text-muted">Try adjusting your filters or search criteria</p>
-                        <button class="btn btn-primary-custom" onclick="clearFilters()">
-                            Clear All Filters
-                        </button>
+            <!-- Job Statistics -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg">
+                    <div class="text-3xl font-bold text-green-600 mb-2">{{ jobs|length }}</div>
+                    <div class="text-gray-600">Available Jobs</div>
+                </div>
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">
+                        {{ jobs|selectattr('remote_friendly')|list|length }}
                     </div>
-                {% endif %}
+                    <div class="text-gray-600">Remote Jobs</div>
+                </div>
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg">
+                    <div class="text-3xl font-bold text-purple-600 mb-2">
+                        {{ jobs|map(attribute='company')|unique|list|length }}
+                    </div>
+                    <div class="text-gray-600">Companies</div>
+                </div>
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg">
+                    <div class="text-3xl font-bold text-orange-600 mb-2">95%</div>
+                    <div class="text-gray-600">Match Accuracy</div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<script>
-// Filter form handling
-document.getElementById('filterForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+    <!-- Job Listings -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <div class="space-y-6" id="jobListings">
+            {% for job in jobs %}
+            <div class="job-card bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all" data-job-id="{{ job.id }}">
+                <div class="flex justify-between items-start mb-6">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl flex items-center justify-center overflow-hidden">
+                            <img src="{{ job.logo_url }}" alt="{{ job.company }}" class="w-full h-full object-cover"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="hidden w-full h-full bg-gradient-to-br from-blue-400 to-purple-500 text-white font-bold text-lg items-center justify-center">
+                                {{ job.company[0] if job.company else 'J' }}
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2 hover:text-green-600 transition-colors">
+                                {{ job.title }}
+                            </h3>
+                            <p class="text-xl text-gray-700 mb-3 font-semibold">{{ job.company }}</p>
+                            <div class="flex flex-wrap items-center gap-4 text-gray-600">
+                                <span class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-green-500 mr-2"></i>
+                                    {{ job.location }}
+                                </span>
+                                <span class="flex items-center">
+                                    <i class="fas fa-briefcase text-blue-500 mr-2"></i>
+                                    {{ job.job_type|title }}
+                                </span>
+                                <span class="flex items-center">
+                                    <i class="fas fa-layer-group text-purple-500 mr-2"></i>
+                                    {{ job.experience_level|title }}
+                                </span>
+                                {% if job.remote_friendly %}
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
+                                    <i class="fas fa-home mr-1"></i>Remote OK
+                                </span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="match-score text-white px-4 py-2 rounded-full text-sm font-bold mb-3 shadow-lg">
+                            <i class="fas fa-percentage mr-1"></i>
+                            {{ "%.0f"|format(job.match_score or 85) }}% Match
+                        </div>
+                        <p class="text-2xl font-bold text-gray-900">
+                            ${{ "{:,}".format(job.salary_min) }} - ${{ "{:,}".format(job.salary_max) }}
+                        </p>
+                        <p class="text-sm text-gray-500 mt-1">per year</p>
+                    </div>
+                </div>
 
-    const formData = new FormData(this);
-    const params = new URLSearchParams();
+                <p class="text-gray-700 mb-6 text-lg leading-relaxed">{{ job.description }}</p>
 
-    for (let [key, value] of formData.entries()) {
-        if (value) {
-            params.append(key, value);
+                <!-- Skills -->
+                <div class="flex flex-wrap gap-3 mb-6">
+                    {% set job_skills = job.skills|from_json if job.skills else [] %}
+                    {% for skill in job_skills[:8] %}
+                    <span class="skill-tag px-4 py-2 rounded-full text-sm font-medium">
+                        {{ skill }}
+                    </span>
+                    {% endfor %}
+                    {% if job_skills|length > 8 %}
+                    <span class="text-gray-500 text-sm font-medium px-4 py-2">
+                        +{{ job_skills|length - 8 }} more
+                    </span>
+                    {% endif %}
+                </div>
+
+                <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                    <div class="flex items-center text-gray-500 space-x-4">
+                        <span class="flex items-center">
+                            <i class="fas fa-clock mr-2"></i>
+                            Posted {{ job.posted_date.strftime('%B %d') }}
+                        </span>
+                        <span class="flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i>
+                            {{ job.source|title }}
+                        </span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        {% if current_user.is_authenticated %}
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" class="job-select w-5 h-5 text-green-600 rounded focus:ring-green-500"
+                                       data-job-id="{{ job.id }}">
+                                <span class="text-gray-600 font-medium">Select</span>
+                            </label>
+
+                            {% if job.is_applied %}
+                                <span class="bg-green-100 text-green-800 px-6 py-3 rounded-full font-semibold flex items-center">
+                                    <i class="fas fa-check-circle mr-2"></i>Applied
+                                </span>
+                            {% else %}
+                                <button onclick="applyToJob('{{ job.id }}')"
+                                        class="apply-btn text-white px-8 py-3 rounded-full font-semibold transition-all transform hover:scale-105">
+                                    <i class="fas fa-paper-plane mr-2"></i>Apply Now
+                                </button>
+                            {% endif %}
+                        {% else %}
+                            <a href="/login" class="apply-btn text-white px-8 py-3 rounded-full font-semibold transition-all transform hover:scale-105">
+                                <i class="fas fa-sign-in-alt mr-2"></i>Sign in to Apply
+                            </a>
+                        {% endif %}
+
+                        <a href="{{ job.application_url }}" target="_blank"
+                           class="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-full hover:border-green-400 hover:text-green-600 transition-all font-semibold">
+                            <i class="fas fa-external-link-alt mr-2"></i>View Job
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        {% if jobs|length == 0 %}
+        <div class="text-center py-20">
+            <div class="text-6xl text-gray-300 mb-4">
+                <i class="fas fa-search"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-700 mb-2">No jobs found</h3>
+            <p class="text-gray-500">Try adjusting your search filters</p>
+        </div>
+        {% endif %}
+
+        <!-- Load More -->
+        <div class="text-center mt-12">
+            <button class="bg-white/80 backdrop-blur-sm border-2 border-gray-300 text-gray-700 px-10 py-4 rounded-full hover:border-green-400 hover:text-green-600 transition-all font-semibold shadow-lg">
+                <i class="fas fa-plus mr-2"></i>Load More Jobs
+            </button>
+        </div>
+    </main>
+
+    <script>
+        let selectedJobs = new Set();
+
+        function selectTopMatches() {
+            selectedJobs.clear();
+            document.querySelectorAll('.job-select').forEach(cb => cb.checked = false);
+
+            const jobCards = Array.from(document.querySelectorAll('.job-card')).slice(0, 10);
+
+            jobCards.forEach(card => {
+                const jobId = card.dataset.jobId;
+                const checkbox = card.querySelector('.job-select');
+                const appliedSpan = card.querySelector('.bg-green-100');
+
+                if (checkbox && !appliedSpan) {
+                    checkbox.checked = true;
+                    selectedJobs.add(jobId);
+                }
+            });
+
+            updateSelectedCount();
         }
-    }
 
-    window.location.href = '/jobs?' + params.toString();
-});
-
-// Clear filters
-function clearFilters() {
-    document.getElementById('filterForm').reset();
-    window.location.href = '/jobs';
-}
-
-// Sort jobs
-function sortJobs(sortBy) {
-    const url = new URL(window.location);
-    url.searchParams.set('sort', sortBy);
-    window.location.href = url.toString();
-}
-
-// Save job
-function saveJob(jobId, button) {
-    {% if current_user.is_authenticated %}
-        setLoading(button, true);
-
-        fetch(`/api/jobs/${jobId}/save`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
+        function updateSelectedCount() {
+            const count = selectedJobs.size;
+            const countElement = document.getElementById('selectedCount');
+            if (countElement) {
+                countElement.innerHTML = count > 0 ?
+                    `<i class="fas fa-check-circle mr-2"></i>${count} jobs selected for application` : '';
             }
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                button.innerHTML = '<i class="fas fa-check"></i> Saved';
-                button.classList.remove('btn-outline-secondary');
-                button.classList.add('btn-success');
-                button.disabled = true;
-                showToast(data.message, 'success');
-            } else {
-                showToast(data.message, 'error');
+        }
+
+        function applyToSelected() {
+            if (selectedJobs.size === 0) {
+                alert('Please select jobs to apply to');
+                return;
             }
-        })
-        .catch(error => {
-            showToast('Error saving job', 'error');
-        })
-        .finally(() => {
-            setLoading(button, false);
+
+            if (!confirm(`Apply to ${selectedJobs.size} jobs automatically?`)) {
+                return;
+            }
+
+            fetch('/api/jobs/apply-multiple', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ job_ids: Array.from(selectedJobs) })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(data.message);
+                    location.reload();
+                } else {
+                    alert(data.message || 'Failed to apply to jobs');
+                }
+            })
+            .catch(error => {
+                alert('Error: ' + error.message);
+            });
+        }
+
+        function applyToJob(jobId) {
+            fetch(`/api/jobs/${jobId}/apply`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(data.message);
+                    location.reload();
+                } else {
+                    alert(data.message || 'Failed to apply');
+                }
+            })
+            .catch(error => {
+                alert('Error: ' + error.message);
+            });
+        }
+
+        function filterJobs() {
+            const title = document.getElementById('titleFilter').value;
+            const location = document.getElementById('locationFilter').value;
+            const company = document.getElementById('companyFilter').value;
+            const remoteOnly = document.getElementById('remoteOnly').checked;
+
+            const params = new URLSearchParams();
+            if (title) params.append('title', title);
+            if (location) params.append('location', location);
+            if (company) params.append('company', company);
+            if (remoteOnly) params.append('remote_only', 'true');
+
+            window.location.href = '/jobs?' + params.toString();
+        }
+
+        // Handle job selection
+        document.addEventListener('change', function(e) {
+            if (e.target.classList.contains('job-select')) {
+                const jobId = e.target.dataset.jobId;
+                if (e.target.checked) {
+                    selectedJobs.add(jobId);
+                } else {
+                    selectedJobs.delete(jobId);
+                }
+                updateSelectedCount();
+            }
         });
-    {% else %}
-        window.location.href = '/login';
-    {% endif %}
-}
 
-// Apply to job
-function applyToJob(jobId, button) {
-    {% if current_user.is_authenticated %}
-        setLoading(button, true);
-
-        fetch(`/api/jobs/${jobId}/apply`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            }
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                button.innerHTML = '<i class="fas fa-check"></i> Applied';
-                button.classList.remove('btn-primary-custom');
-                button.classList.add('btn-success');
-                button.disabled = true;
-                showToast(data.message, 'success');
-            } else {
-                showToast(data.message, 'error');
-            }
-        })
-        .catch(error => {
-            showToast('Error applying to job', 'error');
-        })
-        .finally(() => {
-            setLoading(button, false);
+        // Add filter functionality
+        ['titleFilter', 'locationFilter', 'companyFilter'].forEach(id => {
+            document.getElementById(id).addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    filterJobs();
+                }
+            });
         });
-    {% else %}
-        window.location.href = '/login';
-    {% endif %}
-}
-
-// Auto-apply filters on input change (debounced)
-let filterTimeout;
-document.querySelectorAll('#filterForm input, #filterForm select').forEach(input => {
-    input.addEventListener('input', function() {
-        clearTimeout(filterTimeout);
-        filterTimeout = setTimeout(() => {
-            if (this.type !== 'submit') {
-                document.getElementById('filterForm').dispatchEvent(new Event('submit'));
-            }
-        }, 1000);
-    });
-});
-</script>
-{% endblock %}
+    </script>
+</body>
+</html>
