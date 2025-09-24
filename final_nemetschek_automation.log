@@ -1,0 +1,15 @@
+2025-09-22 23:03:15,564 - INFO - 🚀 STARTING FINAL NEMETSCHEK AUTOMATION
+2025-09-22 23:03:15,564 - INFO - Target: Real job application with UI confirmation
+2025-09-22 23:03:15,564 - INFO - ================================================================================
+2025-09-22 23:03:15,857 - INFO - WebDriver setup successfully
+2025-09-22 23:03:15,858 - INFO - Navigating to Nemetschek careers page...
+2025-09-22 23:03:25,243 - INFO - Screenshot saved: final_nemetschek_applications/screenshots/careers_page_loaded_230325.png
+2025-09-22 23:03:25,243 - INFO - Successfully loaded careers page
+2025-09-22 23:03:25,264 - INFO - Found Search Jobs button, clicking...
+2025-09-22 23:03:29,005 - INFO - Screenshot saved: final_nemetschek_applications/screenshots/after_search_jobs_click_230328.png
+2025-09-22 23:03:29,005 - INFO - Successfully clicked Search Jobs button
+2025-09-22 23:03:34,131 - INFO - Screenshot saved: final_nemetschek_applications/screenshots/job_results_loaded_230334.png
+2025-09-22 23:03:34,167 - INFO - Found 0 total jobs
+2025-09-22 23:03:34,167 - ERROR - No job listings found
+2025-09-22 23:03:34,167 - INFO - Browser remains open for manual verification...
+2025-09-22 23:03:34,167 - INFO - Check screenshots and results in the output directory

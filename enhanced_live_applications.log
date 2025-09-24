@@ -1,0 +1,84 @@
+2025-09-23 11:18:21,199 - INFO - 🚀 ENHANCED LIVE APPLICATION SYSTEM STARTING
+2025-09-23 11:18:21,199 - INFO - 🎯 GOAL: Real applications with confirmed submissions
+2025-09-23 11:18:21,199 - INFO - ================================================================================
+2025-09-23 11:18:21,199 - INFO - 🚀 Setting up Enhanced WebDriver...
+2025-09-23 11:18:21,825 - INFO - ✅ Enhanced WebDriver ready
+2025-09-23 11:18:21,825 - INFO - 🎯 STARTING ENHANCED LIVE APPLICATION SYSTEM
+2025-09-23 11:18:21,825 - INFO - ============================================================
+2025-09-23 11:18:32,454 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/jobright_homepage_111832.png
+2025-09-23 11:18:33,104 - INFO - Found 40 job opportunities
+2025-09-23 11:18:33,109 - INFO - 🎯 APPLICATION 1: Job_1
+2025-09-23 11:18:33,109 - INFO - URL: https://jobright.ai/jobs/info/68d2e0e217554c2d9eeeb237
+2025-09-23 11:18:38,619 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/job_page_0_111838.png
+2025-09-23 11:18:38,697 - INFO - ✅ Found apply button - proceeding...
+2025-09-23 11:18:43,840 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/application_form_0_111843.png
+2025-09-23 11:18:48,156 - INFO - ✅ Filled 0 form fields
+2025-09-23 11:18:48,294 - WARNING - No submit button found
+2025-09-23 11:18:51,298 - INFO - 🎯 APPLICATION 2: Job_2
+2025-09-23 11:18:51,299 - INFO - URL: https://jobright.ai/jobs/info/68d2def517554c2d9eeeb056
+2025-09-23 11:18:56,656 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/job_page_1_111856.png
+2025-09-23 11:18:56,695 - INFO - ✅ Found apply button - proceeding...
+2025-09-23 11:19:01,829 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/application_form_1_111901.png
+2025-09-23 11:19:04,828 - INFO - ✅ Filled 0 form fields
+2025-09-23 11:19:04,899 - WARNING - No submit button found
+2025-09-23 11:19:07,907 - INFO - 🎯 APPLICATION 3: Job_3
+2025-09-23 11:19:07,908 - INFO - URL: https://jobright.ai/jobs/info/68d2ddf5f0d9af73038dc493
+2025-09-23 11:19:13,254 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/job_page_2_111913.png
+2025-09-23 11:19:13,319 - INFO - ✅ Found apply button - proceeding...
+2025-09-23 11:19:18,473 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/application_form_2_111918.png
+2025-09-23 11:19:21,240 - INFO - ✅ Filled 0 form fields
+2025-09-23 11:19:21,292 - WARNING - No submit button found
+2025-09-23 11:19:24,296 - INFO - 🎯 APPLICATION 4: Job_4
+2025-09-23 11:19:24,296 - INFO - URL: https://jobright.ai/jobs/info/68d2de158c62e63bc7fdb03a
+2025-09-23 11:19:29,708 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/job_page_3_111929.png
+2025-09-23 11:19:29,756 - INFO - ✅ Found apply button - proceeding...
+2025-09-23 11:19:34,900 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/application_form_3_111934.png
+2025-09-23 11:19:37,456 - INFO - ✅ Filled 0 form fields
+2025-09-23 11:19:37,510 - WARNING - No submit button found
+2025-09-23 11:19:40,513 - INFO - 🎯 APPLICATION 5: Job_5
+2025-09-23 11:19:40,513 - INFO - URL: https://jobright.ai/jobs/info/68d2de168c62e63bc7fdb03b
+2025-09-23 11:19:45,895 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/job_page_4_111945.png
+2025-09-23 11:19:45,944 - INFO - ✅ Found apply button - proceeding...
+2025-09-23 11:19:51,099 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/application_form_4_111951.png
+2025-09-23 11:19:53,697 - INFO - ✅ Filled 0 form fields
+2025-09-23 11:19:53,747 - WARNING - No submit button found
+2025-09-23 11:19:56,750 - INFO - 🎯 APPLICATION 6: Job_6
+2025-09-23 11:19:56,750 - INFO - URL: https://jobright.ai/jobs/info/68d2ddf3f0d9af73038dc491
+2025-09-23 11:20:02,045 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/job_page_5_112001.png
+2025-09-23 11:20:02,080 - INFO - ✅ Found apply button - proceeding...
+2025-09-23 11:20:07,221 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/application_form_5_112007.png
+2025-09-23 11:20:09,946 - INFO - ✅ Filled 0 form fields
+2025-09-23 11:20:10,064 - WARNING - No submit button found
+2025-09-23 11:20:13,067 - INFO - 🎯 APPLICATION 7: Job_7
+2025-09-23 11:20:13,067 - INFO - URL: https://jobright.ai/jobs/info/68d2ddc4f0d9af73038dc443
+2025-09-23 11:20:18,411 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/job_page_6_112018.png
+2025-09-23 11:20:18,472 - INFO - ✅ Found apply button - proceeding...
+2025-09-23 11:20:23,602 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/application_form_6_112023.png
+2025-09-23 11:20:26,113 - INFO - ✅ Filled 0 form fields
+2025-09-23 11:20:26,151 - WARNING - No submit button found
+2025-09-23 11:20:29,154 - INFO - 🎯 APPLICATION 8: Job_8
+2025-09-23 11:20:29,154 - INFO - URL: https://jobright.ai/jobs/info/68d2ddee8c62e63bc7fdb01f
+2025-09-23 11:20:34,886 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/job_page_7_112034.png
+2025-09-23 11:20:34,925 - INFO - ✅ Found apply button - proceeding...
+2025-09-23 11:20:40,066 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/application_form_7_112039.png
+2025-09-23 11:20:42,691 - INFO - ✅ Filled 0 form fields
+2025-09-23 11:20:42,747 - WARNING - No submit button found
+2025-09-23 11:20:45,752 - INFO - 🎯 APPLICATION 9: Job_9
+2025-09-23 11:20:45,752 - INFO - URL: https://jobright.ai/jobs/info/68d2dd8217554c2d9eeeafdd
+2025-09-23 11:20:51,100 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/job_page_8_112051.png
+2025-09-23 11:20:51,144 - INFO - ✅ Found apply button - proceeding...
+2025-09-23 11:20:56,286 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/application_form_8_112056.png
+2025-09-23 11:20:58,765 - INFO - ✅ Filled 0 form fields
+2025-09-23 11:20:58,804 - WARNING - No submit button found
+2025-09-23 11:21:01,807 - INFO - 🎯 APPLICATION 10: Job_10
+2025-09-23 11:21:01,807 - INFO - URL: https://jobright.ai/jobs/info/68d2dd90f0d9af73038dc3e4
+2025-09-23 11:21:07,157 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/job_page_9_112107.png
+2025-09-23 11:21:07,219 - INFO - ✅ Found apply button - proceeding...
+2025-09-23 11:21:12,365 - INFO - 📸 Screenshot: enhanced_live_applications/screenshots/application_form_9_112112.png
+2025-09-23 11:21:14,835 - INFO - ✅ Filled 0 form fields
+2025-09-23 11:21:14,877 - WARNING - No submit button found
+2025-09-23 11:21:17,877 - INFO - 📊 FINAL REPORT: enhanced_live_applications/ENHANCED_LIVE_REPORT_20250923_112117.json
+2025-09-23 11:21:17,877 - INFO - 🏆 ENHANCED SYSTEM COMPLETED
+2025-09-23 11:21:17,877 - INFO - ✅ Confirmed applications: 0
+2025-09-23 11:21:17,877 - WARNING - ❌ No applications were confirmed
+2025-09-23 11:21:17,877 - INFO - 🔍 Keeping browser open for verification...

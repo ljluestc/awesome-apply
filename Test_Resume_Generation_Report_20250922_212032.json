@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-09-22T21:20:32.760894",
+  "total_jobs": 3,
+  "successful": 3,
+  "failed": 0,
+  "results": [
+    {
+      "job": "Senior DevOps Engineer - Cloud Infrastructure",
+      "file": "Test_Nemetschek_Senior_DevOps_Engineer___Cloud_Infrastructure_20250922_212032.tex",
+      "size": 7019,
+      "success": true
+    },
+    {
+      "job": "Senior Software Engineer - CAD Platform",
+      "file": "Test_Nemetschek_Senior_Software_Engineer___CAD_Platform_20250922_212032.tex",
+      "size": 6931,
+      "success": true
+    },
+    {
+      "job": "Full Stack Developer - Web Platform",
+      "file": "Test_Nemetschek_Full_Stack_Developer___Web_Platform_20250922_212032.tex",
+      "size": 6915,
+      "success": true
+    }
+  ]
+}

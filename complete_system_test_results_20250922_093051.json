@@ -1,0 +1,21 @@
+{
+  "start_time": "2025-09-22T09:30:51.261516",
+  "tests_passed": 1,
+  "tests_failed": 4,
+  "test_details": [
+    {
+      "test": "Resume Generation",
+      "status": "FAILED",
+      "error": "'DynamicResumeGenerator' object has no attribute 'generate_customized_resume'"
+    },
+    {
+      "test": "Automation System Initialization",
+      "status": "PASSED",
+      "has_personal_data": true,
+      "has_resume_generator": true
+    }
+  ],
+  "end_time": "2025-09-22T09:30:51.261908",
+  "total_tests": 5,
+  "success_rate": 20.0
+}

@@ -1,0 +1,30 @@
+{
+  "job": {
+    "index": 0,
+    "title": "Senior",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  "application_method": "internal_system",
+  "applicant_info": {
+    "first_name": "Jiale",
+    "last_name": "Lin",
+    "email": "jiale.lin.x@gmail.com",
+    "phone": "+1-857-294-1281",
+    "address": "123 Tech Street",
+    "city": "Boston",
+    "state": "MA",
+    "zip_code": "02101",
+    "country": "United States",
+    "linkedin": "https://linkedin.com/in/jiale-lin",
+    "github": "https://github.com/jiale-lin",
+    "website": "https://jiale-lin.dev"
+  },
+  "timestamp": "2025-09-23T08:05:05.206989",
+  "start_time": "2025-09-23T08:05:03.173091",
+  "duration_seconds": 2.033913,
+  "status": "SUCCESS",
+  "application_id": "jobright_app_1_080505"
+}

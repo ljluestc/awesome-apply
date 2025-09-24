@@ -1,0 +1,20 @@
+NEMETSCHEK APPLICATION AUTOMATION SUMMARY
+==================================================
+
+Generated on: 2025-09-22 21:02:05
+Total jobs processed: 2
+
+1. Senior Software Engineer - Cloud Platform
+   Location: Munich, Germany
+   Application Success: True
+   Documents Generated: True
+   Skill Match: 100.0%
+   Gaps Identified: 2
+
+2. DevOps Engineer - Infrastructure Automation
+   Location: Remote
+   Application Success: True
+   Documents Generated: True
+   Skill Match: 77.8%
+   Gaps Identified: 2
+

@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Recommendations | JobRight AI</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f8fafc;
+            color: #1a202c;
+            line-height: 1.6;
+        }
+
+        /* JobRight.ai Style Variables */
+        :root {
+            --primary-green: #00f0a0;
+            --dark-navy: #001529;
+            --light-gray: #f8fafc;
+            --text-primary: #1a202c;
+            --text-secondary: #4a5568;
+            --border-color: #e2e8f0;
+            --white: #ffffff;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--primary-green);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-green);
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 500;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.875rem;
+        }
+
+        .btn-primary {
+            background: var(--primary-green);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #00d48a;
+            transform: translateY(-1px);
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-ghost:hover {
+            border-color: var(--primary-green);
+            color: var(--primary-green);
+        }
+
+        /* Main Content */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2rem;
+        }
+
+        /* Sidebar Filters */
+        .filters-sidebar {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            height: fit-content;
+            border: 1px solid var(--border-color);
+        }
+
+        .filter-section {
+            margin-bottom: 2rem;
+        }
+
+        .filter-title {
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .filter-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .filter-option:hover {
+            background: #f7fafc;
+        }
+
+        .filter-checkbox {
+            accent-color: var(--primary-green);
+        }
+
+        /* Jobs Content */
+        .jobs-content {
+            background: var(--white);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .jobs-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .jobs-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .jobs-count {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .sort-dropdown {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: white;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* Job Cards */
+        .jobs-list {
+            padding: 1rem;
+        }
+
+        .job-card {
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            background: white;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .job-card:hover {
+            border-color: var(--primary-green);
+            box-shadow: 0 4px 12px rgba(0, 240, 160, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .job-info {
+            flex: 1;
+        }
+
+        .job-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .company-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .company-logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--primary-green), #00d48a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .company-name {
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .job-location {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .job-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .salary {
+            color: var(--primary-green);
+            font-weight: 600;
+        }
+
+        .job-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .job-tag {
+            background: #f7fafc;
+            color: var(--text-secondary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .job-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .match-score {
+            background: linear-gradient(135deg, var(--primary-green), #00d48a);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .btn-apply {
+            background: var(--primary-green);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-apply:hover {
+            background: #00d48a;
+            transform: translateY(-1px);
+        }
+
+        .btn-save {
+            background: transparent;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-save:hover {
+            border-color: var(--primary-green);
+            color: var(--primary-green);
+        }
+
+        /* Loading States */
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 50%;
+            border-top-color: var(--primary-green);
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-container {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .job-card {
+                padding: 1rem;
+            }
+
+            .job-header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .job-actions {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="/jobs/recommend" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                JobRight.ai
+            </a>
+
+            <nav class="nav-menu">
+                <a href="/jobs/recommend" class="nav-link">Find Jobs</a>
+                <a href="/applications" class="nav-link">Applications</a>
+                <a href="/saved-jobs" class="nav-link">Saved</a>
+                <a href="/ai-agent" class="nav-link">AI Agent</a>
+                <a href="/orion" class="nav-link">Orion AI</a>
+            </nav>
+
+            <div class="user-menu">
+                <a href="/profile" class="btn btn-ghost">
+                    <i class="fas fa-user"></i> Profile
+                </a>
+                <a href="/pricing" class="btn btn-primary">
+                    <i class="fas fa-crown"></i> Upgrade
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar Filters -->
+        <aside class="filters-sidebar">
+            <div class="filter-section">
+                <h3 class="filter-title">Location</h3>
+                <div class="filter-group">
+                    <label class="filter-option">
+                        <input type="checkbox" class="filter-checkbox" data-filter="location" value="remote">
+                        <span>Remote</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" class="filter-checkbox" data-filter="location" value="san-francisco">
+                        <span>San Francisco</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" class="filter-checkbox" data-filter="location" value="new-york">
+                        <span>New York</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" class="filter-checkbox" data-filter="location" value="seattle">
+                        <span>Seattle</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">Experience Level</h3>
+                <div class="filter-group">
+                    <label class="filter-option">
+                        <input type="checkbox" class="filter-checkbox" data-filter="experience" value="entry">
+                        <span>Entry Level</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" class="filter-checkbox" data-filter="experience" value="mid">
+                        <span>Mid Level</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" class="filter-checkbox" data-filter="experience" value="senior">
+                        <span>Senior Level</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">Job Type</h3>
+                <div class="filter-group">
+                    <label class="filter-option">
+                        <input type="checkbox" class="filter-checkbox" data-filter="type" value="full-time">
+                        <span>Full-time</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" class="filter-checkbox" data-filter="type" value="part-time">
+                        <span>Part-time</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" class="filter-checkbox" data-filter="type" value="contract">
+                        <span>Contract</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">Salary Range</h3>
+                <div class="filter-group">
+                    <label class="filter-option">
+                        <input type="checkbox" class="filter-checkbox" data-filter="salary" value="50k-75k">
+                        <span>$50k - $75k</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" class="filter-checkbox" data-filter="salary" value="75k-100k">
+                        <span>$75k - $100k</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" class="filter-checkbox" data-filter="salary" value="100k-150k">
+                        <span>$100k - $150k</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" class="filter-checkbox" data-filter="salary" value="150k+">
+                        <span>$150k+</span>
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Jobs Content -->
+        <main class="jobs-content">
+            <div class="jobs-header">
+                <div>
+                    <h1 class="jobs-title">Recommended Jobs</h1>
+                    <p class="jobs-count">Loading personalized recommendations...</p>
+                </div>
+                <select class="sort-dropdown">
+                    <option value="relevance">Sort by Relevance</option>
+                    <option value="date">Sort by Date</option>
+                    <option value="salary">Sort by Salary</option>
+                    <option value="match">Sort by Match Score</option>
+                </select>
+            </div>
+
+            <div class="jobs-list" id="jobs-container">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading your personalized job recommendations...</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Load jobs on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadJobs();
+        });
+
+        function loadJobs() {
+            fetch('/api/jobs/search')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.jobs) {
+                        renderJobs(data.jobs);
+                        updateJobsCount(data.jobs.length);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading jobs:', error);
+                    document.getElementById('jobs-container').innerHTML =
+                        '<div class="loading"><p>Error loading jobs. Please try again.</p></div>';
+                });
+        }
+
+        function renderJobs(jobs) {
+            const container = document.getElementById('jobs-container');
+
+            if (jobs.length === 0) {
+                container.innerHTML = '<div class="loading"><p>No jobs found matching your criteria.</p></div>';
+                return;
+            }
+
+            container.innerHTML = jobs.map(job => `
+                <div class="job-card" onclick="viewJob('${job.id}')">
+                    <div class="job-header">
+                        <div class="job-info">
+                            <h2 class="job-title">${job.title}</h2>
+                            <div class="company-info">
+                                <div class="company-logo">
+                                    ${job.company.charAt(0).toUpperCase()}
+                                </div>
+                                <div>
+                                    <div class="company-name">${job.company}</div>
+                                    <div class="job-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        ${job.location}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="match-score">
+                            ${Math.round(job.match_score || 85)}% Match
+                        </div>
+                    </div>
+
+                    <div class="job-meta">
+                        <div class="meta-item salary">
+                            <i class="fas fa-dollar-sign"></i>
+                            $${(job.salary_min || 80000).toLocaleString()} - $${(job.salary_max || 120000).toLocaleString()}
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-briefcase"></i>
+                            ${job.job_type || 'Full-time'}
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            ${job.experience_level || 'Mid Level'}
+                        </div>
+                    </div>
+
+                    <div class="job-tags">
+                        ${(job.skills || ['JavaScript', 'React', 'Node.js']).slice(0, 4).map(skill =>
+                            `<span class="job-tag">${skill}</span>`
+                        ).join('')}
+                    </div>
+
+                    <div class="job-actions">
+                        <button class="btn-apply" onclick="event.stopPropagation(); applyToJob('${job.id}', this)">
+                            <i class="fas fa-paper-plane"></i> Apply Now
+                        </button>
+                        <button class="btn-save" onclick="event.stopPropagation(); saveJob('${job.id}', this)">
+                            <i class="fas fa-heart"></i> Save
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function updateJobsCount(count) {
+            document.querySelector('.jobs-count').textContent = `${count} personalized recommendations`;
+        }
+
+        function viewJob(jobId) {
+            window.open(`/jobs/${jobId}`, '_blank');
+        }
+
+        function applyToJob(jobId, button) {
+            const originalText = button.innerHTML;
+            button.innerHTML = '<div class="spinner"></div> Applying...';
+            button.disabled = true;
+
+            fetch(`/api/jobs/${jobId}/apply`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    button.innerHTML = '<i class="fas fa-check"></i> Applied';
+                    button.style.background = '#00d48a';
+                    showToast('Application submitted successfully!', 'success');
+                } else {
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                    showToast(data.message || 'Failed to apply', 'error');
+                }
+            })
+            .catch(error => {
+                button.innerHTML = originalText;
+                button.disabled = false;
+                showToast('Error applying to job', 'error');
+            });
+        }
+
+        function saveJob(jobId, button) {
+            const originalText = button.innerHTML;
+            button.innerHTML = '<div class="spinner"></div>';
+            button.disabled = true;
+
+            fetch(`/api/jobs/${jobId}/save`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    button.innerHTML = '<i class="fas fa-heart" style="color: #00f0a0;"></i> Saved';
+                    showToast('Job saved successfully!', 'success');
+                } else {
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                    showToast(data.message || 'Failed to save job', 'error');
+                }
+            })
+            .catch(error => {
+                button.innerHTML = originalText;
+                button.disabled = false;
+                showToast('Error saving job', 'error');
+            });
+        }
+
+        function showToast(message, type) {
+            // Simple toast notification
+            const toast = document.createElement('div');
+            toast.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'success' ? '#00f0a0' : type === 'error' ? '#ff4757' : '#3742fa'};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 8px;
+                z-index: 10000;
+                animation: slideIn 0.3s ease;
+            `;
+            toast.textContent = message;
+
+            document.body.appendChild(toast);
+
+            setTimeout(() => {
+                toast.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        // Add CSS for toast animations
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+            @keyframes slideOut {
+                from { transform: translateX(0); opacity: 1; }
+                to { transform: translateX(100%); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Filter functionality
+        document.querySelectorAll('.filter-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                applyFilters();
+            });
+        });
+
+        function applyFilters() {
+            const filters = {};
+            document.querySelectorAll('.filter-checkbox:checked').forEach(checkbox => {
+                const filterType = checkbox.dataset.filter;
+                if (!filters[filterType]) filters[filterType] = [];
+                filters[filterType].push(checkbox.value);
+            });
+
+            const queryParams = new URLSearchParams();
+            Object.entries(filters).forEach(([key, values]) => {
+                queryParams.set(key, values.join(','));
+            });
+
+            fetch(`/api/jobs/search?${queryParams}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.jobs) {
+                        renderJobs(data.jobs);
+                        updateJobsCount(data.jobs.length);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error filtering jobs:', error);
+                });
+        }
+    </script>
+</body>
+</html>

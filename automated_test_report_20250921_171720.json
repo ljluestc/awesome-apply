@@ -1,0 +1,325 @@
+{
+  "test_summary": {
+    "timestamp": "2025-09-21T17:17:20.354302",
+    "total_pages_tested": 4,
+    "total_applications_attempted": 39,
+    "total_successful_applications": 30,
+    "total_failed_applications": 0,
+    "success_rate": 100.0
+  },
+  "page_reports": [
+    {
+      "page": 1,
+      "jobs_found": 20,
+      "applications_attempted": 10,
+      "applications_successful": 10,
+      "applications_failed": 0,
+      "duration_seconds": 5.190786,
+      "jobs_applied": [
+        {
+          "id": "hn_hugging_face_ai_research_scientist",
+          "title": "AI Research Scientist",
+          "company": "Hugging Face",
+          "application_url": "https://huggingface.co/careers",
+          "match_score": 76.78834799970505
+        },
+        {
+          "id": "remoteok_1095415",
+          "title": "Software Engineer Gauntlet App",
+          "company": "Gauntlet",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-software-engineer-gauntlet-app-gauntlet-1095415",
+          "match_score": 75.36984520630456
+        },
+        {
+          "id": "yc_airbnb_senior_software_engineer",
+          "title": "Senior Software Engineer",
+          "company": "Airbnb",
+          "application_url": "https://careers.airbnb.com/",
+          "match_score": 75.05887539363603
+        },
+        {
+          "id": "hn_anthropic_ml_engineer",
+          "title": "ML Engineer",
+          "company": "Anthropic",
+          "application_url": "https://www.anthropic.com/careers",
+          "match_score": 73.63109586713594
+        },
+        {
+          "id": "yc_coinbase_senior_software_engineer",
+          "title": "Senior Software Engineer",
+          "company": "Coinbase",
+          "application_url": "https://www.coinbase.com/careers",
+          "match_score": 73.09099088298925
+        },
+        {
+          "id": "yc_instacart_senior_software_engineer",
+          "title": "Senior Software Engineer",
+          "company": "Instacart",
+          "application_url": "https://careers.instacart.com/",
+          "match_score": 72.8704548750934
+        },
+        {
+          "id": "remoteok_1112042",
+          "title": "LLM Data Engineer",
+          "company": "Sanctuary Computer",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-llm-data-engineer-sanctuary-computer-1112042",
+          "match_score": 72.75765956920793
+        },
+        {
+          "id": "yc_airbnb_software_engineer",
+          "title": "Software Engineer",
+          "company": "Airbnb",
+          "application_url": "https://careers.airbnb.com/",
+          "match_score": 72.54897091271303
+        },
+        {
+          "id": "yc_stripe_senior_software_engineer",
+          "title": "Senior Software Engineer",
+          "company": "Stripe",
+          "application_url": "https://stripe.com/jobs",
+          "match_score": 72.52413265729818
+        },
+        {
+          "id": "hn_scale_ai_ml_engineer",
+          "title": "ML Engineer",
+          "company": "Scale AI",
+          "application_url": "https://scale.com/careers",
+          "match_score": 72.27775488606454
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "jobs_found": 20,
+      "applications_attempted": 10,
+      "applications_successful": 10,
+      "applications_failed": 0,
+      "duration_seconds": 5.566711,
+      "jobs_applied": [
+        {
+          "id": "yc_reddit_senior_software_engineer",
+          "title": "Senior Software Engineer",
+          "company": "Reddit",
+          "application_url": "https://www.redditinc.com/careers",
+          "match_score": 64.14266763100724
+        },
+        {
+          "id": "remoteok_1112254",
+          "title": "Senior Full stack Developer",
+          "company": "Lemon.io",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-senior-full-stack-developer-lemon-io-1112254",
+          "match_score": 63.79927647517012
+        },
+        {
+          "id": "hn_anthropic_ml_engineer",
+          "title": "ML Engineer",
+          "company": "Anthropic",
+          "application_url": "https://www.anthropic.com/careers",
+          "match_score": 63.19732929087594
+        },
+        {
+          "id": "hn_modal_ai_research_scientist",
+          "title": "AI Research Scientist",
+          "company": "Modal",
+          "application_url": "https://modal.com/careers",
+          "match_score": 63.038605363982434
+        },
+        {
+          "id": "remoteok_1112042",
+          "title": "LLM Data Engineer",
+          "company": "Sanctuary Computer",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-llm-data-engineer-sanctuary-computer-1112042",
+          "match_score": 62.917206506409954
+        },
+        {
+          "id": "remoteok_1122590",
+          "title": "Founding Sales & Customer Success",
+          "company": "CoGrader",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-founding-sales-customer-success-cograder-1122590",
+          "match_score": 62.4938699827262
+        },
+        {
+          "id": "hn_modal_ml_engineer",
+          "title": "ML Engineer",
+          "company": "Modal",
+          "application_url": "https://modal.com/careers",
+          "match_score": 62.274485488580616
+        },
+        {
+          "id": "yc_instacart_software_engineer",
+          "title": "Software Engineer",
+          "company": "Instacart",
+          "application_url": "https://careers.instacart.com/",
+          "match_score": 61.88466623250376
+        },
+        {
+          "id": "remoteok_1097929",
+          "title": "Engineering Lead",
+          "company": "Aragon",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-engineering-lead-aragon-1097929",
+          "match_score": 61.80338166165692
+        },
+        {
+          "id": "remoteok_1096950",
+          "title": "Python Developer",
+          "company": "Ampcontrol",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-python-developer-ampcontrol-1096950",
+          "match_score": 61.54694121292637
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "jobs_found": 20,
+      "applications_attempted": 10,
+      "applications_successful": 10,
+      "applications_failed": 0,
+      "duration_seconds": 5.210466,
+      "jobs_applied": [
+        {
+          "id": "remoteok_1094864",
+          "title": "Principal Data Engineer",
+          "company": "PEXA Group",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-principal-data-engineer-pexa-group-1094864",
+          "match_score": 58.282438471334125
+        },
+        {
+          "id": "hn_replicate_ai_research_scientist",
+          "title": "AI Research Scientist",
+          "company": "Replicate",
+          "application_url": "https://replicate.com/jobs",
+          "match_score": 58.12728228050003
+        },
+        {
+          "id": "remoteok_1117685",
+          "title": "Support Specialist and Writer",
+          "company": "Interaction Design Foundation",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-support-specialist-and-writer-interaction-design-foundation-1117685",
+          "match_score": 57.94591447959316
+        },
+        {
+          "id": "hn_openai_ml_engineer",
+          "title": "ML Engineer",
+          "company": "OpenAI",
+          "application_url": "https://openai.com/careers/",
+          "match_score": 57.72006462688889
+        },
+        {
+          "id": "hn_modal_ml_engineer",
+          "title": "ML Engineer",
+          "company": "Modal",
+          "application_url": "https://modal.com/careers",
+          "match_score": 57.6990230871982
+        },
+        {
+          "id": "angel_supabase_backend_engineer",
+          "title": "Backend Engineer",
+          "company": "Supabase",
+          "application_url": "https://supabase.com/careers",
+          "match_score": 57.47285649246717
+        },
+        {
+          "id": "remoteok_1107448",
+          "title": "Senior Ruby on Rails Engineer",
+          "company": "EverAI",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-senior-ruby-on-rails-engineer-everai-1107448",
+          "match_score": 56.77686947065762
+        },
+        {
+          "id": "remoteok_1094096",
+          "title": "Compliance Analyst Law Enforcement Requests Bulgaria",
+          "company": "Crypto.com",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-compliance-analyst-law-enforcement-requests-bulgaria-crypto-com-1094096",
+          "match_score": 56.221256114748634
+        },
+        {
+          "id": "angel_vercel_frontend_engineer",
+          "title": "Frontend Engineer",
+          "company": "Vercel",
+          "application_url": "https://vercel.com/careers",
+          "match_score": 56.18925839465261
+        },
+        {
+          "id": "remoteok_1095763",
+          "title": "Manager Business Intelligence",
+          "company": "Bullish US LLC",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-manager-business-intelligence-bullish-us-llc-1095763",
+          "match_score": 56.11807518710339
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "jobs_found": 9,
+      "applications_attempted": 9,
+      "applications_successful": 9,
+      "applications_failed": 0,
+      "duration_seconds": 4.687539,
+      "jobs_applied": [
+        {
+          "id": "remoteok_1094983",
+          "title": "Big Data Engineer Professional Services",
+          "company": "BrightEdge",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-big-data-engineer-professional-services-brightedge-1094983",
+          "match_score": 48.88174672038096
+        },
+        {
+          "id": "remoteok_1109273",
+          "title": "Client Success Manager",
+          "company": "Venus",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-client-success-manager-venus-1109273",
+          "match_score": 48.5708574886377
+        },
+        {
+          "id": "angel_supabase_frontend_engineer",
+          "title": "Frontend Engineer",
+          "company": "Supabase",
+          "application_url": "https://supabase.com/careers",
+          "match_score": 48.49880710442377
+        },
+        {
+          "id": "angel_vercel_backend_engineer",
+          "title": "Backend Engineer",
+          "company": "Vercel",
+          "application_url": "https://vercel.com/careers",
+          "match_score": 47.7098121068636
+        },
+        {
+          "id": "remoteok_1113309",
+          "title": "Global Operations Manager Fashion",
+          "company": "Rosie Etienne",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-global-operations-manager-fashion-rosie-etienne-1113309",
+          "match_score": 47.505354829191546
+        },
+        {
+          "id": "angel_figma_backend_engineer",
+          "title": "Backend Engineer",
+          "company": "Figma",
+          "application_url": "https://www.figma.com/careers/",
+          "match_score": 46.356921143675315
+        },
+        {
+          "id": "remoteok_1122247",
+          "title": "Senior Backend Engineer",
+          "company": "Dacr",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-senior-backend-engineer-dacr-1122247",
+          "match_score": 45.59529330779545
+        },
+        {
+          "id": "remoteok_1097929",
+          "title": "Engineering Lead",
+          "company": "Aragon",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-engineering-lead-aragon-1097929",
+          "match_score": 45.16505933608332
+        },
+        {
+          "id": "remoteok_1104952",
+          "title": "Senior DevOps Engineer",
+          "company": "Aguru UK",
+          "application_url": "https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-aguru-uk-1104952",
+          "match_score": 44.30290397066905
+        }
+      ]
+    }
+  ]
+}

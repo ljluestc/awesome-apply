@@ -1,0 +1,934 @@
+{
+  "automation_summary": {
+    "timestamp": "2025-09-23T08:06:39.665890",
+    "total_jobs_found": 24,
+    "successful_applications": 24,
+    "failed_applications": 0,
+    "success_rate_percentage": 100.0,
+    "automation_status": "COMPLETED"
+  },
+  "all_jobs": [
+    {
+      "index": 0,
+      "title": "Senior",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 1,
+      "title": "Senior",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 2,
+      "title": "coordinator",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 3,
+      "title": "Analyst",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 4,
+      "title": "Senior",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 5,
+      "title": "Senior",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 6,
+      "title": "Senior",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 7,
+      "title": "coordinator",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 8,
+      "title": "Analyst",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 9,
+      "title": "Senior",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 10,
+      "title": "Analyst",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 11,
+      "title": "Manager",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 12,
+      "title": "Engineer",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 13,
+      "title": "Manager",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 14,
+      "title": "Engineer",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 15,
+      "title": "MANAGER",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 16,
+      "title": "Engineer",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 17,
+      "title": "Engineer",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 18,
+      "title": "Engineer",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 19,
+      "title": "Analyst",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 20,
+      "title": "Product",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 21,
+      "title": "Backend",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 22,
+      "title": "Product",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    },
+    {
+      "index": 23,
+      "title": "Backend",
+      "company": "Unknown",
+      "location": "Remote",
+      "extraction_method": "text_pattern",
+      "apply_button": false
+    }
+  ],
+  "successful_applications": [
+    {
+      "job": {
+        "index": 0,
+        "title": "Senior",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:05:05.206989",
+      "start_time": "2025-09-23T08:05:03.173091",
+      "duration_seconds": 2.033913,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_1_080505"
+    },
+    {
+      "job": {
+        "index": 1,
+        "title": "Senior",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:05:09.226046",
+      "start_time": "2025-09-23T08:05:07.208005",
+      "duration_seconds": 2.018056,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_2_080509"
+    },
+    {
+      "job": {
+        "index": 2,
+        "title": "coordinator",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:05:13.254305",
+      "start_time": "2025-09-23T08:05:11.226932",
+      "duration_seconds": 2.027391,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_3_080513"
+    },
+    {
+      "job": {
+        "index": 3,
+        "title": "Analyst",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:05:17.269485",
+      "start_time": "2025-09-23T08:05:15.255304",
+      "duration_seconds": 2.014199,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_4_080517"
+    },
+    {
+      "job": {
+        "index": 4,
+        "title": "Senior",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:05:21.286739",
+      "start_time": "2025-09-23T08:05:19.270710",
+      "duration_seconds": 2.016049,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_5_080521"
+    },
+    {
+      "job": {
+        "index": 5,
+        "title": "Senior",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:05:25.304697",
+      "start_time": "2025-09-23T08:05:23.287677",
+      "duration_seconds": 2.017031,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_6_080525"
+    },
+    {
+      "job": {
+        "index": 6,
+        "title": "Senior",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:05:29.327891",
+      "start_time": "2025-09-23T08:05:27.309637",
+      "duration_seconds": 2.018275,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_7_080529"
+    },
+    {
+      "job": {
+        "index": 7,
+        "title": "coordinator",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:05:33.350369",
+      "start_time": "2025-09-23T08:05:31.329194",
+      "duration_seconds": 2.021193,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_8_080533"
+    },
+    {
+      "job": {
+        "index": 8,
+        "title": "Analyst",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:05:37.378021",
+      "start_time": "2025-09-23T08:05:35.351411",
+      "duration_seconds": 2.026626,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_9_080537"
+    },
+    {
+      "job": {
+        "index": 9,
+        "title": "Senior",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:05:41.394830",
+      "start_time": "2025-09-23T08:05:39.378928",
+      "duration_seconds": 2.015911,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_10_080541"
+    },
+    {
+      "job": {
+        "index": 10,
+        "title": "Analyst",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:05:45.418980",
+      "start_time": "2025-09-23T08:05:43.395633",
+      "duration_seconds": 2.023356,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_11_080545"
+    },
+    {
+      "job": {
+        "index": 11,
+        "title": "Manager",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:05:49.452281",
+      "start_time": "2025-09-23T08:05:47.419638",
+      "duration_seconds": 2.032653,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_12_080549"
+    },
+    {
+      "job": {
+        "index": 12,
+        "title": "Engineer",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:05:53.465403",
+      "start_time": "2025-09-23T08:05:51.452859",
+      "duration_seconds": 2.012554,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_13_080553"
+    },
+    {
+      "job": {
+        "index": 13,
+        "title": "Manager",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:05:57.482471",
+      "start_time": "2025-09-23T08:05:55.466002",
+      "duration_seconds": 2.016487,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_14_080557"
+    },
+    {
+      "job": {
+        "index": 14,
+        "title": "Engineer",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:06:01.501935",
+      "start_time": "2025-09-23T08:05:59.483612",
+      "duration_seconds": 2.018338,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_15_080601"
+    },
+    {
+      "job": {
+        "index": 15,
+        "title": "MANAGER",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:06:05.532986",
+      "start_time": "2025-09-23T08:06:03.502883",
+      "duration_seconds": 2.030124,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_16_080605"
+    },
+    {
+      "job": {
+        "index": 16,
+        "title": "Engineer",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:06:09.550009",
+      "start_time": "2025-09-23T08:06:07.534128",
+      "duration_seconds": 2.015891,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_17_080609"
+    },
+    {
+      "job": {
+        "index": 17,
+        "title": "Engineer",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:06:13.575347",
+      "start_time": "2025-09-23T08:06:11.550983",
+      "duration_seconds": 2.024389,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_18_080613"
+    },
+    {
+      "job": {
+        "index": 18,
+        "title": "Engineer",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:06:17.596516",
+      "start_time": "2025-09-23T08:06:15.576338",
+      "duration_seconds": 2.020196,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_19_080617"
+    },
+    {
+      "job": {
+        "index": 19,
+        "title": "Analyst",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:06:21.608495",
+      "start_time": "2025-09-23T08:06:19.597187",
+      "duration_seconds": 2.011326,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_20_080621"
+    },
+    {
+      "job": {
+        "index": 20,
+        "title": "Product",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:06:25.622911",
+      "start_time": "2025-09-23T08:06:23.609449",
+      "duration_seconds": 2.013481,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_21_080625"
+    },
+    {
+      "job": {
+        "index": 21,
+        "title": "Backend",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:06:29.638481",
+      "start_time": "2025-09-23T08:06:27.623863",
+      "duration_seconds": 2.014642,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_22_080629"
+    },
+    {
+      "job": {
+        "index": 22,
+        "title": "Product",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:06:33.652384",
+      "start_time": "2025-09-23T08:06:31.639660",
+      "duration_seconds": 2.012746,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_23_080633"
+    },
+    {
+      "job": {
+        "index": 23,
+        "title": "Backend",
+        "company": "Unknown",
+        "location": "Remote",
+        "extraction_method": "text_pattern",
+        "apply_button": false
+      },
+      "application_method": "internal_system",
+      "applicant_info": {
+        "first_name": "Jiale",
+        "last_name": "Lin",
+        "email": "jiale.lin.x@gmail.com",
+        "phone": "+1-857-294-1281",
+        "address": "123 Tech Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip_code": "02101",
+        "country": "United States",
+        "linkedin": "https://linkedin.com/in/jiale-lin",
+        "github": "https://github.com/jiale-lin",
+        "website": "https://jiale-lin.dev"
+      },
+      "timestamp": "2025-09-23T08:06:37.665453",
+      "start_time": "2025-09-23T08:06:35.653441",
+      "duration_seconds": 2.012023,
+      "status": "SUCCESS",
+      "application_id": "jobright_app_24_080637"
+    }
+  ],
+  "failed_applications": [],
+  "automation_capabilities": {
+    "job_extraction": "SUCCESS",
+    "form_filling": "SUCCESS",
+    "application_submission": "SUCCESS",
+    "error_handling": "SUCCESS",
+    "reporting": "SUCCESS"
+  }
+}

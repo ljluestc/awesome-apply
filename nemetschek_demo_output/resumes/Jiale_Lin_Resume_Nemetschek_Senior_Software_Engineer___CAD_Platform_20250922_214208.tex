@@ -1,0 +1,145 @@
+% Resume in LaTeX (sb2nov template) — Jiale Lin
+% https://github.com/sb2nov/resume  |  License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear header/footer
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins (sb2nov defaults)
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+
+% Section formatting (sb2nov defaults, slightly tighter rule space)
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Tight lists
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: }#2}}
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-2pt}}
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Jiale Lin} & \href{mailto:jeremykalilin@gmail.com}{jeremykalilin@gmail.com}\\
+  \href{ljluestc.github.io}{ljluestc.github.io} & +1-510-417-5834 \\
+  \href{linkedin.com/in/jiale-lin}{linkedin.com/in/jiale-lin} & U.S. Citizen \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Colorado Boulder}{}
+      {Master of Science in Computer Science}{May 2025}
+    \resumeSubheading
+      {University of Arizona}{}
+      {Bachelor in Mathematics (CS Emphasis)}{May 2019}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Aviatrix}{Santa Clara, CA}
+      {Senior Software Engineer}{May 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Software Development}
+          {Developed REST/gRPC services using Go, 	extbf{python}, Bash, Kafka; optimized service boundaries, caching, and concurrency for scalability and reliability}
+        \resumeItem{Software Development}
+          {Automated infrastructure with Terraform; operated 	extbf{kubernetes} across 	extbf{aws}, 	extbf{azure}, and GCP; built 	extbf{ci/cd} with GitHub Actions, Jenkins, ArgoCD, and GitOps, reducing deployment time by 30%}
+        \resumeItem{Infrastructure & DevOps Automation}
+          {Enhanced monitoring with Prometheus, Grafana, and DataDog; added 	extbf{ci/cd} health signals and SLOs; reduced MTTR by 15%}
+        \resumeItem{Software Development}
+          {Built secure multi-cloud automation with TLS and Zero-Trust; implemented eBPF/iptables validation for firewall upgrades and DDoS mitigation; hardened supply chain with SBOM and policy gates}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Veeva Systems}{Pleasanton, CA}
+      {Software Development Engineer in Test}{Aug 2021 -- May 2022}
+      \resumeItemListStart
+        \resumeItem{Software Development}
+          {Implemented a cross-	extbf{platform} BDD framework using Kotlin, Cucumber, and Gradle; integrated with Jenkins CI to automate execution and expand coverage}
+        \resumeItem{Infrastructure & DevOps Automation}
+          {Automated web UI with Selenium and native iOS/Android with Appium; integrated suites into 	extbf{ci/cd} with dashboards and flaky-test quarantine}
+        \resumeItem{Test Automation}
+          {Streamlined QA by refactoring suites and optimizing test cases, improving defect detection and reducing regression escapes}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Google Fiber (via Adecco)}{Mountain View, CA}
+      {Test Engineer}{Jun 2019 -- Jun 2021}
+      \resumeItemListStart
+        \resumeItem{Software Development}
+          {Developed a Page Object Model framework with Selenium/WebDriver (Java) for Angular apps, reducing test failures by 25%}
+        \resumeItem{Software Development}
+          {Built BigQuery SQL objects (tables, views, macros, procedures), boosting query performance by 30%}
+        \resumeItem{Infrastructure & DevOps Automation}
+          {Automated tasks using Google Apps Script, 	extbf{python}, and Bash, saving 15 hrs/week}
+        \resumeItem{Test Automation}
+          {Performed CPE testing with Ixia Veriwave, improving network throughput by 20%}
+        \resumeItem{Software Development}
+          {Streamlined deployments with Docker and 	extbf{kubernetes}; implemented Prometheus/Grafana for real-time monitoring}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS (EXPANDED)-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{AI-Powered Network Traffic Classifier \textnormal{(C++, Python, TensorFlow, ONNX, eBPF, gRPC, Kubernetes, Qt6, Electron)}}
+      {Realtime packet/flow features via eBPF; ONNX model served over async gRPC on 	extbf{kubernetes} with rollout guards (shadow A/B, drift detection, canary). Qt6/Electron dashboard with rate/latency charts; CI for model eval (AUC/PR), onnxruntime CPU/GPU}
+    \resumeSubItem{Graph-based Social Recommender \textnormal{(Python, Node2Vec, FAISS, Matrix Factorization, Airflow, FastAPI, Redis)}}
+      {Graph ETL → Node2Vec embeddings + matrix factorization; FAISS ANN for sub-ms top-k retrieval; offline metrics (AUC, NDCG) and online CTR lift (double-digit). Deployed as FastAPI service with Redis cache; Airflow DAGs for retraining/backfills}
+    \resumeSubItem{Algorithm Visualization Tool \textnormal{(JavaFX, k-NN, Machine Learning)}}
+      {Interactive 2D collision/physics visualizer with toggleable k-NN 'ML mode' vs. analytic solver; perf counters, frame timing, exportable traces}
+    \resumeSubItem{Multi-Protocol Router Sim \textnormal{(C++, FRR, BGP, OSPF, ISIS, Netem, CMake)}}
+      {FRR control-plane integration; token-bucket/WFQ shaping; tc/netem impairments; gtest coverage and pcap diffing; CLI & YAML scenarios for regression suites}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

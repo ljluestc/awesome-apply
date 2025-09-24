@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-09-23T08:04:43.839226",
+  "jobs_found": 2,
+  "applications_attempted": 2,
+  "applications_completed": 0,
+  "success": false,
+  "job_details": [
+    {
+      "title": "Senior Product Manager Digital Twin",
+      "url": "https://career55.sapsf.eu/sfcareer/jobreqcareer?jobId=576&company=nemetschek",
+      "success": false,
+      "timestamp": "2025-09-23T08:05:25.394193"
+    },
+    {
+      "title": "Senior Program Manager",
+      "url": "https://career55.sapsf.eu/sfcareer/jobreqcareer?jobId=579&company=nemetschek",
+      "success": false,
+      "timestamp": "2025-09-23T08:05:34.387476"
+    }
+  ]
+}

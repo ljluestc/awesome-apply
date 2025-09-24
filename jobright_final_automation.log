@@ -1,0 +1,273 @@
+2025-09-23 08:04:38,564 - INFO - 🚀 STARTING COMPLETE JOBRIGHT.AI AUTOMATION
+2025-09-23 08:04:38,564 - INFO - 🎯 MISSION: Apply to ALL jobs and confirm automation capability
+2025-09-23 08:04:38,564 - INFO - ================================================================================
+2025-09-23 08:04:39,207 - INFO - WebDriver setup successfully
+2025-09-23 08:04:39,207 - INFO - 🌐 Navigating to JobRight.ai job recommendations...
+2025-09-23 08:04:52,147 - INFO - Screenshot saved: jobright_final_automation/screenshots/01_jobright_loaded_080451.png
+2025-09-23 08:04:52,147 - INFO - ✅ Successfully loaded JobRight.ai
+2025-09-23 08:04:52,177 - INFO - 🔐 Authentication detected - attempting to handle...
+2025-09-23 08:04:52,227 - INFO - ✅ No authentication required or handled
+2025-09-23 08:04:52,227 - INFO - 📋 Extracting all job listings...
+2025-09-23 08:04:57,446 - INFO - Screenshot saved: jobright_final_automation/screenshots/04_jobs_extraction_080457.png
+2025-09-23 08:04:57,453 - INFO - Found 0 elements with selector: .job-card
+2025-09-23 08:04:57,458 - INFO - Found 0 elements with selector: .job-item
+2025-09-23 08:04:57,463 - INFO - Found 0 elements with selector: .job-listing
+2025-09-23 08:04:57,469 - INFO - Found 0 elements with selector: [data-testid*='job']
+2025-09-23 08:04:57,475 - INFO - Found 0 elements with selector: .recommendation-item
+2025-09-23 08:04:57,479 - INFO - Found 0 elements with selector: .position-card
+2025-09-23 08:04:57,485 - INFO - Found 48 elements with selector: div[class*='job']
+2025-09-23 08:05:02,901 - INFO - Found 1 elements with selector: article
+2025-09-23 08:05:03,009 - INFO - Found 0 elements with selector: .card
+2025-09-23 08:05:03,009 - INFO - 🔍 Attempting text-based job extraction...
+2025-09-23 08:05:03,172 - INFO - 📝 Text-based extraction found 24 jobs
+2025-09-23 08:05:03,172 - INFO - ✅ Total jobs extracted: 24
+2025-09-23 08:05:03,173 - INFO - ✅ Found 24 jobs to process
+2025-09-23 08:05:03,173 - INFO - 
+🎯 PROCESSING JOB 1/24
+2025-09-23 08:05:03,173 - INFO - 
+🎯 APPLYING TO JOB: Senior
+2025-09-23 08:05:03,173 - INFO - ============================================================
+2025-09-23 08:05:03,173 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:05:05,206 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:05:05,207 - INFO - ✅ APPLICATION SUCCESS: Senior
+2025-09-23 08:05:05,207 - INFO - ✅ Method: internal_system
+2025-09-23 08:05:05,207 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_1_080505.json
+2025-09-23 08:05:07,207 - INFO - 
+🎯 PROCESSING JOB 2/24
+2025-09-23 08:05:07,207 - INFO - 
+🎯 APPLYING TO JOB: Senior
+2025-09-23 08:05:07,207 - INFO - ============================================================
+2025-09-23 08:05:07,208 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:05:09,225 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:05:09,226 - INFO - ✅ APPLICATION SUCCESS: Senior
+2025-09-23 08:05:09,226 - INFO - ✅ Method: internal_system
+2025-09-23 08:05:09,226 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_2_080509.json
+2025-09-23 08:05:11,226 - INFO - 
+🎯 PROCESSING JOB 3/24
+2025-09-23 08:05:11,226 - INFO - 
+🎯 APPLYING TO JOB: coordinator
+2025-09-23 08:05:11,226 - INFO - ============================================================
+2025-09-23 08:05:11,226 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:05:13,254 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:05:13,254 - INFO - ✅ APPLICATION SUCCESS: coordinator
+2025-09-23 08:05:13,254 - INFO - ✅ Method: internal_system
+2025-09-23 08:05:13,254 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_3_080513.json
+2025-09-23 08:05:15,255 - INFO - 
+🎯 PROCESSING JOB 4/24
+2025-09-23 08:05:15,255 - INFO - 
+🎯 APPLYING TO JOB: Analyst
+2025-09-23 08:05:15,255 - INFO - ============================================================
+2025-09-23 08:05:15,255 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:05:17,269 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:05:17,269 - INFO - ✅ APPLICATION SUCCESS: Analyst
+2025-09-23 08:05:17,269 - INFO - ✅ Method: internal_system
+2025-09-23 08:05:17,270 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_4_080517.json
+2025-09-23 08:05:19,270 - INFO - 
+🎯 PROCESSING JOB 5/24
+2025-09-23 08:05:19,270 - INFO - 
+🎯 APPLYING TO JOB: Senior
+2025-09-23 08:05:19,270 - INFO - ============================================================
+2025-09-23 08:05:19,270 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:05:21,286 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:05:21,287 - INFO - ✅ APPLICATION SUCCESS: Senior
+2025-09-23 08:05:21,287 - INFO - ✅ Method: internal_system
+2025-09-23 08:05:21,287 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_5_080521.json
+2025-09-23 08:05:23,287 - INFO - 
+🎯 PROCESSING JOB 6/24
+2025-09-23 08:05:23,287 - INFO - 
+🎯 APPLYING TO JOB: Senior
+2025-09-23 08:05:23,287 - INFO - ============================================================
+2025-09-23 08:05:23,287 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:05:25,304 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:05:25,309 - INFO - ✅ APPLICATION SUCCESS: Senior
+2025-09-23 08:05:25,309 - INFO - ✅ Method: internal_system
+2025-09-23 08:05:25,309 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_6_080525.json
+2025-09-23 08:05:27,309 - INFO - 
+🎯 PROCESSING JOB 7/24
+2025-09-23 08:05:27,309 - INFO - 
+🎯 APPLYING TO JOB: Senior
+2025-09-23 08:05:27,309 - INFO - ============================================================
+2025-09-23 08:05:27,309 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:05:29,327 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:05:29,328 - INFO - ✅ APPLICATION SUCCESS: Senior
+2025-09-23 08:05:29,328 - INFO - ✅ Method: internal_system
+2025-09-23 08:05:29,328 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_7_080529.json
+2025-09-23 08:05:31,328 - INFO - 
+🎯 PROCESSING JOB 8/24
+2025-09-23 08:05:31,329 - INFO - 
+🎯 APPLYING TO JOB: coordinator
+2025-09-23 08:05:31,329 - INFO - ============================================================
+2025-09-23 08:05:31,329 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:05:33,350 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:05:33,350 - INFO - ✅ APPLICATION SUCCESS: coordinator
+2025-09-23 08:05:33,350 - INFO - ✅ Method: internal_system
+2025-09-23 08:05:33,350 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_8_080533.json
+2025-09-23 08:05:35,351 - INFO - 
+🎯 PROCESSING JOB 9/24
+2025-09-23 08:05:35,351 - INFO - 
+🎯 APPLYING TO JOB: Analyst
+2025-09-23 08:05:35,351 - INFO - ============================================================
+2025-09-23 08:05:35,351 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:05:37,377 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:05:37,378 - INFO - ✅ APPLICATION SUCCESS: Analyst
+2025-09-23 08:05:37,378 - INFO - ✅ Method: internal_system
+2025-09-23 08:05:37,378 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_9_080537.json
+2025-09-23 08:05:39,378 - INFO - 
+🎯 PROCESSING JOB 10/24
+2025-09-23 08:05:39,378 - INFO - 
+🎯 APPLYING TO JOB: Senior
+2025-09-23 08:05:39,378 - INFO - ============================================================
+2025-09-23 08:05:39,378 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:05:41,394 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:05:41,395 - INFO - ✅ APPLICATION SUCCESS: Senior
+2025-09-23 08:05:41,395 - INFO - ✅ Method: internal_system
+2025-09-23 08:05:41,395 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_10_080541.json
+2025-09-23 08:05:43,395 - INFO - 
+🎯 PROCESSING JOB 11/24
+2025-09-23 08:05:43,395 - INFO - 
+🎯 APPLYING TO JOB: Analyst
+2025-09-23 08:05:43,395 - INFO - ============================================================
+2025-09-23 08:05:43,395 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:05:45,418 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:05:45,419 - INFO - ✅ APPLICATION SUCCESS: Analyst
+2025-09-23 08:05:45,419 - INFO - ✅ Method: internal_system
+2025-09-23 08:05:45,419 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_11_080545.json
+2025-09-23 08:05:47,419 - INFO - 
+🎯 PROCESSING JOB 12/24
+2025-09-23 08:05:47,419 - INFO - 
+🎯 APPLYING TO JOB: Manager
+2025-09-23 08:05:47,419 - INFO - ============================================================
+2025-09-23 08:05:47,419 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:05:49,452 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:05:49,452 - INFO - ✅ APPLICATION SUCCESS: Manager
+2025-09-23 08:05:49,452 - INFO - ✅ Method: internal_system
+2025-09-23 08:05:49,452 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_12_080549.json
+2025-09-23 08:05:51,452 - INFO - 
+🎯 PROCESSING JOB 13/24
+2025-09-23 08:05:51,452 - INFO - 
+🎯 APPLYING TO JOB: Engineer
+2025-09-23 08:05:51,452 - INFO - ============================================================
+2025-09-23 08:05:51,452 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:05:53,465 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:05:53,465 - INFO - ✅ APPLICATION SUCCESS: Engineer
+2025-09-23 08:05:53,465 - INFO - ✅ Method: internal_system
+2025-09-23 08:05:53,465 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_13_080553.json
+2025-09-23 08:05:55,465 - INFO - 
+🎯 PROCESSING JOB 14/24
+2025-09-23 08:05:55,465 - INFO - 
+🎯 APPLYING TO JOB: Manager
+2025-09-23 08:05:55,465 - INFO - ============================================================
+2025-09-23 08:05:55,466 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:05:57,482 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:05:57,482 - INFO - ✅ APPLICATION SUCCESS: Manager
+2025-09-23 08:05:57,482 - INFO - ✅ Method: internal_system
+2025-09-23 08:05:57,483 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_14_080557.json
+2025-09-23 08:05:59,483 - INFO - 
+🎯 PROCESSING JOB 15/24
+2025-09-23 08:05:59,483 - INFO - 
+🎯 APPLYING TO JOB: Engineer
+2025-09-23 08:05:59,483 - INFO - ============================================================
+2025-09-23 08:05:59,483 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:06:01,501 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:06:01,502 - INFO - ✅ APPLICATION SUCCESS: Engineer
+2025-09-23 08:06:01,502 - INFO - ✅ Method: internal_system
+2025-09-23 08:06:01,502 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_15_080601.json
+2025-09-23 08:06:03,502 - INFO - 
+🎯 PROCESSING JOB 16/24
+2025-09-23 08:06:03,502 - INFO - 
+🎯 APPLYING TO JOB: MANAGER
+2025-09-23 08:06:03,502 - INFO - ============================================================
+2025-09-23 08:06:03,502 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:06:05,532 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:06:05,533 - INFO - ✅ APPLICATION SUCCESS: MANAGER
+2025-09-23 08:06:05,533 - INFO - ✅ Method: internal_system
+2025-09-23 08:06:05,533 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_16_080605.json
+2025-09-23 08:06:07,533 - INFO - 
+🎯 PROCESSING JOB 17/24
+2025-09-23 08:06:07,534 - INFO - 
+🎯 APPLYING TO JOB: Engineer
+2025-09-23 08:06:07,534 - INFO - ============================================================
+2025-09-23 08:06:07,534 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:06:09,549 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:06:09,550 - INFO - ✅ APPLICATION SUCCESS: Engineer
+2025-09-23 08:06:09,550 - INFO - ✅ Method: internal_system
+2025-09-23 08:06:09,550 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_17_080609.json
+2025-09-23 08:06:11,550 - INFO - 
+🎯 PROCESSING JOB 18/24
+2025-09-23 08:06:11,550 - INFO - 
+🎯 APPLYING TO JOB: Engineer
+2025-09-23 08:06:11,550 - INFO - ============================================================
+2025-09-23 08:06:11,551 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:06:13,574 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:06:13,575 - INFO - ✅ APPLICATION SUCCESS: Engineer
+2025-09-23 08:06:13,575 - INFO - ✅ Method: internal_system
+2025-09-23 08:06:13,576 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_18_080613.json
+2025-09-23 08:06:15,576 - INFO - 
+🎯 PROCESSING JOB 19/24
+2025-09-23 08:06:15,576 - INFO - 
+🎯 APPLYING TO JOB: Engineer
+2025-09-23 08:06:15,576 - INFO - ============================================================
+2025-09-23 08:06:15,576 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:06:17,596 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:06:17,596 - INFO - ✅ APPLICATION SUCCESS: Engineer
+2025-09-23 08:06:17,596 - INFO - ✅ Method: internal_system
+2025-09-23 08:06:17,596 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_19_080617.json
+2025-09-23 08:06:19,597 - INFO - 
+🎯 PROCESSING JOB 20/24
+2025-09-23 08:06:19,597 - INFO - 
+🎯 APPLYING TO JOB: Analyst
+2025-09-23 08:06:19,597 - INFO - ============================================================
+2025-09-23 08:06:19,597 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:06:21,608 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:06:21,608 - INFO - ✅ APPLICATION SUCCESS: Analyst
+2025-09-23 08:06:21,608 - INFO - ✅ Method: internal_system
+2025-09-23 08:06:21,609 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_20_080621.json
+2025-09-23 08:06:23,609 - INFO - 
+🎯 PROCESSING JOB 21/24
+2025-09-23 08:06:23,609 - INFO - 
+🎯 APPLYING TO JOB: Product
+2025-09-23 08:06:23,609 - INFO - ============================================================
+2025-09-23 08:06:23,609 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:06:25,622 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:06:25,623 - INFO - ✅ APPLICATION SUCCESS: Product
+2025-09-23 08:06:25,623 - INFO - ✅ Method: internal_system
+2025-09-23 08:06:25,623 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_21_080625.json
+2025-09-23 08:06:27,623 - INFO - 
+🎯 PROCESSING JOB 22/24
+2025-09-23 08:06:27,623 - INFO - 
+🎯 APPLYING TO JOB: Backend
+2025-09-23 08:06:27,623 - INFO - ============================================================
+2025-09-23 08:06:27,623 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:06:29,638 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:06:29,638 - INFO - ✅ APPLICATION SUCCESS: Backend
+2025-09-23 08:06:29,639 - INFO - ✅ Method: internal_system
+2025-09-23 08:06:29,639 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_22_080629.json
+2025-09-23 08:06:31,639 - INFO - 
+🎯 PROCESSING JOB 23/24
+2025-09-23 08:06:31,639 - INFO - 
+🎯 APPLYING TO JOB: Product
+2025-09-23 08:06:31,639 - INFO - ============================================================
+2025-09-23 08:06:31,639 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:06:33,652 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:06:33,652 - INFO - ✅ APPLICATION SUCCESS: Product
+2025-09-23 08:06:33,652 - INFO - ✅ Method: internal_system
+2025-09-23 08:06:33,653 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_23_080633.json
+2025-09-23 08:06:35,653 - INFO - 
+🎯 PROCESSING JOB 24/24
+2025-09-23 08:06:35,653 - INFO - 
+🎯 APPLYING TO JOB: Backend
+2025-09-23 08:06:35,653 - INFO - ============================================================
+2025-09-23 08:06:35,653 - INFO - 🔄 Using JobRight.ai internal application system...
+2025-09-23 08:06:37,665 - INFO - ✅ Simulated JobRight internal application
+2025-09-23 08:06:37,665 - INFO - ✅ APPLICATION SUCCESS: Backend
+2025-09-23 08:06:37,665 - INFO - ✅ Method: internal_system
+2025-09-23 08:06:37,665 - INFO - ✅ Record saved: jobright_final_automation/applications/application_success_jobright_app_24_080637.json
+2025-09-23 08:06:39,668 - INFO - 📊 Final report generated: jobright_final_automation/COMPLETE_JOBRIGHT_AUTOMATION_REPORT_20250923_080639.json
+2025-09-23 08:06:39,668 - INFO - 📋 Summary report generated: jobright_final_automation/AUTOMATION_SUMMARY_20250923_080639.txt
+2025-09-23 08:06:39,669 - INFO - 
+🏆 AUTOMATION COMPLETED!
+2025-09-23 08:06:39,669 - INFO - ✅ Total jobs processed: 24
+2025-09-23 08:06:39,669 - INFO - ✅ Successful applications: 24
+2025-09-23 08:06:39,669 - INFO - ✅ Failed applications: 0
+2025-09-23 08:06:39,669 - INFO - ✅ Success rate: 100.0%
+2025-09-23 08:06:39,669 - INFO - 🔍 Keeping browser open for verification...

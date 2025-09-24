@@ -1,0 +1,49 @@
+{
+  "job_details": {
+    "title": "Senior Software Engineer - CAD Platform",
+    "company": "Nemetschek",
+    "location": "München, Germany",
+    "department": "Engineering",
+    "job_id": "NEMETSCHEK-2025-001"
+  },
+  "analysis_results": {
+    "match_score": 92.0,
+    "total_requirements": 9,
+    "matching_skills": [
+      "aws",
+      "azure",
+      "gcp",
+      "kubernetes",
+      "docker",
+      "python",
+      "go",
+      "c++"
+    ],
+    "missing_skills": [
+      "typescript"
+    ],
+    "enhancement_suggestions": []
+  },
+  "skill_categorization": {
+    "critical_matches": [],
+    "development_opportunities": [
+      "typescript"
+    ],
+    "nice_to_have_skills": [
+      "aws",
+      "azure",
+      "gcp",
+      "kubernetes",
+      "docker",
+      "python",
+      "go",
+      "typescript",
+      "c++"
+    ]
+  },
+  "documents_generated": {
+    "resume": "Jiale_Lin_Resume_Nemetschek_Senior_Software_Engineer_-_CAD_Platform_20250922_211405.tex",
+    "cover_letter": "Jiale_Lin_Cover_Letter_Nemetschek_Senior_Software_Engineer_-_CAD_Platform_20250922_211405.txt",
+    "generation_timestamp": "20250922_211405"
+  }
+}

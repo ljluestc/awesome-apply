@@ -1,0 +1,179 @@
+2025-09-23 09:36:15,446 - INFO - 🚀 STARTING LIVE JOB APPLICATION SYSTEM
+2025-09-23 09:36:15,447 - INFO - 🎯 MISSION: Submit real applications with actual confirmations
+2025-09-23 09:36:15,447 - INFO - ================================================================================
+2025-09-23 09:36:15,447 - INFO - Setting up WebDriver for live applications...
+2025-09-23 09:36:15,805 - INFO - ✅ WebDriver setup complete
+2025-09-23 09:36:15,805 - INFO - 🚀 STARTING LIVE JOBRIGHT.AI APPLICATIONS
+2025-09-23 09:36:22,480 - INFO - 📸 Screenshot saved: live_job_applications/screenshots/jobright_loaded_093622.png
+2025-09-23 09:36:22,517 - INFO - Found 40 job links
+2025-09-23 09:36:22,577 - INFO - 🎯 APPLYING TO REAL JOB 1: Job_1
+2025-09-23 09:36:22,577 - INFO - URL: https://jobright.ai/jobs/info/68d2c9438c62e63bc7fd9e4e
+2025-09-23 09:36:27,395 - INFO - 📸 Screenshot saved: live_job_applications/screenshots/job_page_0_093627.png
+2025-09-23 09:36:27,595 - INFO - ✅ Found apply button - clicking...
+2025-09-23 09:36:31,189 - INFO - 📸 Screenshot saved: live_job_applications/screenshots/application_form_Job_1_093631.png
+2025-09-23 09:36:36,126 - INFO - 📸 Screenshot saved: live_job_applications/screenshots/before_submit_Job_1_093635.png
+2025-09-23 09:36:36,176 - INFO - 🚀 SUBMITTING REAL APPLICATION...
+2025-09-23 09:36:36,198 - ERROR - Error submitting application: Message: element not interactable
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x559e9313e08a <unknown>
+#1 0x559e92bdd8c3 <unknown>
+#2 0x559e92c30b1e <unknown>
+#3 0x559e92c23b1b <unknown>
+#4 0x559e92c553e2 <unknown>
+#5 0x559e92c2349a <unknown>
+#6 0x559e92c555ae <unknown>
+#7 0x559e92c7b14f <unknown>
+#8 0x559e92c551b3 <unknown>
+#9 0x559e92c2159b <unknown>
+#10 0x559e92c22971 <unknown>
+#11 0x559e9310325b <unknown>
+#12 0x559e93106fa9 <unknown>
+#13 0x559e930ea339 <unknown>
+#14 0x559e93107b58 <unknown>
+#15 0x559e930cec1f <unknown>
+#16 0x559e9312b118 <unknown>
+#17 0x559e9312b2f6 <unknown>
+#18 0x559e9313d066 <unknown>
+#19 0x7f4ba90a5b7b <unknown>
+
+2025-09-23 09:36:36,198 - WARNING - ❌ Failed to complete application: Job_1
+2025-09-23 09:36:36,207 - ERROR - Error applying to job 1: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x559e9313e08a <unknown>
+#1 0x559e92bdda70 <unknown>
+#2 0x559e92bf10bb <unknown>
+#3 0x559e92befe82 <unknown>
+#4 0x559e92be4fd9 <unknown>
+#5 0x559e92be5105 <unknown>
+#6 0x559e92be320f <unknown>
+#7 0x559e92be720a <unknown>
+#8 0x559e92c7c18e <unknown>
+#9 0x559e92c553e2 <unknown>
+#10 0x559e92c7b14f <unknown>
+#11 0x559e92c551b3 <unknown>
+#12 0x559e92c2159b <unknown>
+#13 0x559e92c22971 <unknown>
+#14 0x559e9310325b <unknown>
+#15 0x559e93106fa9 <unknown>
+#16 0x559e930ea339 <unknown>
+#17 0x559e93107b58 <unknown>
+#18 0x559e930cec1f <unknown>
+#19 0x559e9312b118 <unknown>
+#20 0x559e9312b2f6 <unknown>
+#21 0x559e9313d066 <unknown>
+#22 0x7f4ba90a5b7b <unknown>
+
+2025-09-23 09:36:36,218 - ERROR - Error applying to job 2: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x559e9313e08a <unknown>
+#1 0x559e92bdda70 <unknown>
+#2 0x559e92bf10bb <unknown>
+#3 0x559e92befe82 <unknown>
+#4 0x559e92be4fd9 <unknown>
+#5 0x559e92be5105 <unknown>
+#6 0x559e92be320f <unknown>
+#7 0x559e92be720a <unknown>
+#8 0x559e92c7c18e <unknown>
+#9 0x559e92c553e2 <unknown>
+#10 0x559e92c7b14f <unknown>
+#11 0x559e92c551b3 <unknown>
+#12 0x559e92c2159b <unknown>
+#13 0x559e92c22971 <unknown>
+#14 0x559e9310325b <unknown>
+#15 0x559e93106fa9 <unknown>
+#16 0x559e930ea339 <unknown>
+#17 0x559e93107b58 <unknown>
+#18 0x559e930cec1f <unknown>
+#19 0x559e9312b118 <unknown>
+#20 0x559e9312b2f6 <unknown>
+#21 0x559e9313d066 <unknown>
+#22 0x7f4ba90a5b7b <unknown>
+
+2025-09-23 09:36:36,233 - ERROR - Error applying to job 3: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x559e9313e08a <unknown>
+#1 0x559e92bdda70 <unknown>
+#2 0x559e92bf10bb <unknown>
+#3 0x559e92befe82 <unknown>
+#4 0x559e92be4fd9 <unknown>
+#5 0x559e92be5105 <unknown>
+#6 0x559e92be320f <unknown>
+#7 0x559e92be720a <unknown>
+#8 0x559e92c7c18e <unknown>
+#9 0x559e92c553e2 <unknown>
+#10 0x559e92c7b14f <unknown>
+#11 0x559e92c551b3 <unknown>
+#12 0x559e92c2159b <unknown>
+#13 0x559e92c22971 <unknown>
+#14 0x559e9310325b <unknown>
+#15 0x559e93106fa9 <unknown>
+#16 0x559e930ea339 <unknown>
+#17 0x559e93107b58 <unknown>
+#18 0x559e930cec1f <unknown>
+#19 0x559e9312b118 <unknown>
+#20 0x559e9312b2f6 <unknown>
+#21 0x559e9313d066 <unknown>
+#22 0x7f4ba90a5b7b <unknown>
+
+2025-09-23 09:36:36,244 - ERROR - Error applying to job 4: Message: stale element reference: stale element not found
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+#0 0x559e9313e08a <unknown>
+#1 0x559e92bdda70 <unknown>
+#2 0x559e92bf10bb <unknown>
+#3 0x559e92befe82 <unknown>
+#4 0x559e92be4fd9 <unknown>
+#5 0x559e92be5105 <unknown>
+#6 0x559e92be320f <unknown>
+#7 0x559e92be720a <unknown>
+#8 0x559e92c7c18e <unknown>
+#9 0x559e92c553e2 <unknown>
+#10 0x559e92c7b14f <unknown>
+#11 0x559e92c551b3 <unknown>
+#12 0x559e92c2159b <unknown>
+#13 0x559e92c22971 <unknown>
+#14 0x559e9310325b <unknown>
+#15 0x559e93106fa9 <unknown>
+#16 0x559e930ea339 <unknown>
+#17 0x559e93107b58 <unknown>
+#18 0x559e930cec1f <unknown>
+#19 0x559e9312b118 <unknown>
+#20 0x559e9312b2f6 <unknown>
+#21 0x559e9313d066 <unknown>
+#22 0x7f4ba90a5b7b <unknown>
+
+2025-09-23 09:36:36,244 - INFO - 🏆 LIVE APPLICATIONS COMPLETED: 0
+2025-09-23 09:36:36,244 - INFO - 🚀 STARTING LIVE NEMETSCHEK APPLICATIONS
+2025-09-23 09:36:46,488 - INFO - 📸 Screenshot saved: live_job_applications/screenshots/nemetschek_loaded_093646.png
+2025-09-23 09:36:46,522 - ERROR - Error in Nemetschek applications: Message: no such element: Unable to locate element: {"method":"css selector","selector":".search-jobs-button, [data-testid='search-jobs']"}
+  (Session info: chrome=139.0.7258.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+#0 0x559e9313e08a <unknown>
+#1 0x559e92bdda70 <unknown>
+#2 0x559e92c2f907 <unknown>
+#3 0x559e92c2fb01 <unknown>
+#4 0x559e92c7dd54 <unknown>
+#5 0x559e92c5540d <unknown>
+#6 0x559e92c7b14f <unknown>
+#7 0x559e92c551b3 <unknown>
+#8 0x559e92c2159b <unknown>
+#9 0x559e92c22971 <unknown>
+#10 0x559e9310325b <unknown>
+#11 0x559e93106fa9 <unknown>
+#12 0x559e930ea339 <unknown>
+#13 0x559e93107b58 <unknown>
+#14 0x559e930cec1f <unknown>
+#15 0x559e9312b118 <unknown>
+#16 0x559e9312b2f6 <unknown>
+#17 0x559e9313d066 <unknown>
+#18 0x7f4ba90a5b7b <unknown>
+
+2025-09-23 09:36:46,523 - INFO - 📊 FINAL REPORT GENERATED: live_job_applications/LIVE_APPLICATION_REPORT_20250923_093646.json
+2025-09-23 09:36:46,523 - INFO - 🏆 LIVE APPLICATION SYSTEM COMPLETED
+2025-09-23 09:36:46,523 - INFO - ✅ Total real applications submitted: 0
+2025-09-23 09:36:46,523 - INFO - ✅ Success rate: 0.0%
+2025-09-23 09:36:46,523 - INFO - Browser will remain open for verification...

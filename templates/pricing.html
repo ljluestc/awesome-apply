@@ -1,0 +1,367 @@
+{% extends "base.html" %}
+
+{% block title %}Pricing Plans - JobRight.ai{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8 max-w-6xl">
+    <!-- Header -->
+    <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Choose Your Plan</h1>
+        <p class="text-xl text-gray-600">Accelerate your job search with AI-powered features</p>
+    </div>
+
+    <!-- Pricing Toggle -->
+    <div class="flex justify-center mb-12">
+        <div class="bg-gray-100 rounded-lg p-1 flex">
+            <button id="monthlyBtn" class="px-6 py-2 rounded-md font-medium transition-all bg-white text-blue-600 shadow-sm">
+                Monthly
+            </button>
+            <button id="yearlyBtn" class="px-6 py-2 rounded-md font-medium transition-all text-gray-600 hover:text-gray-800">
+                Yearly <span class="text-green-600 text-sm">(Save 20%)</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="grid md:grid-cols-4 gap-6 mb-12">
+        <!-- Free Plan -->
+        <div class="bg-white rounded-lg shadow-lg border border-gray-200 p-6">
+            <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-900">Free</h3>
+                <div class="mt-4">
+                    <span class="text-4xl font-bold">$0</span>
+                    <span class="text-gray-600">/month</span>
+                </div>
+                <p class="text-gray-600 mt-2">Perfect for getting started</p>
+            </div>
+
+            <ul class="space-y-3 mb-8">
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>20 job matches per month</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>5 applications per month</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Basic resume optimization</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Limited Orion chat (10/month)</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Application tracking</span>
+                </li>
+            </ul>
+
+            <button class="w-full bg-gray-600 hover:bg-gray-700 text-white py-3 px-4 rounded-lg font-semibold">
+                Current Plan
+            </button>
+        </div>
+
+        <!-- Basic Plan -->
+        <div class="bg-white rounded-lg shadow-lg border border-gray-200 p-6">
+            <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-900">Basic</h3>
+                <div class="mt-4">
+                    <span class="text-4xl font-bold monthly-price">$19.99</span>
+                    <span class="text-4xl font-bold yearly-price hidden">$15.99</span>
+                    <span class="text-gray-600">/month</span>
+                </div>
+                <p class="text-gray-600 mt-2">For active job seekers</p>
+            </div>
+
+            <ul class="space-y-3 mb-8">
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>100 job matches per month</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>50 applications per month</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Advanced resume optimization</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Unlimited Orion chat</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Insider connections</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Application tracking</span>
+                </li>
+            </ul>
+
+            <button onclick="selectPlan('basic')" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-semibold">
+                Choose Basic
+            </button>
+        </div>
+
+        <!-- Pro Plan (Popular) -->
+        <div class="bg-white rounded-lg shadow-xl border-2 border-blue-500 p-6 relative">
+            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">Most Popular</span>
+            </div>
+
+            <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-900">Pro</h3>
+                <div class="mt-4">
+                    <span class="text-4xl font-bold monthly-price">$39.99</span>
+                    <span class="text-4xl font-bold yearly-price hidden">$31.99</span>
+                    <span class="text-gray-600">/month</span>
+                </div>
+                <p class="text-gray-600 mt-2">For serious job seekers</p>
+            </div>
+
+            <ul class="space-y-3 mb-8">
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Unlimited job matches</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Unlimited applications</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-star text-yellow-500 mr-3"></i>
+                    <span><strong>AI Agent automation</strong></span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Advanced resume optimization</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Unlimited Orion chat</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Insider connections</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Priority support</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Detailed analytics</span>
+                </li>
+            </ul>
+
+            <button onclick="selectPlan('pro')" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-semibold">
+                Choose Pro
+            </button>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="bg-white rounded-lg shadow-lg border border-gray-200 p-6">
+            <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-900">Enterprise</h3>
+                <div class="mt-4">
+                    <span class="text-4xl font-bold">Custom</span>
+                </div>
+                <p class="text-gray-600 mt-2">For teams and organizations</p>
+            </div>
+
+            <ul class="space-y-3 mb-8">
+                <li class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Everything in Pro</span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-star text-yellow-500 mr-3"></i>
+                    <span><strong>Custom integrations</strong></span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-star text-yellow-500 mr-3"></i>
+                    <span><strong>Team management</strong></span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-star text-yellow-500 mr-3"></i>
+                    <span><strong>Dedicated support</strong></span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-star text-yellow-500 mr-3"></i>
+                    <span><strong>Advanced analytics</strong></span>
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-star text-yellow-500 mr-3"></i>
+                    <span><strong>API access</strong></span>
+                </li>
+            </ul>
+
+            <button onclick="contactSales()" class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-semibold">
+                Contact Sales
+            </button>
+        </div>
+    </div>
+
+    <!-- Feature Comparison -->
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-12">
+        <h2 class="text-2xl font-semibold text-center mb-8">Feature Comparison</h2>
+
+        <div class="overflow-x-auto">
+            <table class="w-full">
+                <thead>
+                    <tr class="border-b border-gray-200">
+                        <th class="text-left py-4 px-4">Features</th>
+                        <th class="text-center py-4 px-4">Free</th>
+                        <th class="text-center py-4 px-4">Basic</th>
+                        <th class="text-center py-4 px-4">Pro</th>
+                        <th class="text-center py-4 px-4">Enterprise</th>
+                    </tr>
+                </thead>
+                <tbody class="text-sm">
+                    <tr class="border-b border-gray-100">
+                        <td class="py-3 px-4 font-medium">Job Matches per Month</td>
+                        <td class="text-center py-3 px-4">20</td>
+                        <td class="text-center py-3 px-4">100</td>
+                        <td class="text-center py-3 px-4">Unlimited</td>
+                        <td class="text-center py-3 px-4">Unlimited</td>
+                    </tr>
+                    <tr class="border-b border-gray-100">
+                        <td class="py-3 px-4 font-medium">Applications per Month</td>
+                        <td class="text-center py-3 px-4">5</td>
+                        <td class="text-center py-3 px-4">50</td>
+                        <td class="text-center py-3 px-4">Unlimited</td>
+                        <td class="text-center py-3 px-4">Unlimited</td>
+                    </tr>
+                    <tr class="border-b border-gray-100">
+                        <td class="py-3 px-4 font-medium">AI Agent Automation</td>
+                        <td class="text-center py-3 px-4"><i class="fas fa-times text-red-500"></i></td>
+                        <td class="text-center py-3 px-4"><i class="fas fa-times text-red-500"></i></td>
+                        <td class="text-center py-3 px-4"><i class="fas fa-check text-green-500"></i></td>
+                        <td class="text-center py-3 px-4"><i class="fas fa-check text-green-500"></i></td>
+                    </tr>
+                    <tr class="border-b border-gray-100">
+                        <td class="py-3 px-4 font-medium">Insider Connections</td>
+                        <td class="text-center py-3 px-4"><i class="fas fa-times text-red-500"></i></td>
+                        <td class="text-center py-3 px-4"><i class="fas fa-check text-green-500"></i></td>
+                        <td class="text-center py-3 px-4"><i class="fas fa-check text-green-500"></i></td>
+                        <td class="text-center py-3 px-4"><i class="fas fa-check text-green-500"></i></td>
+                    </tr>
+                    <tr class="border-b border-gray-100">
+                        <td class="py-3 px-4 font-medium">Orion AI Chat</td>
+                        <td class="text-center py-3 px-4">Limited</td>
+                        <td class="text-center py-3 px-4">Unlimited</td>
+                        <td class="text-center py-3 px-4">Unlimited</td>
+                        <td class="text-center py-3 px-4">Unlimited</td>
+                    </tr>
+                    <tr class="border-b border-gray-100">
+                        <td class="py-3 px-4 font-medium">Resume Optimization</td>
+                        <td class="text-center py-3 px-4">Basic</td>
+                        <td class="text-center py-3 px-4">Advanced</td>
+                        <td class="text-center py-3 px-4">Advanced</td>
+                        <td class="text-center py-3 px-4">Advanced</td>
+                    </tr>
+                    <tr class="border-b border-gray-100">
+                        <td class="py-3 px-4 font-medium">Priority Support</td>
+                        <td class="text-center py-3 px-4"><i class="fas fa-times text-red-500"></i></td>
+                        <td class="text-center py-3 px-4"><i class="fas fa-times text-red-500"></i></td>
+                        <td class="text-center py-3 px-4"><i class="fas fa-check text-green-500"></i></td>
+                        <td class="text-center py-3 px-4">Dedicated</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-2xl font-semibold text-center mb-8">Frequently Asked Questions</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <div>
+                <h3 class="font-semibold mb-2">Can I change my plan anytime?</h3>
+                <p class="text-gray-600 text-sm">Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.</p>
+            </div>
+
+            <div>
+                <h3 class="font-semibold mb-2">What is the AI Agent?</h3>
+                <p class="text-gray-600 text-sm">Our AI Agent automatically searches for jobs, applies on your behalf, and builds your network while you sleep.</p>
+            </div>
+
+            <div>
+                <h3 class="font-semibold mb-2">Do you offer refunds?</h3>
+                <p class="text-gray-600 text-sm">We offer a 30-day money-back guarantee if you're not satisfied with our service.</p>
+            </div>
+
+            <div>
+                <h3 class="font-semibold mb-2">Is my data secure?</h3>
+                <p class="text-gray-600 text-sm">Yes, we use enterprise-grade security and never share your personal information with third parties.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const monthlyBtn = document.getElementById('monthlyBtn');
+const yearlyBtn = document.getElementById('yearlyBtn');
+const monthlyPrices = document.querySelectorAll('.monthly-price');
+const yearlyPrices = document.querySelectorAll('.yearly-price');
+
+monthlyBtn.addEventListener('click', () => {
+    monthlyBtn.classList.add('bg-white', 'text-blue-600', 'shadow-sm');
+    monthlyBtn.classList.remove('text-gray-600');
+    yearlyBtn.classList.remove('bg-white', 'text-blue-600', 'shadow-sm');
+    yearlyBtn.classList.add('text-gray-600');
+
+    monthlyPrices.forEach(price => price.classList.remove('hidden'));
+    yearlyPrices.forEach(price => price.classList.add('hidden'));
+});
+
+yearlyBtn.addEventListener('click', () => {
+    yearlyBtn.classList.add('bg-white', 'text-blue-600', 'shadow-sm');
+    yearlyBtn.classList.remove('text-gray-600');
+    monthlyBtn.classList.remove('bg-white', 'text-blue-600', 'shadow-sm');
+    monthlyBtn.classList.add('text-gray-600');
+
+    monthlyPrices.forEach(price => price.classList.add('hidden'));
+    yearlyPrices.forEach(price => price.classList.remove('hidden'));
+});
+
+function selectPlan(plan) {
+    {% if current_user.is_authenticated %}
+    if (confirm(`Upgrade to ${plan.charAt(0).toUpperCase() + plan.slice(1)} plan?`)) {
+        fetch('/api/upgrade', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ plan: plan })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('🎉 ' + data.message);
+                window.location.href = '/dashboard';
+            } else {
+                alert('❌ ' + data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('❌ Failed to upgrade plan');
+        });
+    }
+    {% else %}
+    alert('Please log in to select a plan');
+    window.location.href = '/login';
+    {% endif %}
+}
+
+function contactSales() {
+    alert('Enterprise sales: Contact us at enterprise@jobright.ai for custom pricing and features.');
+}
+</script>
+{% endblock %}

@@ -1,0 +1,36 @@
+Dear Hiring Manager,
+
+I am writing to express my strong interest in the Senior Software Engineer - CAD Platform position at Nemetschek. With over 3 years of experience as a Senior Software Engineer at Aviatrix, I have developed extensive expertise in the areas that align perfectly with your requirements.
+
+My background includes:
+
+🔧 Technical Expertise:
+• Advanced proficiency in Go and Python development
+• Extensive experience with cloud platforms (AWS, Azure, GCP)
+• Strong background in Kubernetes and containerization
+• Expertise in CI/CD pipelines and DevOps automation
+• Experience with infrastructure as code using Terraform
+
+🚀 Relevant Experience:
+• Developed scalable REST/gRPC services handling high-volume traffic
+• Implemented multi-cloud automation solutions with robust security
+• Built comprehensive monitoring and observability systems
+• Led infrastructure optimization projects reducing deployment time by 30%
+
+🎯 Key Achievements:
+• Enhanced system reliability with Prometheus/Grafana monitoring, reducing MTTR by 15%
+• Implemented Zero-Trust security architecture with eBPF validation
+• Automated infrastructure management across multiple cloud providers
+• Successfully delivered critical features under tight deadlines
+
+I am particularly excited about Nemetschek's innovative work in the CAD and construction technology space. My experience with high-performance systems and cloud architecture would enable me to contribute immediately to your team's success.
+
+I would welcome the opportunity to discuss how my skills and passion for technology can contribute to Nemetschek's continued growth and innovation.
+
+Thank you for your consideration.
+
+Best regards,
+Jiale Lin
+Email: jeremykalilin@gmail.com
+Phone: +1-510-417-5834
+LinkedIn: linkedin.com/in/jiale-lin

@@ -1,0 +1,52 @@
+{
+  "job_details": {
+    "title": "Full Stack Developer - Web Platform",
+    "company": "Nemetschek",
+    "location": "Berlin, Germany",
+    "department": "Product Engineering",
+    "job_id": "NEMETSCHEK-2025-003"
+  },
+  "analysis_results": {
+    "match_score": 83.56164383561644,
+    "total_requirements": 11,
+    "matching_skills": [
+      "docker",
+      "grafana",
+      "python",
+      "go",
+      "java",
+      "javascript",
+      "postgresql",
+      "mysql",
+      "mongodb"
+    ],
+    "missing_skills": [
+      "typescript",
+      "collaboration"
+    ],
+    "enhancement_suggestions": []
+  },
+  "skill_categorization": {
+    "critical_matches": [],
+    "development_opportunities": [
+      "typescript",
+      "collaboration"
+    ],
+    "nice_to_have_skills": [
+      "python",
+      "go",
+      "java",
+      "javascript",
+      "typescript",
+      "postgresql",
+      "mysql",
+      "mongodb",
+      "collaboration"
+    ]
+  },
+  "documents_generated": {
+    "resume": "Jiale_Lin_Resume_Nemetschek_Full_Stack_Developer_-_Web_Platform_20250922_211409.tex",
+    "cover_letter": "Jiale_Lin_Cover_Letter_Nemetschek_Full_Stack_Developer_-_Web_Platform_20250922_211409.txt",
+    "generation_timestamp": "20250922_211409"
+  }
+}

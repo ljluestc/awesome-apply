@@ -167,7 +167,15 @@
                                     </div>
 
                                     <div class="salary-range mb-2">
-                                        ${{ "{:,}".format(job.salary_min) }} - ${{ "{:,}".format(job.salary_max) }}
+                                        {% if job.salary_min and job.salary_max %}
+                                            ${{ "{:,}".format(job.salary_min) }} - ${{ "{:,}".format(job.salary_max) }}
+                                        {% elif job.salary_min %}
+                                            ${{ "{:,}".format(job.salary_min) }}+
+                                        {% elif job.salary_max %}
+                                            Up to ${{ "{:,}".format(job.salary_max) }}
+                                        {% else %}
+                                            Competitive salary
+                                        {% endif %}
                                         {% if job.remote_friendly %}
                                             <span class="badge bg-info ms-2">Remote Friendly</span>
                                         {% endif %}
@@ -178,9 +186,17 @@
 
                                     <!-- Skills -->
                                     <div class="mb-3">
-                                        {% for skill in job.skills | from_json %}
-                                            <span class="skill-tag">{{ skill }}</span>
-                                        {% endfor %}
+                                        {% if job.skills %}
+                                            {% if job.skills is string %}
+                                                {% for skill in job.skills | from_json %}
+                                                    <span class="skill-tag">{{ skill }}</span>
+                                                {% endfor %}
+                                            {% else %}
+                                                {% for skill in job.skills %}
+                                                    <span class="skill-tag">{{ skill }}</span>
+                                                {% endfor %}
+                                            {% endif %}
+                                        {% endif %}
                                     </div>
 
                                     <!-- Match Reasons (for logged in users) -->

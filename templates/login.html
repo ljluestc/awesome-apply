@@ -1,122 +1,108 @@
-{% extends "base.html" %}
-
-{% block title %}Login - JobRight.ai Mock{% endblock %}
-
-{% block content %}
-<div class="container">
-    <div class="row justify-content-center align-items-center min-vh-100">
-        <div class="col-md-6 col-lg-5">
-            <div class="card-custom p-4">
-                <div class="text-center mb-4">
-                    <div class="gradient-bg text-white d-inline-block px-4 py-2 rounded-3 mb-3">
-                        <i class="fas fa-rocket fa-2x"></i>
-                    </div>
-                    <h2 class="fw-bold">Welcome Back</h2>
-                    <p class="text-muted">Sign in to access your personalized job recommendations</p>
-                </div>
-
-                <form id="login-form">
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email"
-                               class="form-control search-box"
-                               id="email"
-                               name="email"
-                               required
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - JobRight</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .jobright-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md w-full space-y-8">
+            <div>
+                <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                    Sign in to JobRight
+                </h2>
+                <p class="mt-2 text-center text-sm text-gray-600">
+                    Find your dream job with AI-powered recommendations
+                </p>
+            </div>
+            <form class="mt-8 space-y-6" id="loginForm">
+                <div class="rounded-md shadow-sm space-y-4">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email address</label>
+                        <input id="email" name="email" type="email" required
+                               class="appearance-none rounded-lg relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10"
                                placeholder="Enter your email">
                     </div>
-
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password"
-                               class="form-control search-box"
-                               id="password"
-                               name="password"
-                               required
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700 mb-2">Password</label>
+                        <input id="password" name="password" type="password" required
+                               class="appearance-none rounded-lg relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10"
                                placeholder="Enter your password">
                     </div>
+                </div>
 
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="remember">
-                        <label class="form-check-label" for="remember">
-                            Remember me
-                        </label>
-                    </div>
+                {% if error %}
+                <div class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+                    {{ error }}
+                </div>
+                {% endif %}
 
-                    <button type="submit" class="btn btn-primary-custom w-100 mb-3" id="login-btn">
-                        <i class="fas fa-sign-in-alt"></i> Sign In
+                <div>
+                    <button type="submit"
+                            class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white jobright-gradient hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        Sign in
                     </button>
-                </form>
+                </div>
 
                 <div class="text-center">
-                    <p class="text-muted">
-                        Don't have an account?
-                        <a href="{{ url_for('signup') }}" class="text-decoration-none">Sign up here</a>
-                    </p>
+                    <a href="/signup" class="text-indigo-600 hover:text-indigo-500 text-sm">
+                        Don't have an account? Sign up
+                    </a>
                 </div>
 
-                <!-- Demo Credentials -->
-                <div class="alert alert-info mt-4">
-                    <h6><i class="fas fa-info-circle"></i> Demo Credentials</h6>
-                    <p class="mb-1"><strong>Email:</strong> demo@jobright.mock</p>
-                    <p class="mb-0"><strong>Password:</strong> demo123</p>
-                    <button class="btn btn-sm btn-outline-primary mt-2" onclick="fillDemoCredentials()">
-                        <i class="fas fa-magic"></i> Use Demo Credentials
+                <!-- Demo credentials -->
+                <div class="bg-blue-50 border border-blue-200 p-4 rounded-lg">
+                    <h4 class="text-sm font-medium text-blue-900 mb-2">Demo Credentials:</h4>
+                    <p class="text-sm text-blue-700">Email: demo@jobright.ai</p>
+                    <p class="text-sm text-blue-700">Password: demo123</p>
+                    <button type="button" onclick="fillDemo()" class="mt-2 text-sm text-blue-600 hover:text-blue-800 underline">
+                        Use demo credentials
                     </button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
-</div>
-{% endblock %}
 
-{% block scripts %}
-<script>
-    $('#login-form').on('submit', function(e) {
-        e.preventDefault();
+    <script>
+        function fillDemo() {
+            document.getElementById('email').value = 'demo@jobright.ai';
+            document.getElementById('password').value = 'demo123';
+        }
 
-        const email = $('#email').val();
-        const password = $('#password').val();
-        const loginBtn = $('#login-btn');
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
 
-        setLoading(loginBtn);
+            const formData = new FormData(e.target);
+            const data = {
+                email: formData.get('email'),
+                password: formData.get('password')
+            };
 
-        fetch('/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                email: email,
-                password: password
-            })
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                showToast('Login successful! Redirecting...', 'success');
-                setTimeout(() => {
-                    window.location.href = '/jobs/recommend';
-                }, 1500);
-            } else {
-                showToast(data.message, 'error');
-                setLoading(loginBtn, false);
+            try {
+                const response = await fetch('/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    window.location.href = result.redirect || '/jobs/recommend';
+                } else {
+                    alert(result.message || 'Login failed');
+                }
+            } catch (error) {
+                alert('Login failed. Please try again.');
             }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            showToast('Login failed. Please try again.', 'error');
-            setLoading(loginBtn, false);
         });
-    });
-
-    function fillDemoCredentials() {
-        $('#email').val('demo@jobright.mock');
-        $('#password').val('demo123');
-        showToast('Demo credentials filled in!', 'info');
-    }
-
-    // Auto-focus email field
-    $('#email').focus();
-</script>
-{% endblock %}
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+{
+  "test_summary": {
+    "timestamp": "2025-09-21T16:49:42.417472",
+    "total_pages_tested": 10,
+    "total_applications_attempted": 100,
+    "total_successful_applications": 0,
+    "total_failed_applications": 100,
+    "success_rate": 0.0
+  },
+  "page_reports": [
+    {
+      "page": 1,
+      "jobs_found": 20,
+      "applications_attempted": 10,
+      "applications_successful": 0,
+      "applications_failed": 10,
+      "duration_seconds": 0.025016,
+      "jobs_applied": []
+    },
+    {
+      "page": 2,
+      "jobs_found": 20,
+      "applications_attempted": 10,
+      "applications_successful": 0,
+      "applications_failed": 10,
+      "duration_seconds": 0.033579,
+      "jobs_applied": []
+    },
+    {
+      "page": 3,
+      "jobs_found": 20,
+      "applications_attempted": 10,
+      "applications_successful": 0,
+      "applications_failed": 10,
+      "duration_seconds": 0.018834,
+      "jobs_applied": []
+    },
+    {
+      "page": 4,
+      "jobs_found": 20,
+      "applications_attempted": 10,
+      "applications_successful": 0,
+      "applications_failed": 10,
+      "duration_seconds": 0.019156,
+      "jobs_applied": []
+    },
+    {
+      "page": 5,
+      "jobs_found": 20,
+      "applications_attempted": 10,
+      "applications_successful": 0,
+      "applications_failed": 10,
+      "duration_seconds": 0.030261,
+      "jobs_applied": []
+    },
+    {
+      "page": 6,
+      "jobs_found": 20,
+      "applications_attempted": 10,
+      "applications_successful": 0,
+      "applications_failed": 10,
+      "duration_seconds": 0.020165,
+      "jobs_applied": []
+    },
+    {
+      "page": 7,
+      "jobs_found": 20,
+      "applications_attempted": 10,
+      "applications_successful": 0,
+      "applications_failed": 10,
+      "duration_seconds": 0.024701,
+      "jobs_applied": []
+    },
+    {
+      "page": 8,
+      "jobs_found": 20,
+      "applications_attempted": 10,
+      "applications_successful": 0,
+      "applications_failed": 10,
+      "duration_seconds": 0.026779,
+      "jobs_applied": []
+    },
+    {
+      "page": 9,
+      "jobs_found": 20,
+      "applications_attempted": 10,
+      "applications_successful": 0,
+      "applications_failed": 10,
+      "duration_seconds": 0.023888,
+      "jobs_applied": []
+    },
+    {
+      "page": 10,
+      "jobs_found": 20,
+      "applications_attempted": 10,
+      "applications_successful": 0,
+      "applications_failed": 10,
+      "duration_seconds": 0.019405,
+      "jobs_applied": []
+    }
+  ]
+}

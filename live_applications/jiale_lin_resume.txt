@@ -1,0 +1,44 @@
+JIALE LIN
+Senior Software Engineer
+
+Contact: jeremykalilin@gmail.com | +1-510-417-5834
+Location: Santa Clara, CA 95054
+LinkedIn: https://www.linkedin.com/in/jiale-lin-ab03a4149 | Portfolio: https://ljluestc.github.io
+
+PROFESSIONAL EXPERIENCE
+
+AVIATRIX | Senior Software Engineer | May 2022 - Present
+• Architected multi-cloud infrastructure solutions across AWS, Azure, and GCP
+• Implemented Infrastructure as Code with Terraform, reducing deployment time by 40%
+• Built comprehensive CI/CD pipelines with Jenkins and GitHub Actions
+• Enhanced monitoring with Prometheus, Grafana, and ELK stack
+• Reduced MTTR by 35% through automated incident response
+• Developed Zero Trust security architecture with eBPF-based network validation
+
+VEEVA SYSTEMS | Senior QA Engineer (SDET) | August 2021 - May 2022
+• Developed cross-platform test automation framework using Kotlin and Cucumber
+• Implemented behavior-driven development (BDD) practices
+• Built comprehensive UI automation with Selenium WebDriver and Appium
+• Achieved 90% automated test coverage
+
+GOOGLE FIBER | Test Engineer | June 2019 - June 2021
+• Designed Selenium-based testing framework for network applications
+• Optimized BigQuery data pipelines for network performance analytics
+• Developed automated network testing protocols
+• Built monitoring dashboards for 24/7 network health tracking
+
+TECHNICAL SKILLS
+Cloud Platforms: AWS, Azure, GCP
+DevOps: Kubernetes, Docker, Terraform, Ansible, Jenkins, GitHub Actions
+Programming: Python, Go, C++, JavaScript, Java, Bash
+Databases: PostgreSQL, MySQL, MongoDB, Redis, BigQuery
+Monitoring: Prometheus, Grafana, ELK Stack, DataDog
+
+EDUCATION
+University of Colorado Boulder | MS Computer Science | Expected May 2025
+University of Arizona | BS Mathematics (CS) | May 2019
+
+CERTIFICATIONS
+• AWS Certified Solutions Architect - Professional
+• Kubernetes Certified Administrator (CKA)
+• HashiCorp Terraform Associate

@@ -1,0 +1,25 @@
+Dear Nemetschek Hiring Manager,
+
+I am writing to express my strong interest in the Network Security Engineer position at Nemetschek. With my Master's degree in Computer Science from the University of Colorado Boulder and over 5 years of experience as a Senior Software Engineer at Aviatrix, I am excited to contribute to Nemetschek's innovative technology solutions.
+
+My experience directly aligns with your requirements:
+
+• Technical Expertise: Proficient in python, go, aws, gcp, azure and many other technologies mentioned in your job posting
+• Cloud & Infrastructure: Extensive experience with multi-cloud environments (AWS, Azure, GCP) and container orchestration using Kubernetes
+• Software Development: Led development of enterprise-scale applications with a focus on scalability, reliability, and performance optimization
+• DevOps & Automation: Implemented CI/CD pipelines that reduced deployment time by 30% and enhanced system observability
+
+At Aviatrix, I have:
+- Developed REST/gRPC services handling millions of requests daily
+- Automated infrastructure provisioning using Terraform across multiple cloud providers
+- Enhanced monitoring systems with Prometheus and Grafana, reducing MTTR by 15%
+- Implemented security best practices including Zero-Trust architecture and supply chain hardening
+
+I am particularly drawn to Nemetschek's mission and would welcome the opportunity to discuss how my technical expertise and passion for innovation can contribute to your team's success.
+
+Thank you for considering my application. I look forward to hearing from you.
+
+Best regards,
+Jiale Lin
+jeremykalilin@gmail.com
++1-510-417-5834

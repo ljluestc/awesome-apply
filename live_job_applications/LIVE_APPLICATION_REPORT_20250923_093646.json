@@ -1,0 +1,23 @@
+{
+  "automation_type": "LIVE_JOB_APPLICATIONS",
+  "timestamp": "2025-09-23T09:36:46.523108",
+  "total_applications_submitted": 0,
+  "total_failed_applications": 0,
+  "success_rate": 0,
+  "successful_applications": [],
+  "failed_applications": [],
+  "applicant_information": {
+    "first_name": "Jiale",
+    "last_name": "Lin",
+    "email": "jiale.lin.x@gmail.com",
+    "phone": "+1-857-294-1281",
+    "address": "123 Tech Street",
+    "city": "Boston",
+    "state": "MA",
+    "zip_code": "02101",
+    "country": "United States",
+    "linkedin": "https://linkedin.com/in/jiale-lin",
+    "github": "https://github.com/jiale-lin",
+    "website": "https://jiale-lin.dev"
+  }
+}

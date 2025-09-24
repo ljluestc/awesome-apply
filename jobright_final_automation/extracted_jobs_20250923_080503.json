@@ -1,0 +1,194 @@
+[
+  {
+    "index": 0,
+    "title": "Senior",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 1,
+    "title": "Senior",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 2,
+    "title": "coordinator",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 3,
+    "title": "Analyst",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 4,
+    "title": "Senior",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 5,
+    "title": "Senior",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 6,
+    "title": "Senior",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 7,
+    "title": "coordinator",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 8,
+    "title": "Analyst",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 9,
+    "title": "Senior",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 10,
+    "title": "Analyst",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 11,
+    "title": "Manager",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 12,
+    "title": "Engineer",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 13,
+    "title": "Manager",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 14,
+    "title": "Engineer",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 15,
+    "title": "MANAGER",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 16,
+    "title": "Engineer",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 17,
+    "title": "Engineer",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 18,
+    "title": "Engineer",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 19,
+    "title": "Analyst",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 20,
+    "title": "Product",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 21,
+    "title": "Backend",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 22,
+    "title": "Product",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  },
+  {
+    "index": 23,
+    "title": "Backend",
+    "company": "Unknown",
+    "location": "Remote",
+    "extraction_method": "text_pattern",
+    "apply_button": false
+  }
+]

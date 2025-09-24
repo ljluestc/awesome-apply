@@ -1,0 +1,21 @@
+{
+  "total_required_skills": 8,
+  "matched_skills": 8,
+  "missing_skills": 0,
+  "match_percentage": 100.0,
+  "matched_skill_list": [
+    "go",
+    "gcp",
+    "python",
+    "aws",
+    "java",
+    "kubernetes",
+    "azure",
+    "docker"
+  ],
+  "missing_skill_list": [],
+  "recommendations": [
+    "Gained experience with Google Cloud, Microsoft Azure through personal projects and continuous learning initiatives.",
+    "Gained experience with K8s, Podman through personal projects and continuous learning initiatives."
+  ]
+}

@@ -1,0 +1,7 @@
+2025-09-22 21:29:35,129 - INFO - Starting automation...
+2025-09-22 21:29:35,437 - INFO - WebDriver setup completed
+2025-09-22 21:29:35,438 - INFO - Navigating to: https://career55.sapsf.eu/careers?company=nemetschek
+2025-09-22 21:29:44,787 - INFO - Successfully navigated to careers page
+2025-09-22 21:29:44,787 - INFO - Searching for jobs with keywords: ['software engineer', 'senior', 'developer']
+2025-09-22 21:29:47,908 - INFO - Found 0 job listings
+2025-09-22 21:29:47,908 - WARNING - No jobs found

@@ -1,0 +1,36 @@
+Dear Nemetschek Hiring Manager,
+
+I am writing to express my strong interest in the Full Stack Developer - Web Platform position at Nemetschek. With over 5 years of experience in cloud infrastructure, DevOps automation, and software development, I am excited to contribute to Nemetschek's innovative technology solutions and digital transformation initiatives.
+
+In my current role as Senior Software Engineer at Aviatrix, I have successfully delivered results that directly align with your requirements:
+
+• **Multi-Cloud Expertise**: Designed and operated Kubernetes infrastructure across AWS, Azure, and GCP with Terraform automation, achieving a 30% reduction in deployment time
+
+• **DevOps & SRE Excellence**: Built comprehensive CI/CD pipelines with GitHub Actions, Jenkins, and ArgoCD, implementing GitOps practices and reducing MTTR by 15%
+
+• **Monitoring & Observability**: Enhanced system reliability with Prometheus, Grafana, and DataDog, implementing SLOs and comprehensive health monitoring
+
+• **Security & Innovation**: Implemented Zero Trust security architecture with eBPF-based network validation and supply chain hardening through SBOM integration
+
+My technical expertise spans the core technologies in your requirements: docker, grafana, python, go, java. I have consistently delivered measurable business impact through automation, optimization, and innovative problem-solving.
+
+What particularly excites me about Nemetschek is your commitment to cutting-edge technology and innovation in the AEC industry. My experience building production ML systems on cloud-native platforms, combined with my infrastructure automation background, positions me well to contribute to your technology advancement initiatives.
+
+Key achievements that demonstrate my alignment with your needs:
+• Led multi-cloud infrastructure automation serving enterprise-scale applications
+• Implemented comprehensive observability practices improving system reliability by 15%
+• Built secure, scalable automation solutions reducing operational overhead
+• Delivered AI/ML systems with advanced deployment strategies on Kubernetes
+
+I am eager to bring my technical expertise and passion for innovation to Nemetschek's dynamic team. I would welcome the opportunity to discuss how my experience can contribute to your continued success and technological leadership.
+
+Thank you for considering my application. I look forward to hearing from you.
+
+Best regards,
+Jiale Lin
+
+Contact Information:
+• Email: jeremykalilin@gmail.com
+• Phone: +1-510-417-5834
+• LinkedIn: https://www.linkedin.com/in/jiale-lin-ab03a4149
+• Portfolio: https://ljluestc.github.io

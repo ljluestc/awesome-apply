@@ -1,0 +1,251 @@
+{
+  "demonstration_summary": {
+    "timestamp": "20250922_211411",
+    "total_jobs_analyzed": 4,
+    "total_documents_generated": 12,
+    "average_match_score": 83.23795617854235,
+    "output_directory": "nemetschek_demo_applications"
+  },
+  "job_results": [
+    {
+      "job_details": {
+        "title": "Senior Software Engineer - CAD Platform",
+        "company": "Nemetschek",
+        "location": "München, Germany",
+        "department": "Engineering",
+        "job_id": "NEMETSCHEK-2025-001"
+      },
+      "analysis_results": {
+        "match_score": 92.0,
+        "total_requirements": 9,
+        "matching_skills": [
+          "aws",
+          "azure",
+          "gcp",
+          "kubernetes",
+          "docker",
+          "python",
+          "go",
+          "c++"
+        ],
+        "missing_skills": [
+          "typescript"
+        ],
+        "enhancement_suggestions": []
+      },
+      "skill_categorization": {
+        "critical_matches": [],
+        "development_opportunities": [
+          "typescript"
+        ],
+        "nice_to_have_skills": [
+          "aws",
+          "azure",
+          "gcp",
+          "kubernetes",
+          "docker",
+          "python",
+          "go",
+          "typescript",
+          "c++"
+        ]
+      },
+      "documents_generated": {
+        "resume": "Jiale_Lin_Resume_Nemetschek_Senior_Software_Engineer_-_CAD_Platform_20250922_211405.tex",
+        "cover_letter": "Jiale_Lin_Cover_Letter_Nemetschek_Senior_Software_Engineer_-_CAD_Platform_20250922_211405.txt",
+        "generation_timestamp": "20250922_211405"
+      }
+    },
+    {
+      "job_details": {
+        "title": "DevOps Engineer - Infrastructure",
+        "company": "Nemetschek",
+        "location": "Remote (EU)",
+        "department": "Infrastructure",
+        "job_id": "NEMETSCHEK-2025-002"
+      },
+      "analysis_results": {
+        "match_score": 82.94573643410853,
+        "total_requirements": 16,
+        "matching_skills": [
+          "aws",
+          "azure",
+          "gcp",
+          "kubernetes",
+          "terraform",
+          "jenkins",
+          "prometheus",
+          "grafana",
+          "datadog",
+          "python",
+          "go",
+          "rust",
+          "bash"
+        ],
+        "missing_skills": [
+          "jaeger",
+          "typescript",
+          "compliance"
+        ],
+        "enhancement_suggestions": [
+          "Consider gaining typescript experience - this is a required skill",
+          "Consider gaining compliance experience - this is a required skill",
+          "High Priority: Gain experience with compliance - these are critical for this role"
+        ]
+      },
+      "skill_categorization": {
+        "critical_matches": [],
+        "development_opportunities": [
+          "jaeger",
+          "typescript",
+          "compliance"
+        ],
+        "nice_to_have_skills": [
+          "aws",
+          "azure",
+          "gcp",
+          "kubernetes",
+          "terraform",
+          "jenkins",
+          "prometheus",
+          "grafana",
+          "datadog",
+          "jaeger",
+          "go",
+          "rust"
+        ]
+      },
+      "documents_generated": {
+        "resume": "Jiale_Lin_Resume_Nemetschek_DevOps_Engineer_-_Infrastructure_20250922_211407.tex",
+        "cover_letter": "Jiale_Lin_Cover_Letter_Nemetschek_DevOps_Engineer_-_Infrastructure_20250922_211407.txt",
+        "generation_timestamp": "20250922_211407"
+      }
+    },
+    {
+      "job_details": {
+        "title": "Full Stack Developer - Web Platform",
+        "company": "Nemetschek",
+        "location": "Berlin, Germany",
+        "department": "Product Engineering",
+        "job_id": "NEMETSCHEK-2025-003"
+      },
+      "analysis_results": {
+        "match_score": 83.56164383561644,
+        "total_requirements": 11,
+        "matching_skills": [
+          "docker",
+          "grafana",
+          "python",
+          "go",
+          "java",
+          "javascript",
+          "postgresql",
+          "mysql",
+          "mongodb"
+        ],
+        "missing_skills": [
+          "typescript",
+          "collaboration"
+        ],
+        "enhancement_suggestions": []
+      },
+      "skill_categorization": {
+        "critical_matches": [],
+        "development_opportunities": [
+          "typescript",
+          "collaboration"
+        ],
+        "nice_to_have_skills": [
+          "python",
+          "go",
+          "java",
+          "javascript",
+          "typescript",
+          "postgresql",
+          "mysql",
+          "mongodb",
+          "collaboration"
+        ]
+      },
+      "documents_generated": {
+        "resume": "Jiale_Lin_Resume_Nemetschek_Full_Stack_Developer_-_Web_Platform_20250922_211409.tex",
+        "cover_letter": "Jiale_Lin_Cover_Letter_Nemetschek_Full_Stack_Developer_-_Web_Platform_20250922_211409.txt",
+        "generation_timestamp": "20250922_211409"
+      }
+    },
+    {
+      "job_details": {
+        "title": "Network Security Engineer",
+        "company": "Nemetschek",
+        "location": "München, Germany",
+        "department": "Security",
+        "job_id": "NEMETSCHEK-2025-004"
+      },
+      "analysis_results": {
+        "match_score": 74.44444444444444,
+        "total_requirements": 11,
+        "matching_skills": [
+          "aws",
+          "azure",
+          "gcp",
+          "kubernetes",
+          "go",
+          "rust",
+          "ssl_tls",
+          "iptables"
+        ],
+        "missing_skills": [
+          "typescript",
+          "zero_trust",
+          "compliance"
+        ],
+        "enhancement_suggestions": []
+      },
+      "skill_categorization": {
+        "critical_matches": [],
+        "development_opportunities": [
+          "typescript",
+          "zero_trust",
+          "compliance"
+        ],
+        "nice_to_have_skills": [
+          "aws",
+          "azure",
+          "gcp",
+          "kubernetes",
+          "go",
+          "typescript",
+          "rust",
+          "zero_trust",
+          "ssl_tls",
+          "compliance",
+          "iptables"
+        ]
+      },
+      "documents_generated": {
+        "resume": "Jiale_Lin_Resume_Nemetschek_Network_Security_Engineer_20250922_211411.tex",
+        "cover_letter": "Jiale_Lin_Cover_Letter_Nemetschek_Network_Security_Engineer_20250922_211411.txt",
+        "generation_timestamp": "20250922_211411"
+      }
+    }
+  ],
+  "recommendations": {
+    "strongest_match": "Senior Software Engineer - CAD Platform",
+    "universal_skills": [
+      "docker",
+      "python",
+      "iptables",
+      "terraform",
+      "c++",
+      "jenkins",
+      "ssl_tls",
+      "javascript"
+    ],
+    "next_steps": [
+      "Review generated resumes for each position",
+      "Customize cover letters with specific company insights",
+      "Address skill gaps identified in analysis reports",
+      "Prepare for technical interviews based on job requirements"
+    ]
+  }
+}

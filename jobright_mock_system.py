@@ -519,7 +519,7 @@ def jobs_recommend():
         applied_jobs = JobApplication.query.filter_by(user_id=current_user.id).all()
         applied_job_ids = {job.job_id for job in applied_jobs}
 
-    return render_template('jobs_recommend.html',
+    return render_template('jobs_recommend_modern.html',
                          jobs=paginated_jobs,
                          total_jobs=len(filtered_jobs),
                          page=page,

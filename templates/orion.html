@@ -1,0 +1,247 @@
+{% extends "base.html" %}
+
+{% block title %}Orion AI Assistant - JobRight.ai{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+    <!-- Header -->
+    <div class="mb-8 text-center">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">💬 Orion AI Assistant</h1>
+        <p class="text-xl text-gray-600">Your 24/7 career copilot for job search guidance and career advice</p>
+    </div>
+
+    <!-- Chat Container -->
+    <div class="bg-white rounded-lg shadow-lg h-96 flex flex-col">
+        <!-- Chat Messages -->
+        <div id="chatMessages" class="flex-1 overflow-y-auto p-6 space-y-4">
+            {% if chats %}
+                {% for chat in chats %}
+                <!-- User Message -->
+                <div class="flex justify-end">
+                    <div class="bg-blue-500 text-white rounded-lg px-4 py-2 max-w-xs lg:max-w-md">
+                        {{ chat.message }}
+                    </div>
+                </div>
+
+                <!-- Orion Response -->
+                <div class="flex justify-start">
+                    <div class="bg-gray-100 text-gray-800 rounded-lg px-4 py-2 max-w-xs lg:max-w-md">
+                        <div class="flex items-center mb-2">
+                            <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center mr-2">
+                                <span class="text-white text-xs font-bold">O</span>
+                            </div>
+                            <span class="font-semibold text-sm">Orion</span>
+                        </div>
+                        <div class="whitespace-pre-wrap">{{ chat.response }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <!-- Welcome Message -->
+                <div class="flex justify-start">
+                    <div class="bg-gray-100 text-gray-800 rounded-lg px-4 py-2 max-w-md">
+                        <div class="flex items-center mb-2">
+                            <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center mr-2">
+                                <span class="text-white text-xs font-bold">O</span>
+                            </div>
+                            <span class="font-semibold text-sm">Orion</span>
+                        </div>
+                        <div class="whitespace-pre-wrap">Hi! I'm Orion, your AI career copilot. I'm here to help with:
+
+🎯 **Job Search Strategy** - Find the right opportunities faster
+📝 **Resume Optimization** - Beat the ATS and get noticed
+🎤 **Interview Preparation** - Ace those behavioral and technical questions
+💰 **Salary Negotiation** - Get the compensation you deserve
+🤝 **Networking Tips** - Build meaningful professional connections
+
+What would you like help with today?</div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Chat Input -->
+        <div class="border-t border-gray-200 p-4">
+            <form id="chatForm" class="flex gap-2">
+                <input type="text" id="messageInput" placeholder="Ask Orion about your career..."
+                       class="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                       required>
+                <button type="submit" class="bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded-lg transition-colors">
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Quick Questions -->
+    <div class="mt-8">
+        <h2 class="text-xl font-semibold mb-4">Quick Questions</h2>
+        <div class="grid md:grid-cols-2 gap-4">
+            <button class="quick-question bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg p-4 text-left transition-colors">
+                <h3 class="font-semibold text-blue-600">🎯 Job Search Strategy</h3>
+                <p class="text-gray-600 text-sm mt-1">Get personalized advice on finding the right opportunities</p>
+            </button>
+
+            <button class="quick-question bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg p-4 text-left transition-colors">
+                <h3 class="font-semibold text-green-600">📝 Resume Tips</h3>
+                <p class="text-gray-600 text-sm mt-1">Optimize your resume for ATS and recruiters</p>
+            </button>
+
+            <button class="quick-question bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg p-4 text-left transition-colors">
+                <h3 class="font-semibold text-purple-600">🎤 Interview Prep</h3>
+                <p class="text-gray-600 text-sm mt-1">Practice answers and get interview strategies</p>
+            </button>
+
+            <button class="quick-question bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg p-4 text-left transition-colors">
+                <h3 class="font-semibold text-orange-600">💰 Salary Negotiation</h3>
+                <p class="text-gray-600 text-sm mt-1">Learn how to negotiate your compensation package</p>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+const chatMessages = document.getElementById('chatMessages');
+const chatForm = document.getElementById('chatForm');
+const messageInput = document.getElementById('messageInput');
+
+// Auto-scroll to bottom
+function scrollToBottom() {
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+// Initial scroll
+scrollToBottom();
+
+// Handle form submission
+chatForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const message = messageInput.value.trim();
+    if (!message) return;
+
+    // Add user message to chat
+    addMessage(message, 'user');
+
+    // Clear input
+    messageInput.value = '';
+
+    // Add typing indicator
+    addTypingIndicator();
+
+    // Send to API
+    sendMessage(message);
+});
+
+// Add message to chat
+function addMessage(message, sender) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = sender === 'user' ? 'flex justify-end' : 'flex justify-start';
+
+    if (sender === 'user') {
+        messageDiv.innerHTML = `
+            <div class="bg-blue-500 text-white rounded-lg px-4 py-2 max-w-xs lg:max-w-md">
+                ${message}
+            </div>
+        `;
+    } else {
+        messageDiv.innerHTML = `
+            <div class="bg-gray-100 text-gray-800 rounded-lg px-4 py-2 max-w-xs lg:max-w-md">
+                <div class="flex items-center mb-2">
+                    <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center mr-2">
+                        <span class="text-white text-xs font-bold">O</span>
+                    </div>
+                    <span class="font-semibold text-sm">Orion</span>
+                </div>
+                <div class="whitespace-pre-wrap">${message}</div>
+            </div>
+        `;
+    }
+
+    chatMessages.appendChild(messageDiv);
+    scrollToBottom();
+}
+
+// Add typing indicator
+function addTypingIndicator() {
+    const typingDiv = document.createElement('div');
+    typingDiv.id = 'typing-indicator';
+    typingDiv.className = 'flex justify-start';
+    typingDiv.innerHTML = `
+        <div class="bg-gray-100 text-gray-800 rounded-lg px-4 py-2">
+            <div class="flex items-center">
+                <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center mr-2">
+                    <span class="text-white text-xs font-bold">O</span>
+                </div>
+                <span class="font-semibold text-sm mr-2">Orion</span>
+                <div class="flex space-x-1">
+                    <div class="w-2 h-2 bg-gray-400 rounded-full animate-pulse"></div>
+                    <div class="w-2 h-2 bg-gray-400 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+                    <div class="w-2 h-2 bg-gray-400 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    chatMessages.appendChild(typingDiv);
+    scrollToBottom();
+}
+
+// Remove typing indicator
+function removeTypingIndicator() {
+    const typingIndicator = document.getElementById('typing-indicator');
+    if (typingIndicator) {
+        typingIndicator.remove();
+    }
+}
+
+// Send message to API
+function sendMessage(message) {
+    fetch('/api/orion/chat', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ message: message })
+    })
+    .then(response => response.json())
+    .then(data => {
+        removeTypingIndicator();
+
+        if (data.success) {
+            addMessage(data.response, 'orion');
+        } else {
+            addMessage('Sorry, I encountered an error. ' + data.message, 'orion');
+        }
+    })
+    .catch(error => {
+        removeTypingIndicator();
+        console.error('Error:', error);
+        addMessage('Sorry, I\'m having trouble connecting. Please try again.', 'orion');
+    });
+}
+
+// Handle quick questions
+document.querySelectorAll('.quick-question').forEach(button => {
+    button.addEventListener('click', function() {
+        const title = this.querySelector('h3').textContent;
+        let question = '';
+
+        if (title.includes('Job Search Strategy')) {
+            question = 'What are the best strategies for finding job opportunities?';
+        } else if (title.includes('Resume Tips')) {
+            question = 'How can I optimize my resume for ATS systems?';
+        } else if (title.includes('Interview Prep')) {
+            question = 'How should I prepare for job interviews?';
+        } else if (title.includes('Salary Negotiation')) {
+            question = 'What are some tips for negotiating salary?';
+        }
+
+        if (question) {
+            messageInput.value = question;
+            chatForm.dispatchEvent(new Event('submit'));
+        }
+    });
+});
+</script>
+{% endblock %}

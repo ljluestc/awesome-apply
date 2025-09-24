@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-09-22T23:50:20.216256",
+  "jobs_found": 1,
+  "applications_attempted": 1,
+  "applications_completed": 0,
+  "success": false,
+  "job_details": [
+    {
+      "title": "Available Position (General Application)",
+      "url": "https://career55.sapsf.eu/careers?company=nemetschek",
+      "success": false,
+      "timestamp": "2025-09-22T23:50:41.336330"
+    }
+  ]
+}

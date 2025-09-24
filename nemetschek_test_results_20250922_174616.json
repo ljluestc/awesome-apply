@@ -1,0 +1,158 @@
+[
+  {
+    "job": {
+      "title": "Senior DevOps Engineer - Infrastructure",
+      "company": "Nemetschek",
+      "description": "\n            We are seeking a Senior DevOps Engineer to join our Infrastructure team.\n            You will be responsible for:\n\n            Requirements:\n            - 5+ years of experience with AWS, Azure, or GCP\n            - Strong experience with Kubernetes and Docker\n            - Expertise in CI/CD pipelines (Jenkins, GitHub Actions, GitLab CI)\n            - Infrastructure as Code (Terraform, CloudFormation)\n            - Monitoring and observability (Prometheus, Grafana, DataDog)\n            - Python, Go, or Java programming skills\n            - Experience with microservices architecture\n            - Security best practices and compliance\n            - Bachelor's degree in Computer Science or related field\n\n            Preferred:\n            - Experience with service mesh (Istio, Linkerd)\n            - Knowledge of databases (PostgreSQL, Redis, MongoDB)\n            - Experience with logging systems (ELK, Splunk)\n            - Agile/Scrum methodology experience\n            "
+    },
+    "job_requirements": {
+      "required_skills": [],
+      "preferred_skills": [],
+      "technologies": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "Kubernetes",
+        "Docker",
+        "DevOps",
+        "CI/CD",
+        "Jenkins",
+        "GitHub Actions",
+        "GitLab CI",
+        "Python",
+        "Go",
+        "Java",
+        "PostgreSQL",
+        "Redis",
+        "MongoDB",
+        "Monitoring",
+        "observability",
+        "Prometheus",
+        "Grafana",
+        "DataDog",
+        "ELK",
+        "Infrastructure as Code",
+        "Terraform",
+        "Security"
+      ],
+      "experience_level": "years",
+      "domain_focus": [
+        "cloud",
+        "containers",
+        "cicd",
+        "programming",
+        "databases",
+        "monitoring",
+        "automation",
+        "security"
+      ],
+      "certifications": []
+    },
+    "resume_file": "Jiale_Lin_Resume_Nemetschek_Senior_DevOps_Engineer_-_Infrastructure_20250922_174616.tex",
+    "cover_letter_file": "Jiale_Lin_Cover_Letter_Nemetschek_Senior_DevOps_Engineer_-_Infrastructure_20250922_174616.txt",
+    "timestamp": "2025-09-22T17:46:16.777205"
+  },
+  {
+    "job": {
+      "title": "Full Stack Developer - Web Platform",
+      "company": "Nemetschek",
+      "description": "\n            Join our Web Platform team as a Full Stack Developer working on cutting-edge applications.\n\n            Requirements:\n            - 3+ years of full-stack development experience\n            - Strong proficiency in JavaScript/TypeScript\n            - Experience with React, Angular, or Vue.js\n            - Backend development with Node.js, Python, or Java\n            - Database design and optimization (SQL and NoSQL)\n            - RESTful API development\n            - Version control with Git\n            - Experience with testing frameworks\n            - Understanding of web security principles\n\n            Preferred:\n            - Experience with cloud platforms (AWS, Azure, GCP)\n            - Knowledge of containerization (Docker, Kubernetes)\n            - GraphQL experience\n            - Mobile app development experience\n            - Experience with CAD software integration\n            "
+    },
+    "job_requirements": {
+      "required_skills": [],
+      "preferred_skills": [],
+      "technologies": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "containerization",
+        "Docker",
+        "Kubernetes",
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "SQL",
+        "NoSQL",
+        "testing",
+        "security",
+        "API"
+      ],
+      "experience_level": "",
+      "domain_focus": [
+        "cloud",
+        "containers",
+        "programming",
+        "databases",
+        "testing",
+        "security",
+        "networking"
+      ],
+      "certifications": []
+    },
+    "resume_file": "Jiale_Lin_Resume_Nemetschek_Full_Stack_Developer_-_Web_Platform_20250922_174616.tex",
+    "cover_letter_file": "Jiale_Lin_Cover_Letter_Nemetschek_Full_Stack_Developer_-_Web_Platform_20250922_174616.txt",
+    "timestamp": "2025-09-22T17:46:16.778033"
+  },
+  {
+    "job": {
+      "title": "Senior Software Engineer - CAD Platform",
+      "company": "Nemetschek",
+      "description": "\n            We're looking for a Senior Software Engineer to work on our CAD Platform.\n\n            Requirements:\n            - 5+ years of software development experience\n            - Strong proficiency in C++, C#, or Java\n            - Experience with desktop application development\n            - 3D graphics programming experience (OpenGL, DirectX)\n            - Algorithm optimization and performance tuning\n            - Experience with large-scale software architecture\n            - Knowledge of design patterns and software engineering principles\n            - Experience with version control systems (Git, SVN)\n\n            Preferred:\n            - Experience with CAD/CAM software development\n            - Knowledge of computational geometry\n            - Experience with Qt or similar GUI frameworks\n            - Understanding of building information modeling (BIM)\n            - Experience with software development lifecycle\n            "
+    },
+    "job_requirements": {
+      "required_skills": [],
+      "preferred_skills": [],
+      "technologies": [
+        "Java"
+      ],
+      "experience_level": "senior",
+      "domain_focus": [
+        "programming"
+      ],
+      "certifications": []
+    },
+    "resume_file": "Jiale_Lin_Resume_Nemetschek_Senior_Software_Engineer_-_CAD_Platform_20250922_174616.tex",
+    "cover_letter_file": "Jiale_Lin_Cover_Letter_Nemetschek_Senior_Software_Engineer_-_CAD_Platform_20250922_174616.txt",
+    "timestamp": "2025-09-22T17:46:16.778324"
+  },
+  {
+    "job": {
+      "title": "Network Security Engineer",
+      "company": "Nemetschek",
+      "description": "\n            Join our Security team as a Network Security Engineer.\n\n            Requirements:\n            - 4+ years of network security experience\n            - Strong understanding of network protocols (TCP/IP, HTTP/HTTPS, DNS)\n            - Experience with firewalls, VPNs, and intrusion detection systems\n            - Knowledge of security frameworks and compliance standards\n            - Experience with network monitoring and analysis tools\n            - Scripting skills (Python, Bash, PowerShell)\n            - Understanding of cloud security (AWS, Azure)\n            - Security certifications (CISSP, CISM, CEH) preferred\n\n            Preferred:\n            - Experience with SIEM tools\n            - Knowledge of threat intelligence and incident response\n            - Experience with penetration testing\n            - Understanding of DevSecOps practices\n            "
+    },
+    "job_requirements": {
+      "required_skills": [],
+      "preferred_skills": [],
+      "technologies": [
+        "AWS",
+        "Azure",
+        "Python",
+        "monitoring",
+        "testing",
+        "Security",
+        "Security",
+        "security",
+        "security",
+        "security",
+        "Security",
+        "TCP/IP",
+        "HTTP"
+      ],
+      "experience_level": "",
+      "domain_focus": [
+        "cloud",
+        "programming",
+        "monitoring",
+        "testing",
+        "security",
+        "networking"
+      ],
+      "certifications": []
+    },
+    "resume_file": "Jiale_Lin_Resume_Nemetschek_Network_Security_Engineer_20250922_174616.tex",
+    "cover_letter_file": "Jiale_Lin_Cover_Letter_Nemetschek_Network_Security_Engineer_20250922_174616.txt",
+    "timestamp": "2025-09-22T17:46:16.779024"
+  }
+]

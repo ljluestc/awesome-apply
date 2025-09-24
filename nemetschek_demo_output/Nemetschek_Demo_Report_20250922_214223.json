@@ -1,0 +1,65 @@
+{
+  "demo_info": {
+    "title": "Nemetschek Automation Demo - Complete Workflow",
+    "timestamp": "2025-09-22T21:42:23.007446",
+    "status": "SUCCESS"
+  },
+  "job_details": {
+    "title": "Senior Software Engineer - CAD Platform",
+    "company": "Nemetschek",
+    "location": "Munich, Germany",
+    "requirements_count": 13,
+    "key_requirements": [
+      "C++",
+      "Python",
+      "3D Graphics",
+      "OpenGL",
+      "DirectX",
+      "CAD Software",
+      "AWS",
+      "Azure",
+      "CI/CD",
+      "DevOps"
+    ]
+  },
+  "generated_documents": {
+    "resume": {
+      "path": "nemetschek_demo_output/resumes/Jiale_Lin_Resume_Nemetschek_Senior_Software_Engineer___CAD_Platform_20250922_214208.tex",
+      "size_bytes": 6955,
+      "format": "LaTeX (.tex)"
+    },
+    "cover_letter": {
+      "path": "nemetschek_demo_output/resumes/Jiale_Lin_Cover_Letter_Nemetschek_Senior_Software_Engineer___CAD_Platform_20250922_214208.txt",
+      "size_bytes": 1815,
+      "format": "Text (.txt)"
+    }
+  },
+  "application_result": {
+    "success": true,
+    "application_id": "NEM-20250922214223",
+    "submitted_at": "2025-09-22T21:42:23.007411",
+    "job_title": "Senior Software Engineer - CAD Platform",
+    "company": "Nemetschek"
+  },
+  "workflow_steps": [
+    "1. Job requirement analysis completed",
+    "2. Tailored resume generated using LaTeX template",
+    "3. Personalized cover letter created",
+    "4. Documents saved to local files",
+    "5. Application process simulated",
+    "6. Personal information filled",
+    "7. Documents uploaded",
+    "8. Screening questions answered",
+    "9. Application submitted successfully"
+  ],
+  "system_capabilities": [
+    "Dynamic resume generation based on job requirements",
+    "Intelligent keyword matching and skill prioritization",
+    "Professional LaTeX resume formatting",
+    "Automated cover letter generation",
+    "Complete application workflow automation",
+    "Error handling and validation",
+    "Screenshot capture for debugging",
+    "Comprehensive logging and reporting"
+  ]
+}

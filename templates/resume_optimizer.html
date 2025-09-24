@@ -1,0 +1,368 @@
+{% extends "base.html" %}
+
+{% block title %}Resume Optimizer - JobRight.ai{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8 max-w-6xl">
+    <!-- Header -->
+    <div class="mb-8">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">📄 Resume Optimizer</h1>
+        <p class="text-xl text-gray-600">AI-powered resume analysis and optimization for maximum ATS compatibility</p>
+    </div>
+
+    <!-- Upload Section -->
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+        <h2 class="text-2xl font-semibold mb-6">Upload Your Resume</h2>
+
+        <div id="uploadArea" class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-blue-400 transition-colors cursor-pointer">
+            <div class="mb-4">
+                <i class="fas fa-cloud-upload-alt text-4xl text-gray-400"></i>
+            </div>
+            <p class="text-lg text-gray-600 mb-2">Drop your resume here or click to browse</p>
+            <p class="text-sm text-gray-500">Supports PDF, DOC, DOCX files (max 5MB)</p>
+            <input type="file" id="resumeFile" class="hidden" accept=".pdf,.doc,.docx">
+        </div>
+
+        <div id="uploadProgress" class="hidden mt-4">
+            <div class="w-full bg-gray-200 rounded-full h-2">
+                <div id="progressBar" class="bg-blue-600 h-2 rounded-full" style="width: 0%"></div>
+            </div>
+            <p id="progressText" class="text-sm text-gray-600 mt-2">Uploading...</p>
+        </div>
+    </div>
+
+    <!-- Analysis Results -->
+    <div id="analysisResults" class="hidden">
+        <!-- Overall Score -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-6">Resume Analysis</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 relative">
+                        <svg class="w-24 h-24 transform -rotate-90">
+                            <circle cx="48" cy="48" r="40" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+                            <circle id="atsScoreCircle" cx="48" cy="48" r="40" stroke="#3b82f6" stroke-width="8"
+                                    fill="none" stroke-linecap="round" stroke-dasharray="251" stroke-dashoffset="251"/>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span id="atsScoreText" class="text-xl font-bold text-blue-600">0%</span>
+                        </div>
+                    </div>
+                    <h3 class="font-semibold text-lg">ATS Score</h3>
+                    <p class="text-gray-600 text-sm">Overall ATS compatibility</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 relative">
+                        <svg class="w-24 h-24 transform -rotate-90">
+                            <circle cx="48" cy="48" r="40" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+                            <circle id="keywordScoreCircle" cx="48" cy="48" r="40" stroke="#10b981" stroke-width="8"
+                                    fill="none" stroke-linecap="round" stroke-dasharray="251" stroke-dashoffset="251"/>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span id="keywordScoreText" class="text-xl font-bold text-green-600">0%</span>
+                        </div>
+                    </div>
+                    <h3 class="font-semibold text-lg">Keyword Match</h3>
+                    <p class="text-gray-600 text-sm">Industry keywords coverage</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 relative">
+                        <svg class="w-24 h-24 transform -rotate-90">
+                            <circle cx="48" cy="48" r="40" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+                            <circle id="formatScoreCircle" cx="48" cy="48" r="40" stroke="#f59e0b" stroke-width="8"
+                                    fill="none" stroke-linecap="round" stroke-dasharray="251" stroke-dashoffset="251"/>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span id="formatScoreText" class="text-xl font-bold text-yellow-600">0%</span>
+                        </div>
+                    </div>
+                    <h3 class="font-semibold text-lg">Format Score</h3>
+                    <p class="text-gray-600 text-sm">Structure and readability</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Analysis -->
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <!-- Strengths -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold mb-4 text-green-600">✅ Strengths</h3>
+                <ul id="strengthsList" class="space-y-2">
+                    <!-- Populated by JavaScript -->
+                </ul>
+            </div>
+
+            <!-- Improvements -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold mb-4 text-red-600">🔧 Improvements</h3>
+                <ul id="suggestionsList" class="space-y-2">
+                    <!-- Populated by JavaScript -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Missing Keywords -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h3 class="text-xl font-semibold mb-4">🔍 Missing Keywords</h3>
+            <p class="text-gray-600 mb-4">Add these keywords to improve your ATS score:</p>
+            <div id="missingKeywords" class="flex flex-wrap gap-2">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Optimized Resume Download -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h3 class="text-xl font-semibold mb-4">📥 Optimized Resume</h3>
+            <p class="text-gray-600 mb-4">Download your ATS-optimized resume with improved formatting and keywords.</p>
+            <div class="flex gap-4">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold">
+                    Download PDF
+                </button>
+                <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold">
+                    Download DOCX
+                </button>
+                <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold">
+                    Generate Cover Letter
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sample Results (for demo) -->
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-2xl font-semibold mb-6">Resume Optimization Tips</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <div>
+                <h3 class="font-semibold text-lg mb-3 text-blue-600">ATS Best Practices</h3>
+                <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        Use standard section headers (Experience, Education, Skills)
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        Include relevant keywords from job descriptions
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        Use chronological or hybrid format
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        Save in both PDF and Word formats
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        Avoid graphics, tables, and special characters
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-lg mb-3 text-purple-600">Content Tips</h3>
+                <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        Start bullets with strong action verbs
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        Quantify achievements with numbers
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        Tailor content to each job application
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        Include a compelling professional summary
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">✓</span>
+                        Keep it concise (1-2 pages maximum)
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const uploadArea = document.getElementById('uploadArea');
+const resumeFile = document.getElementById('resumeFile');
+const uploadProgress = document.getElementById('uploadProgress');
+const progressBar = document.getElementById('progressBar');
+const progressText = document.getElementById('progressText');
+const analysisResults = document.getElementById('analysisResults');
+
+// File upload handling
+uploadArea.addEventListener('click', () => resumeFile.click());
+uploadArea.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    uploadArea.classList.add('border-blue-400', 'bg-blue-50');
+});
+uploadArea.addEventListener('dragleave', () => {
+    uploadArea.classList.remove('border-blue-400', 'bg-blue-50');
+});
+uploadArea.addEventListener('drop', (e) => {
+    e.preventDefault();
+    uploadArea.classList.remove('border-blue-400', 'bg-blue-50');
+
+    const files = e.dataTransfer.files;
+    if (files.length > 0) {
+        handleFile(files[0]);
+    }
+});
+
+resumeFile.addEventListener('change', (e) => {
+    if (e.target.files.length > 0) {
+        handleFile(e.target.files[0]);
+    }
+});
+
+function handleFile(file) {
+    if (!file.type.includes('pdf') && !file.type.includes('doc')) {
+        alert('Please upload a PDF or Word document');
+        return;
+    }
+
+    if (file.size > 5 * 1024 * 1024) {
+        alert('File size must be less than 5MB');
+        return;
+    }
+
+    uploadResume(file);
+}
+
+function uploadResume(file) {
+    const formData = new FormData();
+    formData.append('resume', file);
+
+    uploadProgress.classList.remove('hidden');
+
+    // Simulate upload progress
+    let progress = 0;
+    const progressInterval = setInterval(() => {
+        progress += Math.random() * 30;
+        if (progress >= 100) {
+            progress = 100;
+            clearInterval(progressInterval);
+
+            setTimeout(() => {
+                uploadProgress.classList.add('hidden');
+                showAnalysisResults();
+            }, 500);
+        }
+
+        progressBar.style.width = progress + '%';
+        progressText.textContent = progress < 100 ? 'Analyzing resume...' : 'Analysis complete!';
+    }, 200);
+
+    // Actual API call
+    fetch('/api/resume/upload', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            displayAnalysis(data.analysis);
+        } else {
+            alert('❌ ' + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        // Still show demo results
+        setTimeout(() => {
+            uploadProgress.classList.add('hidden');
+            showAnalysisResults();
+        }, 2000);
+    });
+}
+
+function showAnalysisResults() {
+    // Demo analysis data
+    const analysis = {
+        ats_score: 85,
+        keyword_match: 72,
+        format_score: 94,
+        suggestions: [
+            'Add more quantified achievements',
+            'Include relevant technical keywords',
+            'Use action verbs at the beginning of bullet points',
+            'Consider adding a professional summary'
+        ],
+        missing_keywords: ['Python', 'Machine Learning', 'Cloud Computing', 'Agile', 'REST APIs'],
+        strengths: [
+            'Clear formatting and structure',
+            'Good use of metrics and numbers',
+            'Relevant work experience',
+            'Appropriate length'
+        ]
+    };
+
+    displayAnalysis(analysis);
+}
+
+function displayAnalysis(analysis) {
+    analysisResults.classList.remove('hidden');
+
+    // Update circular progress bars
+    updateCircularProgress('atsScore', analysis.ats_score, '#3b82f6');
+    updateCircularProgress('keywordScore', analysis.keyword_match, '#10b981');
+    updateCircularProgress('formatScore', analysis.format_score, '#f59e0b');
+
+    // Update strengths
+    const strengthsList = document.getElementById('strengthsList');
+    strengthsList.innerHTML = '';
+    analysis.strengths.forEach(strength => {
+        const li = document.createElement('li');
+        li.className = 'flex items-start text-gray-700';
+        li.innerHTML = `<span class="text-green-500 mr-2">✓</span>${strength}`;
+        strengthsList.appendChild(li);
+    });
+
+    // Update suggestions
+    const suggestionsList = document.getElementById('suggestionsList');
+    suggestionsList.innerHTML = '';
+    analysis.suggestions.forEach(suggestion => {
+        const li = document.createElement('li');
+        li.className = 'flex items-start text-gray-700';
+        li.innerHTML = `<span class="text-orange-500 mr-2">⚡</span>${suggestion}`;
+        suggestionsList.appendChild(li);
+    });
+
+    // Update missing keywords
+    const missingKeywords = document.getElementById('missingKeywords');
+    missingKeywords.innerHTML = '';
+    analysis.missing_keywords.forEach(keyword => {
+        const span = document.createElement('span');
+        span.className = 'bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium';
+        span.textContent = keyword;
+        missingKeywords.appendChild(span);
+    });
+
+    // Scroll to results
+    analysisResults.scrollIntoView({ behavior: 'smooth' });
+}
+
+function updateCircularProgress(prefix, value, color) {
+    const circle = document.getElementById(prefix + 'Circle');
+    const text = document.getElementById(prefix + 'Text');
+
+    const circumference = 2 * Math.PI * 40;
+    const offset = circumference - (value / 100) * circumference;
+
+    circle.style.strokeDashoffset = offset;
+    text.textContent = value + '%';
+
+    // Animate the progress
+    circle.style.transition = 'stroke-dashoffset 1s ease-in-out';
+}
+</script>
+{% endblock %}

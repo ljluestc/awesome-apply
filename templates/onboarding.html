@@ -1,0 +1,323 @@
+{% extends "base.html" %}
+
+{% block title %}Complete Your Profile - JobRight.ai{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+    <!-- Header -->
+    <div class="mb-8 text-center">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Welcome to JobRight.ai! 🎉</h1>
+        <p class="text-xl text-gray-600">Let's set up your profile to find your perfect job matches</p>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="mb-8">
+        <div class="flex items-center justify-between text-sm text-gray-600 mb-2">
+            <span>Progress</span>
+            <span id="progressText">0%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="progressBar" class="bg-blue-600 h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+        </div>
+    </div>
+
+    <!-- Onboarding Form -->
+    <form id="onboardingForm" class="space-y-8">
+        <!-- Step 1: Basic Info -->
+        <div id="step1" class="step bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-6">Step 1: Tell us about yourself</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">What role are you looking for?</label>
+                    <input type="text" id="jobTitle" placeholder="e.g., Software Engineer, Data Scientist"
+                           class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                           required>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Experience Level</label>
+                    <select id="experienceLevel" class="w-full border border-gray-300 rounded-lg px-3 py-2" required>
+                        <option value="">Select level</option>
+                        <option value="entry">Entry Level (0-2 years)</option>
+                        <option value="mid">Mid Level (3-5 years)</option>
+                        <option value="senior">Senior Level (6+ years)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Location</label>
+                    <input type="text" id="location" placeholder="e.g., San Francisco, CA or Remote"
+                           class="w-full border border-gray-300 rounded-lg px-3 py-2">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Remote Work Preference</label>
+                    <select id="remotePreference" class="w-full border border-gray-300 rounded-lg px-3 py-2">
+                        <option value="any">Any</option>
+                        <option value="remote">Remote Only</option>
+                        <option value="hybrid">Hybrid</option>
+                        <option value="onsite">On-site Only</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="flex justify-end mt-6">
+                <button type="button" onclick="nextStep(2)" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg">
+                    Next Step →
+                </button>
+            </div>
+        </div>
+
+        <!-- Step 2: Salary & Preferences -->
+        <div id="step2" class="step bg-white rounded-lg shadow-lg p-6 hidden">
+            <h2 class="text-2xl font-semibold mb-6">Step 2: Salary Expectations</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Minimum Salary</label>
+                    <div class="relative">
+                        <span class="absolute left-3 top-2 text-gray-500">$</span>
+                        <input type="number" id="salaryMin" placeholder="80000"
+                               class="w-full border border-gray-300 rounded-lg pl-8 pr-3 py-2">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Maximum Salary</label>
+                    <div class="relative">
+                        <span class="absolute left-3 top-2 text-gray-500">$</span>
+                        <input type="number" id="salaryMax" placeholder="150000"
+                               class="w-full border border-gray-300 rounded-lg pl-8 pr-3 py-2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6">
+                <label class="block text-sm font-medium text-gray-700 mb-2">Additional Preferences</label>
+                <div class="space-y-3">
+                    <label class="flex items-center">
+                        <input type="checkbox" id="h1bRequired" class="rounded border-gray-300 mr-3">
+                        <span>I need H1B visa sponsorship</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" id="startupInterest" class="rounded border-gray-300 mr-3">
+                        <span>I'm interested in startup opportunities</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" id="internationalOk" class="rounded border-gray-300 mr-3">
+                        <span>I'm open to international opportunities</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="flex justify-between mt-6">
+                <button type="button" onclick="prevStep(1)" class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded-lg">
+                    ← Previous
+                </button>
+                <button type="button" onclick="nextStep(3)" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg">
+                    Next Step →
+                </button>
+            </div>
+        </div>
+
+        <!-- Step 3: Skills -->
+        <div id="step3" class="step bg-white rounded-lg shadow-lg p-6 hidden">
+            <h2 class="text-2xl font-semibold mb-6">Step 3: Your Skills</h2>
+
+            <div class="mb-6">
+                <label class="block text-sm font-medium text-gray-700 mb-2">Add your key skills</label>
+                <div class="flex gap-2 mb-3">
+                    <input type="text" id="skillInput" placeholder="Type a skill and press Enter"
+                           class="flex-1 border border-gray-300 rounded-lg px-3 py-2">
+                    <button type="button" onclick="addSkill()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">
+                        Add
+                    </button>
+                </div>
+                <div id="selectedSkills" class="flex flex-wrap gap-2 mb-4">
+                    <!-- Skills will be added here -->
+                </div>
+            </div>
+
+            <!-- Popular Skills -->
+            <div>
+                <h3 class="font-semibold mb-3">Popular Skills (click to add):</h3>
+                <div class="grid md:grid-cols-4 gap-2">
+                    <button type="button" class="skill-tag bg-gray-100 hover:bg-blue-100 border border-gray-300 px-3 py-2 rounded-lg text-sm">Python</button>
+                    <button type="button" class="skill-tag bg-gray-100 hover:bg-blue-100 border border-gray-300 px-3 py-2 rounded-lg text-sm">JavaScript</button>
+                    <button type="button" class="skill-tag bg-gray-100 hover:bg-blue-100 border border-gray-300 px-3 py-2 rounded-lg text-sm">React</button>
+                    <button type="button" class="skill-tag bg-gray-100 hover:bg-blue-100 border border-gray-300 px-3 py-2 rounded-lg text-sm">Node.js</button>
+                    <button type="button" class="skill-tag bg-gray-100 hover:bg-blue-100 border border-gray-300 px-3 py-2 rounded-lg text-sm">AWS</button>
+                    <button type="button" class="skill-tag bg-gray-100 hover:bg-blue-100 border border-gray-300 px-3 py-2 rounded-lg text-sm">Docker</button>
+                    <button type="button" class="skill-tag bg-gray-100 hover:bg-blue-100 border border-gray-300 px-3 py-2 rounded-lg text-sm">SQL</button>
+                    <button type="button" class="skill-tag bg-gray-100 hover:bg-blue-100 border border-gray-300 px-3 py-2 rounded-lg text-sm">Git</button>
+                    <button type="button" class="skill-tag bg-gray-100 hover:bg-blue-100 border border-gray-300 px-3 py-2 rounded-lg text-sm">Machine Learning</button>
+                    <button type="button" class="skill-tag bg-gray-100 hover:bg-blue-100 border border-gray-300 px-3 py-2 rounded-lg text-sm">TensorFlow</button>
+                    <button type="button" class="skill-tag bg-gray-100 hover:bg-blue-100 border border-gray-300 px-3 py-2 rounded-lg text-sm">Kubernetes</button>
+                    <button type="button" class="skill-tag bg-gray-100 hover:bg-blue-100 border border-gray-300 px-3 py-2 rounded-lg text-sm">Figma</button>
+                </div>
+            </div>
+
+            <div class="flex justify-between mt-6">
+                <button type="button" onclick="prevStep(2)" class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded-lg">
+                    ← Previous
+                </button>
+                <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg">
+                    Complete Setup 🎉
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+let currentStep = 1;
+let selectedSkills = [];
+
+// Initialize skill tags
+document.querySelectorAll('.skill-tag').forEach(tag => {
+    tag.addEventListener('click', function() {
+        const skill = this.textContent;
+        addSkillToList(skill);
+    });
+});
+
+// Add skill functionality
+document.getElementById('skillInput').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        addSkill();
+    }
+});
+
+function addSkill() {
+    const skillInput = document.getElementById('skillInput');
+    const skill = skillInput.value.trim();
+
+    if (skill && !selectedSkills.includes(skill)) {
+        addSkillToList(skill);
+        skillInput.value = '';
+    }
+}
+
+function addSkillToList(skill) {
+    if (selectedSkills.includes(skill)) return;
+
+    selectedSkills.push(skill);
+    updateSkillsDisplay();
+}
+
+function removeSkill(skill) {
+    selectedSkills = selectedSkills.filter(s => s !== skill);
+    updateSkillsDisplay();
+}
+
+function updateSkillsDisplay() {
+    const container = document.getElementById('selectedSkills');
+    container.innerHTML = '';
+
+    selectedSkills.forEach(skill => {
+        const skillTag = document.createElement('span');
+        skillTag.className = 'bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium flex items-center gap-2';
+        skillTag.innerHTML = `
+            ${skill}
+            <button type="button" onclick="removeSkill('${skill}')" class="text-blue-600 hover:text-blue-800">×</button>
+        `;
+        container.appendChild(skillTag);
+    });
+
+    updateProgress();
+}
+
+function nextStep(step) {
+    // Validate current step
+    if (!validateStep(currentStep)) return;
+
+    // Hide current step
+    document.getElementById(`step${currentStep}`).classList.add('hidden');
+
+    // Show next step
+    document.getElementById(`step${step}`).classList.remove('hidden');
+
+    currentStep = step;
+    updateProgress();
+}
+
+function prevStep(step) {
+    // Hide current step
+    document.getElementById(`step${currentStep}`).classList.add('hidden');
+
+    // Show previous step
+    document.getElementById(`step${step}`).classList.remove('hidden');
+
+    currentStep = step;
+    updateProgress();
+}
+
+function validateStep(step) {
+    if (step === 1) {
+        const jobTitle = document.getElementById('jobTitle').value.trim();
+        const experienceLevel = document.getElementById('experienceLevel').value;
+
+        if (!jobTitle) {
+            alert('Please enter your target job title');
+            return false;
+        }
+
+        if (!experienceLevel) {
+            alert('Please select your experience level');
+            return false;
+        }
+    }
+
+    return true;
+}
+
+function updateProgress() {
+    const progress = (currentStep / 3) * 100;
+    document.getElementById('progressBar').style.width = progress + '%';
+    document.getElementById('progressText').textContent = Math.round(progress) + '%';
+}
+
+// Form submission
+document.getElementById('onboardingForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = {
+        job_title: document.getElementById('jobTitle').value,
+        experience_level: document.getElementById('experienceLevel').value,
+        location: document.getElementById('location').value,
+        remote_preference: document.getElementById('remotePreference').value,
+        salary_min: parseInt(document.getElementById('salaryMin').value) || null,
+        salary_max: parseInt(document.getElementById('salaryMax').value) || null,
+        h1b_required: document.getElementById('h1bRequired').checked,
+        skills: selectedSkills
+    };
+
+    fetch('/api/onboarding/complete', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Show success message
+            alert('🎉 Profile completed! Redirecting to your personalized job matches...');
+            window.location.href = '/dashboard';
+        } else {
+            alert('❌ ' + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('❌ Failed to complete onboarding');
+    });
+});
+
+// Initial progress update
+updateProgress();
+</script>
+{% endblock %}

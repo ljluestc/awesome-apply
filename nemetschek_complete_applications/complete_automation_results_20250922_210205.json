@@ -1,0 +1,114 @@
+[
+  {
+    "job": {
+      "title": "Senior Software Engineer - Cloud Platform",
+      "location": "Munich, Germany",
+      "job_id": "sample_1",
+      "link": "https://career55.sapsf.eu/careers?company=nemetschek",
+      "description": "\n                We are seeking a Senior Software Engineer to join our Cloud Platform team.\n\n                Requirements:\n                - 5+ years of software development experience\n                - Strong experience with AWS, Azure, or GCP\n                - Proficiency in Python, Go, or Java\n                - Experience with Kubernetes and Docker\n                - CI/CD pipeline development experience\n                - Database design and optimization skills\n\n                Preferred:\n                - Experience with microservices architecture\n                - Knowledge of security best practices\n                - Agile development experience\n                "
+    },
+    "application_success": true,
+    "documents_generated": true,
+    "timestamp": "2025-09-22T21:02:02.932911",
+    "gap_analysis": {
+      "total_required_skills": 8,
+      "matched_skills": 8,
+      "missing_skills": 0,
+      "match_percentage": 100.0,
+      "matched_skill_list": [
+        "go",
+        "gcp",
+        "python",
+        "aws",
+        "java",
+        "kubernetes",
+        "azure",
+        "docker"
+      ],
+      "missing_skill_list": [],
+      "recommendations": [
+        "Gained experience with Google Cloud, Microsoft Azure through personal projects and continuous learning initiatives.",
+        "Gained experience with K8s, Podman through personal projects and continuous learning initiatives."
+      ]
+    },
+    "identified_gaps": [
+      {
+        "category": "cloud_platforms",
+        "missing_skills": [
+          "Google Cloud",
+          "Microsoft Azure",
+          "Amazon Web Services"
+        ],
+        "addition": "Gained experience with Google Cloud, Microsoft Azure through personal projects and continuous learning initiatives.",
+        "relevance": 2.0
+      },
+      {
+        "category": "containers",
+        "missing_skills": [
+          "K8s",
+          "Podman",
+          "containerd"
+        ],
+        "addition": "Gained experience with K8s, Podman through personal projects and continuous learning initiatives.",
+        "relevance": 1.8
+      }
+    ]
+  },
+  {
+    "job": {
+      "title": "DevOps Engineer - Infrastructure Automation",
+      "location": "Remote",
+      "job_id": "sample_2",
+      "link": "https://career55.sapsf.eu/careers?company=nemetschek",
+      "description": "\n                Join our Infrastructure team as a DevOps Engineer.\n\n                Requirements:\n                - 3+ years of DevOps experience\n                - Infrastructure as Code (Terraform, CloudFormation)\n                - Container orchestration with Kubernetes\n                - CI/CD tools (Jenkins, GitLab CI, GitHub Actions)\n                - Monitoring and observability tools\n                - Cloud platforms (AWS, Azure, GCP)\n\n                Preferred:\n                - Security automation experience\n                - Experience with service mesh technologies\n                "
+    },
+    "application_success": true,
+    "documents_generated": true,
+    "timestamp": "2025-09-22T21:02:04.019898",
+    "gap_analysis": {
+      "total_required_skills": 9,
+      "matched_skills": 7,
+      "missing_skills": 2,
+      "match_percentage": 77.8,
+      "matched_skill_list": [
+        "gcp",
+        "aws",
+        "kubernetes",
+        "azure",
+        "jenkins",
+        "terraform",
+        "github actions"
+      ],
+      "missing_skill_list": [
+        "gitlab ci",
+        "cloudformation"
+      ],
+      "recommendations": [
+        "Gained experience with Google Cloud, Microsoft Azure through personal projects and continuous learning initiatives.",
+        "Gained experience with K8s, Podman through personal projects and continuous learning initiatives."
+      ]
+    },
+    "identified_gaps": [
+      {
+        "category": "cloud_platforms",
+        "missing_skills": [
+          "Google Cloud",
+          "Microsoft Azure",
+          "Amazon Web Services"
+        ],
+        "addition": "Gained experience with Google Cloud, Microsoft Azure through personal projects and continuous learning initiatives.",
+        "relevance": 2.0
+      },
+      {
+        "category": "containers",
+        "missing_skills": [
+          "K8s",
+          "Podman",
+          "containerd"
+        ],
+        "addition": "Gained experience with K8s, Podman through personal projects and continuous learning initiatives.",
+        "relevance": 1.8
+      }
+    ]
+  }
+]

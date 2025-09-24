@@ -1,0 +1,36 @@
+Dear Nemetschek Hiring Team,
+
+I am writing to express my strong interest in the Cloud Architect/DevOps Engineer position at Nemetschek. With over 5 years of experience in cloud infrastructure, DevOps automation, and multi-cloud systems architecture, I am excited to contribute to Nemetschek's innovative technology solutions and digital transformation initiatives.
+
+In my current role as Senior Software Engineer at Aviatrix, I have successfully delivered results that directly align with your requirements:
+
+• **Multi-Cloud Expertise**: Designed and operated Kubernetes infrastructure across AWS, Azure, and GCP with Terraform automation, reducing deployment time by 30%
+
+• **DevOps & SRE Excellence**: Built comprehensive CI/CD pipelines with GitHub Actions, Jenkins, and ArgoCD, implementing GitOps practices and reducing MTTR by 15%
+
+• **Monitoring & Observability**: Enhanced system reliability with Prometheus, Grafana, and DataDog, implementing SLOs and comprehensive health signals
+
+• **Security & Automation**: Implemented Zero Trust security model with eBPF-based network validation and supply chain hardening with SBOM integration
+
+My technical expertise spans the core technologies mentioned in your requirements: Docker, Python, AWS, Terraform, Kubernetes. I have consistently delivered measurable business impact through automation, optimization, and innovative problem-solving.
+
+What particularly excites me about Nemetschek is your commitment to cloud innovation and AI product development. My experience building production ML systems on Kubernetes, combined with my cloud architecture background, positions me well to contribute to these strategic initiatives.
+
+Key achievements that demonstrate my alignment with your needs:
+• Led multi-cloud infrastructure automation serving enterprise-scale traffic
+• Implemented comprehensive observability and SRE practices improving system reliability
+• Built secure, scalable automation reducing operational overhead
+• Delivered AI/ML systems with advanced deployment strategies on cloud-native platforms
+
+I would welcome the opportunity to discuss how my technical expertise and passion for cloud innovation can contribute to Nemetschek's continued success and growth.
+
+Thank you for your consideration. I look forward to hearing from you.
+
+Best regards,
+Jiale Lin
+
+Contact Information:
+• Email: jeremykalilin@gmail.com
+• Phone: +1-510-417-5834
+• LinkedIn: linkedin.com/in/jiale-lin
+• Portfolio: ljluestc.github.io

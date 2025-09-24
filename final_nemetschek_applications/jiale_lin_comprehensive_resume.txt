@@ -1,0 +1,78 @@
+JIALE LIN
+Senior Software Engineer | Cloud Infrastructure Expert
+
+Contact Information:
+Email: jeremykalilin@gmail.com
+Phone: +1-510-417-5834
+Location: Santa Clara, CA
+LinkedIn: https://www.linkedin.com/in/jiale-lin-ab03a4149
+Portfolio: https://ljluestc.github.io
+
+PROFESSIONAL EXPERIENCE
+
+AVIATRIX | Senior Software Engineer | May 2022 - Present
+• Architected multi-cloud infrastructure solutions across AWS, Azure, and GCP platforms
+• Implemented Infrastructure as Code with Terraform, reducing deployment time by 40%
+• Built CI/CD pipelines with Jenkins and GitHub Actions for automated testing and deployment
+• Enhanced monitoring with Prometheus, Grafana, and ELK stack, reducing MTTR by 35%
+• Developed Zero Trust security architecture with eBPF-based network validation
+• Led team of 4 engineers in cloud migration projects for enterprise clients
+
+VEEVA SYSTEMS | Senior QA Engineer (SDET) | August 2021 - May 2022
+• Developed cross-platform test automation framework using Kotlin and Cucumber
+• Implemented behavior-driven development (BDD) practices across engineering teams
+• Built comprehensive UI automation with Selenium WebDriver and Appium
+• Achieved 90% automated test coverage, reducing manual testing by 70%
+
+GOOGLE FIBER | Test Engineer | June 2019 - June 2021
+• Designed Selenium-based testing framework for network infrastructure applications
+• Optimized BigQuery data pipelines for real-time network performance analytics
+• Developed automated network testing protocols for fiber infrastructure
+• Built monitoring dashboards for 24/7 network health tracking
+
+TECHNICAL EXPERTISE
+
+Cloud Platforms:
+• AWS: EC2, EKS, Lambda, RDS, S3, CloudFormation, VPC
+• Azure: AKS, Functions, Blob Storage, Resource Manager
+• GCP: GKE, Cloud Run, BigQuery, Cloud Storage
+
+DevOps & Infrastructure:
+• Containerization: Kubernetes, Docker, Helm Charts
+• Infrastructure as Code: Terraform, Ansible, CloudFormation
+• CI/CD: Jenkins, GitHub Actions, GitLab CI, Argo CD
+• Monitoring: Prometheus, Grafana, ELK Stack, DataDog
+
+Programming Languages:
+• Expert: Python, Go, C++
+• Proficient: JavaScript, Java, Bash/Shell scripting
+• Familiar: Rust, TypeScript, SQL
+
+Databases & Storage:
+• Relational: PostgreSQL, MySQL
+• NoSQL: MongoDB, Redis, ClickHouse
+• Analytics: BigQuery, Snowflake
+
+EDUCATION
+
+University of Colorado Boulder
+Master of Science in Computer Science | Expected May 2025
+• Focus: Distributed Systems, Cloud Computing, Machine Learning
+• Graduate Research: Edge Computing and Container Orchestration
+
+University of Arizona
+Bachelor of Science in Mathematics (Computer Science Track) | May 2019
+• Magna Cum Laude, Computer Science Honor Society
+• Senior Capstone: Real-time Network Optimization Algorithms
+
+CERTIFICATIONS
+• AWS Certified Solutions Architect - Professional
+• Kubernetes Certified Administrator (CKA)
+• HashiCorp Terraform Associate
+• Google Cloud Professional Cloud Architect
+
+PUBLICATIONS & ACHIEVEMENTS
+• Published research: "Edge Computing Container Orchestration" (IEEE 2024)
+• Speaker at KubeCon 2023: "Multi-Cloud Kubernetes Strategies"
+• Contributed to open-source Kubernetes networking projects
+• Led successful migration of 50+ microservices to cloud-native architecture

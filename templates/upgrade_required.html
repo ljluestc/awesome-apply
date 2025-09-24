@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block title %}Upgrade Required - JobRight.ai{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+    <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+        <!-- Icon -->
+        <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-lock text-blue-600 text-3xl"></i>
+        </div>
+
+        <!-- Header -->
+        <h1 class="text-3xl font-bold text-gray-900 mb-4">Upgrade Required</h1>
+        <p class="text-xl text-gray-600 mb-6">
+            {{ feature or "This feature" }} is only available for paid subscribers
+        </p>
+
+        <!-- Feature Benefits -->
+        <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold mb-4">What you'll get with Pro:</h2>
+            <div class="grid md:grid-cols-2 gap-4 text-left">
+                <div class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Unlimited job matches</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>AI Agent automation</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Insider connections</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Unlimited Orion chat</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Priority support</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check text-green-500 mr-3"></i>
+                    <span>Advanced analytics</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing -->
+        <div class="mb-8">
+            <div class="text-4xl font-bold text-blue-600 mb-2">$39.99</div>
+            <div class="text-gray-600">per month</div>
+            <div class="text-sm text-green-600 mt-1">Cancel anytime • 30-day money-back guarantee</div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button onclick="upgradeToPro()"
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold text-lg">
+                Upgrade to Pro
+            </button>
+            <a href="/pricing"
+               class="bg-gray-200 hover:bg-gray-300 text-gray-700 px-8 py-3 rounded-lg font-semibold text-lg">
+                View All Plans
+            </a>
+        </div>
+
+        <!-- Back Link -->
+        <div class="mt-8">
+            <button onclick="history.back()"
+                    class="text-blue-600 hover:text-blue-800 font-medium">
+                ← Go Back
+            </button>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                    <span class="text-white font-semibold">S</span>
+                </div>
+                <div>
+                    <div class="font-semibold">Sarah Chen</div>
+                    <div class="text-sm text-gray-600">Software Engineer</div>
+                </div>
+            </div>
+            <p class="text-gray-700 text-sm">
+                "The AI Agent found me 3 interviews in my first week. Best investment I've made in my career!"
+            </p>
+            <div class="flex text-yellow-400 mt-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                    <span class="text-white font-semibold">M</span>
+                </div>
+                <div>
+                    <div class="font-semibold">Mike Rodriguez</div>
+                    <div class="text-sm text-gray-600">Data Scientist</div>
+                </div>
+            </div>
+            <p class="text-gray-700 text-sm">
+                "Insider connections feature helped me get referred to my dream job. Increased my response rate by 400%!"
+            </p>
+            <div class="flex text-yellow-400 mt-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                    <span class="text-white font-semibold">A</span>
+                </div>
+                <div>
+                    <div class="font-semibold">Alex Thompson</div>
+                    <div class="text-sm text-gray-600">Product Manager</div>
+                </div>
+            </div>
+            <p class="text-gray-700 text-sm">
+                "Landed my new role in 2 weeks with JobRight Pro. The automation saved me hours of manual work!"
+            </p>
+            <div class="flex text-yellow-400 mt-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function upgradeToPro() {
+    {% if current_user.is_authenticated %}
+    if (confirm('Upgrade to Pro plan for $39.99/month?')) {
+        fetch('/api/upgrade', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ plan: 'pro' })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('🎉 ' + data.message);
+                window.location.href = '/dashboard';
+            } else {
+                alert('❌ ' + data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('❌ Failed to upgrade plan');
+        });
+    }
+    {% else %}
+    alert('Please log in to upgrade your plan');
+    window.location.href = '/login';
+    {% endif %}
+}
+</script>
+{% endblock %}

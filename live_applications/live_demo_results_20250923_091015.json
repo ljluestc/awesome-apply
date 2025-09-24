@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-09-23T09:09:26.436424",
+  "companies_checked": 0,
+  "jobs_found": 1,
+  "applications_attempted": 1,
+  "applications_completed": 1,
+  "success": true,
+  "applications": [
+    {
+      "title": "ENGINEERING & DATA\nBuild the future of commerce.\nTYPES OF ROLES:\nSoftware EngineeringApplied ML EngineeringInfrastructure EngineeringSecurity EngineeringBusiness AnalyticsData EngineeringProduct Data Science",
+      "company": "Shopify",
+      "url": "https://www.shopify.com/careers/disciplines/engineering-data",
+      "success": true,
+      "timestamp": "2025-09-23T09:10:15.004714"
+    }
+  ]
+}

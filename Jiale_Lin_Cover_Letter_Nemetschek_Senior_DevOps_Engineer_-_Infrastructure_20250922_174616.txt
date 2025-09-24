@@ -1,0 +1,20 @@
+Dear Nemetschek Hiring Team,
+
+I am writing to express my strong interest in the Senior DevOps Engineer - Infrastructure position at Nemetschek. With my background as a Senior Software Engineer at Aviatrix and extensive experience in cloud infrastructure, DevOps automation, and software development, I am excited about the opportunity to contribute to Nemetschek's innovative technology solutions.
+
+In my current role at Aviatrix, I have developed expertise that directly aligns with your requirements:
+
+• Automated infrastructure with 	extbf{Terraform}; operated 	extbf{Kubernetes} across 	extbf{AWS}, 	extbf{Azure}, and 	extbf{GCP}; built 	extbf{CI/CD} with 	extbf{GitHub Actions}, 	extbf{Jenkins}, ArgoCD, and GitOps, reducing deployment time by 30%.
+• Enhanced 	extbf{Monitoring} with 	extbf{Prometheus}, 	extbf{Grafana}, and 	extbf{DataDog}; added 	extbf{CI/CD} health signals and SLOs; reduced MTTR by 15%.
+• Streamlined deployments with 	extbf{Docker} and 	extbf{Kubernetes}; implemented 	extbf{Prometheus}/	extbf{Grafana} for real-time 	extbf{Monitoring}.
+
+My experience spans the full software development lifecycle, from designing scalable architectures to implementing robust CI/CD pipelines. I have consistently delivered measurable results, including reducing deployment times by 30% and improving system reliability.
+
+I am particularly drawn to Nemetschek's commitment to innovation and would welcome the opportunity to discuss how my technical expertise and problem-solving abilities can contribute to your team's success.
+
+Thank you for your consideration. I look forward to hearing from you.
+
+Best regards,
+Jiale Lin
+jeremykalilin@gmail.com
++1-510-417-5834

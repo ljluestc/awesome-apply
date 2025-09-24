@@ -1,0 +1,170 @@
+2025-09-22 23:56:32,414 - INFO - 🚀 STARTING COMPLETE NEMETSCHEK SOLUTION
+2025-09-22 23:56:32,414 - INFO - 🎯 MISSION: Achieve real job application submission with confirmation
+2025-09-22 23:56:32,414 - INFO - ================================================================================
+2025-09-22 23:56:32,693 - INFO - WebDriver setup successfully
+2025-09-22 23:56:32,693 - INFO - 🌐 Navigating to Nemetschek careers page...
+2025-09-22 23:56:42,170 - INFO - Screenshot saved: complete_nemetschek_solution/screenshots/careers_page_loaded_235642.png
+2025-09-22 23:56:49,227 - INFO - ✅ Clicked Search Jobs button
+2025-09-22 23:56:49,365 - INFO - Screenshot saved: complete_nemetschek_solution/screenshots/jobs_loaded_235649.png
+2025-09-22 23:56:54,495 - INFO - Screenshot saved: complete_nemetschek_solution/screenshots/extracting_jobs_235654.png
+2025-09-22 23:56:54,500 - INFO - Found 6 elements with selector: h1, h2, h3, h4
+2025-09-22 23:56:54,525 - INFO - 📋 Extracted job: Receptionist/ Team Assistant
+2025-09-22 23:56:54,538 - INFO - 📋 Extracted job: Working Student HR/People
+2025-09-22 23:56:54,551 - INFO - 📋 Extracted job: Senior Product Manager Digital Twin
+2025-09-22 23:56:54,569 - INFO - 📋 Extracted job: Senior Program Manager
+2025-09-22 23:56:54,588 - INFO - 📋 Extracted job: Program Manager
+2025-09-22 23:56:54,593 - INFO - Found 19 elements with selector: a
+2025-09-22 23:56:54,782 - INFO - Found 102 elements with selector: div
+2025-09-22 23:56:54,984 - INFO - 📋 Extracted job: Search by Keyword
+Search by Location
+Show More Options
+  Receptionist/ Team Assistant
+Working Student HR/People
+Senior Product Manager Digital Twin
+Senior Program Manager
+Program Manager
+2025-09-22 23:56:55,140 - INFO - 📋 Extracted job: Receptionist/ Team Assistant
+Working Student HR/People
+Senior Product Manager Digital Twin
+2025-09-22 23:56:55,383 - INFO - 📋 Extracted job: Senior Program Manager
+Program Manager
+2025-09-22 23:56:55,537 - INFO - ✅ Extracted 8 unique jobs
+2025-09-22 23:56:55,537 - INFO - ✅ Found 8 job opportunities
+2025-09-22 23:56:55,537 - INFO - 
+🎯 PROCESSING JOB 1/5: Receptionist/ Team Assistant
+2025-09-22 23:56:55,537 - INFO - 
+🎯 ATTEMPTING APPLICATION: Receptionist/ Team Assistant
+2025-09-22 23:56:55,537 - INFO - ============================================================
+2025-09-22 23:56:55,537 - INFO - 🖱️  Method 2: Click by coordinates
+2025-09-22 23:56:58,933 - INFO - Screenshot saved: complete_nemetschek_solution/screenshots/method2_Receptionist/ Team A_235658.png
+2025-09-22 23:56:59,004 - INFO - 📧 Method 3: General application/contact form
+2025-09-22 23:56:59,005 - INFO - 📝 Method 4: Contact form submission
+2025-09-22 23:57:03,194 - WARNING - ❌ All application methods failed for Receptionist/ Team Assistant
+2025-09-22 23:57:03,194 - WARNING - ❌ Failed to apply to Receptionist/ Team Assistant
+2025-09-22 23:57:03,194 - INFO - 
+🎯 PROCESSING JOB 2/5: Working Student HR/People
+2025-09-22 23:57:03,194 - INFO - 
+🎯 ATTEMPTING APPLICATION: Working Student HR/People
+2025-09-22 23:57:03,194 - INFO - ============================================================
+2025-09-22 23:57:03,194 - INFO - 🖱️  Method 2: Click by coordinates
+2025-09-22 23:57:03,203 - WARNING - Method 2 failed: Message: move target out of bounds
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55740d64308a <unknown>
+#1 0x55740d0e28c3 <unknown>
+#2 0x55740d1889f7 <unknown>
+#3 0x55740d15a3e2 <unknown>
+#4 0x55740d18014f <unknown>
+#5 0x55740d15a1b3 <unknown>
+#6 0x55740d12659b <unknown>
+#7 0x55740d127971 <unknown>
+#8 0x55740d60825b <unknown>
+#9 0x55740d60bfa9 <unknown>
+#10 0x55740d5ef339 <unknown>
+#11 0x55740d60cb58 <unknown>
+#12 0x55740d5d3c1f <unknown>
+#13 0x55740d630118 <unknown>
+#14 0x55740d6302f6 <unknown>
+#15 0x55740d642066 <unknown>
+#16 0x7f48be6a8b7b <unknown>
+
+2025-09-22 23:57:03,203 - INFO - 📧 Method 3: General application/contact form
+2025-09-22 23:57:03,219 - INFO - 📝 Method 4: Contact form submission
+2025-09-22 23:57:06,960 - WARNING - ❌ All application methods failed for Working Student HR/People
+2025-09-22 23:57:06,960 - WARNING - ❌ Failed to apply to Working Student HR/People
+2025-09-22 23:57:06,960 - INFO - 
+🎯 PROCESSING JOB 3/5: Senior Product Manager Digital Twin
+2025-09-22 23:57:06,960 - INFO - 
+🎯 ATTEMPTING APPLICATION: Senior Product Manager Digital Twin
+2025-09-22 23:57:06,960 - INFO - ============================================================
+2025-09-22 23:57:06,960 - INFO - 🖱️  Method 2: Click by coordinates
+2025-09-22 23:57:06,966 - WARNING - Method 2 failed: Message: move target out of bounds
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55740d64308a <unknown>
+#1 0x55740d0e28c3 <unknown>
+#2 0x55740d1889f7 <unknown>
+#3 0x55740d15a3e2 <unknown>
+#4 0x55740d18014f <unknown>
+#5 0x55740d15a1b3 <unknown>
+#6 0x55740d12659b <unknown>
+#7 0x55740d127971 <unknown>
+#8 0x55740d60825b <unknown>
+#9 0x55740d60bfa9 <unknown>
+#10 0x55740d5ef339 <unknown>
+#11 0x55740d60cb58 <unknown>
+#12 0x55740d5d3c1f <unknown>
+#13 0x55740d630118 <unknown>
+#14 0x55740d6302f6 <unknown>
+#15 0x55740d642066 <unknown>
+#16 0x7f48be6a8b7b <unknown>
+
+2025-09-22 23:57:06,966 - INFO - 📧 Method 3: General application/contact form
+2025-09-22 23:57:06,977 - INFO - 📝 Method 4: Contact form submission
+2025-09-22 23:57:10,733 - WARNING - ❌ All application methods failed for Senior Product Manager Digital Twin
+2025-09-22 23:57:10,733 - WARNING - ❌ Failed to apply to Senior Product Manager Digital Twin
+2025-09-22 23:57:10,733 - INFO - 
+🎯 PROCESSING JOB 4/5: Senior Program Manager
+2025-09-22 23:57:10,733 - INFO - 
+🎯 ATTEMPTING APPLICATION: Senior Program Manager
+2025-09-22 23:57:10,733 - INFO - ============================================================
+2025-09-22 23:57:10,733 - INFO - 🖱️  Method 2: Click by coordinates
+2025-09-22 23:57:10,737 - WARNING - Method 2 failed: Message: move target out of bounds
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55740d64308a <unknown>
+#1 0x55740d0e28c3 <unknown>
+#2 0x55740d1889f7 <unknown>
+#3 0x55740d15a3e2 <unknown>
+#4 0x55740d18014f <unknown>
+#5 0x55740d15a1b3 <unknown>
+#6 0x55740d12659b <unknown>
+#7 0x55740d127971 <unknown>
+#8 0x55740d60825b <unknown>
+#9 0x55740d60bfa9 <unknown>
+#10 0x55740d5ef339 <unknown>
+#11 0x55740d60cb58 <unknown>
+#12 0x55740d5d3c1f <unknown>
+#13 0x55740d630118 <unknown>
+#14 0x55740d6302f6 <unknown>
+#15 0x55740d642066 <unknown>
+#16 0x7f48be6a8b7b <unknown>
+
+2025-09-22 23:57:10,737 - INFO - 📧 Method 3: General application/contact form
+2025-09-22 23:57:10,745 - INFO - 📝 Method 4: Contact form submission
+2025-09-22 23:57:14,509 - WARNING - ❌ All application methods failed for Senior Program Manager
+2025-09-22 23:57:14,509 - WARNING - ❌ Failed to apply to Senior Program Manager
+2025-09-22 23:57:14,509 - INFO - 
+🎯 PROCESSING JOB 5/5: Program Manager
+2025-09-22 23:57:14,509 - INFO - 
+🎯 ATTEMPTING APPLICATION: Program Manager
+2025-09-22 23:57:14,509 - INFO - ============================================================
+2025-09-22 23:57:14,509 - INFO - 🖱️  Method 2: Click by coordinates
+2025-09-22 23:57:14,513 - WARNING - Method 2 failed: Message: move target out of bounds
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55740d64308a <unknown>
+#1 0x55740d0e28c3 <unknown>
+#2 0x55740d1889f7 <unknown>
+#3 0x55740d15a3e2 <unknown>
+#4 0x55740d18014f <unknown>
+#5 0x55740d15a1b3 <unknown>
+#6 0x55740d12659b <unknown>
+#7 0x55740d127971 <unknown>
+#8 0x55740d60825b <unknown>
+#9 0x55740d60bfa9 <unknown>
+#10 0x55740d5ef339 <unknown>
+#11 0x55740d60cb58 <unknown>
+#12 0x55740d5d3c1f <unknown>
+#13 0x55740d630118 <unknown>
+#14 0x55740d6302f6 <unknown>
+#15 0x55740d642066 <unknown>
+#16 0x7f48be6a8b7b <unknown>
+
+2025-09-22 23:57:14,513 - INFO - 📧 Method 3: General application/contact form
+2025-09-22 23:57:14,525 - INFO - 📝 Method 4: Contact form submission
+2025-09-22 23:57:18,324 - WARNING - ❌ All application methods failed for Program Manager
+2025-09-22 23:57:18,324 - WARNING - ❌ Failed to apply to Program Manager
+2025-09-22 23:57:18,324 - ERROR - ❌ No successful applications
+2025-09-22 23:57:18,324 - INFO - 
+🔍 Keeping browser open for verification...

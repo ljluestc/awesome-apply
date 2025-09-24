@@ -1,0 +1,52 @@
+JIALE LIN
+Senior Software Engineer | Cloud Infrastructure Specialist
+
+Contact: jeremykalilin@gmail.com | +1-510-417-5834
+LinkedIn: https://www.linkedin.com/in/jiale-lin-ab03a4149 | Portfolio: https://ljluestc.github.io
+
+PROFESSIONAL EXPERIENCE
+
+AVIATRIX | Senior Software Engineer | May 2022 - Present
+• Architected and deployed multi-cloud infrastructure solutions across AWS, Azure, and GCP
+• Implemented Infrastructure as Code with Terraform, reducing deployment time by 40%
+• Built comprehensive CI/CD pipelines with Jenkins and GitHub Actions
+• Enhanced monitoring and observability with Prometheus, Grafana, and ELK stack
+• Reduced mean time to recovery (MTTR) by 35% through automated incident response
+• Implemented Zero Trust security architecture with eBPF-based network validation
+
+VEEVA SYSTEMS | Senior QA Engineer (SDET) | August 2021 - May 2022
+• Developed cross-platform test automation framework using Kotlin and Cucumber
+• Implemented behavior-driven development (BDD) practices across engineering teams
+• Built comprehensive UI automation suite with Selenium WebDriver and Appium
+• Integrated automated testing into CI/CD pipeline, achieving 90% test coverage
+
+GOOGLE FIBER | Test Engineer | June 2019 - June 2021
+• Designed and implemented comprehensive Selenium-based testing framework
+• Optimized BigQuery data pipelines for network performance analytics
+• Developed automated network testing protocols for fiber infrastructure
+• Built monitoring dashboards for real-time network health tracking
+
+TECHNICAL EXPERTISE
+
+Cloud Platforms: AWS (EC2, EKS, Lambda, RDS), Azure (AKS, Functions), GCP (GKE, Cloud Run)
+Infrastructure: Kubernetes, Docker, Terraform, Ansible, Helm, Service Mesh (Istio)
+DevOps Tools: Jenkins, GitHub Actions, GitLab CI, Argo CD, Prometheus, Grafana
+Programming: Python, Go, C++, JavaScript, Java, Bash/Shell scripting
+Databases: PostgreSQL, MySQL, MongoDB, Redis, ClickHouse, BigQuery
+Security: Zero Trust Architecture, eBPF, Network Security, Infrastructure Security
+
+EDUCATION
+
+University of Colorado Boulder | Master of Science in Computer Science | Expected May 2025
+• Focus: Distributed Systems, Cloud Computing, Machine Learning
+• Graduate Research in Edge Computing and Container Orchestration
+
+University of Arizona | Bachelor of Science in Mathematics (Computer Science Track) | May 2019
+• Magna Cum Laude, Computer Science Honor Society
+• Senior Capstone: Real-time Network Optimization Algorithms
+
+CERTIFICATIONS & ACHIEVEMENTS
+• AWS Certified Solutions Architect - Professional
+• Kubernetes Certified Administrator (CKA)
+• HashiCorp Terraform Associate
+• Published research on "Edge Computing Container Orchestration" (IEEE 2024)

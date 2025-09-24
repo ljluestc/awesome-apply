@@ -1,0 +1,124 @@
+{
+  "job_title": "Senior DevOps Engineer - Cloud Infrastructure",
+  "company": "Nemetschek",
+  "match_score": 87.90322580645162,
+  "total_requirements": 15,
+  "matching_skills": [
+    "aws",
+    "azure",
+    "gcp",
+    "kubernetes",
+    "docker",
+    "terraform",
+    "jenkins",
+    "prometheus",
+    "grafana",
+    "python",
+    "go",
+    "rust",
+    "ebpf"
+  ],
+  "missing_skills": [
+    "typescript",
+    "compliance"
+  ],
+  "enhancement_suggestions": [],
+  "skill_breakdown": {
+    "required": [
+      {
+        "skill": "aws",
+        "category": "cloud_platforms",
+        "weight": 1.0,
+        "matched": true
+      },
+      {
+        "skill": "azure",
+        "category": "cloud_platforms",
+        "weight": 1.0,
+        "matched": true
+      },
+      {
+        "skill": "gcp",
+        "category": "cloud_platforms",
+        "weight": 1.0,
+        "matched": true
+      }
+    ],
+    "nice-to-have": [
+      {
+        "skill": "kubernetes",
+        "category": "containers_orchestration",
+        "weight": 0.9,
+        "matched": true
+      },
+      {
+        "skill": "docker",
+        "category": "containers_orchestration",
+        "weight": 0.9,
+        "matched": true
+      },
+      {
+        "skill": "terraform",
+        "category": "infrastructure_automation",
+        "weight": 0.9,
+        "matched": true
+      },
+      {
+        "skill": "jenkins",
+        "category": "cicd_tools",
+        "weight": 0.7999999999999999,
+        "matched": true
+      },
+      {
+        "skill": "prometheus",
+        "category": "monitoring_observability",
+        "weight": 0.7999999999999999,
+        "matched": true
+      },
+      {
+        "skill": "python",
+        "category": "programming_languages",
+        "weight": 0.7,
+        "matched": true
+      },
+      {
+        "skill": "go",
+        "category": "programming_languages",
+        "weight": 0.7,
+        "matched": true
+      },
+      {
+        "skill": "typescript",
+        "category": "programming_languages",
+        "weight": 0.6,
+        "matched": false
+      },
+      {
+        "skill": "compliance",
+        "category": "security",
+        "weight": 0.9,
+        "matched": false
+      },
+      {
+        "skill": "ebpf",
+        "category": "networking",
+        "weight": 0.7,
+        "matched": true
+      }
+    ],
+    "preferred": [
+      {
+        "skill": "grafana",
+        "category": "monitoring_observability",
+        "weight": 0.7999999999999999,
+        "matched": true
+      },
+      {
+        "skill": "rust",
+        "category": "programming_languages",
+        "weight": 0.7,
+        "matched": true
+      }
+    ]
+  }
+}

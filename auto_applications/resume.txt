@@ -1,0 +1,26 @@
+
+JIALE LIN - Senior Software Engineer
+
+Contact: jeremykalilin@gmail.com | +1-510-417-5834
+LinkedIn: https://www.linkedin.com/in/jiale-lin-ab03a4149 | Website: https://ljluestc.github.io
+
+EXPERIENCE
+Aviatrix | Senior Software Engineer | May 2022 - Present
+• Cloud infrastructure automation with Terraform, Kubernetes across AWS/Azure/GCP
+• Built CI/CD pipelines reducing deployment time by 30%
+• Enhanced monitoring with Prometheus/Grafana, reduced MTTR by 15%
+• Implemented Zero Trust security with eBPF validation
+
+Veeva Systems | SDET | Aug 2021 - May 2022
+• Cross-platform BDD framework with Kotlin, Cucumber, Gradle
+• UI automation with Selenium and Appium
+
+Google Fiber | Test Engineer | Jun 2019 - Jun 2021
+• Selenium framework development, BigQuery optimization
+• Network testing and infrastructure monitoring
+
+EDUCATION
+University of Colorado Boulder | MS Computer Science | May 2025
+University of Arizona | BS Mathematics (CS) | May 2019
+
+SKILLS: Python, Go, C++, AWS, Azure, GCP, Kubernetes, Docker, Terraform, Jenkins

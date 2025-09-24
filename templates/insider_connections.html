@@ -1,0 +1,255 @@
+{% extends "base.html" %}
+
+{% block title %}Insider Connections - JobRight.ai{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8 max-w-6xl">
+    <!-- Header -->
+    <div class="mb-8">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">🤝 Insider Connections</h1>
+        <p class="text-xl text-gray-600">Leverage your network to get noticed by hiring managers</p>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="grid md:grid-cols-4 gap-6 mb-8">
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+            <div class="text-3xl font-bold text-blue-600">{{ connections|length }}</div>
+            <div class="text-gray-600">Total Connections</div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+            <div class="text-3xl font-bold text-green-600">
+                {{ connections|selectattr('contacted', 'equalto', true)|list|length }}
+            </div>
+            <div class="text-gray-600">Contacted</div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+            <div class="text-3xl font-bold text-purple-600">
+                {{ connections|selectattr('response_received', 'equalto', true)|list|length }}
+            </div>
+            <div class="text-gray-600">Responses</div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+            <div class="text-3xl font-bold text-orange-600">
+                {{ (connections|selectattr('response_received', 'equalto', true)|list|length / connections|length * 100)|round(1) if connections|length > 0 else 0 }}%
+            </div>
+            <div class="text-gray-600">Response Rate</div>
+        </div>
+    </div>
+
+    <!-- Find New Connections -->
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+        <h2 class="text-2xl font-semibold mb-6">Find New Connections</h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Company Name</label>
+                <div class="flex gap-2">
+                    <input type="text" id="companySearch" placeholder="e.g., Google, Microsoft"
+                           class="flex-1 border border-gray-300 rounded-lg px-3 py-2">
+                    <button onclick="findConnections()"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors">
+                        Find Connections
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Quick Search</label>
+                <div class="flex gap-2">
+                    <button onclick="searchCompany('Google')" class="bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg text-sm">Google</button>
+                    <button onclick="searchCompany('Meta')" class="bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg text-sm">Meta</button>
+                    <button onclick="searchCompany('Amazon')" class="bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg text-sm">Amazon</button>
+                    <button onclick="searchCompany('Microsoft')" class="bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg text-sm">Microsoft</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Connections List -->
+    {% if connections %}
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-2xl font-semibold mb-6">Your Connections</h2>
+
+        <div class="space-y-4">
+            {% for connection in connections %}
+            <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+                <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                        <div class="flex items-center mb-2">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-semibold">{{ connection.contact_name.split()[0][0] if connection.contact_name else 'N' }}</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">{{ connection.contact_name or 'Contact Name' }}</h3>
+                                <p class="text-gray-600">{{ connection.contact_title or 'Title' }} at {{ connection.company }}</p>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <span class="text-sm text-gray-500">Relationship:</span>
+                                <span class="font-medium">{{ connection.relationship_type or 'Professional' }}</span>
+                            </div>
+                            <div>
+                                <span class="text-sm text-gray-500">Added:</span>
+                                <span class="font-medium">{{ connection.created_at.strftime('%Y-%m-%d') }}</span>
+                            </div>
+                        </div>
+
+                        {% if connection.contact_email %}
+                        <div class="text-sm text-gray-600 mb-3">
+                            📧 {{ connection.contact_email }}
+                        </div>
+                        {% endif %}
+
+                        {% if connection.linkedin_url %}
+                        <div class="text-sm text-gray-600 mb-3">
+                            🔗 <a href="{{ connection.linkedin_url }}" target="_blank" class="text-blue-600 hover:underline">LinkedIn Profile</a>
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    <div class="flex gap-2">
+                        {% if not connection.contacted %}
+                        <button onclick="sendOutreach({{ connection.id }})"
+                                class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm transition-colors">
+                            Send Outreach
+                        </button>
+                        {% else %}
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            {% if connection.response_received %}Responded{% else %}Contacted{% endif %}
+                        </span>
+                        {% endif %}
+
+                        <button onclick="viewTemplate({{ connection.id }})"
+                                class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition-colors">
+                            View Template
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Outreach Template (hidden by default) -->
+                <div id="template-{{ connection.id }}" class="hidden mt-4 p-4 bg-gray-50 rounded-lg">
+                    <h4 class="font-semibold mb-2">Outreach Template:</h4>
+                    <div class="whitespace-pre-wrap text-sm text-gray-700">{{ connection.outreach_template or 'No template available' }}</div>
+                    <div class="mt-3 flex gap-2">
+                        <button onclick="copyTemplate({{ connection.id }})"
+                                class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm">
+                            Copy
+                        </button>
+                        <button onclick="editTemplate({{ connection.id }})"
+                                class="bg-gray-600 hover:bg-gray-700 text-white px-3 py-1 rounded text-sm">
+                            Edit
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% else %}
+    <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+        <div class="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-users text-gray-400 text-3xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">No Connections Yet</h3>
+        <p class="text-gray-600 mb-6">Start building your network by searching for connections at companies you're interested in.</p>
+        <button onclick="searchCompany('Google')" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold">
+            Find Your First Connection
+        </button>
+    </div>
+    {% endif %}
+</div>
+
+<!-- Success Modal -->
+<div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+    <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+        <h3 class="text-lg font-semibold mb-2">🎉 Success!</h3>
+        <p id="successMessage" class="text-gray-600 mb-4"></p>
+        <button onclick="closeModal()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">
+            Close
+        </button>
+    </div>
+</div>
+
+<script>
+function findConnections() {
+    const company = document.getElementById('companySearch').value.trim();
+    if (!company) {
+        alert('Please enter a company name');
+        return;
+    }
+
+    fetch(`/api/find-connections/${encodeURIComponent(company)}`)
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showSuccess(data.message);
+            setTimeout(() => location.reload(), 2000);
+        } else {
+            alert('❌ ' + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('❌ Failed to find connections');
+    });
+}
+
+function searchCompany(company) {
+    document.getElementById('companySearch').value = company;
+    findConnections();
+}
+
+function sendOutreach(connectionId) {
+    if (!confirm('Send outreach message to this connection?')) return;
+
+    // Simulate sending outreach
+    fetch(`/api/connections/${connectionId}/contact`, {
+        method: 'POST'
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showSuccess('Outreach message sent successfully!');
+            setTimeout(() => location.reload(), 2000);
+        } else {
+            alert('❌ Failed to send outreach');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('❌ Failed to send outreach');
+    });
+}
+
+function viewTemplate(connectionId) {
+    const template = document.getElementById(`template-${connectionId}`);
+    template.classList.toggle('hidden');
+}
+
+function copyTemplate(connectionId) {
+    const template = document.querySelector(`#template-${connectionId} .whitespace-pre-wrap`);
+    navigator.clipboard.writeText(template.textContent).then(() => {
+        showSuccess('Template copied to clipboard!');
+    });
+}
+
+function editTemplate(connectionId) {
+    // Redirect to template editor or show modal
+    alert('Template editing functionality coming soon!');
+}
+
+function showSuccess(message) {
+    document.getElementById('successMessage').textContent = message;
+    document.getElementById('successModal').classList.remove('hidden');
+}
+
+function closeModal() {
+    document.getElementById('successModal').classList.add('hidden');
+}
+</script>
+{% endblock %}

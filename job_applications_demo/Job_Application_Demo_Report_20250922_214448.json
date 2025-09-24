@@ -1,0 +1,65 @@
+{
+  "demo_timestamp": "2025-09-22T21:44:48.013990",
+  "job_sites_tested": [
+    [
+      "Indeed",
+      {
+        "success": true,
+        "job_title": "Software Engineer",
+        "screenshots": [
+          "job_applications_demo/screenshots/indeed_homepage.png",
+          "job_applications_demo/screenshots/indeed_results.png",
+          "job_applications_demo/screenshots/indeed_job_detail.png"
+        ]
+      }
+    ],
+    [
+      "Wellfound",
+      {
+        "success": false
+      }
+    ],
+    [
+      "LinkedIn",
+      {
+        "success": false
+      }
+    ]
+  ],
+  "application_demo": {
+    "success": true,
+    "job": {
+      "title": "Software Engineer",
+      "company": "Demo Company",
+      "location": "Remote",
+      "description": "\n                We are looking for a Senior Software Engineer to join our backend team.\n\n                Requirements:\n                - 5+ years of software engineering experience\n                - Strong proficiency in Python, Go, or Java\n                - Experience with cloud platforms (AWS, Azure, GCP)\n                - Knowledge of microservices architecture\n                - Experience with Kubernetes and Docker\n                - Familiarity with CI/CD pipelines\n                - Database experience (PostgreSQL, MongoDB)\n                ",
+      "requirements": [
+        "Python",
+        "Go",
+        "Java",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Kubernetes",
+        "Docker",
+        "CI/CD",
+        "PostgreSQL",
+        "MongoDB"
+      ]
+    },
+    "resume_path": "job_applications_demo/resumes/Jiale_Lin_Resume_Demo_Company_20250922_214442.tex",
+    "application_id": "DEMO-20250922_214442"
+  },
+  "ui_confirmation": "SUCCESS",
+  "files_generated": [
+    "job_applications_demo/mock_application_page.html",
+    "job_applications_demo/screenshots/indeed_homepage.png",
+    "job_applications_demo/screenshots/wellfound_homepage.png",
+    "job_applications_demo/screenshots/application_page.png",
+    "job_applications_demo/screenshots/linkedin_jobs.png",
+    "job_applications_demo/screenshots/indeed_job_detail.png",
+    "job_applications_demo/screenshots/indeed_results.png",
+    "job_applications_demo/screenshots/application_success.png",
+    "job_applications_demo/resumes/Jiale_Lin_Resume_Demo_Company_20250922_214442.tex"
+  ]
+}

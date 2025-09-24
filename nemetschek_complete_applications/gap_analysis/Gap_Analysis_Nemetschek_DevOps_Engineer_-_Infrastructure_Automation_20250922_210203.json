@@ -1,0 +1,23 @@
+{
+  "total_required_skills": 9,
+  "matched_skills": 7,
+  "missing_skills": 2,
+  "match_percentage": 77.8,
+  "matched_skill_list": [
+    "gcp",
+    "aws",
+    "kubernetes",
+    "azure",
+    "jenkins",
+    "terraform",
+    "github actions"
+  ],
+  "missing_skill_list": [
+    "gitlab ci",
+    "cloudformation"
+  ],
+  "recommendations": [
+    "Gained experience with Google Cloud, Microsoft Azure through personal projects and continuous learning initiatives.",
+    "Gained experience with K8s, Podman through personal projects and continuous learning initiatives."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "start_time": "2025-09-22T08:35:05.635252",
+  "tests_passed": 5,
+  "tests_failed": 0,
+  "test_details": [
+    {
+      "test": "Resume Generation - Senior Backend Engineer",
+      "status": "PASSED",
+      "resume_path": "/home/calelin/awesome-apply/Jiale_Lin_Resume_Nemetschek_Senior Backend Engineer_20250922_083505.pdf",
+      "match_score": 61.53846153846154,
+      "matched_skills": 4,
+      "matched_technologies": 4
+    },
+    {
+      "test": "Resume Generation - Full Stack Developer",
+      "status": "PASSED",
+      "resume_path": "/home/calelin/awesome-apply/Jiale_Lin_Resume_Nemetschek_Full Stack Developer_20250922_083505.pdf",
+      "match_score": 100.0,
+      "matched_skills": 7,
+      "matched_technologies": 7
+    },
+    {
+      "test": "Resume Generation - DevOps Engineer",
+      "status": "PASSED",
+      "resume_path": "/home/calelin/awesome-apply/Jiale_Lin_Resume_Nemetschek_DevOps Engineer_20250922_083505.pdf",
+      "match_score": 133.33333333333331,
+      "matched_skills": 8,
+      "matched_technologies": 8
+    },
+    {
+      "test": "Job Analysis Accuracy",
+      "status": "PASSED",
+      "match_score": 86.95652173913044,
+      "matched_skills": 10,
+      "required_skills": 23
+    },
+    {
+      "test": "Missing Skills Detection",
+      "status": "PASSED",
+      "missing_skills": 6,
+      "missing_technologies": 9,
+      "suggested_additions": 8
+    },
+    {
+      "test": "Resume Prioritization",
+      "status": "PASSED",
+      "top_experience_score": 64.28571428571429,
+      "resume_path": "/home/calelin/awesome-apply/Jiale_Lin_Resume_Nemetschek_Network Security Engineer_20250922_083505.pdf"
+    },
+    {
+      "test": "Automation System Initialization",
+      "status": "PASSED",
+      "has_personal_data": true,
+      "has_resume_generator": true
+    }
+  ],
+  "end_time": "2025-09-22T08:35:05.666967",
+  "total_tests": 5,
+  "success_rate": 100.0
+}

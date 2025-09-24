@@ -1,0 +1,20 @@
+Dear Nemetschek Hiring Team,
+
+I am writing to express my strong interest in the Full Stack Developer - Web Platform position at Nemetschek. With my background as a Senior Software Engineer at Aviatrix and extensive experience in cloud infrastructure, DevOps automation, and software development, I am excited about the opportunity to contribute to Nemetschek's innovative technology solutions.
+
+In my current role at Aviatrix, I have developed expertise that directly aligns with your requirements:
+
+• Automated infrastructure with 	extbf{Terraform}; operated 	extbf{	extbf{Kubernetes}} across 	extbf{	extbf{AWS}}, 	extbf{	extbf{Azure}}, and 	extbf{	extbf{GCP}}; built 	extbf{CI/CD} with 	extbf{GitHub Actions}, 	extbf{Jenkins}, ArgoCD, and GitOps, reducing deployment time by 30%.
+• Built secure multi-cloud automation with TLS and Zero-Trust; implemented eBPF/iptables validation for firewall upgrades and DDoS mitigation; hardened supply chain with SBOM and policy gates.
+• Streamlined deployments with 	extbf{	extbf{Docker}} and 	extbf{	extbf{Kubernetes}}; implemented 	extbf{Prometheus}/	extbf{Grafana} for real-time 	extbf{Monitoring}.
+
+My experience spans the full software development lifecycle, from designing scalable architectures to implementing robust CI/CD pipelines. I have consistently delivered measurable results, including reducing deployment times by 30% and improving system reliability.
+
+I am particularly drawn to Nemetschek's commitment to innovation and would welcome the opportunity to discuss how my technical expertise and problem-solving abilities can contribute to your team's success.
+
+Thank you for your consideration. I look forward to hearing from you.
+
+Best regards,
+Jiale Lin
+jeremykalilin@gmail.com
++1-510-417-5834

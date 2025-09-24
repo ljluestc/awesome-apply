@@ -985,6 +985,53 @@ def login():
 
     return render_template('login.html')
 
+@app.route('/logout')
+@login_required
+def logout():
+    """User logout"""
+    logout_user()
+    return redirect(url_for('login'))
+
+@app.route('/jobs/recommend')
+def jobs_recommend():
+    """Redirect to main jobs page"""
+    return redirect(url_for('jobs'))
+
+@app.route('/profile')
+@login_required
+def profile():
+    """User profile page"""
+    return render_template('profile.html', user=current_user)
+
+@app.route('/api/profile/update', methods=['POST'])
+@login_required
+def update_profile():
+    """Update user profile"""
+    data = request.get_json()
+
+    # Update user fields
+    for field in ['preferred_title', 'preferred_location', 'salary_expectation_min',
+                  'salary_expectation_max', 'preferred_experience_level', 'remote_preference']:
+        if field in data:
+            setattr(current_user, field, data[field])
+
+    # Handle JSON fields
+    if 'skills' in data:
+        current_user.skills = json.dumps(data['skills'])
+
+    if 'preferred_job_types' in data:
+        current_user.preferred_job_types = json.dumps(data['preferred_job_types'])
+
+    db.session.commit()
+
+    return jsonify({'success': True, 'message': 'Profile updated successfully'})
+
+@app.route('/saved-jobs')
+@login_required
+def saved_jobs():
+    """Saved jobs page"""
+    return render_template('saved_jobs.html')
+
 @app.route('/onboarding')
 @login_required
 def onboarding():
@@ -1151,6 +1198,66 @@ def job_detail(job_id):
 
     return render_template('job_detail.html', job=job_data)
 
+@app.route('/api/jobs/search')
+def api_jobs_search():
+    """API endpoint for job search"""
+    # Get filter parameters
+    filters = {
+        'location': request.args.get('location', ''),
+        'title': request.args.get('title', ''),
+        'company': request.args.get('company', ''),
+        'job_type': request.args.get('job_type', ''),
+        'experience_level': request.args.get('experience_level', ''),
+        'salary_min': request.args.get('salary_min', ''),
+        'salary_max': request.args.get('salary_max', ''),
+        'remote_only': request.args.get('remote_only', '') == 'true',
+        'keywords': request.args.get('keywords', '')
+    }
+
+    # Generate and filter jobs
+    all_jobs = recommendation_engine.generate_jobs(200)
+
+    filtered_jobs = []
+    for job_data in all_jobs:
+        # Apply filters
+        if filters['location'] and filters['location'].lower() not in job_data['location'].lower():
+            continue
+        if filters['title'] and filters['title'].lower() not in job_data['title'].lower():
+            continue
+        if filters['company'] and filters['company'].lower() not in job_data['company'].lower():
+            continue
+        if filters['job_type'] and job_data['job_type'] != filters['job_type']:
+            continue
+        if filters['experience_level'] and job_data['experience_level'] != filters['experience_level']:
+            continue
+        if filters['remote_only'] and not job_data.get('remote_friendly', False):
+            continue
+        if filters['keywords']:
+            keywords_lower = filters['keywords'].lower()
+            if (keywords_lower not in job_data['title'].lower() and
+                keywords_lower not in job_data['description'].lower() and
+                not any(keywords_lower in skill.lower() for skill in job_data['skills'])):
+                continue
+
+        filtered_jobs.append(job_data)
+
+    # Pagination
+    page = int(request.args.get('page', 1))
+    per_page = int(request.args.get('per_page', 20))
+    start_idx = (page - 1) * per_page
+    end_idx = start_idx + per_page
+
+    paginated_jobs = filtered_jobs[start_idx:end_idx]
+    total_pages = math.ceil(len(filtered_jobs) / per_page)
+
+    return jsonify({
+        'jobs': paginated_jobs,
+        'total_jobs': len(filtered_jobs),
+        'page': page,
+        'total_pages': total_pages,
+        'per_page': per_page
+    })
+
 @app.route('/api/jobs/<job_id>/save', methods=['POST'])
 @login_required
 def save_job(job_id):
@@ -1165,6 +1272,19 @@ def save_job(job_id):
     db.session.commit()
 
     return jsonify({'success': True, 'message': 'Job saved successfully'})
+
+@app.route('/api/jobs/<job_id>/unsave', methods=['POST'])
+@login_required
+def unsave_job(job_id):
+    """Remove job from saved jobs"""
+    saved_job = SavedJob.query.filter_by(user_id=current_user.id, job_id=job_id).first()
+
+    if saved_job:
+        db.session.delete(saved_job)
+        db.session.commit()
+        return jsonify({'success': True, 'message': 'Job removed from saved jobs'})
+
+    return jsonify({'success': False, 'message': 'Job not found in saved jobs'})
 
 @app.route('/api/jobs/<job_id>/apply', methods=['POST'])
 @login_required
@@ -1550,4 +1670,4 @@ if __name__ == '__main__':
     logger.info("💬 Orion AI: 24/7 career assistant")
     logger.info("📊 Analytics: Application tracking & insights")
 
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5001)
