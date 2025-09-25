@@ -7,3 +7,4 @@
 2025-09-24 23:26:33,511 - INFO - [33mPress CTRL+C to quit[0m
 2025-09-24 23:26:35,507 - INFO - Starting full automation pipeline
 2025-09-24 23:26:35,507 - INFO - Step 1: Scraping jobs from all sources
+2025-09-24 23:26:55,224 - INFO - 127.0.0.1 - - [24/Sep/2025 23:26:55] "GET /api/stats HTTP/1.1" 200 -

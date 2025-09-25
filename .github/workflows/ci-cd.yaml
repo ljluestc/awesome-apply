@@ -1,0 +1,281 @@
+name: Job Automation CI/CD
+
+on:
+  push:
+    branches: [ main, develop ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main, develop ]
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+  KUBECONFIG_FILE: ${{ secrets.KUBECONFIG }}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.11, 3.12, 3.13]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Cache pip dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install -r requirements-dev.txt
+
+    - name: Lint with flake8
+      run: |
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+    - name: Format check with black
+      run: |
+        black --check --diff .
+
+    - name: Security check with bandit
+      run: |
+        bandit -r . -x ./venv/,./tests/
+
+    - name: Type check with mypy
+      run: |
+        mypy . --ignore-missing-imports
+
+    - name: Run tests with pytest
+      run: |
+        pytest tests/ -v --cov=. --cov-report=xml --cov-report=term
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        scan-type: 'fs'
+        scan-ref: '.'
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+
+    - name: Upload Trivy scan results to GitHub Security tab
+      uses: github/codeql-action/upload-sarif@v2
+      with:
+        sarif_file: 'trivy-results.sarif'
+
+  build:
+    needs: [test, security-scan]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Log in to Container Registry
+      uses: docker/login-action@v3
+      with:
+        registry: ${{ env.REGISTRY }}
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Extract metadata
+      id: meta
+      uses: docker/metadata-action@v5
+      with:
+        images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+        tags: |
+          type=ref,event=branch
+          type=ref,event=pr
+          type=semver,pattern={{version}}
+          type=semver,pattern={{major}}.{{minor}}
+          type=sha,prefix=sha-
+
+    - name: Build and push Scraper image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        file: docker/scraper/Dockerfile
+        platforms: linux/amd64,linux/arm64
+        push: true
+        tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/scraper:${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+
+    - name: Build and push Automation image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        file: docker/automation/Dockerfile
+        platforms: linux/amd64,linux/arm64
+        push: true
+        tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/automation:${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+
+    - name: Build and push Web image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        file: docker/web/Dockerfile
+        platforms: linux/amd64,linux/arm64
+        push: true
+        tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/web:${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+
+    - name: Scan Docker images with Trivy
+      uses: aquasecurity/trivy-action@master
+      with:
+        image-ref: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/automation:${{ steps.meta.outputs.tags }}
+        format: 'sarif'
+        output: 'trivy-image-results.sarif'
+
+    - name: Upload Trivy scan results
+      uses: github/codeql-action/upload-sarif@v2
+      with:
+        sarif_file: 'trivy-image-results.sarif'
+
+  deploy-staging:
+    if: github.ref == 'refs/heads/develop'
+    needs: build
+    runs-on: ubuntu-latest
+    environment: staging
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up kubectl
+      uses: azure/setup-kubectl@v3
+      with:
+        version: 'v1.28.0'
+
+    - name: Configure kubeconfig
+      run: |
+        echo "${{ secrets.KUBECONFIG_STAGING }}" | base64 -d > kubeconfig
+        export KUBECONFIG=kubeconfig
+
+    - name: Deploy to staging
+      run: |
+        kubectl apply -f k8s/manifests/ -n jobautomation-staging
+        kubectl set image deployment/job-automation-deployment job-automation=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/automation:${{ github.sha }} -n jobautomation-staging
+        kubectl set image deployment/job-scraper-deployment job-scraper=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/scraper:${{ github.sha }} -n jobautomation-staging
+        kubectl set image deployment/job-web-deployment job-web=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/web:${{ github.sha }} -n jobautomation-staging
+
+    - name: Wait for deployment
+      run: |
+        kubectl rollout status deployment/job-automation-deployment -n jobautomation-staging --timeout=300s
+        kubectl rollout status deployment/job-scraper-deployment -n jobautomation-staging --timeout=300s
+        kubectl rollout status deployment/job-web-deployment -n jobautomation-staging --timeout=300s
+
+    - name: Run integration tests
+      run: |
+        export KUBECONFIG=kubeconfig
+        python tests/integration/test_staging_deployment.py
+
+  deploy-production:
+    if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up kubectl
+      uses: azure/setup-kubectl@v3
+      with:
+        version: 'v1.28.0'
+
+    - name: Configure kubeconfig
+      run: |
+        echo "${{ secrets.KUBECONFIG_PRODUCTION }}" | base64 -d > kubeconfig
+        export KUBECONFIG=kubeconfig
+
+    - name: Deploy to production via ArgoCD
+      run: |
+        # Update image tags in ArgoCD application
+        curl -X PATCH \
+          -H "Authorization: Bearer ${{ secrets.ARGOCD_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "spec": {
+              "source": {
+                "helm": {
+                  "parameters": [
+                    {"name": "image.tag", "value": "'${{ github.sha }}'"}
+                  ]
+                }
+              }
+            }
+          }' \
+          "${{ secrets.ARGOCD_SERVER }}/api/v1/applications/job-automation-app"
+
+    - name: Trigger ArgoCD sync
+      run: |
+        curl -X POST \
+          -H "Authorization: Bearer ${{ secrets.ARGOCD_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          "${{ secrets.ARGOCD_SERVER }}/api/v1/applications/job-automation-app/sync"
+
+    - name: Wait for ArgoCD sync
+      run: |
+        timeout 300 bash -c 'until [[ $(curl -s -H "Authorization: Bearer ${{ secrets.ARGOCD_TOKEN }}" "${{ secrets.ARGOCD_SERVER }}/api/v1/applications/job-automation-app" | jq -r ".status.sync.status") == "Synced" ]]; do sleep 10; done'
+
+    - name: Run production smoke tests
+      run: |
+        python tests/e2e/test_production_deployment.py
+
+    - name: Notify deployment success
+      uses: 8398a7/action-slack@v3
+      with:
+        status: success
+        text: "🚀 Job Automation System successfully deployed to production!"
+        webhook_url: ${{ secrets.SLACK_WEBHOOK }}
+
+  notify-failure:
+    if: failure()
+    needs: [test, security-scan, build, deploy-staging, deploy-production]
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Notify deployment failure
+      uses: 8398a7/action-slack@v3
+      with:
+        status: failure
+        text: "❌ Job Automation System deployment failed!"
+        webhook_url: ${{ secrets.SLACK_WEBHOOK }}

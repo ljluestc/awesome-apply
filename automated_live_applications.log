@@ -1,0 +1,3408 @@
+2025-09-25 08:42:42,841 - INFO - 🤖 STARTING AUTOMATED LIVE JOB APPLICATIONS
+2025-09-25 08:42:42,841 - INFO - ======================================================================
+2025-09-25 08:42:42,841 - INFO - 👤 Applicant: Jordan Smith
+2025-09-25 08:42:42,841 - INFO - 📧 Email: jordan.smith.dev.2024@gmail.com
+2025-09-25 08:42:42,841 - INFO - 🎯 Target: 100 automatic applications
+2025-09-25 08:42:42,841 - INFO - 🆔 Session: auto_session_20250925_084242
+2025-09-25 08:42:42,841 - INFO - ======================================================================
+2025-09-25 08:42:43,168 - INFO - 🎯 Generated 100 job opportunities
+2025-09-25 08:42:43,168 - INFO - 
+--- AUTOMATED APPLICATION 1/100 ---
+2025-09-25 08:42:43,168 - INFO - 🚀 AUTO APPLICATION #1: JavaScript Developer at ByteWorks
+2025-09-25 08:42:43,624 - ERROR - Error in application #1: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:43,625 - ERROR - Critical error in application 1: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:43,625 - INFO - 
+--- AUTOMATED APPLICATION 2/100 ---
+2025-09-25 08:42:43,625 - INFO - 🚀 AUTO APPLICATION #2: Backend Engineer at ScaleUp
+2025-09-25 08:42:44,014 - ERROR - Error in application #2: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:44,015 - ERROR - Critical error in application 2: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:44,015 - INFO - 
+--- AUTOMATED APPLICATION 3/100 ---
+2025-09-25 08:42:44,015 - INFO - 🚀 AUTO APPLICATION #3: Backend Engineer at ScaleUp
+2025-09-25 08:42:44,424 - ERROR - Error in application #3: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:44,425 - ERROR - Critical error in application 3: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:44,425 - INFO - 
+--- AUTOMATED APPLICATION 4/100 ---
+2025-09-25 08:42:44,425 - INFO - 🚀 AUTO APPLICATION #4: Senior Software Engineer at FastTrack
+2025-09-25 08:42:44,539 - ERROR - Error in application #4: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:44,540 - ERROR - Critical error in application 4: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:44,540 - INFO - 
+--- AUTOMATED APPLICATION 5/100 ---
+2025-09-25 08:42:44,540 - INFO - 🚀 AUTO APPLICATION #5: Software Architect at WebForge
+2025-09-25 08:42:44,928 - ERROR - Error in application #5: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:44,928 - ERROR - Critical error in application 5: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:44,928 - INFO - 
+--- AUTOMATED APPLICATION 6/100 ---
+2025-09-25 08:42:44,929 - INFO - 🚀 AUTO APPLICATION #6: Node.js Engineer at NextGen
+2025-09-25 08:42:45,278 - ERROR - Error in application #6: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:45,279 - ERROR - Critical error in application 6: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:45,279 - INFO - 
+--- AUTOMATED APPLICATION 7/100 ---
+2025-09-25 08:42:45,279 - INFO - 🚀 AUTO APPLICATION #7: DevOps Engineer at InnovateSoft
+2025-09-25 08:42:45,635 - ERROR - Error in application #7: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:45,636 - ERROR - Critical error in application 7: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:45,636 - INFO - 
+--- AUTOMATED APPLICATION 8/100 ---
+2025-09-25 08:42:45,636 - INFO - 🚀 AUTO APPLICATION #8: Frontend Developer at AppFactory
+2025-09-25 08:42:45,977 - ERROR - Error in application #8: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:45,978 - ERROR - Critical error in application 8: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:45,978 - INFO - 
+--- AUTOMATED APPLICATION 9/100 ---
+2025-09-25 08:42:45,979 - INFO - 🚀 AUTO APPLICATION #9: Technical Lead at CodeCraft
+2025-09-25 08:42:46,402 - ERROR - Error in application #9: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:46,403 - ERROR - Critical error in application 9: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:46,403 - INFO - 
+--- AUTOMATED APPLICATION 10/100 ---
+2025-09-25 08:42:46,403 - INFO - 🚀 AUTO APPLICATION #10: JavaScript Developer at PixelPush
+2025-09-25 08:42:46,776 - ERROR - Error in application #10: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:46,777 - ERROR - Critical error in application 10: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:46,777 - INFO - 
+--- AUTOMATED APPLICATION 11/100 ---
+2025-09-25 08:42:46,778 - INFO - 🚀 AUTO APPLICATION #11: Node.js Engineer at DataDyne
+2025-09-25 08:42:47,121 - ERROR - Error in application #11: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:47,121 - ERROR - Critical error in application 11: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:47,121 - INFO - 
+--- AUTOMATED APPLICATION 12/100 ---
+2025-09-25 08:42:47,121 - INFO - 🚀 AUTO APPLICATION #12: Full Stack Developer at NextGen
+2025-09-25 08:42:47,469 - ERROR - Error in application #12: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:47,470 - ERROR - Critical error in application 12: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:47,470 - INFO - 
+--- AUTOMATED APPLICATION 13/100 ---
+2025-09-25 08:42:47,470 - INFO - 🚀 AUTO APPLICATION #13: Full Stack Developer at AppFactory
+2025-09-25 08:42:47,813 - ERROR - Error in application #13: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:47,814 - ERROR - Critical error in application 13: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:47,814 - INFO - 
+--- AUTOMATED APPLICATION 14/100 ---
+2025-09-25 08:42:47,814 - INFO - 🚀 AUTO APPLICATION #14: DevOps Engineer at PixelPush
+2025-09-25 08:42:48,206 - ERROR - Error in application #14: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:48,207 - ERROR - Critical error in application 14: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:48,207 - INFO - 
+--- AUTOMATED APPLICATION 15/100 ---
+2025-09-25 08:42:48,207 - INFO - 🚀 AUTO APPLICATION #15: Backend Engineer at TechCorp
+2025-09-25 08:42:48,521 - ERROR - Error in application #15: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:48,521 - ERROR - Critical error in application 15: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:48,521 - INFO - 
+--- AUTOMATED APPLICATION 16/100 ---
+2025-09-25 08:42:48,521 - INFO - 🚀 AUTO APPLICATION #16: Python Developer at CodeCraft
+2025-09-25 08:42:48,859 - ERROR - Error in application #16: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:48,859 - ERROR - Critical error in application 16: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:48,859 - INFO - 
+--- AUTOMATED APPLICATION 17/100 ---
+2025-09-25 08:42:48,859 - INFO - 🚀 AUTO APPLICATION #17: Senior Software Engineer at SmartCode
+2025-09-25 08:42:49,209 - ERROR - Error in application #17: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:49,210 - ERROR - Critical error in application 17: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:49,210 - INFO - 
+--- AUTOMATED APPLICATION 18/100 ---
+2025-09-25 08:42:49,210 - INFO - 🚀 AUTO APPLICATION #18: DevOps Engineer at TechCorp
+2025-09-25 08:42:49,522 - ERROR - Error in application #18: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:49,523 - ERROR - Critical error in application 18: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:49,523 - INFO - 
+--- AUTOMATED APPLICATION 19/100 ---
+2025-09-25 08:42:49,523 - INFO - 🚀 AUTO APPLICATION #19: Cloud Engineer at CloudWorks
+2025-09-25 08:42:49,834 - ERROR - Error in application #19: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:49,834 - ERROR - Critical error in application 19: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:49,834 - INFO - 
+--- AUTOMATED APPLICATION 20/100 ---
+2025-09-25 08:42:49,835 - INFO - 🚀 AUTO APPLICATION #20: Full Stack Developer at CloudWorks
+2025-09-25 08:42:50,157 - ERROR - Error in application #20: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:50,158 - ERROR - Critical error in application 20: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:50,158 - INFO - 
+--- AUTOMATED APPLICATION 21/100 ---
+2025-09-25 08:42:50,158 - INFO - 🚀 AUTO APPLICATION #21: Node.js Engineer at FlexiTech
+2025-09-25 08:42:50,541 - ERROR - Error in application #21: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:50,542 - ERROR - Critical error in application 21: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:50,542 - INFO - 
+--- AUTOMATED APPLICATION 22/100 ---
+2025-09-25 08:42:50,542 - INFO - 🚀 AUTO APPLICATION #22: DevOps Engineer at SmartCode
+2025-09-25 08:42:50,892 - ERROR - Error in application #22: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:50,893 - ERROR - Critical error in application 22: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:50,893 - INFO - 
+--- AUTOMATED APPLICATION 23/100 ---
+2025-09-25 08:42:50,893 - INFO - 🚀 AUTO APPLICATION #23: DevOps Engineer at AppFactory
+2025-09-25 08:42:51,237 - ERROR - Error in application #23: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:51,238 - ERROR - Critical error in application 23: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:51,238 - INFO - 
+--- AUTOMATED APPLICATION 24/100 ---
+2025-09-25 08:42:51,239 - INFO - 🚀 AUTO APPLICATION #24: Technical Lead at DevStudio
+2025-09-25 08:42:51,578 - ERROR - Error in application #24: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:51,579 - ERROR - Critical error in application 24: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:51,579 - INFO - 
+--- AUTOMATED APPLICATION 25/100 ---
+2025-09-25 08:42:51,579 - INFO - 🚀 AUTO APPLICATION #25: Python Developer at DevStudio
+2025-09-25 08:42:51,903 - ERROR - Error in application #25: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:51,904 - ERROR - Critical error in application 25: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:51,904 - INFO - 
+--- AUTOMATED APPLICATION 26/100 ---
+2025-09-25 08:42:51,904 - INFO - 🚀 AUTO APPLICATION #26: DevOps Engineer at DataDyne
+2025-09-25 08:42:52,227 - ERROR - Error in application #26: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:52,227 - ERROR - Critical error in application 26: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:52,228 - INFO - 
+--- AUTOMATED APPLICATION 27/100 ---
+2025-09-25 08:42:52,228 - INFO - 🚀 AUTO APPLICATION #27: Software Architect at DataDyne
+2025-09-25 08:42:52,546 - ERROR - Error in application #27: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:52,547 - ERROR - Critical error in application 27: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:52,547 - INFO - 
+--- AUTOMATED APPLICATION 28/100 ---
+2025-09-25 08:42:52,547 - INFO - 🚀 AUTO APPLICATION #28: Full Stack Developer at FlexiTech
+2025-09-25 08:42:52,874 - ERROR - Error in application #28: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:52,875 - ERROR - Critical error in application 28: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:52,875 - INFO - 
+--- AUTOMATED APPLICATION 29/100 ---
+2025-09-25 08:42:52,875 - INFO - 🚀 AUTO APPLICATION #29: Frontend Developer at TechCorp
+2025-09-25 08:42:53,221 - ERROR - Error in application #29: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:53,221 - ERROR - Critical error in application 29: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:53,221 - INFO - 
+--- AUTOMATED APPLICATION 30/100 ---
+2025-09-25 08:42:53,221 - INFO - 🚀 AUTO APPLICATION #30: DevOps Engineer at CloudWorks
+2025-09-25 08:42:53,560 - ERROR - Error in application #30: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:53,561 - ERROR - Critical error in application 30: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:53,561 - INFO - 
+--- AUTOMATED APPLICATION 31/100 ---
+2025-09-25 08:42:53,561 - INFO - 🚀 AUTO APPLICATION #31: Backend Engineer at ByteWorks
+2025-09-25 08:42:53,897 - ERROR - Error in application #31: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:53,898 - ERROR - Critical error in application 31: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:53,898 - INFO - 
+--- AUTOMATED APPLICATION 32/100 ---
+2025-09-25 08:42:53,898 - INFO - 🚀 AUTO APPLICATION #32: Python Developer at CodeCraft
+2025-09-25 08:42:54,238 - ERROR - Error in application #32: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:54,239 - ERROR - Critical error in application 32: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:54,239 - INFO - 
+--- AUTOMATED APPLICATION 33/100 ---
+2025-09-25 08:42:54,239 - INFO - 🚀 AUTO APPLICATION #33: Python Developer at TechCorp
+2025-09-25 08:42:54,557 - ERROR - Error in application #33: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:54,557 - ERROR - Critical error in application 33: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:54,557 - INFO - 
+--- AUTOMATED APPLICATION 34/100 ---
+2025-09-25 08:42:54,557 - INFO - 🚀 AUTO APPLICATION #34: Senior Software Engineer at NextGen
+2025-09-25 08:42:54,908 - ERROR - Error in application #34: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:54,909 - ERROR - Critical error in application 34: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:54,909 - INFO - 
+--- AUTOMATED APPLICATION 35/100 ---
+2025-09-25 08:42:54,909 - INFO - 🚀 AUTO APPLICATION #35: Software Architect at FastTrack
+2025-09-25 08:42:55,241 - ERROR - Error in application #35: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:55,242 - ERROR - Critical error in application 35: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:55,242 - INFO - 
+--- AUTOMATED APPLICATION 36/100 ---
+2025-09-25 08:42:55,242 - INFO - 🚀 AUTO APPLICATION #36: Node.js Engineer at FlexiTech
+2025-09-25 08:42:55,577 - ERROR - Error in application #36: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:55,577 - ERROR - Critical error in application 36: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:55,577 - INFO - 
+--- AUTOMATED APPLICATION 37/100 ---
+2025-09-25 08:42:55,577 - INFO - 🚀 AUTO APPLICATION #37: Frontend Developer at CodeCraft
+2025-09-25 08:42:55,912 - ERROR - Error in application #37: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:55,913 - ERROR - Critical error in application 37: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:55,913 - INFO - 
+--- AUTOMATED APPLICATION 38/100 ---
+2025-09-25 08:42:55,913 - INFO - 🚀 AUTO APPLICATION #38: Backend Engineer at CloudWorks
+2025-09-25 08:42:56,227 - ERROR - Error in application #38: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:56,228 - ERROR - Critical error in application 38: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:56,228 - INFO - 
+--- AUTOMATED APPLICATION 39/100 ---
+2025-09-25 08:42:56,228 - INFO - 🚀 AUTO APPLICATION #39: Frontend Developer at ScaleUp
+2025-09-25 08:42:56,590 - ERROR - Error in application #39: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:56,590 - ERROR - Critical error in application 39: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:56,590 - INFO - 
+--- AUTOMATED APPLICATION 40/100 ---
+2025-09-25 08:42:56,590 - INFO - 🚀 AUTO APPLICATION #40: JavaScript Developer at CloudWorks
+2025-09-25 08:42:56,913 - ERROR - Error in application #40: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:56,913 - ERROR - Critical error in application 40: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:56,913 - INFO - 
+--- AUTOMATED APPLICATION 41/100 ---
+2025-09-25 08:42:56,913 - INFO - 🚀 AUTO APPLICATION #41: Node.js Engineer at DataDyne
+2025-09-25 08:42:57,225 - ERROR - Error in application #41: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:57,226 - ERROR - Critical error in application 41: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:57,226 - INFO - 
+--- AUTOMATED APPLICATION 42/100 ---
+2025-09-25 08:42:57,226 - INFO - 🚀 AUTO APPLICATION #42: Software Architect at CloudWorks
+2025-09-25 08:42:57,566 - ERROR - Error in application #42: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:57,566 - ERROR - Critical error in application 42: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:57,566 - INFO - 
+--- AUTOMATED APPLICATION 43/100 ---
+2025-09-25 08:42:57,566 - INFO - 🚀 AUTO APPLICATION #43: Full Stack Developer at SmartCode
+2025-09-25 08:42:57,909 - ERROR - Error in application #43: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:57,909 - ERROR - Critical error in application 43: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:57,910 - INFO - 
+--- AUTOMATED APPLICATION 44/100 ---
+2025-09-25 08:42:57,910 - INFO - 🚀 AUTO APPLICATION #44: Node.js Engineer at FlexiTech
+2025-09-25 08:42:58,224 - ERROR - Error in application #44: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:58,225 - ERROR - Critical error in application 44: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:58,225 - INFO - 
+--- AUTOMATED APPLICATION 45/100 ---
+2025-09-25 08:42:58,225 - INFO - 🚀 AUTO APPLICATION #45: Cloud Engineer at SmartCode
+2025-09-25 08:42:58,568 - ERROR - Error in application #45: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:58,569 - ERROR - Critical error in application 45: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:58,569 - INFO - 
+--- AUTOMATED APPLICATION 46/100 ---
+2025-09-25 08:42:58,569 - INFO - 🚀 AUTO APPLICATION #46: React Developer at DevStudio
+2025-09-25 08:42:58,879 - ERROR - Error in application #46: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:58,880 - ERROR - Critical error in application 46: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:58,880 - INFO - 
+--- AUTOMATED APPLICATION 47/100 ---
+2025-09-25 08:42:58,880 - INFO - 🚀 AUTO APPLICATION #47: Frontend Developer at FastTrack
+2025-09-25 08:42:59,208 - ERROR - Error in application #47: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:59,208 - ERROR - Critical error in application 47: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:59,208 - INFO - 
+--- AUTOMATED APPLICATION 48/100 ---
+2025-09-25 08:42:59,208 - INFO - 🚀 AUTO APPLICATION #48: Cloud Engineer at PixelPush
+2025-09-25 08:42:59,523 - ERROR - Error in application #48: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:59,524 - ERROR - Critical error in application 48: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:59,524 - INFO - 
+--- AUTOMATED APPLICATION 49/100 ---
+2025-09-25 08:42:59,524 - INFO - 🚀 AUTO APPLICATION #49: Cloud Engineer at TechCorp
+2025-09-25 08:42:59,822 - ERROR - Error in application #49: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:42:59,822 - ERROR - Critical error in application 49: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:42:59,822 - INFO - 
+--- AUTOMATED APPLICATION 50/100 ---
+2025-09-25 08:42:59,822 - INFO - 🚀 AUTO APPLICATION #50: Technical Lead at DevStudio
+2025-09-25 08:43:00,186 - ERROR - Error in application #50: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:00,187 - ERROR - Critical error in application 50: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:00,187 - INFO - 
+--- AUTOMATED APPLICATION 51/100 ---
+2025-09-25 08:43:00,187 - INFO - 🚀 AUTO APPLICATION #51: JavaScript Developer at DataDyne
+2025-09-25 08:43:00,516 - ERROR - Error in application #51: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:00,516 - ERROR - Critical error in application 51: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:00,516 - INFO - 
+--- AUTOMATED APPLICATION 52/100 ---
+2025-09-25 08:43:00,516 - INFO - 🚀 AUTO APPLICATION #52: Cloud Engineer at PixelPush
+2025-09-25 08:43:00,872 - ERROR - Error in application #52: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:00,873 - ERROR - Critical error in application 52: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:00,873 - INFO - 
+--- AUTOMATED APPLICATION 53/100 ---
+2025-09-25 08:43:00,873 - INFO - 🚀 AUTO APPLICATION #53: JavaScript Developer at CloudWorks
+2025-09-25 08:43:01,196 - ERROR - Error in application #53: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:01,197 - ERROR - Critical error in application 53: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:01,197 - INFO - 
+--- AUTOMATED APPLICATION 54/100 ---
+2025-09-25 08:43:01,197 - INFO - 🚀 AUTO APPLICATION #54: Full Stack Developer at ByteWorks
+2025-09-25 08:43:01,533 - ERROR - Error in application #54: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:01,534 - ERROR - Critical error in application 54: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:01,534 - INFO - 
+--- AUTOMATED APPLICATION 55/100 ---
+2025-09-25 08:43:01,534 - INFO - 🚀 AUTO APPLICATION #55: JavaScript Developer at NextGen
+2025-09-25 08:43:01,881 - ERROR - Error in application #55: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:01,882 - ERROR - Critical error in application 55: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:01,882 - INFO - 
+--- AUTOMATED APPLICATION 56/100 ---
+2025-09-25 08:43:01,882 - INFO - 🚀 AUTO APPLICATION #56: Frontend Developer at AppFactory
+2025-09-25 08:43:02,223 - ERROR - Error in application #56: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:02,223 - ERROR - Critical error in application 56: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:02,224 - INFO - 
+--- AUTOMATED APPLICATION 57/100 ---
+2025-09-25 08:43:02,224 - INFO - 🚀 AUTO APPLICATION #57: Python Developer at NextGen
+2025-09-25 08:43:02,565 - ERROR - Error in application #57: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:02,566 - ERROR - Critical error in application 57: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:02,566 - INFO - 
+--- AUTOMATED APPLICATION 58/100 ---
+2025-09-25 08:43:02,566 - INFO - 🚀 AUTO APPLICATION #58: Node.js Engineer at AppFactory
+2025-09-25 08:43:02,893 - ERROR - Error in application #58: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:02,894 - ERROR - Critical error in application 58: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:02,894 - INFO - 
+--- AUTOMATED APPLICATION 59/100 ---
+2025-09-25 08:43:02,894 - INFO - 🚀 AUTO APPLICATION #59: DevOps Engineer at FlexiTech
+2025-09-25 08:43:03,223 - ERROR - Error in application #59: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:03,224 - ERROR - Critical error in application 59: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:03,224 - INFO - 
+--- AUTOMATED APPLICATION 60/100 ---
+2025-09-25 08:43:03,224 - INFO - 🚀 AUTO APPLICATION #60: Full Stack Developer at WebForge
+2025-09-25 08:43:03,572 - ERROR - Error in application #60: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:03,573 - ERROR - Critical error in application 60: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:03,573 - INFO - 
+--- AUTOMATED APPLICATION 61/100 ---
+2025-09-25 08:43:03,573 - INFO - 🚀 AUTO APPLICATION #61: DevOps Engineer at FastTrack
+2025-09-25 08:43:03,948 - ERROR - Error in application #61: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:03,949 - ERROR - Critical error in application 61: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:03,950 - INFO - 
+--- AUTOMATED APPLICATION 62/100 ---
+2025-09-25 08:43:03,950 - INFO - 🚀 AUTO APPLICATION #62: Cloud Engineer at InnovateSoft
+2025-09-25 08:43:04,314 - ERROR - Error in application #62: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:04,316 - ERROR - Critical error in application 62: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:04,316 - INFO - 
+--- AUTOMATED APPLICATION 63/100 ---
+2025-09-25 08:43:04,316 - INFO - 🚀 AUTO APPLICATION #63: Node.js Engineer at CodeCraft
+2025-09-25 08:43:04,666 - ERROR - Error in application #63: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:04,666 - ERROR - Critical error in application 63: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:04,667 - INFO - 
+--- AUTOMATED APPLICATION 64/100 ---
+2025-09-25 08:43:04,667 - INFO - 🚀 AUTO APPLICATION #64: JavaScript Developer at NextGen
+2025-09-25 08:43:05,010 - ERROR - Error in application #64: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:05,011 - ERROR - Critical error in application 64: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:05,011 - INFO - 
+--- AUTOMATED APPLICATION 65/100 ---
+2025-09-25 08:43:05,011 - INFO - 🚀 AUTO APPLICATION #65: Backend Engineer at InnovateSoft
+2025-09-25 08:43:05,336 - ERROR - Error in application #65: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:05,337 - ERROR - Critical error in application 65: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:05,337 - INFO - 
+--- AUTOMATED APPLICATION 66/100 ---
+2025-09-25 08:43:05,337 - INFO - 🚀 AUTO APPLICATION #66: Technical Lead at WebForge
+2025-09-25 08:43:05,709 - ERROR - Error in application #66: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:05,710 - ERROR - Critical error in application 66: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:05,710 - INFO - 
+--- AUTOMATED APPLICATION 67/100 ---
+2025-09-25 08:43:05,710 - INFO - 🚀 AUTO APPLICATION #67: Full Stack Developer at ScaleUp
+2025-09-25 08:43:06,025 - ERROR - Error in application #67: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:06,026 - ERROR - Critical error in application 67: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:06,026 - INFO - 
+--- AUTOMATED APPLICATION 68/100 ---
+2025-09-25 08:43:06,026 - INFO - 🚀 AUTO APPLICATION #68: Node.js Engineer at TechCorp
+2025-09-25 08:43:06,363 - ERROR - Error in application #68: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:06,364 - ERROR - Critical error in application 68: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:06,364 - INFO - 
+--- AUTOMATED APPLICATION 69/100 ---
+2025-09-25 08:43:06,364 - INFO - 🚀 AUTO APPLICATION #69: Senior Software Engineer at CloudWorks
+2025-09-25 08:43:06,674 - ERROR - Error in application #69: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:06,675 - ERROR - Critical error in application 69: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:06,675 - INFO - 
+--- AUTOMATED APPLICATION 70/100 ---
+2025-09-25 08:43:06,675 - INFO - 🚀 AUTO APPLICATION #70: Software Architect at WebForge
+2025-09-25 08:43:07,012 - ERROR - Error in application #70: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:07,013 - ERROR - Critical error in application 70: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:07,014 - INFO - 
+--- AUTOMATED APPLICATION 71/100 ---
+2025-09-25 08:43:07,014 - INFO - 🚀 AUTO APPLICATION #71: Cloud Engineer at SmartCode
+2025-09-25 08:43:07,339 - ERROR - Error in application #71: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:07,339 - ERROR - Critical error in application 71: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:07,339 - INFO - 
+--- AUTOMATED APPLICATION 72/100 ---
+2025-09-25 08:43:07,339 - INFO - 🚀 AUTO APPLICATION #72: Technical Lead at SmartCode
+2025-09-25 08:43:07,668 - ERROR - Error in application #72: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:07,668 - ERROR - Critical error in application 72: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:07,668 - INFO - 
+--- AUTOMATED APPLICATION 73/100 ---
+2025-09-25 08:43:07,668 - INFO - 🚀 AUTO APPLICATION #73: JavaScript Developer at InnovateSoft
+2025-09-25 08:43:08,000 - ERROR - Error in application #73: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:08,000 - ERROR - Critical error in application 73: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:08,001 - INFO - 
+--- AUTOMATED APPLICATION 74/100 ---
+2025-09-25 08:43:08,001 - INFO - 🚀 AUTO APPLICATION #74: DevOps Engineer at AppFactory
+2025-09-25 08:43:08,347 - ERROR - Error in application #74: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:08,348 - ERROR - Critical error in application 74: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:08,348 - INFO - 
+--- AUTOMATED APPLICATION 75/100 ---
+2025-09-25 08:43:08,349 - INFO - 🚀 AUTO APPLICATION #75: Frontend Developer at DataDyne
+2025-09-25 08:43:08,686 - ERROR - Error in application #75: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:08,686 - ERROR - Critical error in application 75: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:08,686 - INFO - 
+--- AUTOMATED APPLICATION 76/100 ---
+2025-09-25 08:43:08,686 - INFO - 🚀 AUTO APPLICATION #76: Frontend Developer at ScaleUp
+2025-09-25 08:43:09,035 - ERROR - Error in application #76: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:09,036 - ERROR - Critical error in application 76: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:09,036 - INFO - 
+--- AUTOMATED APPLICATION 77/100 ---
+2025-09-25 08:43:09,036 - INFO - 🚀 AUTO APPLICATION #77: Software Architect at NextGen
+2025-09-25 08:43:09,364 - ERROR - Error in application #77: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:09,365 - ERROR - Critical error in application 77: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:09,365 - INFO - 
+--- AUTOMATED APPLICATION 78/100 ---
+2025-09-25 08:43:09,365 - INFO - 🚀 AUTO APPLICATION #78: Software Architect at FastTrack
+2025-09-25 08:43:09,690 - ERROR - Error in application #78: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:09,691 - ERROR - Critical error in application 78: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:09,691 - INFO - 
+--- AUTOMATED APPLICATION 79/100 ---
+2025-09-25 08:43:09,691 - INFO - 🚀 AUTO APPLICATION #79: DevOps Engineer at TechCorp
+2025-09-25 08:43:10,031 - ERROR - Error in application #79: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:10,031 - ERROR - Critical error in application 79: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:10,031 - INFO - 
+--- AUTOMATED APPLICATION 80/100 ---
+2025-09-25 08:43:10,031 - INFO - 🚀 AUTO APPLICATION #80: Backend Engineer at ByteWorks
+2025-09-25 08:43:10,355 - ERROR - Error in application #80: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:10,355 - ERROR - Critical error in application 80: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:10,355 - INFO - 
+--- AUTOMATED APPLICATION 81/100 ---
+2025-09-25 08:43:10,355 - INFO - 🚀 AUTO APPLICATION #81: Software Architect at FastTrack
+2025-09-25 08:43:10,658 - ERROR - Error in application #81: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:10,658 - ERROR - Critical error in application 81: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:10,658 - INFO - 
+--- AUTOMATED APPLICATION 82/100 ---
+2025-09-25 08:43:10,658 - INFO - 🚀 AUTO APPLICATION #82: JavaScript Developer at FastTrack
+2025-09-25 08:43:10,989 - ERROR - Error in application #82: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:10,990 - ERROR - Critical error in application 82: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:10,990 - INFO - 
+--- AUTOMATED APPLICATION 83/100 ---
+2025-09-25 08:43:10,990 - INFO - 🚀 AUTO APPLICATION #83: Senior Software Engineer at PixelPush
+2025-09-25 08:43:11,354 - ERROR - Error in application #83: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:11,355 - ERROR - Critical error in application 83: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:11,355 - INFO - 
+--- AUTOMATED APPLICATION 84/100 ---
+2025-09-25 08:43:11,355 - INFO - 🚀 AUTO APPLICATION #84: JavaScript Developer at InnovateSoft
+2025-09-25 08:43:11,698 - ERROR - Error in application #84: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:11,698 - ERROR - Critical error in application 84: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:11,698 - INFO - 
+--- AUTOMATED APPLICATION 85/100 ---
+2025-09-25 08:43:11,698 - INFO - 🚀 AUTO APPLICATION #85: Software Architect at ScaleUp
+2025-09-25 08:43:12,014 - ERROR - Error in application #85: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:12,014 - ERROR - Critical error in application 85: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:12,014 - INFO - 
+--- AUTOMATED APPLICATION 86/100 ---
+2025-09-25 08:43:12,014 - INFO - 🚀 AUTO APPLICATION #86: Node.js Engineer at ScaleUp
+2025-09-25 08:43:12,343 - ERROR - Error in application #86: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:12,343 - ERROR - Critical error in application 86: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:12,343 - INFO - 
+--- AUTOMATED APPLICATION 87/100 ---
+2025-09-25 08:43:12,344 - INFO - 🚀 AUTO APPLICATION #87: Cloud Engineer at NextGen
+2025-09-25 08:43:12,677 - ERROR - Error in application #87: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:12,678 - ERROR - Critical error in application 87: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:12,678 - INFO - 
+--- AUTOMATED APPLICATION 88/100 ---
+2025-09-25 08:43:12,678 - INFO - 🚀 AUTO APPLICATION #88: DevOps Engineer at NextGen
+2025-09-25 08:43:13,030 - ERROR - Error in application #88: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:13,031 - ERROR - Critical error in application 88: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:13,032 - INFO - 
+--- AUTOMATED APPLICATION 89/100 ---
+2025-09-25 08:43:13,032 - INFO - 🚀 AUTO APPLICATION #89: Software Architect at NextGen
+2025-09-25 08:43:13,350 - ERROR - Error in application #89: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:13,350 - ERROR - Critical error in application 89: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:13,350 - INFO - 
+--- AUTOMATED APPLICATION 90/100 ---
+2025-09-25 08:43:13,350 - INFO - 🚀 AUTO APPLICATION #90: DevOps Engineer at ByteWorks
+2025-09-25 08:43:13,654 - ERROR - Error in application #90: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:13,654 - ERROR - Critical error in application 90: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:13,654 - INFO - 
+--- AUTOMATED APPLICATION 91/100 ---
+2025-09-25 08:43:13,654 - INFO - 🚀 AUTO APPLICATION #91: JavaScript Developer at AppFactory
+2025-09-25 08:43:13,996 - ERROR - Error in application #91: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:13,997 - ERROR - Critical error in application 91: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:13,997 - INFO - 
+--- AUTOMATED APPLICATION 92/100 ---
+2025-09-25 08:43:13,997 - INFO - 🚀 AUTO APPLICATION #92: Node.js Engineer at CloudWorks
+2025-09-25 08:43:14,301 - ERROR - Error in application #92: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:14,301 - ERROR - Critical error in application 92: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:14,301 - INFO - 
+--- AUTOMATED APPLICATION 93/100 ---
+2025-09-25 08:43:14,301 - INFO - 🚀 AUTO APPLICATION #93: Senior Software Engineer at CodeCraft
+2025-09-25 08:43:14,604 - ERROR - Error in application #93: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:14,604 - ERROR - Critical error in application 93: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:14,604 - INFO - 
+--- AUTOMATED APPLICATION 94/100 ---
+2025-09-25 08:43:14,604 - INFO - 🚀 AUTO APPLICATION #94: Node.js Engineer at NextGen
+2025-09-25 08:43:14,942 - ERROR - Error in application #94: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:14,943 - ERROR - Critical error in application 94: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:14,943 - INFO - 
+--- AUTOMATED APPLICATION 95/100 ---
+2025-09-25 08:43:14,943 - INFO - 🚀 AUTO APPLICATION #95: JavaScript Developer at DevStudio
+2025-09-25 08:43:15,298 - ERROR - Error in application #95: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:15,298 - ERROR - Critical error in application 95: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:15,298 - INFO - 
+--- AUTOMATED APPLICATION 96/100 ---
+2025-09-25 08:43:15,298 - INFO - 🚀 AUTO APPLICATION #96: Python Developer at ByteWorks
+2025-09-25 08:43:15,648 - ERROR - Error in application #96: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:15,648 - ERROR - Critical error in application 96: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:15,648 - INFO - 
+--- AUTOMATED APPLICATION 97/100 ---
+2025-09-25 08:43:15,648 - INFO - 🚀 AUTO APPLICATION #97: Frontend Developer at AppFactory
+2025-09-25 08:43:15,959 - ERROR - Error in application #97: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:15,959 - ERROR - Critical error in application 97: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:15,959 - INFO - 
+--- AUTOMATED APPLICATION 98/100 ---
+2025-09-25 08:43:15,959 - INFO - 🚀 AUTO APPLICATION #98: DevOps Engineer at FlexiTech
+2025-09-25 08:43:16,277 - ERROR - Error in application #98: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:16,278 - ERROR - Critical error in application 98: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:16,278 - INFO - 
+--- AUTOMATED APPLICATION 99/100 ---
+2025-09-25 08:43:16,279 - INFO - 🚀 AUTO APPLICATION #99: DevOps Engineer at WebForge
+2025-09-25 08:43:16,615 - ERROR - Error in application #99: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:16,615 - ERROR - Critical error in application 99: table automated_applications has 14 columns but 13 values were supplied
+2025-09-25 08:43:16,615 - INFO - 
+--- AUTOMATED APPLICATION 100/100 ---
+2025-09-25 08:43:16,616 - INFO - 🚀 AUTO APPLICATION #100: React Developer at InnovateSoft
+2025-09-25 08:43:16,963 - ERROR - Error in application #100: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=139.0.7258.154)
+Stacktrace:
+#0 0x55ada587a08a <unknown>
+#1 0x55ada5319a70 <unknown>
+#2 0x55ada5310cf1 <unknown>
+#3 0x55ada5302099 <unknown>
+#4 0x55ada5303de0 <unknown>
+#5 0x55ada530243e <unknown>
+#6 0x55ada5301daa <unknown>
+#7 0x55ada5301a85 <unknown>
+#8 0x55ada52ff8ee <unknown>
+#9 0x55ada53000ca <unknown>
+#10 0x55ada531cf99 <unknown>
+#11 0x55ada53b7d65 <unknown>
+#12 0x55ada53913e2 <unknown>
+#13 0x55ada53b714f <unknown>
+#14 0x55ada53911b3 <unknown>
+#15 0x55ada535d59b <unknown>
+#16 0x55ada535e971 <unknown>
+#17 0x55ada583f25b <unknown>
+#18 0x55ada5842fa9 <unknown>
+#19 0x55ada5826339 <unknown>
+#20 0x55ada5843b58 <unknown>
+#21 0x55ada580ac1f <unknown>
+#22 0x55ada5867118 <unknown>
+#23 0x55ada58672f6 <unknown>
+#24 0x55ada5879066 <unknown>
+#25 0x7f093b9bab7b <unknown>
+
+2025-09-25 08:43:16,964 - ERROR - Critical error in application 100: table automated_applications has 14 columns but 13 values were supplied

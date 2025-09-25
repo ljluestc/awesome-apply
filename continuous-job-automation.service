@@ -1,0 +1,24 @@
+[Unit]
+Description=Continuous 100+ Job Application Automation
+After=network.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=60
+User=root
+Group=root
+WorkingDirectory=/home/calelin/awesome-apply
+Environment=HOME=/root
+Environment=DISPLAY=:0
+ExecStart=/home/calelin/awesome-apply/hands_off_continuous_automation.sh
+StandardOutput=journal
+StandardError=journal
+KillMode=mixed
+KillSignal=SIGTERM
+TimeoutStopSec=60
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,91 @@
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: default
+  namespace: jobautomation
+spec:
+  mtls:
+    mode: STRICT
+---
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: job-automation-authz
+  namespace: jobautomation
+spec:
+  selector:
+    matchLabels:
+      app: job-automation
+  rules:
+  - from:
+    - source:
+        principals: ["cluster.local/ns/jobautomation/sa/job-web"]
+    - source:
+        principals: ["cluster.local/ns/jobautomation/sa/job-scraper"]
+    to:
+    - operation:
+        methods: ["GET", "POST", "PUT", "DELETE"]
+        paths: ["/api/*", "/health", "/metrics"]
+  - from:
+    - source:
+        principals: ["cluster.local/ns/istio-system/sa/istio-ingressgateway-service-account"]
+    to:
+    - operation:
+        methods: ["GET", "POST"]
+        paths: ["/api/*", "/health"]
+---
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: clickhouse-authz
+  namespace: jobautomation
+spec:
+  selector:
+    matchLabels:
+      app: clickhouse
+  rules:
+  - from:
+    - source:
+        principals:
+        - "cluster.local/ns/jobautomation/sa/job-automation"
+        - "cluster.local/ns/jobautomation/sa/job-scraper"
+        - "cluster.local/ns/jobautomation/sa/job-web"
+    to:
+    - operation:
+        methods: ["GET", "POST"]
+        paths: ["/*"]
+        ports: ["8123", "9000"]
+---
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: redis-authz
+  namespace: jobautomation
+spec:
+  selector:
+    matchLabels:
+      app: redis
+  rules:
+  - from:
+    - source:
+        principals:
+        - "cluster.local/ns/jobautomation/sa/job-automation"
+        - "cluster.local/ns/jobautomation/sa/job-web"
+    to:
+    - operation:
+        ports: ["6379"]
+---
+apiVersion: security.istio.io/v1beta1
+kind: RequestAuthentication
+metadata:
+  name: job-automation-jwt
+  namespace: jobautomation
+spec:
+  selector:
+    matchLabels:
+      app: job-automation
+  jwtRules:
+  - issuer: "job-automation-system"
+    jwksUri: "http://job-automation-service:8080/.well-known/jwks.json"
+    audiences:
+    - "job-automation-api"

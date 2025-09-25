@@ -1,0 +1,229 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: grafana-datasources
+  namespace: jobautomation
+data:
+  datasources.yml: |
+    apiVersion: 1
+    datasources:
+    - name: Prometheus
+      type: prometheus
+      access: proxy
+      url: http://prometheus:9090
+      isDefault: true
+      editable: true
+
+    - name: ClickHouse
+      type: grafana-clickhouse-datasource
+      access: proxy
+      url: http://clickhouse-service:8123
+      database: job_automation
+      basicAuth: true
+      basicAuthUser: automation_user
+      secureJsonData:
+        basicAuthPassword: secure_password_123
+      editable: true
+
+    - name: Redis
+      type: redis-datasource
+      access: proxy
+      url: redis://redis-service:6379
+      editable: true
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: grafana-dashboard-config
+  namespace: jobautomation
+data:
+  dashboards.yml: |
+    apiVersion: 1
+    providers:
+    - name: 'job-automation'
+      orgId: 1
+      folder: 'Job Automation'
+      type: file
+      disableDeletion: false
+      updateIntervalSeconds: 30
+      allowUiUpdates: true
+      options:
+        path: /var/lib/grafana/dashboards
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: grafana-dashboards
+  namespace: jobautomation
+data:
+  job-automation-overview.json: |
+    {
+      "dashboard": {
+        "id": null,
+        "title": "Job Automation Overview",
+        "tags": ["job-automation"],
+        "timezone": "browser",
+        "panels": [
+          {
+            "id": 1,
+            "title": "Total Jobs Scraped",
+            "type": "stat",
+            "targets": [
+              {
+                "expr": "sum(job_scraper_jobs_total)",
+                "legendFormat": "Total Jobs",
+                "refId": "A"
+              }
+            ],
+            "gridPos": {"h": 8, "w": 6, "x": 0, "y": 0}
+          },
+          {
+            "id": 2,
+            "title": "Applications Submitted",
+            "type": "stat",
+            "targets": [
+              {
+                "expr": "sum(job_applications_submitted_total)",
+                "legendFormat": "Total Applications",
+                "refId": "A"
+              }
+            ],
+            "gridPos": {"h": 8, "w": 6, "x": 6, "y": 0}
+          },
+          {
+            "id": 3,
+            "title": "Success Rate",
+            "type": "stat",
+            "targets": [
+              {
+                "expr": "job_application_success_rate * 100",
+                "legendFormat": "Success Rate %",
+                "refId": "A"
+              }
+            ],
+            "gridPos": {"h": 8, "w": 6, "x": 12, "y": 0},
+            "fieldConfig": {
+              "defaults": {
+                "unit": "percent"
+              }
+            }
+          },
+          {
+            "id": 4,
+            "title": "Active Services",
+            "type": "stat",
+            "targets": [
+              {
+                "expr": "sum(up{job=~\"job-.*\"})",
+                "legendFormat": "Services Up",
+                "refId": "A"
+              }
+            ],
+            "gridPos": {"h": 8, "w": 6, "x": 18, "y": 0}
+          },
+          {
+            "id": 5,
+            "title": "Job Scraping Rate",
+            "type": "graph",
+            "targets": [
+              {
+                "expr": "rate(job_scraper_jobs_total[5m])",
+                "legendFormat": "Jobs/sec",
+                "refId": "A"
+              }
+            ],
+            "gridPos": {"h": 8, "w": 12, "x": 0, "y": 8}
+          },
+          {
+            "id": 6,
+            "title": "Application Rate",
+            "type": "graph",
+            "targets": [
+              {
+                "expr": "rate(job_applications_submitted_total[5m])",
+                "legendFormat": "Applications/sec",
+                "refId": "A"
+              }
+            ],
+            "gridPos": {"h": 8, "w": 12, "x": 12, "y": 8}
+          },
+          {
+            "id": 7,
+            "title": "System Resources",
+            "type": "graph",
+            "targets": [
+              {
+                "expr": "cpu_usage_percent",
+                "legendFormat": "CPU %",
+                "refId": "A"
+              },
+              {
+                "expr": "memory_usage_percent",
+                "legendFormat": "Memory %",
+                "refId": "B"
+              }
+            ],
+            "gridPos": {"h": 8, "w": 12, "x": 0, "y": 16}
+          },
+          {
+            "id": 8,
+            "title": "Database Connections",
+            "type": "graph",
+            "targets": [
+              {
+                "expr": "clickhouse_active_connections",
+                "legendFormat": "Active Connections",
+                "refId": "A"
+              }
+            ],
+            "gridPos": {"h": 8, "w": 12, "x": 12, "y": 16}
+          }
+        ],
+        "time": {"from": "now-1h", "to": "now"},
+        "refresh": "30s",
+        "schemaVersion": 16,
+        "version": 0
+      }
+    }
+
+  kubernetes-cluster.json: |
+    {
+      "dashboard": {
+        "id": null,
+        "title": "Kubernetes Cluster Monitoring",
+        "tags": ["kubernetes", "cluster"],
+        "timezone": "browser",
+        "panels": [
+          {
+            "id": 1,
+            "title": "Pod Status",
+            "type": "stat",
+            "targets": [
+              {
+                "expr": "sum(kube_pod_status_phase{namespace=\"jobautomation\"})",
+                "legendFormat": "Total Pods",
+                "refId": "A"
+              }
+            ],
+            "gridPos": {"h": 8, "w": 6, "x": 0, "y": 0}
+          },
+          {
+            "id": 2,
+            "title": "Node Resources",
+            "type": "graph",
+            "targets": [
+              {
+                "expr": "100 - (avg by (instance) (rate(node_cpu_seconds_total{mode=\"idle\"}[5m])) * 100)",
+                "legendFormat": "CPU Usage %",
+                "refId": "A"
+              }
+            ],
+            "gridPos": {"h": 8, "w": 18, "x": 6, "y": 0}
+          }
+        ],
+        "time": {"from": "now-1h", "to": "now"},
+        "refresh": "30s",
+        "schemaVersion": 16,
+        "version": 0
+      }
+    }

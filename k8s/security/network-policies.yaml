@@ -1,0 +1,253 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: job-automation-network-policy
+  namespace: jobautomation
+spec:
+  podSelector:
+    matchLabels:
+      app: job-automation
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  # Allow traffic from web service
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: jobautomation
+      podSelector:
+        matchLabels:
+          app: job-web
+    ports:
+    - protocol: TCP
+      port: 8080
+  # Allow traffic from scraper service
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: jobautomation
+      podSelector:
+        matchLabels:
+          app: job-scraper
+    ports:
+    - protocol: TCP
+      port: 8080
+  # Allow traffic from ingress
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: istio-system
+    ports:
+    - protocol: TCP
+      port: 8080
+  # Allow health checks from monitoring
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: jobautomation
+      podSelector:
+        matchLabels:
+          component: monitoring
+    ports:
+    - protocol: TCP
+      port: 8080
+  egress:
+  # Allow traffic to ClickHouse
+  - to:
+    - namespaceSelector:
+        matchLabels:
+          name: jobautomation
+      podSelector:
+        matchLabels:
+          app: clickhouse
+    ports:
+    - protocol: TCP
+      port: 8123
+    - protocol: TCP
+      port: 9000
+  # Allow traffic to Redis
+  - to:
+    - namespaceSelector:
+        matchLabels:
+          name: jobautomation
+      podSelector:
+        matchLabels:
+          app: redis
+    ports:
+    - protocol: TCP
+      port: 6379
+  # Allow DNS resolution
+  - to: []
+    ports:
+    - protocol: UDP
+      port: 53
+  # Allow HTTPS to external APIs
+  - to: []
+    ports:
+    - protocol: TCP
+      port: 443
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: clickhouse-network-policy
+  namespace: jobautomation
+spec:
+  podSelector:
+    matchLabels:
+      app: clickhouse
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  # Only allow traffic from job automation services
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: jobautomation
+      podSelector:
+        matchLabels:
+          app: job-automation
+    ports:
+    - protocol: TCP
+      port: 8123
+    - protocol: TCP
+      port: 9000
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: jobautomation
+      podSelector:
+        matchLabels:
+          app: job-scraper
+    ports:
+    - protocol: TCP
+      port: 8123
+    - protocol: TCP
+      port: 9000
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: jobautomation
+      podSelector:
+        matchLabels:
+          app: job-web
+    ports:
+    - protocol: TCP
+      port: 8123
+    - protocol: TCP
+      port: 9000
+  # Allow monitoring
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: jobautomation
+      podSelector:
+        matchLabels:
+          component: monitoring
+    ports:
+    - protocol: TCP
+      port: 8123
+  egress:
+  # Allow DNS resolution
+  - to: []
+    ports:
+    - protocol: UDP
+      port: 53
+  # Deny all other egress traffic
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: redis-network-policy
+  namespace: jobautomation
+spec:
+  podSelector:
+    matchLabels:
+      app: redis
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  # Only allow traffic from specific services
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: jobautomation
+      podSelector:
+        matchLabels:
+          app: job-automation
+    ports:
+    - protocol: TCP
+      port: 6379
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: jobautomation
+      podSelector:
+        matchLabels:
+          app: job-web
+    ports:
+    - protocol: TCP
+      port: 6379
+  egress:
+  # Allow DNS resolution
+  - to: []
+    ports:
+    - protocol: UDP
+      port: 53
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: monitoring-network-policy
+  namespace: jobautomation
+spec:
+  podSelector:
+    matchLabels:
+      component: monitoring
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  # Allow ingress traffic
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: istio-system
+  # Allow inter-monitoring communication
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: jobautomation
+      podSelector:
+        matchLabels:
+          component: monitoring
+  egress:
+  # Allow scraping application metrics
+  - to:
+    - namespaceSelector:
+        matchLabels:
+          name: jobautomation
+  # Allow DNS resolution
+  - to: []
+    ports:
+    - protocol: UDP
+      port: 53
+  # Allow external monitoring services
+  - to: []
+    ports:
+    - protocol: TCP
+      port: 443
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: default-deny-all
+  namespace: jobautomation
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+  - Egress

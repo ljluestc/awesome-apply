@@ -1,0 +1,115 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: job-automation-project
+  namespace: argocd
+  labels:
+    project: job-automation
+spec:
+  description: "Job Automation System Project"
+  sourceRepos:
+  - 'https://github.com/your-org/awesome-apply.git'
+  - 'https://charts.bitnami.com/bitnami'
+  - 'https://prometheus-community.github.io/helm-charts'
+  - 'https://grafana.github.io/helm-charts'
+  - 'https://elastic.github.io/helm-charts'
+  destinations:
+  - namespace: jobautomation
+    server: https://kubernetes.default.svc
+  - namespace: monitoring
+    server: https://kubernetes.default.svc
+  - namespace: istio-system
+    server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+  - group: ''
+    kind: Namespace
+  - group: ''
+    kind: Node
+  - group: rbac.authorization.k8s.io
+    kind: ClusterRole
+  - group: rbac.authorization.k8s.io
+    kind: ClusterRoleBinding
+  - group: apiextensions.k8s.io
+    kind: CustomResourceDefinition
+  - group: networking.istio.io
+    kind: Gateway
+  - group: networking.istio.io
+    kind: VirtualService
+  - group: networking.istio.io
+    kind: DestinationRule
+  - group: security.istio.io
+    kind: PeerAuthentication
+  - group: security.istio.io
+    kind: AuthorizationPolicy
+  namespaceResourceWhitelist:
+  - group: ''
+    kind: ConfigMap
+  - group: ''
+    kind: Secret
+  - group: ''
+    kind: Service
+  - group: ''
+    kind: ServiceAccount
+  - group: ''
+    kind: PersistentVolumeClaim
+  - group: apps
+    kind: Deployment
+  - group: apps
+    kind: StatefulSet
+  - group: apps
+    kind: DaemonSet
+  - group: extensions
+    kind: Ingress
+  - group: networking.k8s.io
+    kind: Ingress
+  - group: networking.k8s.io
+    kind: NetworkPolicy
+  - group: policy
+    kind: PodDisruptionBudget
+  - group: autoscaling
+    kind: HorizontalPodAutoscaler
+  - group: batch
+    kind: Job
+  - group: batch
+    kind: CronJob
+  roles:
+  - name: admin
+    description: "Full access to job automation project"
+    policies:
+    - p, proj:job-automation-project:admin, applications, *, job-automation-project/*, allow
+    - p, proj:job-automation-project:admin, repositories, *, *, allow
+    - p, proj:job-automation-project:admin, clusters, *, *, allow
+    groups:
+    - job-automation:admin
+  - name: developer
+    description: "Developer access to job automation project"
+    policies:
+    - p, proj:job-automation-project:developer, applications, get, job-automation-project/*, allow
+    - p, proj:job-automation-project:developer, applications, sync, job-automation-project/*, allow
+    - p, proj:job-automation-project:developer, applications, create, job-automation-project/*, allow
+    - p, proj:job-automation-project:developer, applications, update, job-automation-project/*, allow
+    - p, proj:job-automation-project:developer, applications, delete, job-automation-project/*, allow
+    - p, proj:job-automation-project:developer, repositories, get, *, allow
+    - p, proj:job-automation-project:developer, clusters, get, *, allow
+    groups:
+    - job-automation:developer
+  - name: readonly
+    description: "Read-only access to job automation project"
+    policies:
+    - p, proj:job-automation-project:readonly, applications, get, job-automation-project/*, allow
+    - p, proj:job-automation-project:readonly, repositories, get, *, allow
+    - p, proj:job-automation-project:readonly, clusters, get, *, allow
+    groups:
+    - job-automation:readonly
+  syncWindows:
+  - kind: allow
+    schedule: '0 2 * * *'
+    duration: 1h
+    applications:
+    - '*'
+  - kind: deny
+    schedule: '0 12 * * 1-5'
+    duration: 2h
+    applications:
+    - 'job-automation-app'
+    manualSync: false

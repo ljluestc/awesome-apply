@@ -110,7 +110,21 @@
       "Bash(sudo systemctl start:*)",
       "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply /home/calelin/awesome-apply/venv/bin/python test_comprehensive_automation_v2.py)",
       "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply timeout 60s /home/calelin/awesome-apply/venv/bin/python ultimate_job_automation_system_v2.py)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply /home/calelin/awesome-apply/venv/bin/python quick_demo_system.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply timeout 60s /home/calelin/awesome-apply/venv/bin/python ultimate_100_job_applicator.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply /home/calelin/awesome-apply/venv/bin/python hands_off_job_automation.py)",
+      "Bash(chmod:*)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply /home/calelin/awesome-apply/venv/bin/python continuous_100_job_runner.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply timeout 60s /home/calelin/awesome-apply/venv/bin/python enhanced_100_job_automation.py)",
+      "Bash(/home/calelin/awesome-apply/hands_off_continuous_automation.sh:*)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply /home/calelin/awesome-apply/venv/bin/python demo_100_job_system.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply timeout 180s /home/calelin/awesome-apply/venv/bin/python live_100_job_applications_with_proof.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply timeout 120s /home/calelin/awesome-apply/venv/bin/python automated_live_job_applications.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply /home/calelin/awesome-apply/venv/bin/python final_100_job_proof_system.py)",
+      "Bash(touch:*)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply timeout 180s /home/calelin/awesome-apply/venv/bin/python automated_100_job_applications_with_proof.py)",
+      "Bash(PYTHONPATH=/home/calelin/awesome-apply/venv/lib/python3.13/site-packages:/home/calelin/awesome-apply timeout 300s /home/calelin/awesome-apply/venv/bin/python automated_100_job_applications_with_proof.py)"
     ],
     "deny": [],
     "ask": []
