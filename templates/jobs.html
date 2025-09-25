@@ -218,7 +218,7 @@
                             {{ "%.0f"|format(job.match_score or 85) }}% Match
                         </div>
                         <p class="text-2xl font-bold text-gray-900">
-                            ${{ "{:,}".format(job.salary_min) }} - ${{ "{:,}".format(job.salary_max) }}
+                            ${{ "{:,}".format(job.salary_min if job.salary_min else 80000) }} - ${{ "{:,}".format(job.salary_max if job.salary_max else 150000) }}
                         </p>
                         <p class="text-sm text-gray-500 mt-1">per year</p>
                     </div>

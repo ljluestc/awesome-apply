@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Jose Jobs | JobRight - Perfect Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* JobRight.ai Exact Color Scheme */
+        :root {
+            --primary-green: #00f0a0;
+            --dark-bg: #001529;
+            --light-bg: #ffffff;
+            --text-primary: rgba(0, 0, 0, 0.88);
+            --text-secondary: rgba(0, 0, 0, 0.65);
+            --text-tertiary: rgba(0, 0, 0, 0.45);
+            --border-color: #d9d9d9;
+            --hover-bg: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 14px;
+            line-height: 1.5714;
+            color: var(--text-primary);
+            background: #fafafa;
+        }
+
+        /* Header - Exact JobRight.ai Style */
+        .header {
+            background: var(--light-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 0 24px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            height: 64px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-green);
+            text-decoration: none;
+            margin-right: 40px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            flex: 1;
+        }
+
+        .nav-item {
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            color: var(--primary-green);
+            border-bottom-color: var(--primary-green);
+        }
+
+        /* Main Content Layout */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+            display: flex;
+            gap: 24px;
+        }
+
+        /* Filters Sidebar - JobRight.ai Style */
+        .filters-sidebar {
+            width: 280px;
+            background: var(--light-bg);
+            border-radius: 8px;
+            padding: 24px;
+            height: fit-content;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-color);
+        }
+
+        .filter-group {
+            margin-bottom: 24px;
+        }
+
+        .filter-label {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            display: block;
+            font-size: 14px;
+        }
+
+        .filter-input, .filter-select {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 14px;
+            background: var(--light-bg);
+            transition: border-color 0.2s ease;
+        }
+
+        .filter-input:focus, .filter-select:focus {
+            outline: none;
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 2px rgba(0, 240, 160, 0.1);
+        }
+
+        .filter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .filter-tag {
+            background: #f0f0f0;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-size: 12px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .filter-tag:hover, .filter-tag.active {
+            background: var(--primary-green);
+            color: white;
+            border-color: var(--primary-green);
+        }
+
+        /* Jobs Content Area */
+        .jobs-content {
+            flex: 1;
+        }
+
+        .content-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 24px;
+            background: var(--light-bg);
+            padding: 20px 24px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .results-count {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .location-badge {
+            background: linear-gradient(135deg, var(--primary-green), #00d4ff);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-left: auto;
+        }
+
+        /* Job Cards - Exact JobRight.ai Design */
+        .jobs-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .job-card {
+            background: var(--light-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .job-card:hover {
+            border-color: var(--primary-green);
+            box-shadow: 0 4px 16px rgba(0, 240, 160, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .job-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .company-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .company-logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            background: #f5f5f5;
+            border: 1px solid var(--border-color);
+            object-fit: contain;
+            padding: 4px;
+        }
+
+        .job-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0 0 4px 0;
+            line-height: 1.3;
+        }
+
+        .company-name {
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .job-badge {
+            background: var(--primary-green);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .job-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .job-detail {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .job-description {
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 16px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .job-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .skill-tag {
+            background: #f0f0f0;
+            color: var(--text-secondary);
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .job-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .salary-range {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .apply-button {
+            background: linear-gradient(135deg, var(--primary-green), #00d4ff);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .apply-button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 240, 160, 0.3);
+        }
+
+        .posted-date {
+            color: var(--text-tertiary);
+            font-size: 12px;
+        }
+
+        /* Pagination - JobRight.ai Style */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 32px;
+            padding: 24px;
+        }
+
+        .pagination-button {
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            background: var(--light-bg);
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .pagination-button:hover, .pagination-button.active {
+            background: var(--primary-green);
+            color: white;
+            border-color: var(--primary-green);
+        }
+
+        /* Loading States */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                padding: 16px;
+            }
+
+            .filters-sidebar {
+                width: 100%;
+                margin-bottom: 16px;
+            }
+
+            .job-card {
+                padding: 16px;
+            }
+
+            .job-card-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+        }
+
+        /* Success Animation */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .job-card {
+            animation: slideIn 0.3s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="logo">JobRight</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="/jobs" class="nav-item active">Jobs</a></li>
+                    <li><a href="/companies" class="nav-item">Companies</a></li>
+                    <li><a href="/about" class="nav-item">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Filters Sidebar -->
+        <aside class="filters-sidebar">
+            <form method="GET" action="/jobs" id="filterForm">
+                <div class="filter-group">
+                    <label class="filter-label">Company</label>
+                    <select name="company" class="filter-select" onchange="document.getElementById('filterForm').submit()">
+                        <option value="">All Companies</option>
+                        {% for company in companies %}
+                        <option value="{{ company }}" {% if filters.company == company %}selected{% endif %}>
+                            {{ company }}
+                        </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Job Title</label>
+                    <input type="text" name="title" placeholder="e.g. Software Engineer"
+                           value="{{ filters.title }}" class="filter-input">
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Experience Level</label>
+                    <div class="filter-tags">
+                        {% for level in ['Entry-level', 'Mid-level', 'Senior', 'Lead', 'Principal'] %}
+                        <div class="filter-tag {% if filters.experience == level %}active{% endif %}"
+                             onclick="setFilter('experience', '{{ level }}')">
+                            {{ level }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Job Type</label>
+                    <div class="filter-tags">
+                        {% for type in ['Full-time', 'Contract', 'Remote'] %}
+                        <div class="filter-tag {% if filters.job_type == type %}active{% endif %}"
+                             onclick="setFilter('job_type', '{{ type }}')">
+                            {{ type }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">
+                        <input type="checkbox" name="remote" value="true"
+                               {% if filters.remote %}checked{% endif %}
+                               onchange="document.getElementById('filterForm').submit()">
+                        Remote Only
+                    </label>
+                </div>
+
+                <input type="hidden" name="experience" value="{{ filters.experience }}">
+                <input type="hidden" name="job_type" value="{{ filters.job_type }}">
+            </form>
+        </aside>
+
+        <!-- Jobs Content -->
+        <main class="jobs-content">
+            <!-- Content Header -->
+            <div class="content-header">
+                <h1 class="results-count">
+                    {{ pagination.total }} Jobs in San Jose, CA
+                </h1>
+                <div class="location-badge">
+                    =üìç San Jose Focus
+                </div>
+            </div>
+
+            <!-- Jobs Grid -->
+            <div class="jobs-grid">
+                {% for job in jobs %}
+                <div class="job-card">
+                    <div class="job-card-header">
+                        <div class="company-info">
+                            <img src="{{ job.company_logo or 'https://logo.clearbit.com/' + job.company.lower() + '.com' }}"
+                                 alt="{{ job.company }}" class="company-logo">
+                            <div>
+                                <h3 class="job-title">{{ job.title }}</h3>
+                                <p class="company-name">{{ job.company }}</p>
+                            </div>
+                        </div>
+                        {% if job.remote %}
+                        <span class="job-badge">Remote</span>
+                        {% endif %}
+                    </div>
+
+                    <div class="job-details">
+                        <div class="job-detail">
+                            =üìç {{ job.location }}
+                        </div>
+                        <div class="job-detail">
+                            =º {{ job.job_type }}
+                        </div>
+                        <div class="job-detail">
+                            =  {{ job.experience_level }}
+                        </div>
+                        <div class="job-detail posted-date">
+                            =R {{ job.posted_date.strftime('%m/%d/%Y') if job.posted_date else 'Recently' }}
+                        </div>
+                    </div>
+
+                    <p class="job-description">{{ job.description }}</p>
+
+                    <div class="job-skills">
+                        {% set job_skills = job.skills|from_json %}
+                        {% for skill in job_skills[:6] %}
+                        <span class="skill-tag">{{ skill }}</span>
+                        {% endfor %}
+                        {% if job_skills|length > 6 %}
+                        <span class="skill-tag">+{{ job_skills|length - 6 }} more</span>
+                        {% endif %}
+                    </div>
+
+                    <div class="job-footer">
+                        <div class="salary-range">
+                            ${{ "{:,}".format(job.salary_min if job.salary_min else 80000) }} -
+                            ${{ "{:,}".format(job.salary_max if job.salary_max else 200000) }}
+                        </div>
+                        <button class="apply-button" onclick="applyToJob('{{ job.id }}')">
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Pagination -->
+            {% if pagination.pages > 1 %}
+            <div class="pagination">
+                {% if pagination.has_prev %}
+                <a href="{{ url_for('jobs', page=pagination.prev_num, **filters) }}"
+                   class="pagination-button">Previous</a>
+                {% endif %}
+
+                {% for page_num in pagination.iter_pages() %}
+                    {% if page_num %}
+                        {% if page_num != pagination.page %}
+                        <a href="{{ url_for('jobs', page=page_num, **filters) }}"
+                           class="pagination-button">{{ page_num }}</a>
+                        {% else %}
+                        <span class="pagination-button active">{{ page_num }}</span>
+                        {% endif %}
+                    {% else %}
+                    <span class="pagination-button">...</span>
+                    {% endif %}
+                {% endfor %}
+
+                {% if pagination.has_next %}
+                <a href="{{ url_for('jobs', page=pagination.next_num, **filters) }}"
+                   class="pagination-button">Next</a>
+                {% endif %}
+            </div>
+            {% endif %}
+        </main>
+    </div>
+
+    <script>
+        function setFilter(filterType, value) {
+            const form = document.getElementById('filterForm');
+            const input = form.querySelector(`input[name="${filterType}"]`);
+
+            // Toggle filter value
+            if (input.value === value) {
+                input.value = '';
+            } else {
+                input.value = value;
+            }
+
+            form.submit();
+        }
+
+        function applyToJob(jobId) {
+            // Simulate job application
+            alert(`Applied to job: ${jobId}\n\nThis is a demo of the JobRight.ai perfect clone!\n\n<â Perfect San Jose job application system working!`);
+        }
+
+        // Auto-submit search form on input change
+        document.addEventListener('DOMContentLoaded', function() {
+            const titleInput = document.querySelector('input[name="title"]');
+            let timeout;
+
+            titleInput.addEventListener('input', function() {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => {
+                    document.getElementById('filterForm').submit();
+                }, 500);
+            });
+        });
+
+        // Smooth scroll animation for job cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.job-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

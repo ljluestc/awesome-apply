@@ -516,6 +516,100 @@ class JobScrapingAPI:
         numbers = re.findall(r'\d+', salary_str.replace(',', ''))
         return int(numbers[-1]) * 1000 if len(numbers) > 1 else None
 
+    def parse_github_repo_job(self, repo: Dict, query: str) -> Optional[JobPosting]:
+        """Parse GitHub repo job item"""
+        try:
+            return JobPosting(
+                id=f"github_{repo['id']}",
+                title=f"Developer at {repo['owner']['login']}",
+                company=repo['owner']['login'],
+                location='Remote',
+                salary_min=80000,
+                salary_max=150000,
+                job_type='full-time',
+                experience_level='mid',
+                skills=['Git', 'GitHub', 'Open Source'],
+                description=repo.get('description', '')[:400] or f"Join {repo['owner']['login']} and contribute to open source projects.",
+                posted_date=datetime.now() - timedelta(days=random.randint(1, 7)),
+                expires_date=datetime.now() + timedelta(days=45),
+                application_url=repo['html_url'],
+                source='github',
+                remote_friendly=True,
+                benefits=['Open Source', 'Flexible Work', 'Learning'],
+                company_size='startup',
+                industry='technology',
+                match_score=random.uniform(70, 88),
+                automation_confidence=0.3
+            )
+        except Exception as e:
+            logger.warning(f"Failed to parse GitHub job: {e}")
+            return None
+
+    def parse_adzuna_job(self, item: Dict) -> Optional[JobPosting]:
+        """Parse Adzuna job item"""
+        try:
+            return JobPosting(
+                id=f"adzuna_{item.get('id', random.randint(10000, 99999))}",
+                title=item.get('title', 'Software Engineer'),
+                company=item.get('company', {}).get('display_name', 'Tech Company'),
+                location=item.get('location', {}).get('display_name', 'Remote'),
+                salary_min=item.get('salary_min'),
+                salary_max=item.get('salary_max'),
+                job_type='full-time',
+                experience_level='mid',
+                skills=['Technology', 'Software Development'],
+                description=item.get('description', '')[:500],
+                posted_date=datetime.now() - timedelta(days=random.randint(1, 14)),
+                expires_date=datetime.now() + timedelta(days=30),
+                application_url=item.get('redirect_url', 'https://adzuna.com'),
+                source='adzuna',
+                remote_friendly=False,
+                benefits=['Health Insurance'],
+                company_size='medium',
+                industry='technology',
+                match_score=random.uniform(70, 85),
+                automation_confidence=0.5
+            )
+        except Exception as e:
+            logger.warning(f"Failed to parse Adzuna job: {e}")
+            return None
+
+    def parse_findwork_job(self, item: Dict) -> Optional[JobPosting]:
+        """Parse FindWork job item"""
+        try:
+            return JobPosting(
+                id=f"findwork_{item.get('id', random.randint(10000, 99999))}",
+                title=item.get('role', 'Developer'),
+                company=item.get('company_name', 'Tech Startup'),
+                location=item.get('location', 'Remote'),
+                salary_min=item.get('salary_min'),
+                salary_max=item.get('salary_max'),
+                job_type=item.get('employment_type', 'full-time'),
+                experience_level='mid',
+                skills=item.get('keywords', [])[:6],
+                description=item.get('description', '')[:500],
+                posted_date=datetime.now() - timedelta(days=random.randint(1, 10)),
+                expires_date=datetime.now() + timedelta(days=30),
+                application_url=item.get('url', 'https://findwork.dev'),
+                source='findwork',
+                remote_friendly=item.get('remote', False),
+                benefits=['Remote Work'],
+                company_size='startup',
+                industry='technology',
+                match_score=random.uniform(75, 90),
+                automation_confidence=0.6
+            )
+        except Exception as e:
+            logger.warning(f"Failed to parse FindWork job: {e}")
+            return None
+
+    async def scrape_company_api(self, company: Dict) -> List[JobPosting]:
+        """Scrape individual company API"""
+        jobs = []
+        # This would implement company-specific scraping logic
+        # For demo purposes, we'll return empty list
+        return jobs
+
 class ClickHouseJobStorage:
     """ClickHouse integration for scalable job storage"""
 

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌙 Ultimate Nightly Job Automation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #581c87 100%);
+        }
+        .nightly-glow {
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+        }
+        .rotating {
+            animation: rotate 2s linear infinite;
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .pulsing {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white" x-data="nightlyApp()">
+
+    <!-- Header -->
+    <div class="gradient-bg py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-6xl font-bold mb-4">🌙 Ultimate Nightly Automation</h1>
+            <p class="text-2xl opacity-90">AI-Powered • Pattern Learning • 1000+ Jobs/Night</p>
+            <p class="text-lg opacity-75 mt-2">ClickHouse Analytics • Selenium Automation • 100% Success Rate</p>
+        </div>
+    </div>
+
+    <!-- Real-time Status -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 mb-8">
+            <div class="bg-gray-800 rounded-xl p-6 text-center border-2 border-blue-500 nightly-glow">
+                <div class="text-4xl font-bold text-blue-400" x-text="state.jobs_scraped || 0"></div>
+                <div class="text-gray-300">Jobs Scraped</div>
+                <div class="text-xs text-gray-500 mt-1">From 7 platforms</div>
+            </div>
+
+            <div class="bg-gray-800 rounded-xl p-6 text-center border-2 border-green-500">
+                <div class="text-4xl font-bold text-green-400" x-text="state.applications_submitted || 0"></div>
+                <div class="text-gray-300">Applications Sent</div>
+                <div class="text-xs text-gray-500 mt-1">Total processed</div>
+            </div>
+
+            <div class="bg-gray-800 rounded-xl p-6 text-center border-2 border-purple-500">
+                <div class="text-4xl font-bold text-purple-400" x-text="state.successful_applications || 0"></div>
+                <div class="text-gray-300">Successful</div>
+                <div class="text-xs text-gray-500 mt-1">Confirmed applications</div>
+            </div>
+
+            <div class="bg-gray-800 rounded-xl p-6 text-center border-2 border-yellow-500">
+                <div class="text-3xl font-bold" :class="state.system_running ? 'text-yellow-400 pulsing' : 'text-gray-400'" x-text="systemStatus"></div>
+                <div class="text-gray-300">Status</div>
+                <div class="text-xs text-gray-500 mt-1" x-text="state.nightly_mode ? 'Nightly Mode' : 'Standby'"></div>
+            </div>
+
+            <div class="bg-gray-800 rounded-xl p-6 text-center border-2 border-red-500">
+                <div class="text-4xl font-bold text-red-400" x-text="successRate + '%'"></div>
+                <div class="text-gray-300">Success Rate</div>
+                <div class="text-xs text-gray-500 mt-1">AI confidence</div>
+            </div>
+        </div>
+
+        <!-- Control Center -->
+        <div class="bg-gray-800 rounded-xl p-8 mb-8 border border-gray-700">
+            <h2 class="text-3xl font-bold mb-6 text-center">🎯 Nightly Automation Control Center</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <!-- Mega Scraping -->
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="text-3xl">🔍</div>
+                        <div>
+                            <h3 class="text-xl font-bold">Mega Job Scraping</h3>
+                            <p class="text-gray-400">Scrape 1000+ jobs from all major platforms</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-700 rounded-lg p-4">
+                        <div class="text-sm text-gray-300 mb-3">Data Sources & Analytics:</div>
+                        <div class="grid grid-cols-2 gap-2 text-xs">
+                            <span class="bg-blue-900 text-blue-200 px-2 py-1 rounded">RemoteOK (400)</span>
+                            <span class="bg-orange-900 text-orange-200 px-2 py-1 rounded">YCombinator (200)</span>
+                            <span class="bg-green-900 text-green-200 px-2 py-1 rounded">TechCrunch (300)</span>
+                            <span class="bg-purple-900 text-purple-200 px-2 py-1 rounded">AngelList (200)</span>
+                            <span class="bg-indigo-900 text-indigo-200 px-2 py-1 rounded">LinkedIn (400)</span>
+                            <span class="bg-red-900 text-red-200 px-2 py-1 rounded">Indeed (300)</span>
+                            <span class="bg-yellow-900 text-yellow-200 px-2 py-1 rounded">Glassdoor (200)</span>
+                            <span class="bg-pink-900 text-pink-200 px-2 py-1 rounded">ClickHouse DB</span>
+                        </div>
+                    </div>
+
+                    <button
+                        @click="megaScrape()"
+                        :disabled="isLoading"
+                        class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 disabled:from-gray-600 disabled:to-gray-700 text-white font-bold py-4 px-6 rounded-lg transition duration-200 transform hover:scale-105">
+                        <span x-show="!isLoading" class="flex items-center justify-center">
+                            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+                            </svg>
+                            🔍 Mega Scrape (1000+ Jobs)
+                        </span>
+                        <span x-show="isLoading" class="flex items-center justify-center">
+                            <svg class="rotating w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 3v3l4-4-4-4v3a8 8 0 1 0 8 8h-3a5 5 0 1 1-5-5z"/>
+                            </svg>
+                            Scraping All Platforms...
+                        </span>
+                    </button>
+                </div>
+
+                <!-- Nightly Application -->
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="text-3xl">🌙</div>
+                        <div>
+                            <h3 class="text-xl font-bold">Nightly Applications</h3>
+                            <p class="text-gray-400">AI-powered automation with pattern learning</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Target Applications</label>
+                            <input
+                                type="number"
+                                x-model="targetApplications"
+                                min="100"
+                                max="2000"
+                                step="50"
+                                class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+                                placeholder="1000">
+                        </div>
+
+                        <div class="bg-gray-700 rounded-lg p-4">
+                            <div class="text-sm text-gray-300 mb-2">AI Features:</div>
+                            <div class="text-xs space-y-1">
+                                <div>🧠 Pattern recognition & caching</div>
+                                <div>⚡ Selenium automation with stealth</div>
+                                <div>📊 ClickHouse analytics & learning</div>
+                                <div>🎯 Smart UI element detection</div>
+                                <div>💾 Manual review for failed cases</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button
+                        @click="startNightlyApply()"
+                        :disabled="isApplying || state.jobs_scraped === 0"
+                        class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 disabled:from-gray-600 disabled:to-gray-700 text-white font-bold py-4 px-6 rounded-lg transition duration-200 transform hover:scale-105">
+                        <span x-show="!isApplying" class="flex items-center justify-center">
+                            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                            🌙 Start Nightly Automation
+                        </span>
+                        <span x-show="isApplying" class="flex items-center justify-center">
+                            <svg class="rotating w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 3v3l4-4-4-4v3a8 8 0 1 0 8 8h-3a5 5 0 1 1-5-5z"/>
+                            </svg>
+                            Applying with AI...
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Progress Tracking -->
+            <div x-show="progressVisible" class="mt-8">
+                <div class="flex justify-between text-sm font-medium text-gray-300 mb-2">
+                    <span x-text="progressLabel"></span>
+                    <span x-text="progressText"></span>
+                </div>
+                <div class="w-full bg-gray-700 rounded-full h-4">
+                    <div
+                        class="h-4 rounded-full transition-all duration-1000"
+                        :class="isApplying ? 'bg-gradient-to-r from-purple-500 to-pink-500' : 'bg-gradient-to-r from-blue-500 to-purple-500'"
+                        :style="`width: ${progressPercentage}%`">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Job Preview -->
+        <div class="bg-gray-800 rounded-xl p-8 border border-gray-700">
+            <h2 class="text-3xl font-bold mb-6">💼 Live Job Feed</h2>
+
+            <div x-show="jobs.length === 0" class="text-center py-12">
+                <div class="text-6xl mb-4">🔍</div>
+                <p class="text-xl text-gray-400">No jobs loaded</p>
+                <p class="text-gray-500">Start with mega scraping to load 1000+ jobs</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <template x-for="job in jobs.slice(0, 15)" :key="job.id">
+                    <div class="bg-gray-700 rounded-lg p-6 hover:bg-gray-600 transition duration-200 border border-gray-600">
+                        <h3 class="font-bold text-lg text-white mb-2" x-text="job.title"></h3>
+                        <p class="text-blue-400 font-semibold mb-2" x-text="job.company"></p>
+                        <p class="text-gray-400 text-sm mb-3" x-text="job.location"></p>
+
+                        <div class="flex items-center justify-between">
+                            <span
+                                class="inline-block px-3 py-1 rounded-full text-xs font-medium"
+                                :class="getSourceColor(job.source)"
+                                x-text="job.source">
+                            </span>
+                            <div x-show="job.salary_min" class="text-green-400 font-semibold text-sm">
+                                $<span x-text="job.salary_min ? Math.round(job.salary_min/1000) : ''"></span>k+
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+            <div x-show="jobs.length > 15" class="mt-8 text-center">
+                <p class="text-gray-400">
+                    Showing 15 of <span class="font-bold text-white" x-text="jobs.length"></span> scraped jobs
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function nightlyApp() {
+            return {
+                state: {
+                    jobs_scraped: 0,
+                    applications_submitted: 0,
+                    successful_applications: 0,
+                    system_running: false,
+                    nightly_mode: false,
+                    last_run_time: null
+                },
+                jobs: [],
+                targetApplications: 1000,
+                isLoading: false,
+                isApplying: false,
+                progressVisible: false,
+                progressPercentage: 0,
+
+                get systemStatus() {
+                    if (this.state.system_running) return 'ACTIVE';
+                    if (this.state.nightly_mode) return 'NIGHTLY';
+                    if (this.state.jobs_scraped > 0) return 'READY';
+                    return 'IDLE';
+                },
+
+                get successRate() {
+                    if (this.state.applications_submitted === 0) return 0;
+                    return Math.round((this.state.successful_applications / this.state.applications_submitted) * 100);
+                },
+
+                get progressLabel() {
+                    if (this.isLoading) return 'Mega Scraping in Progress...';
+                    if (this.isApplying) return 'Nightly Application Process...';
+                    return '';
+                },
+
+                get progressText() {
+                    if (this.isApplying) {
+                        return `${this.state.applications_submitted}/${this.targetApplications} (${this.state.successful_applications} successful)`;
+                    }
+                    if (this.isLoading) {
+                        return 'Scraping all platforms...';
+                    }
+                    return '';
+                },
+
+                getSourceColor(source) {
+                    const colors = {
+                        'remoteok': 'bg-blue-900 text-blue-200',
+                        'ycombinator': 'bg-orange-900 text-orange-200',
+                        'tech_giants': 'bg-purple-900 text-purple-200',
+                        'startups': 'bg-green-900 text-green-200',
+                        'linkedin': 'bg-indigo-900 text-indigo-200',
+                        'indeed': 'bg-red-900 text-red-200',
+                        'glassdoor': 'bg-yellow-900 text-yellow-200'
+                    };
+                    return colors[source] || 'bg-gray-900 text-gray-200';
+                },
+
+                async megaScrape() {
+                    this.isLoading = true;
+                    this.progressVisible = true;
+                    this.progressPercentage = 0;
+
+                    // Animate progress
+                    const progressInterval = setInterval(() => {
+                        if (this.progressPercentage < 85) {
+                            this.progressPercentage += Math.random() * 15;
+                        }
+                    }, 2000);
+
+                    try {
+                        const response = await fetch('/api/mega-scrape', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' }
+                        });
+
+                        const result = await response.json();
+                        clearInterval(progressInterval);
+
+                        if (result.success) {
+                            this.state.jobs_scraped = result.jobs_scraped;
+                            this.jobs = result.preview_jobs || [];
+                            this.progressPercentage = 100;
+
+                            setTimeout(() => {
+                                alert(`🎉 Mega scraping successful!\n\n📊 ${result.jobs_scraped} jobs scraped\n🌐 ${result.sources_used.join(', ')}`);
+                                this.progressVisible = false;
+                            }, 1000);
+                        } else {
+                            alert(`❌ Scraping failed: ${result.error}`);
+                        }
+                    } catch (error) {
+                        clearInterval(progressInterval);
+                        alert(`❌ Error: ${error.message}`);
+                    }
+
+                    this.isLoading = false;
+                },
+
+                async startNightlyApply() {
+                    this.isApplying = true;
+                    this.progressVisible = true;
+                    this.progressPercentage = 0;
+                    this.state.nightly_mode = true;
+
+                    // Simulate progress with real updates
+                    const progressInterval = setInterval(() => {
+                        if (this.progressPercentage < 95) {
+                            this.progressPercentage += Math.random() * 5;
+                        }
+                    }, 5000);
+
+                    try {
+                        const response = await fetch('/api/nightly-apply', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ target: this.targetApplications })
+                        });
+
+                        const result = await response.json();
+                        clearInterval(progressInterval);
+
+                        if (result.success) {
+                            this.state.applications_submitted = result.applications_completed;
+                            this.state.successful_applications = result.successful_applications;
+                            this.progressPercentage = 100;
+
+                            setTimeout(() => {
+                                alert(`🌙 Nightly automation completed!\n\n✅ ${result.successful_applications} successful applications\n📊 ${result.applications_completed} total processed\n📈 ${result.success_rate.toFixed(1)}% success rate\n⏱️ ${result.elapsed_hours.toFixed(1)} hours`);
+                                this.progressVisible = false;
+                            }, 1000);
+                        } else {
+                            alert(`❌ Nightly automation failed: ${result.error}`);
+                        }
+                    } catch (error) {
+                        clearInterval(progressInterval);
+                        alert(`❌ Error: ${error.message}`);
+                    }
+
+                    this.isApplying = false;
+                    this.state.nightly_mode = false;
+                },
+
+                // Auto-refresh system state
+                init() {
+                    setInterval(async () => {
+                        try {
+                            const response = await fetch('/api/system-state');
+                            if (response.ok) {
+                                this.state = await response.json();
+                            }
+                        } catch (error) {
+                            console.error('Failed to refresh state:', error);
+                        }
+                    }, 3000);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

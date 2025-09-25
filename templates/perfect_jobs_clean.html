@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs in San Jose, CA - Perfect JobRight.ai Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #00f0a0;
+            --dark-bg: #001529;
+            --text-primary: rgba(0, 0, 0, 0.88);
+            --text-secondary: rgba(0, 0, 0, 0.65);
+            --border-color: #d9d9d9;
+            --hover-bg: #f5f5f5;
+            --white: #ffffff;
+            --gray-50: #fafafa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--gray-50);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .main-container {
+            display: flex;
+            min-height: 100vh;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--white);
+        }
+
+        .filters-sidebar {
+            width: 300px;
+            background: var(--white);
+            border-right: 1px solid var(--border-color);
+            padding: 24px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .filter-group {
+            margin-bottom: 24px;
+        }
+
+        .filter-group h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .filter-input {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 14px;
+            background: var(--white);
+        }
+
+        .jobs-content {
+            flex: 1;
+            padding: 24px;
+        }
+
+        .content-header {
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .results-count {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .location-badge {
+            background: var(--primary-green);
+            color: var(--white);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .jobs-grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        .job-card {
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .job-card:hover {
+            border-color: var(--primary-green);
+            box-shadow: 0 4px 12px rgba(0, 240, 160, 0.1);
+        }
+
+        .job-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .job-info {
+            flex: 1;
+        }
+
+        .job-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .company-name {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .company-logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 4px;
+            object-fit: cover;
+            background: var(--gray-50);
+        }
+
+        .job-badge {
+            background: var(--primary-green);
+            color: var(--white);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .job-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .job-detail {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .job-description {
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 16px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .job-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .skill-tag {
+            background: var(--gray-50);
+            color: var(--text-secondary);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .salary-range {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary-green);
+        }
+
+        .pagination {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .pagination a, .pagination span {
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .pagination .current {
+            background: var(--primary-green);
+            color: var(--white);
+            border-color: var(--primary-green);
+        }
+
+        .btn-apply {
+            background: var(--primary-green);
+            color: var(--white);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .btn-apply:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Filters Sidebar -->
+        <aside class="filters-sidebar">
+            <form method="GET" action="/jobs" id="filterForm">
+                <div class="filter-group">
+                    <h3>Company</h3>
+                    <select name="company" class="filter-input" onchange="document.getElementById('filterForm').submit();">
+                        <option value="">All Companies</option>
+                        {% for company in companies %}
+                        <option value="{{ company }}"
+                                {% if filters.company == company %}selected{% endif %}>
+                            {{ company }}
+                        </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Job Type</h3>
+                    <select name="job_type" class="filter-input" onchange="document.getElementById('filterForm').submit();">
+                        <option value="">All Types</option>
+                        <option value="Full-time" {% if filters.job_type == 'Full-time' %}selected{% endif %}>Full-time</option>
+                        <option value="Part-time" {% if filters.job_type == 'Part-time' %}selected{% endif %}>Part-time</option>
+                        <option value="Contract" {% if filters.job_type == 'Contract' %}selected{% endif %}>Contract</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Experience Level</h3>
+                    <select name="experience_level" class="filter-input" onchange="document.getElementById('filterForm').submit();">
+                        <option value="">All Levels</option>
+                        <option value="Entry Level" {% if filters.experience_level == 'Entry Level' %}selected{% endif %}>Entry Level</option>
+                        <option value="Mid Level" {% if filters.experience_level == 'Mid Level' %}selected{% endif %}>Mid Level</option>
+                        <option value="Senior Level" {% if filters.experience_level == 'Senior Level' %}selected{% endif %}>Senior Level</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Search</h3>
+                    <input type="text" name="search" value="{{ filters.search or '' }}"
+                           placeholder="Search jobs..." class="filter-input">
+                </div>
+            </form>
+        </aside>
+
+        <!-- Jobs Content -->
+        <main class="jobs-content">
+            <!-- Content Header -->
+            <div class="content-header">
+                <h1 class="results-count">
+                    {{ pagination.total }} Jobs in San Jose, CA
+                </h1>
+                <div class="location-badge">
+                    📍 San Jose Focus
+                </div>
+            </div>
+
+            <!-- Jobs Grid -->
+            <div class="jobs-grid">
+                {% for job in jobs %}
+                <div class="job-card">
+                    <div class="job-card-header">
+                        <div class="job-info">
+                            <h3 class="job-title">{{ job.title }}</h3>
+                            <div class="company-name">{{ job.company }}</div>
+                        </div>
+                        <img src="{{ job.company_logo or 'https://via.placeholder.com/48?text=' + job.company[0] }}"
+                             alt="{{ job.company }}" class="company-logo">
+                        {% if job.remote %}
+                        <span class="job-badge">Remote</span>
+                        {% endif %}
+                    </div>
+
+                    <div class="job-details">
+                        <div class="job-detail">
+                            📍 {{ job.location }}
+                        </div>
+                        <div class="job-detail">
+                            💼 {{ job.job_type }}
+                        </div>
+                        <div class="job-detail">
+                            🎯 {{ job.experience_level }}
+                        </div>
+                        <div class="job-detail posted-date">
+                            ⏰ {{ job.posted_date.strftime('%m/%d/%Y') if job.posted_date else 'Recently' }}
+                        </div>
+                    </div>
+
+                    <p class="job-description">{{ job.description }}</p>
+
+                    {% if job.skills %}
+                    <div class="job-skills">
+                        {% for skill in job.skills.split(',')[:5] %}
+                        <span class="skill-tag">{{ skill.strip() }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div class="salary-range">
+                            ${{ "{:,}".format(job.salary_min if job.salary_min else 80000) }} -
+                            ${{ "{:,}".format(job.salary_max if job.salary_max else 150000) }}
+                        </div>
+                        <button class="btn-apply" onclick="applyToJob({{ job.id }})">
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Pagination -->
+            {% if pagination.pages > 1 %}
+            <div class="pagination">
+                {% if pagination.has_prev %}
+                <a href="{{ url_for('jobs', page=pagination.prev_num, **filters) }}">&laquo; Prev</a>
+                {% endif %}
+
+                {% for page_num in pagination.iter_pages() %}
+                {% if page_num %}
+                {% if page_num != pagination.page %}
+                <a href="{{ url_for('jobs', page=page_num, **filters) }}">{{ page_num }}</a>
+                {% else %}
+                <span class="current">{{ page_num }}</span>
+                {% endif %}
+                {% else %}
+                <span>…</span>
+                {% endif %}
+                {% endfor %}
+
+                {% if pagination.has_next %}
+                <a href="{{ url_for('jobs', page=pagination.next_num, **filters) }}">Next &raquo;</a>
+                {% endif %}
+            </div>
+            {% endif %}
+        </main>
+    </div>
+
+    <script>
+        function applyToJob(jobId) {
+            fetch('/apply', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    job_id: jobId
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Application submitted successfully!');
+                } else {
+                    alert('Error submitting application: ' + data.error);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error submitting application');
+            });
+        }
+
+        // Auto-submit search after typing
+        let timeout = null;
+        document.querySelector('input[name="search"]').addEventListener('input', function() {
+            if (timeout) clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                document.getElementById('filterForm').submit();
+            }, 500);
+        });
+    </script>
+</body>
+</html>

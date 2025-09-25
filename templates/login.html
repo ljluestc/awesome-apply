@@ -3,88 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In - JobRight</title>
+    <title>Login - JobRight Ultimate</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        .jobright-gradient { background: linear-gradient(135deg, #00f0a0 0%, #00d4ff 100%); }
-        .glass-effect { backdrop-filter: blur(16px); background: rgba(255, 255, 255, 0.9); }
+        .jobright-gradient {
+            background: linear-gradient(135deg, #00f0a0 0%, #00d4ff 100%);
+        }
     </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 min-h-screen">
-    <div class="min-h-screen flex items-center justify-center py-12 px-4">
-        <div class="max-w-md w-full">
-            <!-- Logo and Title -->
-            <div class="text-center mb-8">
-                <div class="w-16 h-16 jobright-gradient rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-2xl">
-                    <i class="fas fa-rocket text-white text-2xl"></i>
-                </div>
-                <h1 class="text-4xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-2">
-                    JobRight
-                </h1>
-                <p class="text-gray-600">Sign in to your account</p>
-            </div>
-
-            <!-- Login Form -->
-            <div class="glass-effect rounded-2xl shadow-2xl p-8">
-                <form id="loginForm" class="space-y-6">
-                    <div>
-                        <label class="block text-gray-700 text-sm font-semibold mb-3">
-                            <i class="fas fa-envelope text-blue-500 mr-2"></i>Email Address
-                        </label>
-                        <input type="email" id="email" name="email" required
-                               class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-green-100 focus:border-green-400 transition-all text-lg">
-                    </div>
-
-                    <div>
-                        <label class="block text-gray-700 text-sm font-semibold mb-3">
-                            <i class="fas fa-lock text-blue-500 mr-2"></i>Password
-                        </label>
-                        <input type="password" id="password" name="password" required
-                               class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-green-100 focus:border-green-400 transition-all text-lg">
-                    </div>
-
-                    {% if error %}
-                    <div class="bg-red-50 border-2 border-red-200 text-red-700 px-4 py-3 rounded-xl">
-                        <i class="fas fa-exclamation-circle mr-2"></i>{{ error }}
-                    </div>
-                    {% endif %}
-
-                    <button type="submit" class="w-full jobright-gradient text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all">
-                        <i class="fas fa-sign-in-alt mr-2"></i>Sign In
-                    </button>
-                </form>
-
-                <div class="mt-6 text-center">
-                    <a href="/signup" class="text-blue-600 hover:text-blue-800 font-semibold transition-colors">
-                        <i class="fas fa-user-plus mr-1"></i>Don't have an account? Sign up
-                    </a>
-                </div>
-
-                <!-- Demo Credentials -->
-                <div class="mt-8 bg-blue-50 border-2 border-blue-200 p-4 rounded-xl">
-                    <h4 class="font-semibold text-blue-900 mb-3">
-                        <i class="fas fa-info-circle mr-2"></i>Demo Credentials:
-                    </h4>
-                    <div class="text-blue-700 space-y-1">
-                        <p><strong>Email:</strong> demo@jobright.ai</p>
-                        <p><strong>Password:</strong> demo123</p>
-                    </div>
-                    <button type="button" onclick="fillDemo()"
-                            class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium">
-                        <i class="fas fa-magic mr-1"></i>Use Demo Login
-                    </button>
-                </div>
-            </div>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center">
+    <div class="max-w-md w-full space-y-8 p-8">
+        <div>
+            <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                Sign in to JobRight Ultimate
+            </h2>
+            <p class="mt-2 text-center text-sm text-gray-600">
+                Access your job automation dashboard
+            </p>
         </div>
+        <form class="mt-8 space-y-6" id="loginForm">
+            <input type="hidden" name="remember" value="true">
+            <div class="rounded-md shadow-sm -space-y-px">
+                <div>
+                    <label for="email" class="sr-only">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required
+                           class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                           placeholder="Email address">
+                </div>
+                <div>
+                    <label for="password" class="sr-only">Password</label>
+                    <input id="password" name="password" type="password" autocomplete="current-password" required
+                           class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                           placeholder="Password">
+                </div>
+            </div>
+
+            <div>
+                <button type="submit"
+                        class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white jobright-gradient hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                        <i class="fas fa-lock text-indigo-500 group-hover:text-indigo-400" aria-hidden="true"></i>
+                    </span>
+                    Sign in
+                </button>
+            </div>
+
+            <div class="text-center">
+                <p class="text-sm text-gray-600">
+                    Demo Login: demo@ultimate.ai / demo123
+                </p>
+            </div>
+        </form>
     </div>
 
     <script>
-        function fillDemo() {
-            document.getElementById('email').value = 'demo@jobright.ai';
-            document.getElementById('password').value = 'demo123';
-        }
-
         document.getElementById('loginForm').addEventListener('submit', async function(e) {
             e.preventDefault();
 
@@ -97,19 +70,21 @@
             try {
                 const response = await fetch('/login', {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
                     body: JSON.stringify(data)
                 });
 
                 const result = await response.json();
 
                 if (result.success) {
-                    window.location.href = result.redirect || '/jobs';
+                    window.location.href = '/jobs';
                 } else {
-                    alert(result.message || 'Login failed');
+                    alert('Login failed: ' + result.message);
                 }
             } catch (error) {
-                alert('Login failed. Please try again.');
+                alert('Login error: ' + error.message);
             }
         });
     </script>

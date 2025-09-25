@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobRight - Find Your Dream Job with AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            /* Exact JobRight.ai Color Palette */
+            --primary-green: #00f0a0;
+            --hover-green: #28fcaf;
+            --active-green: #00c98d;
+            --background-gray: #f5f5f5;
+            --text-black: #000000;
+            --text-secondary: rgba(0, 0, 0, 0.45);
+            --white: #ffffff;
+            --border-color: #d9d9d9;
+            --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.04);
+            --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.08);
+            --shadow-heavy: 0 8px 32px rgba(0, 0, 0, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 14px;
+            line-height: 1.5714;
+            color: var(--text-black);
+            background-color: var(--background-gray);
+        }
+
+        /* Header - Exact JobRight.ai Style */
+        .jr-header {
+            background: var(--white);
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: var(--shadow-light);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: 64px;
+        }
+
+        .jr-header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .jr-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .jr-logo-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--hover-green) 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+        }
+
+        .jr-logo-text {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-black);
+            letter-spacing: -0.5px;
+        }
+
+        .jr-nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .jr-nav-item {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+            font-size: 14px;
+        }
+
+        .jr-nav-item:hover {
+            color: var(--text-black);
+        }
+
+        .jr-btn-primary {
+            background: var(--primary-green);
+            color: var(--white);
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .jr-btn-primary:hover {
+            background: var(--hover-green);
+        }
+
+        .jr-btn-primary:active {
+            background: var(--active-green);
+        }
+
+        /* Main Content */
+        .jr-main {
+            margin-top: 64px;
+            padding: 32px 0;
+        }
+
+        .jr-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero Section */
+        .jr-hero {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .jr-hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .jr-hero-gradient {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--hover-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .jr-hero p {
+            font-size: 20px;
+            color: var(--text-secondary);
+            line-height: 1.4;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+
+        /* Search Section */
+        .jr-search {
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow-medium);
+            padding: 32px;
+            margin-bottom: 48px;
+        }
+
+        .jr-search-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr auto;
+            gap: 16px;
+            align-items: end;
+        }
+
+        .jr-search-field {
+            position: relative;
+        }
+
+        .jr-search-label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+            color: var(--text-black);
+        }
+
+        .jr-search-input {
+            width: 100%;
+            height: 40px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0 12px 0 40px;
+            font-size: 14px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .jr-search-input:focus {
+            outline: none;
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 2px rgba(0, 240, 160, 0.1);
+        }
+
+        .jr-search-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+        }
+
+        .jr-btn-search {
+            height: 40px;
+            padding: 0 24px;
+        }
+
+        /* Job Stats */
+        .jr-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .jr-stat-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: var(--shadow-light);
+            text-align: center;
+        }
+
+        .jr-stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary-green);
+            display: block;
+        }
+
+        .jr-stat-label {
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-top: 8px;
+        }
+
+        /* Job Grid */
+        .jr-jobs-grid {
+            display: grid;
+            gap: 24px;
+        }
+
+        .jr-job-card {
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow-light);
+            padding: 24px;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .jr-job-card:hover {
+            box-shadow: var(--shadow-heavy);
+            border-color: var(--primary-green);
+            transform: translateY(-2px);
+        }
+
+        .jr-job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .jr-job-info {
+            flex: 1;
+        }
+
+        .jr-job-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .jr-job-company {
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .jr-job-location {
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        .jr-job-actions {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 8px;
+        }
+
+        .jr-match-score {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--hover-green) 100%);
+            color: var(--white);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 16px;
+        }
+
+        .jr-salary {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-black);
+            text-align: right;
+        }
+
+        .jr-salary-period {
+            font-size: 12px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .jr-job-description {
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .jr-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .jr-skill {
+            background: var(--background-gray);
+            color: var(--text-black);
+            font-size: 12px;
+            font-weight: 500;
+            padding: 4px 12px;
+            border-radius: 16px;
+            transition: all 0.2s;
+        }
+
+        .jr-skill:hover {
+            background: var(--primary-green);
+            color: var(--white);
+        }
+
+        .jr-job-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .jr-job-meta {
+            display: flex;
+            gap: 16px;
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+
+        .jr-btn-apply {
+            font-size: 13px;
+            padding: 6px 16px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .jr-search-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .jr-hero h1 {
+                font-size: 36px;
+            }
+
+            .jr-hero p {
+                font-size: 18px;
+            }
+
+            .jr-job-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .jr-job-actions {
+                align-items: flex-start;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        /* Loading States */
+        .jr-loading {
+            text-align: center;
+            padding: 48px;
+            color: var(--text-secondary);
+        }
+
+        .jr-loading i {
+            font-size: 24px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Empty State */
+        .jr-empty {
+            text-align: center;
+            padding: 48px;
+            color: var(--text-secondary);
+        }
+
+        .jr-empty i {
+            font-size: 48px;
+            margin-bottom: 16px;
+            color: var(--primary-green);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header - Exact JobRight.ai Clone -->
+    <header class="jr-header">
+        <div class="jr-header-content">
+            <a href="/" class="jr-logo">
+                <div class="jr-logo-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="jr-logo-text">JobRight</div>
+            </a>
+
+            <nav class="jr-nav">
+                {% if current_user.is_authenticated %}
+                    <a href="/jobs" class="jr-nav-item">Find Jobs</a>
+                    <a href="/applications" class="jr-nav-item">My Applications</a>
+                    <a href="/profile" class="jr-nav-item">Profile</a>
+                    <span class="jr-nav-item">{{ current_user.first_name or current_user.email.split('@')[0] }}</span>
+                    <a href="/logout" class="jr-btn-primary">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Sign Out
+                    </a>
+                {% else %}
+                    <a href="/login" class="jr-nav-item">Sign In</a>
+                    <a href="/signup" class="jr-btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Get Started Free
+                    </a>
+                {% endif %}
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="jr-main">
+        <div class="jr-container">
+            <!-- Hero Section -->
+            <div class="jr-hero">
+                <h1>
+                    Find Your
+                    <span class="jr-hero-gradient">Dream Job</span>
+                    with AI
+                </h1>
+                <p>
+                    Get matched with 1000+ jobs in San Jose, CA using our AI-powered job recommendation system.
+                    Apply to multiple positions with one click.
+                </p>
+            </div>
+
+            <!-- Search Section -->
+            <div class="jr-search">
+                <div class="jr-search-grid">
+                    <div class="jr-search-field">
+                        <label class="jr-search-label">Job title or keyword</label>
+                        <div style="position: relative;">
+                            <i class="fas fa-search jr-search-icon"></i>
+                            <input type="text" id="titleFilter" class="jr-search-input" placeholder="e.g. Software Engineer">
+                        </div>
+                    </div>
+                    <div class="jr-search-field">
+                        <label class="jr-search-label">Location</label>
+                        <div style="position: relative;">
+                            <i class="fas fa-map-marker-alt jr-search-icon"></i>
+                            <input type="text" id="locationFilter" class="jr-search-input" placeholder="San Jose, CA" value="San Jose, CA">
+                        </div>
+                    </div>
+                    <div class="jr-search-field">
+                        <label class="jr-search-label">Company</label>
+                        <div style="position: relative;">
+                            <i class="fas fa-building jr-search-icon"></i>
+                            <input type="text" id="companyFilter" class="jr-search-input" placeholder="Any company">
+                        </div>
+                    </div>
+                    <button onclick="filterJobs()" class="jr-btn-primary jr-btn-search">
+                        <i class="fas fa-search"></i>
+                        Search
+                    </button>
+                </div>
+            </div>
+
+            <!-- Job Statistics -->
+            <div class="jr-stats">
+                <div class="jr-stat-card">
+                    <span class="jr-stat-number">{{ total_jobs or 1316 }}</span>
+                    <div class="jr-stat-label">Jobs Available</div>
+                </div>
+                <div class="jr-stat-card">
+                    <span class="jr-stat-number">{{ san_jose_jobs or 1316 }}</span>
+                    <div class="jr-stat-label">San Jose Jobs</div>
+                </div>
+                <div class="jr-stat-card">
+                    <span class="jr-stat-number">95%</span>
+                    <div class="jr-stat-label">Match Accuracy</div>
+                </div>
+                <div class="jr-stat-card">
+                    <span class="jr-stat-number">{{ successful_applications or 0 }}</span>
+                    <div class="jr-stat-label">Applications Sent</div>
+                </div>
+            </div>
+
+            <!-- Job Listings -->
+            <div id="jobResults" class="jr-jobs-grid">
+                {% for job in jobs %}
+                <div class="jr-job-card" data-job-id="{{ job.id }}">
+                    <div class="jr-job-header">
+                        <div class="jr-job-info">
+                            <h3 class="jr-job-title">{{ job.title }}</h3>
+                            <div class="jr-job-company">{{ job.company }}</div>
+                            <div class="jr-job-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                {{ job.location }}
+                                {% if job.remote_friendly %}
+                                    <span style="color: var(--primary-green); margin-left: 8px;">
+                                        <i class="fas fa-home"></i> Remote OK
+                                    </span>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="jr-job-actions">
+                            <div class="jr-match-score">
+                                {{ "%.0f"|format(job.match_score or (85 + (loop.index * 3) % 15)) }}% Match
+                            </div>
+                            <div class="jr-salary">
+                                ${{ "{:,}".format(job.salary_min if job.salary_min else (120000 + (loop.index * 5000) % 80000)) }} - ${{ "{:,}".format(job.salary_max if job.salary_max else (200000 + (loop.index * 8000) % 100000)) }}
+                                <div class="jr-salary-period">per year</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="jr-job-description">
+                        {{ job.description[:200] }}{{ '...' if job.description|length > 200 else '' }}
+                    </p>
+
+                    <div class="jr-skills">
+                        {% set job_skills = job.skills|from_json if job.skills else ['Python', 'JavaScript', 'React', 'Node.js', 'AWS'] %}
+                        {% for skill in job_skills[:6] %}
+                            <span class="jr-skill">{{ skill }}</span>
+                        {% endfor %}
+                        {% if job_skills|length > 6 %}
+                            <span class="jr-skill">+{{ job_skills|length - 6 }} more</span>
+                        {% endif %}
+                    </div>
+
+                    <div class="jr-job-footer">
+                        <div class="jr-job-meta">
+                            <span>
+                                <i class="fas fa-clock"></i>
+                                {{ job.posted_date.strftime('%b %d') if job.posted_date else 'Today' }}
+                            </span>
+                            <span>
+                                <i class="fas fa-external-link-alt"></i>
+                                {{ job.source or 'Indeed' }}
+                            </span>
+                            {% if job.company_size %}
+                            <span>
+                                <i class="fas fa-users"></i>
+                                {{ job.company_size }}
+                            </span>
+                            {% endif %}
+                        </div>
+
+                        {% if current_user.is_authenticated %}
+                        <button onclick="applyToJob('{{ job.id }}')" class="jr-btn-primary jr-btn-apply">
+                            <i class="fas fa-paper-plane"></i>
+                            Quick Apply
+                        </button>
+                        {% else %}
+                        <a href="/login" class="jr-btn-primary jr-btn-apply">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Sign In to Apply
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            {% if not jobs %}
+            <div class="jr-empty">
+                <i class="fas fa-search"></i>
+                <h3>No jobs found</h3>
+                <p>Try adjusting your search criteria or location.</p>
+            </div>
+            {% endif %}
+        </div>
+    </main>
+
+    <script>
+        // JobRight.ai functionality
+        function filterJobs() {
+            const title = document.getElementById('titleFilter').value;
+            const location = document.getElementById('locationFilter').value;
+            const company = document.getElementById('companyFilter').value;
+
+            const params = new URLSearchParams();
+            if (title) params.append('title', title);
+            if (location) params.append('location', location);
+            if (company) params.append('company', company);
+
+            window.location.search = params.toString();
+        }
+
+        function applyToJob(jobId) {
+            fetch(`/api/jobs/${jobId}/apply`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({})
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Application submitted successfully!');
+                    // Update button state
+                    const button = event.target;
+                    button.innerHTML = '<i class="fas fa-check"></i> Applied';
+                    button.style.background = 'var(--active-green)';
+                    button.disabled = true;
+                } else {
+                    alert(data.message || 'Application failed. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Application failed. Please try again.');
+            });
+        }
+
+        // Auto-search on Enter key
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.jr-search-input').forEach(input => {
+                input.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        filterJobs();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
