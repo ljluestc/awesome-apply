@@ -392,7 +392,11 @@ class AutomatedJobApplicationSystem:
             cursor = conn.cursor()
 
             cursor.execute('''
-                INSERT INTO job_applications VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                INSERT INTO job_applications (
+                    id, application_number, job_title, company, job_url,
+                    application_timestamp, status, screenshot_before, screenshot_after,
+                    confirmation_text, form_data, proof_hash, session_id
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', (
                 record['id'],
                 record['application_number'],
