@@ -1,0 +1,94 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 500
+>>
+stream
+BT
+/F1 18 Tf
+72 720 Td
+(John Smith) Tj
+0 -20 Td
+/F1 12 Tf
+(Senior Software Engineer) Tj
+0 -40 Td
+(Email: johnsmith.career2024@gmail.com) Tj
+0 -15 Td
+(Phone: (555) 123-4567) Tj
+0 -15 Td
+(Location: San Francisco, CA) Tj
+0 -15 Td
+(LinkedIn: linkedin.com/in/johnsmith2024) Tj
+0 -15 Td
+(GitHub: github.com/johnsmith2024) Tj
+0 -40 Td
+/F1 14 Tf
+(EXPERIENCE) Tj
+0 -25 Td
+/F1 12 Tf
+(• 5+ years of full-stack software development) Tj
+0 -15 Td
+(• Expert in Python, JavaScript, React, Node.js) Tj
+0 -15 Td
+(• AWS, Docker, Kubernetes experience) Tj
+0 -15 Td
+(• Led teams of 3-5 developers) Tj
+0 -15 Td
+(• Built scalable web applications) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f
+0000000009 00000 n
+0000000058 00000 n
+0000000115 00000 n
+0000000274 00000 n
+0000000826 00000 n
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+892
+%%EOF
